@@ -28,7 +28,8 @@ def game(job):
             diagnostics.append(None)
             continue
         fn = get_last_callable(path.read_text(encoding='utf-8'), path=str(path))
-        assert fn is fn.__globals__['agent']
+        # Kaggle selects the last callable. Public agents may deliberately export
+        # a wrapper with a different name; do not replace it with globals()['agent'].
         diagnostics.append(fn)
         def measured(obs, config, fn=fn, calls=calls):
             begin = time.perf_counter()
@@ -48,12 +49,19 @@ def game(job):
     assert status == ['DONE','DONE'], (job, status)
     assert len(env.steps) == 720, (job, len(env.steps))
     margin = rewards[seat]-rewards[1-seat]
+    telemetry=dict(getattr(diagnostics[0], 'telemetry', {}))
+    impl=diagnostics[0].__globals__.get('_IMPL')
+    if impl is not None:
+        telemetry.update({'chassis_'+k:v for k,v in impl.chassis.diagnostics.items()})
     return dict(candidate=candidate, opponent=opponent, seed=seed, seat=seat,
                 rewards=rewards, margin=margin, win=int(margin>0), tie=int(margin==0),
                 status=status, steps=len(env.steps), seconds=time.perf_counter()-begin,
                 max_call_ms=max(timings[0]), calls=len(timings[0]),
-                telemetry=dict(getattr(diagnostics[0], 'telemetry', {})),
-                sha256=hashlib.sha256(paths[0].read_bytes()).hexdigest())
+                telemetry=telemetry,
+                shops=list(final[0]['observation']['town']['unlocked_shops']),
+                sha256=hashlib.sha256(paths[0].read_bytes()).hexdigest(),
+                opponent_sha256=hashlib.sha256(paths[1].read_bytes()).hexdigest() if paths[1] else None,
+                entrypoints=[fn.__name__ if fn is not None else 'starter' for fn in diagnostics])
 
 
 def run(candidates, opponents, seeds, workers, output):

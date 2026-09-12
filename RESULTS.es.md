@@ -89,4 +89,7 @@ y sus copias para mantener intacto el código auditado. Los archivos nuevos de
 herramientas y documentación pasan la comprobación de espacios.
 
 Un **push de kernel ejecuta el notebook**. No envía `submission.tar.gz` al leaderboard.
-No hay nuevo rating medido para nuestras variantes y no se afirma superar 2700 o 3000.
+Al cerrar esa primera ronda no había un rating medido para nuestras variantes.
+Después Arturo envió el archivo: la actualización, el rating observado y 192
+partidas adicionales se documentan en [LIVE_DIAGNOSIS.es.md](LIVE_DIAGNOSIS.es.md).
+No se afirma superar 2700 o 3000.

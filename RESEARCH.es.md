@@ -1,6 +1,6 @@
 # Kaggriculture: investigación y primer experimento
 
-Fecha de consulta: 12 de septiembre de 2026. Las cifras 2700 y 3000 proceden del usuario; no se verificó una instantánea del leaderboard. Ningún paper demuestra por sí solo que una técnica supere esos ratings en Kaggriculture.
+Fecha de consulta: 12 de septiembre de 2026. Las cifras 2700 y 3000 proceden del usuario; en esta primera investigación no se verificó una instantánea del leaderboard. La revisión posterior guarda una en `results/live/leaderboard.json` y el diagnóstico de nuestra submission en [LIVE_DIAGNOSIS.es.md](LIVE_DIAGNOSIS.es.md). Ningún paper demuestra por sí solo que una técnica supere esos ratings en Kaggriculture.
 
 ## Qué hay que optimizar
 

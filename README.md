@@ -6,6 +6,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 
 - [Investigación: competencias similares y papers 2025–2026](RESEARCH.es.md)
 - [Resultados y limitaciones](RESULTS.es.md)
+- [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -15,7 +16,14 @@ un rating superior a 3000. Frente a prvsiyan conserva victorias pero reduce marg
 
 Kaggle **v2 COMPLETE**: otras 8/8 victorias frente a V37 en semillas nuevas,
 con margen medio +1249,50 monedas. Se verificó la identidad del agente exportado.
-Hay 162 partidas documentadas, incluyendo controles y exploración repetida.
+Esa primera ronda documentó 162 partidas, incluyendo controles y exploración repetida.
+
+**Actualización del 12 de septiembre, 18:40 UTC:** la submission `56190498`
+marca **1885,9**; las cinco primeras partidas públicas auditadas fueron victorias.
+El 687 comunicado al inicio era una lectura temprana. La segunda ronda añade
+192 partidas y descarta reemplazar todas las rutas por la biblioteca de 14 planes:
+introduce derrotas frente a otro rival. Se conserva matched6; no se promete un
+rating final ni se ha enviado automáticamente otro agente.
 
 ## Reproducir
 

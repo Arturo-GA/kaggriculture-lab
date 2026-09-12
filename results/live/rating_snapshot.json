@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-09-12T18:40:27Z",
+  "source_command": "python -X utf8 -m kaggle competitions submissions -c kaggriculture -v",
+  "submission_id": 56190498,
+  "submitted_at_utc": "2026-09-12T17:42:41.490000Z",
+  "status": "COMPLETE",
+  "public_score": 1885.9,
+  "candidate": "matched6",
+  "candidate_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+  "note": "Snapshot of an evolving rating, not a final score. Only the first five public replays were audited."
+}

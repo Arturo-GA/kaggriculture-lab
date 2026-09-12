@@ -1,0 +1,97 @@
+[
+  {
+    "episode_id": 108254771,
+    "opponent": "devsloppy",
+    "seat": 0,
+    "rewards": [
+      156742.0,
+      24877.0
+    ],
+    "margin": 131865.0,
+    "win": true,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "engine": "1.32.7",
+    "actions_checked": 719,
+    "action_mismatches": 0,
+    "first_mismatches": []
+  },
+  {
+    "episode_id": 108255754,
+    "opponent": "Leraaaa",
+    "seat": 0,
+    "rewards": [
+      183904.0,
+      53285.0
+    ],
+    "margin": 130619.0,
+    "win": true,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "engine": "1.32.7",
+    "actions_checked": 719,
+    "action_mismatches": 0,
+    "first_mismatches": []
+  },
+  {
+    "episode_id": 108256741,
+    "opponent": "HandsOffMyBigMelons",
+    "seat": 1,
+    "rewards": [
+      51722.0,
+      114634.0
+    ],
+    "margin": 62912.0,
+    "win": true,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "engine": "1.32.7",
+    "actions_checked": 719,
+    "action_mismatches": 0,
+    "first_mismatches": []
+  },
+  {
+    "episode_id": 108257744,
+    "opponent": "LEE Dailun",
+    "seat": 1,
+    "rewards": [
+      105648.0,
+      141844.0
+    ],
+    "margin": 36196.0,
+    "win": true,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "engine": "1.32.7",
+    "actions_checked": 719,
+    "action_mismatches": 0,
+    "first_mismatches": []
+  },
+  {
+    "episode_id": 108258739,
+    "opponent": "Gbining",
+    "seat": 1,
+    "rewards": [
+      67308.0,
+      103263.0
+    ],
+    "margin": 35955.0,
+    "win": true,
+    "statuses": [
+      "DONE",
+      "DONE"
+    ],
+    "engine": "1.32.7",
+    "actions_checked": 719,
+    "action_mismatches": 0,
+    "first_mismatches": []
+  }
+]

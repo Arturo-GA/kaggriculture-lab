@@ -1,0 +1,289 @@
+{
+  "panel_v2": {
+    "games": 32,
+    "engine": "1.32.7",
+    "max_call_ms": 240.6677999533713,
+    "groups": [
+      {
+        "candidate": "matched6",
+        "opponent": "kaito",
+        "games": 8,
+        "seeds": 4,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 22934.125,
+        "worst_margin": 15756.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "router",
+        "games": 8,
+        "seeds": 4,
+        "wins": 7,
+        "ties": 0,
+        "mean_margin": 1338.25,
+        "worst_margin": -8969.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "v37",
+        "opponent": "kaito",
+        "games": 8,
+        "seeds": 4,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 22934.125,
+        "worst_margin": 15756.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "v37",
+        "opponent": "router",
+        "games": 8,
+        "seeds": 4,
+        "wins": 5,
+        "ties": 0,
+        "mean_margin": 655.0,
+        "worst_margin": -8859.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      }
+    ]
+  },
+  "routes14_screen": {
+    "games": 32,
+    "engine": "1.32.7",
+    "max_call_ms": 220.0833999668248,
+    "groups": [
+      {
+        "candidate": "routes14",
+        "opponent": "matched6",
+        "games": 8,
+        "seeds": 4,
+        "wins": 7,
+        "ties": 0,
+        "mean_margin": 2176.0,
+        "worst_margin": -5286.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "routes14",
+        "opponent": "router",
+        "games": 8,
+        "seeds": 4,
+        "wins": 7,
+        "ties": 0,
+        "mean_margin": 3576.625,
+        "worst_margin": -5247.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "routes14m6",
+        "opponent": "matched6",
+        "games": 8,
+        "seeds": 4,
+        "wins": 7,
+        "ties": 0,
+        "mean_margin": 1564.0,
+        "worst_margin": -5405.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      },
+      {
+        "candidate": "routes14m6",
+        "opponent": "router",
+        "games": 8,
+        "seeds": 4,
+        "wins": 7,
+        "ties": 0,
+        "mean_margin": 3160.875,
+        "worst_margin": -5471.0,
+        "first_shops": {
+          "not_recorded": 8
+        }
+      }
+    ]
+  },
+  "routes14_holdout": {
+    "games": 128,
+    "engine": "1.32.7",
+    "max_call_ms": 417.421399964951,
+    "groups": [
+      {
+        "candidate": "matched6",
+        "opponent": "kaito",
+        "games": 16,
+        "seeds": 8,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 22873.5,
+        "worst_margin": 4193.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "FARMERS_MARKET": 4,
+          "PET_CAFE": 4,
+          "ICE_CREAM_SHOP": 2,
+          "SMOOTHIE_SHOP": 2,
+          "YARN_STORE": 2
+        }
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "matched6",
+        "games": 16,
+        "seeds": 8,
+        "wins": 0,
+        "ties": 16,
+        "mean_margin": 0.0,
+        "worst_margin": 0.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "prvsiyan",
+        "games": 16,
+        "seeds": 8,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 5681.25,
+        "worst_margin": 3635.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "router",
+        "games": 16,
+        "seeds": 8,
+        "wins": 14,
+        "ties": 0,
+        "mean_margin": 7232.375,
+        "worst_margin": -2756.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      },
+      {
+        "candidate": "routes14",
+        "opponent": "kaito",
+        "games": 16,
+        "seeds": 8,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 19965.625,
+        "worst_margin": 1299.0,
+        "first_shops": {
+          "FARMERS_MARKET": 4,
+          "PIZZA_SHOP": 2,
+          "PET_CAFE": 4,
+          "SMOOTHIE_SHOP": 2,
+          "ICE_CREAM_SHOP": 2,
+          "YARN_STORE": 2
+        }
+      },
+      {
+        "candidate": "routes14",
+        "opponent": "matched6",
+        "games": 16,
+        "seeds": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": -1121.375,
+        "worst_margin": -9288.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      },
+      {
+        "candidate": "routes14",
+        "opponent": "prvsiyan",
+        "games": 16,
+        "seeds": 8,
+        "wins": 12,
+        "ties": 0,
+        "mean_margin": 916.625,
+        "worst_margin": -7483.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      },
+      {
+        "candidate": "routes14",
+        "opponent": "router",
+        "games": 16,
+        "seeds": 8,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 6505.75,
+        "worst_margin": 869.0,
+        "first_shops": {
+          "PIZZA_SHOP": 2,
+          "ICE_CREAM_SHOP": 6,
+          "PET_CAFE": 2,
+          "YARN_STORE": 4,
+          "SMOOTHIE_SHOP": 2
+        }
+      }
+    ]
+  },
+  "paired_external_outcomes": {
+    "kaito": {
+      "improvements": 0,
+      "regressions": 0,
+      "unchanged": 16
+    },
+    "prvsiyan": {
+      "improvements": 0,
+      "regressions": 4,
+      "unchanged": 12
+    },
+    "router": {
+      "improvements": 2,
+      "regressions": 0,
+      "unchanged": 14
+    }
+  },
+  "interpretation": {
+    "promote_routes14": false,
+    "retained_candidate": "matched6",
+    "reason": "No demonstrated head-to-head advantage; regressions on an external opponent.",
+    "decision_timing": "Conservative interpretation after inspecting the holdout, not a preregistered statistical test.",
+    "limitations": "Eight holdout seeds; seats are dependent. Different policies can change shop draws even with the same seed. No claimed leaderboard gain."
+  }
+}
