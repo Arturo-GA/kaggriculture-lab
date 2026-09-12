@@ -1,0 +1,30 @@
+{
+  "consulted_date": "2026-09-12",
+  "downloaded_notebooks": [
+    {
+      "url": "https://www.kaggle.com/code/nagatakengo/predict-future-melon-prices",
+      "sha256": "61f5d0195320571814c8339817d6265c43e1a2bfd9fccf06dbb27fd69993c1b5",
+      "review": "Source reviewed without executing notebook or downloading its dataset. No reported prediction metrics reproduced."
+    },
+    {
+      "url": "https://www.kaggle.com/code/destbreso/island-ga-an-owned-schedule-is-a-moat",
+      "sha256": "9098530bef471c29461cbeb602f6ed051d0d5010cd7e78b3582b0e87d77e7859",
+      "review": "Method and experiment discussion reviewed; upstream genetic search not executed."
+    }
+  ],
+  "papers": [
+    {"title": "Reinforced Planning with Latent World Models", "url": "https://arxiv.org/abs/2608.18669", "submitted": "2026-08-19", "status": "preprint"},
+    {"title": "When Life Gives You BC, Make Q-functions: Extracting Q-values from Behavior Cloning for On-Robot Reinforcement Learning", "url": "https://arxiv.org/abs/2605.05172", "submitted": "2026-05-06", "latest_revision_consulted": "2026-06-27", "venue_per_arxiv": "RSS 2026"},
+    {"title": "Deep SPI: Safe Policy Improvement via World Models", "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/0212b0dff7b4aa3bd8b8cc4ce24fd384-Abstract-Conference.html", "venue": "ICLR 2026"}
+  ],
+  "forums": [
+    {"url": "https://www.kaggle.com/competitions/kaggriculture/discussion/738079", "access": "Indexed discussion excerpts; exact publication date not verified"},
+    {"url": "https://www.kaggle.com/competitions/kaggriculture/discussion/737027", "access": "Indexed title and opening statement only; full body unavailable"}
+  ],
+  "simulator": {
+    "url": "https://github.com/destbreso/kaggriculture-cppsim",
+    "revision": "da15925dcf2357d750cbae4bf35712011b4733c8",
+    "attribution": "destbreso, based on nikital7's port; Apache-2.0",
+    "local_status": "Built and verified on the documented live duels; see cppsim_verification.json and cppsim_benchmark.json"
+  }
+}

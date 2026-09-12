@@ -1,0 +1,19 @@
+{
+  "phase": "frozen_before_holdout",
+  "candidate": "belief_lead12",
+  "candidate_sha256": "95b252cd61c3f2aa90f3a3d7859c02d4583cbba4264bd274fab2aeef1a4d0d55",
+  "control": "matched6",
+  "opponents": ["matched6", "router", "prvsiyan", "kaito"],
+  "seeds": [64001, 64002, 64003, 64004, 64005, 64006, 64007, 64008],
+  "seats": [0, 1],
+  "expected_games": 128,
+  "selection_reason": "Wait gates regressed in exploration. Long-lead gate preserved outcomes and added a small margin on one exploration seed; this is insufficient evidence of improvement.",
+  "promotion_requirements": [
+    "Candidate wins more head-to-head games than it loses against matched6",
+    "At least one paired external outcome improvement and zero external outcome regressions",
+    "Positive sum of paired external margin differences",
+    "No reported errors/fallbacks and every candidate decision under 1000 ms",
+    "If these pass, confirm with the official engine on additional seeds before any release"
+  ],
+  "note": "A bounded experimental gate, not a statistical guarantee of improvement or leaderboard rating. Seats within a seed are dependent."
+}

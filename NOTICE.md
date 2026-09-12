@@ -21,6 +21,20 @@ Modified September 12, 2026 by Arturo-GA / Kaggriculture Lab:
   Reproducible extraction and hashes: `extract_panel_v2.py`,
   `build_routes_experiment.py`, `results/panel_v2_sources.json`.
 - `build.py`, `evaluate.py`, tests, research, notebook and packaging: new project tooling.
+- `candidates/demand_gate.py`, `belief_gate.py`, `demand_gate2.py`, `belief_gate2.py`,
+  `belief_lead12.py`: new project sale-timing experiments built on matched6;
+  public demand accounting, observed supply scenarios, spending reserves and
+  selective extension of planned sale reservations. Original source notices retained.
+- `build_cppsim.py`, `accelerator.py`, `verify_accelerator.py`, `evaluate_fast.py`,
+  `benchmark_accelerator.py`: project integration of destbreso's public C++ simulator,
+  based on nikital7's engine port, Apache-2.0. Upstream revision and binary hash
+  are in `results/cppsim_build.json`. Upstream source/binaries are not committed
+  or included in the submitted runtime.
+
+The research cites RP1, Q2RL and Deep SPI as methodological inspiration. The
+heuristic market prototypes do not implement those algorithms, use their weights,
+or inherit their performance claims. Downloaded notebooks used for method review
+are attributed in `results/research_sources_20260912.json`.
 
 The project additions are provided under Apache-2.0. All inherited source and
 license notices are retained. Public opponent source files are used only locally

@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/destbreso/kaggriculture-cppsim",
+  "revision": "da15925dcf2357d750cbae4bf35712011b4733c8",
+  "compiler": "g++.EXE (Rev3, Built by MSYS2 project) 14.2.0",
+  "python": "3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:06:27) [MSC v.1942 64 bit (AMD64)]",
+  "pybind11": "3.0.1",
+  "binary_sha256": "f1f9fcfa14b319956a184f66f5500328480ae4a429b1abb82b755dfa88705228",
+  "attribution": "destbreso; upstream engine port nikital7; Apache-2.0",
+  "status": "built; equivalence not yet established"
+}

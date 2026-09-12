@@ -1,0 +1,8 @@
+{
+  "parent_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+  "candidates": {
+    "demand_gate2": "576167c196be558f250391e1c9a6d47155295e13734ea1cfd49f019e4ea3bcf3",
+    "belief_gate2": "50d4a9649292ea5bdd11c418a4750fa0a2a51cc2f82a47b0b7ade065ceaeebd5"
+  },
+  "helper_sha256": "7b33ad7129ef005da5b77eedbe8f26af2e368fceaf32c4b2a795db1045a969f7"
+}

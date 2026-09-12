@@ -1,0 +1,346 @@
+{
+  "market_gate_screen": {
+    "games": 24,
+    "engine": "1.32.7",
+    "groups": [
+      {
+        "candidate": "belief_gate",
+        "opponent": "matched6",
+        "games": 4,
+        "wins": 1,
+        "ties": 2,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 221.1092000361532
+      },
+      {
+        "candidate": "belief_gate",
+        "opponent": "router",
+        "games": 4,
+        "wins": 4,
+        "ties": 0,
+        "mean_margin": 8470.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 218.80249999230728
+      },
+      {
+        "candidate": "demand_gate",
+        "opponent": "matched6",
+        "games": 4,
+        "wins": 1,
+        "ties": 2,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 73.36729997768998
+      },
+      {
+        "candidate": "demand_gate",
+        "opponent": "router",
+        "games": 4,
+        "wins": 4,
+        "ties": 0,
+        "mean_margin": 8470.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 186.6938000312075
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "matched6",
+        "games": 4,
+        "wins": 1,
+        "ties": 2,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 242.91660002199933
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "router",
+        "games": 4,
+        "wins": 4,
+        "ties": 0,
+        "mean_margin": 8470.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 253.28170001739636
+      }
+    ]
+  },
+  "market_gate2_screen": {
+    "games": 72,
+    "engine": "kagsim-0.4.0 / Kaggriculture-1.32.7",
+    "groups": [
+      {
+        "candidate": "belief_gate2",
+        "opponent": "matched6",
+        "games": 8,
+        "wins": 0,
+        "ties": 2,
+        "mean_margin": -103.25,
+        "waits": 14,
+        "additional_advance_units": 0,
+        "max_call_ms": 310.11259998194873
+      },
+      {
+        "candidate": "belief_gate2",
+        "opponent": "prvsiyan",
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 5477.75,
+        "waits": 6,
+        "additional_advance_units": 0,
+        "max_call_ms": 87.63510000426322
+      },
+      {
+        "candidate": "belief_gate2",
+        "opponent": "router",
+        "games": 8,
+        "wins": 6,
+        "ties": 0,
+        "mean_margin": 4345.5,
+        "waits": 6,
+        "additional_advance_units": 0,
+        "max_call_ms": 243.77340002683923
+      },
+      {
+        "candidate": "demand_gate2",
+        "opponent": "matched6",
+        "games": 8,
+        "wins": 0,
+        "ties": 2,
+        "mean_margin": -169.25,
+        "waits": 88,
+        "additional_advance_units": 0,
+        "max_call_ms": 116.88659997889772
+      },
+      {
+        "candidate": "demand_gate2",
+        "opponent": "prvsiyan",
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 5458.0,
+        "waits": 98,
+        "additional_advance_units": 0,
+        "max_call_ms": 69.82060003792867
+      },
+      {
+        "candidate": "demand_gate2",
+        "opponent": "router",
+        "games": 8,
+        "wins": 6,
+        "ties": 0,
+        "mean_margin": 4295.25,
+        "waits": 80,
+        "additional_advance_units": 0,
+        "max_call_ms": 444.3336999975145
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "matched6",
+        "games": 8,
+        "wins": 0,
+        "ties": 8,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 316.7132000089623
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "prvsiyan",
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 5484.5,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 133.48850002512336
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "router",
+        "games": 8,
+        "wins": 6,
+        "ties": 0,
+        "mean_margin": 4360.5,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 197.54829996963963
+      }
+    ]
+  },
+  "market_lead_screen": {
+    "games": 24,
+    "engine": "kagsim-0.4.0 / Kaggriculture-1.32.7",
+    "groups": [
+      {
+        "candidate": "belief_lead12",
+        "opponent": "matched6",
+        "games": 8,
+        "wins": 0,
+        "ties": 8,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 120.06329995347187
+      },
+      {
+        "candidate": "belief_lead12",
+        "opponent": "prvsiyan",
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "mean_margin": 5484.5,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 61.30470003699884
+      },
+      {
+        "candidate": "belief_lead12",
+        "opponent": "router",
+        "games": 8,
+        "wins": 6,
+        "ties": 0,
+        "mean_margin": 4365.5,
+        "waits": 0,
+        "additional_advance_units": 6,
+        "max_call_ms": 392.6352999988012
+      }
+    ]
+  },
+  "market_lead_holdout": {
+    "games": 128,
+    "engine": "kagsim-0.4.0 / Kaggriculture-1.32.7",
+    "groups": [
+      {
+        "candidate": "belief_lead12",
+        "opponent": "kaito",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 20819.75,
+        "waits": 0,
+        "additional_advance_units": 68,
+        "max_call_ms": 208.4313000086695
+      },
+      {
+        "candidate": "belief_lead12",
+        "opponent": "matched6",
+        "games": 16,
+        "wins": 0,
+        "ties": 16,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 381.14840001799166
+      },
+      {
+        "candidate": "belief_lead12",
+        "opponent": "prvsiyan",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 5334.375,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 77.39290001336485
+      },
+      {
+        "candidate": "belief_lead12",
+        "opponent": "router",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 6202.75,
+        "waits": 0,
+        "additional_advance_units": 6,
+        "max_call_ms": 358.3086999715306
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "kaito",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 20815.75,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 229.12100004032254
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "matched6",
+        "games": 16,
+        "wins": 0,
+        "ties": 16,
+        "mean_margin": 0.0,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 157.7938999980688
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "prvsiyan",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 5334.375,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 184.08430000999942
+      },
+      {
+        "candidate": "matched6",
+        "opponent": "router",
+        "games": 16,
+        "wins": 16,
+        "ties": 0,
+        "mean_margin": 6203.625,
+        "waits": 0,
+        "additional_advance_units": 0,
+        "max_call_ms": 355.77940003713593
+      }
+    ]
+  },
+  "paired_holdout": {
+    "kaito": {
+      "improved_outcomes": 0,
+      "worse_outcomes": 0,
+      "mean_margin_difference": 4.0
+    },
+    "prvsiyan": {
+      "improved_outcomes": 0,
+      "worse_outcomes": 0,
+      "mean_margin_difference": 0.0
+    },
+    "router": {
+      "improved_outcomes": 0,
+      "worse_outcomes": 0,
+      "mean_margin_difference": -0.875
+    }
+  },
+  "promotion": {
+    "conditions": {
+      "head_to_head_advantage": false,
+      "external_improvement": false,
+      "no_external_regressions": true,
+      "positive_external_margin": true,
+      "no_errors": true,
+      "timing": true
+    },
+    "passes_screen_gate": false,
+    "released": false,
+    "retained": "matched6",
+    "note": "No new competitive submission. A passing screen would still require official-engine confirmation on additional seeds."
+  },
+  "valid_strategy_games": 248,
+  "excluded_initial_games": 24,
+  "excluded_initial_reason": "Official loader selected the parent alias instead of the experimental wrapper; fixed and covered by a regression test. Do not use these games as evidence for the gates."
+}

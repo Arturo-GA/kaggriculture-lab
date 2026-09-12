@@ -1,0 +1,2 @@
+# Optional development-only dependency; never imported by the submitted agent.
+pybind11==3.0.1

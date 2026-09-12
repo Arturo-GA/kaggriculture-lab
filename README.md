@@ -7,6 +7,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 - [Investigación: competencias similares y papers 2025–2026](RESEARCH.es.md)
 - [Resultados y limitaciones](RESULTS.es.md)
 - [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)
+- [Papers recientes, cinco prototipos y simulación 8,72× más rápida](RESEARCH_2026_09_12.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -24,6 +25,13 @@ El 687 comunicado al inicio era una lectura temprana. La segunda ronda añade
 192 partidas y descarta reemplazar todas las rutas por la biblioteca de 14 planes:
 introduce derrotas frente a otro rival. Se conserva matched6; no se promete un
 rating final ni se ha enviado automáticamente otro agente.
+
+La ronda posterior al rating 2100 comunicado por Arturo añade **248 partidas
+válidas**, cinco prototipos de decisión de venta y un evaluador C++ opcional.
+En tres comparaciones completas, el evaluador fue **8,72× más rápido** y reprodujo
+recompensas, tiendas y telemetría. Los prototipos no añadieron victorias; se mantiene
+matched6. Hay 602 partidas de estrategia documentadas entre las rondas, con
+controles y repeticiones; las pruebas de equivalencia se cuentan aparte.
 
 ## Reproducir
 
@@ -64,3 +72,34 @@ de investigación, no como capacidades implementadas.
 `build.py` define exactamente las intervenciones; `evaluate.py` ejecuta rivales
 que reaccionan, con instancias de política independientes y ambos asientos.
 No se accede al almacén privado del rival ni a semillas ocultas desde el agente.
+
+## Experimentos de mercado y evaluador opcional
+
+El agente enviado sigue usando solo Python estándar. Para reconstruir los
+prototipos y ejecutar sus pruebas:
+
+```powershell
+python build_market_gate.py
+python build_market_gate.py --funded
+python build_market_gate.py --lead
+.\.venv\Scripts\python.exe -m unittest -v test_market_gate.py
+```
+
+El acelerador se compiló con MinGW g++ 14.2.0 en esta estación Windows. Requiere
+los rivales del panel anterior para ejecutar la verificación.
+
+```powershell
+git clone https://github.com/destbreso/kaggriculture-cppsim.git vendor/cppsim
+git -C vendor/cppsim checkout da15925dcf2357d750cbae4bf35712011b4733c8
+.\.venv\Scripts\python.exe -m pip install -r requirements-accelerator.txt
+.\.venv\Scripts\python.exe build_cppsim.py
+.\.venv\Scripts\python.exe verify_accelerator.py
+.\.venv\Scripts\python.exe benchmark_accelerator.py
+.\.venv\Scripts\python.exe evaluate_fast.py --candidates belief_lead12 matched6 --opponents matched6 router prvsiyan kaito --seeds 64001 64002 64003 64004 64005 64006 64007 64008 --workers 4 --output results/market_lead_holdout.json
+python summarize_market.py
+```
+
+La revisión del simulador está fijada. Cambiarla exige reconstruir y volver a
+verificar; una compilación distinta puede producir un hash de binario distinto.
+Para confirmar resultados competitivos se conserva `evaluate.py`, con el motor
+oficial. El kernel anterior no incorpora automáticamente estos prototipos.

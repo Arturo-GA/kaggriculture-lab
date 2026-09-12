@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "binary_sha256": "f1f9fcfa14b319956a184f66f5500328480ae4a429b1abb82b755dfa88705228",
+  "revision": "da15925dcf2357d750cbae4bf35712011b4733c8",
+  "rows": [
+    {
+      "candidate": "matched6",
+      "opponent": "router",
+      "seed": 61001,
+      "rewards": [
+        134316.0,
+        133717.0
+      ],
+      "compared_field_blocks": 10066,
+      "compared_seat_actions": 1438,
+      "inventory_order_checked": true,
+      "engine_step_seconds": {
+        "official": 3.186237900867127,
+        "cpp": 0.019017299287952483
+      },
+      "total_seconds": 7.070941900019534
+    },
+    {
+      "candidate": "belief_gate",
+      "opponent": "prvsiyan",
+      "seed": 61002,
+      "rewards": [
+        82174.0,
+        77893.0
+      ],
+      "compared_field_blocks": 10066,
+      "compared_seat_actions": 1438,
+      "inventory_order_checked": true,
+      "engine_step_seconds": {
+        "official": 3.1952936993329786,
+        "cpp": 0.019725300022400916
+      },
+      "total_seconds": 8.600657799979672
+    },
+    {
+      "candidate": "demand_gate",
+      "opponent": "matched6",
+      "seed": 61003,
+      "rewards": [
+        106384.0,
+        106384.0
+      ],
+      "compared_field_blocks": 10066,
+      "compared_seat_actions": 1438,
+      "inventory_order_checked": true,
+      "engine_step_seconds": {
+        "official": 3.3856446996796876,
+        "cpp": 0.021689200832042843
+      },
+      "total_seconds": 8.32245730003342
+    }
+  ],
+  "scope": "Default 1.32.7 configuration, 3 live duels. Not a proof for every state or custom configuration."
+}
