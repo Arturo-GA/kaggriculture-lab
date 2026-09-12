@@ -1,0 +1,8 @@
+{
+  "candidate": "matched6",
+  "status": "experimental",
+  "source_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+  "archive_sha256": "91de83fb69992e4dd0713526d574c002d450e96d98e3fd6826a22d0eec5310e9",
+  "confirmation": "results/confirmation.json",
+  "leaderboard_submitted": false
+}

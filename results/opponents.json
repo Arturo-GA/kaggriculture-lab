@@ -1,0 +1,29 @@
+[
+  {
+    "name": "nagata",
+    "url": "https://www.kaggle.com/code/nagatakengo/kaggriculture",
+    "retrieved": "2026-09-12",
+    "notebook_sha256": "ea887a4f0a4d96650fc9e8eba9ce409a3e9c4dd6e41e04f867c0b85d4357cb69",
+    "agent_sha256": "77ddc97f12ba1af87ed9475de8f79d0e4889d96b3fa01dcc6692e9ff1a1106f9",
+    "same_as_v37": false,
+    "use": "evaluation only; excluded from Git and Kaggle runtime"
+  },
+  {
+    "name": "tetsutani",
+    "url": "https://www.kaggle.com/code/tetsutani/market-smart-farming-kaggriculture",
+    "retrieved": "2026-09-12",
+    "notebook_sha256": "0393776f0ae798e9d5ab349f94a0d2012ab908fc3a6b4411f0cffe5fa8260384",
+    "agent_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+    "same_as_v37": true,
+    "use": "evaluation only; excluded from Git and Kaggle runtime"
+  },
+  {
+    "name": "prvsiyan",
+    "url": "https://www.kaggle.com/code/prvsiyan/kaggriculture-frontier-the-soil-remembers-rain",
+    "retrieved": "2026-09-12",
+    "notebook_sha256": "ef0a50233f5c554791788d5e17aa792ea93ebcdd1c45923d542166ea33ad8986",
+    "agent_sha256": "6c1f6dfa29f1064608f7760e827897aa6c590f9ba7550ecff23610c5ecabac2d",
+    "same_as_v37": false,
+    "use": "evaluation only; excluded from Git and Kaggle runtime"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "baseline_sha256": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+  "candidates": {
+    "v37": "94c1c2c05ae7cde8fca9ee3957b01112c1cbab82c7434aae6a5f24fa7485bc4c",
+    "h2": "497e6b96fd7bc0ee56cb6f5a45c97c0f46da0037ad396e1b023d605d3daebcbf",
+    "h6": "bc7caa601a729a7f6397c2b422fbc17c3b2598b05f6658a9f1816fd9b33ddc46",
+    "h8": "9c36da9f7e80441f3ad92e2da4e4449775025f0e4174a76119c4b9634681bb3c",
+    "matched6": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+    "pressure": "b98c30d3aa625e836c9aaeccd288f9268f778309f848adbf42ba233b0f3db312"
+  }
+}

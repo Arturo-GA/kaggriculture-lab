@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+outputs/
+vendor/
+*.log
+.env
+kaggle.json
+access_token
+candidates/nagata.py
+candidates/prvsiyan.py
+candidates/tetsutani.py
