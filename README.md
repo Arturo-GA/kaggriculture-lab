@@ -13,6 +13,10 @@ En la confirmación local, matched6 ganó 18/18 partidas contra tres rivales.
 El panel es pequeño y parte de la mejora se concentra frente a V37; no demuestra
 un rating superior a 3000. Frente a prvsiyan conserva victorias pero reduce margen.
 
+Kaggle **v2 COMPLETE**: otras 8/8 victorias frente a V37 en semillas nuevas,
+con margen medio +1249,50 monedas. Se verificó la identidad del agente exportado.
+Hay 162 partidas documentadas, incluyendo controles y exploración repetida.
+
 ## Reproducir
 
 Python 3.12. El agente usa solo la biblioteca estándar; no necesita GPU.

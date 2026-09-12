@@ -1,0 +1,19 @@
+{
+  "kernel": "jarturo/kaggriculture-lab-cpu-search",
+  "version": 2,
+  "status": "COMPLETE",
+  "verified": true,
+  "counts": {
+    "screen": 30,
+    "holdout": 16,
+    "smoke": 2
+  },
+  "holdout_wins": 8,
+  "holdout_games": 8,
+  "holdout_mean_margin": 1249.5,
+  "max_call_ms": 380.4486830000542,
+  "source_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+  "archive_sha256": "60e9c2c32c2b1a23378a9dd34b0ad1123268f7141feee43681eba27227e37364",
+  "source_identical_to_local": true,
+  "leaderboard_submitted": false
+}

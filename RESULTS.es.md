@@ -64,7 +64,29 @@ La versión 1 del kernel realizó la búsqueda inicial. La versión 2 incorpora 
 y corrige el control de autojuego: los asientos de una semilla pueden tener malas
 hierbas diferentes; se exige inversión del margen al cambiar etiquetas, no empate
 obligatorio en todas las semillas. La publicación final y sus recibos se registran
-en `results/kaggle_run.json` y `results/kaggle/` cuando están disponibles.
+en `results/kaggle_run.json` y `results/kaggle/`.
+
+**Kaggle v2: COMPLETE y verificado.** Se completaron 48 partidas adicionales:
+30 exploratorias, 16 de validación (8 del candidato y 8 de control), y 2 smoke.
+matched6 ganó **8/8 contra V37** en las semillas 82001–82004, con margen medio
+de **+1249,50 monedas**. El máximo por decisión entre todas las políticas fue
+380,45 ms. El control de publicación pasó y se exportó matched6.
+
+Hay **162 partidas documentadas** sumando 114 locales y 48 de la versión 2;
+la exploración de Kaggle repite semillas locales y no añade evidencia independiente
+para esos mismos casos. La versión 1 fue una ejecución anterior y no se incluye
+en ese total documentado.
+
+El `main.py` descargado de Kaggle coincide byte por byte con el candidato local.
+El SHA-256 del agente es `28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489`.
+Los archivos gzip de Windows y Kaggle difieren en el contenedor, pero ambos
+contienen exactamente ese mismo `main.py`; los hashes de cada archivo se guardan
+por separado. Las pruebas de determinismo del contenedor comparan construcciones
+en el mismo entorno, no identidad del gzip entre plataformas.
+
+`git diff --check` conserva advertencias de espacios heredados dentro del baseline
+y sus copias para mantener intacto el código auditado. Los archivos nuevos de
+herramientas y documentación pasan la comprobación de espacios.
 
 Un **push de kernel ejecuta el notebook**. No envía `submission.tar.gz` al leaderboard.
 No hay nuevo rating medido para nuestras variantes y no se afirma superar 2700 o 3000.

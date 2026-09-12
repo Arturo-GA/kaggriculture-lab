@@ -1,0 +1,32 @@
+{
+  "selected_by_screen": "h6",
+  "release_candidate": "matched6",
+  "screen_scores": {
+    "h2": [
+      0.0,
+      -2755.6666666666665
+    ],
+    "h6": [
+      1.0,
+      2214.6666666666665
+    ],
+    "h8": [
+      1.0,
+      2146.6666666666665
+    ],
+    "pressure": [
+      1.0,
+      1868.0
+    ],
+    "matched6": [
+      1.0,
+      2037.6666666666667
+    ]
+  },
+  "holdout_gate": true,
+  "packaged": "matched6",
+  "source_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+  "archive_sha256": "60e9c2c32c2b1a23378a9dd34b0ad1123268f7141feee43681eba27227e37364",
+  "scope": "CPU policy search; internal-family validation only; no leaderboard submission",
+  "leaderboard_score": null
+}
