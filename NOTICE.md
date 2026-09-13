@@ -42,3 +42,19 @@ for evaluation and are excluded from Git and the exported runtime. The routes14
 experiments incorporate the explicitly attributed schedule library; original
 baseline source notices remain intact. No endorsement by the upstream authors
 is implied.
+
+Modified September 12–13, 2026 by Arturo-GA / Kaggriculture Lab:
+
+- `ml_features.py`, `ml_policy.py`, `candidates/ml_*.py`: a learned macro-option
+  selector and forced-option controls on the unchanged matched6 executor.
+- `collect_ml.py`, `train_ml.py`: paired simulator-generated counterfactual data
+  and a 64-tree grouped-bootstrap critic. No third-party trained weights used.
+- `summarize_ml.py`, `profile_ml_latency.py`, tests and ML receipts: held-out
+  comparisons, uncertainty estimates and runtime diagnosis.
+- `make_ml_notebook.py`, `cloud_ml.py`: separate private Kaggle verification and
+  export, retaining the original kernel and its artifacts.
+
+Methodological sources: Kaggriculture discussions 738079 (high-level Options
+and constant-policy ablations) and 737027 (public inventory and uncertainty),
+and Q2RL (arXiv:2605.05172, value-based gating). This is an independently trained
+option critic, not a reproduction of Q2RL, RP1 or Deep SPI.

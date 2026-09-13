@@ -1,0 +1,20 @@
+{
+  "candidate": "ml_critic",
+  "source_sha256": {
+    "ml_critic": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+    "matched6": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489"
+  },
+  "local_receipts": {
+    "holdout": "275693b1e958ce4e45e287cd0eecb96e9ae2a5ef44890462ed3bf41a93ef7546",
+    "official": "2c88888aeb6949de3cae189aeb34463a9cefed5e290a9734772ba4b39445a23d"
+  },
+  "latency_diagnosis_sha256": "079bc1b04486f1a9e752d0f2fc5832ccb08fab25240cf88a6792aae8f3f4ed59",
+  "latency_resolution": "Original parallel holdout latency failure retained. Frozen policy must pass serial reruns of slowest contexts AND official-engine timing; cloud must independently satisfy the same 1000 ms limit.",
+  "cloud_seeds": [
+    75001,
+    75002,
+    75003,
+    75004
+  ],
+  "kernel": "jarturo/kaggriculture-learned-option-critic"
+}

@@ -1,0 +1,11 @@
+{
+  "observed_date": "2026-09-13",
+  "source": "Authenticated Kaggle CLI: competitions submissions -c kaggriculture -v",
+  "submission_id": 56190498,
+  "status": "COMPLETE",
+  "public_score": 2656.3,
+  "user_reported_rank_approximate": 400,
+  "user_reported_leader_score_approximate": 3200,
+  "rank_and_leader_independently_verified": false,
+  "note": "Reference rating of the existing submission, not a result of the new learned candidate."
+}

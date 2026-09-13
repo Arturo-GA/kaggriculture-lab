@@ -1,0 +1,2357 @@
+{
+  "training_contexts": 96,
+  "training_games": 480,
+  "selection_contexts": 36,
+  "selection_games": 180,
+  "model_sha256": "3349fd826e184faf1e8ae4799e03e06e7a616b2a700d9c06faaf306ec3842c02",
+  "training_data_sha256": "077503e8d0cedd34a822c65e28c5ed4f79b3e6ef471f35740785709e45d2e4f8",
+  "selection_data_sha256": "f0a2a254c8eacb058fb808b9f1e2d0561b7ccea0752eeae9d1eab76dd3bc3719",
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.5.3",
+    "sklearn": "1.7.2"
+  },
+  "export_exact_parity_checks": 8448,
+  "selected_gate": {
+    "quantile": 0.1,
+    "threshold": 0.0,
+    "choices": [
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2
+    ],
+    "metrics": {
+      "total": {
+        "games": 36,
+        "win_delta": 12,
+        "score_delta": 6.0,
+        "utility_delta": 6.410784916272233,
+        "interventions": 24
+      },
+      "per_opponent": {
+        "matched6": {
+          "games": 12,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "nagata": {
+          "games": 12,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 0
+        },
+        "router": {
+          "games": 12,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.07563473580694868,
+          "interventions": 12
+        }
+      },
+      "acceptable": true
+    }
+  },
+  "best_constant": {
+    "option": 2,
+    "candidate": "ml_h8",
+    "metrics": {
+      "total": {
+        "games": 36,
+        "win_delta": 12,
+        "score_delta": 6.0,
+        "utility_delta": 6.410784916272233,
+        "interventions": 36
+      },
+      "per_opponent": {
+        "matched6": {
+          "games": 12,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "nagata": {
+          "games": 12,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 12
+        },
+        "router": {
+          "games": 12,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.07563473580694868,
+          "interventions": 12
+        }
+      },
+      "acceptable": true
+    }
+  },
+  "grid": [
+    {
+      "quantile": 0.1,
+      "threshold": 0.0,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.410784916272233,
+          "interventions": 24
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.07563473580694868,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.01,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.025,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.05,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.1,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.2,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335150180465284,
+          "interventions": 12
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.3,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 6,
+          "score_delta": 3.0,
+          "utility_delta": 3.2099687257410876,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 6,
+            "score_delta": 3.0,
+            "utility_delta": 3.2099687257410876,
+            "interventions": 6
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.0,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.410784916272233,
+          "interventions": 24
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.07563473580694868,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.01,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.025,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.05,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.1,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.2,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.3,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.0,
+      "choices": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.410784916272233,
+          "interventions": 32
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 8
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.07563473580694868,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.01,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.359003572298834,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.023853391833549065,
+            "interventions": 6
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.025,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.05,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.1,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.2,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.3,
+      "choices": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.339993873302948,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.004843692837663838,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 2.0,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 0
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    }
+  ],
+  "constants": [
+    {
+      "option": 0,
+      "candidate": "ml_native",
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 0
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "option": 1,
+      "candidate": "ml_h2",
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": -6,
+          "score_delta": -12.0,
+          "utility_delta": -12.598925614150048,
+          "interventions": 36
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": -6.0,
+            "utility_delta": -6.341559001147845,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 12
+          },
+          "router": {
+            "games": 12,
+            "win_delta": -6,
+            "score_delta": -6.0,
+            "utility_delta": -6.257366613002203,
+            "interventions": 12
+          }
+        },
+        "acceptable": false
+      }
+    },
+    {
+      "option": 2,
+      "candidate": "ml_h8",
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.410784916272233,
+          "interventions": 36
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.335150180465284,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 12
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.07563473580694868,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "option": 3,
+      "candidate": "ml_h12",
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.335610204826969,
+          "interventions": 36
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.27398134177006,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 12
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0616288630569084,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "option": 4,
+      "candidate": "ml_h18",
+      "metrics": {
+        "total": {
+          "games": 36,
+          "win_delta": 12,
+          "score_delta": 6.0,
+          "utility_delta": 6.134382998856088,
+          "interventions": 36
+        },
+        "per_opponent": {
+          "matched6": {
+            "games": 12,
+            "win_delta": 12,
+            "score_delta": 6.0,
+            "utility_delta": 6.1260298469293835,
+            "interventions": 12
+          },
+          "nagata": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 12
+          },
+          "router": {
+            "games": 12,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.008353151926704161,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    }
+  ],
+  "exported": {
+    "parent_sha256": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+    "candidates": {
+      "ml_critic": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95"
+    },
+    "features_sha256": "c8936137923248a6abbf715a1259b2d98a441eba5f205fa523b6a53b3e32477f",
+    "policy_sha256": "cc0eed38d16e47897366bbc32b190291ae5306b33a790210cd5796104a3b7029",
+    "model_sha256": "3349fd826e184faf1e8ae4799e03e06e7a616b2a700d9c06faaf306ec3842c02"
+  },
+  "feature_importance": [
+    {
+      "feature": "cash_difference",
+      "importance": 0.42354586069352357
+    },
+    {
+      "feature": "public_layout_similarity",
+      "importance": 0.18132273971571836
+    },
+    {
+      "feature": "FERTILIZER_inventory",
+      "importance": 0.06735535586923887
+    },
+    {
+      "feature": "rival_cash",
+      "importance": 0.05629146209693516
+    },
+    {
+      "feature": "own_cash",
+      "importance": 0.027090744625633597
+    },
+    {
+      "feature": "TOMATO_price",
+      "importance": 0.022563670767998683
+    },
+    {
+      "feature": "STRAWBERRY_price",
+      "importance": 0.017628651794318384
+    },
+    {
+      "feature": "TOMATO_inventory",
+      "importance": 0.017593780800474784
+    },
+    {
+      "feature": "rival_weeds",
+      "importance": 0.01505588034566478
+    },
+    {
+      "feature": "STRAWBERRY_change48",
+      "importance": 0.01441853515592405
+    },
+    {
+      "feature": "STRAWBERRY_inventory",
+      "importance": 0.013634442518025355
+    },
+    {
+      "feature": "WOOL_price",
+      "importance": 0.012943104219576522
+    },
+    {
+      "feature": "shops_YARN_STORE",
+      "importance": 0.012746147761521822
+    },
+    {
+      "feature": "FERTILIZER_price",
+      "importance": 0.010578623659259356
+    },
+    {
+      "feature": "EGG_price",
+      "importance": 0.009961676493210553
+    },
+    {
+      "feature": "WOOL_inventory",
+      "importance": 0.009747100351359443
+    },
+    {
+      "feature": "MILK_change48",
+      "importance": 0.007967723285357596
+    },
+    {
+      "feature": "FERTILIZER_change48",
+      "importance": 0.00716749684319602
+    },
+    {
+      "feature": "CARROT_change48",
+      "importance": 0.005902620662392466
+    },
+    {
+      "feature": "CARROT_price",
+      "importance": 0.005784041656979606
+    },
+    {
+      "feature": "MILK_price",
+      "importance": 0.005202400851403987
+    },
+    {
+      "feature": "EGG_change48",
+      "importance": 0.0050314861754978514
+    },
+    {
+      "feature": "shops_BRUNCH_SPOT",
+      "importance": 0.004806870208324992
+    },
+    {
+      "feature": "MILK_inventory",
+      "importance": 0.004623530932537465
+    },
+    {
+      "feature": "WHEAT_inventory",
+      "importance": 0.0044893576095472575
+    },
+    {
+      "feature": "TOMATO_change48",
+      "importance": 0.00413254044447714
+    },
+    {
+      "feature": "CARROT_inventory",
+      "importance": 0.003943319138358555
+    },
+    {
+      "feature": "EGG_inventory",
+      "importance": 0.0039402577087038135
+    },
+    {
+      "feature": "own_COW_count",
+      "importance": 0.0038989827217488274
+    },
+    {
+      "feature": "shops_FARMERS_MARKET",
+      "importance": 0.003430051058336603
+    },
+    {
+      "feature": "WOOL_change48",
+      "importance": 0.002487716342554435
+    },
+    {
+      "feature": "WHEAT_own_shed",
+      "importance": 0.0024259516276027245
+    },
+    {
+      "feature": "MELON_inventory",
+      "importance": 0.0019311442695962473
+    },
+    {
+      "feature": "own_SHEEP_count",
+      "importance": 0.0018800130991957482
+    },
+    {
+      "feature": "rival_SHEEP_count",
+      "importance": 0.0018415752611627269
+    },
+    {
+      "feature": "WHEAT_change48",
+      "importance": 0.0017897955395892718
+    },
+    {
+      "feature": "shops_ICE_CREAM_SHOP",
+      "importance": 0.0013911849145849778
+    },
+    {
+      "feature": "shops_SMOOTHIE_SHOP",
+      "importance": 0.0011471761919236688
+    },
+    {
+      "feature": "shops_BAKERY",
+      "importance": 0.0011102831997057698
+    },
+    {
+      "feature": "shops_PIZZA_SHOP",
+      "importance": 0.0006705073215034208
+    },
+    {
+      "feature": "rival_GOOSE_count",
+      "importance": 0.00027770437563105256
+    },
+    {
+      "feature": "WHEAT_price",
+      "importance": 0.000248423459175644
+    },
+    {
+      "feature": "rival_COW_count",
+      "importance": 6.280922690044448e-08
+    },
+    {
+      "feature": "rival_COW_ripe",
+      "importance": 4.1018810757258045e-09
+    },
+    {
+      "feature": "rival_WHEAT_ripe",
+      "importance": 1.321420946525859e-09
+    },
+    {
+      "feature": "own_workers",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_land",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_weeds",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_WHEAT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_WHEAT_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_CARROT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_CARROT_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_TOMATO_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_TOMATO_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_STRAWBERRY_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_STRAWBERRY_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_MELON_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_MELON_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_GOOSE_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_GOOSE_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_COW_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_SHEEP_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_workers",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_land",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_WHEAT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_CARROT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_CARROT_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_TOMATO_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_TOMATO_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_STRAWBERRY_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_STRAWBERRY_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_MELON_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_MELON_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_GOOSE_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_SHEEP_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "WHEAT_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "CARROT_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "CARROT_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "TOMATO_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "TOMATO_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "STRAWBERRY_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "STRAWBERRY_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_price",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_change48",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "EGG_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "EGG_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "MILK_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "MILK_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "WOOL_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "WOOL_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "FERTILIZER_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "FERTILIZER_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "shops_PET_CAFE",
+      "importance": 0.0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "split": "pilot",
+  "expected_contexts": 2,
+  "complete": true,
+  "feature_schema_sha256": "c8936137923248a6abbf715a1259b2d98a441eba5f205fa523b6a53b3e32477f",
+  "policy_sha256": "0084b9332ba7dcea1450756febbdbcd8d52193ac5e3c3eebb7d1f36fbfb03217",
+  "candidates": {
+    "ml_native": "796aabfdd54570c2113d54cbf81dd3d674a1766e2c9a92922d8a2bb21510bff4",
+    "ml_h2": "7f1fc6df005bc7eeea7691a94e630d0f0c808361c00b29318730bb09dc9cc814",
+    "ml_h8": "48eb252fbd12e7e5085003eaf38966da01a84991af5d022d8b470dac9e750693",
+    "ml_h12": "9a7cac4d18e1541e2e2eab10eeb86f8ebb0922ce68d4d563a4f6bfde7f6e0c17",
+    "ml_h18": "e74571a0f335ecc01f0dcbddd633ce2d65f7d98bc7163612544cf84b3516b779"
+  },
+  "plan_sha256": "66660ca873cc379ae1981be2687b755d79316292a355790e5d578897e7b63d5a",
+  "contexts": 2,
+  "games": 10
+}

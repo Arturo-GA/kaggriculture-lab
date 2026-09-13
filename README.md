@@ -8,6 +8,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 - [Resultados y limitaciones](RESULTS.es.md)
 - [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)
 - [Papers recientes, cinco prototipos y simulación 8,72× más rápida](RESEARCH_2026_09_12.es.md)
+- [Modelo entrenado, validación reservada y nuevo candidato](ML_RESULTS.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -32,6 +33,13 @@ En tres comparaciones completas, el evaluador fue **8,72× más rápido** y repr
 recompensas, tiendas y telemetría. Los prototipos no añadieron victorias; se mantiene
 matched6. Hay 602 partidas de estrategia documentadas entre las rondas, con
 controles y repeticiones; las pruebas de equivalencia se cuentan aparte.
+
+**13 de septiembre:** la submission original marca **2656,3** en la API de Kaggle.
+El nuevo modelo `ml_critic` obtiene 78/80 victorias en la prueba reservada frente
+a 61/80 de matched6 (con 14 empates). La opción fija h8 también obtiene 78/80;
+todavía no se demuestra una ventaja de victorias del aprendizaje sobre ella.
+El [informe de esta ronda](ML_RESULTS.es.md) conserva los detalles y el diagnóstico
+de latencia. El nuevo experimento utiliza `kaggle_ml/` y un kernel privado separado.
 
 ## Reproducir
 
