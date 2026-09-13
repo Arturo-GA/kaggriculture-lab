@@ -23,9 +23,12 @@ El selector antiguo se omite para la opción modificada. No hay entrenamiento nu
   del paquete a LZMA; sus archivos son idénticos por bytes. Tamaño final 362.606 bytes.
 - El kernel privado `jarturo/kaggriculture-frontier-joint-planner` recibió la versión 2.
   Directorio actual: `kaggle_frontier2/`; versiones anteriores archivadas por separado.
-- Pendiente de cerrar: descargar la nueva salida, ejecutar `verify_frontier2_cloud.py`
-  y registrar el resultado final de la nube. Debe mejorar el resultado agregado
-  sobre Frontier sin regresión por rival, ni errores, ni llamadas de 1.000 ms.
+- **COMPLETE y verificada** la versión 2: `verify_frontier2_cloud.py` aprobado.
+  Contra Frontier: 5 victorias, 2 empates y 1 derrota; contra ml_critic: 7 victorias
+  y 1 derrota. Diferencia emparejada de resultado +2 por rival. Máximo 267,7 ms.
+  Archivo `results/frontier2/kaggle/submission.tar.gz`, SHA-256
+  `adcab448c1ed6db9b52c1af1f48f52d1ca13aaa2fff8abf5557da81e7ab9427d`.
+  La política descargada es idéntica al candidato local congelado.
 
 No se envió automáticamente al leaderboard. No crear automatizaciones ni continuar
 experimentos nuevos sin petición. El control completo de la saturación del almacén

@@ -86,3 +86,12 @@ conservando su historial. Antes de exportar ejecuta otras 32 partidas oficiales,
 con semillas 90001–90004, comparando las dos versiones frente a Frontier y ml_critic.
 Exige mejora total positiva y ninguna regresión agregada por rival, ausencia de errores
 reportados y llamadas por debajo de 1.000 ms. No envía al leaderboard automáticamente.
+
+Kaggle completó la comprobación y el archivo descargado es idéntico al candidato local.
+
+| Rival en la nube | Victorias / empates / derrotas | Diferencia de resultado contra el control |
+| --- | --- | --- |
+| frontier | 5 / 2 / 1 | +2 |
+| ml_critic | 7 / 0 / 1 | +2 |
+
+Máximo por llamada: 267.7 ms. [Archivo verificado](results/frontier2/kaggle/submission.tar.gz). [Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner). No se envió otra submission al leaderboard.

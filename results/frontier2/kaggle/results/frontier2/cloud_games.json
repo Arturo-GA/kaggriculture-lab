@@ -1,0 +1,1911 @@
+{
+  "engine": "1.32.7",
+  "expected_games": 32,
+  "complete": true,
+  "rows": [
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90001,
+      "seat": 1,
+      "rewards": [
+        67634.0,
+        68135.0
+      ],
+      "margin": 501.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.376087452999997,
+      "max_call_ms": 88.59507899998675,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90001,
+      "seat": 0,
+      "rewards": [
+        67634.0,
+        68135.0
+      ],
+      "margin": -501.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.534219804000003,
+      "max_call_ms": 87.16831500001376,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90002,
+      "seat": 0,
+      "rewards": [
+        106102.0,
+        106102.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.222561611000003,
+      "max_call_ms": 95.1115469999877,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90002,
+      "seat": 1,
+      "rewards": [
+        106102.0,
+        106102.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.420733111999994,
+      "max_call_ms": 93.60260100001483,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90003,
+      "seat": 0,
+      "rewards": [
+        114926.0,
+        114658.0
+      ],
+      "margin": 268.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.670092433999997,
+      "max_call_ms": 97.74362699999983,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 30,
+        "auction_water_requests": 17,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 6,
+        "auction_input_applications": 12,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 2,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90003,
+      "seat": 1,
+      "rewards": [
+        114658.0,
+        114926.0
+      ],
+      "margin": 268.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.739381650000013,
+      "max_call_ms": 90.9743899999853,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 30,
+        "auction_water_requests": 17,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 6,
+        "auction_input_applications": 12,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 2,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90004,
+      "seat": 0,
+      "rewards": [
+        96283.0,
+        95771.0
+      ],
+      "margin": 512.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.527203649,
+      "max_call_ms": 92.80007500001375,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 2,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 28,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "frontier",
+      "seed": 90004,
+      "seat": 1,
+      "rewards": [
+        95771.0,
+        96283.0
+      ],
+      "margin": 512.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.756219954000017,
+      "max_call_ms": 94.58603900003482,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 2,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 28,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90001,
+      "seat": 0,
+      "rewards": [
+        67339.0,
+        67658.0
+      ],
+      "margin": -319.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.556648268000004,
+      "max_call_ms": 88.74118199997838,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90001,
+      "seat": 1,
+      "rewards": [
+        67157.0,
+        67840.0
+      ],
+      "margin": 683.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.372258095000007,
+      "max_call_ms": 86.36535100004039,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90002,
+      "seat": 0,
+      "rewards": [
+        105868.0,
+        105861.0
+      ],
+      "margin": 7.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.389641541000003,
+      "max_call_ms": 94.69167100002096,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90002,
+      "seat": 1,
+      "rewards": [
+        105861.0,
+        105868.0
+      ],
+      "margin": 7.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.282918200999973,
+      "max_call_ms": 93.68348900000001,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90003,
+      "seat": 0,
+      "rewards": [
+        114896.0,
+        114335.0
+      ],
+      "margin": 561.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.499219713000002,
+      "max_call_ms": 267.72648600001503,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 30,
+        "auction_water_requests": 17,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 6,
+        "auction_input_applications": 12,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 2,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90003,
+      "seat": 1,
+      "rewards": [
+        114335.0,
+        114896.0
+      ],
+      "margin": 561.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.553312376999997,
+      "max_call_ms": 93.2640910000373,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 30,
+        "auction_water_requests": 17,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 6,
+        "auction_input_applications": 12,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 2,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90004,
+      "seat": 0,
+      "rewards": [
+        95894.0,
+        95643.0
+      ],
+      "margin": 251.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.613826936999999,
+      "max_call_ms": 93.46840300003123,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 2,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 28,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier2_early",
+      "opponent": "ml_critic",
+      "seed": 90004,
+      "seat": 1,
+      "rewards": [
+        95643.0,
+        95894.0
+      ],
+      "margin": 251.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.270776480999984,
+      "max_call_ms": 89.81777500002863,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 7,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 2,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 28,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "early_deliveries": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90001,
+      "seat": 0,
+      "rewards": [
+        67634.0,
+        68135.0
+      ],
+      "margin": -501.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.368787171999998,
+      "max_call_ms": 51.13952900001095,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90001,
+      "seat": 1,
+      "rewards": [
+        67634.0,
+        68135.0
+      ],
+      "margin": 501.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.45055305699998,
+      "max_call_ms": 52.10308700003452,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90002,
+      "seat": 0,
+      "rewards": [
+        106102.0,
+        106102.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.677888678999977,
+      "max_call_ms": 88.20129500003304,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90002,
+      "seat": 1,
+      "rewards": [
+        106102.0,
+        106102.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.276349964000019,
+      "max_call_ms": 55.41353500001378,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90003,
+      "seat": 0,
+      "rewards": [
+        114817.0,
+        114817.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.388098956000022,
+      "max_call_ms": 54.95539399998961,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 5,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 16,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 43,
+        "auction_input_purchase": 3,
+        "auction_input_applications": 9,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90003,
+      "seat": 1,
+      "rewards": [
+        114817.0,
+        114817.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.462992615000019,
+      "max_call_ms": 54.20342900004016,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 5,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 16,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 43,
+        "auction_input_purchase": 3,
+        "auction_input_applications": 9,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90004,
+      "seat": 0,
+      "rewards": [
+        96031.0,
+        96031.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.370570869999995,
+      "max_call_ms": 269.3592300000205,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 32,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "frontier",
+      "seed": 90004,
+      "seat": 1,
+      "rewards": [
+        96031.0,
+        96031.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.19459019499999,
+      "max_call_ms": 54.63060499999983,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 32,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90001,
+      "seat": 0,
+      "rewards": [
+        67339.0,
+        67658.0
+      ],
+      "margin": -319.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.056458131999989,
+      "max_call_ms": 51.541877999966346,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90001,
+      "seat": 1,
+      "rewards": [
+        67157.0,
+        67840.0
+      ],
+      "margin": 683.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.370962272999975,
+      "max_call_ms": 51.035665000028985,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 26,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 4,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 35,
+        "auction_input_purchase": 9,
+        "auction_input_applications": 15,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BRUNCH_SPOT",
+        "YARN_STORE",
+        "BAKERY",
+        "BAKERY",
+        "BAKERY",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90002,
+      "seat": 0,
+      "rewards": [
+        105868.0,
+        105861.0
+      ],
+      "margin": 7.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.51507294999999,
+      "max_call_ms": 55.66729399998849,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90002,
+      "seat": 1,
+      "rewards": [
+        105861.0,
+        105868.0
+      ],
+      "margin": 7.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.143345509000028,
+      "max_call_ms": 53.7803430000281,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 6,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 19,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 36,
+        "auction_input_purchase": 7,
+        "auction_input_applications": 13,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PET_CAFE",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "PET_CAFE",
+        "PET_CAFE"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90003,
+      "seat": 0,
+      "rewards": [
+        114749.0,
+        114509.0
+      ],
+      "margin": 240.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.61068657200002,
+      "max_call_ms": 292.0468550000237,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 5,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 16,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 43,
+        "auction_input_purchase": 3,
+        "auction_input_applications": 9,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90003,
+      "seat": 1,
+      "rewards": [
+        114509.0,
+        114749.0
+      ],
+      "margin": 240.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.498964016000002,
+      "max_call_ms": 53.83411000002525,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 5,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 31,
+        "auction_water_requests": 16,
+        "auction_fertilizer_requests": 3,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 43,
+        "auction_input_purchase": 3,
+        "auction_input_applications": 9,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "PET_CAFE",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90004,
+      "seat": 0,
+      "rewards": [
+        95624.0,
+        95899.0
+      ],
+      "margin": -275.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.402193104000048,
+      "max_call_ms": 56.01187799999252,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 32,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "frontier",
+      "opponent": "ml_critic",
+      "seed": 90004,
+      "seat": 1,
+      "rewards": [
+        95899.0,
+        95624.0
+      ],
+      "margin": -275.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 10.15971977700002,
+      "max_call_ms": 54.22263999997767,
+      "calls": 719,
+      "telemetry": {
+        "auction_hire_cost": 54.0,
+        "auction_unassigned": 8,
+        "auction_errors": 0,
+        "auction_turns": 23,
+        "auction_planned_workers": 8,
+        "auction_harvest_requests": 29,
+        "auction_water_requests": 20,
+        "auction_fertilizer_requests": 1,
+        "auction_hire_requests": 8,
+        "auction_late_returns": 32,
+        "auction_input_purchase": 8,
+        "auction_input_applications": 14,
+        "frontier_choice": 1,
+        "frontier_decisions": 1,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP",
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+      "opponent_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    }
+  ]
+}

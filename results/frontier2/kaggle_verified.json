@@ -1,0 +1,28 @@
+{
+  "verified": true,
+  "kernel": "jarturo/kaggriculture-frontier-joint-planner",
+  "passed": true,
+  "candidate": "frontier2_early",
+  "games": 32,
+  "per_opponent": {
+    "frontier": {
+      "games": 8,
+      "wins": 5,
+      "ties": 2,
+      "losses": 1,
+      "score_delta": 2.0
+    },
+    "ml_critic": {
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 2.0
+    }
+  },
+  "errors": [],
+  "max_call_ms": 267.72648600001503,
+  "source_sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+  "leaderboard_submitted": false,
+  "archive_sha256": "adcab448c1ed6db9b52c1af1f48f52d1ca13aaa2fff8abf5557da81e7ab9427d"
+}

@@ -62,6 +62,12 @@ El notebook actualizado se genera en `kaggle_frontier2/`; la carpeta anterior
 mismo kernel privado y exige una nueva comparación en la nube antes de exportar.
 No se envía una submission al leaderboard automáticamente.
 
+**Versión 2 COMPLETE y verificada en Kaggle:** 5 victorias, 2 empates y 1 derrota
+frente a Frontier; 7 victorias y 1 derrota frente a ml_critic. Mejora de resultado
+emparejado +2 para cada rival, con máximo de 267,7 ms por llamada. Archivo nuevo:
+[`results/frontier2/kaggle/submission.tar.gz`](results/frontier2/kaggle/submission.tar.gz).
+Todavía no se envió al leaderboard; los archivos de la versión 1 se conservan.
+
 **Nueva ronda del 13 de septiembre: Frontier.** Planificador propio del último día:
 contratación, fertilizante, cosecha, rutas y ventas, con selector entrenado. Conserva
 la producción anterior de V37 / ml_critic. Panel reservado: 76 victorias y 4 derrotas
