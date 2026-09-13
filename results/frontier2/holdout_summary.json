@@ -1,0 +1,160 @@
+{
+  "source": "results/frontier2/holdout.json",
+  "baseline": "frontier",
+  "games": 240,
+  "candidates": {
+    "frontier": {
+      "total": {
+        "games": 120,
+        "wins": 87,
+        "ties": 24,
+        "losses": 9,
+        "win_delta": 0,
+        "score_delta": 0.0,
+        "margin_delta_sum": 0.0
+      },
+      "per_opponent": {
+        "frontier": {
+          "games": 24,
+          "wins": 1,
+          "ties": 22,
+          "losses": 1,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 0.0
+        },
+        "ml_critic": {
+          "games": 24,
+          "wins": 14,
+          "ties": 2,
+          "losses": 8,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 0.0
+        },
+        "router": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 0.0
+        },
+        "prvsiyan": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 0.0
+        },
+        "kaito": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 0.0
+        }
+      },
+      "errors": [],
+      "outcomes_gate_passed": false,
+      "latency_gate_passed": true,
+      "max_call_ms": 827.998899971135,
+      "gate_passed": false,
+      "seed_clusters": 12,
+      "paired_score_delta_mean": 0.0,
+      "seed_bootstrap_95_percentile_interval": [
+        0.0,
+        0.0
+      ],
+      "choices": {
+        "1": 104,
+        "0": 16
+      },
+      "changed_horizon_calls": 3120,
+      "candidate_sha256": [
+        "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c"
+      ]
+    },
+    "frontier2_early": {
+      "total": {
+        "games": 120,
+        "wins": 109,
+        "ties": 8,
+        "losses": 3,
+        "win_delta": 22,
+        "score_delta": 14.0,
+        "margin_delta_sum": 34086.0
+      },
+      "per_opponent": {
+        "frontier": {
+          "games": 24,
+          "wins": 13,
+          "ties": 8,
+          "losses": 3,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "margin_delta_sum": 6966.0
+        },
+        "ml_critic": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 10,
+          "score_delta": 9.0,
+          "margin_delta_sum": 8228.0
+        },
+        "router": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 7162.0
+        },
+        "prvsiyan": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 8169.0
+        },
+        "kaito": {
+          "games": 24,
+          "wins": 24,
+          "ties": 0,
+          "losses": 0,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "margin_delta_sum": 3561.0
+        }
+      },
+      "errors": [],
+      "outcomes_gate_passed": true,
+      "latency_gate_passed": true,
+      "max_call_ms": 501.22790003661066,
+      "gate_passed": true,
+      "seed_clusters": 12,
+      "paired_score_delta_mean": 0.11666666666666668,
+      "seed_bootstrap_95_percentile_interval": [
+        0.03333333333333333,
+        0.19999999999999998
+      ],
+      "choices": {
+        "1": 120
+      },
+      "changed_horizon_calls": 0,
+      "candidate_sha256": [
+        "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c"
+      ]
+    }
+  }
+}

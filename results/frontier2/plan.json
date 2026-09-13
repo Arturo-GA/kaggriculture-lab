@@ -1,0 +1,11 @@
+{
+  "specified_before_screening": true,
+  "diagnostic_seeds": [87001,87002,87003,87004,85003],
+  "screen_opponents": ["frontier","ml_critic","router"],
+  "holdout_seeds": [88001,88002,88003,88004,88005,88006,88007,88008,88009,88010,88011,88012],
+  "holdout_opponents": ["frontier","ml_critic","router","prvsiyan","kaito"],
+  "official_seeds": [89001,89002,89003,89004],
+  "cloud_seeds": [90001,90002,90003,90004],
+  "selection": "Choose on diagnostic/screen data before holdout. Require aggregate score improvement over Frontier and no family score regression on new seeds, then official confirmation. No repeat tuning on holdout.",
+  "limitations": "C++ exploratory only due known discrepancies. New controller is evaluated without reusing the old gate trained on a different option. Live public replays diagnose original behavior; no opponent private source is claimed."
+}

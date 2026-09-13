@@ -4,3 +4,4 @@ candidates/*.py -text
 *.ipynb -text
 results/ml/** -text
 results/gold/** -text
+results/frontier2/** -text

@@ -1,0 +1,8 @@
+{
+  "frontier2_no_delivery": {
+    "sha256": "5d833af8ce030c67c3168f99a0b7bbf77ab581579df62de2fee7c230d2080a6d",
+    "threshold": 10000000,
+    "stagger": 1,
+    "selector": "forced planner; old learned gate not reused for changed option"
+  }
+}

@@ -1,0 +1,2863 @@
+# Modified 2026-09-12 Arturo-GA: trained economic option policy; Apache-2.0.
+# EXP-173 isolate opening market sequence inspired by yhay81/shop-router-0911-simple (Apache-2.0).
+# Kaggriculture EXP-167 candidate. Not submitted automatically.
+# Attribution: thomastschinkel, yhay81, destbreso, aurax7, tetsutani,
+# prvsiyan and Dmitrii Gluzdov. Apache-2.0 derivations; notices retained below.
+# Kaggriculture v31 / EXP-157, Ahmed Berat Ozer, September 9 2026.
+# Selected mechanism: crop_public_order. New independent confirmation is required.
+# Public V221B/V224C production/timing lineage: prvsiyan, Apache-2.0.
+# Original economics and integration; retained upstream licenses follow.
+# Kaggriculture v28 / EXP-154, Ahmed Berat Ozer, September 9 2026.
+# Changes: aurax7 day-end storage guard; Dmitrii Gluzdov physical terminal rescue
+# adapted to v27, with 64 deterministic simulations. Apache-2.0.
+# New action tapes and ordered shop-pair map: yhay81/shop-router-0909, Apache-2.0.
+# Kaggriculture v25, EXP-149: Shop0908 production, sale lead, terminal cargo rescue.
+# Runtime chassis: Apache-2.0; thomastschinkel, yhay81, tetsutani.
+# Routing and public action data: yhay81/shop-router-0908, frozen September 8, 2026.
+# 
+#                                  Apache License
+#                            Version 2.0, January 2004
+#                         http://www.apache.org/licenses/
+# 
+#    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+# 
+#    1. Definitions.
+# 
+#       "License" shall mean the terms and conditions for use, reproduction,
+#       and distribution as defined by Sections 1 through 9 of this document.
+# 
+#       "Licensor" shall mean the copyright owner or entity authorized by
+#       the copyright owner that is granting the License.
+# 
+#       "Legal Entity" shall mean the union of the acting entity and all
+#       other entities that control, are controlled by, or are under common
+#       control with that entity. For the purposes of this definition,
+#       "control" means (i) the power, direct or indirect, to cause the
+#       direction or management of such entity, whether by contract or
+#       otherwise, or (ii) ownership of fifty percent (50%) or more of the
+#       outstanding shares, or (iii) beneficial ownership of such entity.
+# 
+#       "You" (or "Your") shall mean an individual or Legal Entity
+#       exercising permissions granted by this License.
+# 
+#       "Source" form shall mean the preferred form for making modifications,
+#       including but not limited to software source code, documentation
+#       source, and configuration files.
+# 
+#       "Object" form shall mean any form resulting from mechanical
+#       transformation or translation of a Source form, including but
+#       not limited to compiled object code, generated documentation,
+#       and conversions to other media types.
+# 
+#       "Work" shall mean the work of authorship, whether in Source or
+#       Object form, made available under the License, as indicated by a
+#       copyright notice that is included in or attached to the work
+#       (an example is provided in the Appendix below).
+# 
+#       "Derivative Works" shall mean any work, whether in Source or Object
+#       form, that is based on (or derived from) the Work and for which the
+#       editorial revisions, annotations, elaborations, or other modifications
+#       represent, as a whole, an original work of authorship. For the purposes
+#       of this License, Derivative Works shall not include works that remain
+#       separable from, or merely link (or bind by name) to the interfaces of,
+#       the Work and Derivative Works thereof.
+# 
+#       "Contribution" shall mean any work of authorship, including
+#       the original version of the Work and any modifications or additions
+#       to that Work or Derivative Works thereof, that is intentionally
+#       submitted to Licensor for inclusion in the Work by the copyright owner
+#       or by an individual or Legal Entity authorized to submit on behalf of
+#       the copyright owner. For the purposes of this definition, "submitted"
+#       means any form of electronic, verbal, or written communication sent
+#       to the Licensor or its representatives, including but not limited to
+#       communication on electronic mailing lists, source code control systems,
+#       and issue tracking systems that are managed by, or on behalf of, the
+#       Licensor for the purpose of discussing and improving the Work, but
+#       excluding communication that is conspicuously marked or otherwise
+#       designated in writing by the copyright owner as "Not a Contribution."
+# 
+#       "Contributor" shall mean Licensor and any individual or Legal Entity
+#       on behalf of whom a Contribution has been received by Licensor and
+#       subsequently incorporated within the Work.
+# 
+#    2. Grant of Copyright License. Subject to the terms and conditions of
+#       this License, each Contributor hereby grants to You a perpetual,
+#       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+#       copyright license to reproduce, prepare Derivative Works of,
+#       publicly display, publicly perform, sublicense, and distribute the
+#       Work and such Derivative Works in Source or Object form.
+# 
+#    3. Grant of Patent License. Subject to the terms and conditions of
+#       this License, each Contributor hereby grants to You a perpetual,
+#       worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+#       (except as stated in this section) patent license to make, have made,
+#       use, offer to sell, sell, import, and otherwise transfer the Work,
+#       where such license applies only to those patent claims licensable
+#       by such Contributor that are necessarily infringed by their
+#       Contribution(s) alone or by combination of their Contribution(s)
+#       with the Work to which such Contribution(s) was submitted. If You
+#       institute patent litigation against any entity (including a
+#       cross-claim or counterclaim in a lawsuit) alleging that the Work
+#       or a Contribution incorporated within the Work constitutes direct
+#       or contributory patent infringement, then any patent licenses
+#       granted to You under this License for that Work shall terminate
+#       as of the date such litigation is filed.
+# 
+#    4. Redistribution. You may reproduce and distribute copies of the
+#       Work or Derivative Works thereof in any medium, with or without
+#       modifications, and in Source or Object form, provided that You
+#       meet the following conditions:
+# 
+#       (a) You must give any other recipients of the Work or
+#           Derivative Works a copy of this License; and
+# 
+#       (b) You must cause any modified files to carry prominent notices
+#           stating that You changed the files; and
+# 
+#       (c) You must retain, in the Source form of any Derivative Works
+#           that You distribute, all copyright, patent, trademark, and
+#           attribution notices from the Source form of the Work,
+#           excluding those notices that do not pertain to any part of
+#           the Derivative Works; and
+# 
+#       (d) If the Work includes a "NOTICE" text file as part of its
+#           distribution, then any Derivative Works that You distribute must
+#           include a readable copy of the attribution notices contained
+#           within such NOTICE file, excluding those notices that do not
+#           pertain to any part of the Derivative Works, in at least one
+#           of the following places: within a NOTICE text file distributed
+#           as part of the Derivative Works; within the Source form or
+#           documentation, if provided along with the Derivative Works; or,
+#           within a display generated by the Derivative Works, if and
+#           wherever such third-party notices normally appear. The contents
+#           of the NOTICE file are for informational purposes only and
+#           do not modify the License. You may add Your own attribution
+#           notices within Derivative Works that You distribute, alongside
+#           or as an addendum to the NOTICE text from the Work, provided
+#           that such additional attribution notices cannot be construed
+#           as modifying the License.
+# 
+#       You may add Your own copyright statement to Your modifications and
+#       may provide additional or different license terms and conditions
+#       for use, reproduction, or distribution of Your modifications, or
+#       for any such Derivative Works as a whole, provided Your use,
+#       reproduction, and distribution of the Work otherwise complies with
+#       the conditions stated in this License.
+# 
+#    5. Submission of Contributions. Unless You explicitly state otherwise,
+#       any Contribution intentionally submitted for inclusion in the Work
+#       by You to the Licensor shall be under the terms and conditions of
+#       this License, without any additional terms or conditions.
+#       Notwithstanding the above, nothing herein shall supersede or modify
+#       the terms of any separate license agreement you may have executed
+#       with Licensor regarding such Contributions.
+# 
+#    6. Trademarks. This License does not grant permission to use the trade
+#       names, trademarks, service marks, or product names of the Licensor,
+#       except as required for reasonable and customary use in describing the
+#       origin of the Work and reproducing the content of the NOTICE file.
+# 
+#    7. Disclaimer of Warranty. Unless required by applicable law or
+#       agreed to in writing, Licensor provides the Work (and each
+#       Contributor provides its Contributions) on an "AS IS" BASIS,
+#       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+#       implied, including, without limitation, any warranties or conditions
+#       of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+#       PARTICULAR PURPOSE. You are solely responsible for determining the
+#       appropriateness of using or redistributing the Work and assume any
+#       risks associated with Your exercise of permissions under this License.
+# 
+#    8. Limitation of Liability. In no event and under no legal theory,
+#       whether in tort (including negligence), contract, or otherwise,
+#       unless required by applicable law (such as deliberate and grossly
+#       negligent acts) or agreed to in writing, shall any Contributor be
+#       liable to You for damages, including any direct, indirect, special,
+#       incidental, or consequential damages of any character arising as a
+#       result of this License or out of the use or inability to use the
+#       Work (including but not limited to damages for loss of goodwill,
+#       work stoppage, computer failure or malfunction, or any and all
+#       other commercial damages or losses), even if such Contributor
+#       has been advised of the possibility of such damages.
+# 
+#    9. Accepting Warranty or Additional Liability. While redistributing
+#       the Work or Derivative Works thereof, You may choose to offer,
+#       and charge a fee for, acceptance of support, warranty, indemnity,
+#       or other liability obligations and/or rights consistent with this
+#       License. However, in accepting such obligations, You may act only
+#       on Your own behalf and on Your sole responsibility, not on behalf
+#       of any other Contributor, and only if You agree to indemnify,
+#       defend, and hold each Contributor harmless for any liability
+#       incurred by, or claims asserted against, such Contributor by reason
+#       of your accepting any such warranty or additional liability.
+# 
+#    END OF TERMS AND CONDITIONS
+# 
+#    APPENDIX: How to apply the Apache License to your work.
+# 
+#       To apply the Apache License to your work, attach the following
+#       boilerplate notice, with the fields enclosed by brackets "[]"
+#       replaced with your own identifying information. (Don't include
+#       the brackets!)  The text should be enclosed in the appropriate
+#       comment syntax for the file format. We also recommend that a
+#       file or class name and description of purpose be included on the
+#       same "printed page" as the copyright notice for easier
+#       identification within third-party archives.
+# 
+#    Copyright [yyyy] [name of copyright owner]
+# 
+#    Licensed under the Apache License, Version 2.0 (the "License");
+#    you may not use this file except in compliance with the License.
+#    You may obtain a copy of the License at
+# 
+#        http://www.apache.org/licenses/LICENSE-2.0
+# 
+#    Unless required by applicable law or agreed to in writing, software
+#    distributed under the License is distributed on an "AS IS" BASIS,
+#    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#    See the License for the specific language governing permissions and
+#    limitations under the License.
+"""Kaggriculture route-replay chassis (pure Python, stdlib only).
+
+A *route* is a pre-computed tape of 719 Kaggle-format actions
+``{"farmer": [op, ...], "hands": [[op, ...], ...], "market": [[order, item, qty], ...]}``.
+The chassis replays the tape chosen by a caller-supplied ``router`` and wraps it
+in small reactive layers (each independently switchable via ``settings``):
+
+    hand_align            pad/truncate hands to the real hand count      (fieldbook_logic)
+    weed_repair           DIG a weed that blocks PLANT/BUILD, replay      (tetsutani + task spec)
+    sell_lead             sell next step's lots one step early            (fieldbook _lead_sale)
+    front_run             sell before the opponent's scheduled SELL       (hook; opponent_plan)
+    budget_guard          fund each 72-step block's purchases             (six_day_budget_guard.hpp)
+    room_guard            keep shed <= 99 at hour 23                      (tetsutani)
+    clamp_sells           trim SELL orders to the projected shed          (tetsutani)
+    dead_stock            sell stock the route will never sell            (tetsutani)
+    terminal_liquidation  step >= 718: sell the whole projected shed      (fieldbook _terminal_sale)
+
+Engine facts (verified against kaggle_environments 1.32.7, env_1_32_7.py):
+  observation["farms"][p] = {"money", "tiles"[y][x], "farmer"[x,y], "hands"[[x,y]..],
+                             "unlocked_quadrants", "hires_today"}
+  tiles: None (empty) | "LOCKED" | {"kind": WEED|COOP|PASTURE|PLANT, "crop"/"animal", ...}
+  observation["private"] = {"shed": {item: n}, "seeds": {crop: n}, "inventories": [{}...]}
+  observation["market"] = {"inventory": {...}, "prices": {...}}
+  observation["town"] = {"unlocked_shops": [...]}
+  Agents act on steps 0..718 (interpreter marks DONE once step >= episodeSteps-2).
+"""
+from __future__ import annotations
+
+import copy
+
+PRODUCTS = ("WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL", "FERTILIZER")
+SEED_PRICE = {"WHEAT": 10, "CARROT": 20, "TOMATO": 50, "STRAWBERRY": 100, "MELON": 80}
+ANIMAL_COST = {"GOOSE": 300, "COW": 400, "SHEEP": 500}
+ANIMAL_STRUCTURE = {"GOOSE": "COOP", "COW": "PASTURE", "SHEEP": "PASTURE"}
+LAND_PRICES = (1000, 2000, 4000)
+MOVES = {"NORTH": (0, -1), "SOUTH": (0, 1), "EAST": (1, 0), "WEST": (-1, 0)}
+FRONT_RUN_ITEMS = ("MILK", "WOOL", "STRAWBERRY", "MELON")
+LAST_ACT_STEP = 718
+PASS_ACTION = {"farmer": ["PASS"], "hands": [], "market": []}
+
+DEFAULT_SETTINGS = {
+    "hand_align": True,
+    "weed_repair": True,
+    "sell_lead": True,
+    "front_run": True,
+    "budget_guard": True,
+    "room_guard": True,
+    "clamp_sells": True,
+    "dead_stock": True,
+    "terminal_liquidation": True,
+    # tunables
+    "block_turns": 72,
+    "shed_capacity": 100,
+    "board_size": 10,
+    "max_orders": 10,
+    "turns_per_day": 24,
+    "min_sell_price": 2,
+}
+
+
+# --------------------------------------------------------------------------- helpers
+def _get(value, key, default=None):
+    """Field access that works for dicts and Kaggle Struct/attribute objects."""
+    if isinstance(value, dict):
+        return value.get(key, default)
+    getter = getattr(value, "get", None)
+    if callable(getter):
+        return getter(key, default)
+    return getattr(value, key, default)
+
+
+def _int(value, default=0):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _fib(n):
+    a, b = 1, 1
+    for _ in range(n):
+        a, b = b, a + b
+    return a
+
+
+def _step_of(observation):
+    raw = _get(observation, "step")
+    if raw is not None:
+        return _int(raw)
+    return _int(_get(observation, "day", 0)) * 24 + _int(_get(observation, "hour", 0))
+
+
+def _shed_adjacent(pos, board):
+    if not isinstance(pos, (list, tuple)) or len(pos) < 2:
+        return False
+    half = board // 2
+    return pos[0] in (half - 1, half) and pos[1] in (half - 1, half)
+
+
+def _tile_at(tiles, pos):
+    try:
+        x, y = int(pos[0]), int(pos[1])
+        return tiles[y][x]
+    except (TypeError, ValueError, IndexError):
+        return "LOCKED"
+
+
+def _is_noop(act, tile, inv, seeds, pos, board):
+    """True when the engine will certainly ignore ``act`` (mirrors _apply_unit_action)."""
+    if not act:
+        return True
+    op = act[0]
+    x, y = pos[0], pos[1]
+    if op in MOVES:
+        dx, dy = MOVES[op]
+        return not (0 <= x + dx < board and 0 <= y + dy < board)
+    if op == "PASS":
+        return True
+    adjacent = _shed_adjacent(pos, board)
+    if op == "DROP":
+        return (not adjacent) or (not inv)
+    if op == "PICKUP":
+        return not adjacent
+    if op == "PLACE":
+        item = act[1] if len(act) > 1 else None
+        if item in ANIMAL_STRUCTURE and isinstance(tile, dict) \
+                and _get(tile, "kind") == ANIMAL_STRUCTURE[item] and _get(tile, "animal") is None:
+            return _int(_get(inv, item, 0)) <= 0
+        return (not adjacent) or _int(_get(inv, item, 0)) <= 0
+    if tile == "LOCKED":
+        return True
+    is_dict = isinstance(tile, dict)
+    kind = _get(tile, "kind") if is_dict else None
+    animal = is_dict and _get(tile, "animal") is not None
+    if op == "PLANT":
+        return tile is not None or _int(_get(seeds, act[1] if len(act) > 1 else None, 0)) <= 0
+    if op == "WATER":
+        return kind != "PLANT" or bool(_get(tile, "watered_today"))
+    if op == "HARVEST":
+        return (not is_dict) or _int(_get(tile, "yield_units", 0)) <= 0
+    if op == "FERTILIZE":
+        return kind != "PLANT" or _int(_get(inv, "FERTILIZER", 0)) <= 0
+    if op == "DIG":
+        return tile is None or animal
+    if op in ("BUILD_COOP", "BUILD_PASTURE"):
+        return tile is not None
+    if op == "FEED":
+        return (not animal) or bool(_get(tile, "fed_today")) or _int(_get(inv, "WHEAT", 0)) <= 0
+    if op == "COLLECT_FERTILIZER":
+        return (not animal) or (not _get(tile, "fertilizer_available"))
+    if op == "CARE":
+        return (not animal) or bool(_get(tile, "cared_today"))
+    return True
+
+
+class _View:
+    """Cheap per-step snapshot of everything the layers read from the observation."""
+
+    def __init__(self, observation, player, cfg):
+        farms = list(_get(observation, "farms", []) or [])
+        self.farm = farms[player] if player < len(farms) else {}
+        self.rival = farms[1 - player] if len(farms) >= 2 and 1 - player < len(farms) else {}
+        private = _get(observation, "private", {}) or {}
+        self.shed = {k: max(0, _int(v)) for k, v in dict(_get(private, "shed", {}) or {}).items()}
+        self.seeds = dict(_get(private, "seeds", {}) or {})
+        self.invs = [dict(i or {}) for i in (_get(private, "inventories", []) or [])]
+        market = _get(observation, "market", {}) or {}
+        self.prices = {k: _int(v) for k, v in dict(_get(market, "prices", {}) or {}).items()}
+        self.money = float(_get(self.farm, "money", 0.0) or 0.0)
+        self.tiles = _get(self.farm, "tiles", []) or []
+        self.board = len(self.tiles) or cfg["board_size"]
+        self.positions = [_get(self.farm, "farmer", None)] + [list(p) for p in (_get(self.farm, "hands", []) or [])]
+        self.hires_today = _int(_get(self.farm, "hires_today", 0))
+        self.quadrants = len(list(_get(self.farm, "unlocked_quadrants", []) or []))
+
+    def inv(self, idx):
+        return self.invs[idx] if idx < len(self.invs) else {}
+
+    def in_hands(self, item):
+        return sum(max(0, _int(_get(inv, item, 0))) for inv in self.invs)
+
+
+# --------------------------------------------------------------------------- chassis
+class Chassis:
+    """Replays ``routes[router(...)]`` with reactive safety/market layers.
+
+    routes         : {route_id: list of >= 719 Kaggle action dicts}
+    router         : callable(observation, step, state_dict) -> route_id, called every
+                     step; ``state_dict`` is per-player and persists across the game.
+    settings       : overrides for DEFAULT_SETTINGS (layer switches + tunables)
+    opponent_plan  : optional list of the opponent's expected actions (front_run hook)
+    """
+
+    def __init__(self, routes, router=None, settings=None, opponent_plan=None):
+        self.routes = {rid: list(tape) for rid, tape in routes.items()}
+        self.router = router or (lambda observation, step, state: next(iter(self.routes)))
+        self.cfg = dict(DEFAULT_SETTINGS)
+        self.cfg.update(settings or {})
+        self.opponent_plan = opponent_plan
+        self.players = {}
+        self.diagnostics = {"layer_fallbacks": 0, "entry_fallbacks": 0}
+        self._future_sells = {}   # route id -> {item: [remaining planned SELL qty from step t]}
+
+    # ---- state -----------------------------------------------------------------
+    def _state(self, player, step):
+        st = self.players.get(player)
+        if st is None or step == 0 or step <= st["last_step"]:
+            st = {"last_step": -1, "route": None, "router_state": {},
+                  "pending": {}, "sell_state": {"due_step": -1, "suppress": {}}}
+            self.players[player] = st
+        st["last_step"] = step
+        return st
+
+    def _route_action(self, route, step):
+        tape = self.routes[route]
+        if 0 <= step < len(tape) and isinstance(tape[step], dict):
+            return copy.deepcopy(tape[step])
+        return copy.deepcopy(PASS_ACTION)
+
+    def future_sells(self, route, item, step):
+        """Planned SELL quantity of ``item`` in route steps >= ``step`` (suffix sums)."""
+        table = self._future_sells.get(route)
+        if table is None:
+            tape = self.routes[route]
+            n = len(tape)
+            table = {p: [0] * (n + 1) for p in PRODUCTS}
+            for t in range(n - 1, -1, -1):
+                for p in PRODUCTS:
+                    table[p][t] = table[p][t + 1]
+                for o in (tape[t].get("market") or []) if isinstance(tape[t], dict) else []:
+                    if o and o[0] == "SELL" and len(o) >= 3 and o[1] in table:
+                        table[o[1]][t] += max(0, _int(o[2]))
+            self._future_sells[route] = table
+        col = table.get(item)
+        return col[step] if col and 0 <= step < len(col) else 0
+
+    # ---- main entry -----------------------------------------------------------
+    def act(self, observation, configuration=None):
+        if len(_get(observation, "farms", []) or []) < 2:
+            raise ValueError("incomplete observation")  # factory falls back to tape
+        step = _step_of(observation)
+        player = _int(_get(observation, "player", 0))
+        st = self._state(player, step)
+        cfg = self.cfg
+        view = _View(observation, player, cfg)
+
+        route = self.router(observation, step, st["router_state"])
+        if route not in self.routes:
+            route = st["route"] if st["route"] in self.routes else next(iter(self.routes))
+        st["route"] = route
+        action = self._route_action(route, step)
+        raw = copy.deepcopy(action)
+        try:
+            if cfg["hand_align"]:
+                self._hand_align(action, view)
+            if cfg["weed_repair"]:
+                self._weed_repair(action, view, st, route, step)
+            if cfg["sell_lead"] or cfg["front_run"]:
+                self._apply_suppression(action, st["sell_state"], step)
+            projected = self._projected_shed(action, view)
+            lead_available = dict(projected)
+            next_sup = {"due_step": -1, "suppress": {}, "r36_debts": st["sell_state"].get("r36_debts", {})}
+            if cfg["sell_lead"]:
+                self._sell_lead(action, view, lead_available, route, step, next_sup)
+            if cfg["front_run"] and self.opponent_plan:
+                self._front_run(action, view, lead_available, route, step, next_sup)
+            st["sell_state"] = next_sup
+            if cfg["budget_guard"]:
+                self._budget_guard(action, view, route, step)
+            if cfg["room_guard"]:
+                self._room_guard(action, view, route, step)
+            if cfg["clamp_sells"]:
+                self._clamp_sells(action, projected)
+            if cfg["dead_stock"]:
+                self._dead_stock(action, view, projected, route, step)
+            if cfg["terminal_liquidation"]:
+                self._terminal_liquidation(action, projected, step)
+            action["market"] = action["market"][: cfg["max_orders"]]
+            return action
+        except Exception:
+            self.diagnostics["layer_fallbacks"] += 1
+            return raw
+
+    # ---- layer: hand_align ----------------------------------------------------
+    def _hand_align(self, action, view):
+        """Pad with PASS / truncate the tape's hand list to the real number of hands
+        (fieldbook_logic.act). Extra hands would be ignored by the engine anyway;
+        missing ones just idle, so alignment only tidies the action."""
+        expected = max(0, len(view.positions) - 1)
+        hands = list(action.get("hands") or [])
+        hands.extend([["PASS"] for _ in range(max(0, expected - len(hands)))])
+        action["hands"] = hands[:expected]
+
+    # ---- layer: weed_repair ---------------------------------------------------
+    def _weed_repair(self, action, view, st, route, step):
+        """If a PLANT/BUILD_* target tile is a WEED, DIG now and queue the intended
+        action for that unit; the queue replays on a later step when the unit still
+        stands there and its tape action would be a no-op (the displaced no-op is
+        queued behind it, so PLANT -> WATER chains survive). A PLANT is only replayed
+        when the unit's next tape action is not a move, so the mandatory same-day
+        WATER can follow; otherwise the seed is kept. A no-op turn spent on a weed
+        is also converted to DIG (tetsutani weed_dig)."""
+        units = [action.get("farmer") or ["PASS"]] + list(action.get("hands") or [])
+        pending = st["pending"]
+        tape = self.routes[route]
+        nxt = tape[step + 1] if step + 1 < len(tape) and isinstance(tape[step + 1], dict) else {}
+        next_units = [nxt.get("farmer") or ["PASS"]] + list(nxt.get("hands") or [])
+        for i in range(min(len(units), len(view.positions))):
+            pos = view.positions[i]
+            if not isinstance(pos, (list, tuple)):
+                continue
+            pos = (int(pos[0]), int(pos[1]))
+            tile = _tile_at(view.tiles, pos)
+            act = list(units[i])
+            queue = pending.get(i)
+            if queue and queue[0][0] != pos:
+                pending.pop(i, None)
+                queue = None
+            is_weed = isinstance(tile, dict) and _get(tile, "kind") == "WEED"
+            noop = _is_noop(act, tile, view.inv(i), view.seeds, pos, view.board)
+            next_op = next_units[i][0] if i < len(next_units) and next_units[i] else "PASS"
+            if act and act[0] in ("PLANT", "BUILD_COOP", "BUILD_PASTURE") and is_weed:
+                pending.setdefault(i, []).append((pos, act))
+                act = ["DIG"]
+            elif queue and noop:
+                _, replay = queue[0]
+                if replay[0] == "PLANT" and next_op in MOVES:
+                    pending.pop(i, None)          # WATER could never follow: keep the seed
+                else:
+                    queue.pop(0)
+                    if act and act[0] != "PASS" and act[0] not in MOVES:
+                        queue.append((pos, act))
+                    act = replay
+                    if not queue:
+                        pending.pop(i, None)
+            elif is_weed and noop:
+                act = ["DIG"]
+            units[i] = act
+        action["farmer"] = units[0]
+        action["hands"] = units[1:]
+
+    # ---- projected shed -------------------------------------------------------
+    def _projected_shed(self, action, view):
+        """Shed contents after this step's unit actions but before the market runs:
+        PICKUP removes, DROP/PLACE(non-animal) near the shed adds up to capacity
+        (fieldbook _projected_shed / tetsutani projected shed)."""
+        cap = self.cfg["shed_capacity"]
+        proj = {p: view.shed.get(p, 0) for p in PRODUCTS}
+        for k, v in view.shed.items():
+            proj.setdefault(k, v)
+        total = sum(proj.values())
+        units = [action.get("farmer") or ["PASS"]] + list(action.get("hands") or [])
+        for i in range(min(len(units), len(view.positions))):
+            if not _shed_adjacent(view.positions[i], view.board):
+                continue
+            act = units[i]
+            op = act[0] if act else "PASS"
+            inv = view.inv(i)
+            if op == "PICKUP" and len(act) >= 2 and act[1] in proj:
+                qty = min(proj[act[1]], max(0, _int(act[2]) if len(act) >= 3 else 1))
+                proj[act[1]] -= qty
+                total -= qty
+            elif op == "DROP":
+                for item, held in inv.items():
+                    take = min(max(0, _int(held)), max(0, cap - total))
+                    if take > 0:
+                        proj[item] = proj.get(item, 0) + take
+                        total += take
+            elif op == "PLACE" and len(act) >= 2 and act[1] not in ANIMAL_STRUCTURE:
+                item = act[1]
+                take = min(max(0, _int(act[2]) if len(act) >= 3 else 1),
+                           max(0, _int(_get(inv, item, 0))), max(0, cap - total))
+                if take > 0:
+                    proj[item] = proj.get(item, 0) + take
+                    total += take
+        return proj
+
+    # ---- layer: sell_lead / front_run suppression ------------------------------
+    @staticmethod
+    def _apply_suppression(action, sell_state, step):
+        """Remove from this step's SELLs the quantities already sold a step early."""
+        if sell_state.get("due_step") != step:
+            return
+        remaining = dict(sell_state.get("suppress", {}))
+        kept = []
+        for order in action.get("market") or []:
+            order = list(order)
+            if order and order[0] == "SELL" and len(order) >= 3 and remaining.get(order[1], 0) > 0:
+                removed = min(max(0, _int(order[2])), remaining[order[1]])
+                order[2] = _int(order[2]) - removed
+                remaining[order[1]] -= removed
+                # A zero-quantity order keeps later market race slots intact.
+            kept.append(order)
+        action["market"] = kept
+
+    @staticmethod
+    def _add_sell(action, item, qty, max_orders, merge=True):
+        market = action.setdefault("market", [])
+        if merge:
+            for order in market:
+                if order and order[0] == "SELL" and order[1] == item:
+                    order[2] = _int(order[2]) + qty
+                    return True
+        if len(market) >= max_orders:
+            return False
+        market.append(["SELL", item, qty])
+        return True
+
+    def _sell_lead(self, action, view, projected, route, step, next_sup):
+        """fieldbook _lead_sale: when step % 4 != 0 (no town consumption between the
+        two steps) sell the lots the tape plans to SELL next step now, for products
+        other than WHEAT/FERTILIZER we already hold, and suppress them next step.
+        Skipped at the last step, at shop-unlock boundaries and if a SELL for that
+        product is already queued this step."""
+        cfg = self.cfg
+        nxt = step + 1
+        unlock_period = 3 * cfg["turns_per_day"]
+        if nxt > LAST_ACT_STEP or nxt % unlock_period == 0 or step % 4 == 0:
+            return
+        tape = self.routes[route]
+        future = tape[nxt] if nxt < len(tape) and isinstance(tape[nxt], dict) else {}
+        planned = {}
+        for o in future.get("market") or []:
+            if o and o[0] == "SELL" and len(o) >= 3 and o[1] in PRODUCTS:
+                planned[o[1]] = planned.get(o[1], 0) + max(0, _int(o[2]))
+        already = {o[1] for o in action.get("market") or [] if o and o[0] == "SELL" and len(o) > 1}
+        for item in PRODUCTS:
+            if item in ("WHEAT", "FERTILIZER") or planned.get(item, 0) <= 0 or item in already:
+                continue
+            qty = min(projected.get(item, 0), planned[item])
+            if qty <= 0 or view.prices.get(item, 0) < cfg["min_sell_price"]:
+                continue
+            if not self._add_sell(action, item, qty, cfg["max_orders"], merge=False):
+                break
+            projected[item] -= qty
+            next_sup["suppress"][item] = next_sup["suppress"].get(item, 0) + qty
+        if next_sup["suppress"]:
+            next_sup["due_step"] = nxt
+
+    def _front_run(self, action, view, projected, route, step, next_sup):
+        """Hook: if ``opponent_plan`` (their expected tape) schedules a SELL of
+        MILK/WOOL/STRAWBERRY/MELON next step, sell what we hold of it now (before
+        their supply depresses the price) and suppress our own SELL of that quantity
+        next step. Bounded by our own remaining planned sales so it never dumps."""
+        cfg = self.cfg
+        nxt = step + 1
+        plan = self.opponent_plan
+        if nxt > LAST_ACT_STEP or nxt >= len(plan) or not isinstance(plan[nxt], dict):
+            return
+        already = {o[1] for o in action.get("market") or [] if o and o[0] == "SELL" and len(o) > 1}
+        for o in plan[nxt].get("market") or []:
+            if not (o and o[0] == "SELL" and len(o) >= 3 and o[1] in FRONT_RUN_ITEMS):
+                continue
+            item = o[1]
+            if item in already or view.prices.get(item, 0) < cfg["min_sell_price"]:
+                continue
+            own_next = sum(max(0, _int(x[2])) for x in self.routes[route][nxt].get("market", [])
+                           if len(x) >= 3 and x[0] == "SELL" and x[1] == item)
+            qty = min(projected.get(item, 0), max(0, _int(o[2])), own_next)
+            if qty <= 0:
+                continue
+            if not self._add_sell(action, item, qty, cfg["max_orders"], merge=False):
+                break
+            projected[item] -= qty
+            already.add(item)
+            next_sup["suppress"][item] = next_sup["suppress"].get(item, 0) + qty
+        if next_sup["suppress"]:
+            next_sup["due_step"] = nxt
+
+    # ---- layer: budget_guard --------------------------------------------------
+    def _block_requirements(self, view, route, start, end):
+        """Planned purchase cost and item reserves for tape steps [start, end)
+        (six_day_budget_guard.hpp calculate_six_day_requirements)."""
+        tape = self.routes[route]
+        budget = 0.0
+        seed_bal, item_bal = {}, {}
+        seed_need, item_need = {}, {}
+        hires_by_day = {}
+        quadrants = view.quadrants
+        for t in range(start, min(end, len(tape))):
+            a = tape[t] if isinstance(tape[t], dict) else {}
+            for u in [a.get("farmer") or ["PASS"]] + list(a.get("hands") or []):
+                if not u:
+                    continue
+                op = u[0]
+                arg = u[1] if len(u) > 1 else None
+                qty = max(1, _int(u[2]) if len(u) > 2 else 1)
+                if op == "PLANT" and arg in SEED_PRICE:
+                    seed_bal[arg] = seed_bal.get(arg, 0) - 1
+                    seed_need[arg] = max(seed_need.get(arg, 0), -seed_bal[arg])
+                elif op == "FEED":
+                    item_bal["WHEAT"] = item_bal.get("WHEAT", 0) - 1
+                    item_need["WHEAT"] = max(item_need.get("WHEAT", 0), -item_bal["WHEAT"])
+                elif op == "FERTILIZE":
+                    item_bal["FERTILIZER"] = item_bal.get("FERTILIZER", 0) - 1
+                    item_need["FERTILIZER"] = max(item_need.get("FERTILIZER", 0), -item_bal["FERTILIZER"])
+                elif op == "PLACE" and arg is not None:
+                    item_bal[arg] = item_bal.get(arg, 0) - qty
+                    item_need[arg] = max(item_need.get(arg, 0), -item_bal[arg])
+            for o in a.get("market") or []:
+                if not o:
+                    continue
+                op = o[0]
+                item = o[1] if len(o) > 1 else None
+                qty = max(1, _int(o[2]) if len(o) > 2 else 1)
+                if op == "HIRE":
+                    day = (t - start) // self.cfg["turns_per_day"]
+                    hires_by_day[day] = hires_by_day.get(day, 0) + 1
+                elif op == "BUY_LAND":
+                    extra = quadrants - 1
+                    if 0 <= extra < len(LAND_PRICES):
+                        budget += LAND_PRICES[extra]
+                        quadrants += 1
+                elif op == "BUY_SEED" and item in SEED_PRICE:
+                    budget += SEED_PRICE[item] * qty
+                    seed_bal[item] = seed_bal.get(item, 0) + qty
+                elif op == "BUY_PRODUCT" and item in ("WHEAT", "FERTILIZER"):
+                    budget += view.prices.get(item, 0) * qty
+                    item_bal[item] = item_bal.get(item, 0) + qty
+                elif op == "BUY_ANIMAL" and item in ANIMAL_COST:
+                    budget += ANIMAL_COST[item] * qty
+                    item_bal[item] = item_bal.get(item, 0) + qty
+        for day, n in hires_by_day.items():
+            first = view.hires_today if day == 0 else 0
+            for k in range(n):
+                budget += _fib(first + k)
+        return budget, item_need
+
+    def _budget_guard(self, action, view, route, step):
+        """At every block boundary (step % 72 == 0) make sure cash + the value of
+        stock the block already plans to sell covers the block's purchases (hires,
+        land, seeds, animals, products). A shortfall is covered by extra SELLs of
+        unprotected shed stock, highest price first; SELLs are moved in front of
+        the buys so the money is there when they execute."""
+        cfg = self.cfg
+        block = cfg["block_turns"]
+        if block <= 0 or step % block != 0:
+            return
+        budget, item_need = self._block_requirements(view, route, step, step + block)
+        market = action.setdefault("market", [])
+        existing = {}
+        for o in market:
+            if o and o[0] == "SELL" and len(o) >= 3:
+                existing[o[1]] = existing.get(o[1], 0) + max(0, _int(o[2]))
+        cash = view.money
+        for item in PRODUCTS:
+            planned = max(existing.get(item, 0), self.future_sells(route, item, step)
+                          - self.future_sells(route, item, step + block))
+            cash += min(view.shed.get(item, 0), planned) * view.prices.get(item, 0)
+        shortfall = budget - cash
+        if shortfall <= 0:
+            return
+        candidates = []
+        for item in PRODUCTS:
+            price = view.prices.get(item, 0)
+            if price < cfg["min_sell_price"]:
+                continue
+            protected = max(0, item_need.get(item, 0) - view.in_hands(item))
+            avail = view.shed.get(item, 0) - protected - existing.get(item, 0)
+            if avail > 0:
+                candidates.append((-price, item, avail, price))
+        candidates.sort()
+        added = False
+        for _, item, avail, price in candidates:
+            if shortfall <= 0:
+                break
+            qty = min(avail, -(-int(shortfall) // price))
+            if self._add_sell(action, item, qty, cfg["max_orders"]):
+                shortfall -= qty * price
+                added = True
+        if added:
+            sells = [o for o in market if o and o[0] == "SELL"]
+            others = [o for o in market if not (o and o[0] == "SELL")]
+            action["market"] = sells + others
+
+    # ---- layer: room_guard ----------------------------------------------------
+    def _room_guard(self, action, view, route, step):
+        """tetsutani room_guard: at hour 23 the end-of-day drop pushes every unit's
+        inventory into the shed and overflow is destroyed. Estimate the shed after
+        this step (stock + carried + harvest/collect - feed/fertilize/place + buys -
+        sells) and, if it exceeds capacity-1, add SELLs preferring products with no
+        future planned sale, then highest price."""
+        cfg = self.cfg
+        if step % cfg["turns_per_day"] != cfg["turns_per_day"] - 1:
+            return
+        cap = cfg["shed_capacity"]
+        units = [action.get("farmer") or ["PASS"]] + list(action.get("hands") or [])
+        carried = sum(max(0, _int(n)) for inv in view.invs for n in inv.values())
+        produced = consumed = 0
+        for i in range(min(len(units), len(view.positions))):
+            tile = _tile_at(view.tiles, view.positions[i])
+            a = units[i]
+            if not a:
+                continue
+            op = a[0]
+            if op == "HARVEST" and isinstance(tile, dict):
+                produced += max(0, _int(_get(tile, "yield_units", 0)))
+            elif op == "COLLECT_FERTILIZER" and isinstance(tile, dict) and _get(tile, "fertilizer_available"):
+                produced += 1
+            elif op in ("FEED", "FERTILIZE"):
+                consumed += 1
+            elif op == "PLACE" and len(a) > 1 and a[1] in ANIMAL_STRUCTURE:
+                consumed += 1
+        market = action.setdefault("market", [])
+        planned_sells, planned_buys = {}, 0
+        for o in market:
+            if not o:
+                continue
+            if o[0] == "SELL" and len(o) >= 3:
+                planned_sells[o[1]] = planned_sells.get(o[1], 0) + max(0, _int(o[2]))
+            elif o[0] in ("BUY_PRODUCT", "BUY_ANIMAL") and len(o) >= 3:
+                planned_buys += max(0, _int(o[2]))
+        shed_total = sum(view.shed.values())
+        fillable = sum(min(view.shed.get(it, 0), n) for it, n in planned_sells.items())
+        needed = shed_total + carried + produced - consumed + planned_buys - fillable - (cap - 1)
+        if needed <= 0:
+            return
+        priority = sorted(PRODUCTS, key=lambda it: (self.future_sells(route, it, step + 1) > 0,
+                                                   -view.prices.get(it, 0), it))
+        for item in priority:
+            avail = max(0, view.shed.get(item, 0) - planned_sells.get(item, 0))
+            qty = min(needed, avail)
+            if qty <= 0 or view.prices.get(item, 0) < 1:
+                continue
+            if not self._add_sell(action, item, qty, cfg["max_orders"]):
+                continue
+            planned_sells[item] = planned_sells.get(item, 0) + qty
+            needed -= qty
+            if needed <= 0:
+                break
+
+    # ---- layer: clamp_sells ---------------------------------------------------
+    @staticmethod
+    def _clamp_sells(action, projected):
+        """Clamp against a sequential stock upper bound, retaining market slots.
+
+        Earlier BUY_PRODUCT orders can fund a wheat wash's sell leg. Their full
+        quantity is an upper bound; the engine enforces actual cash/capacity.
+        Removing empty orders would change the later lockstep market races.
+        """
+        avail = dict(projected)
+        kept = []
+        for o in action.get("market") or []:
+            if o and o[0] == "SELL" and len(o) >= 3:
+                have = avail.get(o[1], 0)
+                n = min(_int(o[2]), have)
+                n = max(0, n)
+                avail[o[1]] = have - n
+                kept.append(["SELL", o[1], n])
+            else:
+                kept.append(o)
+                if o and o[0] in ("BUY_PRODUCT", "BUY_ANIMAL") and len(o) >= 3:
+                    avail[o[1]] = avail.get(o[1], 0) + max(0, _int(o[2]))
+        action["market"] = kept
+
+    # ---- layer: dead_stock ----------------------------------------------------
+    def _dead_stock(self, action, view, projected, route, step):
+        """tetsutani dead_stock: stock beyond everything the rest of the route still
+        plans to SELL is dead; sell it now when price > 1 (on day 29 everything not
+        already in this step's orders is dead). Highest value lots first."""
+        planned = {}
+        for o in action.get("market") or []:
+            if o and o[0] == "SELL" and len(o) >= 3:
+                planned[o[1]] = planned.get(o[1], 0) + _int(o[2])
+        day = step // self.cfg["turns_per_day"]
+        extra = []
+        for item in PRODUCTS:
+            have = projected.get(item, 0) - planned.get(item, 0)
+            if have <= 0:
+                continue
+            surplus = have if day >= 29 else have - self.future_sells(route, item, step + 1)
+            if surplus > 0 and view.prices.get(item, 0) > 1:
+                extra.append(["SELL", item, surplus])
+        extra.sort(key=lambda o: -view.prices.get(o[1], 0) * o[2])
+        action["market"] = (action.get("market") or []) + extra
+
+    # ---- layer: terminal_liquidation -----------------------------------------
+    def _terminal_liquidation(self, action, projected, step):
+        """fieldbook _terminal_sale: on the final acting step (>= 718) replace the
+        market orders with a SELL of the whole projected shed."""
+        if step < LAST_ACT_STEP:
+            return
+        action["market"] = [["SELL", item, qty] for item, qty in projected.items()
+                            if qty > 0 and item in PRODUCTS][: self.cfg["max_orders"]]
+
+
+# --------------------------------------------------------------------------- factory
+def make_agent(routes, router=None, opponent_plan=None, **settings):
+    """Build a Kaggle ``agent(observation, configuration)`` closure that never raises:
+    a failure inside a layer falls back to the raw tape action, and a failure even
+    before that falls back to PASS (with hands padded when possible)."""
+    chassis = Chassis(routes, router, settings, opponent_plan)
+
+    def agent(observation, configuration=None):
+        try:
+            return chassis.act(observation, configuration)
+        except Exception:
+            chassis.diagnostics["entry_fallbacks"] += 1
+            try:
+                step = _step_of(observation)
+                player = _int(_get(observation, "player", 0))
+                tape = chassis.routes.get(chassis.players.get(player, {}).get("route"),
+                                          next(iter(chassis.routes.values())))
+                if 0 <= step < len(tape):
+                    return copy.deepcopy(tape[step])
+            except Exception:
+                pass
+            try:
+                farms = _get(observation, "farms", []) or []
+                hands = _get(farms[_int(_get(observation, "player", 0))], "hands", []) or []
+                return {"farmer": ["PASS"], "hands": [["PASS"] for _ in hands], "market": []}
+            except Exception:
+                return copy.deepcopy(PASS_ACTION)
+
+    agent.chassis = chassis
+    return agent
+
+
+import base64
+import json
+import zlib
+_PAYLOAD=json.loads(zlib.decompress(base64.b85decode('c-ri}U9TiZvLyCj_<SBJKPyvjJ;T}=VoCOZY;Iw7F&JD)S6Dz;LAbkb3;lO>_sOh}2y-*@$ZGOlXn_G(Q(dPjBGMzm-Q3*#e|-19{qukOm+$_UfBGNa{h$B*umAO5{`K?A@Ba4T*I&Q;``dT_<)8oW|Kq=Xe&h4Y|N77W`hWe)fB*dYpT7IkZ~yrpfBWU*_rLx5(|2#*UH^Ld@cF;p@b|ZW`tH}uk3W|0MIZnB|NHj%n?Ha2<<no|AGN=E`tmP-{o$9(ckYWXU-RMTAAb7q<p=)!@%r6cU%mb7UoV%xeffuC)W3fG?RnIn7w?BZ|Ht3{wtdx?FWOe~KE=mZ&!2vrbMZ^J555oO=_en)j{Vl3e*59a@Bi`nBcFczGIi(2-WT=h$BJ)}6a4YRpD)Jzs^?$)DgK@7<=0PNU;O!ln9}x1chzoRT&{b)7k<55zW@C1KV5$O_%kq(a=rKnKF|5*Pq%Li-YK4r8d6sdX<t}iO5oS_p<O?Gy8KeU`npVH+5f|rkv#pv{g3b8yf3z8tJW0X?cwQnZ%;H{>-%S(S1A3^YiqL>w*Juj`n5dar!O+s|Nd|FetP=d{T#05y?w#M@9jq<Sor;Pc^pAyP~PuW>s>$YdYQ}LSIaykmYF^8dbx{Fzhd3Nb7t%Q{^|4&m#)IMS@>T6ELm^8(b!d3PY^6DxIn()f|3Wi4M6>DVnOfU?JOv`k`66s`BSMcCSO;)X!3=g7di4UwVwm7Kkyj!4O0#jzSVGJ--osRoAE96{d@b{?Vp@4`S|0Hmp^~{$A7r|^67^kfB0X^BkuN1@PiqL7x?kPckZ4+@iyFdThQ|G(a-xm3S6qo<?^9?!uPARbX1)PE%E}R)#Wn{ei}^KIcxUaSO*v3IciKW{+((i+s>8y*L<5{g8h4Fytk9)-L_sl+WYBn<g5<%-2po%zx5%uvWDB`(6f2*O;<nR|2dTWZT~hZM5;R6CFCUUTZ*S>8>_Eg7HG4JD{>aqz07`3Uit_KV&5n2f-G<mb{<|{gpkPb*{iuZ1gX^oZsM`gTINc^`Gc!@)MccDm6JzsFBtCrg@66<%YSOaGsr66te_?MvX=Wc>;qw}{Tv?PAt#uXKJr2H22StO9S}QH@$&{Z#fTFRx9C8D1kX7JezY~12|a@WekhlfeIY=>H={6~6Ip<IoYD~?+v9gaBoeO4kcJ|pFT#=})~j45AoNDWja;Pz6X<{Tx02`Dt9}Q;MD+y|y=Z$3;K<0_y!D#b1HP}t(<Re(Nvda2Mdu2OMt9w_r44`2Jg0h&_?}Ipwe_|4n7P8!DzmcYRlpK>_g7@8+m74H!7r8*+z_wzOVHdblS#OY+(7ju=zTXt4VxUH!T%|Ca6pe}h&-a>jwOnlTIMhO@e)jecY1&u_#5N)a}6E@^TO`m8}e7=_uJ2AUtExgB)`^h?E|mP_@NdzF5;@B-MZ<JTjy98%kaDka-x3FH+Hj{ysO*pwNMNRk=1J)CvV!kt0Il|T9_pES=&G-@O>qYk@7(R2-4tJr7xG;ngdsadsQ!XXlqX-N}IGeDCioe88bH(LxPXn6Qwz|)?)&I0mMqcMBZL&KTl5*Wm%~yIfs0`2LlTM{Hz1XOafejA2M(rC;7_0&mDLkg-^_az?AjZ9aw$xJKz8E@o!nr1cU%nJDkOV&|`V>)}NQ##`eIRF9(mOaQ=FgPrm=+--RF9WA;tKm~PAfg41RHIyj}^?0FGtcqn^!`{R0vj{B(*>B+j?$RZ<n<gn9sJBsR+XhQgNk+Ej9-Y3n?DcJrG_xG=#e)(|y)8&_6{xh&`6db7EJ2o)@P>38{f+|)co)5G4-1&OMx7#GfjPqx&mtDQP{@llZe8w3!#hsD+Q&!3qJouO3EHP2{(Foc+7lv*(f|ikm`e)o`m<JQw5T9(I*#+}C#^GzqYm4%_RKc9({5T~s$Wvg~dq`&vyqIzb_va2XCz3y1jPQ0%8qDj|7Q20Mh!nj+UjUs8xt;j9GeUppt&y@`@6Fmn08_93P0jP}zJC1p`9HJahwp&&_6K+X59LwVAt>W}GN?H4xmBNjK0Llx6{`2YPDUR0r4Oc}T%Ow(1et>tDtv47w4?4I=K~xE!UtiG#BpJO?^sjX!6@r69hBLEaJ+x*#dQY>0#qvIKAD9_oqJutf~2PuOU&SVe5+o^L>Y8725>w%L=RR69hQT<`5{X^P;fhx^nAlnsjE-r4}*<IGZnJpR2Ry?!P6b64nOovi}TJ52Hq?_2a5^04{4KIe5<d|*{~`n^s3S58p;4bU`%(tptT22X>eJW!p?#x#TYqcD?a#=xsZ+40@IMwC-Rg4;re&~S%MP+F-ThWTkk%}u-a8VJDPd?y`CN3ba9B7pda)vjuG2(RZ&p(b`IoI9vwAt3futnn1cP}srP?x!K5qSv<|13@1)cJ{>_E5j%3|Zh;)q^Kb#;Je#_eNoCfc(yLzt=t~?O+7c79Ierx@tBy8Opfz{4s91ycOt9h5YLxGWwm4D)h5=#->jH|wP;@hTPGr>k=YjV$s6@kk=$_lA=XgJn00{4g5g<x+O6`Vf)4MJkUP2I;4uak5o={<^ml!`&AOFZlUJ8MLD)cbjjD#5~n@dVV}r_^P*YhIqWMev@ifMDST8qs|V`uV`F*@r|U2x~S~^xd}Eh<c391A^fnO8_TA*O;T7!Ilz_2+kI~XR-S<u#WPVY`qU@DKI<?yv1+gL|_cm0=)pLx_M&p74s3K11ZZg60Y$}^J@pADR3ZCEy^b{5>0^}=A1mmuk7*y|9IOYF)G{0nc(Q|<CwvM)+?48#m(zMKYdR*ZujX=Km7O~w}h1@sl+t)_pj;tFex>ofcd71noH!=dB8fw2hih60W}OZ?thHr6RjKxCDSQSTEWY8#_T?&a<8@k;^-=_w-0BGGb~P~LUV2c%PE50P!NDJdAy;$M5c}>S!S_RSmikQ5i$`-PJ^YYqi!AgrczRQD!fmrt7id@2_ck9$4X!=eCm7B!R;H^tjUm$JS7bsM&0g10)#5HN+nF#vP|`EcuZi&Tt~b{9;ens0sZ<a@MOZ800dsW%H->c1pHJn|L^wC?@!=mGyveoo214!Dm@(8h4vdMf06As;~x(TC4rhWq8_D7Z2P}A@<DNOEW8uhnEVk)U1{i~C4Sptm!emQdvUl*{9C8)+IXHIJELivVciIOT9qEoGx;-!R<g9SdgB>m=^1ae%u;$PpGRF<yHo|Zk9DM7A1j(GBoq~3ajgoqlmu{7IMocafH>)5hJrQnm-Nq^(SUdpyR|nzs@Q<vHpU7xS7<)b=c$@lK;{4d(djdjc;u>;fmuG$4;F(h!GxAvR4Z$4Ecps3@*>~vNlvN26rS~s3>1Qst4$rJ#9q<ZfszwLc?B<_B4hqU2GjEaGjlj>j_S5Z3o;!*<fxm7)DUXlUS7FiRq%Pw?)(f{H*X~#J5nAW_2TFv5kD-=^;@B=Rf)PL2(z%B$<2)u5kbw=jT3%mR+FJcw0Op6P^)<KW<0lBocTi1Z}6&&qGTwyTdU_wWAQN$Tr<$dA69<&a@Hw%!8Q=T?M3IozkK}o>qREhhQutA+O0I8of_ohp}Zex*!cU*2%J4W=*M_<?f?iD6%x4K*ZqLv5-xdV^#}a^kR_0$g0#I9Rpl3=&*B3e=u)Whk^0FX3vwZ3)6#=8;@K7r2ugT0i!T@e=SUSKM}<pKY9K>2XWH7v&4`$e`410&fH&62&*drVu5|zApt!3VFkK+@2lPvTYPd;r-+S+kyw@%`?5Dr`&0QY{4Ynwsxp&U<V2{nc>oe2}6x5<oQ_?f5doS0g&6FqWj_}A>?@o)Hl+8h}`Az$5<XoSaOio5!=OBV}@4X!I&mT((9O=W?RHkkHjGKKjff%lFQ4F2iX-rfG96TA}@~*{!@rt@x_EZIhBQDiLNJMR*y70Ym<B@9RtFH8Oo<w-C7|EMEQ4pNv_XF@Y<ig-+Yb$`Ds2Q;E<9(=WGo8PF)cZW|ryff^!x~LcCP$lBzOUR1nC~FgsFQg?U1=>gTj6fe8u4ZdZ!c?!TU2_uk49A{7B61#9GtegRKKhGH;@bckQTPEdhj|ga>a}iII2!~;jRVP&yYiq5~WB8!DCs5cHoQ40&Vb-WH)3~MJNdxWNE5*n5cSI%&UcyD&4|52mN^Pfs0pbgbi^ig)E1P2_q?H7%ed(tbqHyCQryh3Fy^=Hnvo0B<kcOXTgr;(!1^C%DY}>ea_Yzv5!#@w-`R&C)=M%=jpdY#8JU+!gE0Kb&SexD-`)g##&+dfG6ea$eePHmDFA)0OB+hu|uH*^Uz8qT#wZb0Nh+r;b~iGA?G3mb6YPb!-MoY)AKskI@Cwl4Ok9IGGIYC?+{j>e3Hmrp4sgbmOd-*ghk!>=3s?w>XeuJsa;%*)2{qILlRl-RUM3AkMjc-slhw|UaJuxOsdAJo6j-U*Dwy`&5G~iHbv@Xt!nI?OukM{#+~ZklvIeWTxu_uzsjaU__z)`JGQjEY@;Pw%^>B!#?K%nKW7%u)nNpcUXJHroXf{l6PP{FJ`0)CKsT~EAgf?(%A+U2zXg`jIUg`hiuj?KIp~A5QZSV@VoKmt5jWGz3vAiiKg5I%s%nv0hMKLQ7{egT<bRUgBtib=R#uRS2fUgDDpkZJKyjG@E%XP~^p&yI|Kt-?p*@3egO+X8+?VTX`d!#YC7oB&61;KKOJib(0d5K6de}tY`C03Po>4T>Wh8xDu0`wYGA=+fE^BRmO&Ur`r4qN{BtK7H=WeP2gMgbk$)PG$D)0crzWNXWBWvnV4Hm^Vx`+aqti*b`y@7<MCk3YT$6qmayMLw%G-=Jt%j(2H5uQ;fPbDXsQ~<%XTmMEq#<+ibZco@I$I?M&JklVGF3Uaq9T6wx8>II^j!E`VXXAbu8=-}%&>l0Q5O02245>9f>U?v&FEBI&^V3ooy-poAw!g6|Xix$o8vmG1kgGB|D$_upfDsSpyhch079|H!9=XwPWkm{zsV9zE$w?xrfPjYy*1}fZv)hLSq!F;A^nvcna8vM^nb&ctY2+){@!pNhP+MF>7pP#7X~i_*POzK<&ETh`&tTgP^*eS>iiwu!D<e;LWRkpjT@uR-Rf?bQ0-7&~dM>BO=q0wPva@Z2t=rj?nl@L?B^ETQ1ah)EEt&Ky2|<HzlJ2pS7sc`NBE@6BFH`iI9yKZKg5{i0r-3FYjVXFGhUMZBUXo8*gMExP#;QJfa)Pgn2rHS<=U)MUO0P=F?49y@n%?n+;JqFI2a}jb8g320Q@&DKF*tU^D$-u0Md0UQy)X<c&tbrMr@>=_dvDcPL1Sd|r+OtsAY_l9X+~p^_oY&yzcNl#oiNS>J49pmiY}xYBw~P#rY#Sd7ALXO3QV+$A!HmNomR#aspVz>#70VZR8woS&(dAl&nna0vc>fyOw{?1Sq#m36|8&&U>Fda*AR^>dR-@XP}9A-__499jNSJRKPW*}FDCTb-J!Vi-iCTfK*}6TmM!BFB{bm9rBTqsk?sh|d;=7-0SKYpBCg52wx=p*v|QwO=xw#Uy<j%9JhC(F9?E7o(@GGK&Jq(J1CSxZ^`)^T#R9|U%WMyQG!=PKm{OGfxa1$dWy9fS;~YC;#+RYlv9ngeBRAX9`cTGkc7OU&>&5WY#Em|E1VrAaujkt4|A@M7Z$a!P0^U(2TQ7h4%jS3f!9-m`0E{SvfnRUw0rJRpta2u6)vCHp9WYj(d#+`!^!&UWr6v4AH4a^YB2MRIO2bYOx9XbI(n89hn$mQ+90h3@RmaA)>;=W;s<ZHb3uHGZuGKD7izX_2?aS54Gc~7t!87;pa$}Cky>*{(@fhxxkWOSJj*(u>Yur&p+=ykVo*leQXNiO#!Fs+UFRuOxpYeTh-G|zgpVtC(kUUny;77o(f=bP%y0Hy__(b4Co`+40mXw^K24M9=Vo1-!Ofzfj$EP61qs2Eo1Kq+VB}kh*q3!6J$tz-1THuy`o0@A3DYjIf)W^NAkMjKwe*yc)68CBFOXy~1fxlEzYbz$SC1{?P$L%IAjvmn@^yTUC=ScwWAA1(9<Q2}VN&^qjdlG!@Ca|3zyehvh6EFl~<F4SNLcwCXgZ|O)zA`%o*a>`avc{-E|4P&V=FPb%+5rl&-+dhg<f5!m#@s8FoHJYHQEn-_;#kxRm*5_2I4D5seza<cJ^Vxzf;Dj2xNIsX4A^PF!~hedACMFP*G!^i4pHjM76UK^1ttOvhF!%gS;c(O3c;@gwp%AEc8T5D5f$j-Zo(H*NRWb2SV?(9h)k8Rt|m4DD|*#4q`^jW4>p#718XlR4FZzTi61aRmG2R?F7?i3cJ=}f^(yPzu}^9xogJlvMxT}EBC+k-M-4DD5<<V{D!Q?`L#;SUC}>?*vE0<lAKd3rOo37kiHeA>{EccF9<7J{&9m0WoT89{foC8UmlWerfzy~<J@%wH7E@TF-(bxEglLZmy=_)=s-Tj^^T?=Y9lW8kFZbwtgR`9f?j_yh0h5lVqQ^trZ&y%H%R!hIFe}361x*yc_I<lnAO__M&{^y9F?QsT9nPd3^Pb-J1=Gj@3z|n|_!=R)cR9f0co{$AWkn1LwvKAH@lD|uQ%#Kl3UyIKMYGTa4FQS%D+m>p%g+^GW3=fiQ|4xHWaE12Aki#N3(1RVE7rTzDA1pR7`$b0ESmw(IQF@)FY$}ixLARyqc`3b%$45CIfeg$E3PHW>?hFLprAUkbjmQJ^oedi`icU682hr~OY1_9v9O$iVneM#eJnss#Q+BVj7fLGUfz)Fu*Ukql(E?x;ACV~)}#;9DAt5&5((*fC#bMY3LlK@xTEMd(`aK2oLdcDiGf8t6|>Mqlny&<NgKer8Hbd-Z?G%d^bS~4d5Tq0Ga*OmD+V2U2>7OqqL4ZhVQG9f_n2V8IIWSbvkn<rrpSqKg>G6}o=P@kgzyL+6+#_Ul)m<mRRd-J?wd`3gWv>p|D_NV=CZ#b4re5w%KIE51cs&`2ANnYmxwkz4XSVN?^3UD-TaEQV3P{3N+}QE7$(=F{zplI+5hB@(pSSP>qQbojXxB^s5cRa(w`FyQ8RF}YQb+&XQn*fedVKc5vw;mOIJqeGTHw;MG;}oi~1LYxQT&;>Q(Egm<$b7{3RvYdPst<54n%N_7qrGQLpf=645lCF(us`S_P-7@N{7aL?wl!NJ(rm2TC=!{9uRWKDl3)Y+=S}ABhJ}du1HfbCf09tT~nl=^%H7D4{h{lxb3&Ayf&E{+bp{lV~U7T2o*hzzy<9<9w_}E(_g~a!G?Sdj{Y)$XSYg$YtPts2P{zy;kM{kBnJAOJm(U<M3*4Y8GhhPNQ^2z`Ab9Mx%xRyCXygA)p3dBMr$&bPmuq7d6!-rT`30GvD3<l1fJKLYF~c77#cykiHW`j69j)IhbZ&rDlz8!J?BLB;`bPsx^VQ&P||V9f>%cYL-!-k(0{Fk;Xh5*yF*5O-|MGNf$9b#t%H_!cIKDdagcF+PYS`FqOfzJ0xQ%DGl#C>;y;-A~yI#(HPlt!C*>2jDhDFNL+Q3KPjOVu>PZ#0O18owcBRMeOUTVP)M*TGOvq$Ds+sg0U{+n^uQd|(^Mr<y|#9lKkaRNL=0Q`!Dil%MKy=3hFA%-xR+oYWy}5_&4IAeXsM17&Z$v6gYiUUYzMBfT&lNGDGzKS{bLDFnIOiXaLXyzVl{e^%hBXLkrFpgB~k3Uh=*YH5|(?=tznKxH|e$|UfVxBM4||6A}x^OF3axOd6(%PNt}y7zJh83UW~3kWMefd1t$Pyf;}Wi(-E@%45K(r7@xM!MaV=59q;fl<hTcqo45)u`<zS)YZ1k0qtE&Tx#W@8x&vHW2pv1LfS4hK<fWw*N*Ju2C&e~2kiRn;L$YGOLuw8&fCQwoc??{4rg9O6B~ff5`B^m`12Xa}(RYKl&NM+;i$qhiqZy8^0x&1K@4k6-Ph0H4aB}9AA*`DsmD23pH&tQD0ohPqjIxBtfs{ZBwZz}ldIvFQ7=n+D`X+`lDr5*7McY*EhbDg;x-=;^G0fRY_9$RyUZlJ!^l<}KERlZUj8PW8^FqR?tQH)jk%V+CnK*>rTT6J|80E7b<a~WaH_;$Z_7Y!Suy3Rm86~V=kMXLkEO|DZhv6~H{-*#3L4_tU+Lg<c*i5BnY{7;>{TgT)ceXW|pn1<!29y{A%!$6Hy$LH#XT*Ja$q@PfM1}p5scnr6i0HBVVOF$N4LX8V`X5nPq*Q}Z)aPH_ynxN36DkE3*{j|T7}*7v&;Wged37V40G%;oNyps)O~5=djUXLR>EcL)r0x8GVt4s6*ie3l=)1L6HO2LZ>U<+R&|7^&6oRLLjEok;k7G$!5}=1FqHo?o?iaV@IT`q_tk=+@$F;@>X1PlOg?<$R^F<tiV=zy(8FhD&{`aeY;e9)}{DVPPXcF-_AL^xApI7vjp(kZq98-r0qO?2K(Gc9_)TmS&5K<N^&PP)lDF?u0L^&EO=Dom`W`Fat9IZv^aKTvvgF_1S?yu1p1vyylc@?s)Q1-E605$b-cUxbVmN30Y1f0A5){V}R@Kz#Ub3`4^Knu>m*#%5}prx0*cK!ei792g~FulIY{PR2u+7l$hEqY-O2ex-H23(2lqdWYjgQrd&U%|gmb{@evE<f{uQ$P~K&VlsIHb}@YGx{SpBof25TuPEs9d~fcob%UY?;&G{)<)hY^2?ADBI!y5XkXu?!Y>Wu-9<tn%a<zGh@y{K_x_EUvV8Vm=cTVyR~N)><U)EHiCy);@z@^8QBj_3a|JRKzxvct=XuGVfH$tnjW7-5D~lIIY1R|4P&bHu2TYKzNaO<vzEyA_L~11|5!$S*Na3S?YsO2q2a83p7$p1Oq-4}pcz_Ay6I!;OKPlY=yT`3t6C%n_5@-XxBB*;txUl3K?3NxwVoaepl3871iqD{b$X!cqBx{C4q$-7pqXx*U=^Q^@*8_Kn^cP#yTk#SiE^(4J443U$hI5Rs5yF^lDNv7!4PZi>iFL#|L(Wx?4@FvFr7S(h;f%IpiNLEia;D(P^zvSYex!DWFKxq9+@{Nzt^nd8LmOJD;0K5C#H1cbUSAO0AZa(sMJGVlK10!CY8l~RP!>C43`m!B`g?|A?y1>WTIwy{5JWKK?IIgkX*G4Zj6*w*LU21SM!VgX^s%LNO+8Xdcb03t2hY(NbFdhqc8x)Tlbjw*KD{wymr`A*);8`r=yhWe><-+Lg6lVs(imI7++%6JnHgbrJnQ*TJJN*SoQ80VAV<op)A7^vyZ2;Kf}^fZ=NJUr+}gjQ1Ph;;!W^_qaxog1P>zMw!Xi)sNl@Ro#1gq}o}e`Hrw!FPDaCZ&p+orqh8*IH_#h-B1Y9LR2&KfDMy-mgyH2(so@|Ot>T{lL;6T2UDQDpI79^-^PJP3X^|s0V#)^yiHuw7CEpd>`R$KZ0sRRe=<!t54uMG|2)U)v8W6Sud%-%KM3W`1*vopd=3(l<uoND!Hy?^N^=c38`O4K|J0;mgF6DtQcxN@9GULrI{o=+ZwkdZOk&3t7k-tyKS50Nx$9m$z(Gi|HxGc706sor!MO%$HyV&a(jpKlLA%Y8gb6U3luolfb=@JlE|^rL#@q$5HwRCW>?L1CgUH$EH72-rMss17<!Kr-fl(}_-MV~UcD{fyZEi?^8h%;_0-V=h&|g5iEUi(_Lbq~?+qNwc&2i{NGoA5o->oNBBv<QC{-e>UHmctKb!LULpX;H^7fC15A8?yg4at(|h=^eN{>JwS`IS`uG{r3XA+{1LmE39CVl1VXMcNkE9ohULq|q{mFzG=3UVcL{i72H4V6{>W6~qk;PJ8oBl`+%tWE;_=fL<ZIp2GwyZu{^(E5;i5|1)0__JmhjSe5%6E0m%99aWoo2;;mWI2V(Fexox*D(NloO4lNUKKhXpUJI_m0{__Sw1OhD6#hjTw1=|})+OTW>y<N{GrX542vcWTrJXwx~&=xhSR<^gUZ3fC<QT)9ZC(PDQ>q!DsBr_bN|%SUto?z?mQfTRTQ_G!v&VYIBDNH}^Cjy+TC7FVu95Lk7P==7GNEn%K*Bd9gN24+#2OmfXJaE>-6G@kVV_zq>Sf>4juR|0#;7;8$kqB|u}Kg`p5-pDN~`o%_Wa8!om7Nyq?&nn<6!mKGeRbbyrNhmZ=>}+`D2_Wz!1!4gMDBmLZVZ>(dUqDlN!7KehX$zS6onr#BA(HVeX)Jvl(}@-^5W(TyU$9Mh6XbACpCE<{0D;`!akrJeh2vuM<AU4;M*rggYBcrSmY{P0{aHvG#e_gq)Oz@cGz&gPiw4~}nOp!g$vmp#ohF*10+3b%*)Iro+io|Zi@eVzZR;u|sEhSrtGNUXErMv?jOtIo(#dFK?q<{H64H{X8f=iwfl5HE0;~$nzRou_j=4%=Ke#qN>HOPmWx|nD4C$+uA@KqXc<yKNsbmMR-Yag<z@>oDR07XTJb@afto2X8r7G^QyrIywPJ)D0i2Z2)T>KBj0tC(9qPbJ9gjpc+s!1BaE@Z}G2~FO-3!LIZ7E$50EA{7UlS6Y$ZR$6vutv*dXrRq@I+$I<tTIugX3fwTll@~o-ouEltm|WyvnDa~T%C`DYw;eyi+X8hkDr>pXnPQEO79|%B0<TGpp2lNpK`P1oCcs|YNJLE1963<tCQYCgv7_)n4!1N-+w#k(H=zz0*z7j@?r*02tg^qG)qKfWK<q<0h880HsJFXms~hF1!I<69i-)YaT>hC6|?an6EdbOndesBFt;gituP<!6~G*wfu9isBn#T5%$8>{Bpn#TCnc!>##vrD`2howOB#m7IdT%>9oI@mWy}=-6mXS1Zpo3j-RzgrqK?s$pHD>hfPT<9*C|5S3}eQHXoPCjtXqxx0}^}(xOSw|wNV$c9;HAq)!n9YfUAc!^i_iLoU#YjIG3f7?Pl#haFvi&fvVc#E-|%|n}|tLbLf(;Bx8|GB_hxWLU|A>laUq?Q>u3?2xl`m8g0}UiEYIpESp(sSMGuq()Cc7fvN#zj#f%?jR<MeB}-_jQ9K4f#;%bo$Arg9T%!NNr2n0o5Z1c+Y8@X$`Z&NTkdx#tCNFIBLv;1;wCm4%1ZncVP^||!<DBX*_V?hRX(<+aDXfuHY<UY>(rONu%ZhnzWs~3M1_bdih?KFu2NHy8t4yYA_t+}g*dW|qo_B+WRBl~n-&*6#uuN#u{F!#D4$t*-;!3)Y4`cZ9PH)Eqbd9Ksb!5F~??c{#;?*`vgw&8h{Z0^QR>A#CRqN{j(H6kT^p9b5iq}Z5rTT&*2j+nu&iX=UbeG@1(ihTqTOS}1)D&}_aiT?YZ>M#l+dRg4{CzTs<!S3N<>#o(KxF;jTK6EJ57kF5*2k*5L38c?m+<XU)rj>5OYKj7t=(JyiH%pOj>sNfUI(C-ON?lVur2i9PJ1MG8fm?NUO=l3^RL>jG|sI_q#U@2A8EFfs$gQQA9tnd15Qg6Iggfd?sy|4P<BTEIH|QD;3z<|F)u9*Rn~*KaiR~Z&^XVzfmK{TN5(>uEm&wdpWpASTWDcWq$BkH$q{!HaX6Y+qtG9CPoP4mN*+6u9$nqC)*PgDeO#K`VSGBB4irp#^<Y}VC7&_=GVbd6J-^B3SjM|^rX|lG(vgRxjKe5?PBcYkr~5k`(w``?jpRZ@+@w3U6s3YwJylo%%{YGb66Q}!++Hyzzc3Mt3QX{bi7oU5?)(4gw;z7|{vUt-xLs3TcV{WFSYL!>oxIenffKk|3B=W@^SixPccK?IaN43sK#{j|kplK+;>U?e2Y~EU{98Mbmls0QTPWd9Ap$Iy?KAV9sV17F)&#7qZMAo*Yc>uSXc8^sq)cVQO@0E&mL}^!K4%?W?!WZJ2<DPSGAWm-4!jys2e>bC;yx_TDSQ4NRDhyJSvYPtu&eglc<Pf9{$=ZHDc)l%WW$+wjw$QzO<SHB*t1e*i_gFOJQ!KQ=&;uHQ7}u&1h{NT^HjLaF;XY3)FH7jDKyCsA2`r#U3tTA7|n;B&|frzyy8@?YF+%QJC8)Q@HetAfDAk#3SVc3LSt|R((dO6H%)t40PkE^KgzGE`29D*h61xx;)9Wp#!Gfvm~VSD%rVk&tzSI-VXy}2{r3zXEhY0|UFWQv*FKaxvRM`D*Dr1#hF^7X6A}RFZc|Nq!5bB4{^r2Y)hc(qBz#CmRORLs4-_+HO_N$GjgGcDrjQTSa<b&F3nVM?q?pg(`WDxy03gS4;~65xA`qnG=hHYF`%AiFn%@BKQ8_dLmS8XZN}>^)nW6JpG{bKSKdMYLPhaN@jV7kxgJKR$_@Q<~(@)kir#G$|lxhPDoC(`C<X#o{(?XRgCr!&5x2x)VIHeF@dI7%i8aRdxthzbJoYOCCj&vH5X(F9eJ%b{N66_ulZQ~f$&9>3aAVHryMwP1MAgMlHXDA161MvB4IPyUFZOps8O`ICmR6UwW`)EhjLKGjcwV>t0bu3Vns5S(q&w<RRk3W6*^s)NzqwTNDlZSix@#D`VR1o>+4apKQNGd+2nM)*r#@4rtHjhXC#tN4U_wQhdnachDT;J0vNt~{ab$JVy*_nMn1V124Ze$()y)8Ki25ON_fOF;-xImcxf49=lDarRgM)mUSIs;!30@Vx%e15@rna=wE0cTFz6NsB;vGd?Ly;Lsx^Sj5^JhFN;+2>T}=db&J{`tTE@BigrKF{laeAj*X((|c(@(@J${1591nsii{6**+C8ej?PeHp<_*?3cX(c=5pFE0DZ?wlRZrRz@##F&n|>wCH`z36^r>DW9t_FsQ;Nmc39e4paiD{Je9PPt!+)O*g(x?xnf)a``unv}kO?bwO<5bO|uKp1jm+wYBh313&)yZzqOB6H7BcB6LJQoGs*xQYirR8wddBFU)v^6S${_w0PQS7ymqGxfGuv&s{T>7TPNkI(GOzx?>&=kISxnh!t!@Y9E{*VxDF!)I{rX5VI0uNGu~{9nE`z(UA96LmNNbJ_+ps59rC&-(cnKK&Mx8f!nI{xg(=?~&1r?oD1fEl~K6kp-Osr>|q0)R^|bV0&zFE3?P9>P0HvvCr@6ECvYZ$EYH+tS5bNUj-+iWHWpj)jT#3eHA9?mFYa_VtpOStREnnu+^Q4)vBWJ_1EwGx@N&Kztc9ddHKBrG`8Pcm7rFlLP6i8I2nIC=YRd{<?^@tVw_L8tKZk^$ZC5~k9-?!=gLMJJr8M>1^DgWRp?+2N2u}`B)q=<^3W!%p*oIc6&~3T$Aeuaf~zkl{1AKzPa`pJ=Zzj~=SfUj6|mek!TX*}^c%AEVz-gbIRpT&BXF21kSi3_OOAYy=hoS8pIQ?r?+Y$%#$#*n<zH;7P_z$N)m5m6!;1R~VTrQ-_3N<LBMc{|<`Z}+Vf?+ET3Td+?G<-MNvT{^%^zZyd+8b$kv-dB?ZUESu$q0#YPM<%fZrcfG9%7d+#e-VfwJSH%!3?ToLJDWr}DD#F5pj6Zr)|G`-Fi6rn0ek_khPe`wOQ!#5t0hy7Ni-WL3~vFBJ*N>)45N*1nElX$UYuB*cTd9F)4O?W@AL`81^xKcw|!FHw}Uq>f{x)DS(gwQEn*gsB_rhx^|P8!p1wbuje99dW`zS02A2PqU8sPJ^^7vv<F2KR#vJ29l1R$=hxF^_eBHdn+;%3fYt|Q^W@>Ro#bp^(-+AiB^Mb>~0)qnt2<Yc*qPlEt+e>zK4AZi{G^5*%L0?kT|}u94UN;x3R8nV_q6lSnG&r{-59PPp1QobzQ}!3o(4QLj9?GMXTM~O{UV;7^9Yxh~3Wq)cavMSA}nJm_toEu<UPoE`w{d(sRDLYTdjNNey^RTR7FP@F$a5_-(AyH?nt~D4>Et;M|x6%!eBFUP9lPQTOw!corrK_#2U{DXP7~V^xuFM13xEhQq@kw=LE-%8P<r>X9q4(p<W>?@oCSmOb7&%mI*Y6vy|SO1{+L*428*iWU(>LVc$)GW7ezTG0;lUTxRcG3IhN;PlEZp$Z@SZZwo+D}uvdubV^#T>rN3CY7`(-Sn44-2OnveV}u533=CtIi|N)2Jd|*(<LxUC+!xc!k|}?<|L{6ZgGpxKo_1%*hAVG;WmI(44}^I0(H9E@lhux{Gs%Uj3&F}xw3f<7y`!EwWWe(H2uvHqrUHLi7&b~JeXCQ`d>#fxb{X>zN_>)%!CmcrEN5$Wb{^0maC(s1pU||O^rn3mgIt=&j&`RQy+}_6SroHd0P)W)P*I07n<$r`*Wto%QHfj)fCZgIl9GdJW-#^*hkl$(yRt)+wfK?uq@7K!q+1&s0hcGfeoj|9Yc%zsd4Htb+(iQq{P&zRz~bq@nd0VL!amiz;}UfV1@5*k9BZ2Md;y+O+pnQ(@m9kKVR2uNFG(ZTRhtgW8Pts(GsC&dW3)|VgjR?8;BEizw!o43`cbKC7UvFB~_<s4Jd~tF<4#C`S=r4!wSN&PWxEp6>@I~*AUw}&vrch?uq6iXdOG3I89zKQ7z64#bfI8WbWLc4g}K>E8g#iaX3OlcV98ObrjN$;~_WMeFfqSw>82x&Z$kwjQjQpB$Txz1jC&ZN-k7jo`^OGiL=uA2ctZ@ENZ2E%=pQmExp~HbsOiBAEzl$U9T3)nIzIfMcE{C7=*4FmmCw2&ZZDBg9m}BA^YdwXEEXW_4~I%QX2Ses)vUD0KIqr1q7H{C7j#W^*ew(bw>B(Y9L$!6a59jL=_fjOovc;ItB1fy$w$z2#Y^#;vBGQVPnekff?u7bduf9d(6pLv|fyAT@Nk>4qT_v?k7uY%Fy)d(p0o<WOY)p)=qcPuQQtxje??%JAChx)~To<O%x(Qrg?BG&-PQJEa0%z6bW9FzH6a_F&R*1Z6<8Y+{d$bSCS1dEk3D}luLk$_PVtKCBCT%8jT}+aUv-0dHwi7Wmjxsn1y9uhP1jpp4EJEi`xP4FBC@VIZ`<Ed9myXbZ#>*LczBlOR(@!i}iZb&qKakpzTGnL^UXSsP4>VU-L0fE_iatP`)$Y(GZStA|%RQIY6^tpoAQ42RC^ILZynu-o;e5Db0y&fnr%o@+HNKfcFa=#waH<+c7x@Gyp;N(YN&GmmtFKe%HL%iF`sB0VgO*RlkBZT}VVc-|e&FPs?&WkvA#+PVq*Fn?SqiX~wk_qevudgURvkajXvw+cwf7&)uPJ5l41Z41lIg^xWGsu=lvKVBT=}(p2QT&1Uc|4Zy~^jU$a#HW1Sunz6Zjls(gwoHdjP*2$~5-$p(8{g%{~8sKD6*z6P=yGTHxz`=^Ocqa!ix|(w6_QADBfA${&@;u_;L=BnzDSZ~(xEEguygIZJaS5yWhAWe=2r%~d>etzWGmX`L*pabar%@PKA@IRHXQ@&|Rp03SgDljcA}*cXnWP>j1-ih<)aH(rgWN!W>0SSyavn6(#BR%Kl$r%o8T=N`l2M0;OpK?_r2*R+8+s`LRFWAMyVDwFGx}v}uz4_UcB831PkM%IgOv9!0M-!XYc(fyfw*wAQYg_P`!H<F__)I<*?CIK@<)?|mNlteJSpM_%QM9vq?M!?hTHSM>uT5eDdKS5;8}7_+~IP}e(3r}jd!#%=hqs^&<!m{a*&&q$0WDGj$*L2BSRb7Ab%jCd^vO(EfX*#@LOP%A@>CgXl|sjBOi%YtYk~1z*w7f3Vq0cK6zQxJIKm9rmig5Y!}Ik2jf}Y>NZ*?1Ka2ss%)n3GxSEhVv4D9XCG(#%mOBRHl0t5wyOuxUSn}`8cW8?K0{H&$1YO_;v@PHE5`~_DMLTl$iAq)0GSG}+DfnI5MAwLnaAcb&%y+h%L1+n)8cIVpYq|Z9hc*WY0yjT(a(8pC2w=0`=}-)L}jBxQA0@NXpkY(${myhQ^h<(vh|HTziZkq5vo#J6!9vqw){+jNp6J%)~XgYg`WA*Ht3*g@8Wg{!CR!LG0X`gS-^0OW*95izrr5rra-xon3`j>ky`f^Rs0&xB};dJdb8DB)HN5}XTxYuh@IW6f~<ZKy1~QLAPAd8g8T+@!w~dui?mq2IqEYE=S=5xpwf#1d8R7pRtiBpV`a^n0*)2vI4}%KNWO9}#obDIJfh5}(LW!W@H&KHKz|t*tvs*GQ2b-n+^q2o8BaEFlM3r-^PmfCGdf%9t8_Aou>x>y+OvW_gOJx!A4Ww5=54XO+cGYJ0ZrT>AXBHVKZHH5_V3z8J}7vfEZf7dK#Z5D%A$cgnZ>ZrLaM<4GxtYj70X7^c2S`j*#<f|jD9Nu)IwdwVxM%B+Awwmjo2ZU20@8}f(1>$mlRzEhgjz5)3!=h+Qv8m=#x=PsN;i+(V1l%<eIWv)g~=1Cln5BIyKrUbigRc4$MaS9U-S=&{dVBX9HL(%6Z5VgTOlXc_f}je0~GMTrfQiDN9WxHDLG`a~Y~{28%j28ZQW(sP|=1tH9_~2?RbXN%IlET1&PkCL3#Z-CWXFgIY7`<XPQ%4q7ptZ9y*9Mub+y#dsxn@KT9J-G@HM3Sa>~BW0LYn~?&3lIuKY=TMKXtf<R!4laNB%cg1iLTF;{+yJ*y5aPTNUV!2C)jOx^ynx#6FeeoL0ga|oe~RPqDfedU@;t|A^KhtN8+clE(c;s#pq<qN#hhUt8%7C4F95HIs5RCe9T?dpFNeFoAV#OiPSTACQx9O=b4J_e;naVeO~S)rX(Vf%&$f39yaOC6kbX$6$EL-uW5=?n+JlcET5qeMgEU;KUl6^WVEC(FByn}fDLJc$mF!W3Q`^(|)R1N@p2o#B7O27DaB{Y>c8O{MiiD6uS|V01B>n{W@5XZOHHh}Ow%`Bom-sAp44kmcT)+Q3*o1Gi2_L6JSkmoQPZ*B`178USUX;uULu*lVGrIU%@X>kFtS7ivV;yj~E585b<KL+0bT^t3AQM~n*)Q5a``g$U+>MKm9w~TA{q>si*Xr8D@EI8Nk~EGMOXgW1NAY_b>}sDfV1Xg%$ht#>cI00B%gNRn@QT3dO;>~HE$!OMad(iI_*hxE1oKdBj_TcJSL-7LHv2$&|M1{!M6Ky0C@GZB!p_LzDbVQ-EeMT6Wx|-Ft}Uwf^uo!aF*ftMHaG=HQxvZ;<Vb3qn&Pw^$tVP?r6YN226AqOGux_@_l&(LhayB9E;;x9MX?H_6~ix?WTnh5<ItEf1r7gU@td}S#n8gL>cr)}6ry!q6EcRThb7O}xQfMF>GkCHj7o&7D#cm{-oPCU{j{}9th3b~mw3XV%Xd-X_nNq1YmbYdi7Ai4Z&5j{gJ0jmeJ!6LV77kxR^=JG`MKW@0-Jw?<36~rFyOQjdD|o=Tcn2*$!Q^jStiRKQ^A8}?pn~A{n6nYL+67eR->z-Mwk7%w9?vL4}4YfahBW$l~K=dPEu#vBB~kW5QJPknAPLnfm^1W07+x*HRVH5Q(l)mT*-*M;x}5MqsbX#*^piJMkSP-0)tw@BY_~K1UjI3!#9GNj;GE>2Wb0wBBj*W<1QU>KPPkMeS-bVHjLQ32w+lusxtCQMY8I2Iz_Dg=YM+AVmj?N@K|(@uQwnsP^h(fAAhD7uokW5Ytfc__2P`FtxrI*Ju#v<ZngY2mBMkcv~RF9e(4XX8%HW^O0hVqq;!j{UbX_WSOK3ngwF??fke7m8?|!B7vk(L1XS04z;4#Gto0xD?3=2C7!*g5D8Hd~j8V?PgqJEj3z%kc8@RD3uJwt6wdInkT02G{a$CX@K7aEsAM3Y2ef;Uer;pk=-YRYL=Xbw8i1L%~dB*2AZ*ej;({1s)BWhfffq6@#s>gTxpxHk#p6)iMgDOoA$H_N<<;UTePLlxJ1(FjV5H`J|KZ?qaMIAEmr<wW(+2n3>AjLf#i`wMcu_c(_9l(IJM?>YA3S@)9&abVpC#~ADl1z%zF%CxK8VpGLjWp<zTPjLm+)E2XSmZNEDPDcW(ExB8<eHbQK<OaAJnR|V5jbV67djSI#zf2lFD|j%D-o(8GAv+>-M89y4fd>TtcA$OsjTDZi{)QcS4~l^`fOGx^tFo6=xhdeuh84Zu95SL8+EPCSd=SUDnzW$sxvAByt3DRdaY;?6+UDvY6#Pj;$IdVocGDi3E{bnWCGVzlrX#Ky1EVi?CuJ9)-!rOJ#@1;HO(RRaSm}T>ZZxg;pr$U2cV8=dOAc;W_|7L!?+DhJ)F-nJh7&eT^3qj;f;`3c#DMOYWDyu%CN0~M&5~@R$VM(mSszhMRhg_dSb$deb*V-KcE-}1uFnj8TUyIxqSl4M#BMuO<%{P6eIC&l=_#SPP1j7>UdZ(*y(9VZLfYo1bT`*Vp%F)V^O@;R^dz*09?O#ho@3XP<!HVn*U8BQDw<^qKemrqZn#!mc5FqW@o7)3JZ9j$VH9Qa;PjAR=+YCwrX6gg3FKUw#lq5lc`ZIPw*U^t6^Y0pBf5(YpN3?59SC3&X~K#lHdeoi3#hPbz$3J`#k3?F}#>T$7nUlczqsP>LXJHq@v!VL0#lF_%T-*NwQd+mz1pO2*jO$1^In(5F632uA-)HAR|u6d!W`;qq4A7ov`mqw$yq*pA*IJHet%td8$l3#MzizH|!HRQ1X7I03p&BXs)cyZehQK&nHxCAjbv}f{lC5G@-i>=a!<SJ2NFH)+X6Gp1amMPv9%4QU^e&A_WeaStQB}MAC=@Fp39d9HHmIF9-Hb9pZ&SGRIQWWQ5^;)yJIeaR0$)XcF~$8SnQIWh8ii4?WNR4NWxu-Rk4GsLef3i*k6tr;pndvXW;<D#h6Z=VT=@8E(DIjTwM~_GnbuZj*Vwk+;Jga(=)(`&{#;c9na<!TP$jcW<evs3$bSf^GCBW;^4LI;wBA6)mS%;6dHD!h;qCV+*abIRgmA-|zye;t}<?QFexnidiTW!nGqP6N68G8}x8UqM>%!qHGCm!=yXyjmzi{G%lSC<QZ&LgXj_g<DJB&h~bU|ctY4ILZpr;vxm6mb9qZqBwy!!xGF3lz`;e}*vl(au*ae}UL||DkO~$eu{5zI{Ro)Zk_gO#6$Yp<cS2K%)Nq5WsWv4HaEP~(sSsKoPI6o9d!VSK_hc0m>cG2JQK@qNjOvH5D*Tz8Qgt8zH-_YH+1g|==(Va!JE8Mf^AnUNo8No>qHhd#Hm#Xjxim>h)OC~VC1SX)x$?CL5=DfcODN%hTH{^vHv}xP*q_7Hc3f$lFLk=bKr&eU*_Ntg?cA<P$>7@1mnXQvWJSEAtiTpa5ye0}AKh6+2|S=0#61LP{-kD#oCsFL(G}LYB*1<!CUoXR-c?@UW@aX^HmmalXhC4zeA7wx?x4M;T3GH4Kt{CDCs{lXHUcm9zs5Z#%?6#p-By!cQhF^@QAUqy&CmuK)rFX9N^4Pm*zL%Wwdtf<Myf$Q{yRgej2HGb8EM4cCZ(WcN8ddu4)<+gp!a!oD(>~PEUBi&5iytgu;_B}Eu&wD8RFvPMld&qgLahyV9c%hk6TzU^>cGvZ+9uC1XkLeP?ic!y<OxUl7Z0&)B$3tSNc-XQ_);H4PV#C`Zqwar+&5RW5|q68e{Y6RC7its?Xr+_({oz)ljt+9pkh#h$6`v3!Y@pY6`l<AX_BJNwMp=3}#Apv8IfOl(%v~i_er-g&ljhSr56|T+!MN&`O&7{%ivr{lF!mQZF9`qq#&w&14Y}ibarJ#=B*WCIVi;Helr(G1x(*X#$poDK-Zdw;lHP8}WF}He&I5f8`gyuJ))=6ZHbG?agxs@NEKX!q#ar)K0;~(uyWLJIRW3+JCT$y$_16LpRU_(Whi#I@f4R&^rjs!zk9li8=O(E);wxT8&w~-iAT#(j?2rp<fP6J`B0IQ&64vZavwwPhhl@z^vP%)mPeu+JI3^&8A&f=4JYih)Aoxy`6-_8$FO_yF&KPZQ4R`U?DQ4r&CVq{2BI<tD<pKHyFp<ZlyF~`bqihN!Ed1NtXy)K7qC;O%>}-$@=drDVyZl8>|djZe&?IxmI!T03_w!r#wlaIEWt)scKQKs-V$hGS@zyS$C}R^#IiE55FTi3e$8@bL}bqoL&P2O-({;;Ovy>PYgpZ?!YB2ahgWAc{&XZ^L=Hlzc4i8w`r(s0;+6?pM>45B0b>!q@7eMUbBDVD2q`bLY{bieNE>Eyzln4yW2pTvpPXbTa&J7T3p$QK<U;^2ol}~j+4Kxi(w};cQLJP0u(%gRFX2)vjsj1t>ud+G#e#k4a)2c>$13(T6Jccy9Vy@-I-zABmv5lR%d9L&`4qKZRs+rmvAC3QX+>g>bPGH^We%cDJ}FzBnAi66s6}~)ycCMUm?rH!W?k5ajueI<uny#-4gNlFbRR;soR8Skz19&rdeI<4Dh`j1sc9%@e|C#Wh$)sx$x{1ypNe53+}*qY!n-&ea9?ix!u!HxDcqtHxnEIuxSFEvM2-xv0IC>2W!EXpq(e!7mzpjKE*`e^d{<sskSKldOU}#3)%cd6?wch6r!W9A<^%JV1*PP$sKh?wYjsK@Vo@B$efB$5un~t=b>>&392N~>}KK@RO@pi%4rbmwwJ~PL$FEjOl0~@&MLciYNMpqHy!Bkk=AxImrs?~MspEju2h8J8}XgW()6IN7J|VP*|GH5`jEtFe3?Se=2ooiT(-Eo6Apqp-dN3y@>W84iJ>)T=`v8FQmrx+m7VfH)dj-#y#C_rvPqYRX$&>B9Syv*s-ztn0);=5&F5&6jo_DH?2<1p{0u1D2Q4MpyCFzpEJLCQ5j^<THh;psr(k^?J}skTI!)yWOcoI^l92zKo66){5~aGQ9#B*W*ix?ncE@a=Mk3JlMem<maIT5W|Moxx&wV*NCRYcER-bI*le1?YWz3hww<#OqAx9PEn(&f?ZNRHaAFEz4couctgG`W{hiq&p>#6N*g6E@`>qn?nzNzG`N7_D-E@4GwYGnJeV2elgQ%9mMV*TjyvN`o`NuRvgJTZQv)A+DNp*y+`DIY1I&-xN4c7DX#)<vB<wV?1K)!@N{7Gg!RvTdHiwMAjNIG>=w7yV)@HtK^lTpdc4rk=WUn~l=XD6t1UCp0BbTBEobT_0*a+oH*KR!8oCQ+CNMxvSFFAukd7_quAHvE;5sYa{0%u_&&O84?@aSy#I)ak49>U~1K-u5}?hI<@GXIiCJ};_<z<sO|`kHJ>`4@QT1BrlijiEU&{r)fz1|(-^br_xbmJH4~MKv-DL2_bu5?U@i*Z>EKz|LKL)L!RfjUcl7l?e9wkxG3X9)LCInOY|W=BBWzC1q!Hla%?GZROdK$m{m{$X9Uj7VT+d5fLf#};^|O5gGFgD64!cOB$F*ehY4LTYMR?0pv3((Slhwiab-U@@_OguYuMo*8-AAb*Uq@N>+8_eO{u}mY=uZAqV-9XcgPX<FFp~CX)8$A-^~UkKcECs=lC<_muY!5-^ZA|B)Wstsso#Z|MeGlDM*TOZ4x!xz6r{L>z3l$Ro}Mo@E0hH(hY~nup?R`!W!i^rT<+I+N0|LjYy7B%x_MjbIdRqOKUiZaO=UTUG!gbV|HNUvxl6Vx7bw8P-oW%J&bOt1V{%ohegbUvviBLC*b_2Y=1{Jl+QQWlN($QW&fO{n{Lku&tv5^)RoZ94*_*FF`Avr7TKPBGDEcb9BiToD-yL>M6-iB8Ng4OZAt6t}79x#c=3Z90$B8_7f^dwKbs%)^tV&_h)sdR}p_OJXbgs-^t7*q6n#cIMqR06qWU#rP+}slf9Q^j2nQF-S6=)e1Et>neLH!H(Z&Z_;OOKlXV`^4sUlZnHa9T|f_0l^&K942eD7&?rA%9#UD&y9L&V|k#kqi*2MW&fS2W)EG??6c*3TI0O@N^W~C@~2oscSzM3UR>gG!?o4n3lO>a<qnd=v_O{bqtZF4lxr8=aF-}nbBa&rc!T%B`m-w4VVX*&)6v3$JEUz<i_T1EArk$(rp@(->}zIiROhm1d;LWWNwlH^YJu4z!t<VkLvnR`@nX7PK(Z@F;K&#<)5aS)uZ6^JS4IPo)cw)er9%HXC;UyvDz|3tl_MRh^h3S2mU=ashp({ow~qsyM-%i#KOn+F_2WFb0}=O6xE6P#mSbYR<KBM>}_rX!@D4T^BGX<`sfUyyr=YRSNxe|ib2Ze(G#t9?x@XBefCr(W;Knmp@SN}pJl3t9Xwv5_`u_u8uv2WkbdWxpxE~E>!%b8F1e*sO)lm_wh!Utl@K8nt#q_y8Hu}gibqLe@Bp>@uA^O1W0lsn=GpVOBzS7Ct+*`EwnBst0+}TmG^&ul{DV1slk{L@SK3!7E<$QXP`O;bGc{m!kK-nw%5=*08sYRK-Xxmd42)bF(P-g>I+%C5xv*SxAd2F-(zfUrdi8iWtD0Hw3c1yU89S3!QQ1NK&`u?KuBw>}!9Y;ztThO@f{KwJX0=$J_D<_E+#ak?nh<)dRf=_#*der7BCk&;GUbJ_z=aAL#$R-C9p7==0B2Y3%Igr9%w;BG?`^#2SEyUn$3bdaMD;fhCijq!1sZ<j09f*Lq58>JXV#;*cT&@j?C6NMQf`8^VG}r_%DC$6F%<1G9j+*rGoRdzLR&S-Fv}u}mOtSzx@MWj@WUY5jnNDjqO$6F?tN_vacb8vAUxB<Jb-T<2A=>xk(JaZg#8$o(WVr{+p`c1B-%{iu(#=RD%C}}{J=yen*`75!BiIzONSqfP6puMz!RkcjOY%`mz@h5D=cLD&{4s?f@>TlaAKOXx_$|uErFlvT_azEF|U3Oxzf#LDR~-rT6g$!;pOR62h3mJeV>Pv;d4%W_tCciYq{BUZR$2wgF{(+>BxcQro#pBXDJf)P_X(fpsKSh&|@X>F^IzHVlI!he}sx|*ZV{v+KRp0+C0%CFvSP<d9;^yKUJ#Jg$e<s)cI#eivKNF624C~Q<lK^rBb+*sFpYIwSrj<`?O}efJ}J2_p$xyw;z7|{vUt-xOH%@pEFb%^Y~nJ6R^j3Zh3sHe6gXm6Q{wa=Kc`nCo((HidDNhL4p8g0r>W{P>@i@PIju8&uflX4ZK-jTbPy47XN0HF>t84P#%1Sd6vKjqH$`I21N`h9GD^Bvy19jz}-47e~Y3nR36s0QMU=GECFw$*3frEDdR^vNOK`y$o%Ugw)Frke6`}IGLia$!Ieg(CD44vhQ2T|=|mM#T?tLF{*z5C#itl8W3svlF$KRn>Fnv9uwU7{NF+k=5>-tTDFH1>GGMjO4bh}vV8A9QoIe*acQf*WcvMn~fbi8lP-h$Int9B;`FvPbCy1-jLoRdz!PwZhX2k6&)!)4%w?X@Np5Q8Cz8sToa;e(eNc&9RKG3KBIbX7244^%1J!aA;0gQ9Vh{cd5I-5Ja4ODk|BEvRsy62^N_UiBG%R1W1U64BYK+SP+qo+R&rcDgroY$1-7I1F^`^y$~I?DRD55uqWOBTHO_;qZu>0)zZ#+&o>cy+UGjm_1F=TcIQWz&qp1kr|`-GkMka6WYzd5^r*xVR@Q>TMxRxDC9|2xSVFMGRL_se(MoxzIzS-OD+b9sVvA;}wD_+W@5k8qIQwNDX*lp>GAoHnj@R;5CAS1w(vF2><c~-5EXL&!;wjKWzx$FFnG@W1Y$QbZ&4BX^_I*!OZht+8jV`oy;Z;0upIuU6j0>Piw|4RO&B5nH+OoS!R`(#y<Y;lyVoX(oSTn!h0tx&LQFRv1*-j*V+Bf=;Vtt1TW0(L(Yj)m!eRaQaZ{0$Rt^$Oy6q2|G!Rg*oXamv2Ke7b8Y*2dZT7ysn-~-s1AXZlim&MQ?U%281aZ}kH1Culg@q4&i(zJk*$V`fE3Jgn{B-`_0}sQH%YCctI>7!a!mWQW-%>Qt_hwdOD*0$jwpjhsFbtdvx>%J<AhN+ZzWsa7`|Kyn8ZGX#odJ9O1{0o{>3dH7@MCi(R_-tpXL-0RS?1A>D^BsfBNw0WBG1Df_b!q%a0#_F5momRu@Bfw2seH>c7lp=#+{CDD(lgODR|-HDU;ps(Yx<!}+1Giu&?FO|2?9Qy-$XQ*iIY>m}OD`G0kW@Mf7ImC)q54t+w%<+cqN*Zk_%&Ju8Occ<Qm*d}aZzKZojX%*x)vYC?0hTpIHF>Vhy3}-*rSl7>>wvx=5L7&I$L`!{tkg^N4GtX}*n)}s?1N)<&Mpt)JHH&}L8KT0&=%e*vGtCVE5_7=02C`9Wu^ZyF`l&<yD$#i`DQq<q6)m7jnDa&Nao;!G+TErIGt8<t2k2K`x9nl1yG2#JIL3T(XPu-+7yGRAIcSO-`Wdh%?x4cyu*ZqR>U^KeS)mut`};YyH(QJw>VEmEH1)1H5BdC1&H4f74VWb_a=R@NIivgAl2104TDvszkWr%0guU`Uyn<N6>za9kXXK3YOWAH1&CUu(Lvw}48b2vO0JuNXB30>Wx`?!m&qN6`Rn^lSOSD-kP)rK$s=c!6banXup5|?(4_ouCth;JMR>r|+@xkf!Q6`3;^7oD5eD2Y|)hNaM63brp1ybexNTQ9=k>a#`=-v;Fd%WA{U@)B-Ie<t=T~(zSZ4Xm#&rw}z%zvkmWTIKQ<mcl|+&C%)1)3z5!wP~D79}uB&6DE)IOfC(u-n2O4m&~tJXly5j8RKj0$rr^L^&PDwLvJ9x2y-`M5U!07}J!1fSxUbcmEJv1aL(AqNdL%);RSonv!hI-LBk~l*+sA1JV%&EAJy)xvE>*sW=vv&|IG$bgtayl9Tj(B!d=VPqFUxJAPX;ut^*&|CvBCPE#8rOR}_7C3Zu9scppP9E$&bbWx%JbQMH-L3}6NV3N{vvfzQe@$G5Ksgk`<)2xv-fP$=(Z8cj!&f(O}4JQTZ-As#O9I*<;w41uzHJ_EFe~a*v$Kz^=Y_u-<^DF2VDpocX36=UuHL;wm8%k88q(r)=URC|@sw=B2qw<PFFHcXR<{oX+nw!1PhGI-G0am!7i{YmJ+{CDdB=V+SJ|)48;c)w!uYUg1xOv9#I--KDW>{PI<9;Ak<Z<q&C>cq1zAw>mN(9a}uARu~A#Xe-nS$=;qTR+b*gHrI05O`EyQ&VPdLI?3Te#qY5m{-5MmvhJz@+&9u&?DJLP&<UQ|Di*S4L|n)zdNHUz~_cIW(5<#}bxAV;SD%V@=7~4=srgQIWStX+b<xt3OY&+2=H_jXizA#qG7+s!RFEsrtor+D1B^Tzxg*#Wt{Vc)Kld(lArn=g=nvufzM`u!hhy4arQyps5|!pNzrH!EJ$+bhRdu*L^8QH(|`cOaS%7H68x7xF6*Oo&buF5Y|L4Xdyhu{*-$~+jtkZc_F2Gg<9Fli$+&~XpU7J=5v=&qJ-+Vl>^eyBH2~lTBvgDBuNp`8D^Z3rX((Q8G>r}X;$Y`n;@~JCBe}svdE(?sK@{pn@Rct?$R_%f)yyi_k|x>A#A2~>m1OSqZZhEj3jjy`G!r12XV?<kno>Mk_;~|D<$Vxvv)ZpwCMY)o%34e2K0$MrXT`McVMky(zbZ}40>j4i=w-xQ{))152~e#NgD9G3p5jd<k>5*<M8upD<MXC8KOBUatR^Nu--w1C>6Y>QG9|2Du`NU$_R|ozZyVB_Ib4B|0_eT`bF*<E3}SCm_@aSZ9zeYkU`g-<>LhMzN~H1L`)j9wl;W92LVq!*0qDr<tAos_jIHc>CQu{ro%I$w727w6W)0S&=#4KXN3w@OYEmwvT2<%5MTfXdJW*f$hFBlb$*Mt_-b!)3{QnB`aHqoHtQn;KWB`EmPYVM0dITIfdnZaqZW(X_?I+;%x@;af(jC57!8`a%=I?4)}!=5C6=Lbf1<@1Dd=rJg1F76E{VAHu^%Fc70|0bUV4(~5ckxB_%yg}Yhdb>B5M?5liuTenqJWbsjl0Wjv|@?YXIk+_(X~CG`9*0Q=Pgjv(|Rxwo#wm3>L<jtLjtNhPaQj4Q@?@9x}neo8~<`{Zt)Qc>Bm;_H_08yt=N<$#Lj{N}@B_OseaBW$!315=v|hPD?e)A+w-$&Z#CLQC*f?l;IvAg_a3j>ZBS8>l4neebj?kvdZ^HUfq-+P<ZNb;d1~$Xx*-48`hl8+B07c4i|i`HZ9UmC2Ck#S^ilW4HC>{HCWe}*bh5}n@wSQHIamdu||!l@5}yCKa%r4;5BpR*kW*|AXFq`+@BgS3@QO{9vL-z)4nFRk#`3p&&+87CZ(J!CNMJv#vMt{?>5x;X0)nXz|&~+L5NpHqUOd2mN)#H3{U%!rdo7RI=!Z+R6m(vGHt}*GA~D#`ypqXLx#^rsW)Sv^If%AjC#E|<x6m7q8`Kj*&iZ6b}L*uE{N@^nh+S-a%f~CHgZZv=q6KrbFZ#6ex@f<RXr4*O+%MLA?US@(m=2>)5I$53$h^Y^45$@P)DwDF1p~vNHC$jgLF|`ZI^JdHp9R#sGWFb(7*%VMmrtK4k2|bDvl&ua(GeaZLw#chhm*=4X%krp}h$d@pz%AY6pQ2GZXeS!uAK|bOU9r_hA>(S!Sm+2AiSU9O%rk+1O?@c6L#3D#Onng9~GYy1%im@iwXRt3<F~BbEgXM_sX0F)HICdA^m>y3vmH0zAb+<D`FgHxnLbEu@PYt!Yx8+d2Z4W6?BuqAl<O(wv&6SL*~v&Gnvl!E3tSf@Z!i>41ByPr?tjmT>8jiffN*OQMi%&9vjAEedv0MWH==3i3d-5ZK*ceb9m#O55Ig&PW?TUP6!||2pMe<n|P_{b8LrM7JY7sY?1Cb_!CAm{>jf+qVir7DMNMU+;fEU4-JA&TL;HOTn=0Il(u!+q1)8qC}hfx;w*y`%aMh4_5QYbe3z$?R3p)7aX@yKZYlPp0c$BX<vX{P1P2p4sM`#O<HU0^}@{6^qWr93$*W>$yHi+4y2%w9&fKFUvPDQ=j3|$<#+M(;mcQbqY(9dorv?-HSP)-FOx>Z_>hKwZSACefUDRRBxt83TBn|+o7B1UY)CVQ5`AovHqv9e>-pj+IkTVR;O}qu%ZHzT`02w}yZv~5_)H`kxGhNU>fL<#*5CxH-61N86wGNGko4jH^xF?Ve*cfpzwqg|3IHZeGwMG>er=D8W^~W3>Xd@H3r2D=nXcWWnx))&PH&Hm%W&^+)r(ZT<LWkclTsBiWyDI%=fS}c9yZW^?`FSys7k_;DlbF2yqjnJ0MUdAQ<tI5HP!d=d;Rr0h&3s|fvg`gvUzD@?>67A^O_eA_v)=_uaf6D;&#se`q#_lZ}-J0iW%kA@8fA%{EgNpZ-edJoEvLe0{+eU?OxO`S`J6pCne5<b_GZ!`NWo&(~z}eLsXi<Y6!vAm&?ipU&2E;Pa+u|Yv;)oN{+_6Z-VzdnINItvFJ9^8R{QJ78I-_YmgcINrVd+5*6y)I{R8)H7I#saA`B~Md>g9V&hTKK487uLY-mS%JVtZ2*|nJd9{b_b$P7#T7{PqaV@&#<U0`H+POdNn0K90{jHJ<vCF-54U5R0ZLoHs)*o2SzGXF?9bwVax<&TBhO;g<uGOI6l@D@kablTZ9Nz^>MNDkoWwMK0>ei3a#^T)r9{21o98DIO3Gx7*BTx41wh#s4li}GGH!%WBv@`^mAQIw1U5r_xORK12Ppt~ebWsd7en{)dUZT25t1>GP@5ZCt#?!UK(xHZ_^~3$|g$);B>}nJoaRF=4W;6fFHsE!%)y-<UoOvsU(V|n+U&miw*KFh0XQFr7^;TqNclKgMc)Cw*AL7-s#4t>>x=07JR(df8>xGsuHi{pntJK%6J{7v~dP~-|<M+yu!sm4x>*`i!)A+$!$3OzBKb>5$DQeK%)4dQQXDig7x>pp4*DkRs0s?82qWToLnEk2uLvYUFY;lf5<~3OMH$4|yPC$CeSGTPOQ*zS-9@7?1OCbHpWEOrK>-3H6T_**ws0qlgZX=xqq!+ep;_mPDVhL{ZRXn@Bwm?SA8XGA^--fWbJtcw?MB@0GqSI<ytZm&s6ueT8T-EdCQnP(`%6qHq@v^QQGG^~Pm1wC$tE=^p6$K)QdiqXfU+DLVwW7Kyx;nbwA7L&}15U5p5~@(K*Xjz0%rMyNCJ_MFzwNt8B`8Wa{Uy=0KhSX>=$w#Re_in1cjv57=pZUVB{Mz6;H>gyBKhnDZhhxRJv63Bh4<d{=uO>8nNyYqW{RaKlc96heXj^?vQDx=w$w~p(v|GHw!Cr>t}}(r^uS~2sqcHc$1rgbYqMpcMP^k8*#Vxk+^DKHiDO>+-oP|R+ccRltl}3?S`ir4)W~OONLzrnq{esOCrVqnekPaIs#@LLRQTfD@<I+sp4IOQF#=p3eR28=0c(lM7F-v-&?6uMr(C2r-&oVq36r=-IUQLLsBQ%-#sFNAnCAOFvZ4tYxIYsb`Yb9AYqJuE>CoAAmAu*I2ZNU!25dv0kR9V2$G1r)LcuI=7!o~~aC{;*7K-S=Y9_fz!E8p`0PKB~G}_oKWQQL{FZBowQ4|P9GyB4Abu28!A#x#d6vYn-b-7IVjP7G+>1f<sG~;7b8Wz5TX-r3!^!banp~~y#F0;`P!8`Uho__b#c@f5sol6D3I$Z(uzqL@qMOt;Yy}EPWdy@I`<Hw)BW^bVtR-ZD<$RGcJehI`utjenG>-sVDUw2!c@>B>(O*HtvMx0aid%Ud?oASKROUtoZ0%X9^scVE#3m?T2FP6=4(<Xj-Pg5e`sOL~$1&=m)4aI8iONFWi1Y4Xn6@C2qu<J)Z8DUmES&%GY@U)yzSgL8?DbwQfTnK{{6#3Qi<dh$vW~fy@R$-@#jR$3WORjsI9KyM3kn|2_N(=ttY0W3M-VgN*sjUy`Jw0^2s8Y7kV)5P-^hwQQz8UMbYr8%w>K)Qvhjkc2vEm4unWt9S{K3sSyutxf?C$sK=WR-JB5GDt3CW<K*%lz=44i}rF)1o6NhuQK?J-s4O8idFFTrNnFQj>~0dt_5M!K9K0QeQ$r=q6w`R17w2}<(o1yE4@ou9PHsL9O+ZAw;;Ca}(6a=hmglVM`pMq1>#J5u~~Xh(S}wEEff_6+Pjt}K{0$GS9C<!rMVd`qhbk=!`aXo>ETcv3fS!Ps1h{*H;BvQCe$Vx7Daxoy;wFWIZE)Bq5OLa4laW*j1&=Z03L2<>AHj;~n>XnXW${~;jH!*HE#EIZEI0^?bHEk4pBT+_@*krr1nwo@I({!TQv17{jz1=LQ`Q6cNXz>11o?m0`U2$gA}_YbmAC&9lcVhJoLW`;&arZ#sB{kd`U(!2gYh4gi1#m4LmzIZT|!B>lxx#gf&c5FO#V<TWYe!>r0QH?F-?zF}_*M6BAY#xl8-Dqmh7Y_<7uDo{v>;ndQwe&~1F+5mIG+L=_WaYA0ddv8@0fTotWV$SWbPjA;lVXFD5>KX@-QfpmIS7W~b{6ou+GKsjp=oF>oKiy$kAtD0)Pr?PbPPJb)<}kKXfcw5%;r2Mxeay{gRLDI;B<3PBOz5abeZB~FeI<>P*_3<1~fMkx{!}Vd7!qx8;`X~SjdMA=#!U~IYYO&++E(dp5ZewKMag#b@{uLd@9;nhQ*Ag?=$p9yke@Kac94=#Z!ujIux{ck4WW%4a`$MfF+lj$NOY@`!Z!9KJA1Vy3@5m_k)e>3lbvh??Q>ndOgD&Bw6OMxs;+X0p+sTwIaf$A@)Dz!(BTr#}AV!*<{b6IWLglZBE*Ht1Nc}rhj&8%8?;csw!(?7v6OR;l8nM9Neyi2q3w-dKFi@hCJUUiH8K%sut{e&-|+67GBsS`p#W&W%I(6x`71@*Jy^Za{Vjpk!}i<8;RwtsLtb)a`aGg?klDZXF6%$$VL<Su^F~LD(|ylv?s*Q?ogNvz6jmmVQNrtOCmubHUx$<<JdkbsQ%`t&oIcaiYvpwK%PkhrMqoCuFcB2D_H$`wplN_+4Zw~DehLv<B6KIY4#!W&xa<w4q+J3U&iYA&+9U%#=?zf$au1Wn^agw)&5IK(}yP@<<jV66k`S8+LUxopFzlLsSl&EFC310>tN%yjLV`y*A)oJ)T!$aVN;6zyS9<b{_bSi9)<;CJg7M$mcZ_ywzmY^W-;1w1Q2g?AB>iM2DUL-wt)@~uV8|KTBr?3?30eN<hr3umSF_6Hng_kZIlW4lA^0u-VE-zt&)|tF-`#bWU2$}_~2qlsc(Z^Q<kgxnxu>L!+}kwMmvQL7zNpZ*+{=5<dh6kr%acKEVJI{8U3jU@C57J=aG0C@%bHta>4X8q%1X&)PUh%%w?#)87%79XuKeBqTZK5tpcM{B@p<mBx>P)EfIhv?Tt0NZY~kRrq)baZ+Ts^3$$W7+u9UN_nX#i#dsxn@UqTY-G@HM3Sa>~BW0LYn~?&3l8ZHF=TMKXtoO=t4(^RbUkFXiog3g*1@fF%!V54w@riS)&I?G^4Rb=K7tm-bZG$)tpK@=uF3)p}HV=mytbnIgt6x2B3)%`bXpl9`W5XyxVLad!5uu~nqXQ$G<mGVp7sTik*-5$)Vd?>l+o;`xr~cz?5*`jqBU$Tww!K^69pF%bG%#>IHri%hFvyCkJ@^Qs^|lH+NQZ>_1yRBahQInn5?6<ulCyePXdOj3wLP6r4Qa;WX<S@mLFc8#$=Sx*C8`A|5<(7XiCDRi_!Hp28_T)ZAll>Fe*eQ?;<MN>aKbWk{r>Y{6TZ<Ve4GwpNw-@)VLU3Oga89CO6G*2(UhFeCSbT{h#s6L&3b}+75oTr4{k4R&7~tL$8PkNy_?v&&wkMc>m+TtHzoyb8<~{zqW*eK`D=A;V)zUUdPy2bizV|ckRz744R*Cp8L+?*bOfM1F`6X(YB||j16~mrY3>W@GHvpsLs7DJt8#y+EL?(ls9ptjCt!-5H&%QNOYa{ZoQ<d@hXf^s@>$p!Sv&<g-Ju1cai~n9PkMqsvT(9!jLq~f!)6MQrYK%x$Wdey?83Gyi2__iJCdhnAm?T{x-_oN*o$%~LbT!XWA9%C;&rc>b(>KpS?M$u2B9%y3L5^ya;OJ^VB{DlE<jm~bzKvxcBY4wQ2uXQ=~dm!E#az4vDSe%a0f#_ZS4~4Z1uP!o^a^$T~zqJCN9|8<05Ec%46{RObzSc*SBzA%O?o%1iZ|?9WBq$-AaA^V{HBrj{D%g!hq9C<ZY9fY>^&LB&UT8W|=H|Oa%{?xobf$)klYK44n^>SdFfR8eR75(n@Q0J@8e@$60b4af7k99Ooo;wk@KXK@I^J9X>&zmjSm-IRTQ!+H1;(qNcnqdAO1hdBtzELPwJ`#<HubYH&s<IRyr_ghv8FNC|X6^M*_scRY1AI$*VJw#&|5A8|h?bLM@5{mV9t*t`f}QtcWt@=8Ur>U26qto`SIdeUM#?KkjPw1BNQATLm;rDPv}rWddlt>tUcmV5Q$jH#_pK(akCqBw4~Iy9BSaj~>-urz+@52+hRDr|yo6IN2XMOH6cfmy78PaMMMgUvu9ttpLKx#J6Qb{7IRY<<9P)?BZPKk(T%RR=LBjv`Th2g?|voP!B3Rd^OK&0<CRaX2*+1#8PCRke1EK;*WBC4BzoUq04vfBN{-hfg21alBR9=FjhbeGug*-}8*mZ{Ff$YNp%bcSqE?C<F7BMpcjR_Cd2fPCVUhP6t(*9*&c50LzcVF`Xs>whJUDJ|Jv*M}HKRAB#F<;7>F453<R514pY#={CYiIJN}yy8{@I_GqX)Q-N$S*!i_J_VrQ8lp(K)tPvQy(N+Zm(lX}aT{<a_RJxyF+)E2XSmZNEDPDcW(ExB8<eHbQK<OaAJnR|V5jbV67djSI#zf2lFD|j%D-o(8GAv+>-M89y4fd>TtcA$OsjTDZi{-=J2A>zczMjnrg}zo18lBDH?iG65*fnx~aigxa8H;jdON9tx?kbN%`!)!5P_p*ZYekEw@F8PSLzs>f|FYoVyiYFE!80S7z%>;m%nr^5U|45&SHQEL(evq{o5iVV4zZ7Oh+|PVO?D1XM^QNdbxhOKA$l_FYi}RMZD8u*e3s#fHJ$9T(E18*gv7#IBqUe62Ut;tZ3Q&)PV}_uVi~h6TXHO_vq{hs6F%&_&cOZw#V{yX0g%eLPin~R6Hqo94iIemIwqwUiFc#azx;HXE&Ei*!;-;7IF0saCLk*j=qd7uWvO_LMe$l&g)=qwNPdT>Qc6&J;&7V(O(Rid$#|lQ*M*}PYHgOiimGO3sUiwX)VV%z7N+G;Sum`AWio8lxL5_3AJuJ>Sz9Jkqg<ZgIXG9tz<NG46#mv!Cq^F35el3!ca0^%3Ca=^)-~(Gw!!v!&RJr3F@uiLYLfB#JhaqDrV2<!y+?z($Zhart}>Eju{bX&S<?}SI{^#w`{E!rqF-G_P2E67oRarIt*b_5VXHb}-<NEu^?p7lir;O*l&SMnnR<w`@utt)L=Kd^UnxL{^aYwLYqML}FX8hE)f&jL0fb=Vo-<A8?!&pIXz9*O35vBzc8=$+waydx3aZor5UNOlLuM9<@&b`G;sA`|K^aHrdGO1DeN%^cVUWzR)HE4kcwhA~XFJ?~@EMv!y<W!qeMA`v-rqydvwuSqjeocLI4){)&(oqD9`NboHifL@*^x?dHo-YrNlb=YFLPrCprAb(Rkqt?o^RysaEF{9FwZ{Mys2H~UU0C!ZtdM$Dk|y;jj&)Fy@}b*_@j>MTWv+l=@ocT_pR`tMZwrY>uk;dLh(1efU0;z{cV(;VWVOe3Wad(2+G9Z)87U?9Fl0L9kwW2LfbIuPJ81r`U8ziCj)r~Th$=CM8J3_u_<D>BLSWec8U<GBg*U{uK8TvQWVM8c^|F{3kYy<5jghp3Ki_JD2`Xj9xkMUg-9$-Y)L-?X0{{(vtWe*D$JeGR3bIpAZw~k2?HGBtz;^MmWPwv7W*D3D(O901%*2Bu2od3oIj)bA*>32CZ|*#2*8aYxm&h2Sqyrus?tvAJl6aKrOD>^p1<fDgPl!lrdBRZQWACD<a&u1u4}G*ErLW5;pY-cIH1;em;4O@ODy*1Ftr_5TIWlhZZVJyR)4moDp@<Xt5Pz!HuU8QZZKI9?<gy<#Zp8u5YI<<R#5^Es0MKl0h&LlnIb2G6>)ThbuJ08AB+i|Igxjj7r2?339QZPJONq|SU2BvlD#`<Z>biRdjpUWZS+YN&x4J?i~X;0k4dvZXK=UGq?eRl%T$!nqgpexfkt&9rkc`Plpl6GGGuK!sg{vyP>=u4kSgPaeN9FhvA0PnDB00>Pm05RTNvnlUY&}2JuOSBX>ml%r9LdWTzt#u*I|aZIJptbjp3kOr2rUntN!B_7EJxz9M{`jiYbAWb|;jjLQ`)Sxrbz6^Z|8%Sn8F&RP<Cdmrldi^|Ag9Q0%E+ZTc88W0S_%d^**fQHts_xH^7PvSBq;ZAHg8Ee)bbvc`fZ*|VC0E-}a!335{GIxd5ml3lDRBO>Lk9MIx3<yB$F-fh-Ht~OV+wga@1=Dt7M07pM?NvPDzN5N<=(NHs41cYJ{WS8-7S)+-7SFjCOIY$h35NVo#WnqfVfyHfy{ryHfUbBr@yxw2=#jmS9YScu%z-xQ++yQ)>z?!ginhdp5FtN0v3C~Wl;+*y$tYYtjqU+ENG(q$!S(wf>+7k2*0`oA6b#P*ieWD8m--%XZR<E~VP`fnA@^R>w1CtL!F76am=e=7`HtiD_?IbYkwrKU0cA++46jQTl*Ohsh{v#sNs&8*6A@N2Jq}i^Jy>pwk5FA*DOzG*AlRAHfedMZW9MuiRF}GVOO_+XCK6{dN;8)Tm!j?~<?MYL`x>K_L`%20tx%LJtLzWv^)=sWf96SI?x%VkgQYa4M$3v=Gl&dOe^q9=Gk7w2$t9(5Gb^F8bh>pTE9n@TVia)2<06|le&>A>9CHfP?(2F~8NlToj(QTeiL&JPuS?ezh&G>B^Dw}{R8{#KncdJMbct2?;m5SHwpE$~56o`-~USD6+xdHFHeeLcxkmjsT(9+hVYnm2Ub|O%^brXVww}Ip2uj^vi3C&$hYnuQCk06z#O!aJmk3wtt;t9=030Z?OJHxsxuBBF;ndYv6dwh3h*fvRkGNsiSS|&77n0s5g%<3hah>MiSp^G~1m%}``a!g7K{Sk@50X0SGc~^DvEXG&JGO;iRTy31I<X1UOMOn8*{5?!Upm^#w;aTKX<*#X0*E$1yZ%2WK?^yf<vv8RTYkn>~I|c7!=Es6Na2^}QhH2k1OIdFBG!!lbYVpkkM*wV^0H-Vp!9ncSqU^z1@Fi&H3HAl#4Zcq?(Ko$`dSR+9%Dx`Y;p##*e^EsqZw-a$sB1{{dm&gM#Yb{ST~TfB>?S-ffh#hnB2)yZchq@k+);umNi@5e_yyJa+=y}-#JcUJF~JaQ(mNBGK9jS`?w#5wsr5|<I(($H-OS}v<+agVgqSN8A^1jor?NCXsH=rwFhzDOeYQR%aT;Hy(6hM}D?67h?(T$xppG|IGo!qf5ME+v%~`q(l&Dmz3`J$9JWzFkusyH8__}P;<zX5_O>IX5@2o0mhlW7m&t&sCnq(vRB^bNp%L_jP%JxA^N%n3C(iqE-C_)4ezO~JtaPKKtABRuN=$KAZIRcYK1dJr)|K_GL`Ibbf?x_b96#}-@Yk=J`+ozETbbZnL=N6o6BJ;mJ5W#a_&W_2|L88?soA~7HnMWD(W$|swhIq(PMY$%t<X{`{s?x`*7Yv?7UH2dp<mMq88_IfWJDcG7=;itmYL#y)dFzq3Pozs&QJEUqzAV_{k^R(>sEb%Xy1Z;oy<5^JZ#GYipXf9`EK%r=u0zU43h1-G#EG3Bv9@(lr%o*>yht^8@SufQk*sW+r*Lgim@dvIXz)e9*ouw%U=3G?Ql+V<?%Zah^fOBALC*<I$&=P7ZbsLKTF<s<vYpkD``?sZa!c;2v~|c!g#Nv*nrAGztI^uXIY=yu>tlw*Mt9cLZcCi(iYb^{wW(`e$c|1edS{NOKc9GfuPv%Of@966&L_MgFo`MYa|FxlFi^EdOU*RKtonWay<g2l<>D-T6~TQ=b`zM3!go4&7Pb%t?N@NRZo?gY{SV)>AzBQ&LtId@7yw)IY03zjQ!{A<xOnq{>m?Hh%w<3H@^*)ZupQU)5|@xS30D1V-+)XOAgRMH(&%w5*?d}jooNx?GF5C}h}~p$Fn--`I=8(n<N7N^a!U76YRK17R=qZeK(YUZy&1Zb|J0a+o6+EAF*S^&{n>OmQc=BeysjNE5{M+N{n4vn9{hZMCpC5P$VlpUA!ZT#gPl?T&8b6ZcL4<{E@3abzp<z1i_HpULCT>7j#+4)EL@rPVH=nGHQo_s|I->jYN2l4mU>QHHTw_NSV~h_&LK^NJ<dOISa0r<t;z)o@US;9eTwsK>ED=Km8zcro4xFPMkn@!OqMy6tEaYbb%c_FHoSAUN&)|~x?<}M(?pf_S#b8|>rZ}@;kZ`*O*V?Y%I-+^(cE{3T~kF;6IW8kJ#t9MQ?P|dBbd3DRqk;jPo5wgBV`>3oja>im~?fd=6-0UnG2mOv)5|caf;?KzOLwTehC?D?k6|*!~qAtJ!hsGa()F`Mn#L}er{0z0{$D-<mS@jCcv1Q)!EmCxfq;QQ$)S=j*rh{$v4Vw?PkaySBT2Eb)j>iGe;x?L~4;~X3znf8uvR;Qi#IYk^wv&g*Hk|LP_e{&xJx9a63(fE&!%wu9zIHVIF$d&T}0@q^U#9#KL*x+-_zx*s`hA+h7R`FiHdF0p>F{3imN}GYYw}x!a1o_mFg(#^g8bHC3W{p$<W0d^?$&WWanp%@42zvCE^nKGZ(2ouAX9GieOeFlqUxsb=*k_&g7Ztbyl5nV_GU9oSh3;z_Kw3=wNMt0H15{pW#yk4-9PDMY6(u-tCpiW;%-v3(3A)#w}wn=VClqJD9*rKuGxQXG4m+raQHNZ))0)Ve-8Ln!YlJ=+z3CYfT8vU&7GtDQS)GgO~FRf$<mV{GW4hVN&Y>R|_umnc5)xTeOv%r>Ooc_t{fz5Mzq#ez$2=~R=8xsdHcIC&*RNJT3hZCOU*uASmhk{CQd?Y`@1SJYUgwXJ#fJgSSm0ANg<CV0!>PW8c`GJ@h0qOgE+;kRe#?8|Sw|IY-+ZcQFJBBSLCm=1=lwxtoE&vxt<dI3dZ2JfF7jTYMbet%z-vt+YfFZqT5c5_?HB^jazTc1w-Bc=E5pS{7t1_&$5k_KDoefL(LmFQ2WVuw}TvxzQ53YENt)+e+mU*F!QJhX_*!;TW$l)vud{fEKHD%8jbJZVhott7T?vz(fgCvUBZ>N}u*ar-d*DjO6*7DMNMU+-<MK8Wu0`)E^zyd?#Pa-_@gmLRnZ!@!UKb3vZt8{3t6@s}u}j$fx3H@M>5o$@Wz>OnJt(#?WzFStIKD7OHTEfw4Rsq*4naOk#SsOl`G&c>)f5GW*azVG9ms8dZT^<shceKYMVvb3v;+#9PshtAva5xjd$LpL~#@yYe@%b#ca`TNE%U)7DG-^ue2A5JEB<CGN8?Ip25``6Y^+6TCbZBg4b;4IhwX62^3>7=Ql4~8^L?x!LiYb7Gm)2F&P%4*inVdM9=`{l#WKm7FJtKELQK70mWJKJT_O}*PF@XNObCs6GU74Ou@Bbd`RAnC*X>9-$#{Qe)Gf8o<_fgn3PIO;z`er=D8W^~W3>XZr<n<6<|v$V0Bq(aj+g8i{knBw+Uy-3A7ZmPYTRR27tl0#6a2L~fT0NAZ-9_?~LCD%*z6nQdg8_BF6Aet~y;f3XlVfXaM@AcR3>{o6#P{7=_MZ1yBw7cOeui5SQRG-3(D7(H%aU5|w=YRd{<?^@tVw_L8tKY}dviO_U)9TKh%eF9T2y-nAyFy!$sFyQ`qt0YVX{)XPscd0!)rqhU0n7?WFvPJ<I{z`BgRZ_bApm`emUxc5oi}={ohMgVSe1gl?@2Ag;>6PE#5>QB6HmAbXdQvW^vL5ue-hyWa^!<Nx6aDrL)o%hHNb7brOhM>7I69fMt{*hs85SyN^YgJ4X8Ef&VGMg-h(Y<eHC6xBmvfyf`q25S-riex{l9)V)ZnI%e{0Bi^!gBuy%f0u*=8|@-by8_uKCeb}2+H?tgofO!L5wk1`K(Y;j_lyf@zkiM}0Z^DYX~se|6yghCsOcMo{nv%hdk1{nM<WMct%jyzcvbk<8nLh?FxDzjZ+iI#={6GTEhsEaX6bZISX`>L=^7sXKHhg1mRS&}_<&dL^SBBR{K)4f3Kn$a)9AMSrIY`6$xSEHEADkT~+^(YPP&iC<->YAyeGGMPxO$m5PMqzgyf1yJyce`!Bj{W_6dp{#G^I95N<sh=xAjEcOiD5{zI;0kL>zP*cjZQpdhMO>6iXX5M8f{ZpZ0<_o3BNB~&KI^cOsi*j8|&(JuJX!8*g6I}w*BekwwyBfqpAYL&R}dS)StQ+^^+>xWRp-zgp)FEXRo!*06NB1n-UIlNLdHV{-)<LxJD~IXThjLw4#>9AJZ02`Q!d%G7G<rb^1p3t`h~AO$&0a+el}-DN<c_OI%`8<$|xGY6n_tpE1!&#sCeERn^r~u-&M@W^@?jwneTnrwzH}+cW3VwY`=HW2K59+#ssoGLG*%m3*ngt*iBrrJOE~g!)cpWXujoaD22+0|}*{i3xo-9PHknTtXE-_TA|AR<GcAYuzL&;QF_Hp^b%xHGYGL+aKt-4|Jxn#PB-==Y4lhGPuS7T{dJt9Fe^`ZBq_-(E&1(ovhQk^-hUX0f{TNTirJ1NE|azC5$eO=#njDpPu<<W3CCMt=vhYAE#N+n^@Xj<wj(L&0jgf7GSM=*QcVrdcluBUc}GOukvKox~7<axAh)e3Ipqx$hg%-RW(@Lv5m`+kXPfHZ0!+xp|}J>TffZ(A0wmugeQa&VW7L2wn2?S(ah?d^Yj_d_&gP(Z4}E<^OGV)N;80VujgC{iDDG-L$4C}etT7t-ntUyR4wFM40$;Dxnb~3zz`fBLYQC;&3Wj2%?YB@W!_q0Og7l0G{38~w{+q4IW)4>=w&Th-5NktU~Y}PHO3_*Tw73j<jbRr%|1-|;wXB+dV(iL_xe2+9wZCxDOMs@XXK}dZxZjOvq_Jy9t)TCHj@V-0y!*Aov$h--l}PD9ju3<B+@*m{VA_*V%#J(IR99$S)s1;d!)&W2zTsU+BbRONd}@vgvZq9spz>ur2quu!rhOzaX3PvcV98Gc))$`$I)&Ta%5<z_n#>!u#I!dsQg>5YYxYSD*N$p=S0D>a=N3>;v(9x?<yGO+2w#M?RUnm2EydjcLU>G^5dkQHY+J+8J~oYJ+5{v07j!U!(||MW6fNC{P^=mM=2fzCbsOKf1kyKp}YIHLP{O@Z7QvY{s6sq{{=+KvI<bQuj_aCd+Lma0o6db!W;SvqLQZ6RE_BnB2p)65&B7z9w-%^KWyS0uv%wh%JYF4=edBAo6nn=NzcDtjA~sEE(VUfrm>|fRj48L^s&0I7Hu0@TP2epu=jL7Wt!8x5B1L<KmH99_wn8*&1q3NohYMXv1oZJ&-PQJ9Okf47IoRJO;p1vlhKT(HWM~x?&I0JE6HV;7N3$ziakI*ex2>(J+#FH4UN!VoCqochP|W8y0qBDRNpFb8PeMPcvkbtEzJkIoxu2zRypVijZ_*~s*FrPG4|`!EEBzA`y4NPP1dP(2)3aP2l^AIUL*@_gOZKv&Rq62AM>4tpByrj=Nu09<b8~m1L|0>9H7}RuR@NtgPXhpp;D!8?@}<^lxBU?#65}v!HJMMO7SA#{Q`$EO7hKiOwIufK<}+UemTDcjd%CE=Ed%1NLVo71VteKD@fn-O78YqvA<=pp(xra{;s8)v6iWw4ZgUP(vUZVq`JGU0_)(CZ5wHk=k7=)_@NyY1E47rJ@@tu>^-h5nC8@UF%6r|;9DAijdL4E8to;MX$xhx)s%gdor6HC4xnxwU96L*7qE?b^1B+TD>cB$qOjR1m3EPU^K6%zajjf1x|#ss@)GRPpPO1s8NtcbYyk`Yls=1X+>0+vOxOpSUr#F5d1Bed0F3>;`Z;dK24lC5dR%suNnv1xJPG%lC2Nst*3tV1StzGsZR770bp(+V9iR)0Ol|I1_s9+Om)`aNDapX^&~dbZJDJMhH)sN}SzOn}u8=y9$82Zx+X^5n0$lynoz^J&(Jxbj&4Y2X8%^!`;z5DMP4pOHi+i=i*j*ql9IfAO#OpiK^l^t%vU8P|<&P!_Eo-uFXHvuu+Q20IAgzPNFx;O1U01tGQ3(ygPDz|=l4=bR9tT5FOL(Zm^Sgrm>x^XRh880^$j!=QlG|WMG1%IX0ZumuH4?g=Lzhuv0YgG{374QluanUmy1B8A1QsEL@kGYojmO%gvgktw^vTPT<e^hYDbt1)Y&KHW5HD9ltssa~L>JRg#liG_hTe!*Oet9I><2yYJZ(37Hl4bE7+*E9*I1mK#*(ov(NGj0vdff#__X>Ybf;^BE-D5YvX9kVNDvO$2Npbn8f2xK_YHkx-A8Q#%4NB@l?%e9A@)Dz!(BTr#}Ct>m)N79^U6@(=A>QXOPvQ``e#>6hnE3!woNUW5#4p!(nY@vymEeOBta=@#H+a4;yDQ>xfK#vt6J0>dggawos>aM&Bg6+g11OfYnYRDvVh?l%`jH3e}z5LO@VSFF*V2P>AsC!@oPAjEKzta0T+5~x}8#oVYDa2&hAj96}|}F;9+WzvrQsFAvOet6X>%<N;2OZ^%({kR&hx@7|1hC#B}S?$F*6R;DptzaGUjF%6&Yz$@FfeJRVWz)99ZMO?Vx`FrdGTi&mc3Whnl!YR%SohKwg0xJiX|wDnO%6Td$JsU1rvqZlgy*QOme=rag;E%jkEmg+LwVkLzcDs%$0po4%+ox1)IcIeu_Ya98X;C-@e55od6UZN_C2JU1Q!#;~q9lgNJ{ZU!PvQe~MRA@%FfesF%TZ{m;P*1ejCmp4zza2p%c8DcaP@<q<K@;#LMOUx9GwyL)B`a-XoB;Gm#7{)ng>lukL9QvwRZZTw`<+2#r&FVyLI;e3?7(cK-w|?323=LjBzfw!qMU~;F$k=4pGV?p#OJq9%mvfakh0W7Qo~S5!LC9WxJ+ZC@q)mKdS3>$3XD#bK;W~Iv`+D>wE!$>Z>-sMb4gbat}_+)A+2sb2d$VSuL6;LE1<*^fYZ_{Ls7~Haun)5^f^`l3-B2!!?fCr6!4Q=r8+x@dURz)U6ylj@3Q_vXkzZ%0Jl;T;=B@GfZ=Hjol|vQK&y9{6a5JQjiwTQisSGp_h#$zJjZDBaH!iHcv^MQ;?uUEec=PeoM9dtMhQeO0I!H>@zx$47}+E*hr7QZMyJS5(v1jH4`AGLM%(A%)PI~!!oy){Bx{||ws#A>0~{)lZceVp#%^O#^*zj%pfz4^tDu9li>hB_g*S(yhL09WTpe;s&gx+$yQ9<jKKi2c&Py{EPvhbm3)J9nI62!`yF|4BMMB6Sosy}wJFD%+a_%*V_PDm+|L~XiEOrc>u*_V)zo?mGgm1J7AE!fD((P7H7>@)4UkL_Yl*|c3Yf*GFdJtRiQBfubSx<1Uf*%3y!R^KOzkK{#ppCgL-e^jIOl;j}zi8u1RBbKy#-yNaBRi{+QGdOr{I$9^F?<FFy(EpJ#gcgzsJ8A16gjW<DFYT5f{sM)EVd)}+Fwq#)__+8R&Tl*L~m&}SB|@b#KgzS!X=o8YSL8iHoICMA+Xs8()))8XCrD&CqYS}d=_>_7EggrcW6Oq94ZsW9Cd9`y{8vW7LBo){$<!q0n!x3YYaJ(8mFc>Ek`nn{!P-6JT(J3H^Z52)yaFtUX()-q79dvd;g+Xh0%)PmrSx!W|whj%$S0P|FHNiXTf4<;azp&0+hvA*EJzyXnI(QCNym;y`Ee(|3tW|Qml304cx)dPg}dhI$O<si6<Pod`jehSQ8g)?Qsz_G37D%4K{~$@atQ+ujLa2cmiH#-;S1N=+^BmO-!Ca2aMxBxUVqav=VvSBqm#=hZD(ZA%j^a>-HKNxw{rLmVb2k#?bj7iPh+8sL^G=F0Hh7*8^Xbe4Hh>L1ol4oRieqwuov5IRqhB4`%haci@&OCqU9zdrkRJ)RfmH4_7iGulS8t=xB1rShkZ_om~kfr@)|=@JJvCDS-}X-tdiJrsJuz(E*0pGAX50XnG*xeop4h`vm)!Z5Xk65x}Hcz-Q!@ie%O4bc$H}&;RtK#dO+l;PIqdMe+iLTC4Z*XL<o^(OSM1ZMj!3POgb10m=5nh~l`_^4nAj$HmgV!P5ApKcsFPsjw-<;;53+EwXyq3e0Z*D|yJ_^TB2yk)GT}t=#d2IJ*l0)wLh6n>8(K{YO3frs^OD#Ze^c-CNJ=wmf2#b1>nh3eN(jS=<V4)Xh9?%OzE{c8oyewuB{o{^nmk)^C6M_|u0^AGLA3Rodpy?|yv{<tN|sjL&c0;$&*3+v0ae)VL@E^Oi<ckMH(Dvf^ZyJxq6-(?OM{hvVcM!1Cj8Os7eJ?E=Y(4+xvy(H}+S$D$4y_|r`NgKToQIgsKWjzw)U>zI29+puBUqoMLl1+u|l=hxQQlU8k6NhZbV7zd+q4F;tBMjCX<Efpm&?xlqxEb<wo6pu9rju&^$%T}OtkY6754DJY=GS&+niz;IxW`P%%ST1W@PGnfX7`tz^?HcS^*;osak5gI4(HG0Vs;-)%TJ_nig674#2#wBWaQ6zmZR{F3zqnD?+KffHvZX@A`m8#mGQcZ)?Wfm@7E$3t#-fHW9Vz~0!NGZ-+?)`e%Sa}0O+^W_i>|BN;Lq-^fM-3U=hH(si&N7aVjt%a$D(eU>>QqsqH+N0n5L&g^kml8-ad@mz|_O}EW;CPI@x8R^%dR-iG{aFNUnAdu%Zmx3TWh==xNo(GG<w}<XBW^lb|OieAsuLf&BxDVNkFFAeC{S)R5aJplmc8AlUSEOiD2l??$PA`RO!U_Nk7CC4-%whSc`z7et_^$Rn1e;x!h<Yi$+IWC6hSi+6Y`r3AGn4yXCwG!j*oj3=siT{w!N)@IqOsA_hWDx$D}_laE8I4y_Df?@S5lVPjI#VWY`sBW9g+A^6M<?;m2!MPd+*7K>M@VBNqG4f!JP~eQYYb*&)P?ngmu2~nh4Ytp7&Jx3m8FY+RlZ@Brp`|`DRX{50JsQ+SZi63lm60Ti#d%4|nvOu+30RQd7YDHs{pu=e>IO36l)MLOT{S8TTh$5szGO?S_wzYX{B9GbOr597)I*$&xpl)nkpm^~R|*g!eSzl6+UyqgOZa?3wFYu*03q18=S&m2`*3b4TDmh+f?{owo#VM{t@8xFf+}?Ygep?tkeNlIyg($4H~^z~P{t8@9{h4(-_#*q7$kEnHBCks-dBCh*$(#~e1;}bub1(DA5lhv_xI5A?BCEt<KL}5j*Hsd^Ry_32YmXtO(83JcBE3AO>j<D5|iQ9%iNd&C}@vHmF+f}=NoxD+#%-&%(KrmZ)#V$7aXjwTYLAGii&zdBP`fPZ(_DH{-~q+R$I|>dIcWTeJea@Q82d9I-4_qQ2Y%qpei0we;Z|I*r=F=LLpo`f-*7q^tV9|ha?(mhb_vM&^AoE)84p@{y^i>$v~dLRyBw&5is6KY>F7}NPs7Vogzf)h%$SKYd)8^6h-oN-iNEg0s<Ud1dhGDLIry)isMzXhYP7-AreayThfn!nJtOHELdTH3Uenkl}HUY$eL<X!T^VOE13$R<>4f^#l8oMN_tOLL7@)3YZa9$=g+8q2&=-M$thI_0&rtU?v|}h7K2`^s<ab2k2OC*X|nmf=P&xkU}w{ssg+BUltf)Oxn3fM>zXTHiy%=%__>4<4yZNWC4WP}5{vygOl`-N*7;JWTMQ(F)t_ytO4iQps+0__4Sjin8%$QjJIV@du@q4Z#PiXeRg}O3szKaCfaXtXrpSq4MI2pWol64j2V+8KPUKzX1#V_$0&BB6Pk<H#*3CDaWbY2zTdIZS-T-7o8-0?+^I#+JV*hL0W72HU8Qg6(=_RGtG8JX?sMZW^piy0jsiw3R<%ivl3|X5_s%4}a)Z@Q1q{?_<Uz3qW>}^sCN_O<!lj3mS76y8sSEu4$Ps@^OS{xB`sSk@T7vD1ab(kS8PHqHqV>oD6DFDXYs{go!1yesa$MtrXVoG48-3eu>(A3*S?jac%eLx)`mU^Wx6+IQrrPJ_reXM^26npAdn?8oj*rYKwpH4Mrl%o0!u8yCSY*-CdThTF2OM@tqtg+xp_N=C$OAN9_f}9k)j>}-CWEX47h)8)W2ekN1c~#i4cboN)tIZXy?EtN$x$n<5z|jv}5-RobQ81cIG}KHM0ijp~*=4+2)@UN&6>I}m&JlwhM4BdGS(svTU~$`Ff4>or*K8veulHAe@#|`j8Z}Wb@Y>!ycL3ieuqJGsCPVEMOf0Qv!n2dCIH&ywtJwRX=sI)*O%Q!b7N&EJwgkO{z&wm%9h{hBpXfrtccRsp)$45-)Gkf3d>s1az~sY_i#r9?dGFSfP5T5!I|<CXEn0o0U8oHh#nf!tb!A?r|A>gR>f75%NW9SlX|^k5@7$&>1P2x(Q+hh(q|TpVAGs<TM|Fd7%<Wc66Q-Y(&z@u*_?2{tu;mkId(u>~?v$+mzLK&@uD!v^kmW{}wUcWV2M<6}?tRLW6pDlR@sO$(<*EuAJtlMQ<C%5GDqjyk-Tv@9qN6ZP2Q}B8;?L<dK+x1Av<A*jiT=be^x_U&(h{d>bepHs&@kUu*7^%WGk%+f$|j)7hWJU?-73-p-cQ;|rQ$XFCyufh1tR2$*Vor{ZovC)U%R^vq&ce-w6rzpnx@5-od}d}-Gm_FZQwZh>$(_rLUR|>+9p83BS<AFQ$1VYqtIHuctW#LLe`+n&af_vYpGRdrnzh29^aiAwoMYCOlft7mI;j%=H8Yrvw8_9;vyw-=%SAM<uDJf9Fx*Qe?($%KuuA4-c_AEi}4k*Of1X+R~zRl`BhF+QPwRHe-D!oD4x1acow-;`D>chwax(F+fkt5I~G5|EL^6-nx6~LPQm+_`LW;*oX1A7VcK`hQkL624TTGVT6{CX5dfPez$uGDa1gt-D0{FLd<oilf_(vbgYQ#J^i6M~UYKf&vaiQ;xVn(dUsRFDTSFl_>KYRLUI<o5@sZq7S5%ujy9v)r;EK$t2o(Y99d#ZWca)$?63uQVenGW9H=>*dv2J^5OfUqS^v*=4&*ZGKd#5%^YJJmz4j*Z4H*@(^d2KWoA?8X&2)+^DsVq$o>S`evOpzT+pREr`oW_?a^lWa$%FbnryF1|^sN;>*%qVXqgqIjvbCxaxB`Vb_Ls8i&4^&+sY|ra2zAl?|d6>pfQ`^zNJF80Cp&?NCGueEOCfNvn3C1q@^1{!6vVG7}lD!*(G{!O{iV(qrZ*B7@+<OYv$Klg5I;PW9j=*FQ0V4_dzqzSQz9mtrd+Gs2g@7&f8en(K_Gu&nU0?M6xdrE%$oy{)MDW~~vtx2~kZASECO$cP=26CcS$vzaAs%v6QLYIuIoJlgs`Rny1%qc%*FDGtxp~OOhO(a8&L((1dbxgtTIHKc-g>0%6X_CGRHjC@FAKJKWIuHz>LS*UE-#x?@0Rq*o6QsBCpwJ}OBA}J>yYx10{W~kabo93tZiM?sZ$FIFH#L2JZK?SBrDtIDO_6=ri=3l8hp_&wqm0`Si{w!RB7s|JGa>={frWO&~rjl@}xD2o6+^5*0U{|Y-e@k{x@Zp+>*O0Z5{Fwp?|Nd<{3-wYP2?T4ibyv`j{cH(Vca*+Y%?cVhW~KZR%PVvZGUr-kIa+&nF(=Ym4fR;8^pi^9ipAOkzs<9KrHB3{<VrQZtP)tA3w<?^iQXxj0K-MR4De-2~>M@SP5xg)Kxu`xTt7+i*u;|HJoeh!%tH5Eqmz2Ef*Qnli%X)Jz%yF5Z0Lddb8AbJ-8Qyxrj;Y{&Jy#3kfSf>l4;Hz1P*Nb0bQG<sZ1HlG$>XIg}}OcmP~VmDbGj9<5#&TTKtxc&-}oYH-i8uE3NRj&;qQ0%{9Z-(yVKQ-pyW;D22ObsJxe>Po?R8(&quWJX41R_amfAlJt2S1<RNljfmGLrgTh*`w`U}w~SbLtS<T|hyKOW4cqZ|v#$VzWY7ka8%2V-}hx3s<In*v934jdz6E|Fp)BTBw`1rJfU4&HjTmmeN#~b4U|mkMmC))|<Ozt8#$?JnRijpW=L5`Zp$5rRpcZW-oi6(TP1FlVuL&>ZvVU9igP44e#8oQo#SLuGo6RG*P8}7M#8L`jg*eIIfj{lZ~RUvOAJ}H22+M*Hn?z#FdnBj~o*66l@{V2xjhOm3y4XlP3trNLdF$=gz7WCS4t=xgT0-=0fMn?6sP9oT7P*uPb_-UqS|(`^n8calpZE&zY%)oL_;KQPHBgpBvP_fd57{xw-VX2{5K+b@nx3E(WL76j3j|<Ky#K@{O`vyBYGw6{0e3UFcls%n``|ky>P$8Fav=#{CYI6rympWB^Y`p^XxgP?Ea#bD<Ci+)h)W3xH{vD<(&4n1|lA^IXReY3dL&v2Y$ax0@Lawrnc(Hdw*}jM9L4fccD#!hKBLj6!Z~?zSTDJtW<xG5HO9O_gX~s6!AL-%jQx889DD^8;)_?DD9t548_$=jXKOOd10<Oj`bFs#!e>KF>oUYv4IiCg^8o2X<D1coM5EL&O@+s)(3M|9RlwW0T5R3el+xEVo;@qDCxyY##$jH9CjFrb|(ss9&6HX=(+F6vy7?HZZ&k(l?(0wXToO5XyT>&vwP1Nv0U2Y#u$)YUhsH4Ao~(Rbp1t7#ljM;rm&pdf36^C5jI`uBmY^vkmEYo(YO=FTZ|DvEY(hI@RQ2E@b-<PF@KSQqf9BTb7ZyYo~aWBnA&qyYD*M6*X3AZEK!AkLqGC02mXe3EnceQ+@EKjG*|0C@i2{`0W`w`|=y_|1-g{Ta!nQ$Y}Wjrh_4?ZD|DPvmLvIUO<tU!TTpiqlNaq-`^MIEZJ<=OTHn1-Q3o4Nrvdb)~8edNa?-%XK%2u0m90%q`?+?-@TP*CHm8;*kM)oY@!R1LM3mZ^$9J?*SEJR4=v*Iu%pB_<*)mA|6y>l3N<nUPa2bYD~YY!ET<;r$y;lp`VOdH+&&Dy$_7P{#nAcR*L$0*528E$KH5|vZ%M(S9O-hrB}gs9F!1C5T#)DZ#&%_1{3S}L<JT$14X!wMr+f>wdeDrZbhF^w3$70)$}NCoOT{*Ss=PQC9J*~7sya)lvoR_V1PY0q@B4Ts>Qqxoy;z`q-%R_8EbXcy_r_|^q4Rcp1n(Zx&<ze_d~!Yf^5@xp{=VtUS9PQ4ck=whhm*<OI3)#idr2(N{<XD}_5rS9Thw+9ILr0FS-GihI%#U?gCWh5`>BY>T8W7C^r<e6vYPdC*!cbJe);h84?lhQYPTP+51+x;&UTq}Q|~qk{PL~A2~@j7#XB|f2<Eg6NcwPp`t64wzyHVQU-<M}Ajl36j{47#U)v+28QpWMI;BFzrby1#EN$#2snE2IV1H~BrntRTFH-T2n`-YS)jyA^<Pa3<!NEun0Cww|N4s25$@LOFMV^e>Ml$OMh$c)_cwsqX*ggI6d;Rr0`<2@b6fn1K(Qafj?QZzWYj*oR)u%8c%C2ux97o*F`CtEfx%}<E80S;&>i6-qEdHkTw7PTWvMr1n!dwf(uFzH_>gCMgs52Q-+Nvu+DqC1wbt0@o0J8!T3~_9e&VS73psO!U2tZ$=C7vU1=Zzj~=gAcoR;8ftds54=II%Q3@y;{k#1pOpT1Vh8J@R<apG3HT9Qh#6t+Vp@P`2z=4RBj<X){TJMHuP61GM|-{nmfc&Zy6iW7=+|*bS&Y=+1t}UEY-~<bf4_OC$=`l@f)f&{@6VsNRmxiDDHtg%iGX4U5R0ZLoHJqOi*d5b`l)N%-6E4|Z`xE%$$WluQM|j+inJa%^#Hncz3y1&K}`X!9-#<f+5p+Jr(Ii+2xr+_S%MN*EaYF63tcz>Yjw6^7PJMS}D?nkw^OV2PH7kQ2m4Jj{zxOyor@Yx}CO+!sYv<A+p8<5?m;br#E(a3Z7J#?!q({+bao!XNH`FSNJ_Y*(Ya%PKA!G8HNf4bb=Tj_R7J<1}EePL&CGN=B)79g(3!EqA+Zzm6k-d&55?R`Z%1Sp_1p`yfPnXNhV^{5m8Xb?ced_>E44WCoxxf{Guo5iD&}SZp>+;R(MlT+SD^R86aAcpK~L_OkK{N!U6D%C`OK|6}f3mRw1WTz}{+n2*TEvS+$%MrM+ZY^G&g-v9rL+ufDPA|v1cJd!1iSue_}>yYt|a5w<Jxkac9Myb+-*g1`3gvQ(OrV3NlGufn=5-X+5vvbsLX8<qbK2C`Tb4X$b!~R3}WpWp-d^rn_9U>a_4E~&6;gnJCcP2CNM_bD`t#_R|!2DW}g*{rj*kzJhAuf3mo4yx(6jg!H)(wr>STas%c&w^ApMw8JEjOdXAh#`Yr8;fMC10>Pm%tshVHguHf^dWQfXg_398@}{4Y%&rBuj%`90`qs%F&oLkzo61<pvT;zfu*(VY*n)JvoFbd>n__t+w6(^wzjZRKR`Tj+I*$YS#P>5x3va`E2NtH`qOQ`uH{{S{l5MgG`{nC>_K_HrL(bggR;Kv0?=hDrlSkC5CEF3y%iuZjtuLnegTKXcH5DQ^uQHXx%Pl<j49tb3TqkUvgMR)8CF5jpLZN6{N-KVK8e{KNu@3C9>YY#SbE^_MHp@=kNtQ&g$@Jp{zvVY-*Ru2C2wqUA5bw6V76_qlJs@E6kS)wJnNF_%>-67(YG7HRD6=Ekc&nOciYyN4t)2doJgyRny@Pr(M?$7H2eJ@R1(~qxQ35l~s_xW2ij^U7Wg2gRNBL6}EvDP&+ba!Rm9NRfa!s8?X>tx<m5BUZxt{SQ+?`O%cBE#U?>9Q9Hy*9DAH*djaHki?=qzn0J!Jdl+HUBLqYd6KKuSL7Zp;v!0b0wrKSYN;7dKtxDD#P-_31FiS1SZ%4qB8$sCCa<)}oA&-^a6Wcm-JKz50iRLP3od=gnO@8of_-JVQ(xx#_@6I*qLNE=n;`4r(rz^yC_a{ccjzZdbzVu9Xe?s;2Op*T4&XRG?=OjA*vNWuV>mU;}cS(qVmHAclw^*1O)-naHTwPwZ@>6GwWnlJAuR+kxE#FT1Y-TcDmNQADhvwaWFo4!5A8zU3`rw^>{PpMG4?;&Z5ttfs{{3e!DnVxZsgRTgzMI<Bp?`pW_w@}3FttRT$H$E)fLsQ{guiJBcTGe8f?%Qw3pBbzs62xLc*|(R(+I-ilT986Oh0UNdAZQzJey9k+j(Iy8H=`q(TwZG!N7rQnR_Zdg}zKLf7Xgs(YBF#rE09rdd_3X6nyz?>VN+H`43Ee$9ta?d_@v9Ax(lz^Waoo>{+8M;81*uD%ZA4RFWabVnCVgGGT4zZ#;W<CD{OF^GTgVE&(*|6>=l%Qi~26zMG>s5ft|v)?=!*UhxuBwV=dhNcHY<ua=uDcL%^fSbWI;8`N1wSl#Pj*&R@v_ZD?xMpA5_<AHCpUahwOXzFyK=5OkUq-Zq|Jv4Xbc8>X+Cl|at$WXp>x>)D-Ia&_LSEG6WExterJ+vL%<Q)i=5{rG>s~lZg64?U9vXtaYiWh;`FL*FUIhn<d$vL0_2(r&_ORs+kBJBC@S~fe8PY5I61VyRpchIJno!sq<;!jJtp2(Y2|E{M(u(p0(492yzr${7hgU-3-_uAl+Z5z2F*Wrqm`qGYy0npSET}QhI_8wO&m@-4O9EJ5}@>d#wjdL4EE?Q!&=;o`9&E=!)90XEK`nDW%HBO%5{%CdaD+Q@5HNeTDu-OqCyGX#g*kUd2KMPvdQV!kHS$6B!u5wLAaB~01ruJio8CX1<Z}!_9T8X%XX})<u7aIdG_V@1V?7^AFv>$e4Z0j_t1y&h+@RzgnEuubf^!`CB)S)77iu4NoNgSXHv`lU8*h|O_^taJ{|5MI`U-jZ@QFPLk$uD{&8Ff}=243qPtR0{K1Xodu-sSGJPTP!eD;;Ydw42>%YR^{_1qL@!w}TDt-7+|Lfw-`>ehCk+mPgm0JDie}r?hSVZj#WpC*6#TB7V@KAmJZUB`JpC&iwDb+d4l*9ER10IM*aqZXrAlrb>->scQ14EBw1w3tYkb+3cxj`CMde<<ZKcv9oAw`@{jyaSnGRTr#I2<8lI;1ilNjGGxVo1}&WgcUYI0X<4%3DbUs~PeUI}pffM!zLV74F(+ohbNi5tdC;ES)xA*xji?zKIwY8{qG>cD8Pj-`hXFywIZxVT_h#@Z)3&Y<?KKubr%`6?`7>4WK6cGAc%PQ23m@9;f*vOu^B1}dki+nFSZ2YtRH?jaoVx{})e=yT8E{pYE6!g3B_9ae5j&ntgLq=Me#yHod7G2gWUoCGz|vn`qZ+i3sip^|$CS)xs`P}NW;BfcOf0OFOGP}2yKPL9;Fw#%f;Fm@+R$5mAFOUM(DQw`)kN?Xsnmx#%OndjZgCD{<i>ZbN4hCc)+8qFSQXTdwkzfhXPN1@k&QF*W7DlmI!&|PA$E2%ZCU$6_za#(hgED6BMMO?(3}NF{gF${x8p(6B*Q9hHwOcG<~Nuw^!YqCJ1gvDl?FU|tt{r7=cTw?DZ@tyfI8pjQx}qlFbw!!#&VX|aha<B*%U(SJVWN24cw%{I$CI`A&`H~fb?ahol#sCfOymT7IY3m#!Gt`RocwQV0pJ?ERF#M-yk5<CbfSF>tUUrb+mj^z&{zbr)Gf|FQM0>fjjBNboN5}#DHb)x5|>yM$vYq-Hg@-Iyj8lECSR*70BW@=`3Ai><Ak1Ml5%N8U+Odnt(4Ux_akzXs@qTGSW822|%BWk3t(Cd>A!bjz;dOm8(jsrHzKdhLv0AI)x7~3bKP`Bi|h%+ho#uOH$1Nj1^@=WGO>noX0#8Pa{6RSYa-hE>miyCXyO3{EJx*%_oCFojVsV2%PBa%OG8W)+uoWJ}XIC5?{v!U`cypE$%ayRNSDenN<C3ZaoLBD64JN#R`m2y<Ch}f{B+NHR?X}*;fDy@VP2e*=?>0_)6{oo$W*0x>{?OWg~pmG=C#Bu?%j2+jt9c#tD~Zcs2Oe6pI4*;7&`z`yUW&8egb54llW1_72Z$jJ8adD!GB#YUPYC+k#eM54?1yW$tJtu)_e1BjV%OzUV;9io6`Y-V362iUuX05n<{9w0p_8{yd%f&%H^!a9A428t2u1-GbKv4i!kHB=^OpZLs5qWu@nXQxJ`}CG{YsnA#tR6Hn0m-Iq_?9db%;)kBSY6ydb%X}xu%8LQd&a2E@7=WsYVM_Y%4j({Q|<dBw#l?#c#0RHD<Sw{_`J&*0LfBCQYEOr(+VVSw_{&ljc;Aj&*cZcw&`&T_-JQ56iCm47orV|UT$Lr0g?`y$FYtgJHxL0F`aJVae{hy!zpmx;5Y?^}<Htvfr=Ro`0*ckj77au*+3YEUsTgqSW(<X+`K%=+h;^<k)JPYJ_fgg?C?NbH}Fa#Z0-H31<x!3-7vt0;0d04yYS`fXbkXzmE0TL6RHHTZ!4^;rE-EFpxA0e>W2^syvgR>E}+moQAP(BMgBdb}U-JN<68i&e+F-NUBYWMWU$)YhfGrm(H@(j{cvNnbsN%vFJww5Cqm6f%8NZz`EoX5ghY(L7cjJ*&_5uyz@qx<}z*q_mg;kQh(Qf8NNXv~;`#`|IO%ejKV(3ZUF#N|~MqH*0528ZSgOP;N<ip3l0{pMDaN`$K_#o7km;5it+)Ak`T&Q{@E@)8c8d><<O-V+yW`{E*KV(P`<7q6W5$=A2=x0X*3FpENcmpnt4MfWR3;N>6TxKGbl7;svNyrUDvw(sFYaw=pn1+;9MDjqC*t_4NgpC5d4`1l}+)#z$y(PdwkR<CyV1->g|Im?KH8mwnHC#kb-6KV$81Yu+kdiA__;FhU7K+;&J+I*_i=B?!6PFm!N->5=IlQZVJRJ*F0N+>xM2DODp0zpU#bU^clKL}<z-v%2UpoQs)$x>(ayL80;n#_5oc)uQAN5{vvZ6vX&5%8ocTV)KHswCF!c8l2jum9`Cz3Fz|%yU(5zTKEyxX`-$K7Y+9;4Z51>v5xd_u$N_BY}WtXTn5r-&(_NYM$d_Y~L_6z9fj~$&qiH@;HtZmah2fZ6mOV5%38`_<XRLNu&<8p`p7z5UV>7(2x5G)7jHT*#EA%?@|phh>jvuehKUtyIg_}Z%x=1Fwo+{ar3y#DB=%<5D^?{eS^6EsfB?_Ec?Z*JklT?rs#8}EcRKF?e-*+Vmm-0E@Wc4|NhDU^RxZ+Z$JO`%WpsR4*1bnzQ6wV&(&7{<!6%h^_LHjfbPX(@P{iVWt4vU$RVrgd;FnURx$4G(Wi^%RZnN;H{>Md>6%HE$TSETD?SBnZp(NzB{5ebY!Eas>l3oc-I_^?csW<X?Dq9e0M9S<268?P^K0rG4jQ|>*I<BDu*>>UDMHIU8TEWH8t>N^p+jz2NP%{5J@jai%pp3&_KKrX?$O9S@7aNJVZJu*71<IXZET}DR}yRD<bem5tlT?s=^-98ppC<KZM%;3tkzf$i;?qq=h?3za971fg;e)-S)useQsB|vOzvKxw~Z|j^p%}jXf#(^ZOej*m7jH5Wgv9+*q8S@Hc{6{Mj?k-BvC%I;9xyFw<KKmGJX-<P*Ua?WHH+6d3|<gb@vH8{h3;U9>ZDKo~BgCIHfvQGIFw)cy^AuBdCL$o)^)bxxe>5VpI=iv(9@No?+!?t7O|ty%Pxx@0E~i?jC8CD%}ck<Spr0_r<PmS@P&yiPcFM6!Tx~+s{aO0LCRhyim%j61K~I0#vkN1Hq<mqg0BTcy~+)w!K1YWxnj7>=b{bYp?x*_!U)Y)mk~<qElRYtdJ)Q_ilgq1guiVSj*X?<^MD`RV(NdqGlJMVqm?g0u~}~XQ(1Z5BNQC&zj42NhJ-%z|57dX%`c;`ElOSnZ2hoE$-#{zk_o%47HbAhYq^UV=yjdj$h%ldFWI~Cm3AJXV{d<9gQ9H6ud<9VnQKf86_k5O44u2MN@iOA%E#GTX{5o&Iv_HUW?PTk`kA|>k6zOzkm=TXZm6@y3`G<#Bl%!%*$Gw7S{9=>-!_CJU`FpgcpF#A2V&Qnx!5hZ|qq&ogKO00C1;}A+lTO78+-_u&-$J`Q;kgu>pi&<F1)%eP7LaByH)=O!=$zIhfAt&?|cdZw00N06a3H_sH}jp|%idBo4qR`j>Hpu9L5h_Ln-u3xo8IWiHC#%z%h7Mg)!E_a{+jopWoDze9Y2D=7*faf57M&k%O?Z+cQX!4-AKT0!?*u3QFyOd+ld$&}=d1C6tp)}%n2G`Ah*&fG%98a2erM`vDd_T!R(Y$DLlF;^3-zj%OPcl~)poUg9RsDQ9AD<0Di(c1<8sbi+suA=Ss4qR#YE?j9-aJaCLTQa~>{0VPhdR{Trn`J59NFzic6>iBvIUc<GN28}p&KK>&FUq>m>Q=gd;k?a$Lt{m1;Cf-3MMRefXm1glB8E*8APnKX2=6~)cpu`Ur)ucv;Ue-!+-w(6>);@84Cfu@;&bIWppr)1p9cH8SXSeb*aVi@mI&~I5eDcoe}twIvf&2VQ`KJ>a1n1M(|EN$oaDAR_dsP(;JH;O^nw=yqYm(Vj@n7s6^>0#sWuRR8$+_fY|FP8JlmB}QP^j;JO^cUXJc@Yft7nU?HQ?In*Jp8BjkD^8wJG<drlM>A+Cr|^bs0nphAQn`HKT;I?jHTzEe!Qs;NUS#;L(JUu<JgRy^;nd?W51Rgi*<P5KWwJ{D}S6b}uA`O#HY84ds@LtL?ere~laEQF9a=)&s61dtGhidN1X-sQb+CVqm|X4Uxs1s|*nvD{>(6k5rvhgRQ#Z$ultNUH*{5xBL&J+A0!mO~A$yp~gwa>pr^IRO&4p$#;vdooo5*kTm*UYg~m3UsPQJ^z0OU>QHy*JR|#`{<NHm>oC$q!r)yqC=nk8dNy!IfqgQkt^0Y?O`$G!d}Mi4inJT$&Ju&j1ryR4`4C(x@{iOLK&CtaNn*8P5H6379?lLylk=+sL+ot+U^1&9U1+BI%6z5QQy0}RMo!Iz;}D{e*^wq#@!~cp_OhDDZ3A_mbFUr0SxGlXG&HOhc>$Cq^EKvia~1>xyT~o6t0QkxyT`vqTaDYvLwrjQ%*+eL36<z(e%58C6td|PdUA?s5J<PE!~Bfjt0(tY?CM(Ag6*6ZK9@T@(&3ABA75^{^spO&dFErCx%Rj1W&-vFx~&a;PxjB{K`mP^^>@ofIsq^ul2pUsEMP3SBL1eB>T~UJ+anl8r4qT#9o&suv?@Go)&~`!t;wR`0yEM!tW(1mgnYp31SFAf*8p=I5FojQ5J;nM5|J+S8Os+PZcR?hwpN*<in_pKMI=j-c_`fvjel8K4#@FtwP@}8V43d>0a8cHZW5VMnqce?d{|&e$WGHu{FA1tf(VO2P;G-19h@Woj=prawS_w%EdS=ceUDtBPjjMi&UcDN!bqD(t*~CP058zQh|Oa!cFc6!i3OrBTMz>ZkX4dC`ys$br52nQhHVH^q>J|($_KW*>FvJdjSpin?DdIhf*&3z`ewu<vl=9=`w!<XQxDeVx)R=8!icrrOa+Mdm0+%3;kOE!Z7hax}g#dNLvxlgk3%)-Qe@2Eh<~Dc|&oO#aI#{!@Rw|%G!bVJwEn)Hjrw$PSDa<HLaA*HNFTehTWVYp?2Un`Ok4N)(K5-l)cXagGZ3c)TWtR@J69(!ni|=A!6&W%4b-Y#nRNiH)R<*Sj%6J8MaLlpiI5$3^x@TDJ-LHr)Cv*PQ*pZc+o{2&&y$%Ttg^jLjR1!;DDN<^t{YHnTz=y#!xKG0aqKRGx_?cQVGi?;_qP+0>x9e2~RZldXJSwUF!_+eH;ZEzGLwd%)(_f-uzs6eH47QnI8*o!+C5JFHHN6*=nKQOH;TxsYOW>Gy<?`0-UmvqJ!A2$6JKeL`)FY69kQjT3Ds6KRcZ$ZQsS$Fg+n<iIvv?b|c3@rEHHki^6!+#Ux7a5cH5DCb`3}QouX=3-?PPjqI5bx)ii~Y@IsynBZ3uXK`l8K^;jCcAbW`)^jfA1g)^kgH7cAOrk5hiP}X;S6{hMY$feCXAYl|>PCGLmb1zj;X4>mwah)x=t6jyVm+2;+!!)HjSo|J+R}@jt#uW`FA74S3634sD3c`woEUzy%0~pHF15}_k%X0pt}ZloX8JeZD^5OwnD0?nW!T`o*2v@GLZE<XvOXY9yAec_93AJX-X!Z@JUpPcAY3}hk`qybr-Z^0tc2duj3NS{czzsVZL_nMx<n1kyAhC<(1SSFmEx}?N|;YgP$VbpQGI}|zSzf;h=qNx{@1dpdx9KrOo(91Z>zK9+BnjxZB8EPY|f*k`nLIN%0_|6QAOz}T)1#Fcvl%_Rl)}MqE%1G9J+bP#tUV?^_@-deDvr52-wOO{Ct#lJ3BHYR#BZjIX*1d;?eqPLsJ*jetrY9K8>z0P~L1_#Q<U^`7}h~`*fdDkEVcO>-(qJDHLm4S88{<g2IbbqX|!jjSUaWUh@>ut>o?Ee1Z$Us^!}dR-abG-C<p6cB<RA#SoB2xj*=FLS6EFJF1(}eM9Z5?d)tPe&qf)J)K<PUX$4lsf%sBRRx+n#%Z%v-Kc7VQMSoBZ7iznbEd_>go5!Jz&}5RVz*0BCyRp$a#*`{w29?FM<M#n5~F9!jROdJg$`GMvgJ1T99x7|vGM^NBJ;{BG!^1fJ&i%J@$CQT3#h2Ko#px>=yu5x3QHx&r;TS}5U~w^2aW8}+}U>}@n1^BAwn0*3sjN;a<<$`#?75BlTHMUS6sM%Wa5hDw!j?N<Fx<}VH+pls+y3h>8iw*s$f04Lz#y`(vw~!^jUj1-*a0;(aa&-H>Ef6R>t%@SJY#ROZeap0i*hrD*g1^V6Gh-MCCZY!`>sq&7U>)j?Vazv(Oy|?0#>C9KEUCI9>%47;r?k+<xm7W&plEzmvKunq<lg3?VcUKNAN-iOxw(Xm<g-D{kj6E8(%(^9^%_J0fLsg7;duJXyd~Lc{u_JH}h!9`6*hYHSN%^^i*+ZC(;r(D{Wel+z^~y5!n$!VEW#DlS8^z`Fn;p7so;b8$v6{Wm6erm2;{dN1q4(T=?Uqjd`B?)gF79k-{pc(K@OyDVC;sw=tONL?gvpRH$a%JJrxY>rj_KV;eMyR0l_ALZk4`6;W&bm9ujJf|G`bP2W=DWbECQlB5^7v;&qp<7nH(YfO|$8{IT-V1=Yj8iXVUU+tym21;auV^~w_X#+cx6s&@vA9Vxj%4`7PBY5R<sC2_HDFrCrNhY#ya1^)IX7T8k;_!CR^Q*|!(ii@R`T`x`g%XMeA)5d+K_y@LR`nyxGt4v9<e_VIZ)>RK^ts3{hv@vWpHQPAMm^x+9)wwCh6|KRBm_Rfoi&q0XQym#pL)G%QU*{JXbeGE_H~ySV)oV+hZ9`wo5F1f3QplXr%!Zf#oxInh-LlHVWFYzS{=GU%~6qjpCO-Hchd)#E4)z{yJH@EX{mG&JV=}1I^>)KB+d?&d>SknS2YnFsYQ)bmn^Yw_c`1-oblBnXqA!&n;$Rw=I=e`Cb(xQyW7MK0K5ypUsx0dg=np?H2A168k*c$3W6q&*9o>S*?QuWNfOlEDjw5&!bJFU|1Psp1y){!x)_^l(LoX|BnAAnYNIofb@)OpL=u_QG@!Fs<i3G+)-H$-`FyJ#Ev2_`FvrzO6TroThuST69|Vt{`a>OfiJnqQ&m2e%9Idc?2XMLwd8c1a~c1<eJ0P67~w%|U%QT0i;X>K`-+n<v%2alNXA5Nf?pXltugqgj5hg#F>FBk{Noi&`{O%4|1;sTNAXLJ(P(o9=JFwx!!#!JiIu}fFQCY(;qxzNqqO+zb-haB-2Ee8?!YekYdun?Xky#bX?%W|e7)FyKurb&nxz`Uwy{57E3ZELpHHW!9oAG8Cmt6mobnND-_W4^`Rk+0Q;&5%te0_g`OkfPela*%h1VJZER9b6s5!JpFH4uN=A$-Kdk3^XJpLGdlns-h6+`>~HQq;GeOTS8X42<*`A8g2bxXJF1y5Q_iHRToYemT88{4(4@rNkE>TJ`H2Y|5-w|ot`w$Y6A^jN`<AGrIOP>KNinTFW@A_`wCUf$6RB`j0kbBsm=p+jO;{Mp_@AJvq-F9zt`H{~3Wt=}Q#tFqi{=zJU>!EdiQ1P6yPKDnO0`S;%b{&~wEA2rOPn#=1KUrsL%b4l6*kCJ?#-`CboIvco)ZPBi4z=Ll8pOvi|%1zTvpBB<0`J{@>tX-8z#iHiosD-${hmF5J?w4Qw{+GY~^5?q!d4KvFeC-^U$xueOQsN(<8k|7wbEx`Fi$#Jy9SxFixc~U)U;g^*|NH$Le*0%&HxCbv_Mf45?T8l5?4DcADHXa;MP|LGDsw2(ZR%*jIc*fCc>Jmzr0O?r@_i_(Iv{iWAt=<-10z8RI9Jy)+sZ^`Moioyd3x$-$)YC^b(nYzL*-;xRsQ*N{qb9U(Rl|c%q_}vF0zHzZhYr8dwid&!kDp~*EcDSBOd4c|Ni&K$3MOXW4-0BejiWE;&0j;Y*+`Ee__ZKa|IfQ$|sU|v$F?Bo5_$iT|)&@*|zDb&SDz^m|{!N#JR69z;iwaU43ba0QwMZU>&`7e$ZoWEv{{{Qk{P8N$nux#M0=*TNlWiC+r0@j^M%c%<Mt`B*Fz`%O`nmt?I>xvSkm&z+=GWnn_YF;PCrp45NL}o)*_k=xSFUphp;1zj`pQFc<Q`s#i+nUN+R`il!r5yS=C}kk5%?TAb?1y$v0M$mTW}J3lQrWSkOto3bSQ<NGIDF42}QcuXa;SFq!w%tX#Tk6312&UZngDhb-Wn}T%OptoH@;Tnr~518)7A2?-c489lgvj99tW>y8A?NE`Byp5geY!?`!ts}q$kq{5+V$2d<THD?~DlF4QG1PdHDi1%)9jMJ&*<Mqml}CGqHyC#_`bGG~<G%_UuEN;ekat<)qA8<L=_uxYws%(7OdFMf_3Efhz$_V}@HYNJhg$A-JH8#i_rHo48j+b-u*njL$V!S3+g&7vA<^oPS~Tn{)%eX$JY<HOFkXr$*a(e|E^Ib;rFsc}4qWanY}v0ibNFcM?$+h<gd}Vn0}I~qc5@4A8T?VD39&O6#|VwL;Z4=Ds%NrEC?y_EnP=yyZPWld#totp59W}>4u<`Q?#tvZTKRGoj5<Us>KXhwy}~Jf-0w_g;E%SJZ(8p<QGnUBAm@6tbg>IOwL)C-BsLu~_$aDkr>)Hz^T%Wi(C}DQHA@BCje2=The2*z<jRiPkW0S!bS_;xYRfSuUIgI=F)WvH{5YuOOB-(8tx1+nz&H{b2bGaAt2x2;(Gn9Rlzt^9jKg%XHhppkRroj#vs*d7f#a=llc<3Ez8x!HE!3>}8zOGMq4U|$CE?urzJPojWC{dE-XPYo+3G1)XA_HwgtS9F8V5h>p)o}&<oE3`!<)LYt^)05sbTPFrr8ah&mPB{TYTQPqD|MNvU0N3NRC5at~m(TnK?(g;V~RFj$?=GVJr-_#5$Q#oka7fg$^n>5IxN6w>Matv%NH#yT5N4>y*wIr3cexa}TOuWs%|0z{R)KhAW%-*9J7PC)(>KoeX&-9%TB*aqaQfgr0rvYKf!_?h}2qt24L9d#(mJorwh8^n-RsS8x`$f)!%`{zy#y{cKs~as=*AT>`q@ade^Q>B#3{It{kgl46a(-KZV0Fkq|Pir~g!BO&i~I%vsQx3V818!3!W#KuAq9T?3dKPl+VY%c(NA0-!UyewqpBt|*)NDfgH2wJoFrl)NzES>FhA#xPOSMEQwk(uzBR*CD4o3+gkiP0IM?+5`qhxGM>j;6}%=CRg$B6w&0&9{GfI=u?x=fS0ilOH^@L3Fs`HjR18dah9y;01W~o+s}-T_M}MKQU5yz>yy3*)CIZrD>?Vp=msDw6kO?3~;I-f3+Hx%{7Jtn!6-~&C22{`dciv4NJ>{R<15rT=~nh=QJ=mr}rXg=az3L^{!*mW0o08yte1vzVJY6l>fN&seQ0(KK}ai?+0zAng~pQIsg8%7nR7g{Zx2?gYTxMeCQvb-+g@pf{-nt>hW>o36qz>C`!;YgnPrGe?dSq<-=-phY*$qg=Cb`2J8{2%O{&W4wxp|=<;%*$9c}6<nVJ4O9rj&U^L@;aWHU5SmvIJSfSU{%b&FZT(oVZ2CEutv%L0LG6irxoBE$WfBpj#{PEr=^>>l%PROkwpFTL17kkzy*Etl_qC&#$5|xzCu^1?6yG&S{`5VvPT}d3MY(90Bh(dsFzXGOYnQ+lT!(DU~CxT+w!@5<qel1>Ns%DnB45@}c?$vU0CHx@Y02Uu|IR|C05vKP#Sat^#v%iI*m^l{P=Xl`TOk3+$a5QzgP%=67LsEzvNIRN4b34a;&KEy^d61#R>vXY9@N={rP|Qa409t$*7J6tqxXC*ZDkX{gw2V2rv?S6Bic2afrW7v%uV3(Bj8aOA9g}lF1JHn<-<Dqg5_I45-L-5sqo6(X+u(rK54*pE9KP)2ZeJ8jT#6D!CZ+m!Jq4Dvo$X@q%BAH-A{iWX&MimS2A6Ex$Q8K`R}|xyc2o?2rk3bB+C8xMxLU!KkfKF5tT&Ut(g19n+c<L360=A#Q$d6cyX>Rv3Bmx-3$$gct8wyt1&&r1zaEmhQUjbU3Y#5CwTlF-i%rhtp1PoQt+v7~5N5Z2?J7!T1Sj{8Y_dNlwt>a7`3A<#p_PbBn6jOht+6oxV}I|yn*cb|7;VyyjBPbawZJMH6aI3RTw3aFNADlBLLCO=rkJ<Tg~b87K+DwTj{T9`Kz|$E_dn%4_?0}a7LO-gnf%gDl6+@Xn}B&dwsw3*6kJ6udY8M?I?X}Gt#qt;&~A34sXbp!6d2q@EfO}kcgwWh1>(Zi`ejMH`XpU{?r=&@p3=7cyGcUZo^)s~iugeborHf#^|Ba-JM+K$ZmSs;$rx5t;#`wd35oDHm@3WTrP|P+PWSIyB-1eUERu`dtUM-pG<Ft^Z67k=(ak}PgumxBWE@*SlfZW&g;d0S0S#I@8Sk*hG84+!@7=hqU2cp%WI$(LN|&c$bHz=xj1k3WVgfyA&+ZDGs5(c~KMma;%(u@p8u5y08OtC0L9IMbIA!-{=wO=rU;}$8U%-;Ff6-K_3E5@JKzv$UFMLk73woSvWM8N>K&HY|a+#&(QbqozaqiZdR!cxVS!^+_c+!ydU-IFu9hc+DH0ULE>zBNPl(#u)efioC0xbR2HQhlAnQD1Z5=_Z^rb?06X{^IY&cu#OIc~(GxZ5T>2`0G}5?G^J$q&8d_rYo~N76G#c!;-1r8>;nKUu(Vi)I)jH@;&%(oKPKBQZ6{ss?|wUGZx;mrTEnY&4M{n{GwbX`1a0v9mjLbA>;I&)}(a*xn|Qpb#4Z%~^14A34r^JL)q{GOXg(c`%S?-ihfFrO#utvyxO+QNyFx$}YcoUW&Vw@_2;Ir}KS2b>Vdg!+`H)ELwRTm#O-nO$oQoGi1Kmz)dQwqa~6Wn)ufYNRL_C8O2xuxHhfKLFXXkwX}y(rNDd)mUmmm5*Sdb4gxZ5>iU<klGpiJN6RM#?~`GBY8Hs`5~?g3xRYK?XD?>kuL<I9?!@SN8DMP`Yi*!|!>B4FKrK`|Eq;^E(vzmcM}%Pn)I6hI!$&I<@Fhi8@4SNU^|eYy+Qv8m=##NeXybzqqyEg%$UU`kRWZ1<i&5CHa_d~D@Bv0acCc*ZyCdY3Oj=b*DpP>5qMU~;F$j$Fm`CDi#OIe;%mveBO0CpHQUiv6F_)qFWH6|6=i&u{6McOd)GE+AC4s<aB`LAutF-_uX>Y8>eddztA#^p9dZo>+=b#m3wavR&u@tI`i}6Y@@zRJ!-G@HM3Sa>~BV{VP%}4=X$=$58eP~-(E9$bGgRg4rZ-ge6!3}U52O-WY;Q|cLooh|$ynv_gv?S^n02)nW{uIaICHKqT;dzbGmg!PeIxt(UXz^uR(E9O#W6re99jyeW7l2npoFLm59cWpRm&4b4L9|Yho#ZnjOg(^hFBxy2r&IsAH;ESxOCwq1yxOl@@H)Vu0;&4szS!7pEL7i9rP_m25RJDb=pbdK+8>DDPSE__7fIY5a!PL1LnV6@;k4^%y>+A+tJ(N)7Yp>@a5y<fTZe>NfFdE}kd}y*3yHq~{^w#@M-8GqkL|C2`LFmab{05cnYr)&b+QTHXcInnhp?pkS3O}o5)6DN7<eU_6AP`!(aoq;Y{5rs(X1!9SHYKn=fUHLU;pRlKd9IBFq;-2g^l~-i#E{yHa3Q^vJa0Q>32%s>n-K4_h}QuXQ0tra&h#mWS#|b+{BN@?)E7I1{i{l#O^F!NA9)1-E6M`PXyL(x)wz5DN0wjdw|5mXJz3Q^g|VMYImEh)<+0zc0xw~@ZfAj?dc>aDU{E`&d6#OXm_U`gvOyVVa!o$i`qTCak6NP&5UouW-5@T60b4jNP3)_=CmBisQjwsL-N)Q<UAJ6V!KX$W$c9<iV$tM<=p27#V(9i48LWPl`^}GLu1AiG~N%}r6Nt*cvqdc0A(@8bx+tBnlG$GX{5f9-qpR_6RxThYa4ij=V16w+lRzBTSb7$OE`S;eW>tzPh7C=i;JL%sTYG^h;!N}U*E#tT0TL5C*WoF?W#OOmw5LJMBwEg;kZxFR~T?wiM*o|#Wv~TL~<%*FlDlAnkpVFd#(iq=${{abNKimiPh+8XwhX~msYQK_XWNy`#8&PgW9NPI47yIZ4+t+*#u!%4|?^yci@((J3!J{r>1<WH07=2;Z9oQiQlL~N0T$=y6n8F081!26$Z71M*=}e33Nd7hCc{qI^PBx9blL(vr_7;t(T6tUz0h@*}?H`8%Ati1Td+3RvCMxDp_^A-6Gch>;HQ3V!E9-@O+!Z2IK;T)~omVYeoTUQ7vDOx7@o2XHIQ>0+OAH5yf$9?YF5Fj*F#z!_fHBAEFyaE^NxNI8su&BCEHJz#>M#Cl2BB!Db+l+TDg$?)pHi?m$3y?I-MJPup7myXL-29mJqGibVM(zGIAX2|Bzr;aR{mi_5^xmAKX?3breksA}yPf!J+{mGJu~|Ig3%*T4Pz+b_TU)QjUs<8A)>+dn6w{>#ri<LfUUaWY+|$KVfF+_)$M^N~hX)A#s8vwmRQ-J?$zU7DVblW&0K=jobHlK|TVk`o^gHoarKiptNG4jH_snfnLX<Zf{w#XX!WZF2jtC79nAfB|WbhRZWG$OesF-m9@ErP{KVOp4PnPe$Py3`qNhH0Y39E=r)?TMt86<THpAuf5`E0C+TV&)Zg@bdWC(dj)p{P8s`!&XvlTm|5V#B`fz%jB1Dt3uxo;UE8i>J*zd=L*(OB)_L~L^6#purckTCE-MuJS|T*so5|fP^tQ1za=y4xYi;IAu57swu{x_xs|@hU9{ciM(;{ko$XL`6rX%8C796Z+=Q1VEGnNV5Q&Ga~qU!3=_|@GN@T_O_e0u0+acY`F9OE3~T<NCC&f)1OY6qZ>X?i+DGqb<<_F>!x<{r*_8J<|>X3Ij`E4&jD3vZE-T<soUl?>YoXyl#fdDX=>W?8o6T&c53&=V6r?7Pmu{sF}>5Uc=5Wj;GK<@O1XjfM>bo4$=nDMsSmDD5}DoMzkE)%mhzuv62JuD$jLV$f6N5o@V<i$!s*t-_fs0J#0(6P`*rL7j=ivizS$qH4)_LdEOCQ4F;<Wv@cj><m>zVFAA<c2RTLF3EzS`jy$RHSJ;wE<dU}I<xn5rbW3t!*g)1hJp2R>k$67R3}Cr%n=HlHV>VW-~?rf8S9$5u%oeKo^zIHUd*6lw3=kRzDzy($drIo=sh~zMIMcxbIM4P#p1lAq^2V<cLFQOuZx4&h`zdtE_DMLaU}17TUU$9!cui&eSc)7*5~=05Wm}mDbwevS?VFq#-4T4*^vv9_d5j$k-tE<vNpSgeF>jWsMbJ^4Il&?cg+-``)bZ3MN4;P%22G&vU6UCUY#d+D=4W0AXE{7L#7uAd4Wh8aR5f~po}AQoqRd4ztkaK7$kEnH%&$uK1Y4dtsVY;@EMxKy<W!qV?-GVet(9ZtA9fikAGKv9E;lA^R$w~13rCRrjSXV9jg>)6Rb%kF==i)%$*s4iuP!zY>&>o-pI${4mm%dpJT3gQ@_i-;9&i^wa?d5rKl$~!isJ5L-cmRf9kltwX0~my#o&#z6%f96pSsr&Xx=y6o0}SsESwI-)31EHWIT?D1>`QP$mZN{?X{^l0`%NV2iRPv<#E3v^Q_F-_Te(8Q3$}t_IO10@_=|rikH=1b9N&DZ-?VIJ1Yi=BvD=63MrDAMOeZ2yk!^IQH@m7wowb$E#!yH&VeyB$g+(q#uE0wj~0yV1xlG%paktL~6J}_Eeb?1~|l9$#e*<4=1@T&OJ~m={;Kog*x!6Rn)4S&rv%GyTYHzDb)r7aAQdBmhDXzgI>E*+6kY>mY<+J+5Fn`ANs~%XVae1%B4w4Lf1{Mmx$rI=j3Y<B#H<>AEAW<DvkG%zagN+;+%)lcU)<oFLk=bKr$Hp#kQ(s<=pPd$>82mmnXQvq$1vNR$zmrh+-g~kM68W0uQJLaSZ{QKWUjFH-Z&$bcIze39uiG39X#SyUPpQ%*+I<&8j>BN)T8#U%AQJ9kjMo56is+$cQ$2k>Yu<5xCg@9@m&O3v>o|TT6OL`L&cvMvt^+XamjaLQEB<wJ1OAc4Wv}xv7$os!`AXpCMJo5B4<~dBi?CrJ!WT-#uv#_q{OCXTJs&_j+EI)YIaMnM-?E47vE0(XYb{admPdm>a`Er%M4?%)S1PM_5qCr8};-s}xfLE3Hl_r9x%2MeZRP82y1dKrHu4-zvIP#ii5mb$hIT1BzY7-KLMBWo*(IyHBT<GfGi?23N;3B@0$V*H(0lQ)v)Ik~J1wWX);{y2Kz`WXMUe>sSU;l2xoJBO>)$x!}cT+N;8fy+^O7oHkdKwga@1?z%rm17|;QNx0O@sbDmhsHvGO0z$C}vdeh4tk6WjD>xdg9!Csz5NVo#Wnr4lfx+#E{ry5bUa^hXyxt%A&DYglUDU+Az$<(6S^@m%z@Av^G#P5AU}9@U6P_(naZc+GHnI0b({=a^G(q%|6sB{JwgkO{z&wm%9h{i+n5aU*ccN98)vIk7XqSqVkHdF4Sn^@W#UBODdGG4U%GrV0P6D%Pi&kA}7it5GqI56qR+*QnKO!Qn_V#uX5<lpHwAc#SFK*Kjf`b(zQ+hh(q|Tq|Y`GGRBi&#ebGu4u!t|5&*+uHW@1#nEZJ$8PlcvPFC8__u6WJv9-e59hxsj!Ia&O|`30TT~cDYESIEWulDYYnfRnX`$>FXHxY`CU;y#RIl%^!%5LMazL*Iwe!@*W_lbQ!IIvs0o!F$}%A4VSdUQf9Y!It>l;b!Dx8VR*(L-B8&Cq-=<1!md`4Zt!{17L|(E?4LNwVibswC*EFPW$nQG9v^!?8%S|hCur#_(pAdl+D-&cw{Aj^@HTLq{O7nB>xAYm%HC%{!6QgzDbvg?c%x7)U)-U^kdSpavooyA;#z9gnX(KW+~cpu4BI9NP^MmWhL;JA6qeDpF0*P0C*mSya_FLt=jE_Wt{s!|LVreLa6nB_dR|qX%*Ff;TP7CffUAvjm3);`sbt*}@%JzZf#Rv#glCa^oxjSWu5||ZK8^wn-?8`!X5lglYkn@gJ_<hD%#Q`P;XF2q7p8s3Y_;6(r77G9)Z&{7jsVy+0Zv&7!9ncS<Ltpo@Fi&H3HAl#4SsepQ8&GddSSXP%DNt};p#><f2AUiw}wJ=)HNjPy%4OB;v>1Eu2P#jy9xJ8;EL=~5jq02J8GReca)$?63=dCenGuH52Bm~u^xMAPA~+!{LVzC&*ZGKd#7ELboG@B6+Y75ZszbQd2Q4eVdhFr2)>E$R7=wXT`dHIDY9evvyCB%)A%rjo-Mst*;<#l`yw0!I^NjLjPh1Oc!{Akt9&w0qEhQJ6v<9`py~o)XI_8vec9xbhj|Qjl^qRUXN{yCE(8jHCX3I}BpbmmLE9x?Uc57)Z691I$=VG;8e^LhB1ACpy=DHy^PYnBarm^&&eG|UBQRS;z(_*x-&|LUzmh1`JvBj*5U@wD0d~h?pGG3k^-b?zOK|Rq%>OYVg6F=i&XQ|`M5|6Vd6Tm_k22=l=C3Im;vq*B<(hEG!O`GdrH@rD7~G3i_aGDG<{=v|l>OFsHo^1J%k?AFDqmFcQ6uf_$dFh?b!z1JuwaWv>!*!GUBvqN$;<jQx{^M5vw3Fx#HaCTh{EUSKBeAB0e#lDII;61*0!#6>U0H#7pVphp1cqnl9j#YDO_6#)5ZA&7kpJOwqc__t%kcpsnXO_w{MFf{frWO@a2TM<XLM}H>3N8+E?2&+0N?7{cqYXxstmkZ5{Fw;rm{z<{3-wZj?514ibyv`kW!L(Vcy_%MvH6VhW~KyVSKW<UqR?{bq@~zub6yuUFJ?1;<)$gHL!xU=nlE=LnWpVW26Emg;GYS&e7^M_<iE?cywd6~TQ=Rufn%;X7?S3tNbT_B%LTkLJ$4|A+swAzlo+LR=tO41lfWRx-xsbeVJlT)g<e{UZ|xEOkBf`gVthupQTPiA%_v1f#y%Hz2bGNcymgG<vKhTW*{0GcCef=8Ekbv74+8#;-e<&SNjjxc&~2ocj4FJ>=Ucs~sCepg6z7-VDRdpEdTt&3JILm>NdXes6{xsi@sJUeyj52}G9Ge(O~*557LXle(&SWGwZE5VMHigM*>}=F}myyMTifx3HJh-`MQ=X0yUska8%&!z^5$EL<sPvyIFB9`6XV{%MOJ^-wn-L%k%fn)3@=ETv19bIB9ojPq|C)?0>Tsd9k=JnaokpW=L5`fp6GN>fjO^<LIKqaAxeChHu^-E&*GJ4Q)C8Qx{srGfvduGn_NbWx>!7M#8L#+zScIM&MlkcFb}vO1D|G>^mOr>P>Ti7P4dJaS0LCD=lw5X>@4m3y4XlP3trNLd9!=gw*zCS4z?Wt@6x=ECR7thJhcI7R)K-zR!p-a-aj#^UClIN;!y=gg=fmv^9L)U;?Bmk#$Y@P4D7+}wKH1Q=7jT76HL4};TcnyA;W<Lmv{@`bW{s~Pg?3Q-wX7rInFbHp-0q!yWH25qqEaeo3Ol_{KU8Nky~Xrsg=l%%iyQaQwdXQ%1V1;Dh-6_cYiEYs+&^IXLcxzr(MV&OcpZ;xd(*|w?lwZRe=pp^#91D4O+Y23%$%_!u?`ffY&eubn*H;P}d*K~>ILLGw0`0HfpvH|n)G(W%=#4eBO`lNkeJ3r?|XVMtx!ld#~)6MGH@OhaMSp)A8WrBWYcHm?sh?&@J8zNS4Rz<|r`p*OZo{Lm2(uhu7V7cAG9W`R(WBV9Ly3silHZ4VUqJD9*rKuGxQk+Md+raQHNZ)(~)P^xSLn!Yl-P;}iO)|wGZS&}f);{j&nxX#eDJ5ppjk%+O8or-ps)rpsUZVKIbd}D%%r>N7c_t9se*EumDHdFEOQ(ulER}5^!pR#WLTXy+c*`;pcl#)wC5gcU)V_8dt%@4EwDuLxUS@T%R{)HO(*(aVxKm^BPZ>e+1yR_5T=>T;boR%0eEw&GV~-+_9FfuX1<VISs%>cm=(8P%jb1>JnZf5@&PECCbH9HM$|~7x_m6x*0K2%Y^(2|1iEU4(@tM;5^*;Lng$)o^mXZeB=>2@HygJd}Zq*KJs%H~lh!iUM2(52uQ2zY&(dDVfTpm`GIJ*4jK0dz~oUFo)jKGsdr+(DL)}xoD%X#uqny9@4+8-W&3_r>SMbL_&{r?*8qpv=Q?$rC}bA@~)1*f{D+x3zltqsG(kN>qI&+(1z+PwHflyJvyQ;Y{(u@1L<3AMJ-jG**b!H*xfKbVkP0Lzw!ZT_OXSSt?Q(F~=|QtoVw3Iu^dV(0tW-a;SMlu|DS=-fBu9FeWxRphI%+H2^193R1NuX*SOhcQ06p1%3_-v0i1>mMIA%%a}O>la^6CJ%E-8t9IaSfJn6)=oMbxQlJku4}+qZvUT^n;ObZQ$wE?(jvK^ig>J@h)7MJ=HjT;tiOkizdr7lU;h4=zy0#(y8U^7`Wt-h9GA&ZMz>JlAD<eWK<#s=`b~>Gf<7G$l5e>G_~&2#`s@Gu{TqJ!XJE(<503Vqp?B?w7R~IQTg@pIIyOaiwx+akDAJ+nXu&yc6sCCmsvV^2H*TtZD5`!QbIBnn)YAhaK>#>c*D~93L1ouV{1kaI>S)QLClGa*xbQ+bV^}@?`E&j8TYcqr2L;S6TXZh6g;qCw=QVqLpQ=-sF=f{`DUKr^=luWv_s7RSz6N8x<*t4oPs`$O+D~g(2bXPOXb5v942Q~Fk+_$$2S=O9kk(d11yb3@;;Is18v>XLNYKQ&&pQ7(pM$QxG$8<eh_-l+UOPYNv9=c1SXfCxKlh}zVR2$<bmFZG<ir!M0vbo~V0z~9pnnqK0<z_kJhxW$;zQZ8hZ^89;Bw6*2^Mhp{X&1yK4?#iYff&pwGGf3469#Xm)BqmSzpyFC9(h;YC}TP)~wxL)LqACKruZ{_2k}$jzMH|8;qTw7928mgS<^y%Kh>ElP!g4&HW!!$vhA2_$V`xbI&7|*?aR{kf_^%Ht(h&oi^xgmr%II;@tzLd+`TO*#Lv@g={PU&ykr`L1#NuBqVQRr#jmOhG^>uFhL~5gSr^AM3>gK_m2w8bWsd7o}|hM&$8@kb5^!t6KUnqp5YB<*NlD<e)0IP!iK9bb~nUamXv79=utY#ouBQU)iu*bWnjHJni4QehOoPhztEwUyWNg&$M5~G@_t5S=9M(E<RG%vAjEbTiD5{zI;0j2`$`pkvl9=Q;U<ii;t4iFqoWI(&0VQp!k+_|dkb40rp+8a+Pb@yt325V8^^%McD&u(l2ZnMR4G9048}1+<863TJ*n!MY!XU|aZ={lIcje+fR1t3ro@9eq^yHs|DpRbxr<i5oCTu}(TaKoe@?G(${+VTlNtD<t>v56yG|5fHZ91x9xYw$qDZammOP0~mkU0MsvKzRea1{H83QytR#jC`!FHnto6%vA+ZMUPoHpc=FVCDy*N)mAj7b$ixItXMWgI^aD*4ieTX$=crJXL0gvLQ-WXuXkuzj>n0|}*Hi3#H{U98@o96}X7j>GKMR&U^VYuqF%;J$Ci${PzcYyO6a+i&Q6Hgut}#Q43zIi-D$L&xdN$zJgP(p+zb@5QgXadvwH_?xdJtywx%2U7EKOlY**&*xUH+&fAuddF#U-Mf$td~4nnT4Q>J0o<Fe5+cXui-5o)Z9~ZY$Dmo3`yDIs?!N+sdxhi1d2m@J<Ok1@1m$dTo5noTCD$m&mdHx<R|{~Su5fhRpBNV<pjM3YY&#KOX&NdmV(OKSc9x8ZD9<qR#G>KiR>Mi4xl2M1p?m<Mzr`H=u&fhk<?2#Ql(i%yZvfvzntlWA-16<D1{X}Rzyiud>^$#w8XB}lSrY17=>+9J{`&Lp2ijdt1jfzJzyIt-#Z7NN6=v+fcT?vM^bgSQzP<tFd@O$Z@p0q%x-Nt9qG=k!4J6RNASMjTtjXvO$#V>X>NFOKsZyp3pKS6tU{VUB%gcox=TnW6`g7&s4F{tc*NcOJU&dwbF})8Z>MwuR^7hfTk<`s<tj*GPW65}5e>U|$fByUj<^|!sPikKwwyt1lLK;qRDlhh|QHn&!!$;9uyF_KCcr1q3b-PShoB12h-d#zkv}}IHn{dg1+~@2Uf2Z0tB@7FqQJe^hm;<fpYuanP#FQ<*xD2WEC+^j9bCo~976>dpWQ7Py&LI)l>tNX(P=ufs$z_^)w$Gy~ylu7cTIO^#b-GagEcHW@zaKEdnmhAEyDDLpRmkk+L55Js>0-&R=V&>|OpWRRwD{~z^w4&2lXoCgib?yaG(Ebs=$j_CKo9h6VP=}*Md0-d9*j}KbFpJ`4rl=O!1LSE>tBK;aK5{i%`TPF9{O!?KuZeT-@z$ac5=5bid-VO%z_hI{kxuGY1##AG3Y2#si(_uD<+LwiKGoK*|w1@aviP+O)l-I7ywNz(RIw%s8@SjtzcSH%C0vKdo%efEv`syZXCOId`M2wFEnFw`6xRFffUWCtxQ*qlP5<yT3vk8bakZ$I9U`nJ4y@}30N1K$;z#`K<nC!rCUY7ZvEQjTyF#?ceBD2_@{I(j&^SyWoSF%5|(x4-qtn-VC?VR7a@T&jS=JQ$k-;aRST?AKk}EelyFl^40`{d70R7hkM<ABwhM_j9iZz?h1Nx-$STm^M)&<s30l4Z@YVW|q$`u}{|;iam^R9;5K{INtex3+Ek&!SMelNVTBoLP+)Brq2kmAzn%eW#M1jFgSQxXxy<1+7E)W;C)^{`ZY>m7A+~Jgza}jL+Zj#WpCym{TB7W%F^1NKQZIyiHfA`%cK`S2<XvEIBCMoCH@Hm(%s`8}*a-Rm7?^`6(F!d~wi`=X{CV4b=7L9EmGT_n8L5+kh&@^O(o}fwKyFe>L?h9y;Jk%3!q&S|)ym#ZacA2>NkO7@}sd$(Mg_JVuIl*Ql<)-7|QXal^x?oKaRIe=(iJ5PoX*A*$(`kx7_Ja}|o^^!Xo58QR3t)18udz5ejU{8*^Q5cLvL$`DYI20n>2^U^^<f#Z&q|l$Oa)>eSnvq)-%r&BnZ`~#v~~%oCkwbL%oS&^|B?@P?YJCIra>>UTfgLm=icU|MJQ_-8Cd$OtJOsd*(_QM6nW8IR~2mS)Z;ReGg0v?;YK`)yRFSlFv+cuz#7%6605iTK3Ji)7JX@>@7x7fRbI`h#w}pDMKg?%8{e@W>83!rk(ioem5e;vuJ|>aOQzpOHk!zfO}7x!G|hI0*x4PLK*1lvXYf=y+_I8LP>2nI<^=N3NT~YlsLwRXu!=iwz(Af^uB0m)J&(=Kob0VyC`YfA%VzVu6n87-@d%ku=lgu>!s`%*0pH7EA>OBPnX3Qk)wtJZ$b7Sbn^ai$;gp#LQ!lNlXlE2-1>oA$(3j3Z$ZKg2qq(j}{#A6`xGiG|45)Ac0hu;+9ha^@KkI1uq~LurY){PsF<wHI)ltIxD8F>{Vpc~lSmu7KEU|19ZC47-Xl<Z_!!V;3pq8jTU%g3Z=^1KA(1;zvJX%6xBN)&Gd`Zz&Q3Cb)S|uZGW1Il=NyJYeKKL+ftB*$Rsg<j0Nbu)(29Yhd&UFeOU}oJ{xI=TKrAezQiJ>hRE6RDu5`(}vk9j1XMtpvCmRvAhrqoJJBsEyodBA0$6{3%}&Yg=F1WvrHxu#Zu))l*wI<5~xQXC3+0<fgLu@?84OH7C9Y9?ilyo$sXT2Umg0+D<hpoFU8V!RSe{HAgg>OS;2R;+flWTZ@GzfxbDo8V>p(6+8t)MYsbUqu|>2u&=58{j^N_y(_p3oyK*BWp_M1+2iPC1HOGXf%!GS{#R$+%J2F=QT!Krc1>vz-+am#g}bCoyY>moN1XmS_w=q0I#S$?4Th?*s>xohp+d7Xq_TE$!A2EdI0TSGTuH<r~Y$q5-%K<MzY3vwO_a3b$~+!Vixbd*l0;_!62(tdvFS(@wNmV#EriFf%xqN&EI{I#N8pM<W@aYvPTh4yPnotN1CykjSqLRKo1UwlXJ9nNT>xU5<(7XiCDRi_zU2FE|zuFAlmcT{`!~yiqB$affJUQ`|htabByqfHsN!32ur$u)f2`e!N7Ndfmf0_vCw)P-HZ}v7JO96<RI$_?p5$5;Cb-);bA)3`e+`5H=7n9g^l~-i#Ax*Uh8>dQqYc;t*T}8z1~v(dY?8id<Gi5B^O7}O6FOhc6CRf$hzC73>aVtIug6HcpbUd{&usy20RfMDWnSNGOq7H-R=Pr6Q7lZThI^X0dH4brPz6=;%nMQ|M1{!MD6J$C@GZB!p_KQ7HD^;9)!lBGKreh3I52&$)YhfGrkR*sX&@ayvC3t>2YeB({d!EvWJ%s$y+y&^H?~G?K=6Du@`bELbTzQbDtj+yD(ZY{FX^pIz?PTXv~;`#`|IOD_ViU(8jy!#04meF|K>U#?X9W$+MLfV>L#4SNC#HxT;dDZQu=_gW)@E9}?qi)ea*s;qb}#p~CMyaly7PE`lbeUJQQyo@t+aeG7kU`2+!;fS1{~tMUw88PYVu4wrv~<32rKVZdo6@{Ue)l%aq`aw=pnWwLHX^qD``g1VK@5575ke2~OybTzc-vad_4SG)TH-`8}h3or@PMm@thNu6z*P&3FT2)laFtLMD~w@lpulEykU<x{08ZzT_R(jrg%Min}moH5tcDplbqLdmHxs4YAa2trDr1DZGdK`_(#HrVKZRU+4xoxMNeeof{qX9vf(Z5Xk65x}G>OlItrs$|vec8gg1um9`Ci|KaWz;jhvv)zDPpwN2tK7Y+9U@fZU>+zO*_u$N_txrI*Gclq#Zms<`wZd_+v~L(1U;0CI<H&_gITlAsN>^m{wh>s|y7Tgo!{>v|Kq4jo46WStfmq#vfbQB)*v+1{wf=X_eV00jL2(p`s%qrfzAeuf<q~vwYr?bHu5EbOE6vlblPK7(T%xMAV+3NiC04@kpZq^R+h70o^KZZW_ERs8AC0&9>u>*@i25%-^Ng>*e8kCgnI3~bTyf)~49rIwRZZXH56$9zad(eCU36)BI!?X;mY=6<K1~8_7f4QgK-lz-@hU1mS2|?yo@VYJWRttaffV;}uC&SR!<JxvUjPQAJsK|0)F2x)c6qPHo|J0KS~4k4$2=K@YcL?~7t)|ZZn-Fdc5gilVUf=uQoQzxqXFR2$USdcfzm;~JnR+R5jbV+7dlreV`6532bZkeJ29#;i@hIh9KLJYb*yK##(Ic+oXR@SzFGcVRn-(~)z@W(LSIXSMtd{4dxhRMwnokuH)^fTJkNO-B35VBX_Wz9*<)YcYg$B&4;hOZ!gNIZ%YuXT?A($tp37J!a8E@Evx};$N8?v_SHQEL(evq{o5iVV4sncgh;yZzCOe0xqo^H#I;QFA5Y5c~-rI+98<=}I?`3#mm76UKZLjc7NG!ZXLUOfxfK@VVE1;2gqUTi?+n8n9l5?fbCP7b3_^|If1N#RQ!$7bCAeH&-)RfyNKsFjS5N!H3CZ!mOccZl5{BoLYXIJOTmcdR<L%R0bABaIul}D_l;w=`%wYCapvH;-rhfjDa<pgym4$Ja?8i}eU;|Ue73r8{3+LXNtRkJfx5rqZ(p4dgrWxFH`hU!;l!`8HmDY*Qo?&!?k)0r0K@(j<xxf%x6%dJEB+ftnvc`!#PaN0a{N`e!VC1$K^>cWo3j(N^mqIofcj?rq8@%l3L=p$1CQla<ga2I(re$FW)NfwLql9HN^z}yL}AipjSVk7$MD!SASWW<rY2X0+0Dho^1iS_-Fm0F+Yb3*)X6Q)d`r)H^#I2(J`O=m|gNZ#)hAVmHG-OAeR7WO54KA~CzIW~Y0Y}_?dgzl?3j}$H4nJGiDKFiK|9eQ=1;H{vf4uDWa1P+;AB;*AmX~Y2-#e*`A&~@_V!2VK)cwvytvD`EnVfY;NIk$HB`@v^u68Cx;?~f5>B>4RqdanKrO+5Zx^>Hj}bI;RC4iEVBahXCUd3LN)oK3JMmBggE?J##{04my}p|U+X^Lis6hdbo_fPRj-;!XW7_kx4<=hi-7OO>LY&<HEG(GStv1^=nz`qr+Z?e-2lX!tHXXj3q@@H$&EfKdDiZ=fn(aetd-W!Ol}LZJ}u9YL8Gy!%I^r%M(M?Sn1Kme4Xxy3*df&3;2;>11HfV7nSbmk4NY5t|~0I}+dtVW$X_I^xV8;+n7WmP#bw=6$#;EFi$aLEzZSJ6y2mN*u3}J={nI8<AL^*phw(mf4mF%z_aHs4#zorV^>)2H8_(N*Le}Zza<qv_72VwmA1drKI<46%^{gt5#8~az01xB<u=*CZ|*z2*8aYxm&h3SqysZN@*v29$S8b@?`UC&wuC}gPl!#Mk|*lDG6OSxn3fM>z<RZMUW^W{CtEK4yZKVNB)L@5{q*lO5bs%eZJJ`76Zv(^cUNzl9hA2D<^|{M_r!a29t_-$60|5mLiIQcs{zbDhWKG8pJgOX#S*SirffR#L*R2xg@}TFebEeBJVCQa5FO#tTwCi1SmmZ-F)RHYj@DvQavp94j?1i=tYX>!A9U>|9f0x(k##!+-)uCCFR#rDj7Y}nxPFes|ztzl-8pBu-lO#Yvra&Myf_V|9^&589&(9WaJV1=#+wz9e?+vIo$WcK%e~@RNU)%SyE4nD`qb3VKL<5TSmVQGsM-&jbLsJ2c0ejU@`alKOSL08JF(3-mX$i39Pg_p_B@h(H6OfWMK3M>Hx9aD}AfzQWcj@!`JPx{tYO08F!mLhL*8OW9&YiTFxj%^%-0p&y*}!4P9H&F;1mH6iL=taFI2uDd-Y|Y>^=+#jax+Oi5O;ri_TxYvqC$pJ}fOEA}3}o^sk;QQ8jBO1kU*91WcPz$M{QFQ<ahT%x9CvIq#pBFHY|-LgUx0k7a_uzDOZ*g>Re0+xkoHU|c`ANKbP@p#2HV)J@`<Tqbedv#G0_X4l%&1(hlqXT<lt<z+voq~z26-{`yNX0p=KiI_H7fsjUGtdOlOH!E5J=zlV4g&Kqigj>e&SRnq1>cEQVOFoUVW3?qQa%pf<zUH&As2rXH0QmmCo5+MW;+SYsx4Y|rCq2EEQ->-v|D9frv8YCwA$O-Nl5&l2hw6IWWTsgM+gp9h)n6}l#@DtrnBWrG>&wGam?*1r3uqd+GiK31HY3h5w?8-El-*f>z1Vc`%Yw&+<Sw`kmW{}+R43%gC}4q_u1tljp87FJf+m4+*LuN$E2@g+_T}D^7R7L?KgiQJ_@B=^jv$1Kg)Z7pweZu2F^~2{=_i!<~Cf?5=)ug;^{Or%-5B*{)OQge{@4-6OghYo(a2JMY_S~Nn2DZUbBDVD2q`bLY{bgeU-HX?|Xdg`D`G?S)HJzuSi!Zn`=7}INiDlLBiX>aq^$zVyqLIyC{2~0R@jBm8DEGx8RLJwR~}h7DGbT;mppkE{kiaU1!QNba0Qq9y4s4BtV&Z)frwUG*Vbb+q%rEC7g(hl*yrsI-ZxqGP!n4$_xD&iNOIiMd^7}but(8J8YR)m;<gh&Q<bNPNkA{OT^#9Bm|15ZWEqG?sfhui@Mes;QKfVG<?V6CzyrHD6ILp@cJnDY%@O=+=lbmC|;QM9kbPPyO*YLBT$QPCO86M(*!tWB?JetTaU8`E5VnbohR5AkT>|*#YEloF6xEpwkYd*yoReA+5DA?Jl+}#(NWissP{s!LW+;%j=D;1?(8PqFM%tvM@8re(C(;p>fBL+DoH%MnfV3v`aFno8pL|+r8&V6?D9JknLd-V%I=+ZQPR~{E>!qPd%Ky#r{uL!Uxb+}H6i#WzEdqt4|KH<45rAA<<B;TBu?YQ6neJwVr6Sx;_i!Z5a@VgH#5px3E?G%)~xc$K#5AN%TOdc<$<aTgq?Z)&G%)KPaftm)Kzvgc%3zpcDN8I{Fy91N0V#>zXWZUe0lNCfVO>br6g-N1Zj+IN{A4_#P^o@6VH1J*2m$~HaknFOOC*75dk9!y?=9EDgH{LRQJ>bMMA(Hy$0AFi+vi2K-V|De=WheCo=!Xgb1GdwmM6$4HB(7+2l>m<~+)nZ=1iSY>0;(Rg`POB?m`?ca=U?wP0{BTHS+8kei2WyioRA-`NDuM=#fpP^)}V$w!T}vm--d71gPc<HLe29<84?5_J*l=O-`g)96b2<jv-p@e`lMry&ZTqx+P4BL(zX-{Qp1k67Ef(y7xG6kennJb3a#Y)Dr2nx}AWB}^CR6I}3Bz1W70`m`GE4y8&{Pu;#PhV(N^?7^24>XK)zQQeI08){!|(_}lVBlo{)yW~plnzVJuON8%xt(s>nxw}!?$T>(XitBTR#71}a-7ZU<tcod^TJ2KTzK{d$TJ)PG?*4M)@x5MA!xbEBxeY$y6@f|2NuMKFUWI|CG+L^sF=jQM{U3cb6Sa%8{8a?^Em=)qsf6#e@hog14%+YFbUm6o`~DyP%Z7L{=n8RxWHA7?mRrdfo6}{|32^b^1NV<i9I({&(CgbB9>R89&m}G)ZxW39YTtm&79i=vF4E|+mTb9gzR$D>Z<#B$Z^Ul0IvBt1Tsn`vEaUn+L~`oqqx6t(qpWsp5P{<S4tp~UH-FaH12^Nr&0=a8N&CGSa-^bm<9Jm&U?dP(TKlb6!94i-{7&ks;*qh`A41F`eh&_Y{+m;W(Cz{bQryB`R)1r&=bOz6XF<xL1P`-td9rY&oXs{a_j|k}%=)J-e$+$Vd<^xHxN6QXY_XIsS<WR-gfq^+aaeB|lBLQ83h=ZyFnx;iZRx);xhhRP0oHq2`;2z%1(~dKD0k0o;qDkE1!Z`bVV4H}tGZ&_4bw%H_E~WD<{NK*k>OY?|3emvzRT)J_R%~Jm!GDJq$aMU%=5@0A(vnakwP%bC{^xpB2S(m93y2F2%S5tahP;{q?U2&rI`z#E3?*W`r#DyV}76Lad`_FY#EE2d*XnDU!F6ghFso(mQmB9Wn4Pkzrg#AdUA8?aT8!n^=kD!VLl8_t7)QMzmBi>W6KxH?yY9Xrz=EdTwUl=`OFc^0Fhc`o*A^krpNsWlvJj0wq*cMN1=@plTebr_Dkgu2cDg#Ll*$kGFMEF*04;YyUueJL*!D2n2Ck+$i6+6(PZ1E($@w{Sb$a<Fb`NhbEk11b2p=q8|%C6$omzN9^EK@!CuoPnhSLZBIB=<rOO7)$J6`(TM)ZEs_T>Xf$jX97oACCpbL}AKTS8QXT#@ZN@NYZN0bTrnc0Dpl^|wfw{3`6!C4g%Q|mtu{Ch4^xkw{Ab%Et}3wP9rjgRePAn8WuP}sB-)rtDW$(E*8ut;$pZEgd@yC8k@6;K<-=nSE}r*v<3{5Q!IgS5?~CtCZsqicrxv!|4pO*iI_3TpU%mZ=_g@OX*h3)59P_cGg%e&v}!Z2R%Qzol4k$t|5Ka<NpleF!ISj0mY|rQ<EjNZjqCc$Opv4^aEsb+jsK?9$p-JbRhd#a;n0CQcLl%HU3o!9QgL#TP_j19IUXuh7{a-|_jM364FAJaR-v+ZQk&45_xI5und@95#9ZMP>${e>oc^w9oziIVh`Sv)w=P1p(~hw$_tmiYB%_oyKQM@7Me62NX6ySXoLMY@_${wespjf4fyXtf`(&d?8Y(<Ri4cp+Wic*GHG99&>qEQR3+GpZoayVsNqwH!=cG8lC!46I+j7mM-VXM`@z=4rqUP{4x9}8x%n+hW7t!ypO*6Ai7iUqt6xckrbTjmTuQeg0waa6F>gfiaf_Rwrlg^4^hG$zfCb7aK$>@@+H*TMl*uaV+B8c;QnAjZUHP?8n*e1@?xzxbVoCkI!n2;F)9!Q3W=TXXL}2MR8va57@%|ClygM3epivN!fLOf^KpCxzrE(68yv>?<a+w%-+TM}=WTy{)G&*BC$C?8Ihj1nC262LN@9V2Ut2rrY~U`oMZ2y6XSw}<R&Hu2H%$$FT1boJek$Uzb|NA*eVU7-R<r&dHvam!Uw--fU;g&XpX>JL{poM;wR2o1LmAydfq#5za00c@q3Sm+@(B8LG)TVT{^Os2`RlL$@Aq%`?Vo`mJ3Khre}>+*BU&`Gdu}zSROr|g+1Z-X#-T`urlSStv{9Ji@vC-_s^7S&_MxcydCVn;pioZ_j06GTTwTj-%LSEPFY#04$*7|xi=IH#VdBCI<&0tV^ykm@$8YtO+Z_}zw`|e5$QD}N@SWG}@qMaJVaAkQ-=sK>c%1Y9``;fQ|M(h=^_IK(eLO9TziB_MVI5qyg`pwLl`tGCZ$;u>&K?|XCPP|V4HZab8;h$-gl!05Dj-1<=RWKF=X?&j`qG2|^dZ{fIeP8<pvT%;Tw`G+1^wKU+J?o6rO}DEE|3#XxC&?-!Gr0U$AkV!gbT=)Px9Pa)r${h%N}Zg$AHT<lO$Nc;r9#uMf;#VEv`Aa)z&sZYcQ;SeO+FIEo6OFuaw9FY^V(hO<S{edr@~Cp8>`6G}V)P8#)G&&22Dtep+zI*bVYFWhwW^_fNJIqBZw_OeOO?u;Zi5M9w{rSZ43dcR`|V2im-wf^^!Tw_QTv8jE)inC`_NIAsG2z8A8w06a%#Rt25yP?3<ljh*Uj7Z{?gBftca5D)5N%o1H%+ulDaEYn3X)OeCABRtEpr_EW}hE1fEM|*}hm|ZjaMfk<zzX}_!!r0vqb6HZNDWgZ}D0hCgcUIR-8<m0e>S#*9EE&S?HvU3~TJCl`z8$~!zsma=k(pQ0$dZG|T7wYVT_lDf(dv*|H0&!?^vzB@WQLnCUWzB!2#t;|Y&LhLdI^6HT<$Gwd6+hH_-O0yR<817BWxT4AKUSEb4yMc{86O<u`?LQ2#vSlP4%RzXR=8sCB{jaXXmKB%>X*aU7HdQ=8&=uhW&@`%j7Ov`EnMFIz%h#8T>iD!YO~;?@VUkkG7U?TJJhhfZ4Pl=X$hsv5O+LvRm>bHeD|GD5`Rxt@jx-tz-<)@K{w<Jq6p18f->~L2g^*3Uk_!OTIjFE?qlndoU(d1mOm8{g!e3IH=@H8*bgLNtSlHI1(BMm60(kAi?(0It?V0ekCT1!*sEFdvXX>_&5%;TU)(><E?R%sDS&v9V>4v)U5d%B5uE-^V!ga#uDSdAUGd~H7}KL1rO|9+{X6p;TEKD#-Zcp;6ya|e`y{%!$sp)@sPV^n58Dj7K>=SCA54ts<Mkxi9hVb{<iEfvaz6JIu0&~ZChcse`u2d8QL_CW4fszKZQxXEeSszUXH&0l1exn|I~0rgY~)i1=89HQ_0f!<*$76c+40bXro^_Kvo8MOKCLrxSS@}=MNQ(Xl?$&N$^UD_>6#{I|ks&>k%+_p1WW9>3sQ3i(8A8Hld|25j}9b!KO7M`=J?3sP3r`Df@L-Sx>}vyMVGNjiN}z!;*2Z!G{iEtn3>86?vEHjW-W2kC6P}c~GIF1h;9-a~pGwa*XIKYFBk&%+nQCru!3P9|mN)ah`4O`72FB#iUGy>e0@Uv5n@O5>6#Cd^_v+G-&RUP{1kYm*{Wt*%%h`1Fc+LQlT;vW^_H^bV~^rpq*R3oz&8ZY19~mn0N%wyG=X-tx+bl`c^vAupfW@`S&BgSxp4al%9Y8*^7c>y01@#91ZZ@)T;^o1N6H#nt6ULTZ*RR<Hi$DDTDDcZ5qNYgV4Vqwma(iZFGlZwg(kR6q!Y%+(tgx<Z-~nb4Hh!3q8)0OC;HoSH;nFpPRvG#`WT0;7F#-J!MWpQ<9fIYn57P+eos0HP&V^)3Ic#9eg(RKY#xG2WEoey-%tgB7KJ7<wN3Sa4IkMtWi>2sJuc^c)LU;H)t$Ib%S=9ur~8Ip1r%0$+5Ee94Epa1_IBsU;LeFR}nHy=SFcNC@Ll_Mp6qM;w7dEp@_?niaq0AEjL%|35?*t;zQ=QpvWka{k{&C-2p`bZF6_bMTPD2sP1~5Cx~#?Wx7!CGWA1Ju@!KDn>%wm$9&G0u6%irAqaoESmg0JS`N4fqj~@>K3^X_v>n{!9SD`uPJDU`99>%UO%oTr2o%gA7m4CU;Pne0j1k3Uv14)$XaK(0^V`zvUxF8QzPpyqE{+A@<|a6xMP%;pU=c1mx!V^-CzR?Hp#rG>T~B#T?R&Tw1VpLLmN$gtPP(<H+TfCH8@VFa;fl2I(vFG&(9{xLN4p319#<>aNNlDxZ%1z?f29G~IJa@+q9v|kVy1!!8+O@8**OTLh^1{U(rTPM0qW7};+M%#S89NhMPaj}y>pR(b+NSz+<XzVuFX8Vbz|(-uU)lDjNs&M))WN)l+MM`?yaNnct>2qvaY<EfsFwe`+N6gr{GLuRA@UgwrR`N0;}}y{N*eeBGd$l-alxCa_{Y<{ev=UL~?xx=mITMn>#kra0C5qbl?A!lIvT(U#$pCx-$6{KR|323kBE}LJB>DwKMxZ)o2y9=w0qk>r|1CTj^Nypxx|7Q+vLeC@{DQ(|R_zcgx+^1>(Zi`u_Evk$u;nJDie}B(!b+Zj#WpC#^h-B7RW*b@+!=ScPG@Gyl8qw(Lc5k74Nz&NWGSjfcm<REbkAl??r~M1J2QnTDxnkzC|v<uS>lv9oAw`;Y;TZVqZBjNqmrBkc!G0^bE%8FF7hgXE!}cq7H}MCQF4x3$Z*%ZCi;%u9{iG$^E$nT-lI+efU#jE76Pw$tf?Risdb&PWz)zI~?Ah*wN+LH^heiYj?#L3VEjzs5R%$^E^?;^Z`zjEycPU3Z)<>AO{hDSS@13%b&wFk~Ow1CSsbvJWhH1XWx~RfC$wP6Nz#38*IvxGKyQXRrT~4|naj98ab}FR@#{<gG@$%}L7+*TP}2^jFuN0WD;+OgYeCM|WLSqPx?9fsvevZ;KLc#G|;|ZVU+~xfK#vqgvJ8_LkoVE6v%WFKzUlyWpx?+c}>Q3m9(E3}fWRcdSRcDNt@Crsh~hf{(T<ehuf6>9>)MCh}v`Exk8Qv)v(fc89iq@Q3gjJe3ZA#3T|FVnd)gf#5%~Cir&LXPRVK#XXi_AkR#;(zWcK$7W}>ORVZwN3WHya`U_tcPr)b2$@gk`+Vxc>kx(k-^*d?^`~)}s{h%TD0H47^UVfsQeoYPQ&=2Ky)+}Fol%SxfNN6=cRB|lucbYVDh1|au)NzcmcW3TMi7u`Q`f(QC11|ZI$Az;i2p&eK#Z4AWzoQ$^kO=DF{`5&EOWnAmRL55wkw5Zv^LPeVU!;bpcX2!6TeAk=>%a%(1;ykDcoxm6bxtrzNF}?D0+Q;t&)+pF-`#bB;qF!AAA^v3XVqZsg<j$2Jz>229Yhd&UFeOU}mLnxI=TKrAezQiG?{BE6RDu5`(}vk9j1XMtpufu3Ru(rqoJJBsF087jqe!PX>cJcP?HKIMLUaL9GI<QxXV#RuV6MU#$gTNqb{0?lYIz%+u9O3fp-#=qt3MNL~dZ`8GfaRmH`4C7Ae4<tWsB=yR+97T_~drn1|N6!4YY_B7jvwsp0lF3UOiD%<-;Xkr=M0Qc2(NAgOz0K+RYwWf4l!2EGq5{B1+M$<T4#c_Da{jzs>USqUnx>UXh%vLK}eAyP%-!X8^nU=YumB91@@QT{Q4jO`lEi3YJ_<Aph)+w@+d`5(+2hi>%<L&cw>Oc1;@xozgBx{^k`*jOm2RKw9<w4vR8@r8#>U*kGdvFS(@wNmVr2a_z1M%Aln!o!ZiMvBi$*p>*WRD`8c0H}Pjx=L68yyyoV6$t|QYEJ2Y5|IbkV9G`RxTv|0{EYcWgRt$_B^(~{^h^ov)EbSgk|Qw`zy^HBYdMx_}m@BlI~yigz-o)@SR}bm1IsVv>rz{qo}0?A5}6r$a;c%6?_SJ9z1?{cw)AGsK?;VrUgi0<G%Q!4OXY!dfu26w4-IKY8id6x0Ju$r%eo>fkto1#nH2pc^0T$-4Q6V?)E7I1{i{lmbYwPa{Jld?Phxocp@-TIvdhuT;GAZ-2)^hJ}V2ipdYq_u3F_3JMUC{P21=n9-NJ+J)Hz4h4NY08ClH&?e5fr&^S~kj5%s;QM;!%P8N-^nelDdOa;<Z;x&dGNsm+0oR%XQm1VSiNZz`EoX5ghY}d)JjJ=RU5uy#ZocsKs*oD!G;kQh((ka^wLSx1hG~N%JU&9a#hBn?+CoVu)jB(u)HiqU4OP;N?{I)UDySkTq!c~=GZ3A!c91P!S`;ZuCt6C&^35QR<4;6mzi3_%UaS=2z^<wZVwoUuw>s$C+%O?o%1iZ|?U6p6(TEM0ecDVc_9QWz@3Ik3nk#}^W<jaddA~_W@m@-*5O%)H8J=cOt#m^7EIedJO#A<XkwCJ+0ORHDA`vTwBbg2t43DibC!#PQvZJS*-$iHFn2?AdkaLXi$`J9^asnV3Ul7~BKktcqm3LQ<(nCtq)s#GAM<Wv~c79I%%AtlfO%^Ut8nCW~QY;?dXif+r!-XC$lCUcgvgX7yajM%&gU{W=OGxkbVvg&rbMXdeT|MlX<bUSb0xhkgIZa^+jXuW!$zh)G$7S;0gc+0(eaOTw3Cm`9G7*QOz)_$8>;ka1ZHw=w0{UN$><ie&Liz6kaE3$gq2rOa*eBuy3A8ZB^De`J)<*pCJ>J9{S*M7oo_Oz|_ziaNh)Iki2qe#@}Yd!DV@{Ca~L5H^{JPVj+aSgV4x^)r-+m%aHwRVg^?6$;8`2Car=V$xt-+un>m*0Ns#qp!@Hh=x?pA%94<!7Gp^_P!0nJ&{~@P{jIT$F+NRp3-i-{TL>;(c*<k3L;=X?i+Nz5$k>r)xe<0&EvZPJBSv^p5c=DnC~`WbmG5?jK~6yTySN_i(PX$?e0IV18c!2BbY2F3;2;8#H!#ug0E~YRg(ODNe^c8HH;wAng~@phIrCD1mlwJq%%y&yXc*X>tQJa?jgVpmdNg4|@f71Wp<Ih0c}An3!4M!6hsAPK;`Z4GU=F@Lk)kV?C=i)<fjuRMvU+&GPT6s-{q@zAh^i`dT71+MCJUEA+OpHFCbVQEP4HO0I0V5V1O|POA*?${zdjUeh9Ke8^bT5T+yIUlts!XXloL@m$6-fqN=Sm|av|JsQ8dy8@o|jGj*q-7HQ`bBJS{L!2w!G}$>k9YyT`)G<v@hiGQ@_uf8?+rZqzc`w5gtK4i^XnTcsLSo@95|XRk1FVu^TLF!{6FslG*v2f&mYgefHVJxS!iRm=8Q4Fd7zTnB0IAGpr>5LK0kYAsfnd|OF)77Jyc?zc=9klKJG(kxwhVS^8q&4b{y+?Rsyt#X6>qU9uC-M-lLY{`KYYSdDJQ5iaaflB(@0b;8BeHqT{w!N)~4)LsG6OjiYP4L_rxx0F54wpFjT)X8@8rhOu^+xbw_9Rp3bx=muGkm&ebrmUTz)2-<Imc$b&gTfz#%pQxcq@EHPtUQx|qLcFc3m63vSlbc|M$jMtZ`M<1CIkP5v=hr7t5@pDcYNwQd+mz30W1m;d)1^IPx5F61~SJ9<zAR~_CJ#g!4QCV23POR^btkn8EpA+JDn=obiJT*%_#M#)hZaO=1LGpg503q@h=vLNdx3Dka^9j`&$gu&0VB@ZtB6MHPd8BCR&P*AK^;ve#>(Hz71aAc;bpV7aB5=s`A|WpjNh1!xC?1q?gszh>2lkgb#0!IDj^(Dw2*c;7&$+e3-w!@RlepK*cz=v2Bf;;_&~x=~XyWnjs*ht)n|q#Ca(KX}kINJ?$+KgX;%tI7sU#-NZHKut15nW(4VCTDnb#ZnINTxU2lR8y6>sWyxfdL)KezVzTB;QFghp7gjedyUF8EI!*SB^RZMS#eLBn_9L7RfHh1c1V0fgdDcmq}Oiu>CvE5k-&77B%M?+D7o;N3qOJzcVBXdi4*wuF{p(v|k+ZT1@)OD6++2HVvjx<o*Gi`Wz~+>roJ2s=fX)DdU)5Z8Q_w^SneHt)k-VF3XS4g$ws-r<5hSK@e;?BPZ#*oegP#Fq3Uu*|kZU>1xpK!y1uG?hpVH^`nUQ^Ej;cq^F>q4nV;x5c>!DkZ&VtDsN^UbTu^mGe1jCt+9kGdZQ&KmcwG$=$NO$zsrJS4unK^VsqelqZ{Cd;UY;80>7?Gg`ScNlECs$@LO3T=$%OErLW5;pZc?a6qN;KJqsNlvteeQ2LH5?enEhw-`tUqrcczm8_iGT{#)tJL>WTH<(n!JI)GhuoO`Y#PiXeRY~9h)gZ1RK=UUpQ{+alB95-G$|V8zgE66%6M1)eft#6`V6|D5CqM}T>*gyrS-XSQmg-@-cK{jDMlVu44>kf9``_allV*X=;BIS4FDbv4QpxC%)(mZ+SzU;!qO=y}huw}0St~bHGEz0_`TsMd%J{*)CL@p7N2e5&?D)GU&EdWm2KwyRpyFQ7%aVFpTrqQL4~roe-!l4jm?5rCZUl2<IOudK0E@ZT|M3V5%D8mL^>&qFN?@hc38hr1jJC)<Bm<*APzQ+RUg=v!m#VmQ8oq9i^>0A2%edS0F|>?L8e{kA)N)2Cs?Xr+c&22*YUtXEj&UjtqDZpFf{UzKO+l9!WQz<rDRv#pU`n!zHDyGkUMm;8_)L3MSh4r$^_0`*iqdv~R?=Pf=V;*U2QCShdN~!0<`OkElSM!%7D09y@0Jys2zUiYgVp1R!44u#6R<2yvpF!h{jk4Zh{r3o5u4ZhBft5&+N+D2xEFY3Z(b{aA05~eYn>)T?G#LGt!TotMJmo|{lO;ozG%7*pMfTbUXsFe?$MT@cMzC|QLKX#a~=~_DELma3bT5(4Fl~`k@9i)E(c3K47vEDpgHedJy|(BFxyFBR&CL$EA2vUU{RFrrQIs?GWAD9q}ATuPD0`bJ&+b#A^XK`Izn);LS#x$r<~OJGo3A0qH&}fjAL$BDNUGu(muOL9r&G8iLmVxXnE3<Shpng-*+OL<lY-hhAcO-)K2bA96SL_xz8>aX%q+X<0+*U<*o`EJtln}<DL!Il&=?{Zol~h@lhz{qUYL6{8`=u1eGqMHE?!H^e2X)H@D%EmRQQ{7Eh<4VZN@c^)C$1_@f&tn}C!J@l4p&D$)%;PuikV@tXY;M_G&l5%R>_>#M9Cc;Dk=&u0TE&guj$eMP!T*<9O+!0Faa2ol}~j+6f!7h|2!+(p^@3@CU6sVrrhxdm?&s^yD2v=|by4rg|Tby-|X?K)GIp@Vz;^_XGXBmv6QtIqH;p^?He+SX-OE#X95q)ZN7)bYF=mdUkaQeNoKNDL0BDN4_)s*|~x-(kzd!W?k5ajufDaw?UqTO$4*CLvHfb(`=ka<B7OS=6=80N=+^py4|fKfx?qMq$m*h1W;HXPf!4;5MAcM)AV5@0hKY+r2b}8-ZGUGr<u6n<l_1D<L?D-FlooSP8xa?L5K0fV{!aE+*=xcTq1)w?$dk<278}$mXw9<nh)}h>p63M7<Y+6;ga8chpsCb7wc<ehFNWJt{&+fObc%Q|FEnR7v95&CD;T*XKc$(;(JkFU<*tV3*&S$n=?<Rd(;Ri;}Lsa-qUU+S|<>J|(Y>`XbC+sR_Y1@ttaEdZ4R?U@%2?EPu8!Byk!arqHvc7b{!q5_eyOgFwd{yO~kmN(e78v}To021-<FU4|mrDGyX#AneTRZ@w>^eDW}lp{}x{!RxG%w8Mo!;m>68Ihtf6_$6q&<jae92DI&iD<xUGAxL9vQ$mCYCcd}KpLpI=us#l-w%J)aU2+6wiwGD==>41PO7T|`rMjmkC=vqp=rzFZSnShC1iHTI{c8!%J(2l8CPeVux7As4ZIEcy$tG`dHs?{seB1mrWkWpVsG?jGE;%?FysPxFss)34(dr&#g4{f0<At){`pzbJK6<%+gj(f`N<M0&ogEnxtEf(m93K{J@o4?Dk*JGUKR<a{pGH^GCvP^-jGy>4J`GX$9NnkX8!4dA`W7d4e#F|=l}??mpztEq;K7p@VnedB*F1%5D`C1gpWuS8>cuu})Th;OcPLewdg}IVF{GbSVh_HYP?tPwjp}A}-%$H%n<m>?9l8Ha+a*_W*QBjOULt(oYt=ks$=!|8M$SQEQCy!hBsRLU?{-<@WK~ST)M}Ty_Jtg1*P`Dnarc)SkMH%08m{12%Wd!puLw+HPWl|d@+u58rO{G7jWMh7?EmPinW$Zy<*y>RZ^>!`OC@}#jb~vCanODTr|Z$&+4ukOUpB;xL05<iB#QyCwcJX^*qkntPJoLSAGm*H;((>DhhE?A@DR4+dM<GZd6Qt&SNjHJwg5>Vc9BMpwPed}^L?g8c*|U|eIs_0)xr36=hAuXWf|AsA(B%+AEk$U8)da)g9sGoci5X@xcRfj9=I6~ZWdF+NZRkskRuhf8^^2K0V9FP(%Nsm3g*Gr=XX+96_1Ri{t#jo@q2JE^xvF1gmxEjkm45hvicjFJ>P6rI15q^C3u*H%aesG<!rWbx!>a*Vb(uw@uME<=3}Ur#8q>CVT+}7$#O1vBAjvljl+7&kStX$P=Kesf$3A6Z%hA;$yI6U39#PF+Gn(5FUVw_L%Dly3wOsTDJa9c47)V&U)2@cZkR5rw9kUGH{W>kiwwtF`5&@S^j%g*vXAC*xcoF#BsFm*Wu8Y43AqGYh!lcZMyYa-6M6Ck;TS2aK<M0Ajl-ntBejfEFU?%|T$#02(+{VpAM^V}kIP%gV9QwC+!F^J{PLU`HRSRRw2Yb-E#uPR{srD|)RUWAkDCBvs#mM;3G-oaT1^x6`gMH0A6vdqc5gL9K3yRy<LW|}%4d#P28h%m^UR<PHa+f7prkT|vn>O7Itp!+n1qt_wO=ZSIPmN=9l8LRmbqebw1#CG-F2R;7$TQC#7r!lNA~Tpj3(PQmA*Du!UD9?fO)|3nLCa9n7bK;+*sdjN8YcH^yo(M3-+2W(OjrQ5E*}+EL}EWKAz?W*n-&QQC*+34{Yb>yy#3C16`O@{%N{dJsUnRQzC2NJ)%s|&&&>-tOPL=yKO_n3eKvCm|FjN;NNqR%0(K{sS7N(Tezb}Y<z4V14%bJhr*_%s7}-`PPR0)f<=n+XmcAF-UaEKuYlSxMrR1+J*9iQ<G)F!7^H0;J<;079bGfjpFO3-Y`QUbR8YhBvrP4{gU3r0Uzo1axtH07^efK<V%v}Z{Vm0UOK#~@k&C6W?L#<uV?;<zD;;lHM&fQC#j_+ac!1j1uA@~^W0%&x;@QirF7^t5F>#vUR|a=#4E`x2D83*H8;}eCc!kdX_>Ry2OmOT`<dGvX+P;AKU`VwsjR1YN<FL^SC^9qn{L9%Wp?&W6&p}xwo9+IQF9={4x3!)mQ#7&d=`=o5dcWRhKcKJy!pc(8U>m)kua#FP`rEDAVNLaH;tP>NB_E;n4GqelzdpJ=^_a`UiV{bc|J=vt7lV^kxRDWf(&*HWn%H{uvUE95K1vg{cR>5Y<B#D-*`NqoF|_|*<9+ni2hp8+AAPQnkEGyKw{*K+5~Q_ZnE3I(R^&Opv0a-Ne~1$9_-%^ufGgJFmM@{!HkuKX9xM3q1NR3LatmPD(y+~6loxBop*xzP)LF`%jZuLhP)O{2KigaAqnc9c#Q>fArko?P^}C9E6;^u<osZ)q`0X_h-QY0BC)d+A|K8i*KX3ozqlPNXv;-Ot8VnirWRiK9WeHU$P5h&g3%zzgv|-U4f-h5j@~j6+o)5EV_fSPr04R<4r{)(&n$2O}x=lEd>ibetcFmBjpL_u~k+h?uzR|H#D%<cDF6(nJvD&IJ_u-)?{yl8}^>M%d^7p^|?Uz6A!2kaE_{RfH9m?REKr`bwnyv~2|3hT){n^6M#1>6GNch#C7GKe6!2lr44V5=|b3o{A1YYYDT3`+vPc1|PKl`=mIrH#8{`r@`{`&uZU$DRZlW0gI%Z;J3?yf(L`{zBsBieR6_?VCBchhsBVs|JDrhJn1$_9v;cYE%gYE3E=?*!Wvtt`xf5Qmj&vtKs@w+QF3q>M<PR=e$4$qvYNLA3G|!3|+7>uSYT*4kjFQ)9|th}$~Q`Sn^ibZ}3Cw4XUR8`^S7;SsfreP;atjsZJAgf*?npTy)(Py+cfnG}|7is@AAAo_J1#)u5Uuq5QOCMVabReOB9G?WAw<0L}2c8=?+=<?k$(RT-*`{fNDnQxrm^$pGGo7>HNmwB(i%Y^D-QPqSqrBgBy&2uBxTdtB#M|P|G6QT=v9b5{e%Rz2wMd5dkZb=dDs#((us=FV2@zhuBgM5{u2GH=Ny_X(=<$wOXf1N+;EEbs3MCTe8Gxt!m82mcv`7o@-&UE?}eE@{|*du?8Fhx#QrBw)ePP1vS_(c@ETBS%{@3^Dst8ZZoV~seSa<-WapA1XZ%@3LR@)E@M=6M^1@*JrMcIEE(g2E9ru@zm#+s&umM{8cvS*;62PWLvv3n5YA>Q_prtqm1c#2hx;fS*!+nN=HL#mQ&hHu-*D)uwb+QQTHuP3vs?aYa$N6Cc+RpBn^kDh{C~b1AdYf2waw-m^>;pmAR7dhS#R!K~tJAfv+G!SHO~Zs`^upnHE5MY>9|ji29JnZu^OH&HVbeDUy(C^nZ~eI-LYY?hA(2}?DPIg||<cSGJ>CrGDkO5u-0cp_a|xui0aBq$+c=4<>B2`A{h7%TeGdCNS!3VF!Z{JF5n^m2&L)ox#ga7o2>U^40aBBonJ5u8|HS7i)$br7?LG82r@y$>7=o7)EJV)b}yza|SmcPT8uh-HC;H2Q=>3*S1AjgjWN@tbwLspFl-Br39@{}Y8uZXSNTsoNn@=b=@^v<XD2(lX8{BaJ-XY^!f(x6xuf!OYbXyJlsNH$Sf(VFxTK@*TU`CgjUxzEGEu3M1}m?&;AYNq6ERI!1#=`EENNfh$s}ZvD6j2s$Av@X=l&B!|uQUA4J2L|g_kiuTaD3=V>$t()!DbI+HNpuvW@P<MOtb6Xt3js;;G4!uT6%T;D(ro3KGD2(36K{2V|cQpvibEJ-wj_5siiTpmDJs9nx?=&6TvmilE^k~#%2i!EM2C6G3F?%#Z0Y~gp{c(YrRj>&B%yASbjYF}Al|ToMT7z(y>$1a5YxlFY3pK`?GNk2ql}to2(&H>xbNSUz5<55(leA}3J5YzB<FF;j&y2xFSjhl+I36otzbUd6xSm1vnz%9Cis!QtBjfqbIU=2HW8F5@N~yi5JH~P7%LDRM4?9BhM*rtl8OQwllGoXUp!e(4HSc9-P$!oIz^VXK^7L!`23F+U#|B84hML)|aL>rl#*g@TQyBLoY~5l%aKJp#wHAV2pcQMLOyaF16PY}kv0YtE(nwGF+W1uA>a9KQee@D0+#^qMRu{r;@^tfqJut$c2`tGYvV7w-_+CcD|B<R!B>#V$Y+6+hlbeiBxGAPiz7@q1c-3`bs6|%P+(}I)IT#j?ws(Dg6O_ENmL7dH;V3r&)^k*W6isQ#`&6cwg{TX~>C@WFSLS6Q%+$3PV>}vb>uLeJ0d=If!|Kwk%h^&py>70*o+EL-Wirg~ie*uXcbo^8shs+Oh8AdXy|ihxjZ_#nkb0G8V(tXmJNx9QbR5>EuRK=x(Xu&F9mFM9qn~I%!ubeCOG^jFYE$(x<pG$>^U>BNQ+`!FmGS?_EwY@Qk4CQctJKESgW}sHIJS}zl|uc&)%f`9&%f8)4(7cfoP}B#iSbu3;p5RH0m9C^od^UCWKJV8G;4>inJnJ7&mNSU-2?QEsKG3|30n)PPjx1bb>>SlA8=mAVw4<1ZM-`vTRb4-NavI5^|V=&qr$X{tSkaF_YKnncNY9h^bc6cKo5b`<M8Nio^%&8znh*gDb&{($mjyduM>OMr|`8J+9+-NLySt-!KAnFqfbVmGy0}7j6#IvNs5p4Rng<K`3s>hhSnl&(2n@>am`9lBK->xc*RZ_!I4W+$D*QEu*jS|x#vNlHW1;Q9L?X%pc`#pl9TxQ^R^@H4Igcqn6hxR-X<u*r+EW}wyh_*z$EKrvH6JjA=+lANx?M$ItaZ`wXB!Hrv^~Rf_A62FHq&c<T9tKcW7mD0M~XX6yg+?@L*~YoOUlpt9hC7A`JSg&#m{LKY#us$!STR`t57uc1}Tu72C^W2Blc1i&f>H5fJt?TvR!c@U324-ora^uf`OM@CcVBuem6$S0#ArQB7-;*NH`;s#~jT_r<Eff+Jos!y^J?uKAnG3-S4zEQdqe|B;oIj>~SVQ*uK0#EXZ^s9hHz@(x^#-L)pli<;_!_C*rRx1*R$&FU%(kG7jiuF94nP4oR-{y~opjJE3}Eig`tLkrpV)q|}v%0PYS-BCiTAg7Ybpt=^^Y=gE5S1+#EVTy><lA|%=T3lT_xu>#4pZm@{HAjoe_OLzGan<tum82G|Yo~pSU>p#{fv2X!B5N+PvTp9m63I7pzfw;ZO*^t@NS4{4m1jvMQ7}jTqa(S_HswPVIVHh%0v0mkjx@KFyOt_<5VDqft8SX@X3Dh-#-U?nFJjej!2&h8Nu*TFH9;neY_e;mVG2sM%&2&X^5!DHfuP;9yUf6K0YDD)D)ZTNEmW0TQpG;6S{w*qi?%T>A>Y{(vABSwLWu}g=Fzb7))gnaN&2VAwp&QrTWvQUZKo!Vf8Z_&8^`6l_)?o9C96^zCODR%_Egp_ptRYGG-7FX4600KSvNp(3uxdVD8O(~UXhb2!P|&4^0YM8(bzG?4sPEgUuT?Pi-M5_eXb`D46iIY)xuxY=;ZY)C!5B1G-vK}B$p2gB$<#zK+wJ-RwI>uQ2Zlq7-+`w&Fjnz?BfQmMzs)UVd-j6g4Yqh(kqV`Un8O-JVKUdQ55aS(d4~HfZYr)y`X7H*FT#v-EMhVMgk>^h}s!J!7<6xZRpc$(D;J9(sJcd$)j?*jh%pHRvpCFWV{3>SCvV{j#PIm>MoL@oAc{a-XMSaZ@S6rTm(AZ%H>rWS3X9oG(6P7OfOfDNnSdgl|Q&=#6#0<wKZ#~A#G^v#Q2dV#B|#(EyCD1f!xiY6?@;x0!dvv{%gbXaFB-E)y0Jte%vBaubc&$Q{~^ns#tg0TxuYw<%c|4H@-0hp57bzPQ#S6yC{ju#fgH*f+lh_R$0?C!nGrC3d3WtKT6L#8r=Kd!_a8Za<$wIwb1h4i$+t|4m+r~(Ia%}plR6b;!Cb?B6Gl?mV`%(_B<K@E>NhTVb<Bn=Tc?7lBq?>%n(_)_S~h85@EDALl@V@ZVh=5rk3kC+B6oLNMu>hP|vTyw`rVw@)Rcs1I>ts<}jf)CO_3{p;NNYnZqcD{^1JLyQ8qN*uI+i+_LW+Vw=j>%~xJ9)P*Gs|Lx!-d^1aX7{&-gTa+wq={Y}TU1HR+jKsisR|R7fd&)I-d1|r<B^=i2=B_@H|AF@~vs1`jT+`q#M6^RZl(ZF=(Cu8+hCkXlzGI0(k1Vp&h-@Kze@&CE74dyusme(0pLl`#j+gXQwu~{2kt-c8pqCTXt})9@RJBL@0|U$IQ~oV6d=(#0Yfmtbggr2GixSE_{E7W$o<HN|Xjq$0ZLXII4sJe}*8I*hSj-WwYWH?FcXu%gkQHVn2svdbQ_tdjmd`eY59Z?m3l^qW>Q35T46ltHI_(MZvK28}54b6EVMjM=&&=cV^<|PU;b8z6XwsDDqrP$pO0Z&?RZqJv!Uy3z+t>%mT+`GHstlkQ8dGIy6U=2N-@1EYO5_uCWbrFFTBIgb@_=6v@w;};Yv5XJmppHITjK?~y>)?#P=!VPM|<{fSeR0eulPTaXHqYjd#W64yk(1~*n&HZii_<`l)+uFG!TRMtx>JP-B)F_7cg_}CU`AR@P;e7Ocz#i#!R9IG%%3a%BaP2j`L~@YYVcJ%w{UZ=GxOzqlD<qHj|EP%i_MQf%!(WMAc4WI2GMWtF0bOpjS4y%!;#w1G{zdnfP@HB6nKe6jzd*%5Eq3O(Y=!DX=_0Fe056Ug$<+1M_!b1GU)+f-y=W^DnsXkhpDFc8(M-SmN&WxQoI;n8Yhr)Wp<W(P^3N>@q9Z;m!|iu;;n<BrT|ZbM(ZI%pf?^+WctZ`YcW!T@PYft^{s=szZ>bqYjSQZk;#yk_h9Ti6~#a&sCYQIwHy~;*Qv19#|USNy5{BVyEbA#>_LvmGeoo+TxrV+a;(QB)|;{TTF|*WEEZ^*@)QIrB*PVT;BMRqz<ZhBGy~FLT7Sw=&J1o@)ONb!mNZ*fT(jKWYrjP?mDK{IP>hKgm`)h=VIP<>Rs|rWBR;0)VhaqR;2%Rxc;<fvz<WK-qd#F0TvP1#A%txYTeaj@OW8mMs`nHVi-w`gtdqlW4AeNwrk?;yLLu^lpVsH8i{Lbc>Y=UsEX@z0XE#T*!nSXPdzs3-hmET)MiE{k@8-)9k<)Ha_N-7M+0+(A+-x;8(i@}qr!p~v(Ys!%Wb?|{aj^<=$%6ky%37sCbz~4`=Y#5B~xt)gEQypyUlrU<}gSu-v!HTc3CCcc7R7{l-Xg_s(p3{*&_GS7g|SL!1Wk{#T^3F&ahK7SmLAr%d+Zd{HhQTR_Y~@xFF>?bc%o5GT!QKYBJ0<v^^q6YJ4E>9fRl>ZtcDN69c>(x(7~%#wk9+uQffqj`pcMq`0juammvU&vB7!HdsY5m19R#xFdY+D`y|3wsKPOV34JeWmh%Vgaj&$*?~@EDoRE02zWEG*J`j{2#u<8`=CP&R_b%2`qO&$=~kPAx0XTBmpA5#K<|b}H3La}G!A%7eBdfXV3gO6nqB@Hd{1p-&}`$jgXsuT2qC%wBOJZg`()a8T>w1fp^)>M9hG!t2O%O#tjssXC=D<scUe=We^gzo8@Zovb{WMy%FAoM`E-<M7tEDQ37ZRU2q8>`Df>EGW_G?|so;w*;V7*mm}@ty)5Z2y6d2F9xnrQsrv}jpQWvzNWwN9@MuPh>vNmt-Z|NNSZ?4==P{!Y~bRv70iW>;2`9S$*cJ%CLH`dHcfMV+uNaH^R<yz+3)=}H!PsrrE5R>_~_lR5=kG_??Gzy`-fki0%d4)x$u%FU^B}c0fo{yT~-7bz{a0z*=7zf``6xq=&?BTVx*8&cX3HZSZSsyK%x{VUNM-absyzl`ud-jnUAAcca`yZ*)6Y~T8I+Q<qV)(bTP+JrRJpU{L0s1O&pGn&61!e#Yx~La7YcymY)=t3|SU2sC7m76fQn6pA(>df@0vLhid~49*iL~;%W;%TQQ|U3x=9{(03_KC#PNi$hi9*}OW%<l7!52C`Sh*~4zy^2DIP@8X2y33_al+?|TK!tCFpp#EF&dIdWz?AR4oL@*mER2E51LC8<aq^au+Lg_)-E#&#Uliz*0LeTIXaqHdfiW%z0ln$1{zn?kihG3hK-eZ3}`+++o)C)SW9$@<l<pp?UK(3G+Ag~6ElgpHlE{x&3BVEzuCM-K)m2~z>H=WFiXJD?;4Z3;a!>z#M?b;IsV`^e^e-)r(5TiZT&*YG6DP5B6|=J;RH#h4uj9EnMjhE(k_$fqR;0MpxnL-IGL_leI^7y2wV%H6?TFvQpsraTGcH8HxF3tKxaUDn?qBulgK<3+ot#<OkgR~7KU(!!68`t%eNajwXI1Ge3&Vj)?B_Yp)01DHDO#M!P#l^!5Ae$0t62$Q>Eo@^R(yf`Va-h&xyT0dzDTvrWwrhE$^cS0STffr0Q5B&o>Y6-FkM#dLA<2QJ3C7@iTE&`AoNxQABLhseG1D%Jyb*HwBHdZFL6C>?he|^E~H$E?*JSxbQ2_CYtF_I`ZYcwwTm4o0*NOy<()E=fyWDPRV;X`z+%3k(&*)eRX#L=ju?hY+~7GWDxVbxjTUS|I$hmpg$bVmvrTM-rsv!umVxE>N&?`!;`1jNl~APAT*EBWe_5P?m<*}1F@ng;?2lc1;?=BI#YH(MmJ8O(6M)CH4$0O41yEmV^t5FuyP*iDEt$*(2}@jj7ywu{b;b2`Zs6bS?12n9m8%}Cs6HP8+Iw>Lh+Zp9I3O!>(SQbEfCRn)j^$$Z6I6O#`ri9BjQ-LvxNhOSa<~Rq%j_aEgxxcK@s~0jrUBOoiT#!vgg~}qDAbFn5;K!)^f`?t3|$PvpN$kagzs~1rJOivI$sOpvGzL=+hv(X!bF+g;~BO!{NoCLxEQ$4=UM<!ZL)jTR+QuGhQ+6=HkU4E}FwdQNdFDHH26}zB^o!DFB+fBo+#;w8F3ixxjmc^YgO$Tx^^F!+;czYc7+Y%jWRpUhn|&3S{Q$mx$-t9lP7gCh$1T5ZCa=7jb;BPuE*w@l(43uI@0F6=>X$Is{qD8?O>@(S{%?Xx?bgI5bT#*<{L)!5K&?BL&JpwKgG!79=eci!WN8v*vL;uYk7gQ2NZgZGTW#TF}IVY?Lq^Y{&EKMBh~+ye&tg-B1WrXil9jmT%=8gfNc{Hy53&%^eL>tuBk*#70ioqw*JG1}C7Gqq7UC>5W<N$M4wr^r&ox9Oo8TXc?2r+CPQor^H5TXQ57PWc)5{WK(dh@ReOM;7I%l-AbeuAZd+<Uy+ky49aL%a;2sa%xweH0d#?%f)?3ix0g8p$X+r23N6)hG;{Ww*$kwzIJfIdf);;{0BCR#n<GXM>~g~N$`^F(h(c3&54E`q&Q(V16K9JcQenE<xNn8Zi%6v`T#Ih$l;1|H1h|V{kB&vr6JXilJCg8GVYCI%bcMZ2PeQa~LlO#$jOufzZEWRK<asTr0G*eHphblFT!8jVc$OSBJfZH>hT4!o7c%?wkc$DLeH2HiOO^?CiBp8btl0|p0y~*1XQcL+#o-gtE2=GJly+sCWKNx=5q^jWDKS3*8F)AA%-kd;VfRHZQR<1;9$<)l?}|i@rZ2X6u_Y9Zt_t<+h(R+j+-v`t1X2Lrx)#=+(PdScBQeieKLZg-VnVBFORCfE&Pe7$^+o$`mj)5(i4XH&HHwG3Te;k1ku(0n>ETZk_J$@UmfO%#zuPP<YU7<(udGtrCjnXsTJ*EJ!BWasi)_NKGrVEuvyZl=uYCaZ{h*_sS7c(?&K}I~1C6vX%LVwT+|-rK86?~hB_@-67hJR&Jznewt)=K;#$Dmd1sqSSOIOTd`hpLuTekI44p9vju1oPvbTwF2Dnq7>l}*Y<B3l&MX!>x=Jlr_$<cN-9q72Eglwoi;68C229CP;m%sMcX!R7=r>wRgvlUTleh74usqycAkTNI)&$w+Pi^%8nbrv}O)xPQ22>SZW)iX}E*VwO$dfD9|9+bcvt$e6qyL8hFUkvd1?^^gOKsno_=(?MDo_x3CS=33A;9~xq8#qw~%dJxOJ#H;3Hc*Gpd-R($<N@tml4ki1Q+`ClvOF&dFL^VVho2Q~=t>sH)(bR6)7E5(n1t7<G@);ar_hU@$;~;dS0yR$4{91pHP5aU5{9DG!*D}J;dr90=z$k$Z!=K&Lfi-u!DdU{Tl4f1W>6SjHr}GswDk}=UOh|)lpWv%i@yfV#XGeXes;Bqm>9R0d8CM&~4Ap^<YL^Cgi~>x@=<ny~Z~v#+J!SOuGqBdVCw1yZV_r^~iE8;?V49@`wuT`bgz09#zn_pvgj;#U^n3hj4>!Ry*hdl3FqwiZ4C!!p`=gn;tC>bnImkFq?}@^(Y0CNHfanTdXs#TDiSv&Z&c3K3QK1BnEX}SMVAE9IbNh2{3tj8cdwyEn2Qf1RcJ%Y<`r@Fm{WK@vEY&kc&X{$SDIqJpx>h}nXSf{p#7YHA&wZ%U7h)2IkycG$36tEr8x_6NY5GJdl8#OyvF@8PvqUx%RR;UCGHjwc7O}agOOdY61==<xRyZ(}cn%vevc>44?Ms3g*8{CWkq%7M;6sC-Dc_WMluP$Q_Lxt)IuQ(L+Ap$CnZ>RMb#|bMbVW+erNVg)pU#G_t_>!sxQxj>?ARbGBPM4#+Pqy^<ne{4fs^`!?d7p|@&*AVf?L$F$uZqo+5s=pCl~^6)BkVo?RFf=k)+WVs*Cvlx$NCe^bRmHHJI&zt`7D|zIQ*}l@Uq>X>MlDQ0**G7lKMDkqjs4Zf<U#(pGU{5W8|{p8FdLFgJ)dj*jtH(0z>crbuv2!npp>@*X&3Zqf>7%IF?u?+$Nr1^%g6JJmbRem-cTInT2z>2EEc@b+rgJB&x?rL9p#Ykd|In~ev#Hb7F33vB;QrR9BJ+3q$l@<hPAwQ!JV$&FpYr8I#-sv{0n=Dm#`!NV(GPxgGkQvAi8(9*r3FBhp>KnGK@k}C4Hm%gEBuu8}Xsg49PkxXVTgRO{*v^nxEleh?z5EnVdJi0QVibqD9cWjbmlhrYOF8cHiJy5H2CL;tHI!Ivg=NvqZ%m&;^LB)bB8El4o7IhCZEb_T+H4eo>2AJ4s%M}+wN1p@a+t?i?4;bR3)qWCNDQ0mQ3fFzN%0M{8A98Vk@$V|;Nt}Q604P}6rVle0>P3vrB$i3rI`s;LeGu5K&^U^1TVW3BI#B;FJDU$3XTlY7NRFxFF@b0RK0Sg2F<QYf+Og5v8JGDR7ujdkjbV<b&_JpyY9uj(13*Z5+mnsaU6$rT9jQ$x##YqLs>B2YlP}KI*MD6=lJj0tN=iu}q5)JXwUPpj7YNEy=)uy>9l}B(<I7~zqB&xqfYPddh?i(9f`G5wF<O?W6SR<%A%7NLUh=*Lt|Wj(US41k6bGr$_``W&ZNC1l^cR?nWM0H2M0_fpC1?Ud{34|z`Jg!%0>Od7%c@a_I}(dH+$GFxV?wF~JZC2PE8N}I5OtdzduS@OWs=r_Dnb_Dp3Lmq2MaB71|F$WwA3O4n^HMZzzY%WenhX9Yd5|fe~%mVZENnlA<1*tH!$*g$!DTe!nXO=Bad?}X2z;Dcx}!x+&$B37Zn2HIn)J0GWQwjnGmmd<pI>*wH-^My4Zt1INd&ZChdK~s$u{iZ0^XOfa$esInTRP_O+QTtOk~$G*&yfW3*$+!)>eDe%P>OZbuioNYqr!7R{pE?%eAo%g{aD_c?P0K^s2as(3tXt1>V!4G<TSNLY#_N*rPRGOO1TSdHR_v$v?~D<kdHc7aTkpBf-Ad|x#wl)#c?HDC82#GiI0_3L$&YSNvNg}SFv)b%R|OKs_RxJtiuxP#3sg=kT2p)Y$I0VGCCpa7N8G@rR?LW5r#!30SO6(vQascdyA)Q9K@S>X=p(m|C$!*NZ%;+B6C6HzPO&XtxXff*Q?Q5Q*Qgi@$}nsQM8SfYP^|GGYwLP_Yn3yzN|ctu5%E~82}V_FJrA$CpFF;yKVdzy<{@L?&Gg=pUc5p>mVFcV>t6f*4$oyIVn#vr502Sg06Cezll<6H#Z$mRSI+rInGe>_}5=)+Huf+dN-X%UZA)9G`>46gSR112vc*R>7)=v6ogem=ct(1uPBxYJK$Y}GxX8wZqrWwqJ;DNJsZFJMGUBV*-qY<nMLH11tSl{H(5i#prz7U-A6EpUEw9e_9S`fsxZD|=XzhYXJ^U+f#xP=xdr!fV`Y-G#>g$=(<W@UfcxrhI2Qu?uolLg^2$^ckQ!jB4<l*fD`!_6=Iq4QRO{jEN{7*5^ov&ex@h%UJP$VstM8A?>|U=o_`Tdy4EM?ud*d;;VbD!LB&rgF#lD#u*xU08p=khCAFZyZ|BR_87)iZmTU2PGKM6YJi#}rv9=FcV&7Huw;D;5oZ}@*O!o@AZE*I<&Rzt$uZ*6%$Ygbm8wj=j;8tR%@hmb3~a(rGg;j+Q<@&h&;nPqd<)zFn_D}ZaOQmxIXdP*=6@;lj4YWP1(f8}cH{OMOQAE=B94RLD;gRLg)&Ere;IqfPcqlycZ&@eQNnfy#=*7UTxTw6!cxCC#2{=mXdG?zRl2p9Y7`iy0YL!snHtTWsqe5P9i6*r^0S?}bDKGEaz6nOe4|*J^lN-z#}6h2!=)J#Pl_N>d*uy)m{}$ILoZ_jgJzuFbdR@0WmdJyN(hMu#*8s5Sp7A(B!-=&^ig9;o6V*2gp%#;o76vwmr5zz#DcvL?zGBpYC*<Jk;PJ|BC$j>+LypbFD}#<IOj7bZn*CDhLE~R^lYg8ANIsp*<*;-B!rRFeWkpcJ2hr(iRVV^XGW~jwfKbK^`ZIWv`|k%sAb)2ouRG#VW3@OoTjU-CPTrLx@t@SGUX-VRCz?eOFy4Wu5Pd*P!HQ@)E@(Hq0B2SL#nuQnhmp6X!$FC{_)#ypTF_>j}(Rtfp`x3&0{fj(Jec(Wa%FbP<)j1vO@KBRQF(b{p1vUvaddQF3LLEs?-S`WV_e7)q6EW)cQL0(!IR(<(X8r64tOSl8<bQ;-0tpWyoFE1)URVpAL6_p?baJCyPb-@%Az0u|<a$3TYox{;`kG9|q?vm@9A9oS9T{oJ{8|W$_N&*1!Jq`#*vkp?>lFF#IaJPad)uI{&ZrKIXdGg@caFc~S<fcqrpoj&uXZ5ro9e^Pl7HpKG#qdtzg|Vg~*a`Mq>6!f>C<a}<QGedne=7|st)t>;@$3x2-fm49%-@o{_Il;z`_&M6im4WGkM#T7~eh$(DCXzTNL&64RC8;&NKSfF#?%;$=1?S=i%r&xrR$MF%odrvemIE?Yh_43Pq%=VA(>$^X{tDl56{QK(te=Kr8%}L3`Au0_BoE^IoytI^afV<ci7N4U2KMP3i=T6h=UMy*e6ayt_Risu}H<6BQFBn%nc{zWCk-t7Km|y<>m%sh;!*IVpUOp2DQXG$C9^8hoe|~Fl1l9gf@s6ROF`NUEPTYU|>o0%(^?&~Oh2Q^G<*(`iJWr1L&yZs~AfuVwgR45GLOGO=AZcyZGWD}mNjXMvJ~oP5Jm0Dpsd&fO>c;?AF+iqILExkp4@0=v#bf<3s%5e(la%};kpW{K|9*~S(GL(!n5a6!%Bfnh8+@<7eyd-4*}w*3>xYbNq5YiRdCeZbx4YC36TRX$DGnr_=lp;F*T=^{z7}Kca#z0(sAT~--G-)LdzTGhs0!y=;Pk8A7MM94bs9kmpY&^EA79mksg40!``YyD)TYP$noL1gUpj}4zC^3HMBdIfdaSLpD}JeJ<39JKR!ne$X>{VP3uG*lj5}IK;4r=NOwgZ1z<?b2D9<g~P%ucLd~&s)3odQO;|cKP_q!)W`=CB8jF$3@%wEuuuXy<}Y`?D{?{^cjk_s;+;$QTo6qqSJRBtb;AnKELs_a7Sa&LXZBC=;2tX-(z09JEoSxsk0SZtbp8*Qq4EiL_gluV@Gj*l`Aa%yp6nfwsn1ql^nw0XDLRkkXXK^+^5cMo{ni@$J6iWB@Ulz+~2zUem=bk<8nLUPtTH|PS>Z(Bov2_hjL)Wx7By0o^veN|YhOUk6;hg4`*S?VBl(#lq7QH^{0LV2o9aF($#!XF+o*l@j|(@$zc-0w!+Pl+RsN`sE;l|<PcFH6Jjfy=}uyK0|{Z!)!kgc4?7By-QZ@iP&#;Gnen5LfzW9$}dl8bUmJB+npp|IgTKS0zIA#jAK^ZkaECWq{V>IR}-eRwPy$6^H^qNk{DW?M50MU@WRiM3;=lD=EoMP>F#DeihNP@P?=dk_*s>u5-;fY+mkl`k)>=^X2#x7`nbu<({w#Xi!PHo|Q2V-H_)FFhxCvnk%n4v#g`tcf#r&Pu1L*PT?^e*|QwA$gJ&Dp2@7LqX_Fip$t1?_*~gpO~u1pXz@=Ru7I_b1Y@~a^&uyOq^L+lW-(WrT*|nAPAls;!3FUFu+E#^vWVWGO($&Om4MOhCe@$<OKTBFs$%*e<RF)Cc|Lwg%mPd5%5t#s<VZ?#=zCxHf<$FhZU>dFd|6*zM_H4ej<HJN2i2B@s_XdZ4r8AjLml1hJmUe`?N*@Xi%TaxMm+iCUcyH~n{LLY681%wyJ<cRLXkAS_#$M)@4y;{LUjp5?>6kPcoFwIkcgpQlXSKzfZDw#yZNk~O3pvehD}2%3{;TKVraf3;Q;iz+b9?bEjpSPTtnb<6ouT;m6bQ;I?N?o#xc;7q~RuljvRAR`6C&}npryF$ofRhW2{Q7fx1>y0IN>nzARvI{oY&e(WQByrVn+LPU71@Yhf6sHoga1)TU0d4<*(Suio4k#8Ati$z4E;3eSh7p&>VuRix>t{Nk;7hLLA`CSG|AW4mj9Qb0&G%)S$g4tpD_%8Exo&w&pk!mihL?EKU>SWZts*Y6`9F5=kx;t?P5F-Wf-%@i0$n{$`w^=d6$xI4y1G9C?NZ9$EAr5Xu%46rApVc;w<tDp1WD?QlwB|*&|2jQb6$X$XRVlm$mNOxFqZ6hz^Y7+WuxQMDarv#b&(b~0KAc}rQy$&10MX;uGWV<^uuL+6Kprqa=g%-|Ftoo7>^wg&n7@ZgVJ^;ofqGVdEw4HMq>>_{GLnKk{#(@H#`&wPkCqy)jcCUtX97sCN8qQ-;xro);vs#R?KBE^L{JC!0_jxX^yshXxBtol<c(Ihq9Hu4HB22m6`2X>U(7gvRZ@$v2?F}nm3CcBET}f<Rf|HPT-Wk(|SvVhm{r>lohQo@^g``Felfl2FLL$#0m6I`!nq8fqY|PAIlu=^6qSYf!PWPPD+}V>tgW&3YHB<#B0I6_g0*B4-(w@A^Owflq8(mJ&;2$4`;tO6Wa;<Pf5KC}ONG8!hF+fEw$0G-SiT;39eR+`T<+<|bm#13B`tH?CSh*f5r7)}6%}smE(C1v%)yG7agsw`{iKI8`qMv7~`3l1=sBgu3<$3wkc_GZxKMgl3Y6>aw)E6baLBq6{Qnus|Vimq0FgD#u7aD28C#(xKBY$w-O!^2fiK@ynzdl}1q`u=N(>6$a%qojW@z2`ZBSk~?EksAp9KsXbSd^44>v+Ul!qoqTcz;paW9b{UyK93M;`%n}`s)#02^3)PgQ<9cSg^Dfhx}g+F@aK&z=)SIU#P-KW1m~@KffRNmtQTFB+C>s7gh&b<%@nc%uV4?!2uo9M+Q+VJS=`K9Ia0wc+WeqIaQbVsoQf*Y0(}-+%PCm2Pq2?Jqb(T;{$gwJe*dSJIEVQ17EvJWXSmmMd_>29phIwE>ohY4^G;0>(+pun_;($hx}Ry$8(09!<JUOBuDa6-6WPl>YgNODT2wly3Td=Kif9aBG>*-+5W8^6~nVB6I};;2KF9T7EH5@cB>0Go6)zlU&5fm+&I!`KXSQ8RFG?IuF3But-35zf%@8=i;A>#!P~ITev2e^r3L_5;c+thg292gKA7kJU+jDrC*gz9)pQ1zWnqtgZR%4M7mV0LCVxtw#WC*9XPOg+h1|d_Y~h)FTPx7m-@7mAz<6o2=uSK?U95-=tk9C-p0lJ+Qh`Bw{~!x>C}f483`<Y4U>Acu<;c|Lj>`{CU58;C^0h-PdLd@EA=Rq9oXY5Ti2|`%MIV2}ZN7l<@c!h-2q(V@1hS%Yh|I9Orfw<mk71h|Y#xl8-Dqmh7Y_<7ZlXgBTik~wozIP-<WGUo`mJKTo-s`yH^>5KJD6eH{(bbQV+4D$u4pziOc-k=_#mx-#4y}RS}2qfz!_C5R2obb9zC@+@(7QEu_&2Lw`9Jo%=%s<8T+xtNKC9P(S=4}lE+{tF<6$Z2Ph3~ZL8^HV{arvYlj|q)-<hHpZW2C?pNglNRPH(Q}<6i)+R|zA2Og%Uh2S&{g%(}QN0TAu{c2p#?w%<2;vmcB{dWPG<~0OFya+cx0gHnK~F(Xh|iu)qB0-A<o;eWIR_q=T(;{tCo|ZWDFg9oEluc7*9KjbE;3|aq@qEl0@W5;@Ca&W7N8E%GB?(?@bopyuOw7Hpi4vSf6j-yc3dua1t``?o<*vF(y!qyW<*=gmt`Tq^jDXAK`W0rv%BU1gm+!GhSIM_|0U$ONwsmkio2~g1q-!W6mdYMPq?Z@^`vKhAFShZjlM+X{O%ShDkq60vL?fn)KZ}t#>x%vut&NnP;Mk<&roTEOV5*WRD>E{dy%MsxA`>YH5c4x<77{Wo!yp%5nJ$MG;@RYa1sd$u^}*=Kyv0<wfDb>`i!Ftt6&d#u3?MPe9etwU)N@5eZj2OlE<t!Q+MRWO{RA%<?#qnx<>zeY{Kghh5`L$EJ1l)moca%_)1E(ogq_a12?I#j`pdliUz)(faG4&$@H%Jso5TdK7)|gQXfWBDQI&nR#H&nBO)fh^b3T5Or5$WvU10F9V3?&qGZ`#h6Q50L<N^!T~KwiJ!a9OH|meds_l)U?V?OHvJG@_7_EH-sD%n?VxM$c8pU~8oW?K$V8X1j?HFYOzNF~tgZDAMZ>wabZHyCuK8g5=2+}aF+A+vIWx1*&A9ueqi0s@o+9`CvD98@XM*1Bgr(`VZDMdYL7}>Eh<#u8aSm)tRoehOjRIkfiFkRF+DoafyH4NPt>?(wT%RDt2F9@8d_hnG4!01#7L?CP%_qp*EmjEnjZ>+_2b4d#qu9_7$jje7y2d$VTuL6;LE1<+vqSK->V^I<4%M05y6p97-jFfTSZAJ?CNock83v&+j=!)vTH0R*sx8L5`d*>Kb?*_P)J^<&H7>Yd-iC9y0UO<&;Tn67G1T>mTQzwqY=iHmE%X5v<mho0=K&Gt#v(q*Bz{QD<QBDn`1acpMS41>{YmW|$Y?hb9m%kuJr^rsyjR;c@VBALS9z6A5XOr-7SQ^P%=hgOZfp@?Jjc|>#>9J9f9>E}6EMaZD-c~_JZRA7~2Qqf)@OQsR;^B}}a#sKPNMU0o+JAIhyM{Dl@iZEmc7e^VNlR;=s1|rw?X7ClPwC~_qTHvktb+#8Uf1^5zx)=T#g2g!mYM7KucJ-)Mw{?;I)o+NZuNxmsPsny41Aq3hQ^!B*lYr$)fU(ivt~WPy$XH=xChS{Pr=X2vwi`n`^j7OerD^w_(dBJqS0%)Hzoz`7@1VZqyBnL`D=A;V)zUUdP^EdizV|cP;K22D6;Op(j)Ik!9aU0?Cf6qTW4zxctv3KrmI18lH9h(-9uvHYh~dU%tJMetaqDTt&b4c>;oD6!^0KR$?a0W1_9s*J0pvyK&LylAT$n@31g1Bwy56I8z+m#*v#;gw3Nr9c#R=PQf$?f&gDo(A<Zov$*vj5c^Zx`jjJ>Eq8y44ZOT1@z6iwYUNP%2qfD|=W|whj%$S0P|FCVg4ggpT-6m3<xN$=vwyt|ZKic%L65VjxR(kK;{sxI~Ri#+#z#F)Op`W(*O*-9#bxb_r(B=D3;rE`nV2Pw3^kICDA#4o;20Z%pE!@}g2?9I;FSBoV%QN=LR`E{oim#vp#&KWVR~T?wiM(SHvn|rYiR849!7P(?yMRpGUE3Gwc2A-6K@zLc)lj3$eqCB=?XCyDuUha_%WVMV@{~}2GR8ZGzKLoEIRv4O4`%hcci@(>db>Q~mt!KkD0wh?4U6J8TA`!K8B^D#>K_;-r@)}L@JJvCDS-}X-tZg2OsB55(E*0pGAX50XnG^!z9w^)bArR$HjLQ32w=iUgn)m=O?tf5bzQ{Tzy8-ni>W(r;HgtRD|vxJW!jgY83e3FYx!EV<=(wGxo(;SBs&u$isM%6H&ZDb7fbsIOXHXRkh*cC!Y1f8VI`$oWc9WcSlqr}@{q&lgUvu9y}XTDx%&&Tx(fkbT(FznEdl$tKl`TYAO^)zB<j;!&+E3lVw6iT;jIeK0;XBqc7D>WNo~s|Rke1EK;*WBCH(Qt|NLIR{rmU7{qp;FZ5-b!ZS(89KORK+$<I9F_04CTOwIII{Qiy_7iC~R)2Qn4JwHfRob0lf=^k^ssnYavocsh>ej4xTGzqX>AUW{?VbeQ?yQutB)FA_ZnyG(~O^yKHWb4OcgtOiMH}3g{X^)1=GZn}NgI(TRV^12tWhI#ur(-H=oFN<>^!`vW7Y*GxmR7o-VBA{^Ls;Z9NGTrcXBRK-o|mma=^(#6><aD(oHEu6ohG}b4PIPgxvbqfkzoO2?0?p_Yp`c!V=Y8JPGy}YUo0Q)Hu${o^>sBX6#804XmmECyI1IKW7o*}#f`ewW-7{+Efpe&xvM-5?b{&KLCM<B?-ebg!iS7S%^IBAdZNeV)^l=8LU=ACnZPv_CCm=a24GmLyDQ*X&*=H|(9Po1G>16EImD@`n<hJlr=zGGfI6n>=@31c{k^vj<2Eq$a6ZfM#F{(1EVRDD8zHgq775AK?g3VmVOs%>yc0dGx>&|6%a)vq>TDA9#Dov~t~0QIKrsvoRsf_jos$}K`vjDYh64nfzK%)Fu6yi8sek!$nr-J)r`wXjL^utM9@t*}f(Y~!dBn0*yvCw<t*yeDEC9HE@d;0*l%USU;k^8xMxx4+@kAA`3r8{3+AMn&Rn5*)MHCkBK9P%>=IvHlFsy!MGHlhjSOu3K)g6=BTP9PZT%O>0+&{MV4VJE<@VBNqG4f!JP~eQYZ!8H;P?ngmu2~m$40gzK&Jx3m8FY+RlZ@Awv86sTRX{50JsQ+So`auqm60Ti#d%4|nvOu+30RQd7YDHs{pu=e>IO36l)MLOT{S8TTh$5s{>YYEpXYO;_}wN<nL1CEsfRe5(Vl#|Q}X_x03p&BXs)cyZehQK&nHxCAjbv}f{nXon$Ud>=b56VJ2NFH)+X6Gt$k~qC-4<isRJNXkphRzEE44fB5A|{7{!A!j?i`V%Yl7Uhj?L-%(2uo8DaQb^(kjN+<)*Hnnb-`#`{A=842D$L(kQ}p^3)7TYVfCwYleMQ4SCI^l_U)R`Tpfr8t{lO;!?<;nvICm;oqgk4Ba4F`4U)d>rnO^8@BN<eE3NtK16?){m`ydP_w`J)sd6Y@=^twhR8Kqxx1`(bl~K59)sw9<(VKTWFmv89*rhhBr_Z@2I~`vNLQ{%tE0Mt{p*{7<~H2pvPMh4Yk7-WlLxqCf#Xo+9rRXap`0r&tR(>M3)E{?<_V&40j~J6T(grB6UQWJ;XJy<t;^#e4Y2<s<40n2N!{3FYi#no{HjlmF(d{Dp-ib(!`eZBVcA*A}|Y97@)%32~8zZ!ws^h+LSQBA>K-+LTGt7$!&4&fufS$lT}ct1MgZzrONp;svp9x@Mm&L)qw!q7?QhXYm>#G*RCq<gwA8lPf(g{e((7YePgh*Y0uQkrAbPnuA5vh5yN%Qm9IsRC?foPgc1&@HQq=5hJYm&=X03bjw`M6rB1gPNCvCF*ix0Oo!dhx89W;L@&q@StcZ7%71&}aq8NzhqdTi8fd^EBxQ77EpVUl|j$lO`U16O|0_+E4LMtco?(zaRGc$p;S)C_93j*urn>*RNgZ7qcVYxQ|8PP_cW$`@N2)x+;5%-uh8*~PDTTOaN>9x#789k~sLmOyP7h<X@tws4^w<AN==1#SYRD*i`e}+^UFYIeF(ujRdN<qnvzI##}?&rclpY!Tf-0NvsQca6HVlMSz(dXh@M!ya-#Kp;tU~UWtohk*um|OK9kFa1KmgczL?ovz%th76!EESpuyU0Bx1EUY91H@9V^rfQbqPcV$zOIk;pMYY|!*0{ZkQtja#^%$h=8RHQpTX7fladXqp=v8S#%XB~MUpiZJj<Td6m*F}wn&hZV%KpQ%$)3EO&Jj>Z{>y-pDC{jJN6#49&@$1qO~2Ml{EMLIR-fSflETAUOoy&bBTtU$s!;Wiy*s<cgq@01iXS{z{)vdu!Bg`1S|_vYz{1LJM8Z_;_;eo#Nze-%5Q#M?OmfL>IGign`;N~V*-1^)@d@-PQk>|iY7ce%ZhW_f3S+ZZ;Gx%H_!yp=VW0z*Jw-7I|$6fDAvJ=ISq*}6nrOIjaj|khC%JpEX&8CUk*$@47s>dP@VT~J=uItV6v0ItlOg1SK5WzfKklNrd?O&W%`eZNUOfRorJ_UdLS)!h3pr%=?KArg~*hiPC2RbXFNx)ipEjhU>tM1mC}UiC*`weSqJ_gT_SAx1lpc7RjfNF>%SkQY?5nlurg%1k!9`VUd6#9kd*tJ@+^hoAbvciszte~f<}+YT!(mO{k_W98&J1D{GRA2%=1mnwM+atzXu4Kn}pWD*(uSV7>3^5flFHAJWp=(bQ&7w`^s8>VQ9u5(@@z2RM`+e3A<ZGdcfyNJF8T@X8*)d7NbCfJn{Pan%4%r@A<W-+d!JLIzdZYldgH*T-k|0>DEmM65a-mlYgv>VJ9?qG4E{x6g+}dk}}n^1wIO`<%=h@7$sy4%Ipm5vbdI7b!J}r2JZ2fGsCt?0+cDO&d@TUk-{?A(q&dJ;Y3`dL=Iil@w^<C(UoITTIjDx3=XI%O3%BhlV>r#Lzan!IpAvJTqVECX)emTCF1X45(33jw+YW8w<>?li@Mes;QKrZG<?V6CzyrHR9N$K;p!B8j+q||?!b9$6dR^}$82S}-DN0T2-M=63622RGyzUo6oP};twq^`wctz8&J*kl$Q%5eVxn()6ZOJWTa<l0uHouNHh)n?9&ZhW=%{N*^m`##A;m{>M_o~E?(8N!FM%sEry^7YsCU#lHtr}vl_Z+oO#FgseI7(P4Prg_(v)BbHtC&-OrObFW%o{Pl+^m>8y!B<+HU6Zsq)%rE<((eiV*xHzEfG69@N!BFqk4cmOk4Mk~oboQ|Q^!ij}Qpi@PtvK~TpVtC>;WN(e78v}Tnq10^ceDnn7(DGyX#AneTRZ@w;@ba|M@P*dB{z&oo-+Myv(_%qpjjwaa%ehJ1d`SQZgfU<qiQj)zJf;7f9CW;WjgKur~C)|4q*2m$~HaVu#RF1%85dk9!`M<fT%)TX2s(b1IMTLMZ^%`JzEcR(60$pG9{@Q|bPh|d&2O@ax+v=EH9VA+PvWZX5o_Ulp-!|W-Y>0;(Rg`POOAd|!?<#$)dcojX)O8OsL2e$hv7zi;+t~!qM=#fpP^)}X$!CwWb0U4hiptc;@nyjlkL;(8L|w%C)#YV#8r+gTd9!(9{6wemWr;#}bRSbbQb3>eB~I-8h_$VYI(2G6;YF&!gBLBtiezQmJcVnE!gO&yL4z;)#a3+87i)MplqyX<b?3GirJqq^4|+~$N}jYvaWlF;)V|uH$#zyp?tfEu$t}67($*m_5&HMKYM!y=9!6^;=OD2tuCEyq8{OG=yDf3DE2dy-)uyg>A$vNt=$$2={?hUIURzXu2gh2v-Y2{wFo`MYa|FxlFi^EdOU*RKtcG*`gI~==<>D-T6~TQ=b`w~N!go4&7Pb%t?RRjxp2MAd{SV)>AzBQ&LtId@7yw&KH)n*+shKnaT)g?f<0BIXEM-6R@^*)ZupQU)5|@xS308fzZ$KsskknxpY4o_3Z0R;%XIg}}OcmP~VmDbGj9+(}&T}uzxc&i=oYH-i8uE3NRj&;qP@KPEZ-&0}pBi&;GaB41riPKUKbt;BDylb**R=yi0+FP(KYA6+gP+guq^2$&8A<&<#4KWeus7<zIdur_E}$UACG2JQH}>>=v00%kNI8_iF$>L;g)8$pY~yl&#5=<5e_G>5E!55DQZI?C=KR4LOKB?0xuuD4#`ztG^_D)_s$8G|FM9*ir#Ro1{*B31srm`9*~{K%bYd4|vdp18Jhg>~Ba{@h;a&P&3iz+;imf+H6II%0!P%Q{==>(bajpC}*(mxUyCd00^U&XRO%+K^TuB-C$RQ!m!4@KoV3t8vxyOk-d4h0^lyx9<?yO2-($$e#hOw1qE_ANUUaM)xDVoRhzM{wFEo87|nBCkH2ORwNoSACK<sE1l6)jqZr9u4*_-|B`n@f+I0Ap%atFH<3VQ^Ya5%tnLzCVvG-zdAan<0N(Au8k6g)W889FYtVsYRxlK?iJV+@C;6Aqr<p2Jmzg+9)vzC8=w_6bf;`?KBm-0GO7!Vsf;GWgJ{P&vguurVcR^3+It@dz#T`%cfFqgC#7$C=Hkgn9tNG+{e_-DCEZGZY%PBg`~$cX1`&tsS?c#bqFHk+sV=-1Lostet<2AT^`l-rS^gC{G1k@Nn@afNy|S?HLF*_=VeS}4Lm2x1pUnHz{yGwPhz)ah*-l}6%kYEKM(wSZBn^NAv$$|<#r2K)QE+T?PDORM(0r2bSbJ6^^21&O|4*&;xyRY28MS*`sNi->xbwJp}eQ`Y<K*bWQsw`=Ft<acJ8RnP<{4PC1y2^siA`!zMo~PhaEg#qWH$+nj7~r+mL?enV{JA<G+7TvEY(hI@RQ2DP;Q)PF@KSQqf9BTb7ZyYo~aUBnA&q``UH1D{8FL+SWXKnbgHz05B#_6TD?`r-tB98A0)aC~Tly_}dja`|~$G|C!*}v&kbzWVCz%)4`C{wlo6t*^d22FQ7=w;PaD{(L(#&@1KjZN;cc$Bi|6fZf<M2BxCeo>(gm?rSyLJXWw991B8`jNrNr)etIicCHk%_c39Oto9IHMP|0U#-JwPK@%Az0u|-@Sc9b}#{9_-VKMYP*p+-jFNn=vqN@D9V%ehH;^4XfGz60tP&kw_|vOy7KF?9Z4>wV1C2hp8=A8o3T&!pg3j&!@<5~P-482RzP7UVg;v0a%Le~A+6_;rf$fGgI%%ePRg2h9jdPYZs&;QC;q+yY3pRBZE0<;7ZX=#F8i>MW(s#;8CLC?s;epW~gWQ%x!LVu8+mGoLH6wX2GJHCDTZ&d2c)yn9bWH#m&($@TKff6Vre@9X<NzpI}_!;|YT-_9oY)0|Y$9VD|rJJ{A%ItRFmeNh`WAT8JbXC<flxzpUx7fV_s`BO2EwG<I)>QmhuWjX5~apSMg3+9)<|K)GL{4m__kC)Hjd*`@K`gw3W1^)T1!4XvZL&ZBa^a$p33`jb0|M9QC{PoxW`QsOU|5u>M4o{By&yZs~AfuVwgR45GLdm8`&(^GM>}M&_bd2D9Y!s(>zEv+$@s68o?`PFOkICc^80y8tNH73S>slteUQp@v5<x|tjXFlM=m&@<Ok{XrJ!9BD{q=kO^;`YY?FJ5*+qdX6vW2!ceCIWL{GMu5m{DcdHz^Jzp6C33|JTRIKfV@Y?Q&PY52$4UI4!8vuf0pRFp3CsJq-IoT#?9^Gl!#2Wk_wSzCfvLWpUMtu#N%D5=bz_sZBfoHKBv9zBD5MeTmk1j=Y_3^jKSGS6Nuqf`0Bvt;6C3)9A!o7f6aHWCgU2z+rkN@}NJ7fB`x3QJ!0?^7v4?>{$-*TySYKNrnYne!tUSv=8dj;+~XSsci#_4f@q@u*;jUg|x52ONlhV`cje5)HSQO7nRrXDNwASrf|8pzF`sBvklhH&kOb$y+J;vEa(3C{n4(4sMY<SkCKTV*zr;3K~61BEYtVqyCBiH18v?-K{|ENTbod5WAW|*k9+YKPU!%H--UE6fX|U9tAfsYsYpm($4+Is3oOyr5MY8xhzE5sXo)VZZEs%{mg=G)YW$E2B|J;Br%qbgicMsc$9VcTs9iJuMfk%*1{<yybZ!Y@ccYT4#E8eh0GKw7m*QmyxR}ReYe+zbJqs(@rE~oH4BhajViON0tB(t@Fs~~5wdWs%SVywrql6jGSg8<(Q!y+s8)`}DHi&o^BYHCS72uT)u<=A?7+~d(!ENr~s5Z#+Fuc0OpIZvHwZg>~y_8Rb^i^Mwh%KIG5yVCuUv@*+xwv!S8d1(3{ZAC}Rck(U>bgmYXV*02+PkLIci(o0&elj}fn$wSNe?ww<Tn($W-%rlhUk>s=_{bJ?Wfjyy3y&1QcWLeHqSAlS%EaXEP)ZrzHAjZPYs5us+jx$4iv~hmc?_lwXGgw@})?5J#E}OtIQK!UFXdDZTX<y*WRY_k7<j$y~8=KK`2F!pb33F8p&l+3NWdl&#xgq&%<7I&@|JAFMZ#utoax@Y_}+b!#RV&Zj}q=YiuL}{0-o59D^F~1o}1V5QfzmRyrbN9m7?LZ}$8C3WC3d=Hfs5*<NOXVmO@FAW9$lC84qVz9vyaFViA0OfTP@5)}3n)w41@k)(F$NQ2g_s$E{%L!8E%8TuN(GYhRMFm9GE2Ejkgc<3DWFm!Iuc3(6$-Q3B_(-tc^^lka)$d@NUNqXSqmK}x$*}}M5)T-dgtm-I+M^$u?lz-{DNA<_RG$-3MnQp$X`RX*K7^Do-ZG8`lak17E#{d^!02^916QB)zz!xg)CM60v<``uEhhc3I&V(X;wY5ZnikYey2D_;-j}M!oBHf`!BE02vbmL=jE3kG$B$^_0;Lnj2LPy~K)SZ*-9Y+m4Pf<P()3LV;FllZR2prWb7A0ecLa+#K9JUhjUZ;zeqbm=E0uk9rVR$Jv76O>SY9={L!E7em0PKB~G}_oKWKSYSL-mLcQKSV%v-m2fHEJNG>2-+ByMi5qT>U|Y<_QwOwEvnj&LU?19ITJdkt9Bv#(ZZ<uU~WwRbDq=X$wD(o(kTl?tiQNDhlJL-ldF_7oOfAI^6J>hCGcuH>ex%0=#<9lXn{L5b)hsjA$Ogz|&;+8M!kw)Hu*oBRIx6XIcbs`XKjO4UOg!!vVux64lO1<tzFuPHu-yTfrz-H(#fO<C!}RRL$wV2*$bP$4TYuSUoZmM@V?v({5jQU^FTRDWz(kT%C`<e*gPH)+rtYX5*Zn|C~ipcv^oeyuiV4Q(Zpv2k5=8UqBGDRlIt9-7uXK?2T>%)j+sB9Qq3anyDPUF&)C5>J^eP4>n+rKwbW@iF3f}q>U*rH)fpY5=ve_2eD+(S}#Vmt~VD0hlKOg($Xpvpt^jlF3LsQM%HB&Yi%~J9_CDEo6n*C=lAdbz|<(b_ep14REj4`upq}iIF*+?i4-MD!y;SMqPI3t$u}Kl10}7^gpHZ|c=ql};z098c(Z>VzTmz9g(9GqzW}CW18y<F4AC~2s?Dve?)#UTw%Ei}(<^Zq(z^b5R*Oxq1o;MFd`RdVG?Ye|-gU9;2`Ks{Ag>Vi0Ndwy;p<FWL>gPh8_kVVFOtQ%LAghDXKv@3Px&^*7l#ZbUdNjaeP5&HfD}I{2Wat2vyh|h;3n@ts8pHUr;N-or6rM8P-UP|U7Uv(A=YZ`Fh(h*#g552paB%oUwun&ej@F7HM(Q`o6RVw5B)kgpbf)r4fwekcDp795ndDnS7cI(ziVlQtTk>IU28o^8ID9UI8ma2LV`NDWZOns<l5h<BEPkxVgNK{qU&JKz~1A^f+-<|*ZHg2jJ~A-*f_Uwq|p)uN%5qD2pdk>N7)mE0Z=C)`SqUGz%lCCZ;7O?)Bq=o!e*z;+C>7^#U^KRp<OV#y3d*0Bg`KC+SHfI2u>a!*<^oAYy-x#`Krd%p_PbBShYLvTw`MZ#{S-Yg#mD;G1{aZ88aOOW?+T13HO{OmzL_?(fbEksKbEV{6dj>m=x#&BU76@)=Y8({cW&o=&~hA>hfso{!XSc`rVx*`Oa!V0rPmwc6>$@w4xfl%iU>>f+52;H`qKFH@nf)o-ZC0SlmQ|61KQrS(XdLg`@R*m3U1{nm+DuN=}~Aw*9+FLff8HZJrhJL#T5EAFP~9UH@?Ae|MRtuPM?7Lxe|9ZG9!e<6tZ*4R5uF{*=FepOK9H*kU9%xmkHk@)+zS23tEa!0G0oMndy*?2RmD?a%|yn(E_)+!rvQrIGP&mW7+mOuex-DKz?!0e$jPmTc@dx46kw^dJHoI@}-o-7RpU)j6UCYN$tN`aa`e#4DzZEO+*U26|rMls%iifobl84a`%%fhFU9X=71M$SzX`;?s_Mp*vk0^f21UzNpdwnF_Cx%j`dw>ijnjQ**6pVFJo!v5RSiOGE5`&WF2pTrT7)VtR=^dZpQd?q6$j(iZbl=3y+#6Kkz-@U(eD17`2Cyk{&b5~YH;I=^e$?j!CJMfm`971fPMnklpvO_q@=Th*fc&@;aergs#To;ihwc#9NOhr|+@oE^KJYc#`Hx#1o5NH+yj_^5Y|)e!y|`)F&TBnr@D6<cEm-D<Nsj=snXJG(6@7`EWYXyyimoFozyVnbj!3y$qyWA^EP6ZIKK8CJo@?jfgW&gy5*84;A7wW+c?9Uik*68b<LmENtC$0N#o8vXOJ39myK2K1M4(aLpQ#^OJ#wr-7Q$kf@uO)9LTZIddR_}3GVUEb+r6k`S8+O%5-eFh<~r9O<NQqt^LEbq3AOJG3zIta+rsq0u&?)<J}<fDT3$+Eo+3&ePds;q>HY|&ixn8jr4H9@@1eK5L*2C$9UvJG@_7@cMWs1->XW1n=AnlueMA`By-;u(R;@i-;mONy>Ocw623wn|po#yA1!laWuT<AV>QC(SX)J!QG7L0nqJC>+?_HQFh3z$nNL%trbhA*W>2Rh6V$1yeImgxMkB3D$YYBk?ri^II?Gg6X1iQCVstsR6^kn9ERoGg#EA(RgDy({Dm>IE=l)=u`;=J}XJv6~9^wz>@aHT3k1mNa0dzCOu56ThBo&=G7MOVhvPiRa}f$f(I{!Xw-e!AS+An|A3J)&b!S>0Y3??wpkjt9$i^cm*pIMwP=4MG_mw<fLkdDab5{8!0^<$)>NI>72i3gH~1bQpwU#~PjMVR=iY2xo@<P@jJG<~fu~g$Enc<-?I|B9=8VhKFiIeL0eD4339|O+z{qBKIehsGVswh^B;ANG^#I1bWVC%=PW{)}Bs?6JMzYp<wY^*59f)pDwpxytWIi28!5}ND_TVFk*4rxRsEwTHZW6tnVEDUVB=K;_DLJc$mF!W3Q`^(pHKZAfr}5z$3)J9nI622y`$V;X*X5-)eTi7PkoX1gKaFJ_G>G=Pw!i-6xA-h}44kmcT)%%EZNfL&gs;;fEa`TuCyYmef$szZFG}Wwp|vQw8U2eb_-LIq>j~~v@FT!Ic)s}cpWpvMwXXZglmMC8x-Wjw2HM}o#t>5W;n5@YPN}~RdU-XvHZgn#2E8SXqs5YW7RXT(KL)$|J$F80l{{1KEVd)}+TZ*hMqUwEz3FNYog}yIarcmz_*z-G1@pj^HsrymMi~q{Z>;zlx4}O=I2%!GItfY&<+HFevUmz~x?>AM<4~C}=BR6n>OH-2vS^IW3~$3`3XrBKUSr6S)HpT8X*rUS?D5oh%|Oo6a28v2@+)I6%Ap9+hD*+Ueo?H#XvOebCRr)7%Q!S<OhLnc*lsmx(!#sy#04mev95bU#?bVz60MQiR(kK;o~wy)Ri#+#z#F)Op`W(*iFIanTOUoe{e~{zhYG*<#05(lghL<3_ZS`#sU8e?^y^!=ujLa2cmiH#-|m)Y=oasOg9vQ?5sv%fzQTahO5`1rnDd=qA(5OGGMHtu>@gKQSmv%3E#Q&cJ%!E(NvuX!Lya!`b!nxwyB_$i<l`*44JxCa;hdz-woOzs$RP;1dN8Zky#u#QIRTQ!I%~?uqNcnqd3cZ!dBtzELPwJ`rlQ@vs()aVoC1T|!Xtqoqy##kdBbl6Go8BLMh6&X%cPVVd+Vhm?rSn<IVU*0ZNrGoivT9o&nhFYR3xjqu8Uav*Z;a`F?Ht+JawbkfV@DV*6MxznL)r>w3e?$TkhS9Go`jZ0m;t9h~l`_^4nAj$Hmfq!qWJqKcsFPsjw-<;;53+EwXys3M^s;eBuy3A8ZB^X#SO`mAk(XtGf_!@9>u-S4!6U-}UU9s)HC5N0BJM#dnNRF2RJiDm)9AW^o(1sVJ`XiGsD|lB!xeMj&!q!V>=Y=6`;#-~Rpk-+uZ1yEcw*mA3iy-5(F4{N!hz@%rX7PNrshEPj7Sjf*lcpJ`O}_?{m$`v=C;J?3;%rRn83`3bQ6G~Ux`5@5SPa^eHRrgsc?QTeH;Lk9jdQ~w~F+-(k|xQA0wn_N4#1oQg>Fd*&GP<f^T*<i5Cdu!}TtG28plj3wtqtUnq1JZsY4Z7r(iV_(2*1`}L`3zEuS6^{706Ye{=VdEUI>;{%yMj9cr;PPNr=rT3h*{vpC6@ajLN!E&1&p!(S=+9`o|TQY5cxQjb((y!{D<nQDXLYkW`#mus|bzGW_0%oy>09oIls73*V;@)xw54~#QLl{qcXrNd+q1<iWX7fL&l<pFdZrWWx>IEPA=2pJR_OFH5DbyF1oHBgJ0cU0nd6y&!>lO7N@2;#39ZhPDR}`**QENMdbk0F-=d0=*jHwy?q$BfvJb{S%xRp+}UNJ^%dR-iG{aFNUnAdu%Zmx3TWh==xNo(GG<w}<Wy8=lb|OieAsuLf&BxDVNkFFAeHHy)R@~Rplmc8AlUSEOiD2l??$PA`Er_V=TxWLlEF?-Luz~V3nI`{<PpnK@fwTbwYCapvH;-v#V0(KQi3`Yhx77(8i^`P#uHV%E*!;BYqRWCR5d$G6;W8g`$R5knzvhJ!La(3$*@)9VijC|RCi2fZ<$Pua(RO1;9Ly@>!oWb{H>`@j69el6gXq<8%u%{lqDvtYu1GwgB|jmv&8UX1|6f-B;)mEY^je-6_AR0j|O#-=isMYWhBXBab8lgrXvt{0v6==#X)RDzq*Q=x`B*1CGUY+SB=WTR&~O@KeDCP=lPr{ezyrzrp{Ak>LJd?+`93c$c>Ws2L%X`zCd$jZFUR$C44@iS_3&YfDmllHPeLdYdFsoE!~+ZL9sT;&S~vi>pX$4ph_J8p^6kZWM+{lFAzy14!|fLlyQWvqhAi}n>xe`gJh1SrpXAy=c-RR+u{C$&(I|5^)lWcBFaec{uz3%{tZnu{@v>1xTwuNPm6MRz^9Mf6ta?MM=HhH1Z%RAm<+dG=Ee*_L3=c+Y>&xYZ{*`}hnycU&mq^msa@q>aIk)C?bBN-D(VT1uwWZ~6SH0LM;+C-+KRUB9e7axv+$rz!Pr9UY{>vZ@i)AIs(45JZIYc~qhb~cg>dZ%%EaK)KL$PCl4z(MwkTUd+c4=)d($@g1C2{319=8p)gZb=z<6h|DPp)I0iF<ciV&$I%IqPoc`a`#isb9O4_Ac+1UR?|9D8|(3iebK$E#!y7gE7OB$g(&q#pq@+Y*6Uu)+Wp=1yoTks5B0J=La!0S@t2G8ID0!%1$7a}N}i^q#DOLLGS5Dk@dZpHck~c7;EaQ>qRG;Kq>LEnAx`2EBGwX(x0ZYkq>#Wb=E^f9M;7olSeDRxV9a5_R3=dWjgWd#-#ff<zJF=OdJGK&|mU@;3x5u{fW@+;&`PoiBB|#XvGx{l%85WbND@O3C2S(3dB;!DL0eqpZLdOA*CDJRjXzMF~8h8pJ&WX#S*TigW}k;^+$NToPbE7!z7Kk$0CDxS5#=tj+2?0a_4PH{aaJ-W{~JR13?!0mz6p`Yem*!A9W4{*SoFq}iY|xZ7&dOG>Y0F3RXptr^-tle!R7O=&I454#;1vNm_BWuzL^>;E&P%6MU4laWU3b5aUQcJ$qo;&49~2Kt;=ui{=$%aUqZ+!1rB4~sq*-!l4jm?17sZUl2<IOtR<0LI*^|9FH2^RP6>^>&wHN?@hk31z9!JlI9<AsHBbKph~KdZjNFJr~WT)9`hDtp5ZQdmeV1K8DQLq%k(1PBmwgqWTQ3j-QllSPfNM(J@X-gD8@$vEW(utfrt#46;RnoD{o`%V6eY7i-FhNO>zawD?SURoJojnDv;e%@wWf0Ij6C@6R#7$q!r-D)sVFFq%s=)Jzrup;!djWxQL~Xd>Vh90OL)5rZ8>nkHabm|}Baaob^kzY&kuY$F!0_g8-N>uT>BHBm3{+TL6{fFBds6Shv1p>_%;mR2<3*;!Vc)Bb~1?0r*o9lC)gh(0F^)44`lg5E)39!9YaPRwaYbfMro(Q3@<^)?J@mu6W$4*haq@?pruor3DTck9XKa{`l{1ZLe9t-jJO)CP=VZZ_?@GB4AAL_}Kk?d>EazR?3|u`6W1xJ^e04lG2b^mNKeoj>C_a#b{r>IUPO+pUx)Og|}~J<B@q2k8=F%O}wGq^V-vIa&YxAZ3$WdxMoB%Z)5+C-*829)YCX=agqD6bJF+F;y+fRTVUPOy)YoGwbhFzTSYk{o(gSM`50CYOY=4&-pz-(A*@n2F^~2{=_i!<_=ua66bkxo2S#zFyB|!`U^ud{+Nc!CZNiO_(|B^D$)Z!Puf|f;x+pxj<Og9BIJqJ*Vnu@;C;`pJ>3S<oYe_h+M0CD^XAG<1WLDVLXhw_aGd;OT?{*+xr=#k6QJM`q>_}Wo-OcEXf0nnp~Wa6YfxrqSeM1M)T%S{(l>CAznmGiO%k9?X?2E{35^t%!ImzwdI=}uA|-O@qK@a~u#B!8lhQ(eMPhJ3O;LK@Rh>MG=^e66EX)B{8|NzdRZeqJ)-4f#50elmp1MtV7P(dVYhKi~&H&%%QJ~>F7C*r(T&BXBp9@!~;B(CUSa1i<W24wG?K@^G%k3^h;X<Gm-%M}>z@`as%Ayb)#BMFh9;^jlf_9!@UqIgA=M)ot)0?OlrrM(H>v0WNH?sMQD)M-1C`3nHL!#dc!3rrpk~`{(YIA2d;du#MkvSEiB0#;P*0FI%392N~>}KK@RO|B~%4rbmxtFE{L$FEjOl0~@&MLciYNMpqH{a;+k=AxImrs?~MspEju2h8JC-I%i()6IN7J|VP*|GH5hLFT*e3?SemR786EnD1u5e|Yn-dN3y@>W84iJ>*CbQvg7sa6?^%1(Kp>H=YBUVrm-*`&+EG=`emjt1UYRniU(fx@53=5sX3M(|58cFC6)eg>57gO-x)-4LWPwlPtJ2p)WEn?K>+Q?Nb`pSH;{ou+aGCW{CdNyz`rO=b2iiBjED4=5@GY^m1(yJN9WBN6EOqW9MpoO>eke>@PubKh3S<mw>N>XS`;a`w!ljQO_tHf2LR<fx)t6JBy~40u=RW7P`=&!Vn-kO^}0kc|yx@7m5Lcs_c$euP@(n@T==q@5G#6IN8FMvgBFws>SebtLK{)~_xvo73Qy^vRpe6XPd3jW0_Sx}*D;@{t1itS@n5=SQq<UDT;l3kok%4IaE`Ayy<S+vX`;TNI{?^9dS!(J!`QqrO<f!=Y4Z>Zv=o#VGxZ5_`~dLR0djHHw?j^`Z9F7EQLZI&%M;vP*8sU6r;Dd5O@!*H!b3CHF8|8#xDwMR9%2kl5(XzT0hylU*?dQ>!+0tqa-HsYUNB@${FD$M@Qz`a3w*()B*!6@f`iNuMKFUWb9IHCk$>F=jQK^B??bCMp+a>8l9tTe6$LQWU<^!LzW1C}_Wf)Abzg<m-R<o(<7r&>iA}lEnbnTDmzSY);Lj5#Zv@2Ob}pIAAIJp_jKiJcRAIo|m|Uyh*U?t9=79S%9PtyGWzQwPZ`T`8v}gyk)A`z7V^~>R|l3({!GDS;qAbh~$*+qtuYEqpW&u5P{<S4SO^6o&VIBgPYOdW-&F4r2X0SIZ{!*alEb_FcOF)t^LufU>^K@ekV0`@yJN(_aSBx`-8nv|IMjGXm<exDK23zyT7rg=Znn>WkJfJ1ddr~o-ACM&tV&v`y<{FX8+R~KWd?FK9_n)Ts7wp)>ukYS<Wp@gfq_XIIOqy$yVh81$fyTm_Eh%w)AgIu1eKUfX!a^KBE)6Ad_Vd<>9F<JRG5<pbhWR?^3{jRab1iVVbDYJ`2v?d_(6q8IEh^zsW|?57`~bKAMOAwri?LYT`=DxJM2Nc@DM^X#}$jvdTS9<jE6+W2CGDp>t<d3X`sm)G~~%G;^VIW%gQ4J5JF&ruP*+E^i@&EyL{Qo;cv(x97}MLoV+?%cyA4GAs@1U%-E(n%rD^+yod?vs!&km=A-~YKo|r-tql;Z23mnt=$ay;|ft3w=Q%kbmoX;fJiMe%?vtVQ{(;wN(xapTQY#BqtHf)NhnEO`=wBb18%3O&;`J>%oUTPH7w)c+Ig;Hh%|MGnOHcFoZHikMq4(OdK)ZZ0Y+)SJivUWM&UlDZbl(DHg{W*_bVhlrZM{sdrg&SUZ_J58Q)HpCK)gvPxAw8LG1FVt}nF@Z0F~+=u8>|HB4ImX{uSh3O+AmB5U9|Q6}hTW(Q7If_M_UEknc_&Z>x*O8<G_-)ob~MGDcW3oN%=xS~cZd~6>BNi{l$!lp}6ov2@&Y-wr*ixj89<~A_A3(_~QfLcF9X9(pzrDwb2&m>a}QZ|pCXti@kZHDTzrz$b4X-o|r)bRZ*Q$6h9@e;*19@pHsm)VB&JI@5gwjclfdx`~@+|sEg7fT`Ahj8*rh>(g_I@+>~#9ceZlO!>CfZErtqg_#BmDaZA*~_FZ_5y%0ahl*QgF7_@f654o7erwL<-*^t(Al5A@%hgL$DU0dIU=Lw3z!authS{QpwD*fH+lg@Vg{d|oQxLQ=YIcOlvT3X9v}IJ0Csa*%Ox432V0*`!z-ot%Rl=D3mYJ;EK3?}q4(2Uxhm0jU9rQe?%6~aB85smL+cJL%8$2?DUU7U^01@CG36io`21mTvI;da0#6!~`c@KKk6F%5%9GF5MD-m|zj%Haew7W1Ad8{%|61>3u0DwF^!sR2g?uIj$8x0G{gxoL48zEe|Fs~`@r~`uy!cC$P{*%Rj0aq?_FcY(T0Lk+P<mSM^99!j6Xg~_vZZ31Un(!wf<t!<Lse%fbv8x?f<PgW^Zgv}Or2^<sTT`$?wk2sk*!@-<g2mTHFQ3XkKo;V8oI$@j8CqYU;bmZe|%p*{P|sd5ohuWjoZoOev++HnZI1eIXI(y{g}6rE~8vDo1pyVQH&ILY4I?RVXO)?t;-hbAC{j1KWuak2MsD}Ieeg`CVzWx)5Zlqkq{3l|E3;SAr)TkXeb)4e~zLsY*5w4W@q5_dM|5^{|N4XeR=`E{QWO~`{l<?`ClI&|9JTnb`OqAzn}X&E0**miaz5r`^9hrZSl`Z<1Ge!X`-$7hJgpQ;nyP4zK|rZj!(2@zmlTm#C6R=_#nZSk<GMJ2B8jQz*FFq61b)%3U?`kJQwzQRsF}m{_@vf|L2bZ{r<1GrCj+T^o}E=p%tI{dBN;cV!?I%`1RQ9aR!GN;lSK5^6^}Br8-{W@-L4rWXr>OoaZf^dG*!lnj*%8zDjTOQm)(=b*Lx9B9$=l1`eTPsHzht32I5`X4w1EHRQYM>a4<Ctfo`0s`=|9=R&&uqAHVXuMIp}59E*Zj`~Hafq_glJBc4r7zln_345s=PVhjZ=Zs3}`8Q;qwz#90=?)?;s94T}p8dTOw|duXJn+kl+hC_|)-4}Y?dRWnxG~YOU;G4D&{Cpa#q2}eOh=D|2?L7~nuGeqz7))yS(-hC5zR7|Ik)55<+}JZWcHFDkAmT~cS)a4w`2$ggg-sFJycj3cg?4e0-Jr2Dzn?0sD8*b5NYZ#fFVw8AjPZqik#9kEs?_vCjMo{`0MPpH&B8UAld}LaZ7x0j1<R4gfWTMkunT}zqv8^F+R3fWO2-RZKzSHqd*laB{`t*+4#MPqfJ6&F!C~pMx6E>`mXSd5a$%5<z8!j{*=1OOrh>8l|Z&1rv!yT+1C3Hv-Z~NhZU@Y#YAd-su@jWFbTJ}t0K9gU0tXjvr^92wx`9WrfrK^=cr>4Q^WdDML8LxCEJKSmrI2?V71C_vBj8JuatOqE-kyW4iG3)rA`bUKfa1ACRv2IY6d}*C^bnQ&h{21JX#hLuF2lMCeIg;hZCo1KYzJU)y>UXwyLO+DmkA19i20PIIR3(Aw}1kXg<Du%qMJN@$qyki8Ew|JlV<Jq%<F4(tzhOLs$7J?T7*`aJbWY*y>BohJ~+9f`hDq4*A2p<}v?;7Tiyw(*5g}1rQo@c|!Em0OQYONx?n?{wT<XTu1(CvYwZgXp+(Io14d>KXiXMY6<tY)JyGUd84;pnUM3384O+5SdUs^5nppLMK6f!Ydr!P)(%~tw{TvM`fyt`1eQH?gKOCh;f<6fvExK;_d_?{O*ulJlt7$jtV<%1q05zC1Js5p+Vb%2Bb_sSuC<Mu)sj{(d-5ZbMs*u!!%e5EtgYsj5z<UkTbWf|8w%teR;?GWTMay^p%6w@)(M=t?1)uPI~=K$H>HAJEXhInY%)+A`c56LlE~*ALA<>E>b{xr?NIQknRbhVwY_02hpcP>&chla*}9LX!)Lz!@-d0gR^p{ji^>gA`iC+0D@|r7L_*QpPC2$ijY8DnIMhZ=F8p-PAXk^`m3J~=$DzI-L*pUa7@`XG=3NwN>wQf%hkngvoeM0&?68@thKVTvBxD|XgB{LvyoqN3BBnCbPPhoYq>_^$G?ICaij$+uc3`~mDR;TqQt0(iEx@HvK?xUjP-!2TnWjh<h@kUrB+h$z7+h}_-NCeLca?K_S---8zqj0@OT}Q_rx}H>sMr8jJhgE$5@NN&8BzgFyn6Fp7P{-OY2OnptO~Yhn>K2mVZu4Hcx#>o<k_Bye;vcv?wX&Jd{hcd)%-H6xZfnZg7pJU)`+lt-0f}{J3GmYmJ|G#Bf}S_cEd#+dtZEu2$s^DN7FEe(dNaWwu%W<E#i%UAvF@_s2pd&PR*=TBT0^N8lz^iIJ#$6Kj$mF>A~iywlUsu5kroW#C8dFIMYa7ajZzgBzQgdsUjd4jPF(@LO<Mjj@B;v29Y<K$&AVKHOIo08kx_L?(Rri18!qa7gB<6OXD}h(^H==MRH#7`vDl2h?yz1c01=X*y=z`+L;RQXJ7-LtXf^yr@0n7e5|ioIxHl$?S?a1NFMN3ILXwl>czymB^tiab8+SEWlGHRTgz`N0>y-mu`Zb=#L5lF|Bpvx>YMYGUTyDK`A(dmLt}VH*nB8d8=kD2kH3EZd&%Wtyn7+MMT*|teluS~QmZc+*KB~yHI(sSy?oWf;&c0)!Q9z1K);9v%rwy8XrWX|*`S9_hETBPprY)2g0s=84-NkDVJN=gl_IwTf9hfhjtR;3I)EJZ_^_Ta_)GK$tl-K6N}cC=OgGQ0j5`2TGht<Nh`_GOs!CYG+M$!3VkFh|GEWnwOB2VB-l+OSosB+#%^jdQZtnIhI0m{9V(OoU8<h+xDUENmd+XO9>YlW1q}At>ScMPA3jWzV>%U9*b~VX2^6LuK3fRUpu0#QnzlJ6WU>*q!DN1O}DmO@R&Dv`tgwXmLqN8Wn(1}_sO3|P7--JFK;ZY*`T$IjORDA*4aiW7!?QaGT|LdWg$VOztg#re|s!EjI+Jo%>YH+BQJdMn@kj=2_NjS0bbCdn&_wOO~H@cx*xz%Ij8KFVsrl1^eq_RSl=p#b)*n&bWe$5#IU>thKJ1{k=^X3Vs4a?G4XyedVX;p=jRB97!3Nud2>fRBoVKUHP#Jo*|oD8<r=5kz+7$Y7COAu*~Fp<(*cE9*2rHqhpc#u!dkuuxb&Ut)Jc1<+Yr6f=$<Cc&=YES_?pWE8ssa;dbZ60fYWqgiN4mQo1=JROBa}Km>Q{n3@*{{vp;=@&Wl!uk432{tlveDE`;W(@5;l&);6Kk!?B`<ECcQ<5vlD8Z}$8Z;0;f-=;>^scLhiBG%ZDY>3>Tw|4=UM2m*B@B?&9xPg08>{OfIey3yq$xy%GNHl+cBvG0uRK$+Qai^Q%Ya8`4fT_ATBdTNOfI+@%65Ww03VbN67RCRrjYsE2!|6fD#O?^<Ux&%J9$x;~s5UL~sBQDv}_w<k|&3b?%NqPp-*;;~QWC$f@!9YBJ;Z5^SH*{5g@?K1*tR1b}PGOMsA=)O{ZcF_#)~QEGCP#0;n`;vFaL${4BrB8QkO<N4}(;SZ6jSpJC>*u^{B&tevBimt0VqL@&RM_O^)@2tn@cU41qtyWm7ErD9mF%^7xraSF+&&YUJrIT2?<$@NB32H)|Tc*v?j=>IXWxjP*+U8`|0sqUK%ctqAx9me!BS4fteI3JSljn}%Ol?KK(rsW#$jta=VV<=3f}#iUz`!t;pKN$$%p4DJZRr{V)<-u8qb!GGG+SfMg^IQa7oCMO&X9Mz76^Eg3^pT(Lp6-C>+%&2KAuF?;$y=8*!68i4m32VAJfyNX=sBxc0(gxXBO62aWmuVU;4t2-Ix~oK;h&E?J-GvYaZj6@&+dl|6l*|TOuc$RIweq`L;F2ovg_K9pGs!1Y8=9J{0&;K%C})*gCFuQ5PCX9oRbIIdk@|fY;b<w@fpRTTO}BV-$OvwSjD;iU3LLCEG_H`|hp*Cc<FvQY++HSObR^l?q3ZW$cH>*cWY}8B-tj_r}6wKPFWx=0r>CM5pVSr&z<`Pw7582&ju+gn_Z!T4e0!7PlGr37&T-%Sp#VU&XK6WG5iaXsbv#9_nhh9fTLzJxYLvn8!jZg$WqaOh3=7#au-&qCFq{g9{gnE7mT8WU!2dKnk{hKc8LpheOfX>)@p^2UN##=$rT)_U~G5p<#l<;CGQ_sXCTg3~S!OaK^mgFpeic&4XWZ?<`zn{W>SMqCE45Td!>dQ$w5Dq?de6h-5hB<Cl))qm)9SS|eeYE=`scWFG@tUAA?L<O9PD*(x4mODd!I@Ju}jUsu3bQ^mjM6svm>X2Lj+YK?L1T;n8p9-_?tjWpq_S8wcHi$q(+LNFQmhc4SCT|JJ&JM0t6NRdqk98ig0kK<@JvoULQ<x$mgIaPWg=lMBK_V{5E2WamR?F(IKKNcD*2ec}x)LS#pEgh-8QEX}qbS5JePnECUe^S1B9M_f@9TlWFEiwijtb{5V$9Okaxr0l%!@A}N&m74Trg3Z(>jJr15TPMo8ypPA?wV|F8%%-&;^#-$<?dxpZjC?MQB&V2#fNQBgi<Xaqm_!9N=eD%`}J*+5Sd|+6d00JTQRbkFFE`<Fj^)sQ`-s!+Ar=^p~=Ef36eslX%;M?9&#s+am~)7ZX_W$+pUBu!9*kzoRUF#jt?biWRI9}THE4l!fYU(EgxeTr%c;h4b$ooNXN7P1cQ`C;fjD0Dfk!*Ja-L-Nr|~s%bi3#VT@g9n2<U^8f`)Bl;Qx9i!u+kQTpQ11UcnNSR<X<cgHzDk2lOWBV*8l4;Yx>JT<7A(fSPNoH6lDy3Xe^&o;9iEd=vcojqmbW9P+9%#m(00w5-Q1~8!2E|p3EQZ_^!NpXvK_SM-^?;P{o8aYb*0`*#T7Ni336m~mJZ-NII<x9$)4ZwnP%N3Fw<s~88$n-x89VjI^5R5S=Qu>1C4vE%=9_1i4@(T`IINug6O}HwfaE6)goyGVZm(flSQ}G$|fx!Vg!}Oywh}bYGrHDm7i8IHv76d~qcY-=U2_n51Y&O?r7_yT;X(dY{;CsdTzt$qxv%#8(S@CwAh^@i_3<&r%9FZ5B#m{Cgn`LBil8tQ|G+wEZ4)*olh#EcY(oL*7Qq~`xWZl@sst3Pzwu1W?PLQ&0i;JOF$ZQ>bx@QS#4MxxL8eLMi8Laq_GHE6m%bFxO9j$G4-P#I_zAoyk)hIg`>bW}i3f6tHbLCnd*^WrehAsprU#)u<^|z(6X<WV9=O!e2GOVXHEw_S1q6xy=J|+_Hr<1d;jd333f_Q}t54UORxNcb!xgUJP9s2s_R}GMHChiS@kjFJ<nG0EJ`#CzPe*rN`;8VD5IO2^gi>J0eozDaZQ!IoWWhX4&z@>n8+=jL~d!PCYuM_kT&~6Peu5EN%h%nSdm5?;I7(uLlaJ4_5!gLF9`C0M-<7T%O$|@%d=p_I#$P#ZAOc>)T+u}|Ojl-sw%+Z$R8~{s~38MntE4Xxg_j!vJiW&g<U|mTPc?{AALTCTCEhFkp(vuLpt7TXcl5gX-H>{xF3ANP;uvRw+?RTSMfuGP}u7^-<Gs0Knu2PobzPD;XUS7OLNRo?CNN7YoA;L&NDekcHCnpmRMy%VAw=_CU)Fh<=IB3VOddJ&o&6##c5rU%FAPS3lc)Bs5!^l|3bI@ml8p2ol^Dk>O1zsCv@ezdL`rXI)4M}ANrT7pXNG%3zbg%=~hK^Id(Y~ioFgd%Q)^1#toTgvnZ_#NU!RjWQe`yCf?z`@}9a3A!xy}w+YUXj+Idv-R44^63q!ZQ>HG?vW|EJFGFqnshd6zPuy%Oc@rb3H^Jp-=$;Al`tR0WI=*8#qskVTglG&rU+%{oFEl`rxDKU+dg-PEwurbj}`1~sW=>SXV83?07#P?LqOzCg@W2%4ajzNNfG_A4!DAZ+J@jWAKYo#`}`HFMRQ?S@T4O!;jtX@BarMB|SCy{ea~+gqw$7#F{;gDFaVZVOd}%!E+EVv<@aIg*W#aMUF5dUy7{3o;ws%@fUQK_XNWB-e9UTPU>kJtA5b5x>iA|9oCD{n#v%K&vOIB2i;ugFCnLi0LOEBl3|So&iW?zYK!&)2s|Jmm1-V0*KewB7~qW5ZJSe+ct)$XPIs|4L>C2GWBa?u^6xr(t_<hZVz#E`z?X5zy`G?Lh(YJxmrboh<++jXL4fC_(@C6z;jgYQEF>W^jbe8ON55yzR|hC=pW$x4eV#=+sdSbLeJ|u;gjWN%O$N7Hw{C|9}XF-GD=O!nUK9)h}Upf-855x?Fka1N~KR)xkdqigaB0oVGW$7X_#B3Qdu_q;k3Gp8)1N9rkdBAWv6x*Q=Q+CTkUioht=+KjG&lB5k6Q@A?gGr(6XF!*lcbjtrVmYJ~*qL#yQ6bcMWQFHmSv}R?`Vujb$ALdehi7?#o&)w3ZS@LRWS!FHqH-#s+0i6GwRx!PJ}!ITD>ip2p#AeK39+!ZO~|{!A1KA&4%-U~JWin%%NgbwnF3of8YAIu@{d==C(I$`#0hv_LbXYF)s|2VsHH;C2aMAtJ?TPH13Ue!6~CJ;3DZhu*`u=8}zx0%w|<6Z$y>2|mWX`FM;fX97$TD+i{_(xy@MOHh4!S~_A}onck^M`DSo%WJs7Y$>Tw<YZm#{!aaScc0z4ojW{u)m>$x>qR^bwrZM8_zTu<6lfbQ<=y(BX&MuIf=1MKp$H`hB#CR&H08B6uP|xcZI$OK&BQ7NvZwjIYMfL^n<<{Ey<#L?r^VMdPL&#Q{#(Q)B$pd=B<AzUtge11Xa7*{Zek}ym%`T8>49qw(<T*Q9vt(R4M?VGfA6)ynnlqj;T)+A524x4x%zYmQFIyJ4YqLMRLB&uUMj*><j<d@Tp)}NkC;Noh;&z>D6n@WRdH8IHG<-%K1%hZ0~H!a4ZVTl5h6jJ3SBWzCX=W7HLs~LA%|*+s?IpE-C&)WQkxc7*L<Vpi`^+T*Cgf>DAGLDX<q*C<3qEpJ6mYY_#hFZ>zL(41RVctqT}hxO!Jlx6nM=N`-4h{rp~scXv9yu+Viuh@gVjgRx6zBjWaD>ezY|jPDk6Ac}Ys&PD`(I;ej}XK*-&4_!P8ah$!7-?8np=CO#LB*I-8h|By$H%&)LC=)gE9DQ1JM0Q82S9VBkb(M6v9GW&Lc_&>h1Tr$ZIhPot70(WR((10}Bd_~jq)LVVlwoUnAz=+36m)Xx{bI5O(@ScQtOtt+MSIbC0j9fu%T6Vh{3YA|acx$@c&e^;H|7PtHTjXmZ&uph#E@If8+#Dyva_v(mXd=?3!Y5X{pa5bnbd#91Ky=n5o+&AbjP}BQ4qX<$Qu<Pcniga^6a`QfZTBYvSg0sL_6X!T1$~Vjt=?}`X}3N>*F-HV>lWq8wPz^9>tZvA>Zpy0memJX6JNLxJVF@ChNFM0LYB&5NvWxr76MALr$QB}Zk+Q4EPz=KNp}1jBwpmqPS>W8OCkz1b%!51=>>oEa#04bjKM$q7Nr$7-WKfN2F+}}4IilplH)QEuvp$uDm8}cKTPZTIP-@VR?jxr&19+Ih3M%9=m)yB(d;7)+h|Y2czEE32qw>%HME^k@$gR9W1H-GJYttg+|GXec=_1s3uv1YsrO(JWoY1OfqA_ijDWO;M~}HKB6H*E1L`6Kh|rjdK`g>MImLy*lS<aO>gGzZ5QOant&GqZNB8Lkyv4C3z>|5uk5q;;+$;)*mYR=fhbOYAakN(twh(;sG_2Gf<SjU8Z)N^0!1yKjOpYc_5AZor;qC|H9mGlMl6wN<cY2uk<tLGe7ot&|e9I6$rbM1?b<3=LN*#p}6ly6tGj9mo=AM<$nc^&VYf@D~pvvI1>N&=^*iz0`8EbT?+v*#Jh{(RSpB}oUwLzN-HR!-tH(QR^&zeMKJfZM5V+5C!KEE_)-|faGB6;#*o{9{?<#nRflbJi&=Z$+EEnMx|`oN}&?0)Y0h8E>!i`BX|Dv=rsjDIdAp8(+nS@NXrpI~UQOtwpuad&`d=rVV<uCY359K7gTnm7a=)znDuL96fs+xVH_(lKUrzjC$<7jub;FYmyS#Kacc-Lxu%nDAKWZ2%itU3O#^+!vHuJ+elYGHM&ci(Gs~VBIl$E)=6O5;`e;ifrd+W9WUC@xeGa<Ww-l+#4@}eq?LszIV44m!9Utb>>{g6<Bj`(~nul0jc7XFkMBlnEOU<ab{0NF@@J6#x#=}r$656PRnU!8=JZil&A1$YQFj$x&nf=5IEO}0>@|AG+uXDn|lT3ViJ7>U~(=<>VS1Bg`cy?A-S}o$J!Y|h8Zuw+2KqaOe`%tTS`(qf~K3p>r$0!pY+4d#&i6;9Z=C~T~@n?7y}OR>q2{(hfWpvi*g=PoSSF25KpWShpM-34TU<t?=<vz&;|yfCsSxXscniEnwPtA!srW+?c9@E#cdu&zZw!o*-PR^0s;(l!apXW!|3I-?kSO|%nG2>t$41u^m7I!T*03)`Dq&&^~J2_VQEex`Z-&#+?QvS;$6Ag*rJ3>RF;BcEb$_5|K}^B=E1M7fyHfJ2~;y8@^rDkRi0opqp`Dn*%$B+0YM%C{SkY>cF9c_!iD(#^VT1G`_Lg}Pi9pY24UzSQ16K`cbU?dC#8|tK%j|Sm~qUB<bdEu^jzg`r7X&y$H}k9NHjmeD@$`922wQ6w=Q=O#i3W!?4uKWTwG_BNe4Ui^XbOrV6g4PAYh?3uZs)ccugukW10Cp)e?29ca7I884c|tqvr%{(RECzpBSbCrCt-TUXuQHLzq_aY0`P%ivA=uo<ySCmuzO~W>$h}sxiE>g2Vr~7Dvy878I>^5gYZx>Few%RI?{}=@B)zi9Z2^C4{yZ!>D#*;=MH4^idw(eHe*3moNZ^Ip5zJeg?}Y#MD<f82gg%8&bu{iP9%cU;|@ZT^&u9g}@{ncD#^^BPNe>40`ja&!l;#DvAfzUS4@%Y<nYxk9l_PQ`Wlug|My-e9uyp7(#AipiI=HOQxwUv=WpPSY}_t7>q-b&29clZBg^^Mxx66lZYzEP@Ck6nLfLN!~4V2(hsrNRb6idC6}|GClXLs+2vyjv)fm|T2<E@v0B^0ZMC$u&S<ULVyd@cz&@`H2;1WV{mT~KzJDGMb8BHE(TW$l;!3Fv$N3Lv75mT7SoC#j&qtQ;FEB6N8=8QT0t0jeC2N)<UwY{q%K577jZg<k02s+O+4C~E0-{hAG2fZV?;szq`RI!2D)ty{4zfu;jfUHn=^c`xR$ouX@-bwVz}V*;g3T2U!5tdJ1>z`oV4*W5yr`R!A(hX~si7(sHNZ@gLo&H^ZJrDDq|d?eed>;o#|81>2~1`y#VRg8%2nX4LJbq<mnBPcp>+gelf+SGRb;44xMal?x<-s>B$i2AH1*C5ODOb=Vsll1fjYv~|3{cYp<d*eD*h?pRm0UM=nU&?bc}Xvv{ptPX8KP;KFwfZb~T`T9?OMhQC-;L*RHsV2&VK4Sozs4!g+`6ZnLn<NgI7Gv5+<Tw{b~IJ)=OY19otuLBFM&JA_3!#+SJ{nl7IFR(RWA*<CbYQaj9~Sje9}JjuqBI<m@35;%AOQ+RoS^+B94KP71N`u>UYY`*NSy!)A=WM1|pgeSJ%F&H8L(AMo*bX&?Rlte786TsMHou@+`iRBUQ@@2L$q3r?8f++wC0T5$wlVd1$yw2-=X**}K%*-xMBba?7V4*|K=p(6z9C<8qAvTq>1XK^v-AD9cx%S}O-Q?=F=1v=uu!emBrT^>XSR=#Pe8Z8ayOsxIB@sCpo4L>o63uwcpMkYGGL;!gg;1CCyk7UN?FbU}z8-SHiSyz8y7vjIi4k+KZzFpFrsb+QUyFHmDZgtoMOdLJ!&Y*A-GHp&i&G9a^**Nj<+c**hmAq9^VbfAU;ClVg*XwlKeOkvD3v=;1<ktH=gheTx4`jMMZjTun!$jilBtj&!YUzAq6fM=UjL<#V#8Keb(oQs=nH#!pgc7nFackW2x*iUEfiBS1R)`BSGv56O>$HJg|6Vz@mN%6eS540`-0^BF^qqH|NY2gf%p46IL=bY2-P<HvZE20Vzd<s5FAh6Gd-WduZCcXorD;YV!Py2Opmo0&dH4aWLSj{>Hk5MHXmk!Zs{gpKFhzzi9(fb1WSvW+-4_BXCzNuK%x=Ap&DtCN4ylOLFYwt92yFaQGuz;jnciGmO@8}-9dGXR!7`+w^N<`S_&Z{+V4OFZ?*f)G?!SC9Sn1~TOZU=%hMp*dUc%h<IP{rAF;Px-}x)g#ehEiTq#(R2=I<9rVtd8TnjGK69X$RL)3K#V3;cA1izCuaI^svB<y&N$5x#YYV&|&ZmO7*t=Ug*a4#@HO5bATY}OXMwvAYN<I-b{Q?oC)D3y&3U`ZUy=Qr2!aud(~7IE*YKDHE+K>D!YG31L?V*-iL!y-+m7;f92v)PodN(XvDqe{^G;T0msr7g6f!?&u0?U>OnTlTE#PO|QO#sU;i<8!1#=gYsuMWyQSe#jPtU}XJm7fRA~Djf6mc1+y=iDueSih2#+KjWl9mT<-i7rDQ|2c_<i<Eb4(A6sdpLR$sCDfHt*bNiXXwI|@R2k(z>Vb(0e?D`B+xWnv0ZK4)HV7wKyIc91Xfie*|nuf2pQ><q*`0>fGx+C{^c&zsf7`a&(^&IWy7P2Nhbzhu~P9;zaUka@vOYKIX7CD*QOe3PtF&An?EqXTyOQHd;P#SYG*UQ-ZZIik9y;~f>coF_`53X6~+F41<mYTXDk^t6zwAD@N)?(sMU^oVl0LD5s+BZ|qVTm_7cM^6NDnl$W=k`Y6OnibAfYB{YLNY!k;|Gd@k)mPdqz(}^JKpq$S%=rS`518m)Mcbx6_(ICHD<d?W{5|=jL<5$^>H9ok5bAFHI|3jgeFfv7!15`6nJI9<-;vbjNwOC=>nv@Ya&XOMck_o9W`i6Atc0dzGzPZAH2ByUhtcKFkN$7i2YcDb1tK;g>31!vB%7+48s#LAtt2mBITFdEcRNGf<m5&`z^jqiFO~RnJQ>+KdokwVC55upyK?VazENT#u>ZbkzGNAM-y@>uMRLYbx9Smb=Xm&{up=*r7vkgP{l{nV9!>amakae$8W!V{>JCOAL!3N{`vjafBon0n$EFsd7VX<u(E?k*4WXoA%S^rU^jgWL<znTRk+KSR-Zf<WgTtF=Y;aG-TFJtfelGrfIE5uhC{%ig<zTF3EMKW=LLOLCGNUnhn@CATT!_C3*F$yPZo>v<LzV0V~esal&(Ie{9_-VKMW2{Fjw9#I5Vl@I62cyyDXJ~+xpqxu0G!D7tasFud-{ukj2pXf35d1*VQiFbA-i{Qdq@98OL&@8#s<2ifx|%hu2My|Fzo_8{3rz@Rulo`LEUT9Q^mS@7$aPgXY1h^?d7T!Os`0m`)0;gOY_~Q+}(&@s24LN(i6BP~{6s9ET|zLhOlX6Ml|&#x@*HGO<ACzM0Pz+1g9$pHH!f7LVg2c(+L@P#wnj<a+t#KW6*?{lEYB{{xa*CPV')))
+_ROUTES={0:_PAYLOAD['base']}
+for _rid,_patch in _PAYLOAD['patches'].items():
+    _tape=list(_ROUTES[0])
+    for _t,_a in _patch: _tape[_t]=_a
+    _ROUTES[int(_rid)]=_tape
+del _PAYLOAD
+_SETTINGS={'hand_align': True, 'weed_repair': True, 'sell_lead': True, 'budget_guard': False, 'room_guard': False, 'clamp_sells': False, 'dead_stock': False, 'terminal_liquidation': False, 'front_run': False}
+
+def _router(observation,step,state):
+    if step>=144 and not state.get('day6'):
+        shops=_get(_get(observation,'town',{}),'unlocked_shops',[]) or []
+        state['route']={('BAKERY', 'YARN_STORE'): 3, ('BRUNCH_SPOT', 'YARN_STORE'): 4, ('FARMERS_MARKET', 'YARN_STORE'): 5, ('ICE_CREAM_SHOP', 'YARN_STORE'): 6, ('PET_CAFE', 'YARN_STORE'): 5, ('PIZZA_SHOP', 'YARN_STORE'): 7, ('SMOOTHIE_SHOP', 'YARN_STORE'): 8, ('YARN_STORE', 'BAKERY'): 9, ('YARN_STORE', 'BRUNCH_SPOT'): 9, ('YARN_STORE', 'FARMERS_MARKET'): 1, ('YARN_STORE', 'ICE_CREAM_SHOP'): 9, ('YARN_STORE', 'PET_CAFE'): 10, ('YARN_STORE', 'PIZZA_SHOP'): 6, ('YARN_STORE', 'SMOOTHIE_SHOP'): 11, ('YARN_STORE', 'YARN_STORE'): 12}.get(tuple(shops[:2]),0)
+        state['day6']=True
+    if step>=648 and not state.get('day27'):
+        state['route']=2
+        state['day27']=True
+    return state.get('route',0)
+
+_R42_OPENING=[['BUY_PRODUCT', 'WHEAT', 13], ['BUY_PRODUCT', 'WHEAT', 30], ['SELL', 'WHEAT', 30]]
+for _r42_tape in _ROUTES.values():
+    _r42_tape[0]=dict(_r42_tape[0],market=[list(o) for o in _R42_OPENING])
+del _r42_tape
+_IMPL=make_agent(_ROUTES,router=_router,**_SETTINGS)
+_IMPL.chassis.diagnostics['terminal_rescue_errors']=0
+
+def agent(observation,configuration=None):
+    try:
+        action=_IMPL(observation,configuration)
+        pass
+        return action
+    except Exception:
+        return {'farmer':['PASS'],'hands':[],'market':[]}
+
+_SHOP_PARENT=agent
+del agent
+
+def agent(observation,configuration=None):
+    action=_SHOP_PARENT(observation,configuration)
+    try:
+        if _step_of(observation)>=718:
+            view=_View(observation,_int(_get(observation,'player',0)),_IMPL.chassis.cfg)
+            units=[]
+            for i,pos in enumerate(view.positions):
+                units.append(['DROP'] if _shed_adjacent(pos,view.board) and view.inv(i) else ['PASS'])
+            action={'farmer':units[0],'hands':units[1:],'market':[]}
+            projected=_IMPL.chassis._projected_shed(action,view)
+            action['market']=[['SELL',item,projected.get(item,0)] for item in PRODUCTS if projected.get(item,0)>0]
+            action['market'].sort(key=lambda o:-view.prices.get(o[1],0)*o[2])
+    except Exception:
+        _IMPL.chassis.diagnostics['terminal_rescue_errors'] += 1
+    return action
+
+# EXP-154 modifications: Ahmed Berat Ozer; public capabilities credited below.
+# Dmitrii Gluzdov Seven Turn Rescue and Kaggle engine contributors, Apache-2.0.
+
+_UNIT_NS={"__name__":"v28_own_unit_model"}
+exec('# SPDX-License-Identifier: Apache-2.0\n# Extracted Kaggle / kaggle-environments contributor code; see NOTICE.txt.\n"""Exact deterministic unit/decay semantics extracted from kaggle-environments 1.32.7.\nSource kaggriculture.py SHA256 bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e.\nNo interpreter, market RNG, policy controls, or replay content is included.\n"""\n\nENGINE_VERSION = "1.32.7"\nSOURCE_SHA256 = "bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e"\n\nCROPS = {\n    "WHEAT":      {"seed": 10, "first_yield_day": 2, "max_yield_day": 4, "interval": 0, "max_yield": 6, "ongoing": False},\n    "CARROT":     {"seed": 20, "first_yield_day": 2, "max_yield_day": 3, "interval": 0, "max_yield": 4, "ongoing": False},\n    "TOMATO":     {"seed": 50, "first_yield_day": 8, "max_yield_day": 8, "interval": 1, "max_yield": 4, "ongoing": True},\n    "STRAWBERRY": {"seed": 100, "first_yield_day": 10, "max_yield_day": 10, "interval": 2, "max_yield": 4, "ongoing": True},\n    "MELON":      {"seed": 80, "first_yield_day": 10, "max_yield_day": 12, "interval": 0, "max_yield": 6, "ongoing": False},\n}\n\nANIMALS = {\n    "GOOSE": {"cost": 300, "structure": "COOP",    "first_yield_day": 4, "interval": 1, "max_held": 4, "product": "EGG"},\n    "COW":   {"cost": 400, "structure": "PASTURE", "first_yield_day": 8, "interval": 2, "max_held": 6, "product": "MILK"},\n    "SHEEP": {"cost": 500, "structure": "PASTURE", "first_yield_day": 6, "interval": 3, "max_held": 6, "product": "WOOL"},\n}\n\nPRODUCTS = ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL", "FERTILIZER"]\n\nFARMER_MOVES = {\n    "NORTH": (0, -1),\n    "SOUTH": (0, 1),\n    "EAST":  (1, 0),\n    "WEST":  (-1, 0),\n}\n\ndef _shed_access_tiles(board_size):\n    """Four inner-corner tiles around the shed, in NWSE order."""\n    half = board_size // 2\n    return [(half - 1, half - 1), (half, half - 1), (half - 1, half), (half, half)]\n\ndef _is_shed_adjacent(pos, board_size):\n    return tuple(pos) in {(x, y) for (x, y) in _shed_access_tiles(board_size)}\n\ndef _new_plant(crop, day, turns_per_day):\n    cd = CROPS[crop]\n    return {\n        "kind": "PLANT",\n        "crop": crop,\n        "planted_day": day,\n        "watered_today": False,\n        "consecutive_unwatered": 1,  # planting day counts as unwatered\n        "yield_units": 0 if cd["ongoing"] else 1,\n        "max_lifespan_step": (-1 if cd["ongoing"] else (day + cd["max_yield_day"] + 1) * turns_per_day),\n        "fertilized_until_day": -1,\n    }\n\ndef _new_animal(animal, day):\n    a = ANIMALS[animal]\n    return {\n        "kind": a["structure"],\n        "animal": animal,\n        "placed_day": day,\n        "yield_units": 0,\n        "consecutive_unfed": 0,\n        "fed_today": False,\n        "cared_today": False,\n        "fertilizer_available": False,\n        "pending_care_bonus": 0,\n    }\n\ndef _farmer_position(farm, idx):\n    """idx 0 = main farmer, 1+ = hand index."""\n    if idx == 0:\n        return farm["farmer"]\n    return farm["hands"][idx - 1] if idx - 1 < len(farm["hands"]) else None\n\ndef _set_farmer_position(farm, idx, pos):\n    if idx == 0:\n        farm["farmer"] = list(pos)\n    else:\n        farm["hands"][idx - 1] = list(pos)\n\ndef _farmer_inventory(private, idx):\n    """Inventories list is [main_farmer, *hands]; grow it if idx is past the end."""\n    while len(private["inventories"]) <= idx:\n        private["inventories"].append({})\n    return private["inventories"][idx]\n\ndef _inv_add(inv, item, n=1):\n    inv[item] = inv.get(item, 0) + n\n\ndef _inv_take(inv, item, n=1):\n    if inv.get(item, 0) < n:\n        return False\n    inv[item] -= n\n    if inv[item] == 0:\n        del inv[item]\n    return True\n\ndef _apply_unit_action(farm, private, idx, action, board_size, day, turns_per_day, shed_capacity=100):\n    """Process one farmer/hand\'s action. Invalid / illegal actions are silent no-ops."""\n    if not isinstance(action, list) or not action:\n        return\n    op = action[0]\n    pos = _farmer_position(farm, idx)\n    if pos is None:\n        return\n    fx, fy = pos[0], pos[1]\n    inv = _farmer_inventory(private, idx)\n\n    if op in FARMER_MOVES:\n        dx, dy = FARMER_MOVES[op]\n        nx, ny = fx + dx, fy + dy\n        if not (0 <= nx < board_size and 0 <= ny < board_size):\n            return\n        # Movement onto LOCKED tiles is allowed: a hand can spawn on a locked\n        # shed-access tile, and blocking movement would strand it there forever.\n        # Tile operations (PLANT, WATER, etc.) still no-op on LOCKED tiles.\n        _set_farmer_position(farm, idx, (nx, ny))\n        return\n\n    if op == "PASS":\n        return\n\n    tile = farm["tiles"][fy][fx]\n\n    # Shed operations resolve before the LOCKED guard. They use the tile only as\n    # a standing position -- the shed itself is always owned -- and three of the\n    # four shed-access tiles start LOCKED, so guarding them first would make the\n    # shed unreachable from those tiles.\n    if op == "DROP":\n        if not _is_shed_adjacent((fx, fy), board_size):\n            return\n        shed = private["shed"]\n        for item, n in list(inv.items()):\n            if n <= 0:\n                del inv[item]\n                continue\n            room = max(0, shed_capacity - sum(shed.values()))\n            take = min(n, room)\n            if take > 0:\n                shed[item] = shed.get(item, 0) + take\n            del inv[item]\n        return\n\n    if op == "PICKUP":\n        if not _is_shed_adjacent((fx, fy), board_size):\n            return\n        if len(action) < 2:\n            return\n        item = action[1]\n        n = int(action[2]) if len(action) >= 3 else 1\n        if n <= 0:\n            return\n        # Seeds live in private["seeds"] and are consumed directly by PLANT;\n        # they never pass through farmer inventory or the shed.\n        available = private["shed"].get(item, 0)\n        n = min(n, available)\n        if n <= 0:\n            return\n        private["shed"][item] -= n\n        _inv_add(inv, item, n)\n        return\n\n    if op == "PLACE":\n        if len(action) < 2:\n            return\n        item = action[1]\n        # Animal placement: standing on a matching unoccupied structure. A LOCKED\n        # tile is the string "LOCKED", never a dict, so this branch cannot match\n        # there and PLACE falls through to the shed path below.\n        if (\n            item in ANIMALS\n            and isinstance(tile, dict)\n            and tile.get("kind") == ANIMALS[item]["structure"]\n            and "animal" not in tile\n        ):\n            if _inv_take(inv, item, 1):\n                farm["tiles"][fy][fx] = _new_animal(item, day)\n            return\n        # Shed drop: orthogonally adjacent to the shed; obeys shedCapacity.\n        if _is_shed_adjacent((fx, fy), board_size):\n            n = int(action[2]) if len(action) >= 3 else 1\n            if n <= 0:\n                return\n            n = min(n, inv.get(item, 0))\n            if n <= 0:\n                return\n            current = sum(private["shed"].values())\n            room = max(0, shed_capacity - current)\n            n = min(n, room)\n            if n <= 0:\n                return\n            inv[item] -= n\n            if inv[item] == 0:\n                del inv[item]\n            private["shed"][item] = private["shed"].get(item, 0) + n\n        return\n\n    # Everything below mutates the tile the unit stands on, so it requires that\n    # tile to be owned.\n    if tile == "LOCKED":\n        return\n\n    if op == "PLANT":\n        if len(action) < 2:\n            return\n        crop = action[1]\n        if crop not in CROPS:\n            return\n        if tile is not None:\n            return\n        if private["seeds"].get(crop, 0) <= 0:\n            return\n        private["seeds"][crop] -= 1\n        farm["tiles"][fy][fx] = _new_plant(crop, day, turns_per_day)\n        return\n\n    if op == "WATER":\n        if not (isinstance(tile, dict) and tile.get("kind") == "PLANT"):\n            return\n        if tile["watered_today"]:\n            return\n        tile["watered_today"] = True\n        crop_data = CROPS[tile["crop"]]\n        if not crop_data["ongoing"]:\n            age_days = day - tile["planted_day"]\n            window_start = (crop_data["max_yield_day"] + 1) // 2\n            if window_start <= age_days <= crop_data["max_yield_day"]:\n                bonus = 2 if tile["fertilized_until_day"] >= day else 1\n                tile["yield_units"] = min(crop_data["max_yield"], tile["yield_units"] + bonus)\n        return\n\n    if op == "HARVEST":\n        if not isinstance(tile, dict):\n            return\n        if tile.get("yield_units", 0) <= 0:\n            return\n        if tile.get("kind") == "PLANT":\n            crop_data = CROPS[tile["crop"]]\n            if day - tile["planted_day"] < crop_data["first_yield_day"]:\n                # Ongoing crops only accumulate yield_units after first_yield_day,\n                # so reaching here with yield_units > 0 indicates a bug.\n                if crop_data["ongoing"]:\n                    print(\n                        f"WARNING: HARVEST on immature ongoing {tile[\'crop\']} "\n                        f"(planted day {tile[\'planted_day\']}, current day {day}, "\n                        f"first_yield_day {crop_data[\'first_yield_day\']}, "\n                        f"yield_units {tile[\'yield_units\']}); should never happen"\n                    )\n                return\n            units = tile["yield_units"]\n            tile["yield_units"] = 0\n            _inv_add(inv, tile["crop"], units)\n            if not crop_data["ongoing"]:\n                farm["tiles"][fy][fx] = None\n        elif "animal" in tile:\n            units = tile["yield_units"]\n            tile["yield_units"] = 0\n            _inv_add(inv, ANIMALS[tile["animal"]]["product"], units)\n        return\n\n    if op == "FERTILIZE":\n        if not (isinstance(tile, dict) and tile.get("kind") == "PLANT"):\n            return\n        if not _inv_take(inv, "FERTILIZER", 1):\n            return\n        # Active for `day`, `day+1`, `day+2` (3 days inclusive).\n        tile["fertilized_until_day"] = max(tile.get("fertilized_until_day", -1), day + 2)\n        return\n\n    if op == "DIG":\n        if tile is None:\n            return\n        # Removes plants, weeds, empty coop/pasture. Does NOT remove a placed animal.\n        if isinstance(tile, dict) and "animal" in tile:\n            return\n        farm["tiles"][fy][fx] = None\n        return\n\n    if op == "BUILD_COOP":\n        if tile is not None:\n            return\n        farm["tiles"][fy][fx] = {"kind": "COOP"}\n        return\n\n    if op == "BUILD_PASTURE":\n        if tile is not None:\n            return\n        farm["tiles"][fy][fx] = {"kind": "PASTURE"}\n        return\n\n    if op == "FEED":\n        if not (isinstance(tile, dict) and "animal" in tile):\n            return\n        if tile["fed_today"]:\n            return\n        if not _inv_take(inv, "WHEAT", 1):\n            return\n        tile["fed_today"] = True\n        return\n\n    if op == "COLLECT_FERTILIZER":\n        if not (isinstance(tile, dict) and "animal" in tile):\n            return\n        if not tile["fertilizer_available"]:\n            return\n        tile["fertilizer_available"] = False\n        _inv_add(inv, "FERTILIZER", 1)\n        return\n\n    if op == "CARE":\n        if not (isinstance(tile, dict) and "animal" in tile):\n            return\n        if tile["cared_today"]:\n            return\n        tile["cared_today"] = True\n        return\n\ndef _decay_plants(farm, step):\n    board_size = len(farm["tiles"])\n    for y in range(board_size):\n        for x in range(board_size):\n            tile = farm["tiles"][y][x]\n            if not isinstance(tile, dict) or tile.get("kind") != "PLANT":\n                continue\n            mls = tile["max_lifespan_step"]\n            if mls < 0 or step < mls:\n                continue\n            if (step - mls) % 2 != 0:\n                continue\n            tile["yield_units"] -= 1\n            if tile["yield_units"] <= 0:\n                farm["tiles"][y][x] = {"kind": "WEED"}\n\n',_UNIT_NS)
+_PLANNER_NS=dict(_UNIT_NS)
+exec('"""E182 modification: Shop0909 last-seven-turn physical closure planner.\n\nNo engine imports, policy tapes, replay fixtures, RNG or remote calls.\nThe only supported market continuation is SELL; unknown execution abstains.\n"""\nfrom copy import deepcopy\nfrom time import perf_counter\nSTART, FINAL = (712, 718)\nOPS = set(FARMER_MOVES) | {\'PASS\', \'DROP\', \'PICKUP\', \'PLACE\', \'PLANT\', \'WATER\', \'HARVEST\', \'FERTILIZE\', \'DIG\', \'BUILD_COOP\', \'BUILD_PASTURE\', \'FEED\', \'CARE\', \'COLLECT_FERTILIZER\'}\nITEMS = tuple(PRODUCTS) + tuple(ANIMALS)\n\nclass Unsupported(ValueError):\n    pass\n\ndef _get(obj, key, default=None):\n    return obj.get(key, default) if isinstance(obj, dict) else getattr(obj, key, default)\n\ndef _settings(config):\n    size, turns, last = (_get(config, k, d) for k, d in [(\'boardSize\', 10), (\'turnsPerDay\', 24), (\'episodeSteps\', 720)])\n    if (size, turns, last) != (10, 24, 720):\n        raise Unsupported(\'requires pinned 10x10/24/720 terminal window\')\n    cap = int(_get(config, \'shedCapacity\', 100))\n    orders = min(10, int(_get(config, \'maxMarketOrdersPerTurn\', 10)))\n    if cap < 1 or orders < 1:\n        raise Unsupported(\'invalid capacity/order limit\')\n    return (size, turns, cap, orders)\n\ndef physical_state(obs):\n    """Comparable own physical state; market prices and bank are intentionally excluded."""\n    seat = int(_get(obs, \'player\', 0))\n    farm = _get(obs, \'farms\')[seat]\n    return ({k: v for k, v in farm.items() if k != \'money\'}, _get(obs, \'private\'))\n\ndef _commands(action, n):\n    return [action.get(\'farmer\', [\'PASS\']), *action.get(\'hands\', [])][:n] + [[\'PASS\'] for _ in range(max(0, n - 1 - len(action.get(\'hands\', []))))]\n\ndef _clone_state(farm, private):\n    f = dict(farm)\n    f[\'tiles\'] = [[dict(tile) if isinstance(tile, dict) else tile for tile in row] for row in farm[\'tiles\']]\n    f[\'farmer\'] = list(farm[\'farmer\'])\n    f[\'hands\'] = [list(pos) for pos in farm[\'hands\']]\n    f[\'unlocked_quadrants\'] = list(farm[\'unlocked_quadrants\'])\n    pr = dict(private)\n    pr[\'shed\'], pr[\'seeds\'] = (dict(private[\'shed\']), dict(private[\'seeds\']))\n    pr[\'inventories\'] = [dict(inv) for inv in private[\'inventories\']]\n    return (f, pr)\n\ndef _clone_schedule(schedule):\n    result = []\n    for action in schedule:\n        value = dict(action)\n        if \'farmer\' in action:\n            value[\'farmer\'] = list(action[\'farmer\'])\n        for key in [\'hands\', \'market\']:\n            if key in action:\n                value[key] = [list(command) for command in action[key]]\n        result.append(value)\n    return result\n\ndef _validate(schedule, n, orders):\n    for action in schedule:\n        if not isinstance(action, dict) or set(action) - {\'farmer\', \'hands\', \'market\'}:\n            raise Unsupported(\'unknown action shape\')\n        if not isinstance(action.get(\'hands\', []), list):\n            raise Unsupported(\'hands must be a list\')\n        for command in [action.get(\'farmer\', [\'PASS\']), *action.get(\'hands\', [])]:\n            if not isinstance(command, list) or not command or command[0] not in OPS:\n                raise Unsupported(\'unknown/malformed unit operation\')\n            if command[0] in {\'PICKUP\', \'PLACE\', \'PLANT\'}:\n                if len(command) < 2 or command[1] not in ITEMS:\n                    raise Unsupported(\'unknown unit item\')\n                if len(command) > 2 and (not isinstance(command[2], int)):\n                    raise Unsupported(\'noninteger unit quantity\')\n        market = action.get(\'market\', [])\n        if not isinstance(market, list) or len(market) > orders:\n            raise Unsupported(\'market order shape/cap\')\n        for order in market:\n            if not isinstance(order, list) or len(order) != 3 or order[0] != \'SELL\' or (order[1] not in PRODUCTS) or (not isinstance(order[2], int)) or (order[2] <= 0):\n                raise Unsupported(\'baseline market must contain positive integer SELL only\')\n\ndef liquidation(shed, inherited_market, max_orders=10):\n    """Use actual post-unit stock; retain first parent item ordering, then stable product order."""\n    items = []\n    for order in inherited_market:\n        if order[1] not in items:\n            items.append(order[1])\n    items += [item for item in PRODUCTS if item not in items]\n    orders = [[\'SELL\', item, int(shed.get(item, 0))] for item in items if shed.get(item, 0) > 0]\n    if len(orders) > min(10, max_orders):\n        raise Unsupported(\'actual final stock exceeds order slots\')\n    return orders\n\ndef shop_liquidation(farm, private, prices):\n    """Exact original final worker/drop and market rule, with current stock/prices."""\n    return liquidate(FarmView({\'player\': 0, \'farms\': [farm], \'private\': private, \'market\': {\'prices\': prices}}))\n\ndef simulate(obs, config, schedule, *, final_liquidate=False, detailed=False, preserve_final_commands=False):\n    """Exact own unit/decay and SELL-stock transitions. No claim to simulate shared prices."""\n    size, turns, cap, order_cap = _settings(config)\n    step = int(_get(obs, \'step\', -1))\n    if step < START or step + len(schedule) - 1 > FINAL or (not schedule):\n        raise Unsupported(\'outside 712..718; no day boundary or terminal auto-drop\')\n    if any(((t + 1) % turns == 0 for t in range(step, step + len(schedule)))):\n        raise Unsupported(\'day boundary\')\n    farm0, private0 = physical_state(obs)\n    farm, private = _clone_state(farm0, private0)\n    n = 1 + len(farm[\'hands\'])\n    if len(private[\'inventories\']) != n or n > 32:\n        raise Unsupported(\'invalid/unbounded worker inventory shape\')\n    _validate(schedule, n, order_cap)\n    deposited = [dict() for _ in range(n)]\n    sold = {}\n    snapshots, rows, events = ([], [], [])\n    executed = _clone_schedule(schedule)\n    overflow = 0\n    for offset, action in enumerate(executed):\n        t = step + offset\n        if detailed:\n            snapshots.append(_clone_state(farm, private))\n        if t == FINAL and (not preserve_final_commands):\n            action = shop_liquidation(farm, private, _get(obs, \'market\')[\'prices\'])\n            executed[offset] = action\n        all_commands = [action.get(\'farmer\', [\'PASS\']), *action.get(\'hands\', [])]\n        demand = {}\n        for command in all_commands:\n            if command[0] == \'PLANT\':\n                demand[command[1]] = demand.get(command[1], 0) + 1\n        blocked = {item for item, count in demand.items() if count > private[\'seeds\'].get(item, 0)}\n        for actor, command in enumerate(_commands(action, n)):\n            if command[0] == \'PLANT\' and command[1] in blocked:\n                command = [\'PASS\']\n            pos = farm[\'farmer\'] if actor == 0 else farm[\'hands\'][actor - 1]\n            xy = tuple(pos)\n            inv = private[\'inventories\'][actor]\n            before_inv = dict(inv) if command[0] in {\'DROP\', \'HARVEST\', \'COLLECT_FERTILIZER\'} else None\n            before_shed = dict(private[\'shed\']) if command[0] in {\'DROP\', \'PLACE\'} else None\n            _apply_unit_action(farm, private, actor, command, size, t // turns, turns, cap)\n            if before_shed is not None:\n                delta = {item: amount - before_shed.get(item, 0) for item, amount in private[\'shed\'].items() if amount > before_shed.get(item, 0)}\n                for item, amount in delta.items():\n                    deposited[actor][item] = deposited[actor].get(item, 0) + amount\n                if delta:\n                    events.append({\'offset\': offset, \'actor\': actor, \'op\': command[0], \'xy\': xy, \'deposited\': delta})\n                if command[0] == \'DROP\':\n                    overflow += sum((max(0, amount - inv.get(item, 0) - delta.get(item, 0)) for item, amount in before_inv.items()))\n            if command[0] in {\'HARVEST\', \'COLLECT_FERTILIZER\'}:\n                delta = {item: amount - before_inv.get(item, 0) for item, amount in inv.items() if amount > before_inv.get(item, 0)}\n                if delta:\n                    events.append({\'offset\': offset, \'actor\': actor, \'op\': command[0], \'xy\': xy, \'acquired\': delta})\n        pre_market = dict(private[\'shed\'])\n        if t == FINAL and preserve_final_commands and final_liquidate:\n            action[\'market\'] = liquidation(pre_market, [], order_cap)\n            prices = _get(obs, \'market\')[\'prices\']\n            action[\'market\'].sort(key=lambda order: -int(prices.get(order[1], 0)) * order[2])\n        for _, item, requested in action.get(\'market\', []):\n            quantity = min(requested, private[\'shed\'].get(item, 0), 99999)\n            if quantity > 0:\n                private[\'shed\'][item] -= quantity\n                sold[item] = sold.get(item, 0) + quantity\n        _decay_plants(farm, t)\n        rows.append({\'pre_market_shed\': pre_market, \'post_market_shed\': dict(private[\'shed\']), \'deposited_by_actor\': [dict(v) for v in deposited], \'sold\': dict(sold)})\n    if detailed:\n        snapshots.append(_clone_state(farm, private))\n    return {\'rows\': rows, \'states\': snapshots, \'events\': events, \'actions\': executed, \'overflow_units\': overflow, \'farm\': farm, \'private\': private, \'sold\': sold}\n\ndef _ge(left, right):\n    return all((left.get(item, 0) >= value for item, value in right.items()))\n\ndef dominates(candidate, baseline):\n    """Preserve every baseline worker\'s actual deposit prefixes and shed availability."""\n    if candidate[\'overflow_units\']:\n        return False\n    for new, old in zip(candidate[\'rows\'], baseline[\'rows\']):\n        if not _ge(new[\'pre_market_shed\'], old[\'pre_market_shed\']):\n            return False\n        if not _ge(new[\'sold\'], old[\'sold\']):\n            return False\n        if any((not _ge(a, b) for a, b in zip(new[\'deposited_by_actor\'], old[\'deposited_by_actor\']))):\n            return False\n    return True\n\ndef _value(run, prices):\n    shed = run[\'private\'][\'shed\']\n    return sum(((run[\'sold\'].get(item, 0) + shed.get(item, 0)) * prices[item] for item in PRODUCTS))\n\ndef _walk(start, end):\n    x, y = start\n    tx, ty = end\n    return [[\'EAST\']] * max(0, tx - x) + [[\'WEST\']] * max(0, x - tx) + [[\'SOUTH\']] * max(0, ty - y) + [[\'NORTH\']] * max(0, y - ty)\n\ndef _return(pos):\n    targets = _shed_access_tiles(10)\n    target = min(targets, key=lambda xy: (abs(pos[0] - xy[0]) + abs(pos[1] - xy[1]), targets.index(xy)))\n    return _walk(pos, target) + [[\'DROP\']]\n\ndef _proposals(run, actor, prices, max_per_actor):\n    """One/two resource bundles plus direct carry closure, replacing a baseline suffix."""\n    owners = {}\n    for event in run[\'events\']:\n        if \'acquired\' in event:\n            owners.setdefault((tuple(event[\'xy\']), event[\'op\']), set()).add(event[\'actor\'])\n    proposals = []\n    seen = set()\n    horizon = len(run[\'rows\'])\n    for offset in range(horizon):\n        farm, private = run[\'states\'][offset]\n        pos = tuple(farm[\'farmer\'] if actor == 0 else farm[\'hands\'][actor - 1])\n        inventory = private[\'inventories\'][actor]\n        carried = sum((prices.get(item, 0) * count for item, count in inventory.items()))\n        prefix_deposits = run[\'rows\'][offset - 1][\'deposited_by_actor\'][actor] if offset else {}\n        future_deposits = run[\'rows\'][-1][\'deposited_by_actor\'][actor]\n        obligation = sum((prices.get(item, 0) * (count - prefix_deposits.get(item, 0)) for item, count in future_deposits.items()))\n        bundles = []\n        for y, row in enumerate(farm[\'tiles\']):\n            for x, tile in enumerate(row):\n                if not isinstance(tile, dict):\n                    continue\n                xy, operations, value = ((x, y), [], 0)\n                if tile.get(\'yield_units\', 0) > 0:\n                    item = tile.get(\'crop\') if tile.get(\'kind\') == \'PLANT\' else ANIMALS.get(tile.get(\'animal\'), {}).get(\'product\')\n                    mature = item and (\'animal\' in tile or (START + offset) // 24 - tile[\'planted_day\'] >= CROPS[item][\'first_yield_day\'])\n                    if mature and (not owners.get((xy, \'HARVEST\'), set()) - {actor}):\n                        operations.append([\'HARVEST\'])\n                        value += prices[item] * tile[\'yield_units\']\n                if tile.get(\'fertilizer_available\') and \'animal\' in tile and (not owners.get((xy, \'COLLECT_FERTILIZER\'), set()) - {actor}):\n                    operations.append([\'COLLECT_FERTILIZER\'])\n                    value += prices[\'FERTILIZER\']\n                if operations:\n                    distance = len(_walk(pos, xy)) + len(operations) + len(_return(xy))\n                    if distance <= horizon - offset:\n                        bundles.append((xy, operations, value, distance))\n        bundles.sort(key=lambda b: (-b[2] / b[3], -b[2], b[0]))\n        variants = [([], carried)] if carried else []\n        for xy, ops, value, _ in bundles[:6]:\n            variants.append(([(xy, ops)], carried + value))\n        for first in bundles[:3]:\n            for second in bundles[:3]:\n                if first[0] != second[0]:\n                    variants.append(([(first[0], first[1]), (second[0], second[1])], carried + first[2] + second[2]))\n        for stops, value in variants:\n            route, cursor = ([], pos)\n            for xy, ops in stops:\n                route += _walk(cursor, xy) + ops\n                cursor = xy\n            route += _return(cursor)\n            if len(route) > horizon - offset:\n                continue\n            route += [[\'PASS\']] * (horizon - offset - len(route))\n            key = (offset, tuple((tuple(c) for c in route)))\n            if key not in seen:\n                seen.add(key)\n                proposals.append((value - obligation, offset, route, len(stops)))\n    proposals.sort(key=lambda p: (-p[0], p[1], p[2]))\n    direct = [p for p in proposals if p[3] == 0 and p[0] > 0][:2]\n    chosen = direct + [p for p in proposals if p not in direct]\n    return chosen[:max_per_actor]\n\ndef plan_terminal(obs, config, baseline_remaining, *, max_simulations=64, passes=1, proposals_per_actor=4):\n    """At 712 accept seven actions; positive physical delivery is mandatory."""\n    begun = perf_counter()\n    fallback = {\'accepted\': False, \'reason\': \'\', \'actions\': None, \'simulations\': 0}\n    try:\n        if int(_get(obs, \'step\', -1)) != START or len(baseline_remaining) != FINAL - START + 1:\n            raise Unsupported(\'planning requires step 712 and exactly seven actions through 718\')\n        max_simulations = min(256, max(1, int(max_simulations)))\n        passes = min(2, max(1, int(passes)))\n        proposals_per_actor = min(16, max(1, int(proposals_per_actor)))\n        baseline = simulate(obs, config, baseline_remaining, detailed=True)\n        prices = {item: max(1, float(_get(obs, \'market\', {}).get(\'prices\', {}).get(item, 1))) for item in PRODUCTS}\n        current, best = (_clone_schedule(baseline_remaining), baseline)\n        baseline_value = best_value = _value(baseline, prices)\n        changes, simulations = ([], 0)\n        n = len(baseline[\'private\'][\'inventories\'])\n        for sweep in range(passes):\n            improved = False\n            for actor in range(n):\n                winner = None\n                for _, offset, route, bundle_count in _proposals(best, actor, prices, proposals_per_actor):\n                    if simulations >= max_simulations:\n                        break\n                    trial = _clone_schedule(current)\n                    for i, command in enumerate(route, offset):\n                        if actor == 0:\n                            trial[i][\'farmer\'] = command\n                        else:\n                            trial[i].setdefault(\'hands\', [])\n                            while len(trial[i][\'hands\']) < n - 1:\n                                trial[i][\'hands\'].append([\'PASS\'])\n                            trial[i][\'hands\'][actor - 1] = command\n                    evaluated = simulate(obs, config, trial)\n                    simulations += 1\n                    score = _value(evaluated, prices)\n                    if score > best_value and dominates(evaluated, baseline):\n                        required = {(tuple(e[\'xy\']), e[\'op\'], e[\'actor\']): e[\'acquired\'] for e in best[\'events\'] if \'acquired\' in e and e[\'actor\'] != actor}\n                        acquired = {}\n                        for e in evaluated[\'events\']:\n                            if \'acquired\' in e:\n                                key = (tuple(e[\'xy\']), e[\'op\'], e[\'actor\'])\n                                dst = acquired.setdefault(key, {})\n                                for item, amount in e[\'acquired\'].items():\n                                    dst[item] = dst.get(item, 0) + amount\n                        if all((_ge(acquired.get(k, {}), v) for k, v in required.items())):\n                            winner, best_value = ((trial, offset, bundle_count), score)\n                if winner:\n                    current, offset, bundle_count = winner\n                    best = simulate(obs, config, current, detailed=True)\n                    changes.append({\'pass\': sweep, \'actor\': actor, \'from_step\': START + offset, \'resource_bundles\': bundle_count, \'estimated_stock_value\': best_value})\n                    improved = True\n                if simulations >= max_simulations:\n                    break\n            if not improved or simulations >= max_simulations:\n                break\n        if not changes or best_value <= baseline_value:\n            return {**fallback, \'reason\': \'no positive physical delivery gain\', \'simulations\': simulations, \'changed_workers\': [], \'changes\': [], \'certificate\': {\'stock_value_gain_at_initial_prices\': 0, \'sold_unit_delta\': dict.fromkeys(PRODUCTS, 0)}, \'planning_ms\': (perf_counter() - begun) * 1000}\n        final = simulate(obs, config, current, final_liquidate=True, detailed=True)\n        physical = simulate(obs, config, current)\n        if not dominates(physical, baseline):\n            raise Unsupported(\'no zero-overflow dominating continuation\')\n        delta = {item: final[\'sold\'].get(item, 0) - baseline[\'sold\'].get(item, 0) for item in PRODUCTS}\n        deposited_gain = any((final[\'rows\'][-1][\'deposited_by_actor\'][actor].get(item, 0) > baseline[\'rows\'][-1][\'deposited_by_actor\'][actor].get(item, 0) for actor in range(n) for item in PRODUCTS))\n        worker_change = any((_commands(new, n) != _commands(old, n) for new, old in zip(final[\'actions\'], baseline[\'actions\'])))\n        accepted = worker_change and deposited_gain and any((v > 0 for v in delta.values())) and all((v >= 0 for v in delta.values()))\n        plan = {\'accepted\': accepted, \'reason\': \'joint physical dominance\' if accepted else \'no improvement\', \'baseline\': _clone_schedule(baseline_remaining), \'actions\': final[\'actions\'], \'expected_states\': final[\'states\'][:-1], \'simulations\': simulations, \'changes\': changes, \'abandoned\': False, \'changed_workers\': sorted({c[\'actor\'] for c in changes}), \'certificate\': {\'baseline_rows\': baseline[\'rows\'], \'physical_rows\': physical[\'rows\'], \'baseline_overflow\': baseline[\'overflow_units\'], \'candidate_overflow\': final[\'overflow_units\'], \'sold_unit_delta\': delta, \'stock_value_gain_at_initial_prices\': best_value - baseline_value, \'baseline_final_shed\': baseline[\'private\'][\'shed\'], \'final_shed\': final[\'private\'][\'shed\'], \'positive_physical_deposit_gain\': deposited_gain, \'markets_712_717_unchanged\': all((final[\'actions\'][i].get(\'market\', []) == baseline_remaining[i].get(\'market\', []) for i in range(FINAL - START)))}}\n    except (Unsupported, KeyError, TypeError, ValueError, IndexError) as exc:\n        plan = {**fallback, \'reason\': str(exc)}\n    plan[\'planning_ms\'] = (perf_counter() - begun) * 1000\n    return plan\n\ndef _effective_action(action, n):\n    return (_commands(action, n), action.get(\'market\', []))\n\ndef _recover_observed(obs, config, parent_action, plan):\n    """Bounded cargo salvage after deviation; never resume old positional commands."""\n    farm, private = physical_state(obs)\n    positions = [farm[\'farmer\'], *farm[\'hands\']]\n    remaining = FINAL - int(_get(obs, \'step\')) + 1\n    room = max(0, int(_get(config, \'shedCapacity\', 100)) - sum(private[\'shed\'].values()))\n    commands = []\n    problems = []\n    prices = _get(obs, \'market\', {}).get(\'prices\', {})\n    for actor, (pos, inv) in enumerate(zip(positions, private[\'inventories\'])):\n        command = [\'PASS\']\n        if any((v > 0 for v in inv.values())):\n            route = _return(pos)\n            if len(route) > remaining:\n                problems.append({\'actor\': actor, \'reason\': \'unreachable cargo\'})\n            elif len(route) > 1:\n                command = route[0]\n            elif sum((max(0, q) for q in inv.values())) <= room:\n                command = [\'DROP\']\n                room -= sum((max(0, q) for q in inv.values()))\n            else:\n                items = [item for item in PRODUCTS if inv.get(item, 0) > 0]\n                if room and items:\n                    item = max(items, key=lambda i: (prices.get(i, 1) * min(inv[i], room), -PRODUCTS.index(i)))\n                    quantity = min(inv[item], room)\n                    command = [\'PLACE\', item, quantity]\n                    room -= quantity\n                else:\n                    problems.append({\'actor\': actor, \'reason\': \'no shed capacity\'})\n        commands.append(command)\n    action = {\'farmer\': commands[0], \'hands\': commands[1:], \'market\': deepcopy(parent_action.get(\'market\', []))}\n    if int(_get(obs, \'step\')) == FINAL:\n        action[\'market\'] = []\n        action = simulate(obs, config, [action], final_liquidate=True, preserve_final_commands=True)[\'actions\'][0]\n    plan[\'recovery_steps\'] = plan.get(\'recovery_steps\', 0) + 1\n    if problems:\n        plan.setdefault(\'recovery_failures\', []).append({\'step\': int(_get(obs, \'step\')), \'problems\': problems})\n    return action\n\ndef terminal_action(obs, config, parent_action, plan):\n    """Canonical guard, pre-deviation abstention, observed recovery after deviation."""\n    step = int(_get(obs, \'step\', -1))\n    if not plan or not plan.get(\'accepted\') or (not START <= step <= FINAL):\n        return parent_action\n    if plan.get(\'abandoned\'):\n        return _recover_observed(obs, config, parent_action, plan) if plan.get(\'deviated\') else parent_action\n    index = step - START\n    n = 1 + len(physical_state(obs)[0][\'hands\'])\n    mismatch = physical_state(obs) != plan[\'expected_states\'][index] or _effective_action(parent_action, n) != _effective_action(plan[\'baseline\'][index], n)\n    if mismatch:\n        plan[\'abandoned\'] = True\n        plan[\'abandon_step\'] = step\n        plan[\'reason\'] = \'physical observation or effective baseline action diverged\'\n        plan[\'safety_failure\'] = True\n        return _recover_observed(obs, config, parent_action, plan) if plan.get(\'deviated\') else parent_action\n    result = deepcopy(plan[\'actions\'][index])\n    if step == FINAL:\n        farm, private = physical_state(obs)\n        result = shop_liquidation(farm, private, _get(obs, \'market\')[\'prices\'])\n    if _commands(result, n) != _commands(parent_action, n):\n        plan[\'deviated\'] = True\n    return result',_PLANNER_NS)
+# EXP-154 integration by Ahmed Berat Ozer, derived from Dmitrii Gluzdov E182.
+# The preserved v27 parent is simulated on a private shadow only at step 712.
+_PRE_TERMINAL_AGENT=agent
+del agent
+_TERMINAL_PLANS={}
+_TERMINAL_PREVIOUS={}
+_UPGRADE_STATS={'planning_calls':0,'accepted':0,'changed_steps':0,'aborted':0,'shadow_declines':0,'errors':0,'max_planning_ms':0.0}
+
+def _parent_liquidate(farm, private, prices):
+    # Exactly v27's final projected DROP ordering, in the planner's private state.
+    view=_View({'player':0,'farms':[farm],'private':private,'market':{'prices':prices}},0,_IMPL.chassis.cfg)
+    commands=[['DROP'] if _shed_adjacent(pos,view.board) and view.inv(i) else ['PASS'] for i,pos in enumerate(view.positions)]
+    action={'farmer':commands[0],'hands':commands[1:],'market':[]}
+    stock=_IMPL.chassis._projected_shed(action,view)
+    action['market']=[['SELL',item,stock.get(item,0)] for item in PRODUCTS if stock.get(item,0)>0]
+    action['market'].sort(key=lambda o:-view.prices.get(o[1],0)*o[2])
+    return action
+
+_PLANNER_NS['shop_liquidation']=_parent_liquidate
+
+def _shadow_terminal(obs,config):
+    seat=int(obs['player']);chassis=_IMPL.chassis
+    state=chassis.players.get(seat)
+    if not state or state.get('last_step')!=711 or state.get('route')!=2:
+        return None
+    # No delayed weed/structure intervention may depend on an unmodeled future.
+    if state.get('pending'):
+        return None
+    shadow=copy.copy(chassis);shadow.players=copy.deepcopy(chassis.players)
+    shadow.diagnostics={k:0 for k in chassis.diagnostics}
+    projected=copy.deepcopy(obs);baseline=[];states=[]
+    for step in range(712,719):
+        projected['step']=step;projected['day']=step//24;projected['hour']=step%24
+        states.append(copy.deepcopy(shadow.players[seat]))
+        action=shadow.act(projected,config)
+        if step==718:
+            action=_parent_liquidate(projected['farms'][seat],projected['private'],projected['market']['prices'])
+        else:
+            market=action.get('market',[])
+            if len(market)!=9 or {o[1] for o in market}!=set(PRODUCTS) or any(o[0]!='SELL' or len(o)!=3 or type(o[2]) is not int or o[2]<100 for o in market):
+                return None
+        if any(shadow.diagnostics.values()):return None
+        run=_PLANNER_NS['simulate'](projected,config,[action])
+        if run['actions'][0]!=action:return None
+        baseline.append(action)
+        run['farm']['money']=projected['farms'][seat]['money']
+        projected['farms'][seat]=run['farm'];projected['private']=run['private']
+    return baseline,states
+
+def agent(observation,configuration=None):
+    try:
+        step=int(observation['step']);seat=int(observation['player'])
+    except Exception:
+        return _PRE_TERMINAL_AGENT(observation,configuration)
+    previous=_TERMINAL_PREVIOUS.get(seat)
+    if step==0 or (previous is not None and step<=previous):_TERMINAL_PLANS.pop(seat,None)
+    _TERMINAL_PREVIOUS[seat]=step
+    plan=_TERMINAL_PLANS.get(seat)
+    if plan and plan.get('accepted') and 712<=step<=718:
+        if previous!=step-1:plan.update(abandoned=True,reason='nonconsecutive callback')
+        try:
+            result=_PLANNER_NS['terminal_action'](observation,configuration,plan['baseline'][step-712],plan)
+            if plan.get('abandoned'):
+                if not plan.get('abort_counted'):
+                    plan['abort_counted']=True;_UPGRADE_STATS['aborted']+=1
+                if not plan.get('deviated'):
+                    _IMPL.chassis.players[seat]=copy.deepcopy(plan['parent_states_before'][step-712])
+                    _TERMINAL_PLANS.pop(seat,None)
+                    return _PRE_TERMINAL_AGENT(observation,configuration)
+            _UPGRADE_STATS['changed_steps']+=int(result!=plan['baseline'][step-712])
+            return result
+        except Exception:
+            _UPGRADE_STATS['errors']+=1
+            if plan.get('deviated'):
+                try:return _PLANNER_NS['_recover_observed'](observation,configuration,plan['baseline'][step-712],plan)
+                except Exception:return _parent_liquidate(observation['farms'][seat],observation['private'],observation['market']['prices'])
+    if step!=712:return _PRE_TERMINAL_AGENT(observation,configuration)
+    _UPGRADE_STATS['planning_calls']+=1
+    try:shadow=_shadow_terminal(observation,configuration)
+    except (ValueError,KeyError,TypeError,IndexError):shadow=None
+    if shadow is None:
+        _UPGRADE_STATS['shadow_declines']+=1
+        return _PRE_TERMINAL_AGENT(observation,configuration)
+    baseline,states=shadow
+    actual=_PRE_TERMINAL_AGENT(observation,configuration)
+    if actual!=baseline[0]:
+        _UPGRADE_STATS['shadow_declines']+=1;return actual
+    try:
+        plan=_PLANNER_NS['plan_terminal'](observation,configuration,baseline,max_simulations=64,passes=1,proposals_per_actor=4)
+        _UPGRADE_STATS['max_planning_ms']=max(_UPGRADE_STATS['max_planning_ms'],plan.get('planning_ms',0.0))
+        if not plan.get('accepted'):return actual
+        plan['parent_states_before']=states;_TERMINAL_PLANS[seat]=plan
+        _UPGRADE_STATS['accepted']+=1
+        result=_PLANNER_NS['terminal_action'](observation,configuration,actual,plan)
+        _UPGRADE_STATS['changed_steps']+=int(result!=actual)
+        return result
+    except Exception:
+        _UPGRADE_STATS['errors']+=1;return actual
+
+agent.telemetry=_UPGRADE_STATS
+
+# EXP-154: aurax7 Reactive v2 day-end storage guard, adapted to our v27 view.
+_PRE_ROOM_AGENT=agent
+del agent
+_ROOM_STATS={'changed_turns':0,'added_units':0,'errors':0}
+def agent(observation,configuration=None):
+    action=_PRE_ROOM_AGENT(observation,configuration)
+    try:
+        step=_step_of(observation)
+        if step%24!=23:return action
+        view=_View(observation,_int(_get(observation,'player',0)),_IMPL.chassis.cfg)
+        carried=sum(max(0,int(n)) for inv in view.invs for n in inv.values())
+        needed=sum(view.shed.values())+carried-99
+        if needed<=0:return action
+        planned={}
+        for o in action.get('market',[]):
+            if o and o[0]=='SELL' and len(o)>=3:planned[o[1]]=planned.get(o[1],0)+max(0,int(o[2]))
+        result=copy.deepcopy(action);added=0
+        for item in sorted(PRODUCTS,key=lambda it:-int(view.prices.get(it,0))):
+            qty=min(needed,max(0,view.shed.get(item,0)-planned.get(item,0)))
+            if qty<=0:continue
+            if len(result['market'])>=10:break
+            result['market'].append(['SELL',item,qty]);needed-=qty;added+=qty
+            if needed<=0:break
+        if added:_ROOM_STATS['changed_turns']+=1;_ROOM_STATS['added_units']+=added
+        return result
+    except Exception:
+        _ROOM_STATS['errors']+=1;return action
+
+agent.telemetry=_ROOM_STATS
+
+# Incorporated upstream attribution and change notice:
+# E182 Shop0909 + terminal physical closure (modified 2026-09-09)
+# 
+# The active public parent is Yusuke Hayashi's yhay81/shop-router-0909 v3.
+# router_parent.py and actions.json are exact original bytes, not newly authored
+# routes. The parent credits aurax7's Reactive Router for sale timing and shed
+# projection; that attribution remains in router_parent.py. Original payload
+# LICENSE.txt is preserved unchanged (Apache License 2.0 text); it contains no
+# named copyright grantor and no separate NOTICE was supplied. No additional
+# ownership, endorsement, or upstream replay-data rights claim is made.
+# 
+# Local changes: separate main.py/policy.py adapter; bounded start712 planner
+# copied from frozen E180/S78 and modified for seven callbacks, exact Shop final
+# liquidation, strict positive physical delivery/sale gain, and observation guards.
+# unit_model.py is an unchanged frozen E180 copy of Kaggle's extracted semantics.
+# The following original E180 notice is retained verbatim for attribution history.
+# Its references to Thomas files describe E180, not files supplied in this Shop
+# package: no Thomas tapes, trees or policy are included here.
+# 
+# ----- Original E180 notice -----
+# Kaggriculture: Last-Mile Harvest Planner
+# Attribution and change notice
+# 
+# Thomas Tschinkel is the author of the parent public state-router policy and its
+# published decision trees and action-route data. Source: Kaggriculture: 93.8% Win
+# Rate Public State Router, notebook version 3, scriptVersionId 347936183:
+# https://www.kaggle.com/code/thomastschinkel/kaggriculture-93-8-win-rate-public-state-router?scriptVersionId=347936183
+# The public notebook identifies its license as Apache License, Version 2.0.
+# Original published main.py SHA-256:
+# b87a27ed614a33329be85f1b662e51cf4078a019fee937afcebbbbf2f51f8522
+# 
+# Changes to that source for this distribution: compressed route/tree literals
+# were decoded into readable tapes.json and trees.json; a read-only planned_action
+# helper was added; descriptive headers and local data loading were adapted.
+# The original parent feature extraction, tree traversal and agent behavior are
+# retained. These public routes are not claimed as newly authored or trained by
+# the notebook distributor.
+# 
+# unit_model.py contains deterministic unit-action and crop-decay definitions
+# extracted from Kaggle's kaggle-environments 1.32.7 Kaggriculture engine, licensed
+# under Apache License, Version 2.0. Credit: Kaggle and the kaggle-environments
+# contributors. Project: https://github.com/Kaggle/kaggle-environments
+# Source file: kaggle_environments/envs/kaggriculture/kaggriculture.py
+# Source SHA-256:
+# bc8a54879ef02c7ea64b8b333d6a976f0ea65c4949149d01f463f23bccee653e
+# The extracted unit/decay definitions are not a newly authored game engine;
+# market price dynamics and the full interpreter are not part of this module.
+# 
+# Additional work in this distribution: a bounded last-nine-action collection
+# and delivery planner, observation guards and recovery, a settings-consuming
+# factory and entry point, standalone examples, and deterministic packaging.
+# The full Apache License, Version 2.0 is included as LICENSE.txt.
+# No endorsement by Thomas Tschinkel or Kaggle is implied.
+# 
+# Data provenance limitation: Thomas's source refers to public replay data and
+# an upstream provenance.json. That original episode-level manifest, replay IDs
+# and individual replay-author identities were not supplied with the public
+# notebook/output used here. No names or episode lineage have been invented.
+# Notebook-level licensing does not independently establish the missing underlying
+# replay-data rights chain. The package supplies usable readable routes, not a
+# reproducible reconstruction of their original collection or training process.
+# 
+# Packaging note: source inputs described as byte-exact above are
+# normalized to UTF-8/LF text with a final newline in this standalone
+# notebook package. Route JSON values and parent policy behavior are unchanged.
+
+# Final public-entry guard; measured separately and compared on captured observations.
+_V28_CORE=agent
+del agent
+_IMPL.chassis.diagnostics['v28_entry_errors']=0
+def agent(observation,configuration=None):
+    try:
+        return _V28_CORE(observation,configuration)
+    except Exception:
+        _IMPL.chassis.diagnostics['v28_entry_errors']+=1
+        return {'farmer':['PASS'],'hands':[],'market':[]}
+agent.telemetry=_ROOM_STATS
+
+# EXP-155: prvsiyan V221B finite tomato investment, adapted by Ahmed Berat Ozer.
+# Original public source is retained under research24/public; Apache-2.0.
+MAX_ORDERS=10
+class FarmView(_View):
+    def __init__(self,obs):super().__init__(obs,int(obs['player']),_IMPL.chassis.cfg)
+    def inventory(self,actor):return self.inv(actor)
+def projected_shed(action,view):return _IMPL.chassis._projected_shed(action,view)
+
+CROP_MIN_PRICE=70
+
+# V219: a finite late tomato investment with dedicated, observed workers.
+_V219_PARENT = agent
+del agent
+_V219_FERTILIZE = True  # Builder changes only this flag for the ablation.
+_V219_STATES = {}
+_V219_REPORT = {'commitments': 0, 'hire_requests': 0, 'confirmed_workers': 0,
+                'hire_shortfalls': 0, 'plant_requests': 0, 'confirmed_plants': 0,
+                'water_requests': 0, 'fertilize_requests': 0, 'harvest_requests': 0,
+                'confirmed_harvest_units': 0, 'drop_requests': 0,
+                'tomato_sale_requests': 0, 'budget_declines': 0, 'lost_plants': 0}
+
+
+def _v219_fib(n):
+    a, b = 1, 1
+    for _ in range(n): a, b = b, a+b
+    return a
+
+
+def _v219_native_day(native, day):
+    tape = _IMPL.chassis.routes[native['route']]
+    return tape[day*24:min((day+1)*24,719)]
+
+
+def _v219_qualifies(obs, native):
+    farm=obs['farms'][obs['player']]
+    if len(farm['tiles']) != 10 or set(farm['unlocked_quadrants']) != {'NW','NE','SW'}:
+        return False
+    if farm['money'] < 12000 or obs['market']['prices']['TOMATO'] < CROP_MIN_PRICE:
+        return False
+    if sum(s in ('PIZZA_SHOP','FARMERS_MARKET') for s in obs['town']['unlocked_shops']) < 3:
+        return False
+    if any(farm['tiles'][y][x] != 'LOCKED' for y in (5,6) for x in range(5,10)):
+        return False
+    if obs['private']['seeds'].get('TOMATO',0) or obs['private']['shed'].get('TOMATO',0):
+        return False
+    if any(isinstance(t,dict) and t.get('crop')=='TOMATO' for row in farm['tiles'] for t in row):
+        return False
+    # The investment uses spare land and new worker indices. Avoid taking over
+    # any native tomato or land purchase obligation on the known own schedule.
+    for tape in _IMPL.chassis.routes.values():
+        for a in tape[432:719]:
+            if any(o and o[0]=='BUY_LAND' for o in a.get('market',[])):return False
+            if any(c==['PLANT','TOMATO'] for c in [a.get('farmer')]+a.get('hands',[])):return False
+    return True
+
+
+def _v219_walk(pos, target):
+    x,y=pos;tx,ty=target
+    if x != tx:return ['EAST' if x < tx else 'WEST']
+    if y != ty:return ['SOUTH' if y < ty else 'NORTH']
+    return None
+
+
+def _v219_home(pos):
+    return min(((4,4),(5,4),(4,5),(5,5)),key=lambda p:abs(pos[0]-p[0])+abs(pos[1]-p[1]))
+
+
+def _v219_request(obs, action, state, native):
+    step=int(obs['step']);day=step//24;offset=step%24
+    farm=obs['farms'][obs['player']];private=obs['private']
+    # If the planting-day transaction could not complete, abandon investment.
+    # Later purchases would miss the finite day26..29 production window.
+    if not state.get('committed') and day!=18:return action
+    if state.get('requested_day')==day or offset>3:return action
+    planned=_v219_native_day(native,day)
+    remaining=planned[offset+1:]
+    if any(o and o[0]=='HIRE' for a in remaining for o in a.get('market',[])):
+        return action
+    parent_hires=sum(bool(o) and o[0]=='HIRE' for o in action['market'])
+    expected=max(len(a.get('hands',[])) for a in planned)
+    if len(farm['hands'])+parent_hires != expected:return action
+    fertilizer=bool(_V219_FERTILIZE and day in (24,27) and obs['market']['prices']['FERTILIZER']<=30)
+    # One watering tour: at most 2 entry moves + 9 between tiles + 10 waters.
+    # A hire request by hour2 leaves at least21 callbacks after confirmation.
+    crop_workers=1 if day in (19,20,21,22,23,25) and offset<=2 else (3 if 26<=day<=28 else 2)
+    labor=_r53_labor_assignment(obs,action,fertilizer)
+    if labor is not None:crop_workers=labor['workers']
+    count=crop_workers+int(fertilizer and day==27 and labor is None)
+    extra=[]
+    if not state.get('committed'):
+        extra += [['BUY_LAND'],['BUY_SEED','TOMATO',10]]
+    if fertilizer:extra.append(['BUY_PRODUCT','FERTILIZER',10])
+    extra += [['HIRE'] for _ in range(count)]
+    if len(action['market'])+len(extra)>MAX_ORDERS:return action
+    # No assumed sale proceeds. Reserve 3,000 for parent obligations and price
+    # movement; the qualification separately requires 12,000 initial liquidity.
+    budget=sum(_v219_fib(n) for n in range(farm['hires_today'],farm['hires_today']+parent_hires+count))
+    if not state.get('committed'):budget+=4500
+    if fertilizer:budget+=10*(obs['market']['prices']['FERTILIZER']+5)
+    for order in action['market']:
+        if not order:continue
+        if order[0]=='BUY_PRODUCT':budget+=int(order[2])*(int(obs['market']['prices'][order[1]])+10)
+        elif order[0]=='BUY_ANIMAL':budget+=int(order[2])*{'COW':400,'SHEEP':500,'GOOSE':300}[order[1]]
+        elif order[0]=='BUY_SEED':budget+=int(order[2])*{'WHEAT':10,'CARROT':20,'TOMATO':50,'STRAWBERRY':100,'MELON':80}[order[1]]
+    if farm['money']<budget+3000:
+        _V219_REPORT['budget_declines']+=1;return action
+    state['pending']={'step':step,'first_actor':expected+1,'count':count,'crop_workers':crop_workers,'fertilizer':fertilizer,'labor':labor}
+    if labor is not None:
+        _R53_LABOR_REPORT['labor_requests']+=1;_R53_LABOR_REPORT['labor_hires_avoided']+=1;_R53_LABOR_REPORT['labor_day'+str(day)]+=1
+    state['requested_day']=day
+    _V219_REPORT['hire_requests']+=count
+    if not state.get('committed'):
+        state['committed']=True;_V219_REPORT['commitments']+=1
+    changed=copy.deepcopy(action);changed['market']+=extra
+    return changed
+
+
+def _v219_worker(obs, state, actor, role):
+    day=int(obs['step'])//24;step=int(obs['step']);view=FarmView(obs)
+    pos=tuple(view.positions[actor]);inv=view.inventory(actor)
+    targets=role['targets']
+    # Actual cargo differences, observed on the next callback, verify harvests.
+    previous=state['last_work'].get(actor)
+    if previous and previous['step']==step-1 and previous['command']==['HARVEST']:
+        _V219_REPORT['confirmed_harvest_units']+=max(0,int(inv.get('TOMATO',0))-previous['tomatoes'])
+    if role.get('needs_fertilizer') and not role.get('loaded'):
+        home=_v219_home(pos)
+        walk=_v219_walk(pos,home)
+        if walk:return walk
+        desired=role.get('fertilizer_quantity',10 if role['kind']=='fertilizer' else 5)
+        if inv.get('FERTILIZER',0)>=desired:role['loaded']=True
+        elif role.get('pickup_requested'):
+            # Never spend repeated turns waiting for stock that was not bought.
+            role['loaded']=True;role['fertilizer_available']=int(inv.get('FERTILIZER',0))
+        elif view.shed.get('FERTILIZER',0)>=desired:
+            role['pickup_requested']=True;return ['PICKUP','FERTILIZER',desired]
+        else:role['loaded']=True
+    todo=[]
+    for target in targets:
+        x,y=target;tile=view.tiles[y][x]
+        tomato=isinstance(tile,dict) and tile.get('crop')=='TOMATO'
+        if tomato and target not in state['seen_plants']:
+            state['seen_plants'].add(target);_V219_REPORT['confirmed_plants']+=1
+        if target in state['seen_plants'] and not tomato and target not in state['lost']:
+            state['lost'].add(target);_V219_REPORT['lost_plants']+=1
+        command=None
+        if role['kind']=='fertilizer':
+            if tomato and tile.get('fertilized_until_day',-1)<day+2 and inv.get('FERTILIZER',0)>0:
+                command=['FERTILIZE']
+        elif day==18 and not tomato:
+            if tile is None and obs['private']['seeds'].get('TOMATO',0)>0:command=['PLANT','TOMATO']
+            elif isinstance(tile,dict) and tile.get('kind')=='WEED':command=['DIG']
+        elif tomato:
+            # No later production follows the final day, so watering then would
+            # consume time needed to harvest and deliver the final cargo.
+            if day<29 and not tile.get('watered_today'):command=['WATER']
+            elif role.get('needs_fertilizer') and tile.get('fertilized_until_day',-1)<day+2 and inv.get('FERTILIZER',0)>0:
+                command=['FERTILIZE']
+            elif tile.get('yield_units',0)>0:command=['HARVEST']
+        if command:todo.append((target,command))
+    # Final return has priority once only the exact distance plus DROP remains.
+    home=_v219_home(pos);distance=abs(pos[0]-home[0])+abs(pos[1]-home[1])
+    if step>=718-distance and inv.get('TOMATO',0):
+        return _v219_walk(pos,home) or ['PLACE','TOMATO',int(inv.get('TOMATO',0))]
+    if todo:
+        target,command=min(todo,key=lambda v:(abs(pos[0]-v[0][0])+abs(pos[1]-v[0][1]),targets.index(v[0])))
+        return _v219_walk(pos,target) or command
+    if inv.get('TOMATO',0):return _v219_walk(pos,home) or ['PLACE','TOMATO',int(inv['TOMATO'])]
+    if any(inv.values()):return _v219_walk(pos,home) or ['DROP']
+    return ['PASS']
+
+
+def agent(observation, configuration=None):
+    action=_V219_PARENT(observation,configuration)
+    step=int(observation['step']);player=int(observation['player']);day=step//24
+    state=_V219_STATES.get(player)
+    if state is None or step<=state['last_step']:
+        state={'last_step':step,'day':-1,'workers':{},'last_work':{},'seen_plants':set(),'lost':set(),
+               'targets':[(x,y) for y in (5,6) for x in range(5,10)]}
+        _V219_STATES[player]=state
+    state['last_step']=step
+    native=_IMPL.chassis.players[player]
+    if step==432:state['eligible']=_v219_qualifies(observation,native)
+    if not state.get('eligible') or day<18:return action
+    if state['day']!=day:
+        state['day']=day;state['workers']={};state['last_work']={}
+    farm=observation['farms'][player]
+    pending=state.pop('pending',None)
+    if pending:
+        if len(farm['hands'])+1 >= pending['first_actor']+pending['count'] and 'SE' in farm['unlocked_quadrants']:
+            for index in range(pending['count']):
+                fertilizer_worker=index==pending['crop_workers']
+                if fertilizer_worker:targets=state['targets']
+                elif pending['crop_workers']==1:targets=state['targets']
+                elif pending['crop_workers']==2:targets=state['targets'][index*5:index*5+5]
+                else:targets=[[(5,5),(6,5),(7,5)],[(8,5),(9,5),(9,6),(8,6)],[(5,6),(6,6),(7,6)]][index]
+                state['workers'][pending['first_actor']+index]={'kind':'fertilizer' if fertilizer_worker else 'crop','targets':targets,
+                    'needs_fertilizer':pending['fertilizer'] and (day==24 or fertilizer_worker)}
+                if pending.get('labor') is not None:
+                    role=state['workers'][pending['first_actor']+index]
+                    role['targets']=[tuple(p) for p in pending['labor']['paths'][index]]
+                    role['needs_fertilizer']=pending['labor']['fertilizer'];role['fertilizer_quantity']=len(role['targets'])
+                    if tuple(farm['hands'][pending['first_actor']+index-1])!=tuple(pending['labor']['spawns'][index]):_R53_LABOR_REPORT['labor_spawn_errors']+=1
+                    if index==0:_R53_LABOR_REPORT['labor_confirmed']+=1
+            _V219_REPORT['confirmed_workers']+=pending['count']
+        else:_V219_REPORT['hire_shortfalls']+=pending['count']
+    action=_v219_request(observation,action,state,native)
+    if state['workers']:
+        commands=[action.get('farmer') or ['PASS']]+list(action.get('hands') or [])
+        commands += [['PASS'] for _ in range(len(farm['hands'])+1-len(commands))]
+        for actor,role in state['workers'].items():
+            if actor>=len(commands):continue
+            command=_v219_worker(observation,state,actor,role)
+            commands[actor]=command
+            name={'PLANT':'plant_requests','WATER':'water_requests','FERTILIZE':'fertilize_requests',
+                  'HARVEST':'harvest_requests','DROP':'drop_requests'}.get(command[0])
+            if name:_V219_REPORT[name]+=1
+            state['last_work'][actor]={'step':step,'command':command,'tomatoes':observation['private']['inventories'][actor].get('TOMATO',0)}
+        action=copy.deepcopy(action);action['farmer'],action['hands']=commands[0],commands[1:]
+    if state.get('committed') and len(action['market'])<MAX_ORDERS and not any(o[:2]==['SELL','TOMATO'] for o in action['market']):
+        quantity=projected_shed(action,FarmView(observation)).get('TOMATO',0)
+        if quantity>0:
+            action=copy.deepcopy(action);action['market'].append(['SELL','TOMATO',quantity])
+            _V219_REPORT['tomato_sale_requests']+=quantity
+    return action
+
+
+agent.telemetry=_V219_REPORT
+
+# V221B: labor-only ablation of frozen V219G; not yet publicly scored.
+
+
+# Crop workers own their final routes after commitment. A private parent shadow
+# does not contain these obligations, so terminal rescue must abstain there.
+_ORIGINAL_SHADOW_TERMINAL=_shadow_terminal
+def _shadow_terminal(obs,config):
+    if _V219_STATES.get(int(obs['player']),{}).get('committed'):return None
+    return _ORIGINAL_SHADOW_TERMINAL(obs,config)
+
+APPLY_TIMING=False
+
+_EXPERIMENT_PARENT=agent
+del agent
+_V219_REPORT['extra_fertilizer_days']=0
+_V219_REPORT['reordered_market_turns']=0
+_V219_REPORT['errors']=0
+def agent(observation,configuration=None):
+    try:
+        action=_EXPERIMENT_PARENT(observation,configuration)
+        if APPLY_TIMING and int(observation['step'])>=144:action=_v224_sales_first(action)
+        return action
+    except Exception:
+        _V219_REPORT['errors']+=1
+        return {'farmer':['PASS'],'hands':[],'market':[]}
+agent.telemetry=_V219_REPORT
+
+def _v224_sales_first(action):
+    original=action.get('market',[])[:MAX_ORDERS]
+    orders=[list(o) for o in original if o and (o[0] in ('HIRE','BUY_LAND') or (len(o)>=3 and int(o[2])>0))]
+    for index in range(len(orders)):
+        order=orders[index]
+        if order[0]!='SELL':continue
+        cursor=index
+        while cursor>0:
+            previous=orders[cursor-1]
+            if previous[0]=='SELL':break
+            if previous[0] in ('BUY_PRODUCT','BUY_ANIMAL') and previous[1]==order[1]:break
+            orders[cursor-1],orders[cursor]=orders[cursor],orders[cursor-1]
+            cursor-=1
+    if orders==original:return action
+    _V219_REPORT['reordered_market_turns']+=1
+    changed=copy.deepcopy(action);changed['market']=orders
+    return changed
+_ORDER_PARENT=agent
+del agent
+
+def agent(observation,configuration=None):
+    try:
+        action=_ORDER_PARENT(observation,configuration)
+        if int(observation["step"])>=144:action=_v224_sales_first(action)
+        return action
+    except Exception:
+        _V219_REPORT["errors"]+=1
+        return {"farmer":["PASS"],"hands":[],"market":[]}
+agent.telemetry=_V219_REPORT
+
+_V31_CORE=agent
+del agent
+_IMPL.chassis.diagnostics['production_errors']=0
+_IMPL.chassis.diagnostics['v31_entry_errors']=0
+def agent(observation,configuration=None):
+    before=_V219_REPORT['errors']
+    try:
+        action=_V31_CORE(observation,configuration)
+        _IMPL.chassis.diagnostics['production_errors']+=_V219_REPORT['errors']-before
+        return action
+    except Exception:
+        _IMPL.chassis.diagnostics['v31_entry_errors']+=1
+        return {'farmer':['PASS'],'hands':[],'market':[]}
+agent.telemetry=_V219_REPORT
+
+# Apache-2.0; later cattle transfer from prvsiyan, Moon (2026-09-10).
+# Bounded livestock substitution; confirm owned animals before redirecting workers.
+_V231_PARENT=agent
+_V231_CAP=4
+_V231_STATES={}
+_V231_REPORT={}
+
+def _v231_new_state():
+    return {'last':-1,'confirmed':0,'reserved':0,'pending_buy':None,
+            'carrying':{},'pending_places':[],'sites':{},'milk_credit':0,
+            'requested':0,'failed_purchase_units':0,'picked':0,'placed':0,
+            'failed_placements':0,'extra_milk_harvested':0,'extra_milk_sale_requests':0}
+
+def _v231_controller(obs,action,state,cap):
+    step=int(obs['step']);seat=int(obs['player']);farm=obs['farms'][seat]
+    private=obs['private'];shed=private['shed'];inventories=private['inventories']
+    positions=[farm['farmer'],*farm['hands']]
+    pending=state['pending_buy']
+    if pending is not None:
+        gained=max(0,int(shed.get('COW',0))-pending['before'])
+        confirmed=min(pending['quantity'],gained)
+        state['confirmed']+=confirmed;state['reserved']+=confirmed
+        state['failed_purchase_units']+=pending['quantity']-confirmed
+        state['pending_buy']=None
+    for pending in state['pending_places']:
+        x,y=pending['site'];tile=farm['tiles'][y][x]
+        if (isinstance(tile,dict) and tile.get('animal')=='COW'
+                and tile.get('placed_day')==pending['day']):
+            state['sites'][(x,y)]=pending['day'];state['placed']+=1
+            actor=pending['actor'];state['carrying'][actor]=max(0,state['carrying'].get(actor,0)-1)
+        else:state['failed_placements']+=1
+    state['pending_places']=[]
+    state['last']=step
+    result=copy.deepcopy(action)
+    workers=[result.get('farmer') or ['PASS'],*(result.get('hands') or [])]
+    seen_harvest=set();cow_available=int(shed.get('COW',0));occupied=set()
+    for actor,work in enumerate(workers[:len(positions)]):
+        inventory=inventories[actor] if actor<len(inventories) else {}
+        x,y=positions[actor];tile=farm['tiles'][y][x];site=(x,y)
+        if (work==['HARVEST'] and site in state['sites'] and site not in seen_harvest
+                and isinstance(tile,dict) and tile.get('animal')=='COW'
+                and tile.get('placed_day')==state['sites'][site]):
+            units=max(0,int(tile.get('yield_units',0)))
+            state['milk_credit']+=units;state['extra_milk_harvested']+=units
+            seen_harvest.add(site)
+        if len(work)>=2 and work[:2]==['PICKUP','SHEEP']:
+            quantity=max(0,int(work[2]) if len(work)>2 else 1)
+            center=len(farm['tiles'])//2
+            if (quantity and state['reserved']>=quantity and cow_available>=quantity
+                    and x in (center-1,center) and y in (center-1,center)
+                    and not any(inventory.get(a,0) for a in ('COW','SHEEP','GOOSE'))):
+                work[1]='COW';state['reserved']-=quantity;cow_available-=quantity
+                state['carrying'][actor]=state['carrying'].get(actor,0)+quantity
+                state['picked']+=quantity
+        if (len(work)>=2 and work[:2]==['PLACE','SHEEP']
+                and state['carrying'].get(actor,0)>0 and inventory.get('COW',0)>0
+                and isinstance(tile,dict) and tile.get('kind')=='PASTURE'
+                and 'animal' not in tile and site not in occupied):
+            work[1]='COW'
+            state['pending_places'].append({'actor':actor,'site':site,'day':step//24})
+        if (len(work)>=2 and work[0]=='PLACE' and work[1] in ('COW','SHEEP','GOOSE')
+                and inventory.get(work[1],0)>0):occupied.add(site)
+    result['farmer'],result['hands']=workers[0],workers[1:]
+    market=result.get('market',[])
+    animal_orders=[o for o in market if len(o)>=3 and o[0]=='BUY_ANIMAL']
+    shops=obs['town']['unlocked_shops'];prices=obs['market']['prices']
+    counts={'COW':0,'SHEEP':0}
+    for line in farm['tiles']:
+        for tile in line:
+            if isinstance(tile,dict) and tile.get('animal') in counts:counts[tile['animal']]+=1
+    cargo=sum(int(inv.get(a,0)) for inv in inventories for a in ('COW','SHEEP','GOOSE'))
+    stock_animals=sum(int(shed.get(a,0)) for a in ('COW','SHEEP','GOOSE'))
+    milk_shops=sum(shop in ('PIZZA_SHOP','ICE_CREAM_SHOP','SMOOTHIE_SHOP') for shop in shops)
+    if (216<=step<=227 and len(shops)>=3 and state['confirmed']<cap and not state['reserved']
+            and not any(state['carrying'].values()) and not state['pending_places']
+            and not cargo and not stock_animals and len(animal_orders)==1
+            and animal_orders[0][1]=='SHEEP' and milk_shops>=2 and 'YARN_STORE' not in shops
+            and int(prices.get('MILK',0))>=int(prices.get('WOOL',0))
+            and counts['COW']>=4 and counts['SHEEP']>=2):
+        order=animal_orders[0];quantity=int(order[2])
+        if 1<=quantity<=2 and quantity<=cap-state['confirmed']:
+            order[1]='COW';state['requested']+=quantity
+            state['pending_buy']={'before':int(shed.get('COW',0)),'quantity':quantity}
+    # Sell only additional physically harvested production at an existing sale slot.
+    if state['milk_credit']>0:
+        stock=projected_shed(result,FarmView(obs))
+        total_planned=sum(max(0,int(o[2])) for o in market if len(o)>=3 and o[:2]==['SELL','MILK'])
+        extra=min(state['milk_credit'],max(0,int(stock.get('MILK',0))-total_planned))
+        if extra:
+            for order in market:
+                if len(order)>=3 and order[:2]==['SELL','MILK'] and int(order[2])>0:
+                    order[2]=int(order[2])+extra
+                    state['milk_credit']-=extra;state['extra_milk_sale_requests']+=extra
+                    break
+    result['market']=market
+    return result
+
+def agent(observation,configuration=None):
+    step=int(observation['step']);seat=int(observation['player'])
+    state=_V231_STATES.get(seat)
+    if state is None or step<=state['last']:
+        state=_V231_STATES[seat]=_v231_new_state()
+    action=_V231_PARENT(observation,configuration)
+    action=_v231_controller(observation,action,state,_V231_CAP)
+    _V231_REPORT.clear();_V231_REPORT.update(_V231_PARENT.telemetry)
+    for name in ('confirmed','reserved','requested','failed_purchase_units','picked','placed',
+                 'failed_placements','extra_milk_harvested','extra_milk_sale_requests','milk_credit'):
+        _V231_REPORT['cattle_'+name]=state[name]
+    _V231_REPORT['cattle_carried_pending']=sum(state['carrying'].values())
+    return action
+
+agent.telemetry=_V231_REPORT
+
+
+# EXP-167, adapted from Dmitrii Gluzdov's Two Coins, One Sheep (Apache-2.0).
+# Reserve only physically available stock after the final parent worker actions.
+_R36_SALE_PARENT=agent
+_R36_NATIVE_LEAD=Chassis._sell_lead
+_R36_NATIVE_SUPPRESS=Chassis._apply_suppression
+_R36_SALE_REPORT={}
+
+def _r36_native_lead(self,action,view,projected,route,step,next_sup):
+    if step<288 or step>=696:
+        return _R36_NATIVE_LEAD(self,action,view,projected,route,step,next_sup)
+
+def _r36_suppress(action,state,step):
+    _R36_NATIVE_SUPPRESS(action,state,step)
+    due=state.get('r36_debts',{}).pop(step,{})
+    for order in action.get('market',[]):
+        if len(order)>=3 and order[0]=='SELL':
+            removed=min(max(0,int(order[2])),due.get(order[1],0))
+            order[2]-=removed
+            due[order[1]]=due.get(order[1],0)-removed
+
+Chassis._sell_lead=_r36_native_lead
+Chassis._apply_suppression=staticmethod(_r36_suppress)
+
+"""Whitelisted observable features for a one-option economic critic.
+
+Original project code, Apache-2.0. No seed, opponent identity, future observation,
+opponent private inventory or simulator internals enters this representation.
+"""
+_ML_PRODUCTS = ('WHEAT', 'CARROT', 'TOMATO', 'STRAWBERRY', 'MELON', 'EGG', 'MILK', 'WOOL', 'FERTILIZER')
+_ML_SPECIES = ('WHEAT', 'CARROT', 'TOMATO', 'STRAWBERRY', 'MELON', 'GOOSE', 'COW', 'SHEEP')
+_ML_SHOP_NAMES = ('BAKERY', 'PIZZA_SHOP', 'BRUNCH_SPOT', 'YARN_STORE',
+                  'ICE_CREAM_SHOP', 'PET_CAFE', 'SMOOTHIE_SHOP', 'FARMERS_MARKET')
+_ML_FEATURE_NAMES = ['public_layout_similarity', 'cash_difference']
+for _role in ('own', 'rival'):
+    _ML_FEATURE_NAMES += [_role + '_' + k for k in ('cash', 'workers', 'land', 'weeds')]
+    for _species in _ML_SPECIES:
+        _ML_FEATURE_NAMES += [_role + '_' + _species + '_count', _role + '_' + _species + '_ripe']
+for _item in _ML_PRODUCTS:
+    _ML_FEATURE_NAMES += [_item + '_' + k for k in ('price', 'inventory', 'change48', 'own_shed', 'own_carried')]
+_ML_FEATURE_NAMES += ['shops_' + s for s in _ML_SHOP_NAMES]
+
+
+def _ml_features(obs, previous_inventory):
+    seat = int(obs['player'])
+    own, rival = obs['farms'][seat], obs['farms'][1 - seat]
+    matching = occupied = 0
+    for row_a, row_b in zip(own['tiles'], rival['tiles']):
+        for a, b in zip(row_a, row_b):
+            a = (a.get('crop'), a.get('animal')) if isinstance(a, dict) else (None, None)
+            b = (b.get('crop'), b.get('animal')) if isinstance(b, dict) else (None, None)
+            if a != (None, None) or b != (None, None):
+                occupied += 1
+                matching += a == b
+    features = [matching / max(1, occupied), (own['money'] - rival['money']) / 100000]
+    for farm in (own, rival):
+        tiles = [t for row in farm['tiles'] for t in row if isinstance(t, dict)]
+        features += [farm['money'] / 100000, len(farm['hands']) / 20,
+                     len(farm['unlocked_quadrants']) / 4,
+                     sum(t.get('kind') == 'WEED' for t in tiles) / 100]
+        for species in _ML_SPECIES:
+            members = [t for t in tiles if t.get('crop') == species or t.get('animal') == species]
+            features += [len(members) / 100, sum(t.get('yield_units', 0) for t in members) / 100]
+    market = obs['market']
+    for item in _ML_PRODUCTS:
+        features += [market['prices'][item] / 500,
+                     (market['inventory'][item] - 10000) / 1000,
+                     (market['inventory'][item] - previous_inventory.get(item, market['inventory'][item])) / 100,
+                     obs['private']['shed'].get(item, 0) / 100,
+                     sum(inv.get(item, 0) for inv in obs['private']['inventories']) / 100]
+    features += [obs['town']['unlocked_shops'].count(shop) / 8 for shop in _ML_SHOP_NAMES]
+    return features
+
+"""Learned option selection; embedded with model weights into a stdlib-only bot."""
+_ML_PLAYERS = {}
+_ML_OPTIONS = (0, 2, 8, 12, 18)  # 0 retains matched6's adaptive 4/6-turn policy
+_ML_REPORT = {}
+
+
+def _ml_tree_predict(tree, features):
+    # sklearn converts inputs to float32 before branching. Match its decisions
+    # exactly while keeping the submitted policy independent of numpy/sklearn.
+    import struct
+    node = 0
+    while tree['left'][node] != -1:
+        index = tree['feature'][node]
+        value = struct.unpack('f', struct.pack('f', features[index]))[0]
+        node = tree['left'][node] if value <= tree['threshold'][node] else tree['right'][node]
+    return tree['value'][node]
+
+
+def _ml_choose(features, model):
+    predictions = [_ml_tree_predict(t, features) for t in model['trees']]
+    scores = [0.0]
+    for option in range(1, len(_ML_OPTIONS)):
+        values = sorted(row[option] for row in predictions)
+        scores.append(values[int(model['quantile'] * (len(values) - 1))])
+    best = max(range(len(scores)), key=scores.__getitem__)
+    return best if scores[best] > model['threshold'] else 0
+
+
+def _ml_before(obs, config):
+    seat, step = int(obs['player']), int(obs['step'])
+    st = _ML_PLAYERS.get(seat)
+    if st is None or step <= st['step']:
+        st = _ML_PLAYERS[seat] = {'step': -1, 'option': 0, 'features': None, 'inventory_288': {}}
+        _ML_REPORT.clear()
+        _ML_REPORT.update(ml_option=0, ml_decisions=0, ml_changed_horizons=0, ml_errors=0)
+    st['step'] = step
+    if step == 288:
+        st['inventory_288'] = dict(obs['market']['inventory'])
+    if step != 336:
+        return
+    st['features'] = _ml_features(obs, st['inventory_288'])
+    supported = all((config or {}).get(k, v) == v for k, v in
+                    [('boardSize', 10), ('episodeSteps', 720), ('turnsPerDay', 24),
+                     ('shedCapacity', 100), ('maxMarketOrdersPerTurn', 10)])
+    if not supported:
+        return
+    if _ML_FORCE_OPTION is not None:
+        st['option'] = _ML_FORCE_OPTION
+    elif _ML_MODEL is not None:
+        st['option'] = _ml_choose(st['features'], _ML_MODEL)
+    _ML_REPORT.update(ml_option=st['option'], ml_decisions=1)
+
+
+def _ml_horizon(obs, native):
+    st = _ML_PLAYERS.get(int(obs['player']))
+    if not st or not st['option']:
+        return native
+    horizon = _ML_OPTIONS[st['option']]
+    _ML_REPORT['ml_changed_horizons'] += int(horizon != native)
+    return horizon
+
+
+def _r36_reserve(obs,action):
+    step=int(obs['step'])
+    # The final planner forecasts its own parent, so keep its full window native.
+    if not 288<=step<696:return action
+    native=_IMPL.chassis.players[int(obs['player'])]
+    tape=_IMPL.chassis.routes[native['route']]
+    end=min(695,step+_R37_HORIZONS.get(int(obs['player']),2),(step//72+1)*72-1)
+    if end<=step:return action
+    commands=[action.get('farmer') or ['PASS'],*(action.get('hands') or [])]
+    view=FarmView(obs)
+    # This projection intentionally abstains on ambiguous animal depot returns.
+    if any(len(c)>1 and c[0]=='PLACE' and c[1] in ANIMAL_STRUCTURE
+           and view.inv(i).get(c[1],0)>0 for i,c in enumerate(commands[:len(view.positions)])):
+        return action
+    stock=projected_shed(action,view)
+    market=action.get('market',[])
+    blocked={o[1] for o in market if len(o)>1 and o[0] in ('SELL','BUY_PRODUCT')}
+    blocked.update(c[1] for c in commands if len(c)>1 and c[0]=='PICKUP')
+    blocked.update(c[1] for queue in native['pending'].values() for pos,c in queue
+                   if len(c)>1 and c[0]=='PICKUP')
+    debts=native['sell_state'].setdefault('r36_debts',{})
+    for item in PRODUCTS:
+        if item in ('WHEAT','FERTILIZER') or item in blocked or view.prices.get(item,0)<2:continue
+        available=max(0,int(stock.get(item,0)))
+        if not available or len(market)>=10:continue
+        reservations=[]
+        for due_step in range(step+1,end+1):
+            future=tape[due_step]
+            work=[future.get('farmer') or ['PASS'],*(future.get('hands') or [])]
+            if any(len(c)>1 and c[:2]==['PICKUP',item] for c in work):break
+            if any(len(o)>1 and o[:2]==['BUY_PRODUCT',item] for o in future.get('market',[])):break
+            planned=sum(max(0,int(o[2])) for o in future.get('market',[]) if len(o)>=3 and o[:2]==['SELL',item])
+            amount=min(available,max(0,planned-debts.get(due_step,{}).get(item,0)))
+            if amount:
+                reservations.append((due_step,amount));available-=amount
+            if not available:break
+        qty=sum(q for _,q in reservations)
+        if qty:
+            market.append(['SELL',item,qty])
+            for due,q in reservations:
+                debt=debts.setdefault(due,{})
+                debt[item]=debt.get(item,0)+q
+            _R36_SALE_REPORT['sale_reserved_units']+=qty
+            _R36_SALE_REPORT['sale_reservations']+=1
+    return action
+
+def agent(observation,configuration=None):
+    if int(observation.get('step',0))==0:
+        _R36_SALE_REPORT.update(sale_reserved_units=0,sale_reservations=0,sale_errors=0)
+    action=_R36_SALE_PARENT(observation,configuration)
+    try:
+        if configuration is None or all(configuration.get(k,v)==v for k,v in
+            [('boardSize',10),('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10)]):
+            action=_r36_reserve(observation,action)
+            if int(observation['step'])>=288:action=_v224_sales_first(action)
+    except Exception:
+        _R36_SALE_REPORT['sale_errors']=_R36_SALE_REPORT.get('sale_errors',0)+1
+    _R36_SALE_REPORT.update(_R36_SALE_PARENT.telemetry)
+    return action
+
+agent.telemetry=_R36_SALE_REPORT
+
+# Ensure the Kaggle-selected final callable is the exported policy.
+agent = globals().pop("agent")
+
+
+# Public capability transfer: lucifer19; Flexon is the same Two Coins asset set.
+# Apache-2.0; exact functions from Kaggle kaggle-environments 1.32.7.
+# https://github.com/Kaggle/kaggle-environments/tree/master/kaggle_environments/envs/kaggriculture
+import math
+_R37_MARKET_PARAMS = {'WHEAT': {'base': 25, 'I0': 10000, 'T': 400, 'below_func': 'sqrt', 'below_target': 0.8, 'above_func': 'log', 'above_target': 0.2}, 'CARROT': {'base': 35, 'I0': 10000, 'T': 450, 'below_func': 'hinge', 'below_target': 1.0, 'above_func': 'sqrt', 'above_target': 0.7}, 'TOMATO': {'base': 60, 'I0': 10000, 'T': 200, 'below_func': 'hinge', 'below_target': 0.4, 'above_func': 'sqrt', 'above_target': 0.6}, 'STRAWBERRY': {'base': 120, 'I0': 10000, 'T': 100, 'below_func': 'sqrt', 'below_target': 0.7, 'above_func': 'linear', 'above_target': 1.6}, 'MELON': {'base': 250, 'I0': 10000, 'T': 300, 'below_func': 'log', 'below_target': 0.2, 'above_func': 'sq', 'above_target': 3.6}, 'EGG': {'base': 50, 'I0': 10000, 'T': 332, 'below_func': 'hinge', 'below_target': 0.4, 'above_func': 'log', 'above_target': 0.2}, 'MILK': {'base': 160, 'I0': 10000, 'T': 122, 'below_func': 'sqrt', 'below_target': 0.6, 'above_func': 'linear', 'above_target': 1.6}, 'WOOL': {'base': 200, 'I0': 10000, 'T': 105, 'below_func': 'log', 'below_target': 0.2, 'above_func': 'sq', 'above_target': 3.2}, 'FERTILIZER': {'base': 100, 'I0': 10000, 'T': 200, 'below_func': 'linear', 'below_target': 0.4, 'above_func': 'linear', 'above_target': 0.4}}
+_R37_PRICE_FLOOR = 1
+_R37_HINGE_GAIN = 8.0
+def _r37_shape(func, x, T=None):
+    x = max(0.0, x)
+    if func == "linear": return x
+    if func == "sq":     return x * x
+    if func == "sqrt":   return math.sqrt(x)
+    if func == "log":    return math.log(1.0 + x)
+    if func == "log10":  return math.log10(1.0 + x)
+    if func == "hinge":
+        # Degenerates to linear if T is missing or non-positive.
+        if not T or T <= 0:
+            return x
+        u = x / T
+        return u + _R37_HINGE_GAIN * max(0.0, u - 1.0) ** 2
+    return x
+
+def _r37_market_price(item, inventory, params=None):
+    """Floor at _R37_PRICE_FLOOR."""
+    p = (params or _R37_MARKET_PARAMS)[item]
+    base = p["base"]
+    I0 = p["I0"]
+    T = p["T"]
+    if inventory < I0:
+        f = p["below_func"]
+        amp = p["below_target"] * base / _r37_shape(f, T, T)
+        price = base + amp * _r37_shape(f, I0 - inventory, T)
+    else:
+        f = p["above_func"]
+        amp = p["above_target"] * base / _r37_shape(f, T, T)
+        price = base - amp * _r37_shape(f, inventory - I0, T)
+    return max(_R37_PRICE_FLOOR, int(round(price)))
+
+def _r37_similarity(observation):
+    """Empty tiles cannot make two unrelated production layouts look alike."""
+    farms = observation['farms']
+    own, rival = farms[observation['player']], farms[1-observation['player']]
+    if own['unlocked_quadrants'] != rival['unlocked_quadrants']:
+        return 0.0
+    matches = total = 0
+    for a, b in zip([t for row in own['tiles'] for t in row],
+                    [t for row in rival['tiles'] for t in row]):
+        sa = (a.get('crop'), a.get('animal')) if isinstance(a, dict) else (None, None)
+        sb = (b.get('crop'), b.get('animal')) if isinstance(b, dict) else (None, None)
+        if sa != (None, None) or sb != (None, None):
+            total += 1
+            matches += sa == sb
+    return matches / total if total >= 8 else 0.0
+
+
+def _r37_quote_priority(observation, order, stock):
+    """Revenue exposed to a small rival batch, not nominal headline revenue."""
+    item = order[1]
+    quantity = min(max(0, int(order[2])), stock.get(item, 0))
+    if not quantity or item not in _R37_MARKET_PARAMS:
+        return 0.0
+    inventory = observation['market']['inventory'][item]
+    params = {k: dict(v) for k, v in _R37_MARKET_PARAMS.items()}
+    for k, patch in observation['market'].get('params', {}).items():
+        if k in params:
+            params[k].update(patch)
+    rival = observation['farms'][1-observation['player']]
+    crop_item = item if item in ('WHEAT','CARROT','TOMATO','STRAWBERRY','MELON') else None
+    animal = {'EGG':'GOOSE','MILK':'COW','WOOL':'SHEEP'}.get(item)
+    standing = sum(max(0, int(t.get('yield_units', 0))) for row in rival['tiles'] for t in row
+                   if isinstance(t, dict) and
+                   ((crop_item is not None and t.get('crop') == crop_item) or
+                    (animal is not None and t.get('animal') == animal)))
+    # Public fields do not reveal the rival shed. Eight units are a scenario,
+    # not a recovered hidden quantity; visible ripe yield increases the stress.
+    batch = min(24, max(8, standing))
+    now = sum(_r37_market_price(item, inventory+j, params) for j in range(quantity))
+    later = sum(_r37_market_price(item, inventory+batch+j, params) for j in range(quantity))
+    return now-later
+
+
+def _r37_reorder_sales(observation, action):
+    """Keep quantities and purchase barriers; rank distinct contiguous sales."""
+    stock = projected_shed(action, FarmView(observation))
+    orders = [list(o) for o in action['market']]
+    start = 0
+    while start < len(orders):
+        if orders[start][0] != 'SELL':
+            start += 1
+            continue
+        end = start
+        while end < len(orders) and orders[end][0] == 'SELL':
+            end += 1
+        block = orders[start:end]
+        if len({o[1] for o in block}) == len(block):
+            orders[start:end] = sorted(block, key=lambda o: _r37_quote_priority(observation, o, stock), reverse=True)
+        start = end
+    if orders != action['market']:
+        _R37_STATS['quote_reordered_turns'] += 1
+        action = dict(action, market=orders)
+    return action
+
+
+
+# EXP175: bounded public cash-response probe inspired by leoprovorov,
+# Two Coins Mirror Counter v1 (Apache-2.0). No hidden rival inventory.
+_R44_PROBES={}
+_R44_REPORT=dict(probe_matches=0,probe_four_turn_calls=0,probe_errors=0)
+
+def _r44_before(obs):
+    player=int(obs['player']);step=int(obs['step'])
+    st=_R44_PROBES.get(player)
+    if st is None or step<=st['step']:
+        st=_R44_PROBES[player]={'step':-1,'money':None,'probe':0,'matched':False}
+    if step==0:_R44_REPORT.update(probe_matches=0,probe_four_turn_calls=0,probe_errors=0)
+    money=tuple(float(obs['farms'][i]['money']) for i in (player,1-player))
+    if st['money'] is not None and st['probe']>=100 and _r37_similarity(obs)>=.90:
+        own=money[0]-st['money'][0];rival=money[1]-st['money'][1]
+        if own>0 and rival>0 and abs(own-rival)<=max(5.0,.05*st['probe']):
+            if not st['matched']:_R44_REPORT['probe_matches']+=1
+            st['matched']=True
+    st.update(step=step,money=money,probe=0)
+    return st
+
+def _r44_after(obs,action,st):
+    step=int(obs['step']);player=int(obs['player'])
+    if not 336<=step<648 or st['matched']:return
+    # Positive all-sale probes avoid mistaking equal spending for preemption.
+    if not action['market'] or any(o and o[0]!='SELL' for o in action['market']):return
+    debts=_IMPL.chassis.players[player]['sell_state'].get('r36_debts',{})
+    own=debts.get(step+3,{})
+    if own:st['probe']=sum(max(0,int(n))*int(obs['market']['prices'].get(item,0)) for item,n in own.items())
+
+_R37_ADAPTIVE = True
+_R37_QUOTE = True
+# EXP-168: adapted from lucifer19 / Harvest Nocturne, Apache-2.0.
+# All rivalry features use public occupied tiles; no private rival inventory.
+_R37_PARENT = agent
+_R37_PLAYERS = {}
+_R37_HORIZONS = {}
+_R37_REPORT = {}
+_R37_STATS = dict(quote_reordered_turns=0, three_turn_calls=0, nocturne_errors=0)
+del agent
+
+def agent(observation, configuration=None):
+    player, step = int(observation['player']), int(observation['step'])
+    state = _R37_PLAYERS.get(player)
+    if state is None or step <= state['step']:
+        state = _R37_PLAYERS[player] = {'step': -1, 'streak': 0}
+    if step == 0:
+        _R37_STATS.update(quote_reordered_turns=0, three_turn_calls=0, nocturne_errors=0)
+    state['step'] = step
+    _R37_HORIZONS[player] = 2
+    probe_state=_r44_before(observation)
+    try:
+        if _R37_ADAPTIVE and step < 648:
+            state['streak'] = state['streak'] + 1 if _r37_similarity(observation) >= .90 else 0
+            if 336 <= step < 648 and state['streak'] >= 6:
+                _R37_HORIZONS[player] = 3
+                _R37_STATS['three_turn_calls'] += 1
+    except Exception:
+        _R37_STATS['nocturne_errors'] += 1
+    if _R37_HORIZONS[player]==3 and probe_state['matched']:
+        _R37_HORIZONS[player]=4
+        _R44_REPORT['probe_four_turn_calls']+=1
+    # EXP179: four-turn reservation; retain stock, debt and purchase barriers.
+    if 288 <= step < 696:_R37_HORIZONS[player] = 6 if 336 <= step < 648 and state["streak"] >= 6 else 4
+    if 336 <= step < 648:_R37_HORIZONS[player] = _ml_horizon(observation,_R37_HORIZONS[player])
+    action = _R37_PARENT(observation, configuration)
+    _r44_after(observation,action,probe_state)
+    if _R37_QUOTE and step >= 288:
+        try:
+            action = _r37_reorder_sales(observation, action)
+        except Exception:
+            _R37_STATS['nocturne_errors'] += 1
+    _R37_REPORT.update(getattr(_R37_PARENT, 'telemetry', {}))
+    _R37_REPORT.update(_R37_STATS)
+    _R37_REPORT.update(_R44_REPORT)
+    return action
+
+agent.telemetry = _R37_REPORT
+
+# Export guard: normal decisions stay identical to the frozen screened policy.
+_RELEASE_PARENT=agent
+_RELEASE_REPORT={}
+_RELEASE_ERRORS=0
+del agent
+
+def agent(observation,configuration=None):
+    global _RELEASE_ERRORS
+    try:
+        result=_RELEASE_PARENT(observation,configuration)
+    except Exception:
+        _RELEASE_ERRORS+=1
+        count=0
+        try:
+            count=min(64,len(observation['farms'][int(observation['player'])]['hands']))
+        except Exception:
+            pass
+        result={'farmer':['PASS'],'hands':[['PASS'] for _ in range(count)],'market':[]}
+    _RELEASE_REPORT.update(getattr(_RELEASE_PARENT,'telemetry',{}))
+    _RELEASE_REPORT['release_errors']=_RELEASE_ERRORS
+    return result
+
+agent.telemetry=_RELEASE_REPORT
+agent=globals().pop('agent')
+
+# Adapted from prvsiyan / The Soil Remembers Rain, Apache-2.0.
+# V233: bounded, financed six-sheep SE discovery investment.
+_V233_PARENT=agent
+del agent
+_V233_STATES={}
+_V233_REPORT=dict(sheep_commit_requests=0,sheep_committed=0,sheep_hire_requests=0,
+    sheep_workers_confirmed=0,sheep_hire_shortfalls=0,sheep_budget_declines=0,
+    sheep_capacity_declines=0,sheep_purchase_shortfalls=0,sheep_feed_buy_requests=0,
+    sheep_wool_harvested=0,sheep_fert_collected=0,sheep_extra_wool_sales=0,
+    sheep_extra_fert_sales=0,sheep_rescue_feed_requests=0)
+
+def _v233_eligible(obs,native):
+    farm=obs['farms'][obs['player']];prices=obs['market']['prices']
+    if len(farm['tiles'])!=10 or set(farm['unlocked_quadrants'])!={'NW','NE','SW'}:return False
+    if obs['town']['unlocked_shops'].count('YARN_STORE')<2 or prices['WOOL']<220 or prices['WHEAT']>45:return False
+    if any(farm['tiles'][y][x]!='LOCKED' for y in (5,6) for x in range(5,8)):return False
+    if obs['private']['shed'].get('SHEEP',0) or any(i.get('SHEEP',0) for i in obs['private']['inventories']):return False
+    for day in range(12,30):
+        for a in _v219_native_day(native,day):
+            if any(o and (o[0]=='BUY_LAND' or o[:2]==['BUY_ANIMAL','SHEEP']) for o in a.get('market',[])):return False
+            if any(c and c[0] in ('PICKUP','PLACE') and len(c)>1 and c[1]=='SHEEP' for c in [a.get('farmer')]+a.get('hands',[])):return False
+    return True
+
+def _v233_request(obs,action,state,native):
+    step=int(obs['step']);day=step//24;hour=step%24
+    if hour>(2 if state.get('committed') else 1) or state.get('requested_day')==day:return action
+    if not state.get('committed') and (day!=12 or not _v233_eligible(obs,native)):return action
+    planned=_v219_native_day(native,day)
+    if any(o and o[0]=='HIRE' for a in planned[hour+1:] for o in a.get('market',[])):return action
+    farm=obs['farms'][obs['player']];market=action.get('market',[])
+    parent_hires=sum(bool(o) and o[0]=='HIRE' for o in market)
+    expected=max(len(a.get('hands',[])) for a in planned)
+    if len(farm['hands'])+parent_hires!=expected:return action
+    initial=not state.get('committed')
+    extra=([['BUY_LAND'],['BUY_ANIMAL','SHEEP',6]] if initial else [])+[['BUY_PRODUCT','WHEAT',6],['HIRE'],['HIRE']]
+    if len(market)+len(extra)>MAX_ORDERS:return action
+    stock=projected_shed(action,FarmView(obs))
+    incoming=6+6*initial
+    budget=7000*initial+6*(int(obs['market']['prices']['WHEAT'])+10)
+    budget+=sum(_v219_fib(n) for n in range(farm['hires_today'],farm['hires_today']+parent_hires+2))
+    for o in market:
+        if not o:continue
+        if o[0]=='BUY_LAND':return action
+        if o[0]=='BUY_PRODUCT':
+            incoming+=int(o[2]);budget+=int(o[2])*(int(obs['market']['prices'][o[1]])+10)
+        elif o[0]=='BUY_ANIMAL':
+            incoming+=int(o[2]);budget+=int(o[2])*{'SHEEP':500,'COW':400,'GOOSE':300}[o[1]]
+        elif o[0]=='BUY_SEED':budget+=int(o[2])*{'WHEAT':10,'CARROT':20,'TOMATO':50,'STRAWBERRY':100,'MELON':80}[o[1]]
+    if sum(stock.values())+incoming>100:
+        _V233_REPORT['sheep_capacity_declines']+=1;return action
+    if farm['money']<budget+(3000 if initial else 1000):
+        _V233_REPORT['sheep_budget_declines']+=1;return action
+    state['requested_day']=day
+    state['pending']={'first':expected+1,'initial':initial}
+    _V233_REPORT['sheep_hire_requests']+=2;_V233_REPORT['sheep_feed_buy_requests']+=6
+    if initial:_V233_REPORT['sheep_commit_requests']+=1
+    result=copy.deepcopy(action);result['market']=market+extra
+    return result
+
+def _v233_worker(obs,actor,targets):
+    farm=obs['farms'][obs['player']];private=obs['private'];step=int(obs['step'])
+    pos=tuple(farm['hands'][actor-1]);inv=private['inventories'][actor]
+    access=((4,4),(5,4),(4,5),(5,5))
+    home=min(access,key=lambda p:(abs(pos[0]-p[0])+abs(pos[1]-p[1]),p))
+    distance=abs(pos[0]-home[0])+abs(pos[1]-home[1])
+    cargo=[item for item in ('WOOL','FERTILIZER') if inv.get(item,0)]
+    if cargo and step%24 >= (22 if step//24==29 else 23)-distance:
+        return _v219_walk(pos,home) or ['PLACE',cargo[0],inv[cargo[0]]]
+    missing=sum(not(isinstance(farm['tiles'][y][x],dict) and farm['tiles'][y][x].get('animal')=='SHEEP') for x,y in targets)
+    if missing and not inv.get('SHEEP',0) and private['shed'].get('SHEEP',0):
+        return _v219_walk(pos,home) or ['PICKUP','SHEEP',min(missing,private['shed']['SHEEP'])]
+    hungry=sum(not(isinstance(farm['tiles'][y][x],dict) and farm['tiles'][y][x].get('fed_today')) for x,y in targets)
+    if hungry and not inv.get('WHEAT',0) and private['shed'].get('WHEAT',0):
+        return _v219_walk(pos,home) or ['PICKUP','WHEAT',min(hungry,private['shed']['WHEAT'])]
+    tasks=[]
+    for target in targets:
+        x,y=target;tile=farm['tiles'][y][x];command=None
+        if tile is None:command=['BUILD_PASTURE']
+        elif isinstance(tile,dict) and tile.get('kind')=='WEED':command=['DIG']
+        elif isinstance(tile,dict) and tile.get('kind')=='PASTURE' and not tile.get('animal'):
+            if inv.get('SHEEP',0):command=['PLACE','SHEEP']
+        elif isinstance(tile,dict) and tile.get('animal')=='SHEEP':
+            if not tile['fed_today'] and inv.get('WHEAT',0):command=['FEED']
+            elif not tile['cared_today']:command=['CARE']
+            elif tile['yield_units']:command=['HARVEST']
+            elif tile['fertilizer_available']:command=['COLLECT_FERTILIZER']
+        if command:tasks.append((abs(pos[0]-x)+abs(pos[1]-y),targets.index(target),target,command))
+    if tasks:
+        _,_,target,command=min(tasks);return _v219_walk(pos,target) or command
+    if cargo:return _v219_walk(pos,home) or ['PLACE',cargo[0],inv[cargo[0]]]
+    return ['PASS']
+
+def _v234_rescue(obs,action,state):
+    if not state['workers'] or int(obs['step'])%24>14:return action
+    orders=action.get('market',[])
+    if len(orders)>=MAX_ORDERS:return action
+    if any(o and (o[0] in ('HIRE','BUY_LAND','BUY_ANIMAL','BUY_PRODUCT','BUY_SEED') or (len(o)>1 and o[1]=='WHEAT')) for o in orders):return action
+    farm=obs['farms'][obs['player']];private=obs['private'];hungry=carried=0
+    commands=[action.get('farmer') or ['PASS']]+list(action.get('hands') or [])
+    for actor,targets in state['workers'].items():
+        command=commands[actor]
+        if command==['FEED'] or command[:2]==['PICKUP','WHEAT']:return action
+        carried+=private['inventories'][actor].get('WHEAT',0)
+        hungry+=sum(isinstance(farm['tiles'][y][x],dict) and farm['tiles'][y][x].get('animal')=='SHEEP' and not farm['tiles'][y][x].get('fed_today') for x,y in targets)
+    stock=projected_shed(action,FarmView(obs))
+    shortage=hungry-carried-stock.get('WHEAT',0)
+    if not 0<shortage<=6 or state.get('rescue_today',0)+shortage>6:return action
+    quote=int(obs['market']['prices']['WHEAT'])
+    if quote<1 or farm['money']<1000+shortage*(quote+10) or sum(stock.values())+shortage>100:return action
+    result=copy.deepcopy(action);result['market'].append(['BUY_PRODUCT','WHEAT',shortage])
+    state['rescue_today']=state.get('rescue_today',0)+shortage
+    _V233_REPORT['sheep_rescue_feed_requests']+=shortage
+    return result
+
+def agent(observation,configuration=None):
+    action=_V233_PARENT(observation,configuration)
+    step=int(observation['step']);player=int(observation['player']);day=step//24
+    state=_V233_STATES.get(player)
+    if state is None or step<=state['last_step']:
+        state={'last_step':step,'day':-1,'workers':{},'work':{},'credit':{'WOOL':0,'FERTILIZER':0}}
+        _V233_STATES[player]=state
+    state['last_step']=step
+    if configuration is not None and any(configuration.get(k,v)!=v for k,v in
+        (('boardSize',10),('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10))):return action
+    if day<12:return action
+    farm=observation['farms'][player];private=observation['private']
+    if state['day']!=day:state['day']=day;state['workers']={};state['work']={};state['rescue_today']=0
+    for actor,previous in state['work'].items():
+        if previous['step']!=step-1 or actor>=len(private['inventories']):continue
+        item={'HARVEST':'WOOL','COLLECT_FERTILIZER':'FERTILIZER'}.get(previous['command'][0])
+        if item:
+            gained=max(0,private['inventories'][actor].get(item,0)-previous['inventory'].get(item,0))
+            state['credit'][item]+=gained
+            _V233_REPORT['sheep_wool_harvested' if item=='WOOL' else 'sheep_fert_collected']+=gained
+    pending=state.pop('pending',None)
+    if pending:
+        funded='SE' in farm['unlocked_quadrants'] and (not pending['initial'] or private['shed'].get('SHEEP',0)>=6)
+        if not funded:_V233_REPORT['sheep_purchase_shortfalls']+=1
+        elif len(farm['hands'])<pending['first']+1:_V233_REPORT['sheep_hire_shortfalls']+=1
+        else:
+            for i in range(2):state['workers'][pending['first']+i]=[(x,5+i) for x in range(5,8)]
+            _V233_REPORT['sheep_workers_confirmed']+=2
+            if pending['initial']:state['committed']=True;_V233_REPORT['sheep_committed']+=1
+    action=_v233_request(observation,action,state,_IMPL.chassis.players[player])
+    if not state.get('committed'):return action
+    result=copy.deepcopy(action)
+    commands=[result.get('farmer') or ['PASS']]+list(result.get('hands') or [])
+    commands += [['PASS'] for _ in range(len(farm['hands'])+1-len(commands))]
+    state['work']={}
+    for actor,targets in state['workers'].items():
+        command=_v233_worker(observation,actor,targets);commands[actor]=command
+        state['work'][actor]={'step':step,'command':command,'inventory':dict(private['inventories'][actor])}
+    result['farmer'],result['hands']=commands[0],commands[1:]
+    result=_v234_rescue(observation,result,state)
+    stock=projected_shed(result,FarmView(observation))
+    for item in ('WOOL','FERTILIZER'):
+        scheduled=sum(int(o[2]) for o in result['market'] if o[:2]==['SELL',item])
+        count=min(state['credit'][item],max(0,stock.get(item,0)-scheduled))
+        if count and len(result['market'])<MAX_ORDERS:
+            result['market'].append(['SELL',item,count]);state['credit'][item]-=count
+            _V233_REPORT['sheep_extra_wool_sales' if item=='WOOL' else 'sheep_extra_fert_sales']+=count
+    return result
+
+_R46_SHEEP_AGENT=agent
+_R46_SHADOW_PARENT=_shadow_terminal
+_R46_REPORT={}
+def _shadow_terminal(obs,config):
+    if _V233_STATES.get(int(obs['player']),{}).get('committed'):return None
+    return _R46_SHADOW_PARENT(obs,config)
+del agent
+def agent(observation,configuration=None):
+    try:
+        if int(observation.get('step',-1))==0:
+            for k in _V233_REPORT:_V233_REPORT[k]=0
+        result=_R46_SHEEP_AGENT(observation,configuration)
+    except Exception:
+        _R46_REPORT['sheep_overlay_errors']=_R46_REPORT.get('sheep_overlay_errors',0)+1
+        result={'farmer':['PASS'],'hands':[],'market':[]}
+    _R46_REPORT.update(getattr(_V233_PARENT,'telemetry',{}))
+    _R46_REPORT.update(_V233_REPORT)
+    return result
+agent.telemetry=_R46_REPORT
+agent=globals().pop('agent')
+
+# EXP182: finite-harvest wheat/carrot input planner; original adaptation.
+_R51_INPUT_PARENT=agent
+_R51_INPUT_STATES={}
+_R51_INPUT_REPORT={}
+_R51_INPUT_MAX_WORKERS=2
+_R51_INPUT_CROPS={'WHEAT':(2,4,6),'CARROT':(2,3,4)}
+
+def _r51_input_forecast(obs,route,expected):
+    step=int(obs['step']);day=step//24;farm=obs['farms'][obs['player']]
+    pos=[list(farm['farmer'])]+[list(p) for p in farm['hands'][:expected]];targets={}
+    for y,line in enumerate(farm['tiles']):
+        for x,tile in enumerate(line):
+            if not isinstance(tile,dict) or tile.get('crop') not in _R51_INPUT_CROPS:continue
+            item=tile['crop'];first,last,cap=_R51_INPUT_CROPS[item]
+            if 1<=day-tile['planted_day']<last:
+                targets[(x,y)]={'crop':item,'birth':tile['planted_day'],'yield':tile['yield_units'],
+                    'until':tile.get('fertilized_until_day',-1),'watered':tile.get('watered_today',False),'water':[],'harvest':None,'first':first,'last':last,'cap':cap}
+    access=((4,4),(5,4),(4,5),(5,5));seen=set()
+    # Native continuation ends before the reactive terminal closure planner.
+    for t in range(step,min(712,(day+4)*24)):
+        tape=_IMPL.chassis.routes[2 if t>=648 else route];a=tape[t]
+        for actor,c in enumerate([a.get('farmer') or ['PASS'],*(a.get('hands') or [])][:len(pos)]):
+            if not c:continue
+            xy=tuple(pos[actor]);target=targets.get(xy)
+            if target is not None and target['harvest'] is None:
+                if c[0]=='WATER' and (t//24,xy) not in seen:
+                    seen.add((t//24,xy))
+                    if not(t//24==day and target['watered']) and target['first']<=t//24-target['birth']<=target['last']:target['water'].append(t)
+                if c[0]=='HARVEST':target['harvest']=t
+            if c[0] in MOVES:
+                dx,dy=MOVES[c[0]];pos[actor]=[max(0,min(9,pos[actor][0]+dx)),max(0,min(9,pos[actor][1]+dy))]
+        for o in a.get('market',[]):
+            if o and o[0]=='HIRE':
+                counts={p:sum(tuple(q)==p for q in pos) for p in access}
+                pos.append(list(min(access,key=lambda p:(counts[p],access.index(p)))))
+        if (t+1)%24==0:pos=[[4,4]]
+    return targets
+
+def _r51_input_gain(target,arrival,day):
+    if target['harvest'] is None or target['harvest']<=arrival:return 0
+    extra=sum(arrival<t<=target['harvest'] and day<=t//24<=day+2 and t//24>target['until'] for t in target['water'])
+    baseline=target['yield']+sum(2 if t//24<=target['until'] else 1 for t in target['water'])
+    return max(0,min(extra,target['cap']-baseline))
+
+def _r51_input_path(obs,targets):
+    step=int(obs['step']);day=step//24;now=step+4;pos=(4,4);remaining=dict(targets);path=[];quantities={'WHEAT':0,'CARROT':0}
+    while remaining and len(path)<8:
+        options=[]
+        for xy,target in remaining.items():
+            arrival=now+abs(pos[0]-xy[0])+abs(pos[1]-xy[1]);gain=_r51_input_gain(target,arrival,day)
+            price=max(1,int(obs['market']['prices'][target['crop']])-2)
+            if gain and arrival<day*24+23:options.append((gain*price/(arrival-now+1),gain*price,-arrival,xy,arrival,gain))
+        if not options:break
+        _,_,_,xy,arrival,gain=max(options);target=remaining.pop(xy)
+        path.append((xy[0],xy[1],target['crop'],target['birth']));quantities[target['crop']]+=gain;now=arrival+1;pos=xy
+    return path,quantities
+
+def _r51_input_control(obs,action,state):
+    step=int(obs['step']);day=step//24;hour=step%24;player=int(obs['player']);farm=obs['farms'][player];private=obs['private']
+    native=_IMPL.chassis.players[player]
+    if state.get('day')!=day:state.update(day=day,workers={},pending=None,placed=[])
+    for x,y in state['placed']:
+        tile=farm['tiles'][y][x]
+        if isinstance(tile,dict) and tile.get('fertilized_until_day',-1)>=day+2:_R51_INPUT_REPORT['input_confirmed_applications']+=1
+        else:_R51_INPUT_REPORT['input_application_errors']+=1
+    state['placed']=[]
+    if state.get('pending'):
+        pending=state.pop('pending')
+        for actor,plan in pending.items():
+            if len(farm['hands'])>=actor:state['workers'][actor]=plan;_R51_INPUT_REPORT['input_confirmed_hires']+=1
+            else:_R51_INPUT_REPORT['input_hire_errors']+=1
+    if state['workers']:
+        changed=copy.deepcopy(action)
+        for actor,plan in state['workers'].items():
+            inv=private['inventories'][actor];pos=tuple(farm['hands'][actor-1]);cmd=['PASS']
+            if not plan['loaded']:
+                stock=projected_shed(changed,FarmView(obs));q=min(plan['quantity'],max(0,stock.get('FERTILIZER',0)))
+                if q and _shed_adjacent(pos,10):
+                    cmd=['PICKUP','FERTILIZER',q];plan['loaded']=True;_R51_INPUT_REPORT['input_loaded_units']+=q
+                    if q<plan['quantity']:_R51_INPUT_REPORT['input_stock_shortfalls']+=plan['quantity']-q
+            elif inv.get('FERTILIZER',0):
+                while plan['path']:
+                    x,y,crop,birth=plan['path'][0];tile=farm['tiles'][y][x]
+                    if not isinstance(tile,dict) or tile.get('crop')!=crop or tile.get('planted_day')!=birth or tile.get('fertilized_until_day',-1)>=day+2:
+                        plan['path'].pop(0);continue
+                    cmd=_v219_walk(pos,(x,y)) or ['FERTILIZE']
+                    if cmd==['FERTILIZE']:state['placed'].append((x,y));plan['path'].pop(0);_R51_INPUT_REPORT['input_application_requests']+=1
+                    break
+            changed['hands'][actor-1]=cmd
+        return changed
+    if hour not in (1,2,3) or not 12<=day<=28:return action
+    planned=_v219_native_day(native,day);expected=max(len(a.get('hands',[])) for a in planned)
+    if any(o and o[0]=='HIRE' for a in planned[hour:] for o in a.get('market',[])) or native['pending']:return action
+    parents=[_V219_STATES.get(player,{}),_V233_STATES.get(player,{})]
+    # A parent may retry after a full market queue; its headcount must remain native.
+    if day in (12,18) or any(p.get('committed') and p.get('requested_day')!=day for p in parents):return action
+    if any(p.get('pending') for p in parents) or any(o and o[0]=='HIRE' for o in action.get('market',[])):return action
+    owned=set(range(1,expected+1))
+    for p in parents:
+        actors=set(p.get('workers',{}))
+        if owned&actors:return action
+        owned|=actors
+    if owned!=set(range(1,len(farm['hands'])+1)):return action
+    targets=_r51_input_forecast(obs,native['route'],expected);plans=[];total_q=0;total_cost=0;all_units={'WHEAT':0,'CARROT':0}
+    stock=projected_shed(action,FarmView(obs));purchases=sum(max(0,int(o[2])) for o in action.get('market',[]) if len(o)>2 and o[0] in ('BUY_PRODUCT','BUY_ANIMAL'))
+    # Units act before market orders. Preserve the native next-turn pickup,
+    # after the current parent's actual sales/purchases, before buying tour inputs.
+    available=max(0,stock.get('FERTILIZER',0))
+    for o in action.get('market',[]):
+        if len(o)>=3 and o[:2]==['SELL','FERTILIZER']:available=max(0,available-max(0,int(o[2])))
+        elif len(o)>=3 and o[:2]==['BUY_PRODUCT','FERTILIZER']:available+=max(0,int(o[2]))
+    next_native=planned[hour+1];native_pickups=sum(max(0,int(c[2]) if len(c)>2 else 1) for c in [next_native.get('farmer') or ['PASS'],*(next_native.get('hands') or [])] if len(c)>1 and c[:2]==['PICKUP','FERTILIZER'])
+    topup=max(0,native_pickups-available)
+    for i in range(_R51_INPUT_MAX_WORKERS):
+        path,units=_r51_input_path(obs,targets);q=len(path)
+        if q<3 or len(action.get('market',[]))+2+i>10 or sum(stock.values())+purchases+total_q+q+topup>95:break
+        quote=_r37_market_price('FERTILIZER',obs['market']['inventory']['FERTILIZER']-total_q-q-topup)
+        cost=(q+(topup if i==0 else 0))*(quote+2)+_v219_fib(int(farm['hires_today'])+i)
+        value=sum(n*max(1,_r37_market_price(item,obs['market']['inventory'][item]+all_units[item]+n)-2) for item,n in units.items())
+        if value<1.5*cost+50 or farm['money']<total_cost+cost+3000:break
+        plans.append({'path':path,'quantity':q,'loaded':False});total_q+=q;total_cost+=cost
+        for item,n in units.items():all_units[item]+=n
+        for x,y,_,_ in path:targets.pop((x,y),None)
+    if not plans:return action
+    state['pending']={len(farm['hands'])+1+i:plan for i,plan in enumerate(plans)}
+    _R51_INPUT_REPORT['input_hire_requests']+=len(plans);_R51_INPUT_REPORT['input_purchase_requests']+=total_q+topup
+    _R51_INPUT_REPORT['input_forecast_wheat']+=all_units['WHEAT'];_R51_INPUT_REPORT['input_forecast_carrot']+=all_units['CARROT']
+    changed=copy.deepcopy(action);changed['market'] += [['BUY_PRODUCT','FERTILIZER',total_q+topup]]+[['HIRE'] for _ in plans];return changed
+
+def agent(observation,configuration=None):
+    try:
+        step=int(observation['step']);player=int(observation['player']);state=_R51_INPUT_STATES.get(player)
+        if state is None or step<=state['step']:
+            state=_R51_INPUT_STATES[player]={'step':-1}
+            _R51_INPUT_REPORT.update(input_hire_requests=0,input_confirmed_hires=0,input_hire_errors=0,input_purchase_requests=0,
+                input_loaded_units=0,input_stock_shortfalls=0,input_application_requests=0,input_confirmed_applications=0,
+                input_application_errors=0,input_errors=0,input_forecast_wheat=0,input_forecast_carrot=0)
+        state['step']=step;action=_R51_INPUT_PARENT(observation,configuration)
+        if configuration is None or all(configuration.get(k,v)==v for k,v in [('boardSize',10),('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10)]):
+            action=_r51_input_control(observation,action,state)
+        _R51_INPUT_REPORT.update(getattr(_R51_INPUT_PARENT,'telemetry',{}));return action
+    except Exception:
+        _R51_INPUT_REPORT['input_errors']=_R51_INPUT_REPORT.get('input_errors',0)+1
+        return {'farmer':['PASS'],'hands':[],'market':[]}
+agent.telemetry=_R51_INPUT_REPORT
+agent=globals().pop('agent')
+
+# EXP182: project the final hour's actual worker actions before automatic deposit.
+_R51_WAREHOUSE_PARENT=agent
+_R51_WAREHOUSE_REPORT={}
+
+def _r51_close_warehouse(obs,action):
+    step=int(obs['step']);day=step//24
+    if step%24!=23 or not 12<=day<=28:return action
+    # No speculative product purchase/worker count model: these hours abstain.
+    if any(o and o[0] not in ('SELL',) for o in action.get('market',[])):return action
+    farm,private=_PLANNER_NS['_clone_state'](obs['farms'][obs['player']],obs['private'])
+    commands=[action.get('farmer') or ['PASS'],*(action.get('hands') or [])]
+    demand={}
+    for c in commands:
+        if len(c)>1 and c[0]=='PLANT':demand[c[1]]=demand.get(c[1],0)+1
+    blocked={k for k,q in demand.items() if q>private['seeds'].get(k,0)}
+    for actor,c in enumerate(commands[:len(private['inventories'])]):
+        if len(c)>1 and c[0]=='PLANT' and c[1] in blocked:c=['PASS']
+        _PLANNER_NS['_apply_unit_action'](farm,private,actor,c,10,day,24,100)
+    post=dict(private['shed'])
+    for o in action.get('market',[]):
+        if len(o)>=3 and o[0]=='SELL':post[o[1]]=max(0,post.get(o[1],0)-max(0,int(o[2])))
+    needed=sum(post.values())+sum(max(0,q) for inv in private['inventories'] for q in inv.values())-100
+    if needed<=0:return action
+    result=copy.deepcopy(action);orders=result['market']
+    # Grain and fertilizer have native input obligations; other products do not.
+    # Additional commodity sales are bounded by actual post-action physical stock.
+    for item in sorted((p for p in PRODUCTS if p not in ('WHEAT','FERTILIZER')),key=lambda p:-obs['market']['prices'].get(p,0)):
+        qty=min(needed,post.get(item,0))
+        if not qty:continue
+        existing=next((o for o in orders if len(o)>=3 and o[:2]==['SELL',item]),None)
+        if existing is not None:existing[2]=max(0,int(existing[2]))+qty
+        elif len(orders)<10:orders.append(['SELL',item,qty])
+        else:continue
+        needed-=qty;post[item]-=qty;_R51_WAREHOUSE_REPORT['warehouse_extra_sales']+=qty
+        if needed<=0:break
+    if needed>0:
+        native=_IMPL.chassis.players[int(obs['player'])];reserve=0
+        for t in range(step+1,719):
+            future=_IMPL.chassis.routes[2 if t>=648 else native['route']][t]
+            for c in [future.get('farmer') or ['PASS'],*(future.get('hands') or [])]:
+                if len(c)>1 and c[:2]==['PICKUP','WHEAT']:reserve+=max(0,int(c[2]) if len(c)>2 else 1)
+            if any(len(o)>1 and o[:2]==['BUY_PRODUCT','WHEAT'] for o in future.get('market',[])):break
+        incoming=sum(max(0,inv.get('WHEAT',0)) for inv in private['inventories'])
+        others=sum(q for p,q in post.items() if p!='WHEAT')+sum(max(0,q) for inv in private['inventories'] for p,q in inv.items() if p!='WHEAT')
+        # Even if every other carried item deposits first, this grain reserve fits.
+        qty=min(needed,post.get('WHEAT',0),max(0,post.get('WHEAT',0)+incoming-reserve)) if 100-others>=reserve else 0
+        existing=next((o for o in orders if len(o)>=3 and o[:2]==['SELL','WHEAT']),None)
+        if qty and (existing is not None or len(orders)<10):
+            if existing is not None:existing[2]=max(0,int(existing[2]))+qty
+            else:orders.append(['SELL','WHEAT',qty])
+            needed-=qty;_R51_WAREHOUSE_REPORT['warehouse_extra_sales']+=qty
+    _R51_WAREHOUSE_REPORT['warehouse_projected_unresolved']+=max(0,needed)
+    if result!=action:_R51_WAREHOUSE_REPORT['warehouse_changed_turns']+=1
+    return result
+
+def agent(observation,configuration=None):
+    result=_R51_WAREHOUSE_PARENT(observation,configuration)
+    try:
+        if int(observation['step'])==0:_R51_WAREHOUSE_REPORT.update(warehouse_changed_turns=0,warehouse_extra_sales=0,warehouse_projected_unresolved=0,warehouse_errors=0)
+        if configuration is None or all(configuration.get(k,v)==v for k,v in [('boardSize',10),('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10)]):result=_r51_close_warehouse(observation,result)
+    except Exception:_R51_WAREHOUSE_REPORT['warehouse_errors']=_R51_WAREHOUSE_REPORT.get('warehouse_errors',0)+1
+    _R51_WAREHOUSE_REPORT.update(getattr(_R51_WAREHOUSE_PARENT,'telemetry',{}));return result
+agent.telemetry=_R51_WAREHOUSE_REPORT
+agent=globals().pop('agent')
+
+from itertools import permutations as _r53_permutations
+_R53_LABOR_REPORT=dict(labor_requests=0,labor_hires_avoided=0,labor_spawn_errors=0,labor_confirmed=0,labor_day26=0,labor_day27=0,labor_day28=0)
+
+def _r53_labor_assignment(obs,action,fertilizer):
+    step=int(obs['step']);day=step//24;farm=obs['farms'][obs['player']]
+    if day not in (26,27,28) or step%24>2:return None
+    # Do not preempt a later price-gated fertilizer request with a smaller unfertilized team.
+    if day==27 and not fertilizer:return None
+    count=3 if fertilizer else 2
+    positions=[list(farm['farmer'])]+[list(p) for p in farm['hands']]
+    for i,c in enumerate([action.get('farmer') or ['PASS'],*(action.get('hands') or [])][:len(positions)]):
+        if c and c[0] in MOVES:
+            dx,dy=MOVES[c[0]];positions[i]=[max(0,min(9,positions[i][0]+dx)),max(0,min(9,positions[i][1]+dy))]
+    access=((4,4),(5,4),(4,5),(5,5));spawns=[]
+    native_hires=sum(bool(o) and o[0]=='HIRE' for o in action.get('market',[]))
+    for i in range(native_hires+count):
+        chosen=min(access,key=lambda p:(sum(tuple(q)==p for q in positions),access.index(p)));positions.append(list(chosen))
+        if i>=native_hires:spawns.append(chosen)
+    groups=(((5,5),(6,5),(7,5),(8,5)),((9,5),(9,6),(8,6)),((5,6),(6,6),(7,6))) if fertilizer else (tuple((x,5) for x in range(5,10)),tuple((x,6) for x in range(5,10)))
+    choices=[];remaining=23-step%24
+    for assignment in _r53_permutations(groups):
+        costs=[]
+        for start,path in zip(spawns,assignment):
+            distance=abs(start[0]-path[0][0])+abs(start[1]-path[0][1])
+            distance+=sum(abs(a[0]-b[0])+abs(a[1]-b[1]) for a,b in zip(path,path[1:]))
+            distance+=min(abs(path[-1][0]-x)+abs(path[-1][1]-y) for x,y in access)
+            costs.append(distance+(3 if fertilizer else 2)*len(path)+1+int(fertilizer))
+        if max(costs)<=remaining:choices.append((max(costs),sum(costs),assignment))
+    if not choices:return None
+    _,_,assignment=min(choices)
+    return dict(paths=assignment,spawns=spawns,remaining=remaining,workers=count,fertilizer=fertilizer)
+
+_R53_LABOR_PARENT=agent
+def agent(observation,configuration=None):
+    if isinstance(observation,dict) and observation.get('step')==0:
+        for k in _R53_LABOR_REPORT:_R53_LABOR_REPORT[k]=0
+    result=_R53_LABOR_PARENT(observation,configuration)
+    _R53_LABOR_COMBINED.update(getattr(_R53_LABOR_PARENT,'telemetry',{}));_R53_LABOR_COMBINED.update(_R53_LABOR_REPORT)
+    return result
+_R53_LABOR_COMBINED={}
+agent.telemetry=_R53_LABOR_COMBINED
+agent=globals().pop('agent')
+
+_ML_FORCE_OPTION = None
+_ML_MODEL = {'schema_version': 1, 'feature_names': ['public_layout_similarity', 'cash_difference', 'own_cash', 'own_workers', 'own_land', 'own_weeds', 'own_WHEAT_count', 'own_WHEAT_ripe', 'own_CARROT_count', 'own_CARROT_ripe', 'own_TOMATO_count', 'own_TOMATO_ripe', 'own_STRAWBERRY_count', 'own_STRAWBERRY_ripe', 'own_MELON_count', 'own_MELON_ripe', 'own_GOOSE_count', 'own_GOOSE_ripe', 'own_COW_count', 'own_COW_ripe', 'own_SHEEP_count', 'own_SHEEP_ripe', 'rival_cash', 'rival_workers', 'rival_land', 'rival_weeds', 'rival_WHEAT_count', 'rival_WHEAT_ripe', 'rival_CARROT_count', 'rival_CARROT_ripe', 'rival_TOMATO_count', 'rival_TOMATO_ripe', 'rival_STRAWBERRY_count', 'rival_STRAWBERRY_ripe', 'rival_MELON_count', 'rival_MELON_ripe', 'rival_GOOSE_count', 'rival_GOOSE_ripe', 'rival_COW_count', 'rival_COW_ripe', 'rival_SHEEP_count', 'rival_SHEEP_ripe', 'WHEAT_price', 'WHEAT_inventory', 'WHEAT_change48', 'WHEAT_own_shed', 'WHEAT_own_carried', 'CARROT_price', 'CARROT_inventory', 'CARROT_change48', 'CARROT_own_shed', 'CARROT_own_carried', 'TOMATO_price', 'TOMATO_inventory', 'TOMATO_change48', 'TOMATO_own_shed', 'TOMATO_own_carried', 'STRAWBERRY_price', 'STRAWBERRY_inventory', 'STRAWBERRY_change48', 'STRAWBERRY_own_shed', 'STRAWBERRY_own_carried', 'MELON_price', 'MELON_inventory', 'MELON_change48', 'MELON_own_shed', 'MELON_own_carried', 'EGG_price', 'EGG_inventory', 'EGG_change48', 'EGG_own_shed', 'EGG_own_carried', 'MILK_price', 'MILK_inventory', 'MILK_change48', 'MILK_own_shed', 'MILK_own_carried', 'WOOL_price', 'WOOL_inventory', 'WOOL_change48', 'WOOL_own_shed', 'WOOL_own_carried', 'FERTILIZER_price', 'FERTILIZER_inventory', 'FERTILIZER_change48', 'FERTILIZER_own_shed', 'FERTILIZER_own_carried', 'shops_BAKERY', 'shops_PIZZA_SHOP', 'shops_BRUNCH_SPOT', 'shops_YARN_STORE', 'shops_ICE_CREAM_SHOP', 'shops_PET_CAFE', 'shops_SMOOTHIE_SHOP', 'shops_FARMERS_MARKET'], 'options': ['ml_native', 'ml_h2', 'ml_h8', 'ml_h12', 'ml_h18'], 'trees': [{'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, 12, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 14, 11, -1, 13, -1, -1, -1], 'feature': [1, 78, -2, 2, -2, 1, -2, -2, 89, 25, -2, 0, -2, -2, -2], 'threshold': [0.0013599999947473407, 0.029999999329447746, -2.0, 0.173335000872612, -2.0, -1.4999999621068127e-05, -2.0, -2.0, 0.1875, 0.004999999888241291, -2.0, 0.31333333253860474, -2.0, -2.0, -2.0], 'value': [[0.0, -0.250314685460795, 0.2183931423659163, 0.2163637385403563, 0.0855060159693392], [0.0, -0.4344950549876909, 0.43568916901742566, 0.4317909471301455, 0.17052886802744519], [0.0, -0.1235002685073389, 0.937764875421435, 0.9310005129122404, 0.11218527703696538], [0.0, -0.5163357882719941, 0.30356398312163396, 0.30042000876643565, 0.1858824446038873], [0.0, -0.0025406448410226624, 0.002072486519024222, 0.0014720229662428998, -0.0002800113310174146], [0.0, -0.6533478265202532, 0.3839617155489966, 0.38013947164648715, 0.23552576618652846], [0.0, -1.0286934406168686, 0.014799270601809708, 0.01188545081185525, 0.0021236861979221366], [0.0, -0.5595114229960994, 0.4762523267857934, 0.47220297685514506, 0.2938762861836801], [0.0, -0.06613431593389918, 0.0010971157144068072, 0.0009365299505675791, 0.0004831639112331254], [0.0, -0.0005014969628230594, 0.0003218472759500769, 0.00023750678058446137, -6.7219832099750016e-06], [0.0, -0.0026888254256748185, 0.0017335880994162611, 0.0012647564849542611, -1.782448515643052e-06], [0.0, -5.116463223593251e-05, 3.1194753471744876e-05, 2.6014194390679066e-05, -7.738946235278638e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.00028993291600361754, 0.00017677026967322096, 0.00014741376821384802, -4.385402866657895e-05], [0.0, -0.450555112764488, 0.005637973711081942, 0.005030808517611555, 0.003352495578685571]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 5, 4, -1, -1, 9, 8, -1, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [1, 1, 47, -2, -2, 22, 47, -2, -2, -2, 49, -2, 1, -2, 77, -2, -2], 'threshold': [0.0008299999753944576, -1.4999999621068127e-05, 0.07899999991059303, -2.0, -2.0, 0.21656499803066254, 0.08700000122189522, -2.0, -2.0, -2.0, -0.2149999961256981, -2.0, 0.0017549999756738544, -2.0, 0.28699999302625656, -2.0, -2.0], 'value': [[0.0, -0.325183935371155, 0.1759835738874311, 0.17366749251209881, 0.06331069596673698], [0.0, -0.5873416115180116, 0.3661107375840794, 0.3614724908449532, 0.13209794943442751], [0.0, -0.6905726224635672, 0.0069758653583266534, 0.004803854887819425, -0.0012065505145425852], [0.0, -1.0383707043184194, 0.012544395111105425, 0.009381775909920842, -0.0013588732592974366], [0.0, -0.342774540608715, 0.0014073356055478807, 0.00022593386571800878, -0.0010542277697877338], [0.0, -0.550907137066639, 0.4928642218990511, 0.48735553882982396, 0.17914659647524053], [0.0, -0.5635441863074232, 0.48743054514180517, 0.4811493300099041, 0.38882197357692827], [0.0, -0.5282213148973489, 0.5298309711335033, 0.5232052725041227, 0.5062387879613057], [0.0, -0.64302064698009, 0.3920295866604844, 0.38652345939791216, 0.12463414121207947], [0.0, -0.5098367270340906, 0.5105236713601009, 0.5075257174945643, -0.5022983791052448], [0.0, -0.083998873316047, 0.0010665832865146196, 0.0008868940458725749, 2.642277646168978e-05], [0.0, -0.5228028112899537, 0.00566589023378683, 0.004711484816114497, 0.00016022643069946163], [0.0, -0.00041717084482676786, 0.00019052482036753196, 0.00015840056582649447, 9.363661306856164e-07], [0.0, -0.0018447960581216005, 0.0008653132164058904, 0.0007523054605961624, 3.175581003652302e-05], [0.0, -0.00017923330927762906, 7.806008769447222e-05, 5.941641669821646e-05, -4.200207853620617e-06], [0.0, -0.0008065498917493308, 0.000351270394625125, 0.0002673738751419741, -1.890093534129278e-05], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, -1, 4, -1, -1, 7, 8, -1, 10, -1, -1, -1], 'right': [6, 3, -1, 5, -1, -1, 12, 9, -1, 11, -1, -1, -1], 'feature': [83, 25, -2, 74, -2, -2, 90, 0, -2, 1, -2, -2, -2], 'threshold': [0.2044999971985817, 0.004999999888241291, -2.0, -0.1550000011920929, -2.0, -2.0, 0.0625, 0.9932432472705841, -2.0, -1.4999999621068127e-05, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2102933238922293, 0.1662725944138748, 0.1640860493814207, 0.0746604031821962], [0.0, -0.0025478128490614787, 0.0019721506309413853, 0.0013879219930468467, -0.00012618273924340533], [0.0, -0.010578441800553192, 0.008212675755865808, 0.005778705090091017, -0.0005283989080711304], [0.0, -1.1824759116728001e-05, 1.4584862284093777e-06, 1.3589097697400863e-06, 8.32893017981518e-07], [0.0, -7.489857838205438e-05, 9.208223575196683e-06, 8.581436076848803e-06, 5.261297640076397e-06], [0.0, 1.5819955206941572e-09, 5.410475886757915e-09, 4.686087157201868e-09, 2.567151338728202e-09], [0.0, -0.4361036619826285, 0.3448600333083676, 0.34093184002095756, 0.1559501704881088], [0.0, -0.4655105845429858, 0.2372868061024112, 0.2337560549838266, 0.16842999707880807], [0.0, -0.21184722984504206, 0.004129335610515468, 0.0032830432046309296, 0.00019775898583940035], [0.0, -0.563073413272964, 0.3269627562916018, 0.322399521052748, 0.23313470403764214], [0.0, -0.6230224379313506, 0.00752663879256601, 0.005629066884775336, -0.0008153241582876891], [0.0, -0.5256052728614724, 0.5266103297284992, 0.5203810549077308, 0.37935347166009836], [0.0, -0.330238740765343, 0.7321236512498108, 0.7267646661546285, 0.11102279476159142]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [1, 1, 69, -2, -2, 58, -2, 47, -2, -2, 49, -2, 1, -2, 22, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, -0.19999999552965164, -2.0, -2.0, -0.1340000033378601, -2.0, 0.08300000056624413, -2.0, -2.0, -0.2149999961256981, -2.0, 0.0017549999756738544, -2.0, 0.07778000086545944, -2.0, -2.0], 'value': [[0.0, -0.3033957588976239, 0.1971600895081915, 0.19499515855244365, 0.08472487984343509], [0.0, -0.49858550775873084, 0.37750889020078304, 0.37352520028483055, 0.1626438344481064], [0.0, -0.43885900115952575, 0.005198385109691062, 0.004126437231987801, 0.0007189825905671933], [0.0, -1.024001560545017, 0.012127999005498916, 0.009627626774871908, 0.001677120816564459], [0.0, -2.0816204073792477e-06, 1.1746878351703849e-06, 5.450748247204373e-07, 3.7892106924397595e-07], [0.0, -0.5218124825473106, 0.5222963088473191, 0.5171802748053804, 0.22561461017048284], [0.0, -0.5131355765169661, 0.5141336692404194, 0.5097977968291155, -0.1687712427384784], [0.0, -0.526150935562483, 0.526377628650769, 0.520871513793513, 0.42280753662496345], [0.0, -0.4733738870961046, 0.5849539913148243, 0.5789744928887778, 0.45214507841588525], [0.0, -0.6844820809616183, 0.35064854065860246, 0.34656257650771893, 0.33479491125219796], [0.0, -0.09123298839642073, 0.0011287844075484887, 0.0009407653650665402, 3.0363968792383915e-05], [0.0, -0.5228028112899537, 0.00566589023378683, 0.004711484816114497, 0.00016022643069946163], [0.0, -0.00037618357672965593, 0.0001736042336035748, 0.00014692969116170715, 3.024503127735974e-06], [0.0, -0.0018447960581216005, 0.0008653132164058904, 0.0007523054605961624, 3.175581003652302e-05], [0.0, -0.00010081873646866635, 4.3908799328140624e-05, 3.342173439274676e-05, -2.3626169176615974e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0005376999278328872, 0.00023418026308341666, 0.0001782492500946494, -1.2600623560861854e-05]]}, {'left': [1, 2, -1, 4, 5, -1, -1, 8, -1, -1, 11, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [10, 3, -1, 7, 6, -1, -1, 9, -1, -1, 14, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [0, 1, -2, 83, 1, -2, -2, 74, -2, -2, 1, 22, -2, -2, 57, 47, -2, -2, -2], 'threshold': [0.9932432472705841, -0.019675000570714474, -2.0, 0.2044999971985817, 0.03206999972462654, -2.0, -2.0, -0.03500000014901161, -2.0, -2.0, -4.999999873689376e-05, 0.1742049977183342, -2.0, -2.0, 0.44099999964237213, 0.08300000056624413, -2.0, -2.0, -2.0], 'value': [[0.0, -0.23071469453009638, 0.1548435998217977, 0.1526807120039954, 0.10549254100680626], [0.0, -0.08944664534982122, 0.03685570553897953, 0.03609857444566953, 0.0005930118716414328], [0.0, -0.010331762728479667, 0.3508504265230928, 0.34705680818586043, 0.004276493404120084], [0.0, -0.09823718786330361, 0.0019674032074113645, 0.0015476595856483385, 0.00018373614581047152], [0.0, -0.001070177161046679, 0.0008915192078040557, 0.0006049979138453252, -5.494835453291602e-06], [0.0, -0.006956155765458136, 0.005794860422790663, 0.003932473943762195, -3.572327618329869e-05], [0.0, 7.670281312456519e-10, 2.6232610360038375e-09, 2.2720422580372692e-09, 1.2446794369591282e-09], [0.0, -0.3508714156891716, 0.004764701606390368, 0.003998579932336173, 0.0006757366970962556], [0.0, -0.0017770420951203933, 0.000912189644341193, 0.0007667210228909679, 7.675087924879303e-05], [0.0, -0.8745129760802485, 0.010543469549464132, 0.008846368296503981, 0.0015742154238674495], [0.0, -0.4661614431638881, 0.3514900902931617, 0.34698427460120507, 0.2803250895654144], [0.0, -0.34845955164688025, 0.002489551902636481, 0.001219067607445501, -0.0018395129532736698], [0.0, -0.3427800148949731, 0.0014104594769278982, 0.00022738070446977807, -0.0010532163000569472], [0.0, -0.3541390883987874, 0.0035686443283450644, 0.0022107545104212236, -0.0026258096064903924], [0.0, -0.525012388922392, 0.5259903594884242, 0.5198668780980852, 0.4214073908247584], [0.0, -0.5281338507988403, 0.5282715638184172, 0.5214630552228733, 0.5060286371098884], [0.0, -0.534378945908857, 0.5359169803434, 0.5275248786667681, 0.5078882646780739], [0.0, -0.5156436605788065, 0.5129807307684521, 0.5093394083350834, 0.5023093819735166], [0.0, -0.5156480032930478, 0.5191467464984446, 0.5150783467237202, 0.16754365196936885]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, 10, -1, -1, 13, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 9, -1, 11, -1, -1, 14, -1, -1], 'feature': [22, 83, 22, 0, -2, -2, -2, 1, -2, 42, -2, -2, 22, -2, -2], 'threshold': [0.20409999787807465, 0.2094999998807907, 0.1781649962067604, 0.9527027010917664, -2.0, -2.0, -2.0, -4.999999873689376e-05, -2.0, 0.08400000259280205, -2.0, -2.0, 0.21063999831676483, -2.0, -2.0], 'value': [[0.0, -0.21319484309747946, 0.28446751641168716, 0.28199964340283556, 0.12813060385591443], [0.0, -0.19113938614328452, 0.08182593350677049, 0.08018010089846517, 0.0761895938526655], [0.0, -0.024706271744767867, 0.0016825690829288607, 0.0012464909491423203, 0.00014948799763603876], [0.0, -0.0019207675806046376, 0.0013513662776097213, 0.0009580039634420688, -7.073299713936508e-05], [0.0, 7.670281312456519e-10, 2.6232610360038375e-09, 2.2720422580372692e-09, 1.2446794369591282e-09], [0.0, -0.010975818362301977, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.17660963283918943, 0.0038905877850564582, 0.0031697375204773315, 0.0016176279628053979], [0.0, -0.5739355492598727, 0.2661556716816063, 0.2617274037819076, 0.2510818373192333], [0.0, -0.5226872458499131, 0.0037331531661195516, 0.001828056336343531, -0.0027596483509797487], [0.0, -0.6081010848665124, 0.44110401735859744, 0.4349936354122838, 0.4203094944327086], [0.0, -0.687022075608693, 0.35323309811613224, 0.3476936086457216, 0.3350055271550613], [0.0, -0.5291800941243316, 0.5289749366010624, 0.522293662178846, 0.5056134617103559], [0.0, -0.26171684839670833, 0.7302789988025039, 0.7260026369124505, 0.24240082586306205], [0.0, -0.028588793830488228, 1.0315168641659198, 1.0282436716532903, 0.008331353160200257], [0.0, -0.4657038961421508, 0.46669586660951495, 0.46154173151421535, 0.447211614478066]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [83, 22, 22, 0, -2, -2, -2, -2, 1, 2, -2, -2, 1, 48, -2, -2, -2], 'threshold': [0.2094999998807907, 0.19503500312566757, 0.1778149977326393, 0.9527027010917664, -2.0, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.1807200014591217, -2.0, -2.0, 0.0013599999947473407, -0.03199999965727329, -2.0, -2.0, -2.0], 'value': [[0.0, -0.30755659530599416, 0.1669862066430475, 0.1645500580138908, 0.11645951838356157], [0.0, -0.022946004714252566, 0.04182807724994372, 0.0410399242942578, 0.0006991295312791998], [0.0, -0.02496377762106312, 0.001666229230964671, 0.00124860981478993, 0.00013969554244260433], [0.0, -0.0018358428925115832, 0.0010324147418636028, 0.0007575604755374033, -2.3850657061400776e-05], [0.0, 7.670281312456519e-10, 2.6232610360038375e-09, 2.2720422580372692e-09, 1.2446794369591282e-09], [0.0, -0.011932983019980012, 0.006710681394177719, 0.004924130594760702, -0.00015503611663600833], [0.0, -0.15381941396585028, 0.005197481384527768, 0.003984456133482579, 0.0010508815111077757], [0.0, -0.007476412428704945, 0.3497355787287831, 0.34610666863684475, 0.0049881234456930984], [0.0, -0.6439145660053253, 0.31490035956217005, 0.3105165796825479, 0.2532672506635315], [0.0, -0.8643071822000413, 0.009015947769722551, 0.006046093875329506, -0.0015101285879383826], [0.0, -0.6855517800098117, 0.002816228832028885, 0.00045258780375482627, -0.0021079492979370062], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.5612673349323068, 0.42960701398433787, 0.42469301186025504, 0.3488087678828329], [0.0, -0.4868349750421219, 0.5698995200173543, 0.5638373892977444, 0.46501640820400186], [0.0, -0.5270350453524244, 0.526941733914967, 0.5206335204229187, 0.505979782361122], [0.0, -0.40643483442151723, 0.6558150922221297, 0.6502451270473952, 0.3830896598897615], [0.0, -0.7845644146028611, 0.008729495885288041, 0.0072598795477868405, 0.00018584691932616026]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 5, 4, -1, -1, 9, 8, -1, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [1, 1, 73, -2, -2, 2, 47, -2, -2, -2, 49, -2, 1, -2, 0, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, 0.02500000037252903, -2.0, -2.0, 0.2112950012087822, 0.08300000056624413, -2.0, -2.0, -2.0, -0.14500000327825546, -2.0, 0.0017349999397993088, -2.0, 0.31333333253860474, -2.0, -2.0], 'value': [[0.0, -0.3182122048843776, 0.2102613308845207, 0.20759137202728475, 0.13744813790026625], [0.0, -0.5466934321105684, 0.38748303159180225, 0.3826829037600353, 0.2536645960202454], [0.0, -0.6526325877428332, 0.009261277214925158, 0.006850575508794097, -0.0013133593405316776], [0.0, -1.0479012162410464, 0.014088228962064075, 0.01038776249593698, -0.0026535876065495456], [0.0, -0.25736395924462024, 0.0044343254677862405, 0.003313388521651214, 2.6868925486190926e-05], [0.0, -0.4996093629406732, 0.5555815890926368, 0.5497194940939202, 0.3669881317361464], [0.0, -0.563370694012174, 0.49244574217396314, 0.4860033781850019, 0.4702132298683875], [0.0, -0.5303403157532345, 0.5311177062236068, 0.5240326877333519, 0.5071454985818936], [0.0, -0.6844820809616183, 0.35064854065860246, 0.34656257650771893, 0.33479491125219796], [0.0, -0.2764447041904201, 0.7765570533079946, 0.7727258997751343, 0.00570028827330228], [0.0, -0.04818893634433405, 0.0008175027759149386, 0.0006650163431250416, 0.00010141466756370298], [0.0, -0.3504638763969458, 0.00512727485281254, 0.00407196409833525, 0.00021879863002042624], [0.0, -0.00046131423076378156, 0.0001370124479837385, 0.0001270772238813246, 8.288035770211509e-05], [0.0, -0.0026528068309208397, 0.0007506553723553022, 0.000715697792867731, 0.0005312092438938265], [0.0, -5.0409368234333174e-05, 2.1954399664070312e-05, 1.671086719637338e-05, -1.1813084588307987e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0002688499639164436, 0.00011709013154170833, 8.91246250473247e-05, -6.300311780430927e-06]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 84, 36, -2, 38, -2, -2, -2, 1, 53, -2, -2, 43, 73, -2, -2, -2], 'threshold': [0.9932432472705841, 0.6700000166893005, 0.014999999664723873, -2.0, 0.07499999925494194, -2.0, -2.0, -2.0, -1.4999999621068127e-05, -0.04399999976158142, -2.0, -2.0, -0.22699999809265137, 0.03099999949336052, -2.0, -2.0, -2.0], 'value': [[0.0, -0.35864855675579604, 0.14477213544837117, 0.1421646195542967, 0.1361162395401039], [0.0, -0.04327784223952509, 0.0014165567161113632, 0.0010904944050228718, 0.00015786171372590514], [0.0, -0.0014657652684353267, 0.0010185836329283605, 0.0007433219730006678, 0.00015058416567031855], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.005374472650929531, 0.0037348066540706555, 0.0027255139010024486, 0.000552141940791168], [0.0, -0.00833579022832498, 0.003546898356482475, 0.00274988085594996, 0.00043952870606667194], [0.0, -0.0024131550735340818, 0.003922714951658836, 0.0027011469460549373, 0.000664755175515664], [0.0, -0.3498997400275166, 0.004335025992786716, 0.003636425573185701, 0.0002112303994668737], [0.0, -0.701442811664786, 0.30059341667908823, 0.29550605993394213, 0.2838970850035583], [0.0, -0.9089402468192751, 0.006971882065060275, 0.0037651410440316946, -0.0032292268113653932], [0.0, -0.7082808244556267, 0.007138840524614072, 0.004422224630418488, -0.0052511122956449], [0.0, -1.029335900237464, 0.006871706989327997, 0.0033708908921996185, -0.0020160955207976896], [0.0, -0.5907775129157254, 0.45719156847323666, 0.4511012166752278, 0.4370311179715177], [0.0, -0.5255434127117851, 0.524979511797162, 0.5185054130432968, 0.5046268031091711], [0.0, -0.5308298790676799, 0.5319631789539684, 0.524824212805805, 0.506312268835543], [0.0, -0.5191996530847109, 0.5165991112089938, 0.510922853328287, 0.5026042442375253], [0.0, -0.7701712884765616, 0.27077472433244254, 0.265739676663038, 0.2511429838429703]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 82, -2, 1, -2, 1, -2, -2, 1, 73, -2, -2, 58, -2, 47, -2, -2], 'threshold': [0.9932432472705841, 0.11600000038743019, -2.0, 0.021695000119507313, -2.0, 0.1650799959897995, -2.0, -2.0, -1.4999999621068127e-05, 0.03399999998509884, -2.0, -2.0, -0.125, -2.0, 0.08799999952316284, -2.0, -2.0], 'value': [[0.0, -0.34692236025662154, 0.15518660735551856, 0.15294623324109222, 0.1052250893306871], [0.0, -0.08486288633325932, 0.0017862259486502493, 0.0013912021297087913, 2.006777865511976e-05], [0.0, -0.4189798752790015, 0.004972023121326963, 0.004130906345704144, 3.721259473445926e-05], [0.0, -0.0013336390968237694, 0.0009897766554810713, 0.000706276075709953, 1.5781574635284882e-05], [0.0, -0.008320285546920403, 0.006210327862082484, 0.00439771036368751, 1.422435254144934e-05], [0.0, -0.00010070148798318696, 6.85029131396453e-05, 5.484649547861947e-05, 1.605637853419704e-05], [0.0, -0.0005706417652380594, 0.00038818317445799, 0.000310796807712177, 9.098614502711655e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.6317696145211457, 0.3219261523629841, 0.3176799627099874, 0.21957837362637414], [0.0, -0.7745173636277412, 0.00859839290619771, 0.006292296728089286, -0.0004296222951749584], [0.0, -1.0335614228234289, 0.01291209098812498, 0.009931681063297938, -5.5162552681142786e-05], [0.0, -0.34277726496826166, 0.0014088961029855944, 0.00022665616940820144, -0.0010537218659979846], [0.0, -0.555637481664295, 0.48903429073993687, 0.48375338456699957, 0.3369159714512003], [0.0, -0.5144900927433562, 0.5164648229472187, 0.5120620129564111, -0.0009622651771898638], [0.0, -0.5706001685446365, 0.47905955175547066, 0.47345933787994066, 0.45978078477061485], [0.0, -0.5269419533956152, 0.5262444718702225, 0.5206214863427728, 0.5065715063764473], [0.0, -0.687022075608693, 0.35323309811613224, 0.3476936086457216, 0.3350055271550613]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, 9, -1, -1, -1, 13, -1, 15, 16, -1, -1, -1], 'right': [12, 7, 4, -1, 6, -1, -1, 11, 10, -1, -1, -1, 14, -1, 18, 17, -1, -1, -1], 'feature': [1, 22, 1, -2, 72, -2, -2, 54, 0, -2, -2, -2, 2, -2, 39, 69, -2, -2, -2], 'threshold': [0.0013599999947473407, 0.20185000449419022, -6.499999835796189e-05, -2.0, 0.25299999862909317, -2.0, -2.0, -0.0800000000745058, 0.9932432472705841, -2.0, -2.0, -2.0, 0.21502500027418137, -2.0, 0.19500000029802322, -0.0800000000745058, -2.0, -2.0, -2.0], 'value': [[0.0, -0.26226721640170864, 0.20862624342931388, 0.2063842956448542, 0.053940666401031505], [0.0, -0.45842252831561286, 0.4160864052766334, 0.4118331403529773, 0.10768846155007934], [0.0, -0.5172785660837452, 0.14905645137586002, 0.14585989793672868, 0.046380526300433315], [0.0, -0.20791708344440654, 0.005201697491986841, 0.003826590306167507, -0.00020372728268346839], [0.0, -0.7750798016165273, 0.2689354129457544, 0.264220987628863, 0.08520073761969733], [0.0, -0.5214136163499475, 0.5210769934316168, 0.5150228332088351, 0.16877524877381103], [0.0, -1.0287459868831075, 0.016793832459891966, 0.013419142048890867, 0.0016262264655835985], [0.0, -0.40862126558873135, 0.6420348278080572, 0.6368874223974956, 0.15956440676131825], [0.0, -0.37825662715512387, 0.6814881747424437, 0.6756959338683751, 0.3581232425212871], [0.0, -0.026147490121278986, 1.0337045179697226, 1.0292823472899868, 0.00950991023261086], [0.0, -0.5291605430267716, 0.5305383133593244, 0.524158899544827, 0.5075289563592913], [0.0, -0.5098367270340906, 0.5105236713601009, 0.5075257174945643, -0.5022983791052448], [0.0, -0.06611190448780445, 0.0011660815819946, 0.0009354509367312062, 0.00019287125198364416], [0.0, -0.3956782298731909, 0.0064989230775502616, 0.005216304851886844, 0.001223922953515838], [0.0, -0.00019863941072715275, 9.951328288346773e-05, 7.928015370007868e-05, -1.3339088322794623e-05], [0.0, -7.021741723317598e-06, 8.632709601746891e-07, 8.045096322045753e-07, 4.932466537571623e-07], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -3.744928919102719e-05, 4.604111787598342e-06, 4.2907180384244015e-06, 2.6306488200381986e-06], [0.0, -0.0009651100867424933, 0.0004941133305766399, 0.0003931827299715751, -6.866842822900177e-05]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 83, 2, -2, 0, -2, -2, -2, 1, 54, -2, -2, 1, 2, -2, -2, -2], 'threshold': [0.9932432472705841, 0.2094999998807907, 0.17810999602079391, -2.0, 0.3200000077486038, -2.0, -2.0, -2.0, -1.4999999621068127e-05, -0.25999999791383743, -2.0, -2.0, 0.0001449999981559813, 0.17438000440597534, -2.0, -2.0, -2.0], 'value': [[0.0, -0.31328390244413384, 0.14447296032342236, 0.14219708718730661, 0.11559962581182341], [0.0, -0.04369183354614568, 0.0018050612355784673, 0.0013483716778380133, 6.426812089187217e-06], [0.0, -0.0019362099350496232, 0.0014600660414137061, 0.0010363643284724193, -2.1500949825951846e-05], [0.0, -0.010975818362301975, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.00022601374610998923, 0.00027536057528184884, 0.00019675532141887053, 5.0900518044706535e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0013937514343449336, 0.0016980568809047344, 0.001213324482083035, 0.00031388652794235697], [0.0, -0.3498997400275167, 0.004335025992786716, 0.003636425573185701, 0.0002112303994668737], [0.0, -0.6063187599419468, 0.2995467636797744, 0.2952935170889031, 0.24124440733327368], [0.0, -0.5857623647487615, 0.005801527707852472, 0.004223265075279211, 0.00026717083402189826], [0.0, -2.7754938765056636e-06, 1.5662504468938465e-06, 7.267664329605831e-07, 5.052280923253013e-07], [0.0, -1.0250820566899252, 0.010151498800906655, 0.007390168806913899, 0.000467170038469078], [0.0, -0.6153121828389658, 0.4280603044174902, 0.42263675234486314, 0.34667194830169645], [0.0, -0.5220456128929082, 0.5232802793638108, 0.5174058006285251, 0.42673358800865924], [0.0, -0.5149478922996562, 0.5123216904293248, 0.5076076201542178, 0.1661164544110102], [0.0, -0.5241749290708838, 0.5265678560441566, 0.5203452547708174, 0.5049187280879538], [0.0, -1.0194673192718822, 0.015440412983434904, 0.011970876448995416, -0.0002618237618088326]]}, {'left': [1, 2, -1, -1, 5, 6, 7, -1, -1, -1, 11, 12, -1, -1, -1], 'right': [4, 3, -1, -1, 10, 9, 8, -1, -1, -1, 14, 13, -1, -1, -1], 'feature': [83, 2, -2, -2, 1, 52, 47, -2, -2, -2, 2, 57, -2, -2, -2], 'threshold': [0.2044999971985817, 0.22628000378608704, -2.0, -2.0, -4.999999873689376e-05, 0.13700000196695328, 0.07399999722838402, -2.0, -2.0, -2.0, 0.2112950012087822, 0.4230000078678131, -2.0, -2.0, -2.0], 'value': [[0.0, -0.29608941200725997, 0.240544672257389, 0.23814632453071952, 0.12718642736683014], [0.0, -0.0008607472420893061, 0.0006662682748803895, 0.0004688935784265633, -4.2628748738698835e-05], [0.0, -0.005307941326217387, 0.004108654361762402, 0.0028915104002971404, -0.0002628772838886428], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.4812328119447396, 0.39097689170404687, 0.3871982727550387, 0.20697414052405128], [0.0, -0.5662460285028821, 0.09957951882026443, 0.09717943357506222, -0.00014436156425513415], [0.0, -1.0351811350218152, 0.009000668644451593, 0.00600861723379605, -0.0025376449291590886], [0.0, -1.0193096804731654, 0.009456727409188126, 0.0073698027378885644, 0.0012305554352067816], [0.0, -1.051052589570465, 0.00854460987971506, 0.004647431729703537, -0.006305845293524959], [0.0, -0.0035239006801621986, 0.20827413903123984, 0.20658441318458162, 0.0027275784736296113], [0.0, -0.4306844129101691, 0.5642401944998096, 0.5596419068620515, 0.3301256823062875], [0.0, -0.5081549886452222, 0.47411711140692087, 0.4690955665916549, 0.3925795365547511], [0.0, -0.547013575223992, 0.5049266126976035, 0.4997511279638396, 0.48690359869633487], [0.0, -0.3462442112336818, 0.3457441893624103, 0.3413640608742184, -0.00043738903518138655], [0.0, -0.030419771612395147, 1.029876123813068, 1.027464664925768, 0.007447435355892305]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 14, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [0, 52, 2, -2, 25, -2, -2, 63, -2, -2, 1, 67, -2, -2, 2, 59, -2, -2, -2], 'threshold': [0.9932432472705841, 0.13700000196695328, 0.17810999602079391, -2.0, 0.004999999888241291, -2.0, -2.0, 0.12399999797344208, -2.0, -2.0, -4.999999873689376e-05, 0.11400000005960464, -2.0, -2.0, 0.21505500376224518, -0.19999999552965164, -2.0, -2.0, -2.0], 'value': [[0.0, -0.27199361005440753, 0.15498439344340376, 0.15284983163084453, 0.10582504487724385], [0.0, -0.08944664534982122, 0.036855705538979516, 0.03609857444566953, 0.0005930118716414328], [0.0, -0.0022244338173291675, 0.0015940321017614285, 0.0011511064987282246, -1.8028812008725204e-05], [0.0, -0.010975818362301977, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.0005687664709829604, 0.00043467156596562666, 0.00033320546983117965, 5.5029546800327406e-05], [0.0, -0.0021324932638558977, 0.001667591935523542, 0.001270130293662308, 0.00025458715363667263], [0.0, -6.614000184523057e-05, 3.8375732893439606e-05, 3.205106217117416e-05, -9.113969682783551e-06], [0.0, -0.3293077270641743, 0.13382530749132926, 0.13220411129975818, 0.002273373751679367], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.7527033761466841, 0.30588641712303816, 0.3021808258280187, 0.00519628286098141], [0.0, -0.576238551228718, 0.35186553995077763, 0.34743526027280275, 0.28121176655324787], [0.0, -0.6810421233245227, 0.005432032945620298, 0.0037978694174889784, 8.816366378516793e-05], [0.0, -0.34277456617587987, 0.0014073384820524708, 0.00022593609708939275, -0.0010542281076364457], [0.0, -1.0193096804731654, 0.009456727409188126, 0.0073698027378885644, 0.0012305554352067816], [0.0, -0.5238367651808157, 0.525082293453356, 0.5192539557004597, 0.4217735679979793], [0.0, -0.5265663524767386, 0.5270608091049934, 0.5206458253593728, 0.5065168733408494], [0.0, -0.5191510157648347, 0.5187262200285652, 0.5140966309543067, 0.5046317051119561], [0.0, -0.5358355233666182, 0.5374790454505288, 0.5288323183657055, 0.508873333626966], [0.0, -0.5156480032930478, 0.5191467464984446, 0.5150783467237202, 0.16754365196936885]]}, {'left': [1, 2, -1, -1, 5, 6, 7, -1, -1, 10, -1, -1, -1], 'right': [4, 3, -1, -1, 12, 9, 8, -1, -1, 11, -1, -1, -1], 'feature': [83, 0, -2, -2, 77, 1, 52, -2, -2, 0, -2, -2, -2], 'threshold': [0.2044999971985817, 0.6261261254549026, -2.0, -2.0, 0.2789999917149544, -1.4999999621068127e-05, 0.1420000046491623, -2.0, -2.0, 0.9932432472705841, -2.0, -2.0, -2.0], 'value': [[0.0, -0.3067650752446012, 0.19845812849743807, 0.1959847795227854, 0.10606881930564964], [0.0, -0.0008380953327730525, 0.0006487371773207526, 0.00045655624682045676, -4.150585865553782e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.005307937107562666, 0.0041086687896981005, 0.0028915228965295595, -0.00026287043815173956], [0.0, -0.5071999931178678, 0.3280573848795838, 0.32408947753117634, 0.17558937717191853], [0.0, -0.5440669206913104, 0.24387691271912007, 0.24019881323462375, 0.18904074850740335], [0.0, -0.622758393190161, 0.006594524035864144, 0.004552850275908015, -0.001321990257108886], [0.0, -0.8896536579171401, 0.009420077372471537, 0.006503760351397325, -0.0018887740364808335], [0.0, -2.7754938765056636e-06, 1.5662504468938465e-06, 7.267664329605831e-07, 5.052280923253013e-07], [0.0, -0.4878587260492747, 0.4133643332071599, 0.408517358205135, 0.32501413333919776], [0.0, -0.3517940678266515, 0.005267106987495773, 0.004314486594213111, 0.0001806702201911555], [0.0, -0.5249672692008992, 0.524663576721614, 0.5187545050081135, 0.41360507782619965], [0.0, -0.33023874076534293, 0.7321236512498108, 0.7267646661546285, 0.11102279476159142]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, -1], 'feature': [1, 90, 1, 2, -2, -2, 1, -2, -2, -2, 36, -2, -2], 'threshold': [0.0017599999555386603, 0.0625, -1.4999999621068127e-05, 0.1740500032901764, -2.0, -2.0, 0.0001449999981559813, -2.0, -2.0, -2.0, 0.014999999664723873, -2.0, -2.0], 'value': [[0.0, -0.3938230347319862, 0.22112905362228708, 0.21831317545769025, 0.12712165912174442], [0.0, -0.6155656501422915, 0.3655409666028493, 0.36093194809952506, 0.2101391741067406], [0.0, -0.6900602175491519, 0.2781289984263395, 0.27379766569373803, 0.22186978095586787], [0.0, -0.8112968557684049, 0.008971881934915086, 0.006248360553120132, -0.002268985631504572], [0.0, -0.3427800148949733, 0.0014104594769278982, 0.00022738070446977807, -0.0010532163000569472], [0.0, -1.0455552762051206, 0.01275259316390868, 0.00925885047744531, -0.0028768702972283844], [0.0, -0.6218646085508228, 0.42952987645276575, 0.4242941498353356, 0.34794783716126476], [0.0, -0.526088859413959, 0.5257210807173591, 0.5198376601270704, 0.4282143317399422], [0.0, -1.0368928548105656, 0.012701324639527408, 0.010272271904484468, 0.00012636065366300464], [0.0, -0.149974603849412, 0.9118657677060358, 0.9055212131356944, 0.13682288129969475], [0.0, -0.055373779632046725, 0.0007108706519552451, 0.0006318908991001194, 0.00041071519727675643], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.3507006043362961, 0.004502180795716552, 0.004001975694300756, 0.0026011962494194574]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, 13, 14, -1, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, 16, 15, -1, -1, -1], 'feature': [1, 77, 1, 74, -2, -2, 1, -2, -2, -2, 43, -2, 83, 22, -2, -2, -2], 'threshold': [0.0008299999753944576, 0.2789999917149544, -1.4999999621068127e-05, 0.04000000096857548, -2.0, -2.0, 0.0001449999981559813, -2.0, -2.0, -2.0, -0.2939999997615814, -2.0, 0.2044999971985817, 0.07778000086545944, -2.0, -2.0, -2.0], 'value': [[0.0, -0.30652778120551, 0.1997729883650536, 0.1969036299283189, 0.1062741336297423], [0.0, -0.5245824080696211, 0.3980844084714072, 0.39253796088935644, 0.21184671412963754], [0.0, -0.6259783042557361, 0.2694290289090825, 0.2644620106635427, 0.2514890849583552], [0.0, -0.5987670680355255, 0.007278544338585303, 0.004783981517739033, -0.00214539642340141], [0.0, -0.001608795616187625, 0.0026151461776104806, 0.0018007668620746754, 0.0004431697791617307], [0.0, -1.0466357723500288, 0.010776092959316419, 0.007021392509487301, -0.0040868210753237655], [0.0, -0.6406305083743111, 0.41058698213935013, 0.4042886417420525, 0.38806149801007056], [0.0, -0.5269794651050397, 0.5291309528861248, 0.5219839713299697, 0.5045584945416344], [0.0, -1.0194673192718822, 0.015440412983434904, 0.011970876448995416, -0.0002618237618088326], [0.0, -0.017602927139046674, 1.0413613062830316, 1.0329177120184245, 0.013634859986047968], [0.0, -0.08847315434139874, 0.0014615682587000207, 0.0012692989672811923, 0.0007015531298472655], [0.0, -0.7019673598606632, 0.009541885853735277, 0.008442955050963116, 0.005394307380686358], [0.0, -0.0008311249815038497, 0.0003072371736949842, 0.0002444909553266319, 3.1159665441680773e-05], [0.0, 2.812436481234057e-09, 9.618623798680737e-09, 8.330821612803321e-09, 4.56382460218347e-09], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 1.6874618887404342e-08, 5.771174279208443e-08, 4.9984929676819924e-08, 2.738294761310082e-08], [0.0, -0.005817891745145835, 0.0021506025041220975, 0.0017113867023567468, 0.00021809027514415233]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 1, -2, 43, -2, 43, -2, -2, 1, 72, -2, -2, 72, 73, -2, -2, -2], 'threshold': [0.9932432472705841, 0.001339999958872795, -2.0, -0.27699999511241913, -2.0, -0.2515000030398369, -2.0, -2.0, -1.4999999621068127e-05, 0.1770000010728836, -2.0, -2.0, 0.4179999977350235, 0.02500000037252903, -2.0, -2.0, -2.0], 'value': [[0.0, -0.27323750742668024, 0.17585210890823663, 0.1737690759104438, 0.10558802615581692], [0.0, -0.021999721605097774, 0.07525374215769773, 0.07455649585095522, 0.0009538497485603052], [0.0, -0.012597367784439243, 0.41747174714200674, 0.41433324837714397, 0.0042574420550865215], [0.0, -0.0240437115661105, 0.0008585236828479472, 0.000691984432218561, 0.00023567750801112769], [0.0, -0.18268301911610899, 0.005904842449534227, 0.004718495804267309, 0.0017074262573849215], [0.0, -0.00024781543361072634, 0.00010157586784500516, 8.800772641124887e-05, 1.4915195605058606e-05], [0.0, -0.0016333824647973838, 0.0006748559684705372, 0.0005845603208233611, 9.8112467220135e-05], [0.0, -3.3036045777867784e-06, 4.0879126402891625e-07, 3.8079798558201277e-07, 2.333241435745367e-07], [0.0, -0.6249704075768957, 0.316689822358991, 0.312666687993728, 0.25207587312597607], [0.0, -0.7781473687383397, 0.007753400862411969, 0.005353690340511974, -0.0017353925044044094], [0.0, -0.3427800148949733, 0.0014104594769278982, 0.00022738070446977807, -0.0010532163000569472], [0.0, -1.0393677810443591, 0.011559165693702411, 0.008429476122137292, -0.002144698227012887], [0.0, -0.5228524334692667, 0.5226474366900438, 0.5175420197625386, 0.42128338354622974], [0.0, -0.5245305963776375, 0.5233027138257191, 0.5181955983491442, 0.5056219637650998], [0.0, -0.5351331025530174, 0.5347924923585325, 0.5275158385367381, 0.5082855034058189], [0.0, -0.516048591437334, 0.5141108909994686, 0.5107394061990689, 0.5034911320525246], [0.0, -0.5178179447441535, 0.5206816052830174, 0.515581284002722, 0.16826764288961962]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [0, 22, 73, 0, -2, -2, -2, -2, 1, 1, -2, -2, 67, 67, -2, -2, 22, -2, -2], 'threshold': [0.9932432472705841, 0.21130499988794327, 0.029500000178813934, 0.9797297418117523, -2.0, -2.0, -2.0, -2.0, -1.4999999621068127e-05, -0.00023999999393709004, -2.0, -2.0, 0.10600000247359276, 0.10300000011920929, -2.0, -2.0, 0.1810849979519844, -2.0, -2.0], 'value': [[0.0, -0.2931087749795911, 0.14379970849446033, 0.14156149984937363, 0.09441088440656849], [0.0, -0.04056003535541998, 0.0016910031449124461, 0.0012662640072089492, 3.229809564196482e-05], [0.0, -0.0019959263430388914, 0.0014009484856588393, 0.0010096421171720286, 2.4558232984029683e-05], [0.0, -0.00046277404706714537, 0.000321730799386576, 0.00024738385521875936, 9.775990593242556e-05], [0.0, -6.60869809253421e-06, 8.124903154585309e-07, 7.571855361925415e-07, 4.642321447126233e-07], [0.0, -0.0026784343135152567, 0.0018804768720177179, 0.0014452848222483697, 0.000570338892901317], [0.0, -0.010975818362301977, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.3490729074544687, 0.004011440418941303, 0.0033192391275043143, 9.42169969054459e-05], [0.0, -0.6178142973535252, 0.32651090108673636, 0.3219410887892999, 0.21575478109204546], [0.0, -0.6920776703819437, 0.00610497242367362, 0.003689243668053862, -0.0019382510681811664], [0.0, -1.0396880673475577, 0.0063833040334224656, 0.0026626133163717056, -0.004734263794671012], [0.0, -0.3444672734163299, 0.005826640813924773, 0.004715874019736018, 0.0008577616583086792], [0.0, -0.5881089481421581, 0.4546732725519614, 0.44924182683779806, 0.30283199395613625], [0.0, -0.6622087363538894, 0.3771569334708162, 0.3723512419136738, 0.0728828340925801], [0.0, -0.7701712884765615, 0.27077472433244254, 0.265739676663038, 0.2511429838429703], [0.0, -0.5182586668569936, 0.5189998789886477, 0.5144999955811884, -0.1647973655746068], [0.0, -0.5232716334568931, 0.5225000692479633, 0.5165210886464068, 0.5040375088367477], [0.0, -0.5169136579023439, 0.5142730094972169, 0.5099049244040847, 0.5024146899249483], [0.0, -0.5296296090114426, 0.5307271289987097, 0.523137252888729, 0.5056603277485473]]}, {'left': [1, 2, 3, -1, -1, -1, 7, 8, -1, -1, 11, 12, -1, -1, 15, -1, -1], 'right': [6, 5, 4, -1, -1, -1, 10, 9, -1, -1, 14, 13, -1, -1, 16, -1, -1], 'feature': [22, 74, 82, -2, -2, -2, 78, 1, -2, -2, 1, 74, -2, -2, 58, -2, -2], 'threshold': [0.17344000190496445, 0.14499999955296516, 0.1380000039935112, -2.0, -2.0, -2.0, 0.029999999329447746, 0.0006549999816343188, -2.0, -2.0, -1.4999999621068127e-05, 0.04000000096857548, -2.0, -2.0, -0.11900000274181366, -2.0, -2.0], 'value': [[0.0, -0.2962476739708766, 0.2305103173210419, 0.2279067103610322, 0.09607243937958045], [0.0, -0.06914379814809819, 0.023322927802705444, 0.022849130782514618, 0.022210666911106052], [0.0, -0.000342989161360623, 0.000122766416544452, 9.364615974645104e-05, 8.822202155820071e-06], [0.0, -0.0019109396132948994, 0.0006839843207476612, 0.0005217428900159415, 4.915226915385469e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5163490565618924, 0.1741239768127519, 0.1707597808305077, 0.16652265751928255], [0.0, -0.4966334467556813, 0.413322719837221, 0.4088398688126653, 0.161244591557646], [0.0, -0.3165551807066101, 0.746479816358162, 0.7414389656112961, 0.15359082557637715], [0.0, -0.2759378583231031, 0.7881128203640219, 0.7808512377992927, 0.26310461492841936], [0.0, -0.37071161055128576, 0.6909691443503488, 0.6888892693606339, 0.007572439773654286], [0.0, -0.5647711690445191, 0.28726327791037876, 0.282991561915886, 0.16414061111812617], [0.0, -0.6918184442365011, 0.009837741852101563, 0.007498292703128368, -0.00014026900610716124], [0.0, -0.3405743040827314, 0.004459816996786911, 0.003356985459352551, 0.0006317698657254366], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.5037884769523676, 0.4204275352183518, 0.4152283311380097, 0.2429954335777581], [0.0, -0.34475661025716753, 0.34373539194143654, 0.3395624774718262, -0.11278292694679085], [0.0, -0.5932439019684177, 0.4635668658116168, 0.457790373825238, 0.4431207613728169]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 14, 11, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [0, 1, -2, 0, 2, -2, -2, -2, 1, 67, -2, 73, -2, -2, 67, -2, 2, -2, -2], 'threshold': [0.9932432472705841, -0.011180000379681587, -2.0, 0.9797297418117523, 0.22548000514507294, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.11000000312924385, -2.0, 0.02500000037252903, -2.0, -2.0, 0.10500000044703484, -2.0, 0.18196500092744827, -2.0, -2.0], 'value': [[0.0, -0.3252071345406407, 0.16472682500519162, 0.16254378419671367, 0.11549199371857588], [0.0, -0.024616923477089398, 0.04625220917539161, 0.04567215884872934, 0.0008494218123530585], [0.0, -0.007476412428704945, 0.349735578728783, 0.3461066686368448, 0.0049881234456930984], [0.0, -0.02718800013434706, 0.0007297037423829201, 0.0006069823805120222, 0.0002286165673520524], [0.0, -2.3929397126352376e-05, 1.5396800263307457e-05, 1.2820006028777139e-05, -3.984323082599249e-06], [0.0, -0.00013559991704933014, 8.724853482540891e-05, 7.264670082973712e-05, -2.257783080139575e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.1811177343119311, 0.004777443081060724, 0.003973902502583744, 0.0015466882798150783], [0.0, -0.6017501287191078, 0.27372347156860755, 0.2700656795168594, 0.22096315987230106], [0.0, -0.6594100677101365, 0.006023081382568412, 0.003955408293847309, -0.0015494823302935662], [0.0, -6.187335101104363e-06, 3.5175913701834816e-06, 1.630203888547399e-06, 1.1375233673338592e-06], [0.0, -1.0362122850672992, 0.009462832120395972, 0.00621471005953803, -0.002435550818099795], [0.0, -1.0527398480918218, 0.012960791216711934, 0.009135925044969776, -0.004394867335159332], [0.0, -1.0238166127989077, 0.006839362798158999, 0.0040237988204642194, -0.0009660634303051419], [0.0, -0.5564458909404427, 0.48405949242906693, 0.47915232119208306, 0.395794521602911], [0.0, -0.6424781448674828, 0.3933566962565106, 0.38833675657971445, 0.12456765464393758], [0.0, -0.5220329893696267, 0.5203406108980894, 0.5154785470370304, 0.5042852683865006], [0.0, -0.5162957532844796, 0.5141572105702538, 0.5105009828290733, 0.5031835771589314], [0.0, -0.5354198735683032, 0.5347685449963726, 0.527092863522264, 0.5068558812508284]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 12, -1, 14, -1, -1], 'feature': [1, 1, 67, -2, -2, 59, -2, 2, -2, -2, 1, -2, 43, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, 0.11000000312924385, -2.0, -2.0, -0.3199999928474426, -2.0, 0.2112950012087822, -2.0, -2.0, 0.0017599999555386603, -2.0, -0.18450000137090683, -2.0, -2.0], 'value': [[0.0, -0.29580704600143015, 0.18703977917683243, 0.18462069470338557, 0.09481487828941317], [0.0, -0.46526310803475, 0.3441988933675591, 0.33993849241818486, 0.174993960451489], [0.0, -0.4196697495685567, 0.005138963642104942, 0.0033971494991850227, -0.001746884733673397], [0.0, -3.3152523528645617e-06, 1.8777746335185697e-06, 8.70780896722323e-07, 6.064764200175432e-07], [0.0, -0.8393361838847602, 0.010276049509576366, 0.006793428217473323, -0.0034943759437668113], [0.0, -0.4937589570761217, 0.5561113494459677, 0.5502768317425595, 0.2854569886922154], [0.0, -0.5126057726612948, 0.5127050150036997, 0.5081016005354576, -0.25319843620807525], [0.0, -0.48747668521439697, 0.5705801275933906, 0.5643352421449267, 0.4650087969923123], [0.0, -0.5276772619949743, 0.5272423132017929, 0.5208512374782757, 0.5058054228420574], [0.0, -0.3668749548726648, 0.7005935707681837, 0.6947872561448806, 0.34261891944307693], [0.0, -0.09554079087114258, 0.0013062805877919496, 0.0010632974040774921, 5.778118877820941e-05], [0.0, -0.5238262106656143, 0.006084214611483452, 0.005083061587946525, 0.00023853601494988608], [0.0, -0.00036625313903774587, 0.00024451747141606014, 0.0001700164743288182, 1.7613449628947927e-05], [0.0, -0.002197518834226475, 0.001467104828496361, 0.0010200988459729092, 0.00010568069777368756], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, -1, 4, -1, -1, 7, 8, -1, -1, 11, 12, -1, -1, -1], 'right': [6, 3, -1, 5, -1, -1, 10, 9, -1, -1, 14, 13, -1, -1, -1], 'feature': [83, 2, -2, 44, -2, -2, 2, 59, -2, -2, 1, 0, -2, -2, -2], 'threshold': [0.2044999971985817, 0.1871899962425232, -2.0, 0.13000000268220901, -2.0, -2.0, 0.17509500682353973, -0.19999999552965164, -2.0, -2.0, 0.0013599999947473407, 0.9932432472705841, -2.0, -2.0, -2.0], 'value': [[0.0, -0.25215693399140077, 0.1773667529982774, 0.17499701036558016, 0.08524457252282547], [0.0, -0.0015535444201594385, 0.001202530872525235, 0.0008462938981992968, -7.694069466061301e-05], [0.0, -0.010578441800553192, 0.00821267575586581, 0.005778705090091017, -0.0005283989080711304], [0.0, -6.419154949080916e-06, 7.91749666850805e-07, 7.376938750017612e-07, 4.521419240471098e-07], [0.0, 8.728251148657419e-10, 2.98509014441816e-09, 2.585427397076893e-09, 1.4163593592983183e-09], [0.0, -3.744928919102719e-05, 4.604111787598342e-06, 4.2907180384244015e-06, 2.6306488200381986e-06], [0.0, -0.43897036985359844, 0.30868917312838334, 0.30481845355035503, 0.1488478823758606], [0.0, -0.23646250931358903, 0.08004077855262463, 0.07880104015147478, -0.07770445353508958], [0.0, -0.4391445944096697, 0.14864715277243395, 0.14634478311492674, -0.1443082699821268], [0.0, -7.670149471117327e-08, 8.629513770230801e-09, 6.694114151883923e-09, -1.0135461359084275e-09], [0.0, -0.5016513743064589, 0.37946129525897565, 0.3747762243642942, 0.21897122444353562], [0.0, -0.49461980494599306, 0.4960634056813835, 0.4902263497346785, 0.28711321516670274], [0.0, -0.01681195127499197, 0.6917200483492527, 0.6876945079634158, 0.007249016839151978], [0.0, -0.6048831557931469, 0.45091187275802913, 0.444656774758816, 0.351697260934599], [0.0, -0.5241523962599495, 0.0063345419072702745, 0.005335823179064425, 0.000916854129400968]]}, {'left': [1, 2, 3, -1, -1, -1, 7, 8, -1, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [6, 5, 4, -1, -1, -1, 12, 9, -1, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [83, 73, 2, -2, -2, -2, 1, 18, -2, 1, -2, -2, 48, 58, -2, -2, -2], 'threshold': [0.2044999971985817, 0.029500000178813934, 0.23670999705791473, -2.0, -2.0, -2.0, 0.0001449999981559813, 0.07499999925494194, -2.0, -1.4999999621068127e-05, -2.0, -2.0, -0.05900000035762787, -0.05900000035762787, -2.0, -2.0, -2.0], 'value': [[0.0, -0.3596523842562525, 0.2000546882979947, 0.19726380580649983, 0.12747144690944232], [0.0, -0.0008166050598319913, 0.0006321051104051997, 0.00044485159888645823, -4.044055267920558e-05], [0.0, -3.4044808355479264e-06, 4.185556170543947e-07, 3.9006527622040016e-07, 2.3914989273074533e-07], [0.0, -1.8724644595513595e-05, 2.302055893799171e-06, 2.1453590192122007e-06, 1.3153244100190993e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.005289208244312431, 0.004106381161739999, 0.0028893900337427663, -0.00026417891682485535], [0.0, -0.6051716016011717, 0.33650171890002956, 0.33192940605381405, 0.21471642254142032], [0.0, -0.46808498151954914, 0.5265135862323386, 0.5204049744569401, 0.33927082172330775], [0.0, -0.01760292713904667, 1.0413613062830316, 1.0329177120184243, 0.01363485998604797], [0.0, -0.5581813923956495, 0.42354404222219993, 0.41790242694464325, 0.4043980140707596], [0.0, -0.6872390385311683, 0.00723241016902576, 0.004941081119021066, -0.00019697133957137977], [0.0, -0.5259169808617695, 0.5276219502354933, 0.5211427634010488, 0.5055467604233426], [0.0, -0.8401772360268115, 0.010767089187500129, 0.008828431648455143, 0.0011945953724703106], [0.0, -1.034403492590754, 0.013092622974371335, 0.01051492969655746, 7.090573716702789e-05], [0.0, -1.0456056225799075, 0.01133178046757366, 0.009422969632228995, 0.00032045286139892326], [0.0, -1.0194673192718822, 0.015440412983434904, 0.011970876448995416, -0.0002618237618088326], [0.0, -0.4517247228989266, 0.006116021613757715, 0.005455435552250508, 0.003441974643076876]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, -1], 'feature': [0, 22, 22, 25, -2, -2, -2, -2, 1, 94, 22, -2, -2, -2, 69, 72, -2, -2, -2], 'threshold': [0.9932432472705841, 0.20409999787807465, 0.1778149977326393, 0.014999999664723873, -2.0, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.0625, 0.1817849949002266, -2.0, -2.0, -2.0, -0.19999999552965164, 0.2150000035762787, -2.0, -2.0, -2.0], 'value': [[0.0, -0.3928889773691631, 0.16703743318948083, 0.16413340513023533, 0.11570461481072795], [0.0, -0.06734731304607283, 0.04497573026046309, 0.04427511890182811, 0.0007568036769421303], [0.0, -0.026300972071192603, 0.001255865195518271, 0.0009521332437180575, 0.0002012798254526443], [0.0, -0.0009944145485558807, 0.0005592258541707597, 0.00041034629893546174, -1.2918535430183481e-05], [0.0, -0.005966487291335284, 0.003355355125024558, 0.0024620777936127706, -7.751121258110089e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.17814031720701295, 0.005435701243603337, 0.004202854912413632, 0.0014864699907496109], [0.0, -0.3546716998702344, 0.35101478571507677, 0.3475360185085985, 0.004645470637368533], [0.0, -0.7184306416922533, 0.28909913611849886, 0.28399169135864255, 0.23065242594451374], [0.0, -0.9442387194937107, 0.008491232760135031, 0.005296753560995046, -0.002719268361834973], [0.0, -1.0399818995439853, 0.0073078084169663216, 0.0037472165973942706, -0.0043815567656497745], [0.0, -1.026520772194353, 0.005268944031541522, 0.0020161964700096124, -0.0022840347496122957], [0.0, -1.0624171117933725, 0.010705915726007653, 0.0066322501430353675, -0.007877426792378905], [0.0, -0.6889235726929783, 0.011647031008584921, 0.009428852130597113, 0.0017135007150044974], [0.0, -0.5273622681679437, 0.5265365928063449, 0.5198104848797291, 0.4281207826652705], [0.0, -0.5274201712415941, 0.5259493944221327, 0.5192345949210503, 0.5050121886499827], [0.0, -0.5199101174433896, 0.517681102816008, 0.5118490586878803, 0.5032372424576018], [0.0, -0.5349302250397987, 0.5342176860282574, 0.5266201311542204, 0.5067871348423637], [0.0, -0.5271692579224423, 0.5284939207537195, 0.521730118075325, 0.17181609604956236]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 5, 4, -1, -1, 9, 8, -1, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [1, 1, 82, -2, -2, 93, 2, -2, -2, -2, 53, -2, 43, -2, 0, -2, -2], 'threshold': [0.001339999958872795, -4.999999873689376e-05, 0.11600000038743019, -2.0, -2.0, 0.1875, 0.2112950012087822, -2.0, -2.0, -2.0, -0.07099999859929085, -2.0, -0.2639999985694885, -2.0, 0.9459459483623505, -2.0, -2.0], 'value': [[0.0, -0.2618105053168009, 0.18744632977934214, 0.18507613928573555, 0.11613348984494874], [0.0, -0.5007001381022244, 0.37416177268820516, 0.3695412811603389, 0.2320732839464887], [0.0, -0.3915599660100366, 0.1341989243459628, 0.1316249833853408, 0.0006443518321247294], [0.0, -0.6220100981588356, 0.0048769317162706384, 0.002935972234438422, -0.001961911136016292], [0.0, -0.007476412428704945, 0.349735578728783, 0.3461066686368448, 0.0049881234456930984], [0.0, -0.5552702241483185, 0.4941431968593266, 0.48849943004783813, 0.34778775000367074], [0.0, -0.4836365360389041, 0.5685993543682876, 0.5627526811761048, 0.38000267205723753], [0.0, -0.5296744299361118, 0.530345372149062, 0.5230682582397189, 0.5067841437023108], [0.0, -0.419183484582813, 0.6221549294752037, 0.6183108732870453, 0.2025086117541349], [0.0, -0.7701712884765617, 0.27077472433244254, 0.265739676663038, 0.2511429838429702], [0.0, -0.02292087253137731, 0.0007308868704792165, 0.0006109974111321211, 0.00019369574340872184], [0.0, -0.17521588140484448, 0.002192530904151724, 0.0019564130383942966, 0.001303741434863041], [0.0, -0.001164442692310567, 0.0005220805799545726, 0.00041879517866609604, 3.511778748667625e-05], [0.0, -0.00582604344946643, 0.0024816890358633583, 0.0019223785290139646, 0.00028671882559735035], [0.0, -0.00038750923278458986, 0.00019547917063644164, 0.00016819795360811796, -6.815718865102769e-06], [0.0, 9.039974403966613e-10, 3.0917005067188086e-09, 2.6777640898296387e-09, 1.466943622130401e-09], [0.0, -0.0017437947115216956, 0.0008796454469122139, 0.0007568814190622164, -3.0675869195639915e-05]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 1, -2, 2, -2, 0, -2, -2, 1, 59, -2, -2, 57, 58, -2, -2, -2], 'threshold': [0.9932432472705841, 0.001339999958872795, -2.0, 0.2131050005555153, -2.0, 0.31333333253860474, -2.0, -2.0, -0.00015499999790336005, -0.3199999928474426, -2.0, -2.0, 0.43400000035762787, -0.07699999958276749, -2.0, -2.0, -2.0], 'value': [[0.0, -0.20575583674437992, 0.16283050186404593, 0.16103880945608232, 0.052518401609844834], [0.0, -0.003242440194993659, 0.04110409478295553, 0.04058411213550875, 0.00023557675929649044], [0.0, -0.015208315420863462, 0.2636759377362291, 0.26127734451850504, 0.001018412275818831], [0.0, -0.0010668265175627861, 0.0006364869732694365, 0.0004580698840548953, 9.324302901970121e-05], [0.0, -0.006427174769506383, 0.00389449271835951, 0.0027973872408265177, 0.0005881170440241565], [0.0, -5.270657800588936e-05, 2.0107507982125272e-05, 1.5496330071074804e-05, -3.8178462979031814e-07], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0003250238977029844, 0.00012399629922310584, 9.55607021049613e-05, -2.3543385503736283e-06], [0.0, -0.44508985084819996, 0.30668898295987995, 0.3033943608349419, 0.11430719461503834], [0.0, -0.14690689920929348, 0.0006051526503729436, 9.775938837058058e-05, -0.00045116174319253285], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.25708707361626365, 0.0010590171381526514, 0.000171078929648516, -0.0007895330505869325], [0.0, -0.5842418949463564, 0.4495281037709834, 0.44493277484334176, 0.16786109424887943], [0.0, -0.6109766012616739, 0.42792188439309325, 0.42340244274473715, 0.41269589478991214], [0.0, -0.520633481246714, 0.5200469172719943, 0.5151054730190141, 0.5044106517709785], [0.0, -0.7690770612878534, 0.26670307685501665, 0.26292213976475287, 0.252195070073046], [0.0, -0.5107214525792335, 0.5089452070601809, 0.504141188114504, -0.5054346072389607]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, 9, -1, -1, -1, 13, -1, -1], 'right': [12, 7, 4, -1, 6, -1, -1, 11, 10, -1, -1, -1, 14, -1, -1], 'feature': [25, 1, 53, -2, 54, -2, -2, 1, 49, -2, -2, -2, 22, -2, -2], 'threshold': [0.004999999888241291, -1.4999999621068127e-05, -0.07099999859929085, -2.0, -0.0800000000745058, -2.0, -2.0, 0.0001449999981559813, -0.3199999928474426, -2.0, -2.0, -2.0, 0.04243999905884266, -2.0, -2.0], 'value': [[0.0, -0.3375549084392126, 0.17726933524248198, 0.17467585036385289, 0.12641300693239022], [0.0, -0.5489740725983194, 0.28833063343703486, 0.28413434391949133, 0.2056900697648187], [0.0, -0.5205859252114324, 0.10993797164825399, 0.10718954289105706, 0.00052388426203872], [0.0, -0.004402813405169047, 0.2603415012585931, 0.25822997307943085, 0.003409093917581236], [0.0, -0.864707999748941, 0.009668951908027872, 0.00649592276547454, -0.0013995888416562907], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.6863534151076115, 0.004122237108639526, 0.0013522455840448953, -0.0018868698053728223], [0.0, -0.5635320968992875, 0.37981404973897365, 0.3748752675238166, 0.31090349822778285], [0.0, -0.5248422853381515, 0.5256108528907124, 0.5193426848212643, 0.4327506819532977], [0.0, -0.5174878869467309, 0.5149062478868548, 0.5087386522922204, 0.16632707031387356], [0.0, -0.5268480303539936, 0.5285302906190373, 0.5222346936928219, 0.5054116669458678], [0.0, -0.6620152536003614, 0.008694914443639295, 0.007140023493949175, 0.0007470305628359517], [0.0, -0.00042705207739295373, 0.00017158947278942674, 0.00013392820756455052, -1.7689355361406378e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0022572752662198985, 0.0009069729276012557, 0.0007079062399840527, -9.350087833886228e-06]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 73, 43, -2, 82, -2, -2, -2, 1, 72, -2, -2, 91, 73, -2, -2, -2], 'threshold': [0.9932432472705841, 0.024999999441206455, -0.296999990940094, -2.0, 0.11600000038743019, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.2150000035762787, -2.0, -2.0, 0.1875, 0.013000000035390258, -2.0, -2.0, -2.0], 'value': [[0.0, -0.1877634085986696, 0.1234286309012264, 0.12123306109691949, 0.07394979457568811], [0.0, -0.0024992032597902863, 0.0018097608106919898, 0.0012982197192734782, 3.934902095128976e-06], [0.0, -0.0005719604880989609, 0.0005125417721544386, 0.0003793700266552094, 8.795141472421211e-05], [0.0, -0.002712604290307813, 0.003386905538234272, 0.002418067528089221, 0.0006225117582446376], [0.0, -0.0002732660040698188, 0.00011146775828283391, 9.49006078504636e-05, 1.336159934926903e-05], [0.0, -0.0014266743215353705, 0.0005939595750091842, 0.0005052637094030143, 6.885911657977806e-05], [0.0, -9.62981722054985e-06, 1.183914459668145e-06, 1.103327495594846e-06, 6.764525537241082e-07], [0.0, -0.011084193788233462, 0.007588281982359263, 0.005391277440936675, -0.0003703204723435141], [0.0, -0.4965370841634682, 0.3261267477187836, 0.32112446339299616, 0.19719289403167636], [0.0, -0.4470268657109702, 0.006521004948614818, 0.004988403802452738, -0.0003909896697148315], [0.0, -7.670149471117327e-08, 8.629513770230801e-09, 6.694114151883923e-09, -1.0135461359084275e-09], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.528043586815058, 0.5295122203907097, 0.5223019558597056, 0.3229280927507436], [0.0, -0.5337815449343664, 0.5350160996887485, 0.5264269272661669, 0.5067926388702491], [0.0, -0.5287034141141193, 0.5288609236839245, 0.5216981842863188, 0.505657824866597], [0.0, -0.5368284234265145, 0.5387092052916429, 0.529264173054076, 0.5074735272724405], [0.0, -0.5127423651635693, 0.5148352089292727, 0.5113020321091422, -0.167377363567938]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, 10, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [14, 9, 6, 5, -1, -1, 8, -1, -1, 11, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [1, 1, 53, 59, -2, -2, 1, -2, -2, 74, -2, 59, -2, -2, 25, -2, 1, -2, -2], 'threshold': [0.0008500000112690032, -4.999999873689376e-05, -0.07099999859929085, -0.19999999552965164, -2.0, -2.0, -0.0001849999935075175, -2.0, -2.0, -0.0800000000745058, -2.0, -0.19999999552965164, -2.0, -2.0, 0.004999999888241291, -2.0, 0.16541999578475952, -2.0, -2.0], 'value': [[0.0, -0.3151871998303612, 0.187525923837335, 0.18509684847491262, 0.11650075718672998], [0.0, -0.5008269836680194, 0.3450744800324016, 0.3407576669203947, 0.2147573363674695], [0.0, -0.432191432297814, 0.17749567830573268, 0.17482985149418093, 0.0017156288351850566], [0.0, -0.0058690556937853805, 0.3471212214294053, 0.34430626962072913, 0.004545205604880107], [0.0, -0.01173803468607605, 0.6942424342292967, 0.6886125325473444, 0.00909041222330635], [0.0, -7.670149471117327e-08, 8.629513770230801e-09, 6.694114151883923e-09, -1.0135461359084275e-09], [0.0, -0.8585138089018421, 0.007870135182060123, 0.005353433367632645, -0.0011139479345099936], [0.0, -0.697717937330519, 0.00628354295493212, 0.0033370639973767263, -0.0034584513042267688], [0.0, -1.0193096804731654, 0.009456727409188126, 0.0073698027378885644, 0.0012305554352067816], [0.0, -0.5596574562710527, 0.48871345294097546, 0.4829815087142921, 0.39736451425228475], [0.0, -0.642183236352435, 0.3938828510231506, 0.38946493303973456, 0.12561306402184286], [0.0, -0.5266471442384999, 0.5266456937081052, 0.5203881389841154, 0.5060650943444616], [0.0, -0.5202772325318148, 0.5189145421448939, 0.514630763859299, 0.5046367107760262], [0.0, -0.5362020117985273, 0.5382424210529225, 0.5290242016713398, 0.5082076696971143], [0.0, -0.0957947280222201, 0.0013321756068016806, 0.0011340630393428001, 0.00037934542767417446], [0.0, -0.5250992976318152, 0.006664204865140938, 0.0057268706911210165, 0.002060699029952484], [0.0, -0.0003937125534211759, 0.00014728021605962352, 0.00011343911672541858, 5.71129383455012e-06], [0.0, -0.0023622753205270555, 0.0008836812963577412, 0.0006806347003525115, 3.426776300730072e-05], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, 10, -1, -1, 13, -1, 15, 16, -1, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 9, -1, 11, -1, -1, 14, -1, 18, 17, -1, -1, -1], 'feature': [1, 1, 1, 43, -2, -2, -2, 59, -2, 59, -2, -2, 53, -2, 0, 25, -2, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, -0.00015499999790336005, -0.3139999955892563, -2.0, -2.0, -2.0, -0.3199999928474426, -2.0, -0.19999999552965164, -2.0, -2.0, -0.07099999859929085, -2.0, 0.9797297418117523, 0.014999999664723873, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2824426157402778, 0.18624753762507232, 0.18417214487890676, 0.07451755838049341], [0.0, -0.4985901586362274, 0.3713333170330106, 0.3673919520664614, 0.1488150081816432], [0.0, -0.5163875709464822, 0.11116411244688806, 0.10852065536955754, 0.0017615468175003874], [0.0, -0.17641428452350863, 0.1762977642090439, 0.1736967330870202, 0.001668975691005114], [0.0, -0.0008071349512229625, 0.001309135024495249, 0.0009011068504132224, 0.0002220906244462586], [0.0, -0.35202143409579434, 0.3512863933935925, 0.34649235932362726, 0.0031158607575639697], [0.0, -1.0263475005809428, 0.013463634803654312, 0.01075653879336358, 0.0019004035072432979], [0.0, -0.4858777212717598, 0.5571684631659554, 0.5523000211356783, 0.25385319487031666], [0.0, -0.5123108641462472, 0.5132311697703398, 0.5092297769954777, -0.25215302683017005], [0.0, -0.475304464121965, 0.5747433805242015, 0.5695281187917585, 0.45625568355051127], [0.0, -0.5218927905138994, 0.5209630075340278, 0.5157976010938884, 0.5046186241131085], [0.0, -0.3665983692074514, 0.7002309175012739, 0.694899326753455, 0.3434088222377841], [0.0, -0.06629507284432805, 0.001161758217134129, 0.0009523376913519963, 0.00022010857934362063], [0.0, -0.31425065335888813, 0.0035818746360057664, 0.0030584417494823766, 0.0008463354331976092], [0.0, -0.0010436042878648626, 0.0005248854753258033, 0.0003980997813176857, 5.531203885572892e-05], [0.0, -3.3069548923895086e-05, 1.9189412296973162e-05, 1.6026869967631997e-05, -4.5562513695807105e-06], [0.0, -0.00015432456164484373, 8.955059071920808e-05, 7.479205984894932e-05, -2.126250639137665e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.003873101556899572, 0.001940834451806528, 0.001467903933097836, 0.0002229432514865959]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, -1, 13, 14, -1, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 12, -1, 16, 15, -1, -1, -1], 'feature': [0, 22, 2, -2, 0, -2, -2, 1, -2, -2, 1, -2, 57, 72, -2, -2, -2], 'threshold': [0.9932432472705841, 0.20969999581575394, 0.17810999602079391, -2.0, 0.9797297418117523, -2.0, -2.0, 0.0014150000060908496, -2.0, -2.0, -1.4999999621068127e-05, -2.0, 0.43400000035762787, 0.25299999862909317, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2179330798686702, 0.15341929097440268, 0.15163559869351192, 0.06347137592034625], [0.0, -0.03666188535558441, 0.0349708855141404, 0.03444936586188603, 0.0002727940891009551], [0.0, -0.0022399348281548644, 0.0016136688636639257, 0.001158669632850634, 4.649888917220887e-05], [0.0, -0.011273850783613563, 0.007354134317294309, 0.005245992072503796, -0.000311041058945658], [0.0, -0.0005191889318770171, 0.000520246872496234, 0.00038013202529765084, 0.00011460173643275494], [0.0, -6.60869809253421e-06, 8.124903154585309e-07, 7.571855361925415e-07, 4.642321447126233e-07], [0.0, -0.0026976549254610696, 0.0027278429967645297, 0.0019924750942838486, 0.0005996861296569348], [0.0, -0.1800866792198742, 0.17395928822445908, 0.17316060014953352, 0.001215690755470731], [0.0, -0.011100450985279703, 0.34390713602997697, 0.3430019611715629, 0.002337164514036016], [0.0, -0.3490729074544687, 0.004011440418941303, 0.0033192391275043143, 9.42169969054459e-05], [0.0, -0.5484864345690033, 0.3694134421078221, 0.36532814091588856, 0.1787158486714406], [0.0, -0.6162053592133341, 0.0062307915832530815, 0.004438609218990352, 0.00012792828329852846], [0.0, -0.520270215967199, 0.5207395464930592, 0.5156987791229294, 0.2531274821664999], [0.0, -0.5250636419426961, 0.5246416563953907, 0.5189445114507062, 0.5062396036874289], [0.0, -0.5168277678432709, 0.5147840501134758, 0.5108830839344055, 0.5033643790069777], [0.0, -0.5312405475172649, 0.532034861106827, 0.5249905820879317, 0.5083960221977674], [0.0, -0.513559419601503, 0.5152765926297951, 0.5111547538640416, -0.10122948796280087]]}, {'left': [1, 2, -1, 4, -1, -1, 7, 8, 9, -1, -1, -1, -1], 'right': [6, 3, -1, 5, -1, -1, 12, 11, 10, -1, -1, -1, -1], 'feature': [83, 2, -2, 0, -2, -2, 90, 57, 1, -2, -2, -2, -2], 'threshold': [0.2094999998807907, 0.17843499779701233, -2.0, 0.31333333253860474, -2.0, -2.0, 0.0625, 0.43400000035762787, 0.0001449999981559813, -2.0, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2523857571040624, 0.1869738415762048, 0.18484793313544468, 0.07446482878442134], [0.0, -0.001700987601742475, 0.0012393248371710332, 0.0008898431507365436, 6.454160792218334e-05], [0.0, -0.009074446831086047, 0.0060138972825783355, 0.004336052814375725, 0.00011195161824626917], [0.0, -0.0003060088286234209, 0.0003360273474993814, 0.00023785753869669845, 5.557214650951846e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0016174752370095105, 0.0017761445510681587, 0.0012572469902539776, 0.000293738488693169], [0.0, -0.46450363899064057, 0.3441338172784643, 0.34050477850712074, 0.1374189179337668], [0.0, -0.49762315870534296, 0.2644544696692689, 0.26093751746242194, 0.11512946617384409], [0.0, -0.5884629110357242, 0.2679893373075577, 0.2638766368612117, 0.25274767703266304], [0.0, -0.5251729337757476, 0.35408123063583224, 0.3492078063560888, 0.3369210451098105], [0.0, -0.7783328428156543, 0.009713657322734381, 0.007883128376580284, 0.0002275728012207101], [0.0, -0.2553838191576602, 0.2550281559671655, 0.2530998657323161, -0.25185242944967307], [0.0, -0.28234628055977734, 0.78237022912904, 0.7781247142529644, 0.26001090261334153]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, 10, -1, -1, 13, -1, 15, -1, 17, -1, -1], 'right': [12, 5, 4, -1, -1, 9, 8, -1, -1, 11, -1, -1, 14, -1, 16, -1, 18, -1, -1], 'feature': [1, 1, 53, -2, -2, 57, 20, -2, -2, 49, -2, -2, 2, -2, 1, -2, 22, -2, -2], 'threshold': [0.0013599999947473407, -4.999999873689376e-05, -0.08300000056624413, -2.0, -2.0, 0.4139999896287918, 0.054999999701976776, -2.0, -2.0, -0.25999999791383743, -2.0, -2.0, 0.2155349999666214, -2.0, 0.015944999526254833, -2.0, 0.042205000296235085, -2.0, -2.0], 'value': [[0.0, -0.19586443771749482, 0.19551629850541452, 0.1935792023393137, 0.0006999650365885277], [0.0, -0.36090426050975094, 0.3605849589419323, 0.35710331453263255, 0.0012729816820937084], [0.0, -0.11465120210815279, 0.0024061483700545173, 0.0017725037912876907, 8.563479623235334e-05], [0.0, -2.556716490372442e-08, 2.8765045900769337e-09, 2.231371383961308e-09, -3.378487119694758e-10], [0.0, -0.34395355519012855, 0.007218439357154372, 0.005317506911120304, 0.0002569050643944839], [0.0, -0.49127352672236196, 0.5502090351270444, 0.5452196261015798, 0.0019015770922556157], [0.0, -0.473280076375359, 0.5849831210930745, 0.5794721981429921, 0.34029748298276324], [0.0, -0.2823462805597773, 0.78237022912904, 0.7781247142529644, 0.2600109026133415], [0.0, -0.6260271130278243, 0.4270734346643021, 0.42055018525501425, 0.4045267472783004], [0.0, -0.5115161583627403, 0.5110881884152604, 0.5066854825549907, -0.3787938170345653], [0.0, -0.5110163610942812, 0.5084190522935409, 0.5030130116544839, -0.506480016616866], [0.0, -0.5120159556311996, 0.5137573245369798, 0.5103579534554977, -0.25110761745226473], [0.0, -0.000817374417555684, 0.0004351543531660451, 0.0003234333835733188, 2.276354644604638e-05], [0.0, -0.004688540968489511, 0.0025300120932216785, 0.0018454558138896922, 0.00025717525383299006], [0.0, -0.00020613759372402706, 0.00010438734157831353, 8.311405247073353e-05, -1.4248828404523672e-05], [0.0, -0.0009651100867424933, 0.0004941133305766399, 0.0003931827299715751, -6.866842822900177e-05], [0.0, -3.744928919102719e-06, 4.6041117875983415e-07, 4.2907180384244017e-07, 2.6306488200381986e-07], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -1.6049695367583083e-05, 1.973190766113575e-06, 1.8388791593247435e-06, 1.1274209228735138e-06]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 22, 73, 1, -2, -2, -2, -2, 1, 53, -2, -2, 48, -2, 22, -2, -2], 'threshold': [0.9932432472705841, 0.21130499988794327, 0.024999999441206455, 0.026839999482035637, -2.0, -2.0, -2.0, -2.0, -4.999999873689376e-05, -0.08300000056624413, -2.0, -2.0, -0.11600000038743019, -2.0, 0.19301000237464905, -2.0, -2.0], 'value': [[0.0, -0.2482337985878357, 0.14251608891681042, 0.14076321902611047, 0.09453938798920831], [0.0, -0.04060701615393647, 0.0017333269777869693, 0.0013035407049362385, 1.755217182338438e-05], [0.0, -0.0019959263430388914, 0.0014009484856588393, 0.0010096421171720286, 2.4558232984029683e-05], [0.0, -0.00046277404706714537, 0.000321730799386576, 0.00024738385521875936, 9.775990593242556e-05], [0.0, -0.0026784343135152567, 0.0018804768720177179, 0.0014452848222483697, 0.000570338892901317], [0.0, -6.60869809253421e-06, 8.124903154585309e-07, 7.571855361925415e-07, 4.642321447126233e-07], [0.0, -0.010975818362301975, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.3494957346411171, 0.004392354914812009, 0.003654729407049917, -3.849631746177806e-05], [0.0, -0.5151825188599918, 0.3235224971241263, 0.3200685197247629, 0.2160674626115604], [0.0, -0.4368493629971094, 0.004054223210174028, 0.0031591079177193076, 0.0005278142430380812], [0.0, -4.124890067402909e-06, 2.3450609134556544e-06, 1.0868025923649327e-06, 7.583489115559061e-07], [0.0, -1.0193096804731654, 0.009456727409188126, 0.0073698027378885644, 0.0012305554352067816], [0.0, -0.5543490967914331, 0.48325663408110253, 0.47852322562828487, 0.3238372867958215], [0.0, -0.6405938247854214, 0.38959688831299166, 0.384376344158761, -0.12766851638694787], [0.0, -0.5198512055938378, 0.5207205323883468, 0.5161819782160944, 0.5044396080689293], [0.0, -0.5152350590077678, 0.5136421481319648, 0.5109869922758605, 0.5039977607308832], [0.0, -0.5244673521799078, 0.5277989166447288, 0.521376964156328, 0.5048814554069754]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [84, 1, -2, 22, 2, -2, -2, -2, 1, 53, -2, -2, 68, 69, -2, -2, -2], 'threshold': [0.6700000166893005, -0.02379000000655651, -2.0, 0.1803250014781952, 0.1871899962425232, -2.0, -2.0, -2.0, -4.999999873689376e-05, -0.09200000017881393, -2.0, -2.0, -0.04399999976158142, -0.19999999552965164, -2.0, -2.0, -2.0], 'value': [[0.0, -0.23019131957440728, 0.13285454436068433, 0.13100017814518655, 0.08439254064168722], [0.0, -0.02150607773355959, 0.03893368983261926, 0.0381880569122328, 0.0007562352844750182], [0.0, -0.007396633494276537, 0.34971664412745856, 0.3460005838039238, 0.004869029204344955], [0.0, -0.023199211042273557, 0.0016397353172385436, 0.0012505536852298763, 0.0002627000140906256], [0.0, -0.002236855043552979, 0.0012048477428879866, 0.0008939826612560739, 4.3888045425941e-05], [0.0, -0.01216794804754833, 0.006250295324845236, 0.004561075335605939, -3.158096721290778e-05], [0.0, -0.00035799961036466946, 0.0002503036057609397, 0.00020020837151420732, 5.816596673599347e-05], [0.0, -0.17692315503289113, 0.004828910862475962, 0.003865407861037761, 0.0018673211176316457], [0.0, -0.5223506581515938, 0.26434374069997546, 0.2609371478713217, 0.20148336814178439], [0.0, -0.520433770099355, 0.005041834392944894, 0.0035010574582914344, -0.00166133879153052], [0.0, -4.144065441080702e-06, 2.347218291898212e-06, 1.0884761209029037e-06, 7.58095525021929e-07], [0.0, -1.040863396133269, 0.01008132156759789, 0.007001026440461966, -0.003323435678586062], [0.0, -0.5236285835197534, 0.4372116782379957, 0.4325612081466752, 0.3369131727639941], [0.0, -0.5245462914236861, 0.5237794408061494, 0.5186035277265992, 0.5052380398338493], [0.0, -0.5272620519679756, 0.5266644855914712, 0.521147964178765, 0.506231685232094], [0.0, -0.5209252773646335, 0.5199327144257203, 0.5152109457903786, 0.5039131793028564], [0.0, -0.5223437924542472, 0.31601681064258075, 0.3121019607347816, 0.10125835886619713]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, 9, -1, -1, -1, 13, 14, -1, 16, -1, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 11, 10, -1, -1, -1, 18, 15, -1, 17, -1, -1, -1], 'feature': [1, 1, 52, 74, -2, -2, -2, 68, 90, -2, -2, -2, 52, 2, -2, 0, -2, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, 0.13700000196695328, 0.08500000089406967, -2.0, -2.0, -2.0, -0.04399999976158142, 0.0625, -2.0, -2.0, -2.0, 0.13700000196695328, 0.2131050005555153, -2.0, 0.31333333253860474, -2.0, -2.0, -2.0], 'value': [[0.0, -0.31583197750551756, 0.21849346580676465, 0.2159539916701212, 0.08482526507395129], [0.0, -0.5415699673533984, 0.3879705962036386, 0.3835344678310473, 0.15060451918987974], [0.0, -0.6588302896331915, 0.10085391720886738, 0.0978497998404193, 1.6013939852022767e-05], [0.0, -0.9036912823532576, 0.008503972876813771, 0.0054287607782735154, -0.001682338330959465], [0.0, -0.6829190636566724, 0.009063110176330802, 0.006873725508398179, 0.0004455051509581898], [0.0, -1.0361546135712083, 0.008168490497103553, 0.004561781940198717, -0.0029590444201100575], [0.0, -0.005867642379682223, 0.3471204354276772, 0.3443059040061415, 0.004544953328682656], [0.0, -0.46095349578604067, 0.585363313012544, 0.5799426770746041, 0.25413411654927387], [0.0, -0.44949126795030764, 0.6029577870964246, 0.5973485455684717, 0.4293387905482583], [0.0, -0.5237779290127653, 0.5232189239708178, 0.5170035817086973, 0.5045956296304435], [0.0, -0.2823462805597773, 0.7823702291290401, 0.7781247142529643, 0.2600109026133415], [0.0, -0.5106231497408843, 0.5091205919823941, 0.5045172469345106, -0.5050861374463257], [0.0, -0.02559741912967097, 0.0005942981536410454, 0.0004933794632159208, 0.0002519383534718356], [0.0, -0.0006610087504753855, 0.0003279260285559323, 0.00024954053401952486, 7.663783990663475e-05], [0.0, -0.003678477894340356, 0.0018481639839000863, 0.001405973220050612, 0.0004648120268102203], [0.0, -5.751492170239144e-05, 2.3878437487101502e-05, 1.825399681330738e-05, -9.969974740823654e-07], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0002875746085119572, 0.0001193921874355075, 9.12699840665369e-05, -4.984987370411827e-06], [0.0, -0.17521588140484448, 0.002192530904151724, 0.0019564130383942966, 0.001303741434863041]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 22, 59, 42, -2, -2, -2, -2, 1, 94, -2, -2, 59, -2, 58, -2, -2], 'threshold': [0.9932432472705841, 0.21130499988794327, -0.0800000000745058, 0.08100000023841858, -2.0, -2.0, -2.0, -2.0, -4.999999873689376e-05, 0.1875, -2.0, -2.0, -0.3199999928474426, -2.0, -0.0859999991953373, -2.0, -2.0], 'value': [[0.0, -0.24058522100423838, 0.15421130631907795, 0.1519832059070714, 0.08401510328924978], [0.0, -0.0762394810770358, 0.0018487114759521766, 0.0014339504475540086, 7.228068842874974e-06], [0.0, -0.001730699728782399, 0.0011697306834793971, 0.0008476556870865878, 7.096936490523026e-07], [0.0, -0.00040353841801678004, 0.00011328892262143508, 0.00010799827663592332, 8.00759839070797e-05], [0.0, -6.60869809253421e-06, 8.124903154585309e-07, 7.571855361925415e-07, 4.642321447126233e-07], [0.0, -0.0026528068309208397, 0.0007506553723553022, 0.000715697792867731, 0.0005312092438938265], [0.0, -0.010578441800553192, 0.00821267575586581, 0.005778705090091017, -0.0005283989080711304], [0.0, -0.4189798752790015, 0.004972023121326963, 0.004130906345704144, 3.721259473445926e-05], [0.0, -0.470669256902322, 0.367518939099454, 0.3627521635503955, 0.20162612859781945], [0.0, -0.34845816389994205, 0.0024887687774130343, 0.0012187042242290207, -0.0018397655673198325], [0.0, -0.6969135778731724, 0.004975974180883765, 0.0024366839133964646, -0.003680036700580702], [0.0, -2.749926711601939e-06, 1.5633739423037696e-06, 7.245350615766218e-07, 5.055659410372707e-07], [0.0, -0.5230454396176276, 0.523960440666043, 0.5176950746901813, 0.28882579752573634], [0.0, -0.5137953464135412, 0.514855668816483, 0.5102522126960257, -0.10206581546512514], [0.0, -0.5281843802865644, 0.529018647249132, 0.5218299980202679, 0.5059878047428814], [0.0, -0.524480971557174, 0.5250429066825646, 0.5183927989494271, 0.504323152324222], [0.0, -0.5355911977453452, 0.5369701283822663, 0.5287043961619492, 0.5093171095802004]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, 14, -1, -1], 'feature': [1, 90, 1, 69, -2, -2, 58, -2, -2, -2, 2, -2, 84, -2, -2], 'threshold': [0.001339999958872795, 0.0625, -4.999999873689376e-05, -0.19999999552965164, -2.0, -2.0, -0.1340000033378601, -2.0, -2.0, -2.0, 0.2153650000691414, -2.0, 0.510000005364418, -2.0, -2.0], 'value': [[0.0, -0.24993925410682846, 0.20662363578585122, 0.20464483920680435, 0.053807886101485604], [0.0, -0.41194896102900963, 0.41200400418116895, 0.4082301274505155, 0.10723839813259887], [0.0, -0.46434383246492894, 0.3120316514761954, 0.30877191031347967, 0.10132150149917976], [0.0, -0.3836715796757849, 0.003383444603791569, 0.002265362653669444, -4.222983473468802e-06], [0.0, -0.7673390152861288, 0.00676454198929124, 0.004529636831217985, -9.204062471959533e-06], [0.0, -4.144065441080702e-06, 2.347218291898212e-06, 1.0884761209029037e-06, 7.58095525021929e-07], [0.0, -0.5181253343243585, 0.5177971227244648, 0.513109608753353, 0.1688719844876152], [0.0, -0.5101316355491382, 0.5099975165934609, 0.5063975410345443, -0.5033437884831501], [0.0, -0.5221221837119687, 0.5216969257899668, 0.5164656426127573, 0.5049798709729978], [0.0, -0.14997460384941202, 0.9118657677060358, 0.9055212131356944, 0.13682288129969475], [0.0, -0.08792954718464745, 0.001243267390533806, 0.0010595509630930376, 0.00037737407037230036], [0.0, -0.4215778965512584, 0.0057569212377871935, 0.004925420297761396, 0.0018227360989918173], [0.0, -0.00012734998290778906, 5.5463746519756575e-05, 4.221692765399591e-05, -2.9843582117830704e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0008065498917493308, 0.000351270394625125, 0.0002673738751419741, -1.890093534129278e-05]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, 10, -1, -1, 13, -1, 15, 16, -1, -1, -1], 'right': [12, 5, 4, -1, -1, 9, 8, -1, -1, 11, -1, -1, 14, -1, 18, 17, -1, -1, -1], 'feature': [1, 22, 2, -2, -2, 49, 67, -2, -2, 57, -2, -2, 49, -2, 74, 1, -2, -2, -2], 'threshold': [0.001339999958872795, 0.20185000449419022, 0.18176500499248505, -2.0, -2.0, -0.0800000000745058, 0.10300000011920929, -2.0, -2.0, 0.41600000858306885, -2.0, -2.0, -0.1550000011920929, -2.0, -0.0800000000745058, 0.0017549999756738544, -2.0, -2.0, -2.0], 'value': [[0.0, -0.30666516578101904, 0.2102542612022805, 0.20761122014713593, 0.11666793789927572], [0.0, -0.5258469913974322, 0.437336618182659, 0.4320461338159846, 0.24328997278035241], [0.0, -0.6399622602797094, 0.18629131816803252, 0.18164204277715199, 0.16880943060055065], [0.0, -0.26828428846596575, 0.26950290264241494, 0.2646080458355442, 0.25377100237685823], [0.0, -0.9373046377307043, 0.11972205058852654, 0.11526924033043814, 0.10084017317950474], [0.0, -0.452487175687397, 0.5987228824777763, 0.5930201923409492, 0.29117032132451054], [0.0, -0.5259735064401169, 0.5283635483757776, 0.5222125805105625, 0.5053359939091847], [0.0, -0.5191340454872051, 0.5241209719710749, 0.5190181152229937, 0.5024854484919441], [0.0, -0.5328129673930285, 0.5326061247804804, 0.5254070457981315, 0.5081865393264254], [0.0, -0.3545054013504376, 0.692535327947108, 0.6874303414481308, 0.005616091211611551], [0.0, -0.19409849608620044, 0.8687005881803705, 0.8630557135081177, 0.17788555507091033], [0.0, -0.5149123066146749, 0.5163700677138455, 0.511804969388144, -0.16665337264768723], [0.0, -0.10501788621391876, 0.0013384927803323477, 0.001131099571794838, 0.00017566580868530135], [0.0, -0.6970704150532715, 0.007554520311715773, 0.0062819797548193295, 0.00021363524093261552], [0.0, -0.024283450463097944, 0.0004908526624164259, 0.0004287068195642255, 0.00017048815883339487], [0.0, -0.0004642312772748889, 0.0002281687879404922, 0.00019255532035312507, -8.675964727845687e-06], [0.0, -0.0017437947115216956, 0.0008796454469122139, 0.0007568814190622164, -3.0675869195639915e-05], [0.0, -0.00011124826093094218, 4.845108891381034e-05, 3.6879155191996424e-05, -2.6070255643162454e-06], [0.0, -0.15018503758816265, 0.0018793245703606473, 0.0016769361725371848, 0.0011174985262285236]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 9, -1, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [1, 1, 52, 1, -2, -2, -2, 58, -2, 43, -2, -2, 42, 44, -2, -2, -2], 'threshold': [0.0017049999441951513, -1.4999999621068127e-05, 0.13700000196695328, -0.0003149999974993989, -2.0, -2.0, -2.0, -0.125, -2.0, -0.22699999809265137, -2.0, -2.0, 0.08300000056624413, 0.06999999843537807, -2.0, -2.0, -2.0], 'value': [[0.0, -0.32700346628498794, 0.18734575464280376, 0.1845975004143424, 0.07376681259574586], [0.0, -0.5412710858353516, 0.3206453705005838, 0.3160357344960958, 0.1262906853198076], [0.0, -0.5227786807155982, 0.09209235614886213, 0.08924513304600333, -0.0007914691802042242], [0.0, -0.7819676455933294, 0.007968369859225052, 0.004752984729937662, -0.002891561141869065], [0.0, -0.619504324094234, 0.004972917044732921, 0.002123220540918394, -0.001989577425894905], [0.0, -1.0527398480918218, 0.012960791216711934, 0.009135925044969776, -0.004394867335159332], [0.0, -0.0044007509601353455, 0.26034032872813634, 0.25822942967813467, 0.003408714743125458], [0.0, -0.5551403896751669, 0.49206013126437514, 0.4861286855836652, 0.22160230119481658], [0.0, -0.5106231497408843, 0.5091205919823941, 0.5045172469345108, -0.5050861374463257], [0.0, -0.5654135988907705, 0.48812310186790925, 0.4818851714257779, 0.38929963318892635], [0.0, -0.47441018129708534, 0.5847223807725611, 0.5779498357647734, 0.4507025884537955], [0.0, -0.7701712884765616, 0.27077472433244254, 0.265739676663038, 0.2511429838429703], [0.0, -0.027028798914478687, 0.0007262924419116912, 0.0005839726998874417, 0.00023339078205937834], [0.0, -3.3036045777867784e-06, 4.0879126402891625e-07, 3.8079798558201277e-07, 2.333241435745367e-07], [0.0, 9.374788270780191e-10, 3.2062079328935794e-09, 2.7769405376011072e-09, 1.52127486739449e-09], [0.0, -1.6049695367583083e-05, 1.973190766113575e-06, 1.8388791593247435e-06, 1.1274209228735138e-06], [0.0, -0.18017327233725045, 0.004839633128915111, 0.0038909934773313135, 0.0015546163769156]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, 12, -1, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 14, 13, -1, -1, -1], 'feature': [1, 1, 73, -2, -2, 0, -2, 73, -2, -2, 0, 27, -2, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, 0.02500000037252903, -2.0, -2.0, 0.9932432472705841, -2.0, -0.06500000134110451, -2.0, -2.0, 0.9797297418117523, 0.009999999776482582, -2.0, -2.0, -2.0], 'value': [[0.0, -0.27473842828811795, 0.251475258323317, 0.24914533483776302, 0.09593478623309067], [0.0, -0.5269481805347648, 0.48252450418381043, 0.478124964461705, 0.18417980926142413], [0.0, -0.8644931347987191, 0.011266933571530467, 0.008141328088509734, -0.0009656076519947591], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.6859236852071672, 0.007318200435644716, 0.004643056230115283, -0.0010189074260497592], [0.0, -0.42035503708299005, 0.6313426843771622, 0.6265408496321883, 0.24264678302355638], [0.0, -0.030419771612395147, 1.029876123813068, 1.027464664925768, 0.007447435355892305], [0.0, -0.5243377745418151, 0.5250671005275875, 0.5196278322205672, 0.3053666090682669], [0.0, -0.5098367270340906, 0.5105236713601009, 0.5075257174945643, -0.5022983791052448], [0.0, -0.5279630364187463, 0.5287029578194593, 0.5226533609020679, 0.5072828561116446], [0.0, -0.0005973932374149081, 0.0003347736923459567, 0.00025443307260831143, 1.6282941423828095e-05], [0.0, -4.970278560062015e-05, 3.0303474801123593e-05, 2.527093169380252e-05, -7.517833485699248e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.00028993291600361754, 0.00017677026967322096, 0.00014741376821384802, -4.385402866657895e-05], [0.0, -0.0023400446750058246, 0.001303542566352244, 0.0009835853391544761, 9.201267977232419e-05]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 22, 2, -2, 83, -2, -2, -2, 1, 47, -2, -2, 48, -2, 91, -2, -2], 'threshold': [0.9932432472705841, 0.20969999581575394, 0.17810999602079391, -2.0, 0.2044999971985817, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.07899999991059303, -2.0, -2.0, -0.06199999898672104, -2.0, 0.0625, -2.0, -2.0], 'value': [[0.0, -0.27517488319359257, 0.18809559153286406, 0.18556240087025735, 0.11615414433122102], [0.0, -0.0040808357825720615, 0.07756657975631036, 0.07703449444289348, 0.0005654184220929331], [0.0, -0.0019959263430388914, 0.0014009484856588388, 0.0010096421171720286, 2.4558232984029683e-05], [0.0, -0.010975818362301975, 0.007722080648110667, 0.005474297651469748, -0.00040419442285657476], [0.0, -0.00046277404706714537, 0.000321730799386576, 0.00024738385521875936, 9.775990593242556e-05], [0.0, -6.60869809253421e-06, 8.124903154585309e-07, 7.571855361925415e-07, 4.642321447126233e-07], [0.0, -0.0026784343135152567, 0.0018804768720177179, 0.0014452848222483697, 0.000570338892901317], [0.0, -0.020760111298837425, 0.6868916299215225, 0.6852333130486654, 0.004892299934964161], [0.0, -0.6237243727220474, 0.3302043209598619, 0.32509828056258233, 0.26476822050009996], [0.0, -0.7799047709079369, 0.008753956259261009, 0.006199831789848814, -0.0015683097875443253], [0.0, -1.0421829090874701, 0.013161928651488885, 0.009784170544327297, -0.0018767589981982802], [0.0, -0.342774540608715, 0.0014073356055478807, 0.00022593386571800878, -0.0010542277697877338], [0.0, -0.5276133584538076, 0.5280199300063854, 0.5213434798073415, 0.428667623754035], [0.0, -0.5227695037325578, 0.5218582315441229, 0.5146101897475156, 0.1679308676432133], [0.0, -0.5290665148701823, 0.5298684395450641, 0.5233634668252891, 0.5068886505872816], [0.0, -0.5324014571646097, 0.5334833449010988, 0.526201587372649, 0.5081368744771234], [0.0, -0.5240641014285414, 0.524446081511012, 0.5191062860042495, 0.5050163147525187]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, 12, -1, 14, -1, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 16, 13, -1, 15, -1, -1, -1], 'feature': [1, 77, 1, 87, -2, -2, 52, -2, -2, -2, 52, 2, -2, 43, -2, -2, -2], 'threshold': [0.001339999958872795, 0.2789999917149544, -0.0001049999991664663, 0.0625, -2.0, -2.0, 0.1290000006556511, -2.0, -2.0, -2.0, 0.13700000196695328, 0.20669999718666077, -2.0, -0.2330000028014183, -2.0, -2.0, -2.0], 'value': [[0.0, -0.23288832693898376, 0.20861190546302713, 0.20627408883068155, 0.0748167008282475], [0.0, -0.41158692229448396, 0.45341061689513784, 0.44862240325069097, 0.16276921208319925], [0.0, -0.4931450821225903, 0.2976768776631755, 0.29320991190415574, 0.15710058346280764], [0.0, -0.4536935476589195, 0.006587569447694748, 0.004058393977026442, -0.0029286364060448697], [0.0, -0.7888927309462324, 0.0073891361477010035, 0.004160860533791387, -0.004563195176264803], [0.0, -0.006761303275835757, 0.005518813847686407, 0.00392177190133985, -0.0007492247124182919], [0.0, -0.5238296089276675, 0.5240796729418827, 0.5181055369585897, 0.2815677544719152], [0.0, -0.5134657013137123, 0.5130657294679045, 0.5088843025334057, -0.1672887148104155], [0.0, -0.5290115627346451, 0.5295866446788721, 0.5227161541711817, 0.5059959891130803], [0.0, -0.19409849608620042, 0.8687005881803703, 0.8630557135081179, 0.1778855550709103], [0.0, -0.08168182317663729, 0.001474534251241132, 0.0012101304752889295, 0.0003953451509805784], [0.0, -0.0012774519801712941, 0.0006595678399897826, 0.0004905687854722567, 0.00010171773594847], [0.0, -0.006598476756894585, 0.003877753590153928, 0.0027743096682609028, 0.000367854630450896], [0.0, -0.000390614517384079, 0.0001232035482957583, 0.00010994530500748241, 5.7361586864732336e-05], [0.0, -0.0017296783613350852, 0.0005509628834902136, 0.0004915358340048526, 0.00025615415427626687], [0.0, -8.024847683791541e-06, 9.865953830567875e-07, 9.194395796623718e-07, 5.637104614367569e-07], [0.0, -0.41938018220179485, 0.0048973931784968006, 0.004232289572518954, 0.0016285802941154337]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, 10, -1, -1, 13, 14, -1, 16, -1, -1, -1], 'right': [12, 9, 6, 5, -1, -1, 8, -1, -1, 11, -1, -1, 18, 15, -1, 17, -1, -1, -1], 'feature': [1, 2, 1, 89, -2, -2, 22, -2, -2, 53, -2, -2, 89, 25, -2, 72, -2, -2, -2], 'threshold': [0.0013599999947473407, 0.18024999648332596, -4.999999873689376e-05, 0.0625, -2.0, -2.0, 0.17438000440597534, -2.0, -2.0, -0.029000000096857548, -2.0, -2.0, 0.1875, 0.004999999888241291, -2.0, 0.44599999487400055, -2.0, -2.0, -2.0], 'value': [[0.0, -0.23880435120980173, 0.19567701176663513, 0.19378265853700763, 0.06405399086089829], [0.0, -0.43305547324029653, 0.3904069957098462, 0.38677973008874966, 0.1277611780674044], [0.0, -0.48408556999029245, 0.22920472050401558, 0.22619980348532623, 0.22021295113924907], [0.0, -0.45642600139495737, 0.004396158969786509, 0.002742474131312537, -0.00048011795346042326], [0.0, -0.0025386015713626388, 0.002071316145945937, 0.0014714812384752553, -0.0002803907588597265], [0.0, -0.819535921253833, 0.006256033228858966, 0.003759268445582363, -0.0006398997091409807], [0.0, -0.5196478724700089, 0.5182442996194531, 0.513502084083344, 0.5039611828298755], [0.0, -0.5169136579023439, 0.5142730094972169, 0.5099049244040847, 0.5024146899249483], [0.0, -0.5232934918935621, 0.5235393531157676, 0.5182982969890229, 0.5060231733697785], [0.0, -0.3309952797403058, 0.7128115461215078, 0.7079395832955961, -0.057142368076285005], [0.0, -0.22369041136403486, 0.8341842709783519, 0.8281879027762151, 0.20995123854109093], [0.0, -0.5098367270340906, 0.5105236713601009, 0.5075257174945643, -0.5022983791052448], [0.0, -0.04455322917930681, 0.0009470278234240634, 0.0007855869852655545, 0.00034680365439219524], [0.0, -0.00048232234789500337, 0.00030132487065852586, 0.0002182826791331527, 3.063465787317421e-06], [0.0, -0.0022958651542503428, 0.0014394722312049968, 0.0010353287229533659, 3.126934303279705e-05], [0.0, -2.8936646306168545e-05, 1.6788030521908137e-05, 1.4021168178099397e-05, -3.988003524052486e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.00015432878029956557, 8.953616278351006e-05, 7.477956361653011e-05, -2.1269352128279923e-05], [0.0, -0.2649077633363659, 0.0041755425872517515, 0.0036221085159275634, 0.002065504597416584]]}, {'left': [1, 2, -1, -1, 5, 6, 7, -1, -1, -1, 11, -1, 13, -1, -1], 'right': [4, 3, -1, -1, 10, 9, 8, -1, -1, -1, 12, -1, 14, -1, -1], 'feature': [83, 2, -2, -2, 1, 53, 47, -2, -2, -2, 59, -2, 18, -2, -2], 'threshold': [0.2044999971985817, 0.22628000378608704, -2.0, -2.0, -1.4999999621068127e-05, -0.07099999859929085, 0.08300000056624413, -2.0, -2.0, -2.0, -0.3199999928474426, -2.0, 0.08500000089406967, -2.0, -2.0], 'value': [[0.0, -0.2960500149622954, 0.2194865092497202, 0.2167738841921981, 0.08473985238111932], [0.0, -0.0008607472420893061, 0.0006662682748803895, 0.0004688935784265633, -4.2628748738698835e-05], [0.0, -0.005307941326217387, 0.004108654361762402, 0.0028915104002971404, -0.0002628772838886428], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.48116870827835695, 0.3567127620644502, 0.35242277661100413, 0.1379085269879795], [0.0, -0.47567981498608525, 0.09897203488075287, 0.09651666035934788, -0.0005339629036666654], [0.0, -0.0029352217203618166, 0.17356100227731433, 0.17215331650197294, 0.0022727291094631345], [0.0, -0.005867693514012031, 0.34712044118068636, 0.34430590846888426, 0.004544952652985232], [0.0, -2.749926711601939e-06, 1.5633739423037696e-06, 7.245350615766218e-07, 5.055659410372707e-07], [0.0, -1.0429733269049533, 0.00946527400487911, 0.005752672988197816, -0.0039019933194224254], [0.0, -0.4844323745602484, 0.5099640052547569, 0.5045831700579346, 0.22022568313976923], [0.0, -0.3831689997786005, 0.3819282615854519, 0.3784547786696685, -0.3788193283185795], [0.0, -0.5123670986379445, 0.5452842104049102, 0.539377209061594, 0.38547947940414123], [0.0, -0.5999940769534367, 0.45496572708143207, 0.4484257785125008, 0.43327703246730287], [0.0, -0.28234628055977734, 0.78237022912904, 0.7781247142529644, 0.26001090261334153]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 5, 4, -1, -1, 9, 8, -1, -1, -1, 12, -1, 14, -1, -1], 'feature': [82, 1, 88, -2, -2, 1, 49, -2, -2, -2, 2, -2, 2, -2, -2], 'threshold': [0.11600000038743019, -1.4999999621068127e-05, 0.0625, -2.0, -2.0, 0.0013599999947473407, -0.3199999928474426, -2.0, -2.0, -2.0, 0.1875149980187416, -2.0, 0.2264150008559227, -2.0, -2.0], 'value': [[0.0, -0.3695700919273388, 0.17718854073399262, 0.17477795285074502, 0.1268358382693898], [0.0, -0.6325961296634209, 0.3030448007900724, 0.2991148648329129, 0.21742159305135736], [0.0, -0.7994922958935473, 0.008863751989869377, 0.006503021492617488, 0.0004275575238268874], [0.0, -1.0313606104630921, 0.012171124593724247, 0.008757082870519106, 0.0002770780292410624], [0.0, -0.5096569026816165, 0.004729536235050791, 0.0036854447702404647, 0.0006156568920591687], [0.0, -0.5535400509228352, 0.44239371864279997, 0.43772047483621074, 0.3202082414591348], [0.0, -0.4919335539414949, 0.5580375113781367, 0.5525099669131234, 0.4055475466697506], [0.0, -0.5174878869467309, 0.5149062478868548, 0.5087386522922204, 0.16632707031387353], [0.0, -0.48554497069018615, 0.5688203272509573, 0.5634527955683493, 0.4653526657587197], [0.0, -0.7845644146028611, 0.008729495885288041, 0.0072598795477868405, 0.00018584691932616026], [0.0, -0.0013336390968237694, 0.0009897766554810713, 0.000706276075709953, 1.5781574635284882e-05], [0.0, -0.008320285546920403, 0.006210327862082484, 0.00439771036368751, 1.422435254144934e-05], [0.0, -0.00010070148798318696, 6.85029131396453e-05, 5.484649547861947e-05, 1.605637853419704e-05], [0.0, -0.0005706417652380594, 0.00038818317445799, 0.000310796807712177, 9.098614502711655e-05], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, -1, 4, -1, -1, 7, 8, 9, -1, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [6, 3, -1, 5, -1, -1, 14, 11, 10, -1, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [22, 2, -2, 68, -2, -2, 22, 22, 22, -2, -2, 22, -2, -2, 79, -2, 0, -2, -2], 'threshold': [0.17344000190496445, 0.19957999885082245, -2.0, -0.0859999991953373, -2.0, -2.0, 0.20185000449419022, 0.1803250014781952, 0.1751450002193451, -2.0, -2.0, 0.20177000015974045, -2.0, -2.0, 0.019999999552965164, -2.0, 0.9932432472705841, -2.0, -2.0], 'value': [[0.0, -0.32562596530419097, 0.2098310600229527, 0.20729354914628725, 0.09604455646324224], [0.0, -0.0006364017218281231, 0.0003298729628407049, 0.0002364372082913823, 2.5773072373323448e-05], [0.0, -0.004136623847846965, 0.0021441309746574877, 0.0015368043651967274, 0.0001675044332158926], [0.0, 2.301084393736956e-09, 7.869783108011513e-09, 6.816126774111808e-09, 3.734038310877385e-09], [0.0, 1.2655964165553257e-08, 4.328380709406332e-08, 3.7488697257614945e-08, 2.0537210709825615e-08], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.5479872456500181, 0.35317397748513446, 0.3489642046828109, 0.16174161878331048], [0.0, -0.7617033320911192, 0.12350741980052736, 0.12073184315431691, 0.03843804452288702], [0.0, -0.5530371198271501, 0.2412889675184942, 0.23849829977166948, 0.07779277317537428], [0.0, -0.8498785740135374, 0.17577750237063902, 0.17258420571008704, -0.16800630191548416], [0.0, -0.29860158766738965, 0.2974416519309416, 0.2949960946815973, 0.28847769468182444], [0.0, -0.9554648149076623, 0.014138839776701004, 0.011377276295346652, 0.001894367917005987], [0.0, -0.8701281424220356, 0.012403408834389137, 0.010585809423814966, 0.004769290155425747], [0.0, -1.0194673192718822, 0.015440412983434904, 0.011970876448995416, -0.0002618237618088326], [0.0, -0.355642767853027, 0.5598738794012811, 0.5543733300584553, 0.2727148356176915], [0.0, -0.12350026850733893, 0.9377648754214348, 0.9310005129122405, 0.11218527703696539], [0.0, -0.4717140175258711, 0.3709283813912042, 0.36605973863156266, 0.35297961490805474], [0.0, -0.34981985610838784, 0.005392379185887894, 0.004298241957581436, 0.00025574571000748617], [0.0, -0.5239543724190783, 0.5275866680506255, 0.5211003800632689, 0.5041469874215034]]}, {'left': [1, 2, -1, 4, 5, -1, -1, 8, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 3, -1, 7, 6, -1, -1, 9, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [1, 78, -2, 1, 2, -2, -2, 58, -2, -2, 2, -2, 2, -2, 2, -2, -2], 'threshold': [0.001339999958872795, 0.029999999329447746, -2.0, -1.4999999621068127e-05, 0.18338000029325485, -2.0, -2.0, -0.1340000033378601, -2.0, -2.0, 0.21502500027418137, -2.0, 0.21765000373125076, -2.0, 0.2514299899339676, -2.0, -2.0], 'value': [[0.0, -0.284532471381668, 0.20879968415953173, 0.2064993076592753, 0.0747950796039089], [0.0, -0.48271670674911654, 0.39981701138338965, 0.39559525089388914, 0.14338652976705954], [0.0, -0.22939760987563118, 0.8341684445598382, 0.8290833138060565, 0.21073569408788279], [0.0, -0.5460464809674879, 0.2912291530892772, 0.2872232351658474, 0.12654923868685372], [0.0, -0.5201320835651666, 0.008413376039442335, 0.006359186772407275, -0.0002455864678515892], [0.0, -0.2063737830701041, 0.004332001638658005, 0.0031909388677091284, 0.00015444637820131272], [0.0, -1.043062584390271, 0.015215666707416217, 0.011639599946904186, -0.000912307877939759], [0.0, -0.563322745902369, 0.4797730044558339, 0.47446593409480764, 0.21107912212332391], [0.0, -0.5102299383874874, 0.5098221316712476, 0.5060214822145376, -0.5036922582757852], [0.0, -0.5810203484073295, 0.4697566287173627, 0.4639474180548976, 0.4493362489230269], [0.0, -0.069114824243137, 0.001172154568382083, 0.000960238925999458, 0.00023915551352778365], [0.0, -0.3528825964166369, 0.00583335735907917, 0.0047876247712546555, 0.0012298739352425672], [0.0, -9.023101174514607e-05, 3.8348484158467433e-05, 2.925317985630188e-05, -1.8300485109474735e-06], [0.0, -0.0005376999278328872, 0.00023418026308341666, 0.0001782492500946494, -1.2600623560861854e-05], [0.0, -3.624124760421986e-06, 4.455592052514524e-07, 4.1523077791203887e-07, 2.5457891806821277e-07], [0.0, -1.8724644595513595e-05, 2.302055893799171e-06, 2.1453590192122007e-06, 1.3153244100190993e-06], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, 9, -1, -1, -1, 13, 14, -1, 16, -1, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 11, 10, -1, -1, -1, 18, 15, -1, 17, -1, -1, -1], 'feature': [1, 1, 1, 43, -2, -2, -2, 57, 18, -2, -2, -2, 89, 25, -2, 1, -2, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, -0.00015499999790336005, -0.3139999955892563, -2.0, -2.0, -2.0, 0.43400000035762787, 0.08500000089406967, -2.0, -2.0, -2.0, 0.1875, 0.004999999888241291, -2.0, 0.19889499992132187, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2605961306653377, 0.18559384082434496, 0.1835476944288037, 0.05337365861680543], [0.0, -0.460176112958614, 0.3420337148062823, 0.3383702618044928, 0.0983367496021892], [0.0, -0.43149663328837606, 0.09330496911496998, 0.09099851661764252, 0.0015797234180750016], [0.0, -0.13231174461514833, 0.13222390942201126, 0.13027282151591327, 0.0012519213554817246], [0.0, -0.00048593092676073866, 0.0007864190390625316, 0.0005410988312848794, 0.00013355771423237753], [0.0, -0.35202143409579434, 0.3512863933935925, 0.34649235932362726, 0.0031158607575639697], [0.0, -1.0298664106348314, 0.015467088500887405, 0.012449906821101087, 0.002235327543261556], [0.0, -0.4847585241045326, 0.5552297825416933, 0.5504031862503646, 0.18127134347428714], [0.0, -0.4744913161206714, 0.5735331508276422, 0.5684567149207008, 0.4555355600084242], [0.0, -0.5221653049016167, 0.5203611699424296, 0.5154220353608251, 0.50438530779859], [0.0, -0.3632520089651327, 0.6976011062264718, 0.6922043005604106, 0.34155281516470365], [0.0, -0.5104265440641859, 0.5094713618268208, 0.5052693645745241, -0.5043891978610554], [0.0, -0.024728878864192904, 0.0007103533911461023, 0.00057556934844357, 0.00023546017953364094], [0.0, -0.0005290480644920839, 0.0002896442238141847, 0.00021280885294360172, 4.3650021151241915e-05], [0.0, -0.0028559255118751586, 0.0015703811670823179, 0.0011534091796773702, 0.0002358298367552969], [0.0, -3.624124760421986e-06, 4.455592052514524e-07, 4.1523077791203887e-07, 2.5457891806821277e-07], [0.0, -1.8724644595513595e-05, 2.302055893799171e-06, 2.1453590192122007e-06, 1.3153244100190993e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.17799447392896475, 0.0033748447842482467, 0.0028730524866100358, 0.0014502578492888347]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 44, 73, 84, -2, -2, -2, -2, 1, 74, -2, -2, 67, -2, 59, -2, -2], 'threshold': [0.9932432472705841, 0.08999999985098839, 0.029500000178813934, 0.510000005364418, -2.0, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.04000000096857548, -2.0, -2.0, 0.10600000247359276, -2.0, -0.19999999552965164, -2.0, -2.0], 'value': [[0.0, -0.27403619741863344, 0.1875478623602471, 0.1851258358439757, 0.09526673955994937], [0.0, -0.0041357386512540706, 0.07771685888734288, 0.07712067289010603, 0.00045456076916962893], [0.0, -0.0022514168247871114, 0.0017147655035145589, 0.0012137568866735068, -0.00011704746061754672], [0.0, -0.00016966058084559124, 9.028794042674636e-05, 7.251983581912924e-05, -1.4209598754150794e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0010179634850735475, 0.0005417276425604781, 0.00043511901491477545, -8.525759252490477e-05], [0.0, -0.01057844180055319, 0.00821267575586581, 0.005778705090091017, -0.0005283989080711304], [0.0, -0.01355734778358887, 0.4577273258064845, 0.45665525290726866, 0.0033126019181055075], [0.0, -0.6210510729766925, 0.3287591525396953, 0.32398961678466504, 0.2171681122909519], [0.0, -0.7756430846620336, 0.007943467645590507, 0.005455525721613647, -0.0009789668521673622], [0.0, -0.339769944625385, 0.0031522482227385553, 0.0024566053753722894, 0.00041018446937150327], [0.0, -1.0371669686840224, 0.010818199299301678, 0.007254877929358461, -0.0018124576450906816], [0.0, -0.5259175273241753, 0.5261841893976063, 0.520010595900389, 0.3514124686867177], [0.0, -0.5127423651635693, 0.5148352089292728, 0.5113020321091422, -0.167377363567938], [0.0, -0.5298700759723569, 0.5295888835381061, 0.522623165037763, 0.5070494183631145], [0.0, -0.5261696967080629, 0.5246914288634008, 0.5183716588772266, 0.5050435720591729], [0.0, -0.5354206448687981, 0.536935065550164, 0.5290004242785675, 0.5100581878190267]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 1, -2, 2, -2, 22, -2, -2, 1, 89, -2, -2, 22, 68, -2, -2, -2], 'threshold': [0.9932432472705841, -0.0090650002239272, -2.0, 0.21502500027418137, -2.0, 0.20170500129461288, -2.0, -2.0, -4.999999873689376e-05, 0.0625, -2.0, -2.0, 0.2160400003194809, -0.04399999976158142, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2598997693585444, 0.1640965402971972, 0.1620459569360733, 0.07398811298165028], [0.0, -0.057973365233967435, 0.03862933492089552, 0.03802032132071049, 0.0006852823165612928], [0.0, -0.010051304078755662, 0.3511866323151022, 0.3471668100046322, 0.0043916732480082125], [0.0, -0.06372401257259286, 0.0011224592335907335, 0.0009227426786398896, 0.0002405154047876623], [0.0, -0.2892044528555976, 0.004909229725129375, 0.004047274411547942, 0.001102843991360978], [0.0, -0.0001269653132838222, 5.439576161829603e-05, 4.146449756325943e-05, -2.7054786048113352e-06], [0.0, -3.4044808355479264e-06, 4.185556170543947e-07, 3.9006527622040016e-07, 2.3914989273074533e-07], [0.0, -0.0008065498917493308, 0.000351270394625125, 0.0002673738751419741, -1.890093534129278e-05], [0.0, -0.5425967351329526, 0.3397506278240195, 0.3356818467975812, 0.17661207591277486], [0.0, -0.5126622244973716, 0.002985018776102577, 0.001454957741408654, -0.0008486294623878768], [0.0, -5.525420588107603e-06, 3.129624389197616e-06, 1.451301494537205e-06, 1.010794033362572e-06], [0.0, -1.025318923574155, 0.0059669079278159565, 0.002908464181322771, -0.0016982697188091163], [0.0, -0.55542581111963, 0.48407874598741263, 0.4789219421073693, 0.25266666393070164], [0.0, -0.5678591976884133, 0.47686649361304295, 0.47112091245631615, 0.45856622112232354], [0.0, -0.5213757563895779, 0.5210037108541058, 0.5153002664923708, 0.5039672253966185], [0.0, -0.6918150411519742, 0.35916724763687546, 0.3533093016935042, 0.33749687639086995], [0.0, -0.5098367270340906, 0.5105236713601009, 0.5075257174945643, -0.5022983791052448]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, 9, -1, -1, -1, -1], 'right': [12, 7, 4, -1, 6, -1, -1, 11, 10, -1, -1, -1, -1], 'feature': [1, 1, 52, -2, 94, -2, -2, 1, 94, -2, -2, -2, -2], 'threshold': [0.029085000045597553, -4.999999873689376e-05, 0.13700000196695328, -2.0, 0.1875, -2.0, -2.0, 0.0001449999981559813, 0.1875, -2.0, -2.0, -2.0, -2.0], 'value': [[0.0, -0.3696120056759859, 0.1876608643475064, 0.18490236116824366, 0.11570348665169083], [0.0, -0.5632182947651841, 0.2859594109649684, 0.2817559777329204, 0.17631007424583972], [0.0, -0.4348675478676263, 0.09005693825176468, 0.08790933045392176, -0.0006009809488819367], [0.0, -1.040158198861842, 0.007862511047092634, 0.0043979785660078095, -0.004169932548237032], [0.0, -0.002517082871757958, 0.148767243397959, 0.14756029608814605, 0.00194827019351456], [0.0, -0.005867693514012031, 0.3471204411806865, 0.34430590846888426, 0.004544952652985232], [0.0, -4.124890067402909e-06, 2.3450609134556544e-06, 1.0868025923649327e-06, 7.583489115559061e-07], [0.0, -0.6422033697790656, 0.40651477878847825, 0.4010462222123043, 0.28517841590412996], [0.0, -0.5244781455182447, 0.5244610804507237, 0.5181162934574868, 0.3704633751751177], [0.0, -0.5289938298837857, 0.5299350686865392, 0.5226637841962885, 0.5059739207926537], [0.0, -0.5120600135130066, 0.5094076128022317, 0.5056106939257823, -0.0021906252731063586], [0.0, -1.034620783981803, 0.013360439914327178, 0.01081265139502927, 0.0008952183341709565], [0.0, 7.670281312456519e-10, 2.6232610360038375e-09, 2.2720422580372692e-09, 1.2446794369591282e-09]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 7, 6, 5, -1, -1, -1, 9, -1, -1, 12, -1, 14, -1, -1], 'feature': [1, 22, 57, 1, -2, -2, -2, 40, -2, -2, 2, -2, 0, -2, -2], 'threshold': [0.001339999958872795, 0.20409999787807465, 0.4270000010728836, -1.4999999621068127e-05, -2.0, -2.0, -2.0, 0.054999999701976776, -2.0, -2.0, 0.20837999880313873, -2.0, 0.31333333253860474, -2.0, -2.0], 'value': [[0.0, -0.30598988076106776, 0.23022533043652324, 0.22762222003397445, 0.09563105980708049], [0.0, -0.5050907949173253, 0.3941569204596978, 0.38977792234007547, 0.16374890568721553], [0.0, -0.5952899090705775, 0.23863741156964657, 0.23458761774053016, 0.1253316221654255], [0.0, -0.7770670820768517, 0.2677189069216094, 0.2628802884006804, 0.2513044975850864], [0.0, -1.0343518406409116, 0.009215436341515204, 0.005900183507168455, -0.002080396873905288], [0.0, -0.6341311050968188, 0.4113319461327729, 0.4056470133415204, 0.39207388339563753], [0.0, -0.17114317205593835, 0.1707805890817332, 0.16857138620017964, -0.16860508714711678], [0.0, -0.2795930095341944, 0.7829556926848258, 0.7777536838389393, 0.25979211449169076], [0.0, -0.5319704585743306, 0.5331639659390928, 0.5266794409789464, 0.5105899374699501], [0.0, -0.02721556049405803, 1.0327474194305588, 1.028827926698932, 0.008994291513431221], [0.0, -0.027248600942307005, 0.0007211044040791259, 0.0006042368054323899, 0.00026607557489135013], [0.0, -0.18077307067173976, 0.004557144236409072, 0.0037896794385933554, 0.0015967674179777254], [0.0, -0.00015604746064240235, 4.415619837384131e-05, 4.2099870168690065e-05, 3.124760258198979e-05], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0008842689436402799, 0.0002502184574517674, 0.00023856593095591036, 0.00017706974796460884]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 12, -1, 14, -1, -1], 'feature': [1, 1, 48, -2, -2, 0, -2, 74, -2, -2, 1, -2, 22, -2, -2], 'threshold': [0.0013599999947473407, -1.4999999621068127e-05, -0.06499999947845936, -2.0, -2.0, 0.9932432472705841, -2.0, -0.0800000000745058, -2.0, -2.0, 0.0017599999555386603, -2.0, 0.04206500016152859, -2.0, -2.0], 'value': [[0.0, -0.35197553685396926, 0.2638214036661113, 0.26111529207576273, 0.1484008966950178], [0.0, -0.5286202565452588, 0.4514103536608977, 0.44691607490009133, 0.25438710741001025], [0.0, -0.7457064156641579, 0.00865489918272, 0.006033313156736751, -0.0019677141894812893], [0.0, -0.3427800148949731, 0.0014104594769278982, 0.00022738070446977807, -0.0010532163000569472], [0.0, -1.0479012162410464, 0.014088228962064075, 0.01038776249593698, -0.0026535876065495456], [0.0, -0.45625820350562585, 0.5989955051536237, 0.5938769954812092, 0.33983871460984094], [0.0, -0.030419771612395147, 1.029876123813068, 1.027464664925768, 0.007447435355892305], [0.0, -0.556455481598151, 0.4976118301749311, 0.4918563673766073, 0.41804842737547593], [0.0, -0.6421832363524351, 0.39388285102315057, 0.38946493303973456, 0.12561306402184286], [0.0, -0.5300777109045248, 0.5295284391447096, 0.523361424095645, 0.5080285391765937], [0.0, -0.10467292928616427, 0.0011968736734101816, 0.0009941961217030172, 2.020169402822125e-05], [0.0, -0.6975506786105122, 0.007862067691192834, 0.006538849519639456, 0.0001409782719685726], [0.0, -4.7444111279372397e-05, 2.0662964389713235e-05, 1.5727875008351417e-05, -1.1118197259583987e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0002688499639164436, 0.00011709013154170833, 8.91246250473247e-05, -6.300311780430927e-06]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, -1], 'feature': [25, 45, 1, 53, -2, -2, 1, -2, -2, -2, 82, -2, -2], 'threshold': [0.004999999888241291, 0.4349999874830246, -1.4999999621068127e-05, -0.03500000014901161, -2.0, -2.0, 0.0001449999981559813, -2.0, -2.0, -2.0, 0.15700000524520874, -2.0, -2.0], 'value': [[0.0, -0.4022340402861037, 0.1886467817513984, 0.18584886352987265, 0.1373878326891936], [0.0, -0.6433382369257135, 0.30174648267260135, 0.2972901181777606, 0.21981710552640912], [0.0, -0.7134269666081392, 0.25799070935778984, 0.25370988793888594, 0.24320661817202444], [0.0, -0.9185401821651981, 0.009471661601419311, 0.006496381749082674, -0.000935849645440085], [0.0, -0.6939116806822243, 0.006722444419007563, 0.004668075495369554, -0.002215118219783004], [0.0, -1.0308544329066847, 0.010846270192625185, 0.007410534875939234, -0.00029621535826862555], [0.0, -0.6108703588296104, 0.3822502332359752, 0.37731664103378754, 0.3652778520807567], [0.0, -0.5254617597265914, 0.5251866504408159, 0.5190511987413544, 0.5051293085614522], [0.0, -0.8329327164974604, 0.010615548503389438, 0.0088067909941133, 0.001664065230948264], [0.0, -0.012539669783875808, 0.6955484425059074, 0.6895121903276346, 0.009311491715870533], [0.0, -0.0003937125534211759, 0.00014728021605962352, 0.00011343911672541858, 5.71129383455012e-06], [0.0, -0.0023622753205270555, 0.0008836812963577412, 0.0006806347003525115, 3.426776300730072e-05], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, 13, -1, 15, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, 14, -1, 16, -1, -1], 'feature': [0, 59, 43, 22, -2, -2, 1, -2, -2, -2, 1, -2, 58, -2, 47, -2, -2], 'threshold': [0.9932432472705841, -0.19999999552965164, -0.27699999511241913, 0.1903200000524521, -2.0, -2.0, 0.0017549999756738544, -2.0, -2.0, -2.0, -4.999999873689376e-05, -2.0, -0.1340000033378601, -2.0, 0.08300000056624413, -2.0, -2.0], 'value': [[0.0, -0.19613319376971117, 0.15345554721563304, 0.15174935767209505, 0.06358194351933977], [0.0, -0.036328021398632324, 0.03465757541779597, 0.034241400319293194, 0.00039491900977572757], [0.0, -0.0018571581172333225, 0.0012287753211493765, 0.0009109546422256305, 0.00016572596613912324], [0.0, -0.005374472650929531, 0.0037348066540706555, 0.0027255139010024486, 0.000552141940791168], [0.0, -0.00833579022832498, 0.003546898356482475, 0.00274988085594996, 0.00043952870606667194], [0.0, -0.0024131550735340818, 0.003922714951658836, 0.0027011469460549373, 0.000664755175515664], [0.0, -0.00037618357672965593, 0.0001736042336035748, 0.00014692969116170715, 3.024503127735974e-06], [0.0, -0.0018447960581216005, 0.0008653132164058904, 0.0007523054605961624, 3.175581003652302e-05], [0.0, -0.00010081873646866635, 4.3908799328140624e-05, 3.342173439274676e-05, -2.3626169176615974e-06], [0.0, -0.2690063485480756, 0.2603019760701604, 0.25922190863949923, 0.0019419720543228072], [0.0, -0.4875426257405017, 0.37008714284698274, 0.36602857402132205, 0.1788053411544271], [0.0, -0.25482950173869867, 0.002365356540132202, 0.0018429957592968615, 0.00030801777987093937], [0.0, -0.5591466638949025, 0.4832323078644756, 0.4780856750250221, 0.2337275945004444], [0.0, -0.5135594196015031, 0.5152765926297951, 0.5111547538640417, -0.10122948796280089], [0.0, -0.5876386915782774, 0.46320462988615063, 0.4574175007506348, 0.44307577103997264], [0.0, -0.5295326579482728, 0.5307382834226797, 0.5239304552963844, 0.5080442869126374], [0.0, -0.6844820809616183, 0.35064854065860246, 0.34656257650771893, 0.33479491125219796]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [0, 83, 42, 49, -2, -2, -2, -2, 1, 52, -2, -2, 48, -2, 52, -2, -2], 'threshold': [0.9932432472705841, 0.2044999971985817, 0.08400000259280205, -0.14500000327825546, -2.0, -2.0, -2.0, -2.0, -1.4999999621068127e-05, 0.1420000046491623, -2.0, -2.0, -0.0859999991953373, -2.0, 0.13199999928474426, -2.0, -2.0], 'value': [[0.0, -0.30580816344246053, 0.16701444341730454, 0.16458562860353593, 0.1369390818983095], [0.0, -0.06250100871392007, 0.04179578802942773, 0.04107195282931934, 0.0006013592381083485], [0.0, -0.0015535444201594385, 0.001202530872525235, 0.0008462938981992968, -7.694069466061301e-05], [0.0, -6.419154949080916e-06, 7.91749666850805e-07, 7.376938750017612e-07, 4.521419240471098e-07], [0.0, -3.744928919102719e-05, 4.604111787598342e-06, 4.2907180384244015e-06, 2.6306488200381986e-06], [0.0, 8.728251148657419e-10, 2.98509014441816e-09, 2.585427397076893e-09, 1.4163593592983183e-09], [0.0, -0.010578441800553192, 0.00821267575586581, 0.005778705090091017, -0.0005283989080711304], [0.0, -0.2896688301724824, 0.1930979283415189, 0.19100395429985773, 0.0031295680784290234], [0.0, -0.5933529826670996, 0.3150001270575229, 0.310556336336701, 0.29806548140581995], [0.0, -0.6496059135506151, 0.0072250669811708135, 0.0052686959505124364, -0.0013402470580416992], [0.0, -1.0393677810443591, 0.011559165693702411, 0.008429476122137292, -0.002144698227012887], [0.0, -2.801061041409388e-06, 1.5691269514839234e-06, 7.289978043445444e-07, 5.048902436133318e-07], [0.0, -0.561208450733662, 0.49087158995829544, 0.4850064165573804, 0.46915446909945524], [0.0, -0.6844820809616183, 0.35064854065860246, 0.34656257650771893, 0.3347949112521979], [0.0, -0.5275883697624012, 0.5291142397673027, 0.5227638274800154, 0.50579798487598], [0.0, -0.5199160480001811, 0.5218745117016759, 0.5174347216411356, 0.5040149890047135], [0.0, -0.5367951558770651, 0.5378019134460545, 0.5291587544866702, 0.5079375799214996]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, 9, -1, -1, -1, 13, -1, 15, -1, -1], 'right': [12, 7, 6, 5, -1, -1, -1, 11, 10, -1, -1, -1, 14, -1, 16, -1, -1], 'feature': [1, 1, 52, 57, -2, -2, -2, 2, 2, -2, -2, -2, 2, -2, 25, -2, -2], 'threshold': [0.001339999958872795, -1.4999999621068127e-05, 0.13700000196695328, 0.4090000092983246, -2.0, -2.0, -2.0, 0.2112950012087822, 0.18196500092744827, -2.0, -2.0, -2.0, 0.21610499918460846, -2.0, 0.014999999664723873, -2.0, -2.0], 'value': [[0.0, -0.34952785716182433, 0.20884284255825483, 0.20634471631213339, 0.11619284403801493], [0.0, -0.5845832760070675, 0.38478242979994, 0.3802803074388569, 0.214307699980939], [0.0, -0.7305198988839134, 0.11140944289083347, 0.10823794848855553, -0.0008125706841566212], [0.0, -1.0410827945914027, 0.010389106054521369, 0.007065346522394529, -0.0031090857461800576], [0.0, -1.0250820566899252, 0.010151498800906655, 0.007390168806913899, 0.000467170038469078], [0.0, -1.0624171117933725, 0.010705915726007653, 0.0066322501430353675, -0.007877426792378905], [0.0, -0.005873142233105428, 0.3471235621755618, 0.34430735307626464, 0.004545964460564731], [0.0, -0.4933728867090392, 0.5556405466181313, 0.5503067817827951, 0.34875786914662377], [0.0, -0.5257308679301045, 0.5252810820925911, 0.5194953214046153, 0.5055892139761587], [0.0, -0.5160485914373338, 0.5141108909994685, 0.5107394061990689, 0.5034911320525246], [0.0, -0.5326467797106547, 0.5332597900162498, 0.5257495465514347, 0.5070878439216119], [0.0, -0.396298943045844, 0.6467189401947528, 0.6427411629173334, -0.12173616534198203], [0.0, -0.07173508943562804, 0.0009142394544453082, 0.0007844722532785706, 0.00023892337819562831], [0.0, -0.39413971695007954, 0.0048526818021366325, 0.004180910455461151, 0.0013235290477466022], [0.0, -8.961665463881453e-05, 3.903004384723611e-05, 2.970820834910823e-05, -2.1001039268103086e-06], [0.0, -0.0005376999278328872, 0.00023418026308341666, 0.0001782492500946494, -1.2600623560861854e-05], [0.0, 0.0, 0.0, 0.0, 0.0]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, 12, -1, 14, -1, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 16, 13, -1, 15, -1, -1, -1], 'feature': [1, 77, 1, 94, -2, -2, 52, -2, -2, -2, 89, 1, -2, 27, -2, -2, -2], 'threshold': [0.001339999958872795, 0.2789999917149544, -4.999999873689376e-05, 0.0625, -2.0, -2.0, 0.12699999660253525, -2.0, -2.0, -2.0, 0.1875, 0.0017549999756738544, -2.0, 0.009999999776482582, -2.0, -2.0, -2.0], 'value': [[0.0, -0.20789081783877897, 0.20764264824914902, 0.2054825603587708, 0.09571417123151575], [0.0, -0.38741477931679746, 0.43243147056666276, 0.42804835607525027, 0.19939907417698075], [0.0, -0.4374021846783527, 0.331497934326795, 0.3275277545888408, 0.2125730095195672], [0.0, -0.2928649800794242, 0.0025151652226207224, 0.0015358483249300803, -0.00018083686112998796], [0.0, -0.6833487935571166, 0.005867146849325611, 0.003582914862327792, -0.00042245722836487323], [0.0, -2.1199711547348343e-06, 1.1790025920555003e-06, 5.484218817963793e-07, 3.7841429617602174e-07], [0.0, -0.5217155540277271, 0.5234045496375636, 0.5176896999094555, 0.33667941990830724], [0.0, -0.5134657013137124, 0.5130657294679045, 0.5088843025334057, -0.1672887148104155], [0.0, -0.5244655049323989, 0.5268508230274498, 0.5206248323681387, 0.5046687981478815], [0.0, -0.14997460384941197, 0.9118657677060358, 0.9055212131356944, 0.13682288129969472], [0.0, -0.04272877327900195, 0.0008369317170362445, 0.0007220282996097227, 0.00032406052168804767], [0.0, -0.00039945481998071835, 0.00019633128264647003, 0.0001656871361178053, -7.465364998378847e-06], [0.0, -0.0017437947115216956, 0.0008796454469122139, 0.0007568814190622164, -3.0675869195639915e-05], [0.0, -9.21771304856378e-05, 4.0145187957157145e-05, 3.0557014301939894e-05, -2.160106896147746e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.0005376999278328872, 0.00023418026308341666, 0.0001782492500946494, -1.2600623560861854e-05], [0.0, -0.3027517295272753, 0.0047720486711448585, 0.004139552589631501, 0.0023605766827618107]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, 12, 13, -1, -1, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 16, 15, 14, -1, -1, -1, -1], 'feature': [1, 2, 69, -2, -2, 0, -2, 68, -2, -2, 52, 0, 42, -2, -2, -2, -2], 'threshold': [0.001339999958872795, 0.17509500682353973, -0.19999999552965164, -2.0, -2.0, 0.9932432472705841, -2.0, -0.04399999976158142, -2.0, -2.0, 0.13700000196695328, 0.9797297418117523, 0.07699999958276749, -2.0, -2.0, -2.0, -2.0], 'value': [[0.0, -0.29364655758597324, 0.2190039827655105, 0.2166833425026297, 0.10628923029620109], [0.0, -0.500315710621384, 0.4195183853858566, 0.415211557371153, 0.2038554512465133], [0.0, -0.6397490842766098, 0.13239513587765755, 0.129675211759549, -0.00040255248017069534], [0.0, -0.9213952472834205, 0.11014840521964117, 0.10687773514555884, 0.10065191955780932], [0.0, -0.17033881259859193, 0.16947302030768485, 0.16767100611619937, -0.16882667254347072], [0.0, -0.43470000537186654, 0.554635208683833, 0.5495816023648491, 0.2999768647649529], [0.0, -0.02021390635934276, 0.7762590672152067, 0.7726370472040038, 0.00729862146833706], [0.0, -0.5622341896834121, 0.4864432522126411, 0.4809491577989553, 0.39003170885621924], [0.0, -0.5256511217464772, 0.5265348225532487, 0.5207538459341305, 0.5072194121946012], [0.0, -0.620767098382508, 0.4222967396676688, 0.41726165678267496, 0.20253138351480815], [0.0, -0.06900617385183107, 0.0010535451346993616, 0.0008918046020607355, 0.00023899013281824605], [0.0, -0.0008827073220929892, 0.0003512313843364713, 0.00028996094999916844, 7.028310493508962e-05], [0.0, -3.013331489985114e-05, 1.9388563294535316e-05, 1.6143711295497136e-05, -5.017295733643499e-06], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.00013559991704933014, 8.724853482540891e-05, 7.264670082973712e-05, -2.257783080139575e-05], [0.0, -0.003440429343672403, 0.0013467598474622793, 0.0011114126661101824, 0.000296184306941289], [0.0, -0.31425065335888813, 0.0035818746360057664, 0.0030584417494823766, 0.0008463354331976092]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, -1, 11, -1, 13, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 10, -1, 12, -1, 14, -1, -1], 'feature': [0, 1, -2, 52, 2, -2, -2, -2, 22, -2, 22, -2, 89, -2, -2], 'threshold': [0.9932432472705841, -0.02379000000655651, -2.0, 0.13700000196695328, 0.17810999602079391, -2.0, -2.0, -2.0, 0.17344000190496445, -2.0, 0.20185000449419022, -2.0, 0.0625, -2.0, -2.0], 'value': [[0.0, -0.16452762311552685, 0.1431925536281159, 0.1413908051882463, 0.09524798929985978], [0.0, -0.034117495227486076, 0.06312097565710201, 0.06218216913964927, 0.0011236298043376081], [0.0, -0.011041738367408727, 0.5967325948973061, 0.5913281295948171, 0.007999683054953174], [0.0, -0.03676553289995395, 0.0018868554164228773, 0.0014605015464333323, 0.00033457451328336305], [0.0, -0.002747194706648188, 0.0017409374421955847, 0.0012865419190529748, 9.341466846918931e-05], [0.0, -0.011505653777967022, 0.0070679538377704755, 0.005068421066641389, -0.00023858844257050054], [0.0, -0.0008703820485084382, 0.0005994339288581086, 0.00047613924456974335, 0.00016455819226340857], [0.0, -0.21025905768581338, 0.0026310370849820684, 0.002347695646073156, 0.001564489721835649], [0.0, -0.48123793370076856, 0.33765210012914953, 0.3337546355919817, 0.3238357195032708], [0.0, -8.249780134805818e-06, 4.690121826911309e-06, 2.1736051847298654e-06, 1.5166978231118122e-06], [0.0, -0.6124823929518504, 0.4297377574038739, 0.42477803431565353, 0.41215413845021104], [0.0, -0.7184327275511596, 0.31281989502286445, 0.3101478559778153, 0.30172094520588616], [0.0, -0.5241904474524258, 0.5271693093880484, 0.520303182930519, 0.5041817994871485], [0.0, -0.5233174291290082, 0.526275758354762, 0.5202428926857349, 0.5037269587068689], [0.0, -0.5250634657758434, 0.5280628604213349, 0.5203634731753035, 0.504636640267428]]}, {'left': [1, 2, -1, 4, -1, -1, 7, 8, -1, -1, 11, 12, -1, -1, -1], 'right': [6, 3, -1, 5, -1, -1, 10, 9, -1, -1, 14, 13, -1, -1, -1], 'feature': [83, 68, -2, 18, -2, -2, 59, 2, -2, -2, 1, 1, -2, -2, -2], 'threshold': [0.2044999971985817, -0.1250000037252903, -2.0, 0.08500000089406967, -2.0, -2.0, -0.3199999928474426, 0.173335000872612, -2.0, -2.0, 0.0006849999772384763, -1.4999999621068127e-05, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2383561056491178, 0.16327541596076037, 0.16127977843540847, 0.031824869693434156], [0.0, -0.0015535444201594383, 0.001202530872525235, 0.0008462938981992968, -7.694069466061301e-05], [0.0, -0.010578441800553192, 0.00821267575586581, 0.005778705090091017, -0.0005283989080711304], [0.0, -6.419154949080916e-06, 7.91749666850805e-07, 7.376938750017612e-07, 4.521419240471098e-07], [0.0, 8.728251148657419e-10, 2.98509014441816e-09, 2.585427397076893e-09, 1.4163593592983183e-09], [0.0, -3.744928919102719e-05, 4.604111787598342e-06, 4.2907180384244015e-06, 2.6306488200381986e-06], [0.0, -0.4148816512925231, 0.2840933848447174, 0.28087564872678256, 0.05560621925546845], [0.0, -0.25547087213029646, 0.254455115092889, 0.25198451379876413, -0.252823734650805], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.4257847868838274, 0.4240918584881483, 0.419974189664607, -0.421372891084675], [0.0, -0.50597352509951, 0.30102953898861967, 0.29738486868565, 0.23185190720191037], [0.0, -0.5198555577703673, 0.37490044631257874, 0.37053654269040903, 0.2894367343128326], [0.0, -0.5164396621643086, 0.17875332572018732, 0.1758521552864268, 0.0023793363500606204], [0.0, -0.522417479474911, 0.5220107867568724, 0.5165498332433958, 0.5047297827849117], [0.0, -0.4504453944160807, 0.005545909692782696, 0.004778172666613527, 0.0015125987582216283]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [0, 20, -2, 2, -2, 36, -2, -2, 1, 47, -2, -2, 47, 73, -2, -2, -2], 'threshold': [0.9932432472705841, 0.054999999701976776, -2.0, 0.17810999602079391, -2.0, 0.014999999664723873, -2.0, -2.0, -1.4999999621068127e-05, 0.07899999991059303, -2.0, -2.0, 0.08799999952316284, 0.02500000037252903, -2.0, -2.0, -2.0], 'value': [[0.0, -0.2734221305908355, 0.1446504948207132, 0.14249722519687957, 0.11574733129884403], [0.0, -0.00342696683781882, 0.03849498019567441, 0.03792633375180827, 0.000320178975571211], [0.0, -0.01065763671723007, 0.3436041927622873, 0.3427493821247812, 0.002412452131820097], [0.0, -0.0025592864522894702, 0.0018818746876808543, 0.0013475679470515097, 6.910619682134466e-05], [0.0, -0.011505653777967022, 0.0070679538377704755, 0.005068421066641389, -0.00023858844257050054], [0.0, -0.0005954497222626907, 0.0007434670693684987, 0.0005307953110439753, 0.00013664892254150582], [0.0, 0.0, 0.0, 0.0, 0.0], [0.0, -0.002712604290307813, 0.003386905538234272, 0.002418067528089221, 0.0006225117582446376], [0.0, -0.6514153598450585, 0.29326821529576763, 0.2888964732199795, 0.2773453445514259], [0.0, -0.7781463471035095, 0.007752815675872826, 0.005353419476628152, -0.0017355822183255654], [0.0, -1.0393677810443593, 0.011559165693702411, 0.008429476122137292, -0.002144698227012887], [0.0, -0.34277729053542655, 0.0014088989794901845, 0.0002266584007795854, -0.0010537222038466965], [0.0, -0.5669280350060912, 0.4836118150423642, 0.47792517571554693, 0.4633992957312603], [0.0, -0.5268966881385572, 0.527071387351108, 0.5213356980721556, 0.5061972185899932], [0.0, -0.5318172103269193, 0.5325256507003494, 0.5257836030970501, 0.5071213362259902], [0.0, -0.5207460354031046, 0.5202535581645562, 0.5157758167910373, 0.5050420715449973], [0.0, -0.687022075608693, 0.35323309811613224, 0.3476936086457216, 0.3350055271550613]]}], 'quantile': 0.1, 'threshold': 0.0}
+
+_ML_PARENT = agent
+def agent(observation, configuration=None):
+    _ml_before(observation, configuration)
+    action = _ML_PARENT(observation, configuration)
+    agent.telemetry = dict(getattr(_ML_PARENT, 'telemetry', {}), **_ML_REPORT)
+    return action
+agent.telemetry = {}
+agent = globals().pop('agent')
+
+"""Original joint terminal harvest-routing and variable-workforce optimizer.
+
+No opponent tapes, team IDs or world seeds. All plans are built from current
+observable assets. Inherited production is used only before the handover.
+"""
+_AU_HOME=((4,4),(5,4),(4,5),(5,5))
+_AU_PRODUCT={'GOOSE':'EGG','COW':'MILK','SHEEP':'WOOL'}
+_AU_CROPS={'WHEAT':(2,4,6),'CARROT':(2,3,4),'TOMATO':(8,8,4),
+           'STRAWBERRY':(10,10,4),'MELON':(10,12,6)}
+_AU_STATE={}
+
+
+def _au_dist(a,b):return abs(a[0]-b[0])+abs(a[1]-b[1])
+
+
+def _au_home(pos):return min(_AU_HOME,key=lambda h:_au_dist(pos,h))
+
+
+def _au_walk(pos,target):
+    x,y=pos;tx,ty=target;commands=[]
+    while x!=tx:
+        commands.append(['EAST' if tx>x else 'WEST']);x+=1 if tx>x else -1
+    while y!=ty:
+        commands.append(['SOUTH' if ty>y else 'NORTH']);y+=1 if ty>y else -1
+    return commands
+
+
+def _au_fib(n):
+    a,b=1,1
+    for _ in range(n):a,b=b,a+b
+    return a
+
+
+def _au_jobs(obs):
+    farm=obs['farms'][obs['player']];jobs={}
+    for y,row in enumerate(farm['tiles']):
+        for x,t in enumerate(row):
+            if not isinstance(t,dict):continue
+            variants=[];q=t.get('yield_units',0)
+            animal=t.get('animal');crop=t.get('crop')
+            if animal:
+                item=_AU_PRODUCT[animal]
+                if q>0:variants.append(( [['HARVEST']], {item:q}))
+                if t.get('fertilizer_available'):
+                    variants.append(([['COLLECT_FERTILIZER']],{'FERTILIZER':1}))
+                    if q>0:variants.append(([['HARVEST'],['COLLECT_FERTILIZER']],{item:q,'FERTILIZER':1}))
+            elif crop:
+                first,last,cap=_AU_CROPS[crop];age=obs['day']-t['planted_day']
+                if age>=first and q>0:
+                    variants.append(([['HARVEST']],{crop:q}))
+                    if crop in ('WHEAT','CARROT','MELON') and not t['watered_today'] and (last+1)//2<=age<=last:
+                        extra=min(cap-q,2 if t.get('fertilized_until_day',-1)>=obs['day'] else 1)
+                        if extra>0:variants.append(([['WATER'],['HARVEST']],{crop:q+extra}))
+                        if t.get('fertilized_until_day',-1)<obs['day'] and q+1<cap:
+                            variants.append(([['FERTILIZE'],['WATER'],['HARVEST']],
+                                             {crop:min(cap,q+2),'FERTILIZER':-1}))
+            if variants:jobs[(x,y)]=variants
+    return jobs
+
+
+def _au_prices(obs,risk):
+    prices=dict(obs['market']['prices'])
+    if not risk:return prices
+    rival=obs['farms'][1-obs['player']]
+    supply={item:0 for item in prices}
+    for row in rival['tiles']:
+        for tile in row:
+            if not isinstance(tile,dict):continue
+            item=tile.get('crop') or _AU_PRODUCT.get(tile.get('animal'))
+            if item:supply[item]+=tile.get('yield_units',0)
+            if tile.get('fertilizer_available'):supply['FERTILIZER']+=1
+    # A conservative visible-stock scenario, not claimed to reveal private stock.
+    for item in prices:
+        inventory=obs['market']['inventory'][item]+int(risk*supply[item])
+        prices[item]=min(prices[item],_r37_market_price(item,inventory))
+    return prices
+
+
+def _au_route(pos,start,jobs,prices,power,bias,end=719,input_cap=100):
+    left=dict(jobs);chosen=[];commands=[];value=0.;products={};cursor=tuple(pos);inputs=0
+    while left:
+        best=None
+        for target,variants in left.items():
+            distance=_au_dist(cursor,target)
+            home_distance=_au_dist(target,_au_home(target))
+            for ops,goods in variants:
+                need=int(goods.get('FERTILIZER',0)<0)
+                if need and (tuple(pos) not in _AU_HOME or inputs+need>input_cap):continue
+                setup=int(need>0 and inputs==0)
+                duration=distance+len(ops)+setup
+                if start+len(commands)+duration+home_distance+1>end:continue
+                gain=sum(prices[k]*v for k,v in goods.items())
+                # A terminal orienteering insertion score; power/bias are searched
+                # jointly, and the entire resulting workforce is priced below.
+                cost=max(.5,duration+bias*(home_distance-_au_dist(cursor,_au_home(cursor))))
+                score=gain/(cost**power)
+                rank=(score,gain,-duration,-target[1],-target[0])
+                if best is None or rank>best[0]:best=(rank,target,ops,goods,gain,need)
+        if best is None:break
+        _,target,ops,goods,gain,need=best
+        if need and inputs==0:commands.insert(0,['PICKUP','FERTILIZER',0])
+        inputs+=need
+        commands+=_au_walk(cursor,target)+ops;cursor=target
+        value+=gain;chosen.append(target);left.pop(target)
+        for item,q in goods.items():products[item]=products.get(item,0)+q
+    if chosen:
+        commands+=_au_walk(cursor,_au_home(cursor))+[['DROP']]
+    if inputs:commands[0][2]=inputs
+    return dict(start=start,origin=list(pos),commands=commands,jobs=chosen,value=value,products=products,inputs=inputs)
+
+
+def _au_spawn(plans,step):
+    occupancy={h:0 for h in _AU_HOME}
+    for plan in plans:
+        x,y=plan['origin']
+        for cmd in plan['commands'][:max(0,step-plan['start']+1)]:
+            op=cmd[0]
+            x+=int(op=='EAST')-int(op=='WEST');y+=int(op=='SOUTH')-int(op=='NORTH')
+        if (x,y) in occupancy:occupancy[x,y]+=1
+    return min(_AU_HOME,key=lambda h:occupancy[h])
+
+
+def _au_construct(obs,prices,power,bias,reserve):
+    farm=obs['farms'][obs['player']];jobs=_au_jobs(obs);plans=[]
+    original_positions=[farm['farmer'],*farm['hands']]
+    score=0.;spent=0.;hire_steps=[]
+    for actor in range(1+len(farm['hands'])+19):
+        existing=actor<len(original_positions)
+        if existing:
+            start=obs['step'];pos=original_positions[actor];cost=0
+        else:
+            hire_index=actor-len(original_positions)
+            hire_step=obs['step']+hire_index//7
+            start=hire_step+1;pos=_au_spawn(plans,hire_step)
+            cost=_au_fib(farm['hires_today']+hire_index)
+        if start>=717:break
+        cap=obs['private']['shed'].get('FERTILIZER',0) if existing else 100
+        plan=_au_route(pos,start,jobs,prices,power,bias,end=719-(actor%_F2_STAGGER),input_cap=cap)
+        if not existing and (plan['value']<=cost*reserve or spent+cost>farm['money']*.15):break
+        plans.append(plan);score+=plan['value']-cost;spent+=cost
+        for job in plan['jobs']:jobs.pop(job)
+        if not existing:hire_steps.append(hire_step)
+    return dict(plans=plans,hire_steps=hire_steps,predicted_net=score,hire_cost=spent,
+                unassigned=len(jobs),power=power,bias=bias)
+
+
+def _au_plan(obs,config):
+    prices=_au_prices(obs,_AU_RISK)
+    candidates=[_au_construct(obs,prices,power,bias,_AU_RESERVE)
+                for power in (.6,.85,1.1,1.4) for bias in (0.,.6)]
+    best=max(candidates,key=lambda p:p['predicted_net'])
+    best.update(step=obs['step'],last_step=obs['step']-1,errors=0,turns=0,
+                planned_workers=len(best['plans'])-1,harvest_requests=0,water_requests=0,
+                fertilizer_requests=0,hire_requests=0,late_returns=0,
+                input_purchase=max(0,sum(p['inputs'] for p in best['plans'])-obs['private']['shed'].get('FERTILIZER',0)),
+                input_applications=0)
+    return best
+
+
+def _au_action(obs,config,state):
+    step=obs['step'];farm=obs['farms'][obs['player']]
+    positions=[farm['farmer'],*farm['hands']];inventories=obs['private']['inventories']
+    commands=[];projected=dict(obs['private']['shed'])
+    for actor,pos in enumerate(positions):
+        plan=state['plans'][actor] if actor<len(state['plans']) else None
+        index=step-plan['start'] if plan else -1
+        cmd=plan['commands'][index] if plan and 0<=index<len(plan['commands']) else ['PASS']
+        inv=inventories[actor] if actor<len(inventories) else {}
+        # Deadline repair uses observed position and cargo, never a future trace.
+        distance=_au_dist(pos,_au_home(pos))
+        if inv and step+distance+1>=719:
+            cmd=_au_walk(pos,_au_home(pos))[0] if distance else ['DROP']
+            state['late_returns']+=1
+        if cmd[0]=='DROP' and tuple(pos) in _AU_HOME:
+            room=max(0,100-sum(projected.values()))
+            for item,q in inv.items():
+                take=min(q,room);projected[item]=projected.get(item,0)+take;room-=take
+        if cmd[0]=='PICKUP' and tuple(pos) in _AU_HOME:
+            projected[cmd[1]]=max(0,projected.get(cmd[1],0)-cmd[2])
+        commands.append(cmd)
+        state['harvest_requests']+=cmd[0]=='HARVEST'
+        state['water_requests']+=cmd[0]=='WATER'
+        state['fertilizer_requests']+=cmd[0]=='COLLECT_FERTILIZER'
+        state['input_applications']+=cmd[0]=='FERTILIZE'
+    hires=state['hire_steps'].count(step)
+    orders=[['HIRE'] for _ in range(hires)]
+    if step==state['step'] and state['input_purchase']:
+        orders.append(['BUY_PRODUCT','FERTILIZER',state['input_purchase']])
+    reserve=sum(p['inputs'] for p in state['plans'] if p['inputs'] and step<p['start'])
+    projected['FERTILIZER']=max(0,projected.get('FERTILIZER',0)-reserve)
+    sales=[['SELL',item,q] for item,q in projected.items() if q>0 and item in obs['market']['prices']]
+    sales.sort(key=lambda o:(-_r37_quote_priority(obs,o,projected),
+                             -o[2]*obs['market']['prices'][o[1]]))
+    # Market slots resolve across both players in order. Hire completion still
+    # occurs this turn when sales precede it, but exposed inventory sells sooner.
+    orders=sales[:max(0,10-len(orders))]+orders
+    state['hire_requests']+=hires;state['turns']+=1;state['last_step']=step
+    return dict(farmer=commands[0],hands=commands[1:],market=orders)
+
+
+def _auction_controller(obs,config):
+    seat=int(obs['player']);step=int(obs['step'])
+    if step<_AU_START:return None
+    if any((config or {}).get(k,v)!=v for k,v in [('boardSize',10),('episodeSteps',720),
+            ('turnsPerDay',24),('shedCapacity',100),('maxMarketOrdersPerTurn',10)]):return None
+    state=_AU_STATE.get(seat)
+    if state is None or step<=state['last_step']:
+        state=_AU_STATE[seat]=_au_plan(obs,config)
+    return _au_action(obs,config,state)
+
+_AU_START=696
+_AU_RISK=0.5
+_AU_RESERVE=1.2
+
+_AU_PARENT=agent
+def agent(observation,configuration=None):
+    if int(observation['step']) < _AU_START:
+        action=_AU_PARENT(observation,configuration)
+    else:
+        action=_auction_controller(observation,configuration)
+        if action is None:action=_AU_PARENT(observation,configuration)
+    st=_AU_STATE.get(int(observation['player']),{})
+    agent.telemetry=dict(getattr(_AU_PARENT,'telemetry',{}),
+        **{'auction_'+k:v for k,v in st.items() if k in ('errors','turns','planned_workers',
+            'hire_cost','harvest_requests','water_requests','fertilizer_requests','hire_requests','late_returns','unassigned',
+            'input_purchase','input_applications')})
+    return action
+agent.telemetry={}
+agent=globals().pop('agent')
+
+_FRONTIER_FORCE=None
+_FRONTIER_MODEL={'schema_version': 1, 'feature_names': ['public_layout_similarity', 'cash_difference', 'own_cash', 'own_workers', 'own_land', 'own_weeds', 'own_WHEAT_count', 'own_WHEAT_ripe', 'own_CARROT_count', 'own_CARROT_ripe', 'own_TOMATO_count', 'own_TOMATO_ripe', 'own_STRAWBERRY_count', 'own_STRAWBERRY_ripe', 'own_MELON_count', 'own_MELON_ripe', 'own_GOOSE_count', 'own_GOOSE_ripe', 'own_COW_count', 'own_COW_ripe', 'own_SHEEP_count', 'own_SHEEP_ripe', 'rival_cash', 'rival_workers', 'rival_land', 'rival_weeds', 'rival_WHEAT_count', 'rival_WHEAT_ripe', 'rival_CARROT_count', 'rival_CARROT_ripe', 'rival_TOMATO_count', 'rival_TOMATO_ripe', 'rival_STRAWBERRY_count', 'rival_STRAWBERRY_ripe', 'rival_MELON_count', 'rival_MELON_ripe', 'rival_GOOSE_count', 'rival_GOOSE_ripe', 'rival_COW_count', 'rival_COW_ripe', 'rival_SHEEP_count', 'rival_SHEEP_ripe', 'WHEAT_price', 'WHEAT_inventory', 'WHEAT_change48', 'WHEAT_own_shed', 'WHEAT_own_carried', 'CARROT_price', 'CARROT_inventory', 'CARROT_change48', 'CARROT_own_shed', 'CARROT_own_carried', 'TOMATO_price', 'TOMATO_inventory', 'TOMATO_change48', 'TOMATO_own_shed', 'TOMATO_own_carried', 'STRAWBERRY_price', 'STRAWBERRY_inventory', 'STRAWBERRY_change48', 'STRAWBERRY_own_shed', 'STRAWBERRY_own_carried', 'MELON_price', 'MELON_inventory', 'MELON_change48', 'MELON_own_shed', 'MELON_own_carried', 'EGG_price', 'EGG_inventory', 'EGG_change48', 'EGG_own_shed', 'EGG_own_carried', 'MILK_price', 'MILK_inventory', 'MILK_change48', 'MILK_own_shed', 'MILK_own_carried', 'WOOL_price', 'WOOL_inventory', 'WOOL_change48', 'WOOL_own_shed', 'WOOL_own_carried', 'FERTILIZER_price', 'FERTILIZER_inventory', 'FERTILIZER_change48', 'FERTILIZER_own_shed', 'FERTILIZER_own_carried', 'shops_BAKERY', 'shops_PIZZA_SHOP', 'shops_BRUNCH_SPOT', 'shops_YARN_STORE', 'shops_ICE_CREAM_SHOP', 'shops_PET_CAFE', 'shops_SMOOTHIE_SHOP', 'shops_FARMERS_MARKET', 'plan_net', 'plan_hire_cost', 'plan_unassigned', 'plan_workers', 'plan_input_buy', 'plan_WHEAT', 'plan_CARROT', 'plan_TOMATO', 'plan_STRAWBERRY', 'plan_MELON', 'plan_EGG', 'plan_MILK', 'plan_WOOL', 'plan_FERTILIZER'], 'options': ['native', 'joint_planner'], 'trees': [{'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, 12, -1, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 14, 13, -1, -1, -1], 'feature': [84, 84, 1, -2, 1, -2, -2, 45, -2, -2, 94, 58, -2, -2, -2], 'threshold': [0.375, 0.3049999922513962, 0.004614999983459711, -2.0, 0.02986999973654747, -2.0, -2.0, 0.4399999976158142, -2.0, -2.0, 0.1875, 0.06200000084936619, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12775145064940213], [0.0, 0.019816337715435468], [0.0, 0.05384745469116711], [0.0, 0.3632004240293645], [0.0, 0.0010310940724505056], [0.0, 0.0035843431407963765], [0.0, 0.0003129927719782294], [0.0, -0.18437036413895436], [0.0, -0.37532694711188097], [0.0, 0.006586218833972257], [0.0, 0.5055243459182854], [0.0, 0.5028886290345889], [0.0, 0.503933430174684], [0.0, 0.5022915998116773], [0.0, 0.511322923062418]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [1, 77, 54, 75, -2, -2, -2, -2, 1, 43, -2, 101, -2, -2, 44, -2, 0, -2, -2], 'threshold': [0.0004400000034365803, 0.35099999606609344, -0.0800000000745058, 0.014999999664723873, -2.0, -2.0, -2.0, -2.0, 0.031204999424517155, -0.2889999896287918, -2.0, 0.4449999928474426, -2.0, -2.0, 0.32500000298023224, -2.0, 0.9868420958518982, -2.0, -2.0], 'value': [[0.0, 0.15645385690172253], [0.0, 0.4748171437883711], [0.0, 0.5204800035738412], [0.0, 0.5064315629333281], [0.0, 0.5080448314632685], [0.0, 0.5045878274705394], [0.0, 0.5673081390422181], [0.0, 0.25221070233420606], [0.0, 0.00219535707004755], [0.0, 0.0043710501724382], [0.0, 0.006217180051558417], [0.0, 0.003037734148629154], [0.0, 0.0020398396365998383], [0.0, 0.0042851022886657986], [0.0, 0.0011734406128640629], [0.0, 0.0032563566401731287], [0.0, 0.0006126555285885451], [0.0, -0.0002573736632274473], [0.0, 0.0010732592183734823]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, 10, -1, -1, 13, -1, -1], 'right': [12, 9, 6, 5, -1, -1, 8, -1, -1, 11, -1, -1, 14, -1, -1], 'feature': [84, 84, 1, 54, -2, -2, 1, -2, -2, 92, -2, -2, 106, -2, -2], 'threshold': [0.375, 0.3049999922513962, 0.0034549999982118607, -0.19999999552965164, -2.0, -2.0, 0.029020000249147415, -2.0, -2.0, 0.1875, -2.0, -2.0, 0.16500000655651093, -2.0, -2.0], 'value': [[0.0, 0.08551671489647666], [0.0, 0.017875613228150237], [0.0, 0.07603317200129192], [0.0, 0.40691508539502835], [0.0, 0.25525564280388735], [0.0, 0.508021380455789], [0.0, 0.0008327371390790438], [0.0, 0.004096463348356798], [0.0, 0.00021527542381027942], [0.0, -0.374687908490556], [0.0, -0.37380725368227286], [0.0, -0.37556856329883936], [0.0, 0.5048915452401006], [0.0, 0.5025024198179191], [0.0, 0.5072806706622821]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [1, 99, -2, 2, -2, 89, -2, -2, 2, 95, -2, -2, 47, -2, 84, -2, -2], 'threshold': [0.000805000017862767, 0.17000000178813934, -2.0, 0.5573349893093109, -2.0, 0.0625, -2.0, -2.0, 0.5920499861240387, 0.44794999063014984, -2.0, -2.0, 0.06300000101327896, -2.0, 0.2199999988079071, -2.0, -2.0], 'value': [[0.0, 0.14197633081405694], [0.0, 0.40614910813202726], [0.0, 0.08549740680862632], [0.0, 0.5074075401288902], [0.0, 0.5150509560859199], [0.0, 0.5053692958736827], [0.0, 0.5023427156038285], [0.0, 0.5068825860086099], [0.0, 0.0014588960704558424], [0.0, 0.0036389386741703367], [0.0, 0.0024480980691888496], [0.0, 0.004659659192725897], [0.0, 0.0006253503690355946], [0.0, 0.0032505020462561354], [0.0, 6.281786677405008e-05], [0.0, 0.00041812046582408955], [0.0, -0.0015715740888561313]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, -1, 11, 12, -1, -1, 15, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 10, -1, 14, 13, -1, -1, 16, -1, -1], 'feature': [1, 42, -2, 43, -2, 48, -2, -2, 1, -2, 42, 42, -2, -2, 57, -2, -2], 'threshold': [0.0004400000034365803, 0.050999999046325684, -2.0, -0.3059999942779541, -2.0, -0.37800000607967377, -2.0, -2.0, 0.011144999880343676, -2.0, 0.07899999991059303, 0.05199999921023846, -2.0, -2.0, 0.04399999976158142, -2.0, -2.0], 'value': [[0.0, 0.1276293153787726], [0.0, 0.37999354178247174], [0.0, -0.24916048208576017], [0.0, 0.505824346556118], [0.0, 0.6355400917650434], [0.0, 0.47339541025388676], [0.0, 0.37733863875705387], [0.0, 0.5054143340861645], [0.0, 0.0014472021769230865], [0.0, 0.006418348123867368], [0.0, 0.0008691619505342167], [0.0, -0.0004562614787008864], [0.0, -0.002475187146418145], [0.0, 0.00016494641905827014], [0.0, 0.0017357849619571686], [0.0, 0.0009469291478975128], [0.0, 0.0035107105435913943]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 77, 97, 25, -2, -2, -2, -2, 1, 44, -2, 43, -2, -2, 84, 57, -2, -2, 54, -2, -2], 'threshold': [0.0004400000034365803, 0.025000000256113708, 0.06499999947845936, 0.009999999776482582, -2.0, -2.0, -2.0, -2.0, 0.026755000464618206, 0.5300000011920929, -2.0, -0.24699999392032623, -2.0, -2.0, 0.07499999925494194, 0.04600000008940697, -2.0, -2.0, -0.23999999463558197, -2.0, -2.0], 'value': [[0.0, 0.11540127938161421], [0.0, 0.371639174466825], [0.0, 0.5781460757998518], [0.0, 0.5118849279290496], [0.0, 0.5094816986881346], [0.0, 0.5160905791006501], [0.0, 0.7603642324445578], [0.0, -0.07087561410394679], [0.0, 0.0026566055441215306], [0.0, 0.005076295396985717], [0.0, 0.008278960495686105], [0.0, 0.004008740364085587], [0.0, 0.004720214434746239], [0.0, 0.0025857922227642827], [0.0, 0.0015179279663030904], [0.0, 0.004027648734712041], [0.0, 0.003429172322717644], [0.0, 0.004626125146706439], [0.0, 0.00047221097946602747], [0.0, 0.0017732279088232212], [0.0, -0.00030839917814828866]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, -1, 11, 12, 13, -1, -1, -1, 17, 18, -1, -1, -1], 'right': [10, 7, 6, 5, -1, -1, -1, 9, -1, -1, 16, 15, 14, -1, -1, -1, 20, 19, -1, -1, -1], 'feature': [1, 68, 47, 44, -2, -2, -2, 29, -2, -2, 1, 106, 108, -2, -2, -2, 99, 84, -2, -2, -2], 'threshold': [0.000805000017862767, -0.06199999898672104, 0.12200000137090683, 0.6800000071525574, -2.0, -2.0, -2.0, 0.2499999925494194, -2.0, -2.0, 0.02986999973654747, 0.16500000655651093, -0.1249999962747097, -2.0, -2.0, -2.0, 0.1900000050663948, 0.17499999701976776, -2.0, -2.0, -2.0], 'value': [[0.0, 0.1420224671646498], [0.0, 0.3755883021944482], [0.0, 0.5068838703946129], [0.0, 0.5052303972989961], [0.0, 0.5029707415869724], [0.0, 0.5066426821190109], [0.0, 0.5122576579553687], [0.0, 0.15238583625416813], [0.0, -0.19887316672502778], [0.0, 0.503644839233364], [0.0, 0.001882966146770684], [0.0, 0.004081349569241525], [0.0, 0.003045245870228783], [0.0, 0.004022246114509365], [0.0, 0.001823995564878056], [0.0, 0.005635505117760638], [0.0, 0.0007837744355352634], [0.0, 0.0004387363886180047], [0.0, 0.0007563063792157139], [0.0, -0.001307898559669396], [0.0, 0.0030265217404974454]]}, {'left': [1, 2, 3, -1, -1, 6, -1, 8, -1, -1, 11, 12, 13, -1, -1, -1, -1], 'right': [10, 5, 4, -1, -1, 7, -1, 9, -1, -1, 16, 15, 14, -1, -1, -1, -1], 'feature': [84, 50, 1, -2, -2, 1, -2, 1, -2, -2, 60, 94, 45, -2, -2, -2, -2], 'threshold': [0.375, 0.3149999976158142, 0.007209999952465296, -2.0, -2.0, 0.000805000017862767, -2.0, 0.02986999973654747, -2.0, -2.0, 0.03000000026077032, 0.1875, 0.41499999165534973, -2.0, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11430068606550596], [0.0, 0.021320370944228343], [0.0, 0.18709546219884443], [0.0, 0.5097307271204977], [0.0, 0.002732453672185426], [0.0, -0.021087210539510678], [0.0, -0.24733811565828745], [0.0, 0.00211801049831258], [0.0, 0.004179074745320047], [0.0, 0.0006842266743073857], [0.0, 0.3932416314293389], [0.0, 0.5063109492922656], [0.0, 0.5040215465487063], [0.0, 0.5054806033607611], [0.0, 0.5021977255336382], [0.0, 0.5104318742306725], [0.0, -0.00250098109090513]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [1, 53, -2, 92, 77, -2, -2, -2, 1, 42, -2, -2, 39, 54, -2, -2, -2], 'threshold': [0.0004400000034365803, -0.2239999994635582, -2.0, 0.1875, 0.04999999876599759, -2.0, -2.0, -2.0, 0.029020000249147415, 0.0819999985396862, -2.0, -2.0, 0.1850000023841858, -0.23999999463558197, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12757492557848657], [0.0, 0.3796923264182368], [0.0, 0.0020674542454763114], [0.0, 0.5055672838091572], [0.0, 0.5418789876465808], [0.0, 0.6322338688394734], [0.0, 0.5057370351694241], [0.0, 0.37847632037817314], [0.0, 0.0015162251586114672], [0.0, 0.00438064492097048], [0.0, 0.0024653791539352545], [0.0, 0.006774727129764513], [0.0, 0.000855205213451695], [0.0, 0.0005137754279096659], [0.0, 0.001844159660187361], [0.0, 0.00010442643336268269], [0.0, 0.003176927755137493]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, -1, 11, -1, 13, -1, -1], 'right': [10, 7, 6, 5, -1, -1, -1, 9, -1, -1, 12, -1, 14, -1, -1], 'feature': [84, 60, 79, 1, -2, -2, -2, 83, -2, -2, 42, -2, 50, -2, -2], 'threshold': [0.375, 0.06499999947845936, 0.07499999925494194, 0.02986999973654747, -2.0, -2.0, -2.0, 0.4934999942779541, -2.0, -2.0, 0.07899999991059303, -2.0, 0.3200000077486038, -2.0, -2.0], 'value': [[0.0, 0.12811327435446895], [0.0, 0.020846589600783293], [0.0, -0.020473199024824588], [0.0, 0.0025179090023390027], [0.0, 0.004642967846681566], [0.0, 0.0009472133347814561], [0.0, -0.2503842792964605], [0.0, 0.202653659553458], [0.0, 0.000700212563764846], [0.0, 0.5055838300379976], [0.0, 0.44991332861552646], [0.0, 0.2510082540211695], [0.0, 0.5067433499281999], [0.0, 0.5038991202964902], [0.0, 0.5095875795599093]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 52, 44, -2, 58, -2, -2, -2, 1, 74, 97, -2, -2, -2, 75, 54, -2, -2, 2, -2, -2], 'threshold': [0.0004400000034365803, 0.3140000104904175, 0.5800000131130219, -2.0, 0.05599999986588955, -2.0, -2.0, -2.0, 0.0303549999371171, 0.07500000111758709, 0.03000000026077032, -2.0, -2.0, -2.0, 0.03999999910593033, -0.06000000052154064, -2.0, -2.0, 0.9155150055885315, -2.0, -2.0], 'value': [[0.0, 0.14295739044203312], [0.0, 0.43251153859543107], [0.0, 0.5202615029910213], [0.0, 0.5663392314288536], [0.0, 0.5064381844596716], [0.0, 0.5093872161965302], [0.0, 0.5044721633017658], [0.0, 0.0047304621669288505], [0.0, 0.0026579578316240416], [0.0, 0.005123801154325282], [0.0, 0.005866545173388401], [0.0, 0.004342981197887619], [0.0, 0.006508045794651888], [0.0, 0.002617040089987255], [0.0, 0.0012659495042926963], [0.0, 0.001812296143829479], [0.0, 0.001404475416581279], [0.0, 0.003545534234634329], [0.0, 0.00011862156126545287], [0.0, 0.0006766030145307411], [0.0, -0.0004393598919998354]]}, {'left': [1, 2, 3, -1, -1, 6, 7, -1, -1, -1, 11, -1, 13, 14, -1, -1, -1], 'right': [10, 5, 4, -1, -1, 9, 8, -1, -1, -1, 12, -1, 16, 15, -1, -1, -1], 'feature': [84, 50, 1, -2, -2, 84, 1, -2, -2, -2, 97, -2, 60, 57, -2, -2, -2], 'threshold': [0.375, 0.3149999976158142, 0.053300000727176666, -2.0, -2.0, 0.3049999922513962, 0.008069999981671572, -2.0, -2.0, -2.0, 0.024999999441206455, -2.0, 0.004999999888241291, 0.030999999376945198, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11381929297421703], [0.0, 0.02061891646357137], [0.0, 0.19094859592685776], [0.0, 0.38059814517383506], [0.0, 0.0012990466798805111], [0.0, -0.009003636486565379], [0.0, 0.013994749753313144], [0.0, 0.13094659445404344], [0.0, 0.0013513070829639223], [0.0, -0.19759040365356925], [0.0, 0.3934204225061542], [0.0, -0.0019491437290886648], [0.0, 0.5063831557162235], [0.0, 0.5088377706752958], [0.0, 0.5068772062494489], [0.0, 0.5104062222159731], [0.0, 0.5019648487898937]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [1, 53, -2, 92, 59, -2, -2, -2, 1, 42, -2, -2, 40, -2, 54, -2, -2], 'threshold': [0.0004400000034365803, -0.2659999951720238, -2.0, 0.1875, -0.08999999798834324, -2.0, -2.0, -2.0, 0.031204999424517155, 0.08400000259280205, -2.0, -2.0, 0.054999999701976776, -2.0, -0.23999999463558197, -2.0, -2.0], 'value': [[0.0, 0.11357812782840337], [0.0, 0.3305568461510367], [0.0, -0.25070291987997784], [0.0, 0.44397338586440555], [0.0, 0.5208252310633714], [0.0, 0.5637005995603199], [0.0, 0.504746967877016], [0.0, 0.12695952441867014], [0.0, 0.0016627889040978735], [0.0, 0.0041554689117366105], [0.0, 0.0027468162883376836], [0.0, 0.005094570660669229], [0.0, 0.0007725460442268961], [0.0, 0.003309396527605113], [0.0, 0.00034973763033052663], [0.0, 0.00152166130190734], [0.0, -0.00015251537177382195]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 53, -2, 95, -2, 43, -2, -2, 1, 22, -2, 48, -2, -2, 84, 108, -2, -2, 54, -2, -2], 'threshold': [0.0004400000034365803, -0.3110000044107437, -2.0, 0.3586999922990799, -2.0, -0.3109999895095825, -2.0, -2.0, 0.031204999424517155, 0.5177049934864044, -2.0, 0.006000000052154064, -2.0, -2.0, 0.0950000025331974, -0.14000000059604645, -2.0, -2.0, -0.06000000052154064, -2.0, -2.0], 'value': [[0.0, 0.11453236683766052], [0.0, 0.3465463357399652], [0.0, -0.2484745707542081], [0.0, 0.4686019063028722], [0.0, 0.25374258587270204], [0.0, 0.5240494728654971], [0.0, 0.5675692065404414], [0.0, 0.5062459454530198], [0.0, 0.002113227266440752], [0.0, 0.004853643723639622], [0.0, 0.0022630118713559133], [0.0, 0.0057547330635643905], [0.0, 0.006678938855031561], [0.0, 0.004021847204563445], [0.0, 0.0008260619607867372], [0.0, 0.0018087269208103746], [0.0, 0.0034431123992049173], [0.0, 0.0013058390813043617], [0.0, -0.00021801955923837768], [0.0, 0.0005073156475501934], [0.0, -0.001813757014173234]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, -1], 'feature': [84, 27, 79, 54, -2, -2, -2, -2, 68, 2, -2, -2, -2], 'threshold': [0.375, 0.10500000044703484, 0.07499999925494194, 0.24000000953674316, -2.0, -2.0, -2.0, -2.0, -0.07099999859929085, 0.8117949962615967, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11420233300064961], [0.0, 0.028657681576690318], [0.0, -0.0073424166241511145], [0.0, 0.022944878725264756], [0.0, 0.0015427859299317085], [0.0, 0.258367899473928], [0.0, -0.2981004519785432], [0.0, 0.505658982737839], [0.0, 0.4392720084116952], [0.0, 0.5078448617974435], [0.0, 0.5043744113252147], [0.0, 0.5120094023641177], [0.0, 0.25069666160088855]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, -1, 11, -1, 13, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 10, -1, 12, -1, 14, -1, -1], 'feature': [1, 59, 44, -2, 91, -2, -2, -2, 1, -2, 40, -2, 1, -2, -2], 'threshold': [0.0004400000034365803, 0.10999999940395355, 0.5300000011920929, -2.0, 0.1875, -2.0, -2.0, -2.0, 0.011415000073611736, -2.0, 0.054999999701976776, -2.0, 0.04439999908208847, -2.0, -2.0], 'value': [[0.0, 0.1566159828096482], [0.0, 0.49592672804428667], [0.0, 0.5481923116375498], [0.0, 0.6751065993849932], [0.0, 0.5073984334330144], [0.0, 0.5093260544720846], [0.0, 0.5039287155626886], [0.0, 0.25419840392544607], [0.0, 0.002383825884812363], [0.0, 0.006983176786475213], [0.0, 0.00156251322380114], [0.0, 0.004659242339823344], [0.0, 0.0012365417379040656], [0.0, 0.0030108925861160067], [0.0, 0.0005136580590029046]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, -1], 'feature': [83, 54, 84, 1, -2, -2, -2, -2, 77, 57, -2, 48, -2, -2, -2], 'threshold': [0.4934999942779541, 0.0800000037997961, 0.3149999976158142, 0.011779999826103449, -2.0, -2.0, -2.0, -2.0, 0.4179999977350235, 0.004000000073574483, -2.0, -0.19899999350309372, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12765771030754194], [0.0, 0.001805761401797586], [0.0, 0.024294831627241227], [0.0, 0.0013542951059357818], [0.0, 0.005055198320392307], [0.0, 0.000954197461129671], [0.0, 0.2594353309706222], [0.0, -0.2511962786344436], [0.0, 0.3957770797154316], [0.0, 0.5052900006214948], [0.0, 0.5010656049450206], [0.0, 0.5066981325136531], [0.0, 0.5093428349151807], [0.0, 0.5053757813128893], [0.0, 0.14546183193014592]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, 12, 13, -1, -1, -1, 17, 18, -1, -1, 21, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 16, 15, 14, -1, -1, -1, 20, 19, -1, -1, 22, -1, -1], 'feature': [1, 22, 91, 49, -2, -2, 48, -2, -2, -2, 1, 79, 49, -2, -2, -2, 84, 45, -2, -2, 57, -2, -2], 'threshold': [0.000805000017862767, 0.8623299896717072, 0.1875, -0.029999999329447746, -2.0, -2.0, -0.5259999930858612, -2.0, -2.0, -2.0, 0.029020000249147415, 0.0400000000372529, -0.004999998956918716, -2.0, -2.0, -2.0, 0.0950000025331974, 0.4350000023841858, -2.0, -2.0, 0.06900000013411045, -2.0, -2.0], 'value': [[0.0, 0.11361964263335775], [0.0, 0.3375683885258016], [0.0, 0.5058328104597793], [0.0, 0.5079247667467901], [0.0, 0.5105882368335247], [0.0, 0.5052612966600555], [0.0, 0.5032178651010163], [0.0, 0.5049173865784455], [0.0, 0.501518343623587], [0.0, -0.1672248772761317], [0.0, 0.0016452696871358484], [0.0, 0.003312722441689009], [0.0, 0.0046092134859832545], [0.0, 0.006428024078475314], [0.0, 0.003699808189737225], [0.0, 0.0007197403531005175], [0.0, 0.000644798034403952], [0.0, 0.0012286295822494103], [0.0, 0.001705874430760171], [0.0, 0.00017869091552573656], [0.0, -2.2438020276571713e-05], [0.0, 0.0004375927630732468], [0.0, -0.001172514978651118]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 53, -2, 79, 107, -2, -2, -2, 1, 1, -2, 22, -2, -2, 84, 90, -2, -2, 54, -2, -2], 'threshold': [0.0004400000034365803, -0.2659999951720238, -2.0, 0.05999999865889549, 0.05999999865889549, -2.0, -2.0, -2.0, 0.031204999424517155, 0.010394999757409096, -2.0, 0.7759099900722504, -2.0, -2.0, 0.08500000089406967, 0.0625, -2.0, -2.0, -0.23999999463558197, -2.0, -2.0], 'value': [[0.0, 0.11415656292182286], [0.0, 0.33801879111097244], [0.0, -0.25070291987997784], [0.0, 0.4557631333091625], [0.0, 0.5376796151265056], [0.0, 0.6339557478572555], [0.0, 0.5055875708829224], [0.0, 0.1280972060397894], [0.0, 0.0022254488272481963], [0.0, 0.004622913503141091], [0.0, 0.006912813688565944], [0.0, 0.0038596134413328063], [0.0, 0.003157456359324351], [0.0, 0.005263927605349716], [0.0, 0.0010267164893017489], [0.0, 0.002462316021948917], [0.0, 0.004569813354354302], [0.0, 0.0012580318320029832], [0.0, 0.0002747357817246607], [0.0, 0.0014938707138567597], [0.0, -0.00010624388456662026]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 14, 11, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [1, 101, -2, 43, -2, 91, -2, -2, 1, 59, -2, 50, -2, -2, 44, -2, 84, -2, -2], 'threshold': [0.0004400000034365803, 0.42499999701976776, -2.0, -0.3110000044107437, -2.0, 0.1875, -2.0, -2.0, 0.029020000249147415, -0.07999999821186066, -2.0, 0.3400000035762787, -2.0, -2.0, 0.36500000953674316, -2.0, 0.1849999949336052, -2.0, -2.0], 'value': [[0.0, 0.1281746907227929], [0.0, 0.39679379247741303], [0.0, -0.12617256343613587], [0.0, 0.506891972669739], [0.0, 0.5122478891740389], [0.0, 0.5054637282685924], [0.0, 0.5067123710714814], [0.0, 0.5020299605606481], [0.0, 0.0020881735726653327], [0.0, 0.004088000471627884], [0.0, 0.006289445370386293], [0.0, 0.003087343699464971], [0.0, 0.0041683206283102], [0.0, 0.0011956340739858184], [0.0, 0.0011185605307440958], [0.0, 0.003276440627625142], [0.0, 0.0005375928123530451], [0.0, 0.0008643638655316608], [0.0, -0.0012596479801293414]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 100, 54, 53, -2, -2, -2, -2, 1, 1, -2, 43, -2, -2, 84, 44, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, -0.0800000000745058, -0.22999999672174454, -2.0, -2.0, -2.0, -2.0, 0.029020000249147415, 0.008069999981671572, -2.0, -0.2889999896287918, -2.0, -2.0, 0.19500000029802322, 0.36500000953674316, -2.0, -2.0, -2.0], 'value': [[0.0, 0.1285494197233663], [0.0, 0.3736067972773915], [0.0, 0.5215382534787935], [0.0, 0.5077041137017432], [0.0, 0.5122844431072721], [0.0, 0.5058719819395315], [0.0, 0.5645777994518384], [0.0, -0.08251519267693071], [0.0, 0.0021514039323425986], [0.0, 0.00525873884912719], [0.0, 0.006972315342693072], [0.0, 0.004401950602344249], [0.0, 0.005124687800994643], [0.0, 0.003498529104031256], [0.0, 0.0009176091859722464], [0.0, 0.0013764154408963058], [0.0, 0.0026446328423866345], [0.0, 0.0008328936974004508], [0.0, -0.0025234377259581997]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 100, 99, 77, -2, -2, -2, -2, 1, 43, 95, -2, -2, -2, 44, 100, -2, -2, 83, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, 0.1900000050663948, 0.19999999180436134, -2.0, -2.0, -2.0, -2.0, 0.0303549999371171, -0.2889999896287918, 0.3965499997138977, -2.0, -2.0, -2.0, 0.4399999976158142, 0.2549999952316284, -2.0, -2.0, 0.4934999942779541, -2.0, -2.0], 'value': [[0.0, 0.12878654482063678], [0.0, 0.3741340495085386], [0.0, 0.5221041685361374], [0.0, 0.506933869460566], [0.0, 0.5077925000473134], [0.0, 0.5053883344044212], [0.0, 0.5693006545490272], [0.0, -0.08210715082655806], [0.0, 0.0022388845079296684], [0.0, 0.004918958296588551], [0.0, 0.006365051124163967], [0.0, 0.006100501662612778], [0.0, 0.0066002062010983575], [0.0, 0.0028703267908567107], [0.0, 0.0010612763280644021], [0.0, 0.002604642918462721], [0.0, 0.0032292454960995026], [0.0, 0.0016330389088055064], [0.0, 0.000235754663432743], [0.0, 0.0005731654616467122], [0.0, -0.0012404175787533722]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 79, 88, 48, -2, -2, -2, -2, 1, 99, -2, 49, -2, -2, 24, 54, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, 0.3125, -0.34300000965595245, -2.0, -2.0, -2.0, -2.0, 0.031204999424517155, 0.13999999687075615, -2.0, 0.32999999821186066, -2.0, -2.0, 0.875, -0.23999999463558197, -2.0, -2.0, -2.0], 'value': [[0.0, 0.15662021769609707], [0.0, 0.48509575079791944], [0.0, 0.5343527030971228], [0.0, 0.5075723308356278], [0.0, 0.5124018951291196], [0.0, 0.5043526213066332], [0.0, 0.6347790990777302], [0.0, 0.251125227376704], [0.0, 0.0024378246074865566], [0.0, 0.00441674081909179], [0.0, 0.001191534975857067], [0.0, 0.005568600048818476], [0.0, 0.00627675291697598], [0.0, 0.0037982178784247145], [0.0, 0.0011845110068032423], [0.0, 0.0007661272990238879], [0.0, 0.0017430573613095117], [0.0, -7.1241325792361e-05], [0.0, 0.0039040051073690463]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, 12, -1, 14, -1, -1, 17, 18, -1, -1, 21, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 16, 13, -1, 15, -1, -1, 20, 19, -1, -1, 22, -1, -1], 'feature': [1, 9, 99, 68, -2, -2, 88, -2, -2, -2, 1, 53, -2, 2, -2, -2, 43, 97, -2, -2, 84, -2, -2], 'threshold': [0.000805000017862767, 0.2849999964237213, 0.17000000178813934, -0.05700000002980232, -2.0, -2.0, 0.3125, -2.0, -2.0, -2.0, 0.0303549999371171, -0.22999999672174454, -2.0, 0.7342450022697449, -2.0, -2.0, -0.3499999940395355, 0.03500000014901161, -2.0, -2.0, 0.1849999949336052, -2.0, -2.0], 'value': [[0.0, 0.17019282209433573], [0.0, 0.43455308478850785], [0.0, 0.5059802099917469], [0.0, 0.5030518937577759], [0.0, 0.504462781212557], [0.0, 0.5018761542121254], [0.0, 0.5084580160358765], [0.0, 0.5071931297103545], [0.0, 0.511304010268301], [0.0, 0.005990333569074746], [0.0, 0.00196356401622614], [0.0, 0.0038783739052988026], [0.0, 0.006506744804718645], [0.0, 0.0024181678500655567], [0.0, 0.001472972110259496], [0.0, 0.003599662524823133], [0.0, 0.001069986067992231], [0.0, 0.0025235517642269783], [0.0, 0.0013484083205069553], [0.0, 0.003992481068877007], [0.0, 0.000447029341034482], [0.0, 0.0006594313817850035], [0.0, -0.0004556793321552344]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, -1, 11, 12, -1, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 10, -1, 14, 13, -1, -1, 16, -1, -1], 'feature': [1, 59, 42, 108, -2, -2, -2, -2, 1, -2, 73, 95, -2, -2, 44, -2, -2], 'threshold': [0.0004400000034365803, 0.009999999776482582, 0.08500000089406967, -0.11499999836087227, -2.0, -2.0, -2.0, -2.0, 0.012529999949038029, -2.0, -0.07849999889731407, 0.6166999936103821, -2.0, -2.0, 0.9149999916553497, -2.0, -2.0], 'value': [[0.0, 0.1416099124663357], [0.0, 0.4134733557218808], [0.0, 0.5187896465287647], [0.0, 0.5045812513103595], [0.0, 0.5064591319529753], [0.0, 0.5017644303464356], [0.0, 0.5661509639234491], [0.0, 0.002739821575035073], [0.0, 0.001385610155580727], [0.0, 0.006072390123892319], [0.0, 0.0007718651597303994], [0.0, 0.00332482553721683], [0.0, 0.004673520807379705], [0.0, 0.001976130267053955], [0.0, 0.0001711686003218275], [0.0, 0.0005368828544311718], [0.0, -0.0025716883054982542]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, 12, -1, 14, -1, -1, 17, 18, -1, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 16, 13, -1, 15, -1, -1, 20, 19, -1, -1, -1], 'feature': [1, 100, 44, -2, 57, -2, -2, 91, -2, -2, 1, 59, -2, 60, -2, -2, 24, 43, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, 0.7199999988079071, -2.0, 0.024999999906867743, -2.0, -2.0, 0.1875, -2.0, -2.0, 0.03121000062674284, -0.044999999925494194, -2.0, 0.004999999888241291, -2.0, -2.0, 0.875, -0.013999999966472387, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12798057715885094], [0.0, 0.38786907833526174], [0.0, 0.5628585630422966], [0.0, 0.676987310462943], [0.0, 0.5057941893319735], [0.0, 0.502954745900297], [0.0, 0.5080657440773146], [0.0, 0.15163327398076437], [0.0, -0.37561941952905986], [0.0, 0.5031350696539807], [0.0, 0.00205522091873447], [0.0, 0.004499091915760675], [0.0, 0.00694358770823077], [0.0, 0.0031546192299021225], [0.0, 0.0020458518814014393], [0.0, 0.0038937974622359115], [0.0, 0.0009073421171009497], [0.0, 0.0003511647521648691], [0.0, 0.0007233468195849783], [0.0, -0.001881927652355786], [0.0, 0.0040219353607430005]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, 9, -1, -1, 12, -1, -1, 15, -1, 17, -1, -1], 'right': [14, 7, 6, 5, -1, -1, -1, 11, 10, -1, -1, 13, -1, -1, 16, -1, 18, -1, -1], 'feature': [59, 1, 58, 42, -2, -2, -2, 1, 59, -2, -2, 52, -2, -2, 72, -2, 1, -2, -2], 'threshold': [0.054999999701976776, 0.0004400000034365803, 0.06200000084936619, 0.08400000259280205, -2.0, -2.0, -2.0, 0.0303549999371171, -0.044999999925494194, -2.0, -2.0, 0.13700000196695328, -2.0, -2.0, 0.011999999987892807, -2.0, 0.07518500089645386, -2.0, -2.0], 'value': [[0.0, 0.05783860012589943], [0.0, 0.12989067800792176], [0.0, 0.472165588196031], [0.0, 0.5531596800382301], [0.0, 0.5070630309648724], [0.0, 0.6338288159166062], [0.0, 0.24943183562998308], [0.0, 0.001537586687380732], [0.0, 0.00444071894272106], [0.0, 0.006383583536342496], [0.0, 0.0024978543490996228], [0.0, 0.0002933871493777345], [0.0, -0.0024269365668780907], [0.0, 0.0008847618703029139], [0.0, -0.17527106361005465], [0.0, -0.5008736644744712], [0.0, 0.05265075699503687], [0.0, 0.13153406326076633], [0.0, 6.188615121723491e-05]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 68, 88, 49, -2, -2, -2, -2, 1, 59, -2, 52, -2, -2, 84, 54, -2, -2, -2], 'threshold': [0.0004400000034365803, -0.0030000004917383194, 0.3125, 0.13999999687075615, -2.0, -2.0, -2.0, -2.0, 0.0303549999371171, -0.044999999925494194, -2.0, 0.17099999636411667, -2.0, -2.0, 0.19500000029802322, 0.24000000953674316, -2.0, -2.0, -2.0], 'value': [[0.0, 0.15607974936891067], [0.0, 0.46435218912855847], [0.0, 0.5313024902248809], [0.0, 0.5054333380116687], [0.0, 0.5075812382293334], [0.0, 0.5026717520175283], [0.0, 0.6347790990777301], [0.0, 0.12960068364694655], [0.0, 0.001943529489086752], [0.0, 0.004488988795410887], [0.0, 0.006635340357150965], [0.0, 0.0037084973184144943], [0.0, 0.003114251350987069], [0.0, 0.004748427761412488], [0.0, 0.0007865025316666908], [0.0, 0.001166013800002038], [0.0, 0.0008119561354559823], [0.0, 0.0028654905898231053], [0.0, -0.001964954163764576]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, 14, -1, -1, 17, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 16, 13, 12, -1, -1, 15, -1, -1, 18, -1, -1], 'feature': [1, 9, 77, 43, -2, -2, -2, -2, 43, 1, 57, -2, -2, 39, -2, -2, 84, -2, -2], 'threshold': [0.004614999983459711, 0.2750000059604645, 0.32999999821186066, -0.26399999111890793, -2.0, -2.0, -2.0, -2.0, -0.18800000101327896, 0.0303549999371171, 0.01899999927263707, -2.0, -2.0, 0.1850000023841858, -2.0, -2.0, 0.0950000025331974, -2.0, -2.0], 'value': [[0.0, 0.1282966871007726], [0.0, 0.3658785616727414], [0.0, 0.4568994628048089], [0.0, 0.5080193141787238], [0.0, 0.5102875179444968], [0.0, 0.5042389745691019], [0.0, 0.25242005730914935], [0.0, 0.0017949571444711766], [0.0, 0.0019233495624915024], [0.0, 0.002555584726257522], [0.0, 0.0040687327034846415], [0.0, 0.00325094620717134], [0.0, 0.005704305696111245], [0.0, 0.0018292736971885048], [0.0, 0.0011956114992097593], [0.0, 0.005156000236576919], [0.0, -0.00041592054344277154], [0.0, 0.00015660373288994833], [0.0, -0.0012747069579418513]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 100, 44, -2, 99, -2, -2, -2, 1, 43, 43, -2, -2, -2, 79, 22, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, 0.6899999976158142, -2.0, 0.13999999687075615, -2.0, -2.0, -2.0, 0.0303549999371171, -0.278999999165535, -0.36149999499320984, -2.0, -2.0, -2.0, 0.06000000052154064, 0.8978649973869324, -2.0, -2.0, -2.0], 'value': [[0.0, 0.14216464975929677], [0.0, 0.39760262316150446], [0.0, 0.5200910075643156], [0.0, 0.5656489142708147], [0.0, 0.5054473946943697], [0.0, 0.5023906683265459], [0.0, 0.5071455760098275], [0.0, 0.07388332152550306], [0.0, 0.0020857611193763536], [0.0, 0.004826483281489422], [0.0, 0.006006159414230029], [0.0, 0.004298330312970833], [0.0, 0.0072482169424185365], [0.0, 0.0025850986292822674], [0.0, 0.0008438713896688696], [0.0, 0.0011895403592469688], [0.0, 0.0009111915770958823], [0.0, 0.001984822593964359], [0.0, -0.0010227410460528664]]}, {'left': [1, 2, -1, 4, 5, -1, -1, 8, -1, -1, 11, -1, -1], 'right': [10, 3, -1, 7, 6, -1, -1, 9, -1, -1, 12, -1, -1], 'feature': [84, 101, -2, 83, 49, -2, -2, 9, -2, -2, 43, -2, -2], 'threshold': [0.42000000178813934, 0.42499999701976776, -2.0, 0.4934999942779541, -0.17999999970197678, -2.0, -2.0, 0.2499999925494194, -2.0, -2.0, -0.2369999960064888, -2.0, -2.0], 'value': [[0.0, 0.11382626268510698], [0.0, 0.04296916991883651], [0.0, -0.30107713943985337], [0.0, 0.0736875903972909], [0.0, -0.00958403316732888], [0.0, -0.12555903458362394], [0.0, 0.0017306011171877103], [0.0, 0.41434423225255373], [0.0, 0.5061834385086705], [0.0, 0.2536256213043496], [0.0, 0.5067610498435168], [0.0, 0.5109944540348188], [0.0, 0.5043419617342011]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [1, 79, 43, -2, 54, -2, -2, -2, 1, 99, -2, -2, 39, 54, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, -0.3109999895095825, -2.0, -0.3199999928474426, -2.0, -2.0, -2.0, 0.0303549999371171, 0.13999999687075615, -2.0, -2.0, 0.1850000023841858, -0.23999999463558197, -2.0, -2.0, -2.0], 'value': [[0.0, 0.1561931201277519], [0.0, 0.4848904981315169], [0.0, 0.5337143831278182], [0.0, 0.6357684378465286], [0.0, 0.5064999685361624], [0.0, 0.5049253138637552], [0.0, 0.5070725702352197], [0.0, 0.25297704439908497], [0.0, 0.001906595758637701], [0.0, 0.0048348558307371925], [0.0, 0.0015371827466669763], [0.0, 0.006719240450205888], [0.0, 0.0010589415272404797], [0.0, 0.0007210911252299152], [0.0, 0.0020119889442122172], [0.0, 0.00018321703398728925], [0.0, 0.003930669944330278]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, -1, 17, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 13, 12, -1, -1, -1, 16, -1, 18, -1, -1], 'feature': [1, 100, 88, 99, -2, -2, -2, -2, 1, 74, 80, -2, -2, -2, 44, -2, 79, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, 0.3125, 0.13999999687075615, -2.0, -2.0, -2.0, -2.0, 0.03121000062674284, 0.07500000111758709, 0.014999999664723873, -2.0, -2.0, -2.0, 0.3200000077486038, -2.0, 0.06000000052154064, -2.0, -2.0], 'value': [[0.0, 0.14268125820798488], [0.0, 0.41486089742515003], [0.0, 0.5198009781777326], [0.0, 0.506245233179385], [0.0, 0.5009327203882773], [0.0, 0.5080160707764209], [0.0, 0.5679991826163028], [0.0, -0.12295701643183599], [0.0, 0.0022938653486049058], [0.0, 0.004421921165320206], [0.0, 0.005972728682648214], [0.0, 0.005270072876590692], [0.0, 0.0066115066881550525], [0.0, 0.0017080080099961907], [0.0, 0.0011611904784177302], [0.0, 0.00448038436888526], [0.0, 0.0006694580502003186], [0.0, 0.001291743710223625], [0.0, -0.0011085009784377003]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 79, 67, -2, 53, -2, -2, -2, 1, 1, -2, 87, -2, -2, 54, 54, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, 0.11799999698996544, -2.0, -0.22999999672174454, -2.0, -2.0, -2.0, 0.02986999973654747, 0.004260000016074628, -2.0, 0.25, -2.0, -2.0, 0.24000000953674316, -0.06000000052154064, -2.0, -2.0, -2.0], 'value': [[0.0, 0.1425697189987026], [0.0, 0.4322263470247966], [0.0, 0.5482823560312479], [0.0, 0.6762096087018439], [0.0, 0.5071628819585561], [0.0, 0.5119320870417293], [0.0, 0.5052551999252868], [0.0, 0.0028191137009276], [0.0, 0.0022206311922446987], [0.0, 0.005810278281768586], [0.0, 0.008084639753027584], [0.0, 0.004246654770278024], [0.0, 0.005080017929477376], [0.0, 0.0034132916110786726], [0.0, 0.0008360530291426281], [0.0, 0.00037564343435202824], [0.0, 0.0006633624473251049], [0.0, -0.001120495433107971], [0.0, 0.004404227388769777]]}, {'left': [1, 2, 3, 4, -1, -1, 7, -1, -1, -1, 11, -1, -1], 'right': [10, 9, 6, 5, -1, -1, 8, -1, -1, -1, 12, -1, -1], 'feature': [84, 73, 1, 58, -2, -2, 1, -2, -2, -2, 77, -2, -2], 'threshold': [0.3700000047683716, 0.07649999856948853, 0.0004400000034365803, 0.04999999888241291, -2.0, -2.0, 0.031204999424517155, -2.0, -2.0, -2.0, 0.12199999939184636, -2.0, -2.0], 'value': [[0.0, 0.1000649998666347], [0.0, 0.04214236634090642], [0.0, 0.08163379216739344], [0.0, 0.5386438974948193], [0.0, 0.5056192017331508], [0.0, 0.5679991826163027], [0.0, 0.0015392376254734638], [0.0, 0.0041578814618879875], [0.0, 0.0007253348114527332], [0.0, -0.33302617901072096], [0.0, 0.5055234345467334], [0.0, 0.5083182137356018], [0.0, 0.5020299605606482]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 79, 108, -2, 9, -2, -2, -2, 1, 97, 89, -2, -2, -2, 84, 44, -2, -2, 22, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, -0.14500000327825546, -2.0, 0.2499999925494194, -2.0, -2.0, -2.0, 0.0303549999371171, 0.06499999947845936, 0.0625, -2.0, -2.0, -2.0, 0.07499999925494194, 0.38500000536441803, -2.0, -2.0, 0.8615099787712097, -2.0, -2.0], 'value': [[0.0, 0.1429557141623193], [0.0, 0.43320091409731354], [0.0, 0.5217631019245405], [0.0, 0.5693710536344384], [0.0, 0.5074807164115716], [0.0, 0.5042113958546088], [0.0, 0.5112170827623853], [0.0, 0.0014602484395819793], [0.0, 0.0023214420288684167], [0.0, 0.004875373370741627], [0.0, 0.006269193507505932], [0.0, 0.005952168181039608], [0.0, 0.006586218833972257], [0.0, 0.003388631891526369], [0.0, 0.0011218682167764542], [0.0, 0.0025190182005678965], [0.0, 0.004091707526089931], [0.0, 0.0011709987786918674], [0.0, 0.00021372072731201675], [0.0, 0.000738235114551585], [0.0, -0.0013598224344066878]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 52, 49, -2, 107, -2, -2, -2, 1, 43, 91, -2, -2, -2, 75, 24, -2, -2, 94, -2, -2], 'threshold': [0.0004400000034365803, 0.3140000104904175, -0.13000000268220901, -2.0, 0.05999999865889549, -2.0, -2.0, -2.0, 0.0303549999371171, -0.29100000858306885, 0.1875, -2.0, -2.0, -2.0, 0.03999999910593033, 0.875, -2.0, -2.0, 0.25, -2.0, -2.0], 'value': [[0.0, 0.1283686963950731], [0.0, 0.3656277258236932], [0.0, 0.4825995918385313], [0.0, 0.2543106174201393], [0.0, 0.5363146446428588], [0.0, 0.6356563460475213], [0.0, 0.5057479672875782], [0.0, -0.2484745707542081], [0.0, 0.0021670849968709618], [0.0, 0.00548273284299805], [0.0, 0.0065749059430925995], [0.0, 0.007432589664829181], [0.0, 0.005888758965703333], [0.0, 0.003025343367785316], [0.0, 0.0008993372909988394], [0.0, 0.0015800238399760968], [0.0, 0.0011017268471107816], [0.0, 0.003493211811437358], [0.0, -7.307206468295682e-05], [0.0, 0.00033954406086340595], [0.0, -0.0011046123785488637]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, 12, -1, 14, -1, -1, 17, -1, 19, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 16, 13, -1, 15, -1, -1, 18, -1, 20, -1, -1], 'feature': [1, 100, 43, -2, 99, -2, -2, 67, -2, -2, 1, 59, -2, 49, -2, -2, 44, -2, 43, -2, -2], 'threshold': [0.0004400000034365803, 0.255000002682209, -0.2369999960064888, -2.0, 0.13999999687075615, -2.0, -2.0, 0.10900000110268593, -2.0, -2.0, 0.03130499925464392, -0.044999999925494194, -2.0, -0.004999998956918716, -2.0, -2.0, 0.32500000298023224, -2.0, -0.22749999910593033, -2.0, -2.0], 'value': [[0.0, 0.15610874094597266], [0.0, 0.4366099263925221], [0.0, 0.52094679017111], [0.0, 0.564170855408459], [0.0, 0.5047377657071044], [0.0, 0.5025192968551512], [0.0, 0.5069562345590576], [0.0, 0.28199234279844476], [0.0, 0.0023763777498239103], [0.0, 0.5056851148373411], [0.0, 0.0022855102172198946], [0.0, 0.0039056813752663647], [0.0, 0.006397240211679491], [0.0, 0.002556087005542588], [0.0, 0.0008335899106609035], [0.0, 0.0034173355529834304], [0.0, 0.0012150399877963339], [0.0, 0.0032501580616237646], [0.0, 0.0008758536421584288], [0.0, 0.0012713107157775055], [0.0, 0.0004084952824267927]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, -1, 11, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 10, -1, 12, -1, -1], 'feature': [84, 73, 1, -2, 1, -2, -2, -2, 59, -2, 68, -2, -2], 'threshold': [0.375, 0.07649999856948853, 0.0034549999982118607, -2.0, 0.03121000062674284, -2.0, -2.0, -2.0, -0.06000000052154064, -2.0, -0.06199999898672104, -2.0, -2.0], 'value': [[0.0, 0.1002228722154334], [0.0, 0.0021230001828145923], [0.0, 0.049546860427501484], [0.0, 0.36510508406526954], [0.0, 0.001527130743493281], [0.0, 0.004040608030005892], [0.0, 0.0005369730245640709], [0.0, -0.5005699184108662], [0.0, 0.5066366277791402], [0.0, 0.5108086479650026], [0.0, 0.5035076126397433], [0.0, 0.5048174997458486], [0.0, 0.5021977255336383]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, -1, 11, 12, -1, -1, 15, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 10, -1, 14, 13, -1, -1, 16, -1, -1], 'feature': [1, 59, 107, -2, 45, -2, -2, -2, 1, -2, 43, 95, -2, -2, 95, -2, -2], 'threshold': [0.0004400000034365803, 0.009999999776482582, 0.05999999865889549, -2.0, 0.4299999922513962, -2.0, -2.0, -2.0, 0.009234999772161245, -2.0, -0.25300000607967377, 1.0411499738693237, -2.0, -2.0, 0.5361500084400177, -2.0, -2.0], 'value': [[0.0, 0.15634714003532585], [0.0, 0.47437108609232953], [0.0, 0.5708589532933996], [0.0, 0.787530636426541], [0.0, 0.5058574483534571], [0.0, 0.5074424184155921], [0.0, 0.5014987806825861], [0.0, 0.003992733487114153], [0.0, 0.0022530630798706635], [0.0, 0.007839390736113961], [0.0, 0.001681734115027599], [0.0, 0.002494549923932001], [0.0, 0.003462991599743492], [0.0, -0.0002724262926722597], [0.0, 0.0003907913597088426], [0.0, -2.730584491541757e-05], [0.0, 0.0008611507149111353]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [1, 101, -2, 100, 42, -2, -2, -2, 1, 53, -2, -2, 79, 58, -2, -2, -2], 'threshold': [0.000805000017862767, 0.42499999701976776, -2.0, 0.26500000059604645, 0.08400000259280205, -2.0, -2.0, -2.0, 0.0303549999371171, -0.2149999961256981, -2.0, -2.0, 0.06000000052154064, -0.022000000346451998, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11439281738987132], [0.0, 0.32583500346018146], [0.0, -0.3000235987631103], [0.0, 0.4822996540160043], [0.0, 0.5079211350955304], [0.0, 0.506111172629966], [0.0, 0.5109377392048045], [0.0, 0.37981372969790006], [0.0, 0.001923569480132045], [0.0, 0.005363787107347324], [0.0, 0.006519597546354815], [0.0, 0.004015341595171917], [0.0, 0.0006081921520791442], [0.0, 0.0010959671049150283], [0.0, 0.002383323475425847], [0.0, 0.0008161070243691982], [0.0, -0.0016680909611549815]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [1, 99, -2, 48, -2, 75, -2, -2, 1, 42, -2, -2, 44, 84, -2, -2, 43, -2, -2], 'threshold': [0.000805000017862767, 0.17000000178813934, -2.0, -0.3720000088214874, -2.0, 0.014999999664723873, -2.0, -2.0, 0.0303549999371171, 0.08500000089406967, -2.0, -2.0, 0.4150000065565109, 0.08000000193715096, -2.0, -2.0, -0.013999999966472387, -2.0, -2.0], 'value': [[0.0, 0.12837534943594145], [0.0, 0.36667259200915375], [0.0, 0.001381058200222591], [0.0, 0.5087304107126271], [0.0, 0.5135531551050648], [0.0, 0.5063190385164081], [0.0, 0.5081608013271792], [0.0, 0.5053981571110227], [0.0, 0.0016214970033817926], [0.0, 0.004844631077104688], [0.0, 0.002822428730110571], [0.0, 0.006192765975100767], [0.0, 0.0007503796861593883], [0.0, 0.002250563296130331], [0.0, 0.0036826831197148023], [0.0, 0.0010571301098099377], [0.0, 0.0001156866204024511], [0.0, 0.0004788892154494033], [0.0, -0.001881927652355786]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 52, 18, 53, -2, -2, -2, -2, 1, 99, -2, 74, -2, -2, 88, 97, -2, -2, 42, -2, -2], 'threshold': [0.000805000017862767, 0.3580000102519989, 0.08500000089406967, -0.22100000083446503, -2.0, -2.0, -2.0, -2.0, 0.0303549999371171, 0.13999999687075615, -2.0, 0.03999999910593033, -2.0, -2.0, 0.3125, 0.07499999925494194, -2.0, -2.0, 0.08399999886751175, -2.0, -2.0], 'value': [[0.0, 0.11413938903272713], [0.0, 0.3123067827049318], [0.0, 0.4608484061062956], [0.0, 0.5067456924809969], [0.0, 0.510085746738329], [0.0, 0.5040736490751314], [0.0, 0.2543106174201393], [0.0, -0.5046721460025693], [0.0, 0.0021317317397420445], [0.0, 0.004053491868020437], [0.0, 0.0015371827466669763], [0.0, 0.0048277408284368864], [0.0, 0.0065001223647893625], [0.0, 0.0040844601456135644], [0.0, 0.0010051826990271245], [0.0, 0.0004420916409633369], [0.0, 0.0008425277251713492], [0.0, -9.182313798067949e-05], [0.0, 0.002483296726444567], [0.0, 0.0020610190986331545], [0.0, 0.0029055743542559798]]}, {'left': [1, 2, -1, 4, 5, -1, -1, 8, -1, -1, 11, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [10, 3, -1, 7, 6, -1, -1, 9, -1, -1, 12, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [1, 101, -2, 78, 108, -2, -2, 67, -2, -2, 1, -2, 79, 1, -2, -2, 95, -2, -2], 'threshold': [0.000805000017862767, 0.42499999701976776, -2.0, 0.05700000002980232, -0.10500000044703484, -2.0, -2.0, 0.12200000137090683, -2.0, -2.0, 0.011144999880343676, -2.0, 0.06000000052154064, 0.029020000249147415, -2.0, -2.0, 0.48285000026226044, -2.0, -2.0], 'value': [[0.0, 0.11412533313147327], [0.0, 0.33814775531842806], [0.0, -0.5049137621895277], [0.0, 0.5067600588200187], [0.0, 0.5038405510639354], [0.0, 0.505626593227788], [0.0, 0.5016973004673122], [0.0, 0.5103283460774546], [0.0, 0.5130277056799454], [0.0, 0.5081688583954621], [0.0, 0.002114122037995894], [0.0, 0.005983859617916254], [0.0, 0.001561302383721557], [0.0, 0.0022599483545040705], [0.0, 0.004128820722790444], [0.0, 0.0016099057916218534], [0.0, -0.0004076089884837077], [0.0, -0.001124008754812822], [0.0, 0.0001893908167905541]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, -1], 'feature': [1, 79, 95, 47, -2, -2, -2, -2, 1, 74, -2, -2, 38, 79, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.03999999910593033, 0.6963500082492828, 0.12800000235438347, -2.0, -2.0, -2.0, -2.0, 0.029020000249147415, 0.07500000111758709, -2.0, -2.0, 0.08500000089406967, 0.0400000000372529, -2.0, -2.0, -2.0], 'value': [[0.0, 0.1423877203879616], [0.0, 0.4319662724955642], [0.0, 0.5202752005070479], [0.0, 0.5072206998279012], [0.0, 0.5050012939027734], [0.0, 0.5133240661220023], [0.0, 0.563790202770871], [0.0, 0.0014602484395819793], [0.0, 0.002076463181184984], [0.0, 0.0042616195934047675], [0.0, 0.0056270972113492855], [0.0, 0.0027986078598927844], [0.0, 0.0011445582406794876], [0.0, 0.0007509985514481121], [0.0, 0.0011035905225455255], [0.0, -0.0010119613040389553], [0.0, 0.004096255909914803]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, -1], 'feature': [84, 24, 43, 48, -2, -2, -2, -2, 52, 108, -2, 42, -2, -2, -2], 'threshold': [0.32999999821186066, 0.875, 0.01699999999254942, -0.31050001084804535, -2.0, -2.0, -2.0, -2.0, 0.23400000482797623, -0.10000000149011612, -2.0, 0.07499999925494194, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11400642999724547], [0.0, 0.011841536044098148], [0.0, -0.01979727569758024], [0.0, 0.0020095896143579213], [0.0, -0.00042471617610322196], [0.0, 0.0031008301411163644], [0.0, -0.24876936147293094], [0.0, 0.21975372748941333], [0.0, 0.39899271312970946], [0.0, 0.5041491312264171], [0.0, 0.507545007319411], [0.0, 0.5022625333969764], [0.0, 0.5003666600939685], [0.0, 0.5037792320393824], [0.0, 0.10455474245892789]]}, {'left': [1, 2, 3, -1, 5, -1, -1, 8, -1, -1, 11, 12, -1, 14, -1, -1, 17, 18, -1, -1, -1], 'right': [10, 7, 4, -1, 6, -1, -1, 9, -1, -1, 16, 13, -1, 15, -1, -1, 20, 19, -1, -1, -1], 'feature': [1, 108, 73, -2, 84, -2, -2, 101, -2, -2, 43, 73, -2, 44, -2, -2, 88, 43, -2, -2, -2], 'threshold': [0.0004400000034365803, -0.10500000044703484, 0.05300000123679638, -2.0, 0.47999998927116394, -2.0, -2.0, 0.42499999701976776, -2.0, -2.0, -0.29349999129772186, -0.12550000101327896, -2.0, 0.4950000047683716, -2.0, -2.0, 0.1875, -0.013999999966472387, -2.0, -2.0, -2.0], 'value': [[0.0, 0.11366377289920677], [0.0, 0.34499819558543343], [0.0, 0.522888982267664], [0.0, 0.5643789106105199], [0.0, 0.505915829763769], [0.0, 0.5045934238248331], [0.0, 0.5082300401569071], [0.0, 0.00033479638861103056], [0.0, -0.5036591072128741], [0.0, 0.5043286999900961], [0.0, 0.0015738979893856857], [0.0, 0.003190126258475899], [0.0, 0.0003125169569387909], [0.0, 0.0039839495140723425], [0.0, 0.003145156289287576], [0.0, 0.005847934458038489], [0.0, 0.0005772238901133875], [0.0, 7.011753515258808e-05], [0.0, 0.0004876015812481006], [0.0, -0.0015163218400103596], [0.0, 0.002605649309956585]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [1, 67, -2, 99, -2, 108, -2, -2, 1, 58, -2, -2, 73, 39, -2, -2, 22, -2, -2], 'threshold': [0.0004400000034365803, 0.09100000187754631, -2.0, 0.14999999850988388, -2.0, -0.14500000327825546, -2.0, -2.0, 0.0303549999371171, 0.057499999180436134, -2.0, -2.0, -0.06349999830126762, 0.17499999701976776, -2.0, -2.0, 0.8615099787712097, -2.0, -2.0], 'value': [[0.0, 0.12841491831217897], [0.0, 0.3662400489384663], [0.0, -0.24709649947132906], [0.0, 0.48306605815937975], [0.0, 0.2522573479653217], [0.0, 0.5373739899697463], [0.0, 0.6359716468016737], [0.0, 0.5070362494060765], [0.0, 0.0019121892556432645], [0.0, 0.00557094319231588], [0.0, 0.0067672998661003625], [0.0, 0.004075497350085278], [0.0, 0.0010456422706418556], [0.0, 0.002387846737993262], [0.0, 0.001304743819142325], [0.0, 0.004824828305407869], [0.0, 0.00034769594761912436], [0.0, 0.0008662046113317137], [0.0, -0.0009856120447846767]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 100, 43, -2, 59, -2, -2, -2, 1, 7, -2, 9, -2, -2, 44, 39, -2, -2, 1, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, -0.2590000033378601, -2.0, -0.009999999776482582, -2.0, -2.0, -2.0, 0.029020000249147415, 0.10500000044703484, -2.0, 0.255000002682209, -2.0, -2.0, 0.36500000953674316, 0.1850000023841858, -2.0, -2.0, 0.0657150000333786, -2.0, -2.0], 'value': [[0.0, 0.15643742399777238], [0.0, 0.4548107243526865], [0.0, 0.549629563783188], [0.0, 0.6763160968274361], [0.0, 0.5057765331140254], [0.0, 0.5084158636196464], [0.0, 0.5035142498234926], [0.0, 0.21776362577643374], [0.0, 0.002539616446290216], [0.0, 0.004982184707462206], [0.0, 0.006647854037347971], [0.0, 0.003779201302544709], [0.0, 0.004340970152877111], [0.0, 0.003076990239629207], [0.0, 0.0013564974447850334], [0.0, 0.0028690773403443615], [0.0, 0.0014369453407611754], [0.0, 0.004659242339823344], [0.0, 0.0007646183552183398], [0.0, 0.0011791987323476933], [0.0, 0.0003123488528954085]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, 11, -1, -1, 14, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 16, 13, 12, -1, -1, 15, -1, -1, -1], 'feature': [1, 79, 67, -2, 58, -2, -2, -2, 39, 1, 97, -2, -2, 95, -2, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, 0.10600000247359276, -2.0, -0.007000000216066837, -2.0, -2.0, -2.0, 0.1850000023841858, 0.029020000249147415, 0.06499999947845936, -2.0, -2.0, 1.4601500034332275, -2.0, -2.0, -2.0], 'value': [[0.0, 0.14184416799635607], [0.0, 0.44031735704841324], [0.0, 0.5329964503657386], [0.0, 0.6329385038454628], [0.0, 0.5063452361044789], [0.0, 0.5097783180786187], [0.0, 0.5050968426593373], [0.0, 9.166379111780198e-05], [0.0, 0.0017445078290642103], [0.0, 0.001306252369840454], [0.0, 0.0034917834849904996], [0.0, 0.004867328871126435], [0.0, 0.002116238098854565], [0.0, 0.0004866782016591867], [0.0, 0.0007140054274031939], [0.0, -0.0011046123785488637], [0.0, 0.005601155870233266]]}, {'left': [1, 2, -1, 4, 5, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, -1], 'right': [8, 3, -1, 7, 6, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, -1], 'feature': [1, 53, -2, 79, 108, -2, -2, -2, 88, 1, -2, 74, -2, -2, 83, 72, -2, -2, -2], 'threshold': [0.0004400000034365803, -0.2659999951720238, -2.0, 0.09999999776482582, -0.12999999895691872, -2.0, -2.0, -2.0, 0.3125, 0.013774999883025885, -2.0, -0.12999999895691872, -2.0, -2.0, 0.4934999942779541, 0.27399998903274536, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12801905742095818], [0.0, 0.35793807587813947], [0.0, 0.0027675491880763126], [0.0, 0.46722131485969737], [0.0, 0.5224581711250331], [0.0, 0.56723901442043], [0.0, 0.5041387352314615], [0.0, 0.2531784968315216], [0.0, 0.0019344343960523592], [0.0, 0.0009003166809169534], [0.0, 0.003235895619566209], [0.0, 0.0004332008931871023], [0.0, 0.0018741007833898982], [0.0, 0.00015874377124371262], [0.0, 0.0038146484235712787], [0.0, 0.002839990421142682], [0.0, 0.0041019512306930865], [0.0, 0.001675103520019231], [0.0, 0.006860454681160644]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [1, 100, 43, -2, 99, -2, -2, -2, 1, 49, -2, -2, 79, 24, -2, -2, 59, -2, -2], 'threshold': [0.0004400000034365803, 0.26500000059604645, -0.31599999964237213, -2.0, 0.13999999687075615, -2.0, -2.0, -2.0, 0.031204999424517155, 0.13500000163912773, -2.0, -2.0, 0.06000000052154064, 0.875, -2.0, -2.0, -0.21000000089406967, -2.0, -2.0], 'value': [[0.0, 0.14267271457524724], [0.0, 0.398607410939885], [0.0, 0.5197879476552499], [0.0, 0.568649918582665], [0.0, 0.5060455183319147], [0.0, 0.5028966703846904], [0.0, 0.507095134314323], [0.0, -0.0982327895931117], [0.0, 0.0023214294720588654], [0.0, 0.0052319102186326], [0.0, 0.006314761586402181], [0.0, 0.004226405377132274], [0.0, 0.0011307782575514286], [0.0, 0.001801455797960676], [0.0, 0.001238877150861622], [0.0, 0.003248086604786815], [0.0, -0.0009650890562274694], [0.0, 1.194409016136433e-10], [0.0, -0.0019301782318958405]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, -1, 13, -1, 15, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 12, 11, -1, -1, 14, -1, 16, -1, -1], 'feature': [1, 100, 68, 44, -2, -2, -2, -2, 1, 52, -2, -2, 42, -2, 88, -2, -2], 'threshold': [0.000805000017862767, 0.26500000059604645, -0.0030000004917383194, 0.6899999976158142, -2.0, -2.0, -2.0, -2.0, 0.0303549999371171, 0.18400000035762787, -2.0, -2.0, 0.05199999921023846, -2.0, 0.3125, -2.0, -2.0], 'value': [[0.0, 0.1280573239323059], [0.0, 0.33921368325682316], [0.0, 0.45710164100449635], [0.0, 0.5083952155492533], [0.0, 0.5141875111039612], [0.0, 0.5064644503643504], [0.0, 0.25192734282546964], [0.0, 0.002390946834899012], [0.0, 0.001363508337595635], [0.0, 0.004172063849671231], [0.0, 0.001680589155772516], [0.0, 0.005595763674756211], [0.0, 0.00045485802486529525], [0.0, -0.0025716883054982542], [0.0, 0.0008583975355804351], [0.0, 0.0004885010240702758], [0.0, 0.002707880093131232]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 53, -2, 99, -2, 72, -2, -2, 1, 95, 1, -2, -2, -2, 84, 2, -2, -2, 50, -2, -2], 'threshold': [0.0004400000034365803, -0.32599999010562897, -2.0, 0.14999999850988388, -2.0, 0.4099999964237213, -2.0, -2.0, 0.0303549999371171, 0.528099998831749, 0.012660000007599592, -2.0, -2.0, -2.0, 0.0950000025331974, 1.0604950189590454, -2.0, -2.0, 0.33500000834465027, -2.0, -2.0], 'value': [[0.0, 0.0993529487021256], [0.0, 0.30110788200372157], [0.0, -0.5046721460025693], [0.0, 0.4663960928768067], [0.0, 0.25068649060663684], [0.0, 0.5220630870110444], [0.0, 0.5049739330915828], [0.0, 0.5638365743697277], [0.0, 0.0015954037003215354], [0.0, 0.0035054915094382376], [0.0, 0.002204275810430284], [0.0, 0.00292610472866367], [0.0, 0.001482446892196898], [0.0, 0.004893454921713388], [0.0, 0.0006982412445242966], [0.0, 0.0012857124482430584], [0.0, 0.0008545245656730933], [0.0, 0.003226057919807901], [0.0, -0.0004767011629132269], [0.0, 0.00035336409971375993], [0.0, -0.0014727794780656112]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, 13, 14, -1, -1, 17, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, 16, 15, -1, -1, 18, -1, -1], 'feature': [1, 99, -2, 43, -2, 78, -2, -2, 1, 1, -2, -2, 84, 44, -2, -2, 43, -2, -2], 'threshold': [0.0004400000034365803, 0.14999999850988388, -2.0, -0.31599999964237213, -2.0, 0.054999999701976776, -2.0, -2.0, 0.031204999424517155, 0.004260000016074628, -2.0, -2.0, 0.07499999925494194, 0.42000000178813934, -2.0, -2.0, -0.0020000003278255463, -2.0, -2.0], 'value': [[0.0, 0.11461574300929121], [0.0, 0.34740694614218776], [0.0, -0.3004599198897259], [0.0, 0.5225060991237858], [0.0, 0.5661009532074553], [0.0, 0.5084934674540349], [0.0, 0.5059643880773942], [0.0, 0.5110225468306753], [0.0, 0.0018200054088157037], [0.0, 0.005664033829833174], [0.0, 0.007946456113803747], [0.0, 0.004196762361566376], [0.0, 0.0006252398184994631], [0.0, 0.0022058322633299395], [0.0, 0.0038178453288021386], [0.0, 0.0011311568863484735], [0.0, -0.0004524368484304072], [0.0, 0.00016235759549424402], [0.0, -0.0025427379577742217]]}, {'left': [1, 2, -1, 4, -1, 6, -1, -1, 9, 10, -1, -1, -1], 'right': [8, 3, -1, 5, -1, 7, -1, -1, 12, 11, -1, -1, -1], 'feature': [83, 106, -2, 1, -2, 1, -2, -2, 22, 45, -2, -2, -2], 'threshold': [0.4934999942779541, 0.014999999664723873, -2.0, 0.000805000017862767, -2.0, 0.04439999908208847, -2.0, -2.0, 0.8982850015163422, 0.4050000011920929, -2.0, -2.0, -2.0], 'value': [[0.0, 0.10020451008830815], [0.0, -0.007111309425553016], [0.0, -0.5001833325117327], [0.0, 0.03313946796923716], [0.0, 0.38579900473910844], [0.0, 0.0017919535896930552], [0.0, 0.004466906645576648], [0.0, 0.000583910274132723], [0.0, 0.3995591645217099], [0.0, 0.5061045093117845], [0.0, 0.5086561554191282], [0.0, 0.503127588853217], [0.0, 0.1687109174765484]]}, {'left': [1, 2, 3, 4, -1, -1, -1, 8, -1, -1, 11, 12, -1, 14, -1, -1, 17, 18, -1, -1, -1], 'right': [10, 7, 6, 5, -1, -1, -1, 9, -1, -1, 16, 13, -1, 15, -1, -1, 20, 19, -1, -1, -1], 'feature': [1, 108, 99, 57, -2, -2, -2, 91, -2, -2, 1, 96, -2, 49, -2, -2, 24, 79, -2, -2, -2], 'threshold': [0.0004400000034365803, -0.10500000044703484, 0.1900000050663948, 0.004000000073574483, -2.0, -2.0, -2.0, 0.1875, -2.0, -2.0, 0.029020000249147415, 0.04350000061094761, -2.0, 0.1600000038743019, -2.0, -2.0, 0.875, 0.06000000052154064, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12797224946556568], [0.0, 0.35826422200214614], [0.0, 0.5236551900863445], [0.0, 0.5051980051524583], [0.0, 0.5032526061367341], [0.0, 0.5068191709988953], [0.0, 0.5687727532580671], [0.0, 0.10190822147163876], [0.0, -0.16555415084149797], [0.0, 0.503101779941344], [0.0, 0.0016831032358279063], [0.0, 0.0036851452589720763], [0.0, 0.002014822671297134], [0.0, 0.0045642624103799405], [0.0, 0.005176674735340821], [0.0, 0.0037221954635587307], [0.0, 0.0007759279440907041], [0.0, 0.0002713376539051164], [0.0, 0.0006440373904953396], [0.0, -0.0018716858314886675], [0.0, 0.003500715511092878]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, -1, 11, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 10, -1, 12, -1, -1], 'feature': [84, 73, 1, -2, 1, -2, -2, -2, 91, -2, 89, -2, -2], 'threshold': [0.3700000047683716, 0.07649999856948853, 0.0004400000034365803, -2.0, 0.031204999424517155, -2.0, -2.0, -2.0, 0.1875, -2.0, 0.1875, -2.0, -2.0], 'value': [[0.0, 0.11377380913959291], [0.0, 0.03557497923991879], [0.0, 0.07387794667745941], [0.0, 0.6231642148174387], [0.0, 0.0017494468206944603], [0.0, 0.004385910168503509], [0.0, 0.0005475297062521001], [0.0, -0.5006665648856496], [0.0, 0.5047679586379626], [0.0, 0.5092978568122551], [0.0, 0.5025030095508165], [0.0, 0.502735889393629], [0.0, 0.5022701297080041]]}, {'left': [1, 2, -1, 4, 5, -1, -1, 8, -1, -1, 11, 12, -1, 14, -1, -1, 17, -1, -1], 'right': [10, 3, -1, 7, 6, -1, -1, 9, -1, -1, 16, 13, -1, 15, -1, -1, 18, -1, -1], 'feature': [83, 49, -2, 1, 22, -2, -2, 44, -2, -2, 1, 43, -2, 52, -2, -2, 50, -2, -2], 'threshold': [0.4934999942779541, -0.2799999937415123, -2.0, 0.029020000249147415, 0.6723999977111816, -2.0, -2.0, 0.32500000298023224, -2.0, -2.0, 0.0004400000034365803, -0.3139999955892563, -2.0, 0.16499999910593033, -2.0, -2.0, 0.3149999976158142, -2.0, -2.0], 'value': [[0.0, 0.1425114079449649], [0.0, -0.02205633337354081], [0.0, -0.2511962786344436], [0.0, 0.002063660864448956], [0.0, 0.005261568617781653], [0.0, 0.004505261643104053], [0.0, 0.006017875592459254], [0.0, 0.001210885463560237], [0.0, 0.004595932132746228], [0.0, 0.0006901090529162384], [0.0, 0.37290624579087317], [0.0, 0.5310000741801493], [0.0, 0.6360759828991014], [0.0, 0.5062763309521607], [0.0, 0.5081217688171592], [0.0, 0.5042002133540378], [0.0, 0.0040206462158945844], [0.0, 0.0068666349961977735], [0.0, 0.0017438551916520329]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, -1, 11, -1, 13, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 10, -1, 12, -1, 14, -1, -1], 'feature': [84, 75, 100, 1, -2, -2, -2, -2, 53, -2, 88, -2, 74, -2, -2], 'threshold': [0.375, 0.055000001564621925, 0.2750000059604645, 0.02986999973654747, -2.0, -2.0, -2.0, -2.0, -0.27800000458955765, -2.0, 0.0625, -2.0, 0.08999999798834324, -2.0, -2.0], 'value': [[0.0, 0.128470275270181], [0.0, 0.022116168215030332], [0.0, -0.008454900305330007], [0.0, 0.0028851357451453352], [0.0, 0.004636351908428364], [0.0, 0.0016446909628198558], [0.0, -0.12469026982270226], [0.0, 0.21864446584591826], [0.0, 0.4049909536135733], [0.0, 0.0032341910033166776], [0.0, 0.5054301442661373], [0.0, 0.509973410392408], [0.0, 0.5027041845903748], [0.0, 0.50368316438044], [0.0, 0.5017252048003097]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, 14, -1, -1, 17, 18, -1, -1, 21, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 16, 13, 12, -1, -1, 15, -1, -1, 20, 19, -1, -1, 22, -1, -1], 'feature': [1, 68, 52, 88, -2, -2, -2, -2, 1, 97, 79, -2, -2, 67, -2, -2, 54, 57, -2, -2, 84, -2, -2], 'threshold': [0.000805000017862767, 0.012999999802559614, 0.17799999564886093, 0.0625, -2.0, -2.0, -2.0, -2.0, 0.031204999424517155, 0.06499999947845936, 0.004999999888241291, -2.0, -2.0, 0.11400000005960464, -2.0, -2.0, -0.23999999463558197, 0.042000001296401024, -2.0, -2.0, 0.07499999925494194, -2.0, -2.0], 'value': [[0.0, 0.156139576219723], [0.0, 0.428912376497339], [0.0, 0.5057140376088534], [0.0, 0.5034440241523277], [0.0, 0.5059556124426782], [0.0, 0.5021882300071525], [0.0, 0.5113890712501673], [0.0, 0.10634539982897953], [0.0, 0.001963645628026944], [0.0, 0.0038501772064509655], [0.0, 0.005900994827692213], [0.0, 0.005295738284975038], [0.0, 0.006506251370409388], [0.0, 0.002209523109457967], [0.0, 0.0004920412379797456], [0.0, 0.0033545110237767814], [0.0, 0.0007508753276115014], [0.0, 0.0015342531205516873], [0.0, 0.0008129860166622205], [0.0, 0.0022555202244411545], [0.0, 0.00031566544264473155], [0.0, 0.001768065669042329], [0.0, -0.00024295002904665215]]}, {'left': [1, 2, 3, -1, 5, -1, -1, -1, 9, 10, -1, -1, -1], 'right': [8, 7, 4, -1, 6, -1, -1, -1, 12, 11, -1, -1, -1], 'feature': [84, 83, 106, -2, 1, -2, -2, -2, 82, 49, -2, -2, -2], 'threshold': [0.375, 0.4934999942779541, 0.014999999664723873, -2.0, 0.02986999973654747, -2.0, -2.0, -2.0, 0.005000000121071935, 0.09999999776482582, -2.0, -2.0, -2.0], 'value': [[0.0, 0.12841000308868672], [0.0, 0.028738065614035663], [0.0, -0.02819257315908855], [0.0, -0.3741481378466516], [0.0, 0.0018905194224386698], [0.0, 0.004712105844944303], [0.0, 0.0006560753625924551], [0.0, 0.43538548542206573], [0.0, 0.5071633654923609], [0.0, 0.5046380622914596], [0.0, 0.5066036826196616], [0.0, 0.5026724419632574], [0.0, 0.5122139718941635]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, -1, 12, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 11, -1, 13, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 68, 49, 96, -2, -2, -2, -2, 1, 99, -2, 79, -2, -2, 48, 88, -2, -2, 44, -2, -2], 'threshold': [0.0004400000034365803, 0.012999999802559614, 0.19999999552965164, 0.071000000461936, -2.0, -2.0, -2.0, -2.0, 0.031204999424517155, 0.13999999687075615, -2.0, 0.004999999888241291, -2.0, -2.0, -0.42000000178813934, 0.0625, -2.0, -2.0, 0.36500000953674316, -2.0, -2.0], 'value': [[0.0, 0.14240817350489904], [0.0, 0.3693263232146076], [0.0, 0.4725642616283178], [0.0, 0.5201372459973943], [0.0, 0.5049997506504474], [0.0, 0.5672316759656728], [0.0, 0.2525392089213395], [0.0, -0.09524439964708678], [0.0, 0.0021778562685622754], [0.0, 0.004236813028384136], [0.0, 0.001526427133175338], [0.0, 0.005948635699042325], [0.0, 0.004927378306360061], [0.0, 0.0073528646139804366], [0.0, 0.0010773793796919704], [0.0, 0.00016157528934958773], [0.0, 0.0007026447085975107], [0.0, -0.00022490286725607156], [0.0, 0.001723829325816005], [0.0, 0.0030983553316582166], [0.0, 0.0009740878680838898]]}, {'left': [1, 2, 3, 4, -1, -1, -1, -1, 9, 10, 11, -1, -1, -1, 15, 16, -1, -1, 19, -1, -1], 'right': [8, 7, 6, 5, -1, -1, -1, -1, 14, 13, 12, -1, -1, -1, 18, 17, -1, -1, 20, -1, -1], 'feature': [1, 79, 25, 60, -2, -2, -2, -2, 1, 79, 22, -2, -2, -2, 77, 84, -2, -2, 1, -2, -2], 'threshold': [0.0004400000034365803, 0.05999999865889549, 0.004999999888241291, 0.004999999888241291, -2.0, -2.0, -2.0, -2.0, 0.0303549999371171, 0.004999999888241291, 0.6798849999904633, -2.0, -2.0, -2.0, 0.025000000256113708, 0.08000000193715096, -2.0, -2.0, 0.06317499838769436, -2.0, -2.0], 'value': [[0.0, 0.14273620851862232], [0.0, 0.39919313322339256], [0.0, 0.521984221289275], [0.0, 0.5073911764195591], [0.0, 0.510691195943155], [0.0, 0.5050617508734915], [0.0, 0.574884008941996], [0.0, 0.07467382904927379], [0.0, 0.0020985401321356105], [0.0, 0.005288641029751586], [0.0, 0.004575102488349659], [0.0, 0.003637697977580845], [0.0, 0.005408350942366382], [0.0, 0.006804910430230682], [0.0, 0.0009257089197767962], [0.0, 0.0019597006996206518], [0.0, 0.003896809595222361], [0.0, 0.0009911462518197966], [0.0, 0.00010939961990006821], [0.0, -0.0009723429355604033], [0.0, 0.0006086654147279782]]}], 'quantile': 0.25, 'threshold': 0}
+"""Learn when to deploy the original joint workforce/input/route planner."""
+_FRONTIER_HISTORY={}
+_FRONTIER_STATE={}
+
+
+def _frontier_features(obs,plan):
+    features=_ml_features(obs,_FRONTIER_HISTORY.get(obs['player'],{}))
+    features += [plan['predicted_net']/10000,plan['hire_cost']/1000,
+                 plan['unassigned']/100,plan['planned_workers']/20,plan['input_purchase']/50]
+    totals={item:0 for item in _ML_PRODUCTS}
+    for route in plan['plans']:
+        for item,q in route['products'].items():totals[item]+=q
+    features += [totals[item]/100 for item in _ML_PRODUCTS]
+    return features
+
+
+def _frontier_choose(features,model):
+    values=sorted(_ml_tree_predict(t,features)[1] for t in model['trees'])
+    return int(values[int(model['quantile']*(len(values)-1))]>model['threshold'])
+
+
+def _frontier_before(obs,configuration):
+    step=obs['step'];seat=obs['player']
+    if step==0:_FRONTIER_HISTORY.pop(seat,None);_FRONTIER_STATE.pop(seat,None)
+    if step==648:_FRONTIER_HISTORY[seat]=dict(obs['market']['inventory'])
+    if step!=696:return
+    plan=_au_plan(obs,configuration)
+    features=_frontier_features(obs,plan)
+    choice=_FRONTIER_FORCE if _FRONTIER_FORCE is not None else _frontier_choose(features,_FRONTIER_MODEL)
+    _FRONTIER_STATE[seat]=dict(features=features,choice=choice)
+    if choice:_AU_STATE[seat]=plan
+
+
+_FRONTIER_PARENT=agent
+def agent(observation,configuration=None):
+    _frontier_before(observation,configuration)
+    st=_FRONTIER_STATE.get(observation['player'],{})
+    # The inherited auction wrapper is bypassed when the learned selector abstains.
+    if observation['step']>=696 and not st.get('choice',0):
+        action=_AU_PARENT(observation,configuration)
+        telemetry=getattr(agent,'telemetry',{})
+    else:
+        action=_FRONTIER_PARENT(observation,configuration)
+        telemetry=getattr(agent,'telemetry',{})
+    agent.telemetry=dict(telemetry,frontier_choice=st.get('choice',0),frontier_decisions=int(bool(st)))
+    return action
+agent.telemetry={}
+agent=globals().pop('agent')
+
+_F2_THRESHOLD=10000000
+_F2_STAGGER=1
+_FRONTIER_FORCE=1
+"""Sell valuable cargo when a route crosses the shed, retaining future inputs."""
+_F2_OLD_JOBS=_au_jobs
+
+
+def _au_jobs(obs):
+    jobs=_F2_OLD_JOBS(obs)
+    for y,row in enumerate(obs['farms'][obs['player']]['tiles']):
+        for x,t in enumerate(row):
+            if not isinstance(t,dict) or t.get('crop') not in ('WHEAT','CARROT','MELON'):continue
+            if t.get('yield_units',0)!=0 or t.get('watered_today'):continue
+            crop=t['crop'];first,last,cap=_AU_CROPS[crop];age=obs['day']-t['planted_day']
+            if max(first,(last+1)//2)<=age<=last:
+                active=t.get('fertilized_until_day',-1)>=obs['day']
+                jobs[x,y]=[([['WATER'],['HARVEST']],{crop:2 if active else 1})]
+                if not active:jobs[x,y].append(([['FERTILIZE'],['WATER'],['HARVEST']],{crop:2,'FERTILIZER':-1}))
+    return jobs
+
+
+def _f2_walk(pos,target,cargo,prices):
+    cursor=tuple(pos);commands=[];remaining=dict(cargo)
+    for move in _au_walk(pos,target):
+        if cursor in _AU_HOME:
+            # PLACE transfers one selected product and keeps fertilizer for tasks
+            # later in this trip. DROP would silently offload those inputs too.
+            for item,q in sorted(remaining.items(),key=lambda kv:-prices[kv[0]]*kv[1]):
+                if item!='FERTILIZER' and q*prices[item]>=_F2_THRESHOLD:
+                    commands.append(['PLACE',item,q]);remaining[item]=0
+        commands.append(move)
+        x,y=cursor;op=move[0]
+        cursor=(x+int(op=='EAST')-int(op=='WEST'),y+int(op=='SOUTH')-int(op=='NORTH'))
+    return commands,remaining
+
+
+def _au_route(pos,start,jobs,prices,power,bias,end=719,input_cap=100):
+    left=dict(jobs);chosen=[];commands=[];value=0.;products={};cargo={};cursor=tuple(pos);inputs=0
+    while left:
+        best=None
+        for target,variants in left.items():
+            walk,delivered_cargo=_f2_walk(cursor,target,cargo,prices)
+            home_distance=_au_dist(target,_au_home(target))
+            for ops,goods in variants:
+                need=int(goods.get('FERTILIZER',0)<0)
+                if need and (tuple(pos) not in _AU_HOME or inputs+need>input_cap):continue
+                setup=int(need>0 and inputs==0)
+                duration=len(walk)+len(ops)+setup
+                if start+len(commands)+duration+home_distance+1>end:continue
+                gain=sum(prices[k]*v for k,v in goods.items())
+                cost=max(.5,duration+bias*(home_distance-_au_dist(cursor,_au_home(cursor))))
+                rank=(gain/(cost**power),gain,-duration,-target[1],-target[0])
+                if best is None or rank>best[0]:best=(rank,target,ops,goods,gain,need,walk,delivered_cargo)
+        if best is None:break
+        _,target,ops,goods,gain,need,walk,cargo=best
+        if need and inputs==0:commands.insert(0,['PICKUP','FERTILIZER',0])
+        inputs+=need;commands+=walk+ops;cursor=target
+        value+=gain;chosen.append(target);left.pop(target)
+        for item,q in goods.items():
+            products[item]=products.get(item,0)+q
+            if q>0:cargo[item]=cargo.get(item,0)+q
+    if chosen:commands+=_au_walk(cursor,_au_home(cursor))+[['DROP']]
+    if inputs:commands[0][2]=inputs
+    return dict(start=start,origin=list(pos),commands=commands,jobs=chosen,value=value,products=products,inputs=inputs)
+
+
+_F2_OLD_ACTION=_au_action
+def _au_action(obs,config,state):
+    action=_F2_OLD_ACTION(obs,config,state)
+    farm=obs['farms'][obs['player']];positions=[farm['farmer'],*farm['hands']]
+    commands=[action['farmer'],*action['hands']]
+    projected=dict(obs['private']['shed'])
+    for i,(cmd,pos) in enumerate(zip(commands,positions)):
+        if tuple(pos) not in _AU_HOME:continue
+        inv=obs['private']['inventories'][i]
+        if cmd[0]=='DROP':
+            for item,q in inv.items():
+                take=min(q,max(0,100-sum(projected.values())))
+                projected[item]=projected.get(item,0)+take
+        elif cmd[0]=='PLACE' and len(cmd)>2:
+            item=cmd[1];take=min(cmd[2],inv.get(item,0),max(0,100-sum(projected.values())))
+            projected[item]=projected.get(item,0)+take
+        elif cmd[0]=='PICKUP':projected[cmd[1]]=max(0,projected.get(cmd[1],0)-cmd[2])
+    reserve=sum(p['inputs'] for p in state['plans'] if p['inputs'] and obs['step']<p['start'])
+    projected['FERTILIZER']=max(0,projected.get('FERTILIZER',0)-reserve)
+    other=[o for o in action['market'] if o[0]!='SELL']
+    sales=[['SELL',k,v] for k,v in projected.items() if v>0 and k in obs['market']['prices']]
+    sales.sort(key=lambda o:(-_r37_quote_priority(obs,o,projected),-o[2]*obs['market']['prices'][o[1]]))
+    action['market']=sales[:10-len(other)]+other
+    state['early_deliveries']=state.get('early_deliveries',0)+sum(c[0]=='PLACE' for c in commands)
+    return action
+
+
+_F2_PARENT=agent
+def agent(observation,configuration=None):
+    action=_F2_PARENT(observation,configuration)
+    state=_AU_STATE.get(observation['player'],{})
+    agent.telemetry=dict(getattr(agent,'telemetry',{}),early_deliveries=state.get('early_deliveries',0))
+    return action
+agent.telemetry={}
+agent=globals().pop('agent')

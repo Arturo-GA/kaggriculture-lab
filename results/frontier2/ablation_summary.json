@@ -1,0 +1,6 @@
+{
+  "exploration_only": true,
+  "constant_and_no_delivery_exact_rewards": true,
+  "contexts": 30,
+  "early_score_delta_vs_no_delivery": 10.0
+}

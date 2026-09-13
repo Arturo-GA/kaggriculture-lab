@@ -71,3 +71,13 @@ Modified September 13, 2026 by Arturo-GA / Kaggriculture Lab:
 - Frontier data collection, training, tests, receipts and private Kaggle tooling
   are new project code. Algorithmic inspiration is distinguished from reproduced
   methods in `GOLD_RESEARCH.es.md`; no third-party trained weights are used.
+
+Further modified September 13, 2026 by Arturo-GA / Kaggriculture Lab:
+
+- `frontier_deliveries.py`: original route-aware intermediate product transfers,
+  same-turn sale projection and finite-crop zero-yield recovery. This changes the
+  terminal option, so Frontier's old learned gate is explicitly bypassed.
+- `diagnose_frontier_losses.py`, `audit_frontier_live.py`, Frontier2 builders,
+  tests and cloud checks: actual unit-effect accounting, replay identity checks,
+  paired ablations and independent-seed validation. Prior production and all
+  inherited attributions remain unchanged.

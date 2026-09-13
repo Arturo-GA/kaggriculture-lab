@@ -1,0 +1,20 @@
+{
+  "frontier2_early": {
+    "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+    "threshold": 250,
+    "stagger": 1,
+    "selector": "forced planner; old learned gate not reused for changed option"
+  },
+  "frontier2_selective": {
+    "sha256": "7eba2ee28b035aed0a17fb32ecc02a3eb56ac42e3cad62d2db2cda54dd4b1b56",
+    "threshold": 600,
+    "stagger": 1,
+    "selector": "forced planner; old learned gate not reused for changed option"
+  },
+  "frontier2_stagger": {
+    "sha256": "1b7db398779388b643f459891664738ced0d580c60ffc696e750f727d8072f73",
+    "threshold": 250,
+    "stagger": 2,
+    "selector": "forced planner; old learned gate not reused for changed option"
+  }
+}

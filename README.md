@@ -11,6 +11,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 - [Modelo entrenado, validación reservada y nuevo candidato](ML_RESULTS.es.md)
 - [Análisis de ocho equipos del top 27 y planificador propio](GOLD_RESEARCH.es.md)
 - [Frontier: resultados, ablaciones y límites](FRONTIER_RESULTS.es.md)
+- [Mejora de Frontier: entregas durante la ruta y validación nueva](FRONTIER2_RESULTS.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -50,6 +51,16 @@ La raíz conserva los archivos del primer agente; no se envió otra submission
 automáticamente al leaderboard.
 
 ## Reproducir
+
+**Frontier, versión 2: entregas durante la ruta.** `frontier2_early` entrega y vende
+productos valiosos al pasar por el almacén, conservando fertilizante para después.
+El panel reservado obtiene 109 victorias, 8 empates y 3 derrotas frente a 87, 24 y 9
+de Frontier. La confirmación oficial obtiene 36 victorias y 4 empates frente a
+30 victorias y 10 empates. Las 24 pruebas pasan. Ver `FRONTIER2_RESULTS.es.md`.
+El notebook actualizado se genera en `kaggle_frontier2/`; la carpeta anterior
+`kaggle_frontier/` conserva el experimento de la versión 1. La versión 2 se subió al
+mismo kernel privado y exige una nueva comparación en la nube antes de exportar.
+No se envía una submission al leaderboard automáticamente.
 
 **Nueva ronda del 13 de septiembre: Frontier.** Planificador propio del último día:
 contratación, fertilizante, cosecha, rutas y ventas, con selector entrenado. Conserva

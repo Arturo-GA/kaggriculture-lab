@@ -1,0 +1,63 @@
+{
+  "candidate": "frontier2_early",
+  "sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+  "reason": "Best aggregate paired score without family regression on diagnostic screen",
+  "screen": {
+    "total": {
+      "games": 30,
+      "wins": 28,
+      "ties": 2,
+      "losses": 0,
+      "win_delta": 14,
+      "score_delta": 10.0,
+      "margin_delta_sum": 9790.0
+    },
+    "per_opponent": {
+      "frontier": {
+        "games": 10,
+        "wins": 8,
+        "ties": 2,
+        "losses": 0,
+        "win_delta": 8,
+        "score_delta": 4.0,
+        "margin_delta_sum": 1674.0
+      },
+      "ml_critic": {
+        "games": 10,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "win_delta": 6,
+        "score_delta": 6.0,
+        "margin_delta_sum": 4208.0
+      },
+      "router": {
+        "games": 10,
+        "wins": 10,
+        "ties": 0,
+        "losses": 0,
+        "win_delta": 0,
+        "score_delta": 0.0,
+        "margin_delta_sum": 3908.0
+      }
+    },
+    "errors": [],
+    "outcomes_gate_passed": true,
+    "latency_gate_passed": true,
+    "max_call_ms": 297.221900022123,
+    "gate_passed": true,
+    "seed_clusters": 5,
+    "paired_score_delta_mean": 0.33333333333333337,
+    "seed_bootstrap_95_percentile_interval": [
+      0.13333333333333333,
+      0.5
+    ],
+    "choices": {
+      "1": 30
+    },
+    "changed_horizon_calls": 0,
+    "candidate_sha256": [
+      "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c"
+    ]
+  }
+}

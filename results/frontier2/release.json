@@ -1,0 +1,21 @@
+{
+  "candidate": "frontier2_early",
+  "kernel": "jarturo/kaggriculture-frontier-joint-planner",
+  "source_sha256": {
+    "frontier2_early": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+    "frontier": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+    "ml_critic": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95"
+  },
+  "cloud_seeds": [
+    90001,
+    90002,
+    90003,
+    90004
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "1c7afbc6484d6f231be998aeef171e98e14b54c1a1924ce6c2981cb7fd33ad72",
+    "official_summary.json": "1f55c603ab649a88dc44d194a868a5cb943e1bb90b4f0b0cf714f061033dfca6"
+  },
+  "cloud_rule": "32 official games. Frontier2 and Frontier against Frontier and ml_critic in both seats. Positive total paired score delta and no family regression, no reported errors, every call below 1000 ms.",
+  "limitation": "Local improvements do not establish gold strength or guarantee higher live rating."
+}

@@ -1,0 +1,259 @@
+{
+  "retrieved_utc": "2026-09-13T22:50:41.742023+00:00",
+  "submissions": [
+    {
+      "ref": "56214804",
+      "date": "2026-09-13 20:53:30.960000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2347.5"
+    },
+    {
+      "ref": "56213093",
+      "date": "2026-09-13 18:31:05.020000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2501.9"
+    },
+    {
+      "ref": "56190498",
+      "date": "2026-09-12 17:42:41.490000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2650.6"
+    }
+  ],
+  "rows": [
+    {
+      "episode": 108694455,
+      "seat": 0,
+      "rewards": [
+        118828.0,
+        114393.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "Juyong",
+      "snapshots": {
+        "432": {
+          "own_money": 42622.0,
+          "rival_money": 42332.0,
+          "gap": 290.0
+        },
+        "576": {
+          "own_money": 76401.0,
+          "rival_money": 75600.0,
+          "gap": 801.0
+        },
+        "648": {
+          "own_money": 92266.0,
+          "rival_money": 88164.0,
+          "gap": 4102.0
+        },
+        "696": {
+          "own_money": 107668.0,
+          "rival_money": 101626.0,
+          "gap": 6042.0
+        },
+        "719": {
+          "own_money": 118828.0,
+          "rival_money": 114393.0,
+          "gap": 4435.0
+        }
+      }
+    },
+    {
+      "episode": 108694681,
+      "seat": 1,
+      "rewards": [
+        113729.0,
+        114625.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "Tavuk Master",
+      "snapshots": {
+        "432": {
+          "own_money": 34076.0,
+          "rival_money": 33792.0,
+          "gap": 284.0
+        },
+        "576": {
+          "own_money": 68197.0,
+          "rival_money": 68557.0,
+          "gap": -360.0
+        },
+        "648": {
+          "own_money": 88722.0,
+          "rival_money": 87087.0,
+          "gap": 1635.0
+        },
+        "696": {
+          "own_money": 101611.0,
+          "rival_money": 101635.0,
+          "gap": -24.0
+        },
+        "719": {
+          "own_money": 114625.0,
+          "rival_money": 113729.0,
+          "gap": 896.0
+        }
+      }
+    },
+    {
+      "episode": 108693440,
+      "seat": 0,
+      "rewards": [
+        94305.0,
+        91447.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "HarvestZero",
+      "snapshots": {
+        "432": {
+          "own_money": 35508.0,
+          "rival_money": 35468.0,
+          "gap": 40.0
+        },
+        "576": {
+          "own_money": 62291.0,
+          "rival_money": 61786.0,
+          "gap": 505.0
+        },
+        "648": {
+          "own_money": 69503.0,
+          "rival_money": 68964.0,
+          "gap": 539.0
+        },
+        "696": {
+          "own_money": 79257.0,
+          "rival_money": 78454.0,
+          "gap": 803.0
+        },
+        "719": {
+          "own_money": 94305.0,
+          "rival_money": 91447.0,
+          "gap": 2858.0
+        }
+      }
+    },
+    {
+      "episode": 108692425,
+      "seat": 1,
+      "rewards": [
+        85897.0,
+        90857.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "RngRng",
+      "snapshots": {
+        "432": {
+          "own_money": 40552.0,
+          "rival_money": 40221.0,
+          "gap": 331.0
+        },
+        "576": {
+          "own_money": 58619.0,
+          "rival_money": 63141.0,
+          "gap": -4522.0
+        },
+        "648": {
+          "own_money": 63931.0,
+          "rival_money": 66754.0,
+          "gap": -2823.0
+        },
+        "696": {
+          "own_money": 76758.0,
+          "rival_money": 74463.0,
+          "gap": 2295.0
+        },
+        "719": {
+          "own_money": 90857.0,
+          "rival_money": 85897.0,
+          "gap": 4960.0
+        }
+      }
+    },
+    {
+      "episode": 108691410,
+      "seat": 1,
+      "rewards": [
+        65709.0,
+        69667.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "atsu0905",
+      "snapshots": {
+        "432": {
+          "own_money": 32013.0,
+          "rival_money": 31739.0,
+          "gap": 274.0
+        },
+        "576": {
+          "own_money": 46088.0,
+          "rival_money": 45678.0,
+          "gap": 410.0
+        },
+        "648": {
+          "own_money": 54473.0,
+          "rival_money": 52815.0,
+          "gap": 1658.0
+        },
+        "696": {
+          "own_money": 62036.0,
+          "rival_money": 58980.0,
+          "gap": 3056.0
+        },
+        "719": {
+          "own_money": 69667.0,
+          "rival_money": 65709.0,
+          "gap": 3958.0
+        }
+      }
+    },
+    {
+      "episode": 108690382,
+      "seat": 0,
+      "rewards": [
+        69073.0,
+        69697.0
+      ],
+      "exact_frontier_actions": true,
+      "mismatch_count": 0,
+      "first_mismatch": null,
+      "opponent": "\u0414\u0432\u043e\u0440\u043a\u0438\u043d \u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447",
+      "snapshots": {
+        "432": {
+          "own_money": 39716.0,
+          "rival_money": 40302.0,
+          "gap": -586.0
+        },
+        "576": {
+          "own_money": 54823.0,
+          "rival_money": 55092.0,
+          "gap": -269.0
+        },
+        "648": {
+          "own_money": 56367.0,
+          "rival_money": 57129.0,
+          "gap": -762.0
+        },
+        "696": {
+          "own_money": 60864.0,
+          "rival_money": 61693.0,
+          "gap": -829.0
+        },
+        "719": {
+          "own_money": 69073.0,
+          "rival_money": 69697.0,
+          "gap": -624.0
+        }
+      }
+    }
+  ]
+}
