@@ -29,7 +29,7 @@ def main():
     assert wins_delta==receipt['win_delta'] and wins_delta>0
     assert max(r['max_call_ms'] for r in selected)<1000
     output=dict(verified=True,kernel='jarturo/kaggriculture-learned-option-critic',
-                games=len(games['rows']),source_identical_to_frozen_local=True,
+                source_identical_to_frozen_local=True,
                 leaderboard_submitted=False,**receipt)
     Path('results/ml/kaggle_verified.json').write_text(json.dumps(output,indent=2)+'\n')
     print(json.dumps(output,indent=2))

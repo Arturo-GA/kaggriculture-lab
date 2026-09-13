@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "candidate": "ml_critic",
+  "games": 16,
+  "candidate_wins": 8,
+  "candidate_ties": 0,
+  "win_delta": 7,
+  "score_delta": 4.0,
+  "max_call_ms": 270.6425459999764,
+  "errors": [],
+  "source_sha256": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+  "archive_sha256": "7823eda758e9f071435a8d1350df3329c5b1c689599053c164e69006a28ce51a"
+}

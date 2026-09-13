@@ -5,6 +5,12 @@ El nuevo candidato **ml_critic** mejora las victorias en el panel local reservad
 78/80: el aprendizaje todavía no demuestra más victorias que esa alternativa.
 El modelo y todas las semillas se congelaron antes de la prueba final.
 
+**Entrega verificada:** kernel privado v1 **COMPLETE**. Ganó otros **8/8** duelos
+contra matched6 en Kaggle, con ocho controles adicionales. `submission.tar.gz`
+contiene exactamente el agente evaluado y está disponible en la pestaña Output
+del [nuevo kernel](https://www.kaggle.com/code/jarturo/kaggriculture-learned-option-critic).
+Todavía no se ha enviado al leaderboard: no tiene rating propio confirmado.
+
 La API autenticada de Kaggle confirmó **2656,3** para la submission original
 `56190498` el 13 de septiembre. El puesto aproximado 400 y los 3200 del líder
 proceden del reporte de Arturo. Estas cifras no son resultados del candidato nuevo.
@@ -49,6 +55,11 @@ prudencia, no una garantía probabilística calibrada de seguridad.
 | Selección | 72001–72006 | 180 | Elegir umbral y opción fija |
 | Prueba final | 73001–73008 | 240 | Comparar modelo, matched6 y opción fija |
 | Confirmación oficial | 74001–74004 | 80 | Comparar modelo y matched6 en el motor oficial |
+| Kaggle, kernel privado v1 | 75001–75004 | 16 | Ocho duelos nuevos y ocho controles |
+
+Son **1006 partidas de estrategia** en esta ronda, incluyendo piloto, generación
+de datos y controles. Las seis repeticiones de diagnóstico de latencia y el duelo
+de equivalencia del wrapper se contabilizan aparte.
 
 Cada ejemplo compara cinco partidas completas con políticas reactivas y memoria
 independiente. Verificamos que las cinco opciones tienen exactamente el mismo
@@ -91,6 +102,12 @@ las siete victorias adicionales se concentran frente a matched6. Ningún rival
 presenta una caída neta de victorias; no hubo errores ni fallbacks registrados.
 La llamada más lenta del modelo fue de **239,5 ms**.
 
+En el kernel de Kaggle, el modelo obtuvo **8 victorias**, frente a **1 victoria,
+6 empates y 1 derrota** del control en las mismas cuatro semillas nuevas.
+Máximo de llamada: **270,6 ms**, sin errores. El archivo descargado y su contenido
+pasaron la verificación de hashes; el código coincide byte por byte con el candidato
+congelado. Recibo: `results/ml/kaggle_verified.json`.
+
 El wrapper nativo reprodujo las 719 acciones del agente original. La exportación
 del modelo pasó 8448 comparaciones exactas con scikit-learn; fue necesario reproducir
 su conversión de entradas a float32. Las 15 pruebas unitarias distintas del proyecto
@@ -127,10 +144,16 @@ forzados que generaron los datos. La selección del modelo nunca recibe semillas
 identificadores de rival, observaciones futuras ni inventarios privados ajenos.
 
 Recibos principales: `results/ml/training.json`, `holdout_summary.json`,
-`latency_diagnosis.json`, `official_summary.json` y `release_plan.json`.
+`latency_diagnosis.json`, `official_summary.json`, `release_plan.json` y
+`kaggle_verified.json`.
 Las predicciones y semillas del modelo no se reajustan con la prueba final.
 
 El nuevo kernel se prepara por separado para conservar el primer experimento:
 [Kaggriculture Learned Option Critic](https://www.kaggle.com/code/jarturo/kaggriculture-learned-option-critic).
 Su ejecución valida antes de producir `submission.tar.gz`; no realiza una
 submission al leaderboard automáticamente.
+
+Archivo local verificado: `results/ml/kaggle/submission.tar.gz`.
+SHA-256 del agente: `ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95`.
+La raíz `main.py` y `submission.tar.gz` siguen correspondiendo al primer agente;
+usar el archivo de la ruta anterior para probar el candidato nuevo.

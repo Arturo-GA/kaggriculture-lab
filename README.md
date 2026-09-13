@@ -40,6 +40,12 @@ a 61/80 de matched6 (con 14 empates). La opción fija h8 también obtiene 78/80;
 todavía no se demuestra una ventaja de victorias del aprendizaje sobre ella.
 El [informe de esta ronda](ML_RESULTS.es.md) conserva los detalles y el diagnóstico
 de latencia. El nuevo experimento utiliza `kaggle_ml/` y un kernel privado separado.
+Confirmación oficial: 40/40 victorias frente a 33/40 del control. El
+[nuevo kernel privado](https://www.kaggle.com/code/jarturo/kaggriculture-learned-option-critic)
+está **COMPLETE** y ganó otros 8/8 duelos. Archivo nuevo verificado:
+[`results/ml/kaggle/submission.tar.gz`](results/ml/kaggle/submission.tar.gz).
+La raíz conserva los archivos del primer agente; no se envió otra submission
+automáticamente al leaderboard.
 
 ## Reproducir
 
