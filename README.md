@@ -9,6 +9,8 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 - [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)
 - [Papers recientes, cinco prototipos y simulación 8,72× más rápida](RESEARCH_2026_09_12.es.md)
 - [Modelo entrenado, validación reservada y nuevo candidato](ML_RESULTS.es.md)
+- [Análisis de ocho equipos del top 27 y planificador propio](GOLD_RESEARCH.es.md)
+- [Frontier: resultados, ablaciones y límites](FRONTIER_RESULTS.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -48,6 +50,25 @@ La raíz conserva los archivos del primer agente; no se envió otra submission
 automáticamente al leaderboard.
 
 ## Reproducir
+
+**Nueva ronda del 13 de septiembre: Frontier.** Planificador propio del último día:
+contratación, fertilizante, cosecha, rutas y ventas, con selector entrenado. Conserva
+la producción anterior de V37 / ml_critic. Panel reservado: 76 victorias y 4 derrotas
+frente a 64 victorias, 12 empates y 4 derrotas del control. Confirmación oficial:
+38 victorias y 2 derrotas frente a 32 victorias y 8 empates. La mejora de resultados
+se concentra contra nuestra versión anterior; la ablación constante obtiene las
+mismas victorias reservadas que el selector. No se ha demostrado nivel gold.
+
+El [nuevo notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner)
+usa `kaggle_frontier/` y comprueba 32 partidas adicionales antes de exportar. Los
+replays del top se usan sólo como estrés; no equivalen a sus agentes privados.
+Dos replays nuevos exponen pequeñas discrepancias del simulador C++; se exige motor
+oficial. El informe conserva también el pico de latencia y su diagnóstico en serie.
+
+Para regenerar el candidato congelado, ejecutar `build_frontier.py --model
+results/gold/frontier_model.json`. Las variantes exploratorias conservan sus fuentes
+y recibos originales; los builders actuales regeneran la última familia del experimento.
+Las pruebas de Frontier se ejecutan con `python -m unittest test_frontier.py`.
 
 Python 3.12. El agente usa solo la biblioteca estándar; no necesita GPU.
 

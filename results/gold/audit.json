@@ -1,0 +1,1130 @@
+{
+  "retrieved_utc": "2026-09-13T20:00:39.677665+00:00",
+  "selection_ranks": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13,
+    21,
+    27
+  ],
+  "scope": "Provisional gold-range teams; public behavioral observations, not private agent code.",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "team_id": 16718819,
+      "team_name": "Majkel1337",
+      "score": "3235.7",
+      "submission_date": "2026-09-11 02:18:56.836000"
+    },
+    {
+      "rank": 2,
+      "team_id": 16621799,
+      "team_name": "Artem The Farmer \ud83c\udf45",
+      "score": "3130.7",
+      "submission_date": "2026-09-13 07:25:22.116000"
+    },
+    {
+      "rank": 3,
+      "team_id": 16681125,
+      "team_name": "M & M & P & Q",
+      "score": "3071.8",
+      "submission_date": "2026-09-13 12:18:07.386000"
+    },
+    {
+      "rank": 4,
+      "team_id": 16622349,
+      "team_name": "Mengfei Li",
+      "score": "3052.2",
+      "submission_date": "2026-09-11 21:52:47.823000"
+    },
+    {
+      "rank": 5,
+      "team_id": 16640510,
+      "team_name": "SpaTaro",
+      "score": "3025.7",
+      "submission_date": "2026-09-11 09:15:53.763000"
+    },
+    {
+      "rank": 6,
+      "team_id": 16732403,
+      "team_name": "ymg_aq",
+      "score": "3004.9",
+      "submission_date": "2026-09-13 15:09:30.440000"
+    },
+    {
+      "rank": 7,
+      "team_id": 16805699,
+      "team_name": "feel the agi",
+      "score": "3000.2",
+      "submission_date": "2026-09-13 14:05:13.300000"
+    },
+    {
+      "rank": 8,
+      "team_id": 16760569,
+      "team_name": "Otter Vibe",
+      "score": "2995.9",
+      "submission_date": "2026-09-08 11:36:43.510000"
+    },
+    {
+      "rank": 9,
+      "team_id": 16730524,
+      "team_name": "THIRD FARM CLUB",
+      "score": "2967.5",
+      "submission_date": "2026-09-13 10:23:45.370000"
+    },
+    {
+      "rank": 10,
+      "team_id": 16685556,
+      "team_name": "binghua",
+      "score": "2959.3",
+      "submission_date": "2026-09-08 13:50:16.860000"
+    },
+    {
+      "rank": 11,
+      "team_id": 16705390,
+      "team_name": "Subramanya N",
+      "score": "2943.6",
+      "submission_date": "2026-09-13 19:07:10.253000"
+    },
+    {
+      "rank": 12,
+      "team_id": 16848479,
+      "team_name": "nilochan",
+      "score": "2938.8",
+      "submission_date": "2026-09-13 14:00:47.970000"
+    },
+    {
+      "rank": 13,
+      "team_id": 16644724,
+      "team_name": "Kaggriculture Agent",
+      "score": "2938.0",
+      "submission_date": "2026-09-13 17:24:56.243000"
+    },
+    {
+      "rank": 14,
+      "team_id": 16690867,
+      "team_name": "HowardLeeTW",
+      "score": "2933.4",
+      "submission_date": "2026-09-13 08:07:14.343000"
+    },
+    {
+      "rank": 15,
+      "team_id": 16667242,
+      "team_name": "Gleb Tumanov",
+      "score": "2933.4",
+      "submission_date": "2026-09-10 18:44:35.130000"
+    },
+    {
+      "rank": 16,
+      "team_id": 16767215,
+      "team_name": "keiz",
+      "score": "2923.1",
+      "submission_date": "2026-09-12 14:49:18.133000"
+    },
+    {
+      "rank": 17,
+      "team_id": 16773026,
+      "team_name": "\u30a2\u30eb\u30e2\u30f3\u30c9",
+      "score": "2919.4",
+      "submission_date": "2026-09-13 01:53:48.246000"
+    },
+    {
+      "rank": 18,
+      "team_id": 16731275,
+      "team_name": "carbonapi",
+      "score": "2917.8",
+      "submission_date": "2026-09-13 09:11:03.190000"
+    },
+    {
+      "rank": 19,
+      "team_id": 16675778,
+      "team_name": "Orbital Terraformer",
+      "score": "2913.9",
+      "submission_date": "2026-09-13 18:05:36.753000"
+    },
+    {
+      "rank": 20,
+      "team_id": 16640467,
+      "team_name": "Catalyst",
+      "score": "2913.0",
+      "submission_date": "2026-09-13 02:27:19.290000"
+    },
+    {
+      "rank": 21,
+      "team_id": 16732748,
+      "team_name": "DSM",
+      "score": "2905.1",
+      "submission_date": "2026-09-13 10:07:33.670000"
+    },
+    {
+      "rank": 22,
+      "team_id": 16714457,
+      "team_name": "Crop Dustas",
+      "score": "2904.1",
+      "submission_date": "2026-09-13 06:48:27.836000"
+    },
+    {
+      "rank": 23,
+      "team_id": 16732521,
+      "team_name": "redblackbst",
+      "score": "2902.1",
+      "submission_date": "2026-09-13 15:38:23.536000"
+    },
+    {
+      "rank": 24,
+      "team_id": 16690353,
+      "team_name": "b13902103_yuhung94",
+      "score": "2901.2",
+      "submission_date": "2026-09-12 09:38:49.510000"
+    },
+    {
+      "rank": 25,
+      "team_id": 16845367,
+      "team_name": "kyy666",
+      "score": "2900.0",
+      "submission_date": "2026-09-13 11:59:02.870000"
+    },
+    {
+      "rank": 26,
+      "team_id": 16621628,
+      "team_name": "pupen_o",
+      "score": "2899.8",
+      "submission_date": "2026-09-13 10:46:15.300000"
+    },
+    {
+      "rank": 27,
+      "team_id": 16704466,
+      "team_name": "QQ Farming",
+      "score": "2896.7",
+      "submission_date": "2026-09-10 18:07:39.960000"
+    }
+  ],
+  "selected": [
+    {
+      "rank": 1,
+      "team_id": 16718819,
+      "team_name": "Majkel1337",
+      "score": "3235.7",
+      "submission_date": "2026-09-11 02:18:56.836000",
+      "submission_id": 56156662,
+      "submission_score": "3235.7",
+      "episodes": [
+        {
+          "id": 108648359,
+          "created": "2026-09-13 19:38:44.481000",
+          "agents": [
+            {
+              "submission_id": 56193798,
+              "seat": 0,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 110255
+            },
+            {
+              "submission_id": 56156662,
+              "seat": 1,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 106270
+            }
+          ]
+        },
+        {
+          "id": 108643307,
+          "created": "2026-09-13 19:18:45.713000",
+          "agents": [
+            {
+              "submission_id": 56156662,
+              "seat": 0,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 111169
+            },
+            {
+              "submission_id": 56193798,
+              "seat": 1,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 114627
+            }
+          ]
+        },
+        {
+          "id": 108638287,
+          "created": "2026-09-13 18:58:45.836000",
+          "agents": [
+            {
+              "submission_id": 56156662,
+              "seat": 0,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 101523
+            },
+            {
+              "submission_id": 56193798,
+              "seat": 1,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 107300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "team_id": 16621799,
+      "team_name": "Artem The Farmer \ud83c\udf45",
+      "score": "3130.7",
+      "submission_date": "2026-09-13 07:25:22.116000",
+      "submission_id": 56193798,
+      "submission_score": "3130.7",
+      "episodes": [
+        {
+          "id": 108648360,
+          "created": "2026-09-13 19:38:44.482000",
+          "agents": [
+            {
+              "submission_id": 56193798,
+              "seat": 0,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 99283
+            },
+            {
+              "submission_id": 56148003,
+              "seat": 1,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 88364
+            }
+          ]
+        },
+        {
+          "id": 108648359,
+          "created": "2026-09-13 19:38:44.481000",
+          "agents": [
+            {
+              "submission_id": 56193798,
+              "seat": 0,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 110255
+            },
+            {
+              "submission_id": 56156662,
+              "seat": 1,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 106270
+            }
+          ]
+        },
+        {
+          "id": 108643307,
+          "created": "2026-09-13 19:18:45.713000",
+          "agents": [
+            {
+              "submission_id": 56156662,
+              "seat": 0,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 111169
+            },
+            {
+              "submission_id": 56193798,
+              "seat": 1,
+              "team_id": 16621799,
+              "team_name": "Artem The Farmer \ud83c\udf45",
+              "reward": 114627
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "team_id": 16681125,
+      "team_name": "M & M & P & Q",
+      "score": "3071.8",
+      "submission_date": "2026-09-13 12:18:07.386000",
+      "submission_id": 56206720,
+      "submission_score": "3075.2",
+      "episodes": [
+        {
+          "id": 108652099,
+          "created": "2026-09-13 19:54:43.982000",
+          "agents": [
+            {
+              "submission_id": 56206720,
+              "seat": 0,
+              "team_id": 16681125,
+              "team_name": "M & M & P & Q",
+              "reward": 63137
+            },
+            {
+              "submission_id": 56209769,
+              "seat": 1,
+              "team_id": 16732403,
+              "team_name": "ymg_aq",
+              "reward": 62734
+            }
+          ]
+        },
+        {
+          "id": 108648365,
+          "created": "2026-09-13 19:38:44.487000",
+          "agents": [
+            {
+              "submission_id": 56206720,
+              "seat": 0,
+              "team_id": 16681125,
+              "team_name": "M & M & P & Q",
+              "reward": 147888
+            },
+            {
+              "submission_id": 56148003,
+              "seat": 1,
+              "team_id": 16718819,
+              "team_name": "Majkel1337",
+              "reward": 134942
+            }
+          ]
+        },
+        {
+          "id": 108643312,
+          "created": "2026-09-13 19:18:45.720000",
+          "agents": [
+            {
+              "submission_id": 56206720,
+              "seat": 0,
+              "team_id": 16681125,
+              "team_name": "M & M & P & Q",
+              "reward": 116655
+            },
+            {
+              "submission_id": 56114097,
+              "seat": 1,
+              "team_id": 16640510,
+              "team_name": "SpaTaro",
+              "reward": 100873
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "team_id": 16640510,
+      "team_name": "SpaTaro",
+      "score": "3025.7",
+      "submission_date": "2026-09-11 09:15:53.763000",
+      "submission_id": 56114097,
+      "submission_score": "3025.7",
+      "episodes": [
+        {
+          "id": 108651031,
+          "created": "2026-09-13 19:50:45.537000",
+          "agents": [
+            {
+              "submission_id": 56114097,
+              "seat": 0,
+              "team_id": 16640510,
+              "team_name": "SpaTaro",
+              "reward": 73315
+            },
+            {
+              "submission_id": 56209769,
+              "seat": 1,
+              "team_id": 16732403,
+              "team_name": "ymg_aq",
+              "reward": 73253
+            }
+          ]
+        },
+        {
+          "id": 108648977,
+          "created": "2026-09-13 19:42:47.091000",
+          "agents": [
+            {
+              "submission_id": 56209748,
+              "seat": 0,
+              "team_id": 16732403,
+              "team_name": "ymg_aq",
+              "reward": 121083
+            },
+            {
+              "submission_id": 56114097,
+              "seat": 1,
+              "team_id": 16640510,
+              "team_name": "SpaTaro",
+              "reward": 119702
+            }
+          ]
+        },
+        {
+          "id": 108649501,
+          "created": "2026-09-13 19:42:47.929000",
+          "agents": [
+            {
+              "submission_id": 56114097,
+              "seat": 0,
+              "team_id": 16640510,
+              "team_name": "SpaTaro",
+              "reward": 93213
+            },
+            {
+              "submission_id": 56173067,
+              "seat": 1,
+              "team_id": 16622349,
+              "team_name": "Mengfei Li",
+              "reward": 95091
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "team_id": 16760569,
+      "team_name": "Otter Vibe",
+      "score": "2995.9",
+      "submission_date": "2026-09-08 11:36:43.510000",
+      "submission_id": 56097405,
+      "submission_score": "2995.9",
+      "episodes": [
+        {
+          "id": 108649985,
+          "created": "2026-09-13 19:46:47.739000",
+          "agents": [
+            {
+              "submission_id": 56209748,
+              "seat": 0,
+              "team_id": 16732403,
+              "team_name": "ymg_aq",
+              "reward": 90163
+            },
+            {
+              "submission_id": 56097405,
+              "seat": 1,
+              "team_id": 16760569,
+              "team_name": "Otter Vibe",
+              "reward": 82932
+            }
+          ]
+        },
+        {
+          "id": 108649127,
+          "created": "2026-09-13 19:42:47.348000",
+          "agents": [
+            {
+              "submission_id": 56097405,
+              "seat": 0,
+              "team_id": 16760569,
+              "team_name": "Otter Vibe",
+              "reward": 116867
+            },
+            {
+              "submission_id": 56173067,
+              "seat": 1,
+              "team_id": 16622349,
+              "team_name": "Mengfei Li",
+              "reward": 131466
+            }
+          ]
+        },
+        {
+          "id": 108643893,
+          "created": "2026-09-13 19:22:48.616000",
+          "agents": [
+            {
+              "submission_id": 56097405,
+              "seat": 0,
+              "team_id": 16760569,
+              "team_name": "Otter Vibe",
+              "reward": 89078
+            },
+            {
+              "submission_id": 56209769,
+              "seat": 1,
+              "team_id": 16732403,
+              "team_name": "ymg_aq",
+              "reward": 76208
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "team_id": 16644724,
+      "team_name": "Kaggriculture Agent",
+      "score": "2938.0",
+      "submission_date": "2026-09-13 17:24:56.243000",
+      "submission_id": 56208903,
+      "submission_score": "2938.0",
+      "episodes": [
+        {
+          "id": 108650302,
+          "created": "2026-09-13 19:46:48.249000",
+          "agents": [
+            {
+              "submission_id": 56204001,
+              "seat": 0,
+              "team_id": 16651244,
+              "team_name": "Knight of Favonius",
+              "reward": 117395
+            },
+            {
+              "submission_id": 56208903,
+              "seat": 1,
+              "team_id": 16644724,
+              "team_name": "Kaggriculture Agent",
+              "reward": 117976
+            }
+          ]
+        },
+        {
+          "id": 108645272,
+          "created": "2026-09-13 19:26:43.636000",
+          "agents": [
+            {
+              "submission_id": 56208903,
+              "seat": 0,
+              "team_id": 16644724,
+              "team_name": "Kaggriculture Agent",
+              "reward": 89158
+            },
+            {
+              "submission_id": 56132899,
+              "seat": 1,
+              "team_id": 16805699,
+              "team_name": "feel the agi",
+              "reward": 89532
+            }
+          ]
+        },
+        {
+          "id": 108645279,
+          "created": "2026-09-13 19:26:43.645000",
+          "agents": [
+            {
+              "submission_id": 56187770,
+              "seat": 0,
+              "team_id": 16767215,
+              "team_name": "keiz",
+              "reward": 99437
+            },
+            {
+              "submission_id": 56208903,
+              "seat": 1,
+              "team_id": 16644724,
+              "team_name": "Kaggriculture Agent",
+              "reward": 96560
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "team_id": 16732748,
+      "team_name": "DSM",
+      "score": "2905.1",
+      "submission_date": "2026-09-13 10:07:33.670000",
+      "submission_id": 56204618,
+      "submission_score": "2905.1",
+      "episodes": [
+        {
+          "id": 108652199,
+          "created": "2026-09-13 19:54:44.177000",
+          "agents": [
+            {
+              "submission_id": 56204618,
+              "seat": 0,
+              "team_id": 16732748,
+              "team_name": "DSM",
+              "reward": 103356
+            },
+            {
+              "submission_id": 56193530,
+              "seat": 1,
+              "team_id": 16654783,
+              "team_name": "quantara.cv",
+              "reward": 79844
+            }
+          ]
+        },
+        {
+          "id": 108647122,
+          "created": "2026-09-13 19:34:43.425000",
+          "agents": [
+            {
+              "submission_id": 56092906,
+              "seat": 0,
+              "team_id": 16685556,
+              "team_name": "binghua",
+              "reward": 114547
+            },
+            {
+              "submission_id": 56204618,
+              "seat": 1,
+              "team_id": 16732748,
+              "team_name": "DSM",
+              "reward": 121239
+            }
+          ]
+        },
+        {
+          "id": 108641844,
+          "created": "2026-09-13 19:14:50.082000",
+          "agents": [
+            {
+              "submission_id": 56210044,
+              "seat": 0,
+              "team_id": 16651244,
+              "team_name": "Knight of Favonius",
+              "reward": 120058
+            },
+            {
+              "submission_id": 56204618,
+              "seat": 1,
+              "team_id": 16732748,
+              "team_name": "DSM",
+              "reward": 128815
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 27,
+      "team_id": 16704466,
+      "team_name": "QQ Farming",
+      "score": "2896.7",
+      "submission_date": "2026-09-10 18:07:39.960000",
+      "submission_id": 56149565,
+      "submission_score": "2896.7",
+      "episodes": [
+        {
+          "id": 108649002,
+          "created": "2026-09-13 19:42:47.121000",
+          "agents": [
+            {
+              "submission_id": 56209824,
+              "seat": 0,
+              "team_id": 16632566,
+              "team_name": "maco-macoo",
+              "reward": 101963
+            },
+            {
+              "submission_id": 56149565,
+              "seat": 1,
+              "team_id": 16704466,
+              "team_name": "QQ Farming",
+              "reward": 103363
+            }
+          ]
+        },
+        {
+          "id": 108648806,
+          "created": "2026-09-13 19:42:46.822000",
+          "agents": [
+            {
+              "submission_id": 56149565,
+              "seat": 0,
+              "team_id": 16704466,
+              "team_name": "QQ Farming",
+              "reward": 100226
+            },
+            {
+              "submission_id": 56211330,
+              "seat": 1,
+              "team_id": 16704247,
+              "team_name": "WeAreFarmers",
+              "reward": 95504
+            }
+          ]
+        },
+        {
+          "id": 108646754,
+          "created": "2026-09-13 19:34:42.779000",
+          "agents": [
+            {
+              "submission_id": 56149565,
+              "seat": 0,
+              "team_id": 16704466,
+              "team_name": "QQ Farming",
+              "reward": 117622
+            },
+            {
+              "submission_id": 56211330,
+              "seat": 1,
+              "team_id": 16704247,
+              "team_name": "WeAreFarmers",
+              "reward": 132271
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "id": 108643307,
+      "path": "vendor/gold/episode-108643307-replay.json",
+      "sha256": "035022618d8855c58ebb5dfa964130e206064ec53850cd6cfaf372e3fded82e9",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 823348333,
+      "rewards": [
+        111169.0,
+        114627.0
+      ],
+      "teams": [
+        "Majkel1337",
+        "Artem The Farmer \ud83c\udf45"
+      ]
+    },
+    {
+      "id": 108638287,
+      "path": "vendor/gold/episode-108638287-replay.json",
+      "sha256": "13ea531b869642ea2c0e8744a663135e77548fe6a19cdc1bda1eeeb967a343b6",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1016188179,
+      "rewards": [
+        101523.0,
+        107300.0
+      ],
+      "teams": [
+        "Majkel1337",
+        "Artem The Farmer \ud83c\udf45"
+      ]
+    },
+    {
+      "id": 108641844,
+      "path": "vendor/gold/episode-108641844-replay.json",
+      "sha256": "b04cbe18a7a97140cba321f2eb8c54be24bf7cfc9ffa0b2f22542f5b757b9ffa",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1817907271,
+      "rewards": [
+        120058.0,
+        128815.0
+      ],
+      "teams": [
+        "Knight of Favonius",
+        "DSM"
+      ]
+    },
+    {
+      "id": 108645272,
+      "path": "vendor/gold/episode-108645272-replay.json",
+      "sha256": "5e7635707a1744b54aaae41bf0d8f1de26e91f1b6e661e83464dc17c8f626db4",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1502723797,
+      "rewards": [
+        89158.0,
+        89532.0
+      ],
+      "teams": [
+        "Kaggriculture Agent",
+        "feel the agi"
+      ]
+    },
+    {
+      "id": 108643312,
+      "path": "vendor/gold/episode-108643312-replay.json",
+      "sha256": "a672f2b52b11e4417d0cb764a8e18a84d09c57f5c85f5dc233ea2d42e5db0661",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 241347493,
+      "rewards": [
+        116655.0,
+        100873.0
+      ],
+      "teams": [
+        "M & M & P & Q",
+        "SpaTaro"
+      ]
+    },
+    {
+      "id": 108643893,
+      "path": "vendor/gold/episode-108643893-replay.json",
+      "sha256": "83885efaf2a136fc0ffb02cbf4865af47460632b7a281ef46fcce4ffed304442",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 2127997978,
+      "rewards": [
+        89078.0,
+        76208.0
+      ],
+      "teams": [
+        "Otter Vibe",
+        "ymg_aq"
+      ]
+    },
+    {
+      "id": 108646754,
+      "path": "vendor/gold/episode-108646754-replay.json",
+      "sha256": "ed5801bd08904a5a72fb897d68c2cc3379579c03c51d4861f815f55153170aab",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 581321328,
+      "rewards": [
+        117622.0,
+        132271.0
+      ],
+      "teams": [
+        "QQ Farming",
+        "WeAreFarmers"
+      ]
+    },
+    {
+      "id": 108645279,
+      "path": "vendor/gold/episode-108645279-replay.json",
+      "sha256": "537b68be064cddd71ecb2c03af333535a8b490057d5324c6691dbc679d799bce",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 591766816,
+      "rewards": [
+        99437.0,
+        96560.0
+      ],
+      "teams": [
+        "keiz",
+        "Kaggriculture Agent"
+      ]
+    },
+    {
+      "id": 108647122,
+      "path": "vendor/gold/episode-108647122-replay.json",
+      "sha256": "79ee6a1779d915bcdda63857d3944e238c5b5cd87658fc7792b85170dafd905c",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1646990567,
+      "rewards": [
+        114547.0,
+        121239.0
+      ],
+      "teams": [
+        "binghua",
+        "DSM"
+      ]
+    },
+    {
+      "id": 108648360,
+      "path": "vendor/gold/episode-108648360-replay.json",
+      "sha256": "732071f69eabd20e05d52b22f16ba39e9c64af43925c22cef0f74877b1973729",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1286628004,
+      "rewards": [
+        99283.0,
+        88364.0
+      ],
+      "teams": [
+        "Artem The Farmer \ud83c\udf45",
+        "Majkel1337"
+      ]
+    },
+    {
+      "id": 108648359,
+      "path": "vendor/gold/episode-108648359-replay.json",
+      "sha256": "087381c67f274d3b8c238c7b31a8ffc058e8d559795ff610847f242c4266a312",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1419477875,
+      "rewards": [
+        110255.0,
+        106270.0
+      ],
+      "teams": [
+        "Artem The Farmer \ud83c\udf45",
+        "Majkel1337"
+      ]
+    },
+    {
+      "id": 108648365,
+      "path": "vendor/gold/episode-108648365-replay.json",
+      "sha256": "cc4b47b91a78eb8ebe1cac55e3c41264115774c82b82a312ab70e365781a15be",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 228639501,
+      "rewards": [
+        147888.0,
+        134942.0
+      ],
+      "teams": [
+        "M & M & P & Q",
+        "Majkel1337"
+      ]
+    },
+    {
+      "id": 108649002,
+      "path": "vendor/gold/episode-108649002-replay.json",
+      "sha256": "368a77de514269f642f8322adcff47f4e2d37eafa233fe7cd0b760894ce1968c",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 66409400,
+      "rewards": [
+        101963.0,
+        103363.0
+      ],
+      "teams": [
+        "maco-macoo",
+        "QQ Farming"
+      ]
+    },
+    {
+      "id": 108648977,
+      "path": "vendor/gold/episode-108648977-replay.json",
+      "sha256": "321d9253cf581178fa59c4358bf97b6a989e7a67517c4dbfdc91128b997e3a72",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1572619024,
+      "rewards": [
+        121083.0,
+        119702.0
+      ],
+      "teams": [
+        "ymg_aq",
+        "SpaTaro"
+      ]
+    },
+    {
+      "id": 108648806,
+      "path": "vendor/gold/episode-108648806-replay.json",
+      "sha256": "012389c6b96f31194350c894407b4e6274227f6ecd9ac74f701f4dac6a106869",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 672565784,
+      "rewards": [
+        100226.0,
+        95504.0
+      ],
+      "teams": [
+        "QQ Farming",
+        "WeAreFarmers"
+      ]
+    },
+    {
+      "id": 108649127,
+      "path": "vendor/gold/episode-108649127-replay.json",
+      "sha256": "0196fa43679d0fd05891a415c71791cfd1ab94a08de253f536dd9600acd65a76",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 2008983177,
+      "rewards": [
+        116867.0,
+        131466.0
+      ],
+      "teams": [
+        "Otter Vibe",
+        "Mengfei Li"
+      ]
+    },
+    {
+      "id": 108649985,
+      "path": "vendor/gold/episode-108649985-replay.json",
+      "sha256": "53fa1a2ddeb9ce9ac9d16cb60375df5cdb92a92908793c19fb77894fc47680f9",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 838010342,
+      "rewards": [
+        90163.0,
+        82932.0
+      ],
+      "teams": [
+        "ymg_aq",
+        "Otter Vibe"
+      ]
+    },
+    {
+      "id": 108649501,
+      "path": "vendor/gold/episode-108649501-replay.json",
+      "sha256": "28239d5df62949a5032551a052ae8ef05ace536d263238fc9c0dc65b694fdc98",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1319965616,
+      "rewards": [
+        93213.0,
+        95091.0
+      ],
+      "teams": [
+        "SpaTaro",
+        "Mengfei Li"
+      ]
+    },
+    {
+      "id": 108650302,
+      "path": "vendor/gold/episode-108650302-replay.json",
+      "sha256": "cf2c2a20920eff97e5251be11609e124926fc8e2c7844fcf12e468790c6ffed0",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1854752579,
+      "rewards": [
+        117395.0,
+        117976.0
+      ],
+      "teams": [
+        "Knight of Favonius",
+        "Kaggriculture Agent"
+      ]
+    },
+    {
+      "id": 108651031,
+      "path": "vendor/gold/episode-108651031-replay.json",
+      "sha256": "6d87e40df45752bf9626a1487a1e9566b9ba4e5aafafc79077e923607ecced9b",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 467455597,
+      "rewards": [
+        73315.0,
+        73253.0
+      ],
+      "teams": [
+        "SpaTaro",
+        "ymg_aq"
+      ]
+    },
+    {
+      "id": 108652099,
+      "path": "vendor/gold/episode-108652099-replay.json",
+      "sha256": "dcd5fa1d455010e711f56626aa5e68117c7e3d20130436d5c920bb0761c559b7",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 1202331200,
+      "rewards": [
+        63137.0,
+        62734.0
+      ],
+      "teams": [
+        "M & M & P & Q",
+        "ymg_aq"
+      ]
+    },
+    {
+      "id": 108652199,
+      "path": "vendor/gold/episode-108652199-replay.json",
+      "sha256": "e9948780da583cbfb4478059b3aca98d1be93801a88091f808b161873427941a",
+      "engine": "1.32.7",
+      "steps": 720,
+      "seed": 914741225,
+      "rewards": [
+        103356.0,
+        79844.0
+      ],
+      "teams": [
+        "DSM",
+        "quantara.cv"
+      ]
+    }
+  ],
+  "complete": true
+}

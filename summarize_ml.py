@@ -7,12 +7,12 @@ from pathlib import Path
 import numpy as np
 
 
-def summarize(path):
+def summarize(path, baseline='matched6', option_field='ml_option'):
     report = json.loads(Path(path).read_text())
     assert report['complete'] and len(report['rows']) == report['expected_games']
     rows = report['rows']
-    base = {(r['opponent'],r['seed'],r['seat']):r for r in rows if r['candidate']=='matched6'}
-    result = dict(source=str(path), games=len(rows), candidates={})
+    base = {(r['opponent'],r['seed'],r['seat']):r for r in rows if r['candidate']==baseline}
+    result = dict(source=str(path), baseline=baseline, games=len(rows), candidates={})
     for candidate in sorted({r['candidate'] for r in rows}):
         selected = [r for r in rows if r['candidate']==candidate]
         assert {(r['opponent'],r['seed'],r['seat']) for r in selected} == set(base)
@@ -42,7 +42,7 @@ def summarize(path):
         seed_means = np.asarray([np.mean(by_seed[s]) for s in sorted(by_seed)])
         samples = rng.choice(seed_means, size=(10000,len(seed_means)), replace=True).mean(axis=1)
         latency = max(r['max_call_ms'] for r in selected)
-        outcomes_passed = (total['win_delta']>0 and all(g['win_delta']>=0 and g['score_delta']>=0
+        outcomes_passed = (total['win_delta']>0 and total['score_delta']>0 and all(g['win_delta']>=0 and g['score_delta']>=0
                                              for g in groups.values()) and not errors)
         passed = outcomes_passed and latency<1000
         result['candidates'][candidate] = dict(total=total,per_opponent=groups,errors=errors,
@@ -50,7 +50,7 @@ def summarize(path):
             max_call_ms=latency,gate_passed=passed,seed_clusters=len(seed_means),
             paired_score_delta_mean=float(seed_means.mean()),
             seed_bootstrap_95_percentile_interval=np.quantile(samples,[.025,.975]).tolist(),
-            choices=dict(Counter(str(r['telemetry'].get('ml_option','native')) for r in selected)),
+            choices=dict(Counter(str(r['telemetry'].get(option_field,'native')) for r in selected)),
             changed_horizon_calls=sum(r['telemetry'].get('ml_changed_horizons',0) for r in selected),
             candidate_sha256=sorted({r['sha256'] for r in selected}))
     return result
@@ -60,7 +60,9 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('input')
     parser.add_argument('--output',required=True)
+    parser.add_argument('--baseline',default='matched6')
+    parser.add_argument('--option-field',default='ml_option')
     args=parser.parse_args()
-    result=summarize(args.input)
+    result=summarize(args.input,args.baseline,args.option_field)
     Path(args.output).write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))

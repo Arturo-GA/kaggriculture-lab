@@ -1,0 +1,22 @@
+{
+  "candidate": "frontier",
+  "kernel": "jarturo/kaggriculture-frontier-joint-planner",
+  "source_sha256": {
+    "frontier": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+    "ml_critic": "ff2b5c8c7ea5c1809648fb4e404c4937e8083b44eaf2d06e26f9b137bbbb3e95",
+    "matched6": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489"
+  },
+  "local_receipts": {
+    "frontier_holdout_summary.json": "92307af2e45ced7d38174317ab4d249c7b8d8d208fce2b455c3fe321b7786ade",
+    "frontier_official_summary.json": "b0dec8db03f5a559e6c71484ac8eb9c81947c8ebf59c7764da02e450c08ef3d9"
+  },
+  "cloud_seeds": [
+    87001,
+    87002,
+    87003,
+    87004
+  ],
+  "cloud_rule": "32 official games: frontier and ml_critic against ml_critic and matched6, both seats. No per-family score regression, no reported errors, and every candidate call below 1000 ms.",
+  "status": "experimental; local improvement is mainly against our own agent; no gold strength claim",
+  "latency_receipt_sha256": "718e4bc785ee5aa1fcc4d0f0c874735bca64464cef2a0f807a31aeb54a23181f"
+}

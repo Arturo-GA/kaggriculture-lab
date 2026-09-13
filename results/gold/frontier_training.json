@@ -1,0 +1,2796 @@
+{
+  "training_contexts": 144,
+  "training_games": 288,
+  "selection_contexts": 48,
+  "selection_games": 96,
+  "export_exact_parity_checks": 12288,
+  "selected_gate": {
+    "quantile": 0.25,
+    "threshold": 0,
+    "choices": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "metrics": {
+      "total": {
+        "games": 48,
+        "win_delta": 14,
+        "score_delta": 6.0,
+        "utility_delta": 6.2458901272444365,
+        "interventions": 48
+      },
+      "per_opponent": {
+        "ml_critic": {
+          "games": 16,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.157723137174729,
+          "interventions": 16
+        },
+        "prvsiyan": {
+          "games": 16,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.03328489603166007,
+          "interventions": 16
+        },
+        "router": {
+          "games": 16,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.05488209403804711,
+          "interventions": 16
+        }
+      },
+      "acceptable": true
+    }
+  },
+  "constants": [
+    {
+      "option": 0,
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 0
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "option": 1,
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.2458901272444365,
+          "interventions": 48
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.03328489603166007,
+            "interventions": 16
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.05488209403804711,
+            "interventions": 16
+          }
+        },
+        "acceptable": true
+      }
+    }
+  ],
+  "grid": [
+    {
+      "quantile": 0.1,
+      "threshold": 0,
+      "choices": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 10,
+          "score_delta": 4.0,
+          "utility_delta": 4.187018855526374,
+          "interventions": 32
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 10,
+            "score_delta": 4.0,
+            "utility_delta": 4.118132344604029,
+            "interventions": 12
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.02281923674991182,
+            "interventions": 12
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0460672741724335,
+            "interventions": 8
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.001,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 10,
+          "score_delta": 4.0,
+          "utility_delta": 4.150095498234411,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 10,
+            "score_delta": 4.0,
+            "utility_delta": 4.118132344604029,
+            "interventions": 12
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.03196315363038238,
+            "interventions": 6
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.005,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.01,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.025,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.05,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.1,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 0.2,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 4,
+          "score_delta": 1.0,
+          "utility_delta": 1.031171214437374,
+          "interventions": 6
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 4,
+            "score_delta": 1.0,
+            "utility_delta": 1.031171214437374,
+            "interventions": 6
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0,
+      "choices": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.2458901272444365,
+          "interventions": 48
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.03328489603166007,
+            "interventions": 16
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.05488209403804711,
+            "interventions": 16
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.001,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.211249552259453,
+          "interventions": 28
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.053526415084723555,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.005,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.142273681186401,
+          "interventions": 16
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.01,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.142273681186401,
+          "interventions": 16
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.025,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.142273681186401,
+          "interventions": 16
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.05,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.142273681186401,
+          "interventions": 16
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.1,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.142273681186401,
+          "interventions": 16
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.25,
+      "threshold": 0.2,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 12,
+          "score_delta": 5.0,
+          "utility_delta": 5.134646385896493,
+          "interventions": 14
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 12,
+            "score_delta": 5.0,
+            "utility_delta": 5.134646385896493,
+            "interventions": 14
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0,
+      "choices": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.2458901272444365,
+          "interventions": 48
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.03328489603166007,
+            "interventions": 16
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.05488209403804711,
+            "interventions": 16
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.001,
+      "choices": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.232496795558207,
+          "interventions": 36
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.021247243298754714,
+            "interventions": 8
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.053526415084723555,
+            "interventions": 12
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.005,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.01,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.025,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.05,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.1,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.5,
+      "threshold": 0.2,
+      "choices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 14,
+          "score_delta": 6.0,
+          "utility_delta": 6.1653504324646375,
+          "interventions": 18
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 14,
+            "score_delta": 6.0,
+            "utility_delta": 6.157723137174729,
+            "interventions": 16
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0076272952899082355,
+            "interventions": 2
+          }
+        },
+        "acceptable": true
+      }
+    },
+    {
+      "quantile": 0.1,
+      "threshold": 2.0,
+      "choices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": {
+        "total": {
+          "games": 48,
+          "win_delta": 0,
+          "score_delta": 0.0,
+          "utility_delta": 0.0,
+          "interventions": 0
+        },
+        "per_opponent": {
+          "ml_critic": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "prvsiyan": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          },
+          "router": {
+            "games": 16,
+            "win_delta": 0,
+            "score_delta": 0.0,
+            "utility_delta": 0.0,
+            "interventions": 0
+          }
+        },
+        "acceptable": true
+      }
+    }
+  ],
+  "exported": {
+    "frontier": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c"
+  },
+  "sha256": {
+    "frontier_model.json": "34ee659e0f88556b9aa4a2ad6727669823fc5bfcfe921a2f79b597ca5282f35f",
+    "frontier_train.jsonl": "c25326d64143fe035f901bb9509d88857f149a6f0ca60ad145bf0a74b331d5d9",
+    "frontier_selection.jsonl": "7922165fda4811ae5a83560c30fd05c53914d4abbf414d5ebd7455569e2c4cad"
+  },
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.5.3",
+    "sklearn": "1.7.2"
+  },
+  "feature_importance": [
+    {
+      "feature": "cash_difference",
+      "importance": 0.5033872999870558
+    },
+    {
+      "feature": "FERTILIZER_change48",
+      "importance": 0.11533534617306485
+    },
+    {
+      "feature": "TOMATO_inventory",
+      "importance": 0.04358174411848911
+    },
+    {
+      "feature": "plan_WHEAT",
+      "importance": 0.04069844236343296
+    },
+    {
+      "feature": "FERTILIZER_inventory",
+      "importance": 0.04032617188841023
+    },
+    {
+      "feature": "plan_CARROT",
+      "importance": 0.032984227859684884
+    },
+    {
+      "feature": "WOOL_change48",
+      "importance": 0.027720118277437575
+    },
+    {
+      "feature": "TOMATO_price",
+      "importance": 0.022947140502967554
+    },
+    {
+      "feature": "plan_input_buy",
+      "importance": 0.020424172936713586
+    },
+    {
+      "feature": "EGG_inventory",
+      "importance": 0.014801709119922006
+    },
+    {
+      "feature": "STRAWBERRY_change48",
+      "importance": 0.012483126906852143
+    },
+    {
+      "feature": "WOOL_price",
+      "importance": 0.012311160477675236
+    },
+    {
+      "feature": "MILK_inventory",
+      "importance": 0.010801789309321165
+    },
+    {
+      "feature": "rival_cash",
+      "importance": 0.009954978239608229
+    },
+    {
+      "feature": "shops_ICE_CREAM_SHOP",
+      "importance": 0.009431437824555735
+    },
+    {
+      "feature": "EGG_price",
+      "importance": 0.009303819481382383
+    },
+    {
+      "feature": "plan_FERTILIZER",
+      "importance": 0.008472182212587907
+    },
+    {
+      "feature": "own_CARROT_ripe",
+      "importance": 0.007914409693506033
+    },
+    {
+      "feature": "WHEAT_price",
+      "importance": 0.007846081614959062
+    },
+    {
+      "feature": "plan_MILK",
+      "importance": 0.0055413347952383545
+    },
+    {
+      "feature": "STRAWBERRY_own_shed",
+      "importance": 0.004810306842294741
+    },
+    {
+      "feature": "rival_CARROT_ripe",
+      "importance": 0.0043993513371862565
+    },
+    {
+      "feature": "plan_unassigned",
+      "importance": 0.004251243473322052
+    },
+    {
+      "feature": "rival_WHEAT_ripe",
+      "importance": 0.003937978305144433
+    },
+    {
+      "feature": "MILK_price",
+      "importance": 0.003797786434830216
+    },
+    {
+      "feature": "CARROT_change48",
+      "importance": 0.0028668006536532145
+    },
+    {
+      "feature": "TOMATO_change48",
+      "importance": 0.0027709014434121786
+    },
+    {
+      "feature": "CARROT_own_shed",
+      "importance": 0.0027251395517316544
+    },
+    {
+      "feature": "shops_PET_CAFE",
+      "importance": 0.0023789341020732315
+    },
+    {
+      "feature": "WHEAT_inventory",
+      "importance": 0.002362857261408561
+    },
+    {
+      "feature": "rival_land",
+      "importance": 0.0016700022459972918
+    },
+    {
+      "feature": "MILK_own_shed",
+      "importance": 0.001481256664482529
+    },
+    {
+      "feature": "plan_WOOL",
+      "importance": 0.0012609660815392286
+    },
+    {
+      "feature": "WHEAT_own_shed",
+      "importance": 0.0010364435670660852
+    },
+    {
+      "feature": "plan_net",
+      "importance": 0.00099363952134576
+    },
+    {
+      "feature": "STRAWBERRY_inventory",
+      "importance": 0.0008348478058973522
+    },
+    {
+      "feature": "WHEAT_change48",
+      "importance": 0.0007288339108571022
+    },
+    {
+      "feature": "own_COW_count",
+      "importance": 0.0006566738518209776
+    },
+    {
+      "feature": "shops_PIZZA_SHOP",
+      "importance": 0.00046240223070194593
+    },
+    {
+      "feature": "CARROT_inventory",
+      "importance": 0.0001805442330334366
+    },
+    {
+      "feature": "rival_weeds",
+      "importance": 6.191970553864374e-05
+    },
+    {
+      "feature": "plan_hire_cost",
+      "importance": 5.3478544262696515e-05
+    },
+    {
+      "feature": "own_cash",
+      "importance": 2.4610906469138285e-06
+    },
+    {
+      "feature": "CARROT_price",
+      "importance": 1.5925696625656055e-06
+    },
+    {
+      "feature": "shops_FARMERS_MARKET",
+      "importance": 1.414747209558496e-06
+    },
+    {
+      "feature": "STRAWBERRY_price",
+      "importance": 1.1132566714679044e-06
+    },
+    {
+      "feature": "rival_COW_ripe",
+      "importance": 1.0786103013417828e-06
+    },
+    {
+      "feature": "WOOL_inventory",
+      "importance": 9.300896862578409e-07
+    },
+    {
+      "feature": "MILK_change48",
+      "importance": 6.558830631913704e-07
+    },
+    {
+      "feature": "FERTILIZER_price",
+      "importance": 6.557724940913472e-07
+    },
+    {
+      "feature": "shops_BRUNCH_SPOT",
+      "importance": 3.1248838975361225e-07
+    },
+    {
+      "feature": "rival_SHEEP_count",
+      "importance": 3.1108222216131877e-07
+    },
+    {
+      "feature": "rival_COW_count",
+      "importance": 1.6111887066446805e-07
+    },
+    {
+      "feature": "own_WHEAT_ripe",
+      "importance": 1.227220852401207e-07
+    },
+    {
+      "feature": "shops_YARN_STORE",
+      "importance": 1.0759592448892957e-07
+    },
+    {
+      "feature": "public_layout_similarity",
+      "importance": 4.297908816028823e-08
+    },
+    {
+      "feature": "shops_BAKERY",
+      "importance": 2.068938562928096e-08
+    },
+    {
+      "feature": "WOOL_own_shed",
+      "importance": 1.7753834305192275e-08
+    },
+    {
+      "feature": "own_workers",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_land",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_weeds",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_WHEAT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_CARROT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_TOMATO_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_TOMATO_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_STRAWBERRY_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_STRAWBERRY_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_MELON_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_MELON_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_GOOSE_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_GOOSE_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_COW_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_SHEEP_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "own_SHEEP_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_workers",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_WHEAT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_CARROT_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_TOMATO_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_TOMATO_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_STRAWBERRY_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_STRAWBERRY_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_MELON_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_MELON_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_GOOSE_count",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_GOOSE_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "rival_SHEEP_ripe",
+      "importance": 0.0
+    },
+    {
+      "feature": "WHEAT_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "CARROT_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "TOMATO_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "TOMATO_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "STRAWBERRY_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_price",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_inventory",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_change48",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "MELON_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "EGG_change48",
+      "importance": 0.0
+    },
+    {
+      "feature": "EGG_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "EGG_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "MILK_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "WOOL_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "FERTILIZER_own_shed",
+      "importance": 0.0
+    },
+    {
+      "feature": "FERTILIZER_own_carried",
+      "importance": 0.0
+    },
+    {
+      "feature": "shops_SMOOTHIE_SHOP",
+      "importance": 0.0
+    },
+    {
+      "feature": "plan_workers",
+      "importance": 0.0
+    },
+    {
+      "feature": "plan_TOMATO",
+      "importance": 0.0
+    },
+    {
+      "feature": "plan_STRAWBERRY",
+      "importance": 0.0
+    },
+    {
+      "feature": "plan_MELON",
+      "importance": 0.0
+    },
+    {
+      "feature": "plan_EGG",
+      "importance": 0.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "specified_before_selector_training",
+  "opponents": ["ml_critic", "router", "prvsiyan"],
+  "train_seeds": [82001,82002,82003,82004,82005,82006,82007,82008,82009,82010,82011,82012,82013,82014,82015,82016,82017,82018,82019,82020,82021,82022,82023,82024],
+  "selection_seeds": [83001,83002,83003,83004,83005,83006,83007,83008],
+  "holdout_seeds": [84001,84002,84003,84004,84005,84006,84007,84008],
+  "holdout_opponents": ["ml_critic", "router", "prvsiyan", "kaito", "nagata"],
+  "holdout_candidates": ["frontier", "auction_joint_risk", "ml_critic"],
+  "official_seeds": [85001,85002,85003,85004],
+  "gold_holdout_ranks": [3,8,21,27],
+  "critic": "64 grouped-bootstrap trees, max_depth=4, min_samples_leaf=8; paired win/tie utility plus bounded margin term",
+  "selection": "Quantiles 0.1,0.25,0.5; thresholds 0,0.001,0.005,0.01,0.025,0.05,0.1,0.2; maximize score delta with no opponent regression, then utility, then fewer interventions. Include always-native.",
+  "release": "Must improve paired outcomes against current agent and have no negative outcome delta in any holdout family. Confirm official engine, timings and gold fixed-stream stress test; never claim a live elite win from fixed replays.",
+  "caveat": "C++ results are exploratory; two new elite replay traces exposed small simulator discrepancies. Official-engine confirmation is mandatory."
+}

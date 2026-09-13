@@ -1,0 +1,26 @@
+{
+  "auction696": {
+    "sha256": "fa918ad3e700d531e13058990ef9ae11cab96b4cc352739e44126f413f9b2e86",
+    "start": 696,
+    "risk": 0.0,
+    "reserve": 1.2
+  },
+  "auction_risk": {
+    "sha256": "1d681efec40d576045a06f8f8b3e9e07f207e1ec75056b20492de33790f52420",
+    "start": 696,
+    "risk": 1.0,
+    "reserve": 1.2
+  },
+  "auction704": {
+    "sha256": "59535dd89ad5632a1207eb636ef20bd6c0349833f7e501f518d3874bf22dd523",
+    "start": 704,
+    "risk": 0.5,
+    "reserve": 1.2
+  },
+  "auction_guard": {
+    "sha256": "9d6a3c5710757131d6c7115d94d7cd2fc3ab59b356dd81ee6e4beac0a5971f36",
+    "start": 696,
+    "risk": 0.5,
+    "reserve": 2.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "auction_joint": {
+    "sha256": "83eeea97a9e9d2b115fdbf3247004e6eb9fd8f3cf1ad4c296491242b1f1ef4ce",
+    "start": 696,
+    "risk": 0.0,
+    "reserve": 1.0
+  },
+  "auction_joint_risk": {
+    "sha256": "8906f6dbbf065b62e6d0af4a74f504f3828549c57f57c626e86552b0c7bc3178",
+    "start": 696,
+    "risk": 0.5,
+    "reserve": 1.2
+  },
+  "auction_joint_late": {
+    "sha256": "86490a1fcb4d851ddaddad61740ca1b4503a71f2cc1d8303435a3ed61f235017",
+    "start": 700,
+    "risk": 0.5,
+    "reserve": 1.2
+  },
+  "auction_joint_safe": {
+    "sha256": "febe1f0017b10e99906c2c2ab8c0b8582505003f0bfa7d68db69d26226103496",
+    "start": 696,
+    "risk": 1.0,
+    "reserve": 2.0
+  }
+}

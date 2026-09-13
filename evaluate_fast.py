@@ -13,7 +13,7 @@ import accelerator
 ROOT = Path(__file__).resolve().parent
 
 
-def game(job, capture_ml=False):
+def game(job, capture_ml=False, capture_frontier=False):
     candidate, opponent, seed, seat = job
     kagsim = accelerator.load()
     with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
@@ -36,7 +36,7 @@ def game(job, capture_ml=False):
             if index == 0:
                 calls.append((time.perf_counter() - start) * 1000)
             json.dumps(actions[player], allow_nan=False)
-        if capture_ml and env.step_count < 336:
+        if (capture_ml and env.step_count < 336) or (capture_frontier and env.step_count<696):
             prefix.update(json.dumps(actions, sort_keys=True, separators=(',', ':')).encode())
         env.step(*actions)
     rewards = [env.reward(0), env.reward(1)]
@@ -58,6 +58,10 @@ def game(job, capture_ml=False):
         state = policies[0].__globals__['_ML_PLAYERS'][seat]
         result['decision_features'] = state['features']
         result['prefix_sha256'] = prefix.hexdigest()
+    if capture_frontier:
+        state=policies[0].__globals__['_FRONTIER_STATE'][seat]
+        result['decision_features']=state['features']
+        result['prefix_sha256']=prefix.hexdigest()
     return result
 
 

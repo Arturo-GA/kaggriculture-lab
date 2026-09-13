@@ -1,0 +1,14 @@
+{
+  "portfolio105": {
+    "sha256": "24914abf2b4043b8b8a606ea7448c2fac70b715c7cb49b12f70216c88853b5f3",
+    "threshold": 1.05
+  },
+  "portfolio125": {
+    "sha256": "d263c00b42cb68a25f1ebe3948a7f472ee08f057304a43b495c1060099f218ee",
+    "threshold": 1.25
+  },
+  "portfolio150": {
+    "sha256": "a73328f9cb67a7816de65bf132e06aa05a98be1bac0b78db20659126ce0b42fd",
+    "threshold": 1.5
+  }
+}

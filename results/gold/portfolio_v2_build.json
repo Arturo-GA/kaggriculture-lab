@@ -1,0 +1,10 @@
+{
+  "portfolio_v2": {
+    "sha256": "344205760982476eb44b9c136301f924c38bf0990b4a4a53926b3ad0c88eea6f",
+    "threshold": 1.05
+  },
+  "portfolio_v2safe": {
+    "sha256": "d7124e04d3b96cf1e92581b90e6d65f10e157193051c91389df493cdbf0afc26",
+    "threshold": 1.3
+  }
+}

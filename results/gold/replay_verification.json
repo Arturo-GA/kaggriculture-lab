@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "backend": "official",
+  "games": 22,
+  "cpp_mismatches": 2,
+  "rows": [
+    {
+      "episode": 108643307,
+      "cpp_rewards": [
+        111169.0,
+        114627.0
+      ],
+      "recorded_rewards": [
+        111169.0,
+        114627.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108638287,
+      "cpp_rewards": [
+        101523.0,
+        107300.0
+      ],
+      "recorded_rewards": [
+        101523.0,
+        107300.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108641844,
+      "cpp_rewards": [
+        120058.0,
+        128815.0
+      ],
+      "recorded_rewards": [
+        120058.0,
+        128815.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108645272,
+      "cpp_rewards": [
+        89168.0,
+        89522.0
+      ],
+      "recorded_rewards": [
+        89158.0,
+        89532.0
+      ],
+      "cpp_exact": false,
+      "official_rewards": [
+        89158.0,
+        89532.0
+      ],
+      "official_exact": true
+    },
+    {
+      "episode": 108643312,
+      "cpp_rewards": [
+        116655.0,
+        100873.0
+      ],
+      "recorded_rewards": [
+        116655.0,
+        100873.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108643893,
+      "cpp_rewards": [
+        89078.0,
+        76208.0
+      ],
+      "recorded_rewards": [
+        89078.0,
+        76208.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108646754,
+      "cpp_rewards": [
+        117622.0,
+        132271.0
+      ],
+      "recorded_rewards": [
+        117622.0,
+        132271.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108645279,
+      "cpp_rewards": [
+        99437.0,
+        96560.0
+      ],
+      "recorded_rewards": [
+        99437.0,
+        96560.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108647122,
+      "cpp_rewards": [
+        114547.0,
+        121239.0
+      ],
+      "recorded_rewards": [
+        114547.0,
+        121239.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108648360,
+      "cpp_rewards": [
+        99283.0,
+        88364.0
+      ],
+      "recorded_rewards": [
+        99283.0,
+        88364.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108648359,
+      "cpp_rewards": [
+        110255.0,
+        106270.0
+      ],
+      "recorded_rewards": [
+        110255.0,
+        106270.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108648365,
+      "cpp_rewards": [
+        147888.0,
+        134942.0
+      ],
+      "recorded_rewards": [
+        147888.0,
+        134942.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108649002,
+      "cpp_rewards": [
+        101963.0,
+        103363.0
+      ],
+      "recorded_rewards": [
+        101963.0,
+        103363.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108648977,
+      "cpp_rewards": [
+        121083.0,
+        119702.0
+      ],
+      "recorded_rewards": [
+        121083.0,
+        119702.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108648806,
+      "cpp_rewards": [
+        100226.0,
+        95504.0
+      ],
+      "recorded_rewards": [
+        100226.0,
+        95504.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108649127,
+      "cpp_rewards": [
+        116867.0,
+        131466.0
+      ],
+      "recorded_rewards": [
+        116867.0,
+        131466.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108649985,
+      "cpp_rewards": [
+        90163.0,
+        82932.0
+      ],
+      "recorded_rewards": [
+        90163.0,
+        82932.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108649501,
+      "cpp_rewards": [
+        93213.0,
+        95091.0
+      ],
+      "recorded_rewards": [
+        93213.0,
+        95091.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108650302,
+      "cpp_rewards": [
+        117392.0,
+        117979.0
+      ],
+      "recorded_rewards": [
+        117395.0,
+        117976.0
+      ],
+      "cpp_exact": false,
+      "official_rewards": [
+        117395.0,
+        117976.0
+      ],
+      "official_exact": true
+    },
+    {
+      "episode": 108651031,
+      "cpp_rewards": [
+        73315.0,
+        73253.0
+      ],
+      "recorded_rewards": [
+        73315.0,
+        73253.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108652099,
+      "cpp_rewards": [
+        63137.0,
+        62734.0
+      ],
+      "recorded_rewards": [
+        63137.0,
+        62734.0
+      ],
+      "cpp_exact": true
+    },
+    {
+      "episode": 108652199,
+      "cpp_rewards": [
+        103356.0,
+        79844.0
+      ],
+      "recorded_rewards": [
+        103356.0,
+        79844.0
+      ],
+      "cpp_exact": true
+    }
+  ]
+}

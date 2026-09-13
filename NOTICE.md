@@ -58,3 +58,16 @@ Methodological sources: Kaggriculture discussions 738079 (high-level Options
 and constant-policy ablations) and 737027 (public inventory and uncertainty),
 and Q2RL (arXiv:2605.05172, value-based gating). This is an independently trained
 option critic, not a reproduction of Q2RL, RP1 or Deep SPI.
+
+Modified September 13, 2026 by Arturo-GA / Kaggriculture Lab:
+
+- `terminal_auction.py`, `frontier_gate.py`, `build_frontier.py`: original joint
+  final-day workforce, material, route and sales planner with a learned gate.
+  The preceding production policy remains the attributed V37 / ml_critic lineage.
+- `audit_gold.py`, `analyze_gold.py`, `evaluate_gold.py`: public-replay behavioral
+  analysis and explicitly limited fixed-stream stress tests. No private elite
+  source code was accessed, reconstructed or embedded in the runtime.
+- `crop_portfolio.py`: inactive late-crop experiment, excluded from Frontier.
+- Frontier data collection, training, tests, receipts and private Kaggle tooling
+  are new project code. Algorithmic inspiration is distinguished from reproduced
+  methods in `GOLD_RESEARCH.es.md`; no third-party trained weights are used.
