@@ -100,8 +100,14 @@ ventaja imposible de reproducir ni garantizan una medalla.
     if cloud.exists():
         c=json.loads(cloud.read_text());assert c['verified']
         text+='\nKaggle completó y verificó el notebook. El archivo descargado contiene exactamente '
-        text+='la política local congelada. Resultado de la nube: '+json.dumps(c['per_opponent'])+'. '
-        text+=f"Máximo por llamada: {c['max_call_ms']:.1f} ms.\n"
+        text+='la política local congelada. Ganó 8/8 frente a matched6 y 4/8 frente a ml_critic '
+        text+='(con cuatro derrotas). El control ml_critic obtuvo 8/8 frente a matched6 y ocho '
+        text+='empates consigo mismo. El resultado agregado de la nube es igual al del control '
+        text+='para ambos rivales: este pequeño panel no replica la ganancia local. '
+        text+=f"Máximo por llamada: {c['max_call_ms']:.1f} ms. No demuestra superioridad general.\n"
+        text+='\nArchivo verificado: [submission.tar.gz](results/gold/kaggle/submission.tar.gz). '
+        text+='Notebook [COMPLETE, versión 1](https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner). '
+        text+='No se envió una submission al leaderboard.\n'
     Path('FRONTIER_RESULTS.es.md').write_text(text,encoding='utf-8')
     print('FRONTIER_RESULTS.es.md written')
 

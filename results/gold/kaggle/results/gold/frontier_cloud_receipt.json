@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "candidate": "frontier",
+  "games": 32,
+  "per_opponent": {
+    "ml_critic": {
+      "games": 8,
+      "wins": 4,
+      "ties": 0,
+      "score_delta": 0.0
+    },
+    "matched6": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "score_delta": 0.0
+    }
+  },
+  "errors": [],
+  "max_call_ms": 299.6450589999995,
+  "source_sha256": "a485d1c0a44ae989417b39178defa5096837b03b850a7bc8db8b6458599dad1c",
+  "leaderboard_submitted": false,
+  "archive_sha256": "784bad364ce3e9e88701fba4a8ce2c16680893a262337e2d4a419a9be43c68b3"
+}

@@ -18,7 +18,11 @@ gold. La implementación y la validación local están terminadas. Ver
 - GitHub privado: `Arturo-GA/kaggriculture-lab`.
 - Notebook privado nuevo, versión 1, enviado:
   https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner .
-  Debe completar 32 partidas en la nube y pasar `verify_frontier_cloud.py`.
+  **COMPLETE**, 32 partidas de nube terminadas y `verify_frontier_cloud.py` aprobado.
+  Archivo: `results/gold/kaggle/submission.tar.gz`, SHA-256
+  `784bad364ce3e9e88701fba4a8ce2c16680893a262337e2d4a419a9be43c68b3`.
+  Frontier gana 8/8 frente a matched6 y 4/8 frente a ml_critic; no mejora el resultado
+  agregado del control en la nube. Máximo 299,6 ms. Las 19 pruebas de código pasaron.
 - Los dos kernels anteriores y los archivos de la raíz se conservan. No enviar al
   leaderboard automáticamente: Arturo ha hecho las submissions manualmente.
 - No crear automatizaciones ni reanudar experimentos posteriores sin petición.

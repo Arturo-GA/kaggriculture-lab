@@ -78,3 +78,7 @@ en la nube compara Frontier y ml_critic frente a ml_critic y matched6 en otras
 ni llamadas de 1.000 ms o más. No envía automáticamente una submission al leaderboard.
 El repositorio y el notebook privados reducen la copia directa; no prueban una
 ventaja imposible de reproducir ni garantizan una medalla.
+
+Kaggle completó y verificó el notebook. El archivo descargado contiene exactamente la política local congelada. Ganó 8/8 frente a matched6 y 4/8 frente a ml_critic (con cuatro derrotas). El control ml_critic obtuvo 8/8 frente a matched6 y ocho empates consigo mismo. El resultado agregado de la nube es igual al del control para ambos rivales: este pequeño panel no replica la ganancia local. Máximo por llamada: 299.6 ms. No demuestra superioridad general.
+
+Archivo verificado: [submission.tar.gz](results/gold/kaggle/submission.tar.gz). Notebook [COMPLETE, versión 1](https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner). No se envió una submission al leaderboard.

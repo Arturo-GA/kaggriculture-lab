@@ -65,6 +65,13 @@ replays del top se usan sólo como estrés; no equivalen a sus agentes privados.
 Dos replays nuevos exponen pequeñas discrepancias del simulador C++; se exige motor
 oficial. El informe conserva también el pico de latencia y su diagnóstico en serie.
 
+**Kaggle COMPLETE, versión 1:** archivo
+[`submission.tar.gz` verificado](results/gold/kaggle/submission.tar.gz).
+En la nube ganó 8/8 contra matched6 y 4/8 contra ml_critic, con un máximo de 299,6 ms
+por llamada. El resultado agregado de esas partidas es igual al del control; no
+replica la ganancia local ni demuestra una ventaja general. Se conserva como
+candidato experimental, sin envío automático al leaderboard. Las 19 pruebas pasan.
+
 Para regenerar el candidato congelado, ejecutar `build_frontier.py --model
 results/gold/frontier_model.json`. Las variantes exploratorias conservan sus fuentes
 y recibos originales; los builders actuales regeneran la última familia del experimento.
