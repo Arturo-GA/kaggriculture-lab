@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-14T05:03:06.860453+00:00",
+  "scope": "Diagnostic comparison, no candidate tuning or promotion.",
+  "candidates": [
+    "matched6",
+    "ml_critic",
+    "frontier",
+    "frontier2_early"
+  ],
+  "opponents": [
+    "v41_review",
+    "matched6"
+  ],
+  "fast_seeds": [
+    91001,
+    91002,
+    91003,
+    91004,
+    91005,
+    91006,
+    91007,
+    91008
+  ],
+  "official_seeds": [
+    92001,
+    92002,
+    92003,
+    92004
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "measures": [
+    "wins/ties/losses",
+    "paired score versus matched6",
+    "cash and margin",
+    "runtime",
+    "observable failures"
+  ],
+  "live_selection": "Latest 8 completed public episodes per each of the four exact submissions. Preserve original audit files.",
+  "limitations": "Ratings are time-dependent and opponents differ. C++ is exploratory; official engine required. Replay actions are not reacting private policies."
+}

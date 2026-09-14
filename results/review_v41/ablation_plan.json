@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-14T05:12:31.123636+00:00",
+  "scope": "Post-hoc diagnostic ablation after observing V41 superiority; not fresh holdout, not a release candidate.",
+  "source_sha256": "d5e65dfab9a1dc86538efdbe6c9d1861293f31dd339d568c6a950d2cc44d21d3",
+  "changed": "Only _R42_OPENING: BUY 5/10, SELL 60 becomes BUY 13/30, SELL 30. All V41 guards and later policy remain.",
+  "candidates": [
+    "v41_review",
+    "v41_old_opening"
+  ],
+  "opponents": [
+    "frontier2_early"
+  ],
+  "seeds": [
+    92001,
+    92002,
+    92003,
+    92004
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "engine": "official 1.32.7"
+}

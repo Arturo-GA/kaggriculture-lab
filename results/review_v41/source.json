@@ -1,0 +1,22 @@
+{
+  "notebook_name": "kaggriculture-v41-review-candidate.ipynb",
+  "notebook_sha256": "d4a0416d1738b1c519187479ffa5d80711348c04421ce9a70b296b71e0e3eaca",
+  "source_sha256": "8951ff93742015cba535b125223cf2e541bb7b602080fc4584f30c2613d210f3",
+  "source_lines": 3174,
+  "imports": [
+    "__future__",
+    "base64",
+    "copy",
+    "itertools",
+    "json",
+    "math",
+    "time",
+    "zlib"
+  ],
+  "inherited_exec_strings_identical": true,
+  "notebook_cells_executed": false,
+  "attribution": "Ahmed Berat Ozer and upstream authors; Apache-2.0 notices retained verbatim.",
+  "reported_rating": 2797,
+  "rating_provenance": "User report, not independently linked to a submission.",
+  "use": "Evaluation only; ignored source, no competition upload."
+}

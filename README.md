@@ -12,6 +12,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 - [Análisis de ocho equipos del top 27 y planificador propio](GOLD_RESEARCH.es.md)
 - [Frontier: resultados, ablaciones y límites](FRONTIER_RESULTS.es.md)
 - [Mejora de Frontier: entregas durante la ruta y validación nueva](FRONTIER2_RESULTS.es.md)
+- [Revisión del V41: apertura vulnerable, fallos reales y comparación oficial](V41_REVIEW.es.md)
 - [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
 - [Atribuciones y cambios](NOTICE.md)
 
@@ -66,7 +67,9 @@ No se envía una submission al leaderboard automáticamente.
 frente a Frontier; 7 victorias y 1 derrota frente a ml_critic. Mejora de resultado
 emparejado +2 para cada rival, con máximo de 267,7 ms por llamada. Archivo nuevo:
 [`results/frontier2/kaggle/submission.tar.gz`](results/frontier2/kaggle/submission.tar.gz).
-Todavía no se envió al leaderboard; los archivos de la versión 1 se conservan.
+Arturo la envió al leaderboard como `56216380`. La consulta del 14 de septiembre
+a las 05:01 UTC registra 2613,3; ver `V41_REVIEW.es.md` para el diagnóstico posterior.
+Los archivos de la versión 1 se conservan.
 
 **Nueva ronda del 13 de septiembre: Frontier.** Planificador propio del último día:
 contratación, fertilizante, cosecha, rutas y ventas, con selector entrenado. Conserva

@@ -1,0 +1,311 @@
+{
+  "panels": {
+    "fast": {
+      "matched6": {
+        "v41_review": {
+          "games": 16,
+          "wins": 0,
+          "ties": 0,
+          "losses": 16,
+          "mean_margin": -25396.25,
+          "max_call_ms": 316.68340001488104
+        },
+        "matched6": {
+          "games": 16,
+          "wins": 1,
+          "ties": 14,
+          "losses": 1,
+          "mean_margin": 0.0,
+          "max_call_ms": 1098.5681000165641
+        }
+      },
+      "ml_critic": {
+        "v41_review": {
+          "games": 16,
+          "wins": 0,
+          "ties": 0,
+          "losses": 16,
+          "mean_margin": -24706.5,
+          "max_call_ms": 941.023999999743
+        },
+        "matched6": {
+          "games": 16,
+          "wins": 16,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2190.875,
+          "max_call_ms": 1379.6954000135884
+        }
+      },
+      "frontier": {
+        "v41_review": {
+          "games": 16,
+          "wins": 0,
+          "ties": 0,
+          "losses": 16,
+          "mean_margin": -24664.375,
+          "max_call_ms": 176.43740004859865
+        },
+        "matched6": {
+          "games": 16,
+          "wins": 16,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2441.5,
+          "max_call_ms": 260.09130000602454
+        }
+      },
+      "frontier2_early": {
+        "v41_review": {
+          "games": 16,
+          "wins": 0,
+          "ties": 0,
+          "losses": 16,
+          "mean_margin": -24522.5,
+          "max_call_ms": 1272.8138000238687
+        },
+        "matched6": {
+          "games": 16,
+          "wins": 16,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2527.875,
+          "max_call_ms": 270.21960000274703
+        }
+      }
+    },
+    "official": {
+      "matched6": {
+        "v41_review": {
+          "games": 8,
+          "wins": 0,
+          "ties": 0,
+          "losses": 8,
+          "mean_margin": -24427.25,
+          "max_call_ms": 223.9440999692306
+        },
+        "matched6": {
+          "games": 8,
+          "wins": 0,
+          "ties": 8,
+          "losses": 0,
+          "mean_margin": 0.0,
+          "max_call_ms": 227.83839999465272
+        }
+      },
+      "ml_critic": {
+        "v41_review": {
+          "games": 8,
+          "wins": 0,
+          "ties": 0,
+          "losses": 8,
+          "mean_margin": -24155.375,
+          "max_call_ms": 210.1365000125952
+        },
+        "matched6": {
+          "games": 8,
+          "wins": 8,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2358.75,
+          "max_call_ms": 253.96790000377223
+        }
+      },
+      "frontier": {
+        "v41_review": {
+          "games": 8,
+          "wins": 0,
+          "ties": 0,
+          "losses": 8,
+          "mean_margin": -24069.125,
+          "max_call_ms": 82.56820001406595
+        },
+        "matched6": {
+          "games": 8,
+          "wins": 8,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2506.25,
+          "max_call_ms": 242.47510003624484
+        }
+      },
+      "frontier2_early": {
+        "v41_review": {
+          "games": 8,
+          "wins": 0,
+          "ties": 0,
+          "losses": 8,
+          "mean_margin": -23685.125,
+          "max_call_ms": 190.33869996201247
+        },
+        "matched6": {
+          "games": 8,
+          "wins": 8,
+          "ties": 0,
+          "losses": 0,
+          "mean_margin": 2679.5,
+          "max_call_ms": 190.7740999595262
+        }
+      }
+    }
+  },
+  "ablation": {
+    "v41_review": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "mean_margin": 23685.125,
+      "max_call_ms": 185.45700004324317
+    },
+    "v41_old_opening": {
+      "games": 8,
+      "wins": 0,
+      "ties": 0,
+      "losses": 8,
+      "mean_margin": -2049.0,
+      "max_call_ms": 234.56569999689236
+    }
+  },
+  "live": {
+    "frontier2_early": {
+      "wins": 3,
+      "losses": 5,
+      "losses_with_cash_deficit_at_696": 5,
+      "field_counts": {
+        "harvested_FERTILIZER": 2936,
+        "harvested_WHEAT": 4557,
+        "harvested_WOOL": 1471,
+        "harvested_MILK": 1834,
+        "harvested_MELON": 576,
+        "harvested_STRAWBERRY": 1987,
+        "raw_thirst_deaths": 16,
+        "harvested_TOMATO": 160,
+        "harvested_CARROT": 789,
+        "harvested_COW": 0,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 468,
+        "discarded_MILK": 11,
+        "discarded_FERTILIZER": 7,
+        "discarded_WHEAT": 4,
+        "discarded_EGG": 2,
+        "pickup_shortfall_WHEAT": 1,
+        "feed_without_food": 1
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 40,
+        "harvested_FERTILIZER": 20,
+        "harvested_WHEAT": 204,
+        "harvested_CARROT": 358,
+        "harvested_WOOL": 48,
+        "harvested_EGG": 24,
+        "harvested_MILK": 108,
+        "discarded_MILK": 11,
+        "discarded_FERTILIZER": 7,
+        "discarded_WHEAT": 4,
+        "discarded_EGG": 2
+      }
+    },
+    "frontier": {
+      "wins": 2,
+      "losses": 6,
+      "losses_with_cash_deficit_at_696": 6,
+      "field_counts": {
+        "harvested_FERTILIZER": 2572,
+        "harvested_WHEAT": 4507,
+        "harvested_WOOL": 1236,
+        "harvested_COW": 0,
+        "harvested_MILK": 1565,
+        "harvested_MELON": 564,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 546,
+        "harvested_STRAWBERRY": 1765,
+        "raw_thirst_deaths": 16,
+        "harvested_CARROT": 785,
+        "atomic_plant_rejections": 38,
+        "animal_escapes": 4,
+        "pickup_shortfall_COW": 3,
+        "pickup_shortfall_SHEEP": 6,
+        "pickup_shortfall_FERTILIZER": 23,
+        "harvested_TOMATO": 74
+      },
+      "last_day_counts": {
+        "harvested_WOOL": 68,
+        "harvested_FERTILIZER": 31,
+        "harvested_EGG": 28,
+        "harvested_WHEAT": 184,
+        "harvested_CARROT": 340,
+        "harvested_MILK": 106,
+        "harvested_TOMATO": 20
+      }
+    },
+    "ml_critic": {
+      "wins": 4,
+      "losses": 4,
+      "losses_with_cash_deficit_at_696": 4,
+      "field_counts": {
+        "harvested_FERTILIZER": 2939,
+        "harvested_WHEAT": 4580,
+        "harvested_WOOL": 1476,
+        "harvested_COW": 0,
+        "harvested_MILK": 1873,
+        "harvested_MELON": 576,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 468,
+        "harvested_STRAWBERRY": 1990,
+        "raw_thirst_deaths": 16,
+        "harvested_CARROT": 734,
+        "pickup_shortfall_WHEAT": 1,
+        "feed_without_food": 1,
+        "pickup_shortfall_SHEEP": 1,
+        "atomic_plant_rejections": 3,
+        "pickup_shortfall_FERTILIZER": 1,
+        "harvested_TOMATO": 80
+      },
+      "last_day_counts": {
+        "harvested_MILK": 129,
+        "harvested_EGG": 24,
+        "harvested_WHEAT": 153,
+        "harvested_CARROT": 300,
+        "harvested_WOOL": 80,
+        "harvested_FERTILIZER": 40,
+        "harvested_TOMATO": 20
+      }
+    },
+    "matched6": {
+      "wins": 3,
+      "losses": 5,
+      "losses_with_cash_deficit_at_696": 5,
+      "field_counts": {
+        "harvested_FERTILIZER": 2924,
+        "harvested_WHEAT": 4497,
+        "harvested_WOOL": 1696,
+        "harvested_COW": 0,
+        "harvested_MILK": 1734,
+        "harvested_MELON": 576,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 312,
+        "harvested_STRAWBERRY": 1988,
+        "raw_thirst_deaths": 15,
+        "harvested_CARROT": 703,
+        "pickup_shortfall_WHEAT": 11,
+        "feed_without_food": 10,
+        "harvested_TOMATO": 160,
+        "pickup_shortfall_SHEEP": 2,
+        "pickup_shortfall_FERTILIZER": 2
+      },
+      "last_day_counts": {
+        "harvested_MILK": 111,
+        "harvested_EGG": 16,
+        "harvested_WHEAT": 153,
+        "harvested_CARROT": 295,
+        "harvested_WOOL": 104,
+        "harvested_FERTILIZER": 37,
+        "harvested_TOMATO": 40
+      }
+    }
+  },
+  "action_identity_games": 32,
+  "validations": "Exact source hashes, full official status, ordered replay identity, 2 unchanged instrumented rewards, 8 reversed-seat controls.",
+  "caveats": "Descriptive small samples. No conversion of game currency to ladder rating. Ablation is post-hoc. No new submission produced."
+}

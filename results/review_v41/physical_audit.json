@@ -1,0 +1,1433 @@
+{
+  "method": "Audit recorded field effects, reconstructing dictionary insertion order.\n\nKaggle replay JSON sorts object keys. DROP at a full shed and tied sale sorting\ndepend on insertion order. Recover carried-item order from actual unit actions;\nnever change amounts, use future information in a policy, or replace its actions.\n",
+  "complete": true,
+  "rows": [
+    {
+      "candidate": "frontier2_early",
+      "episode": 108787372,
+      "opponent": "Sai Reddy Pothireddy",
+      "margin": 845.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 366,
+        "harvested_WHEAT": 523,
+        "harvested_WOOL": 257,
+        "harvested_MILK": 182,
+        "harvested_MELON": 72,
+        "harvested_STRAWBERRY": 244,
+        "raw_thirst_deaths": 2,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 94
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_FERTILIZER": 0,
+        "harvested_WHEAT": 25,
+        "harvested_CARROT": 44,
+        "harvested_WOOL": 4
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108783994,
+      "opponent": "Pardheev Krishna",
+      "margin": -551.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 367,
+        "harvested_WHEAT": 576,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 242,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 100
+      },
+      "last_day_counts": {
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 3,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 23,
+        "harvested_CARROT": 46,
+        "harvested_MILK": 15
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108777613,
+      "opponent": "fog flower",
+      "margin": -4352.0,
+      "original_sorted_json_mismatches": 1,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 370,
+        "harvested_WHEAT": 582,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 242,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 107,
+        "discarded_MILK": 2,
+        "discarded_FERTILIZER": 3
+      },
+      "last_day_counts": {
+        "harvested_CARROT": 44,
+        "harvested_FERTILIZER": 6,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 28,
+        "harvested_MILK": 15,
+        "harvested_WOOL": 8,
+        "discarded_MILK": 2,
+        "discarded_FERTILIZER": 3
+      },
+      "events": [
+        {
+          "step": 718,
+          "actor": 8,
+          "event": "drop_overflow",
+          "item": "MILK",
+          "units": 2
+        },
+        {
+          "step": 718,
+          "actor": 8,
+          "event": "drop_overflow",
+          "item": "FERTILIZER",
+          "units": 3
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108775878,
+      "opponent": "varshitha kolupuri",
+      "margin": -858.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 366,
+        "harvested_WHEAT": 580,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 95
+      },
+      "last_day_counts": {
+        "harvested_FERTILIZER": 2,
+        "harvested_WOOL": 8,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 26,
+        "harvested_CARROT": 45,
+        "harvested_MILK": 18
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108774638,
+      "opponent": "Jane Street Farmers",
+      "margin": -2266.0,
+      "original_sorted_json_mismatches": 1,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 557,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 94,
+        "discarded_WHEAT": 4,
+        "discarded_EGG": 2,
+        "discarded_MILK": 9,
+        "discarded_FERTILIZER": 4
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_FERTILIZER": 5,
+        "harvested_EGG": 4,
+        "harvested_CARROT": 44,
+        "harvested_WHEAT": 25,
+        "harvested_WOOL": 8,
+        "harvested_MILK": 18,
+        "discarded_WHEAT": 4,
+        "discarded_EGG": 2,
+        "discarded_MILK": 9,
+        "discarded_FERTILIZER": 4
+      },
+      "events": [
+        {
+          "step": 718,
+          "actor": 8,
+          "event": "drop_overflow",
+          "item": "WHEAT",
+          "units": 1
+        },
+        {
+          "step": 718,
+          "actor": 8,
+          "event": "drop_overflow",
+          "item": "EGG",
+          "units": 2
+        },
+        {
+          "step": 718,
+          "actor": 8,
+          "event": "drop_overflow",
+          "item": "MILK",
+          "units": 9
+        },
+        {
+          "step": 718,
+          "actor": 9,
+          "event": "drop_overflow",
+          "item": "WHEAT",
+          "units": 3
+        },
+        {
+          "step": 718,
+          "actor": 9,
+          "event": "drop_overflow",
+          "item": "FERTILIZER",
+          "units": 4
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108773595,
+      "opponent": "chungkuangwen",
+      "margin": 2164.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 366,
+        "harvested_WHEAT": 572,
+        "harvested_WOOL": 252,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "pickup_shortfall_WHEAT": 1,
+        "harvested_STRAWBERRY": 249,
+        "feed_without_food": 1,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 95
+      },
+      "last_day_counts": {
+        "harvested_MILK": 9,
+        "harvested_FERTILIZER": 0,
+        "harvested_WHEAT": 26,
+        "harvested_CARROT": 45
+      },
+      "events": [
+        {
+          "step": 363,
+          "actor": 9,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 1
+        },
+        {
+          "step": 369,
+          "actor": 9,
+          "event": "feed_without_food",
+          "xy": [
+            7,
+            4
+          ]
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108773482,
+      "opponent": "Jun_value",
+      "margin": -654.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 365,
+        "harvested_WHEAT": 583,
+        "harvested_WOOL": 157,
+        "harvested_COW": 0,
+        "harvested_MILK": 242,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 102
+      },
+      "last_day_counts": {
+        "harvested_CARROT": 45,
+        "harvested_FERTILIZER": 1,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 25,
+        "harvested_MILK": 15,
+        "harvested_WOOL": 4
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier2_early",
+      "episode": 108772563,
+      "opponent": "Chahat Mehra",
+      "margin": 2090.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 367,
+        "harvested_WHEAT": 584,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 102
+      },
+      "last_day_counts": {
+        "harvested_CARROT": 45,
+        "harvested_EGG": 4,
+        "harvested_FERTILIZER": 3,
+        "harvested_WHEAT": 26,
+        "harvested_MILK": 18,
+        "harvested_WOOL": 8
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108789367,
+      "opponent": "Mohit Babel",
+      "margin": 2523.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 365,
+        "harvested_WHEAT": 577,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 236,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 100
+      },
+      "last_day_counts": {
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 1,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 24,
+        "harvested_CARROT": 46,
+        "harvested_MILK": 9
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108786307,
+      "opponent": "WUZB",
+      "margin": -1434.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 576,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 102
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 40,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108785608,
+      "opponent": "Abhinav0370",
+      "margin": 2349.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 577,
+        "harvested_WOOL": 139,
+        "harvested_COW": 0,
+        "harvested_MILK": 267,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 97
+      },
+      "last_day_counts": {
+        "harvested_MILK": 19,
+        "harvested_FERTILIZER": 5,
+        "harvested_WOOL": 8,
+        "harvested_WHEAT": 21,
+        "harvested_CARROT": 45,
+        "harvested_EGG": 4
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108780491,
+      "opponent": "Alan",
+      "margin": -36840.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "atomic_plant_rejections": 9,
+        "harvested_FERTILIZER": 267,
+        "animal_escapes": 1,
+        "harvested_WHEAT": 523,
+        "pickup_shortfall_COW": 1,
+        "harvested_WOOL": 138,
+        "harvested_COW": 0,
+        "harvested_MILK": 143,
+        "pickup_shortfall_SHEEP": 1,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 192,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 6,
+        "harvested_TOMATO": 74,
+        "harvested_CARROT": 84
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 34,
+        "harvested_MILK": 15,
+        "harvested_WOOL": 8
+      },
+      "events": [
+        {
+          "step": 66,
+          "actor": 0,
+          "event": "pickup_shortfall",
+          "item": "COW",
+          "units": 1
+        },
+        {
+          "step": 222,
+          "actor": 3,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        },
+        {
+          "step": 578,
+          "actor": 12,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108776841,
+      "opponent": "Hajime Tamura",
+      "margin": -27873.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "atomic_plant_rejections": 18,
+        "harvested_FERTILIZER": 205,
+        "animal_escapes": 2,
+        "harvested_WHEAT": 553,
+        "pickup_shortfall_COW": 1,
+        "harvested_WOOL": 87,
+        "harvested_COW": 0,
+        "pickup_shortfall_SHEEP": 3,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_MILK": 107,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 144,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 10,
+        "harvested_CARROT": 99
+      },
+      "last_day_counts": {
+        "harvested_MILK": 15,
+        "harvested_FERTILIZER": 4,
+        "harvested_EGG": 4,
+        "harvested_CARROT": 44,
+        "harvested_WHEAT": 25
+      },
+      "events": [
+        {
+          "step": 66,
+          "actor": 0,
+          "event": "pickup_shortfall",
+          "item": "COW",
+          "units": 1
+        },
+        {
+          "step": 197,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 198,
+          "actor": 6,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 222,
+          "actor": 3,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 459,
+          "actor": 2,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 2
+        },
+        {
+          "step": 482,
+          "actor": 0,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        },
+        {
+          "step": 482,
+          "actor": 6,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        },
+        {
+          "step": 578,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108770880,
+      "opponent": "OBSTACLE DEVELOPER",
+      "margin": -955.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 371,
+        "harvested_WHEAT": 584,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 242,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 104
+      },
+      "last_day_counts": {
+        "harvested_FERTILIZER": 7,
+        "harvested_CARROT": 42,
+        "harvested_MILK": 15,
+        "harvested_WHEAT": 27,
+        "harvested_WOOL": 8,
+        "harvested_EGG": 4
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108765614,
+      "opponent": "JianYuan Deng",
+      "margin": -8568.0,
+      "original_sorted_json_mismatches": 1,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "atomic_plant_rejections": 2,
+        "harvested_FERTILIZER": 351,
+        "harvested_WHEAT": 554,
+        "harvested_WOOL": 251,
+        "harvested_MILK": 188,
+        "harvested_MELON": 60,
+        "pickup_shortfall_SHEEP": 1,
+        "harvested_STRAWBERRY": 247,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 1,
+        "harvested_CARROT": 98
+      },
+      "last_day_counts": {
+        "harvested_WOOL": 20,
+        "harvested_FERTILIZER": 1,
+        "harvested_WHEAT": 22,
+        "harvested_CARROT": 44,
+        "harvested_MILK": 6
+      },
+      "events": [
+        {
+          "step": 254,
+          "actor": 11,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "frontier",
+      "episode": 108761020,
+      "opponent": "SC_FARM",
+      "margin": -24254.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "atomic_plant_rejections": 9,
+        "harvested_FERTILIZER": 275,
+        "animal_escapes": 1,
+        "harvested_WHEAT": 563,
+        "pickup_shortfall_COW": 1,
+        "harvested_WOOL": 138,
+        "harvested_COW": 0,
+        "harvested_MILK": 137,
+        "pickup_shortfall_SHEEP": 1,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 186,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 6,
+        "harvested_CARROT": 101
+      },
+      "last_day_counts": {
+        "harvested_FERTILIZER": 8,
+        "harvested_WOOL": 8,
+        "harvested_CARROT": 45,
+        "harvested_WHEAT": 27,
+        "harvested_EGG": 4,
+        "harvested_MILK": 9
+      },
+      "events": [
+        {
+          "step": 66,
+          "actor": 0,
+          "event": "pickup_shortfall",
+          "item": "COW",
+          "units": 1
+        },
+        {
+          "step": 222,
+          "actor": 3,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        },
+        {
+          "step": 578,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 3
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108706005,
+      "opponent": "Alperen S\u00f6ylen",
+      "margin": -4831.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 579,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 93
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 21,
+        "harvested_CARROT": 36,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108705215,
+      "opponent": "Chunlai Li",
+      "margin": 2348.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 373,
+        "harvested_WHEAT": 592,
+        "harvested_WOOL": 282,
+        "pickup_shortfall_WHEAT": 1,
+        "feed_without_food": 1,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 1,
+        "harvested_CARROT": 78
+      },
+      "last_day_counts": {
+        "harvested_MILK": 12,
+        "harvested_WOOL": 12,
+        "harvested_WHEAT": 16,
+        "harvested_CARROT": 40,
+        "harvested_FERTILIZER": 8
+      },
+      "events": [
+        {
+          "step": 180,
+          "actor": 7,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 1
+        },
+        {
+          "step": 182,
+          "actor": 7,
+          "event": "feed_without_food",
+          "xy": [
+            6,
+            4
+          ]
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108701049,
+      "opponent": "Subin An",
+      "margin": 544.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 576,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 97
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 38,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108700354,
+      "opponent": "nao.kwmr",
+      "margin": -2063.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 357,
+        "harvested_WHEAT": 523,
+        "harvested_WOOL": 250,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "pickup_shortfall_SHEEP": 1,
+        "atomic_plant_rejections": 3,
+        "harvested_STRAWBERRY": 247,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 1,
+        "harvested_CARROT": 95
+      },
+      "last_day_counts": {
+        "harvested_MILK": 9,
+        "harvested_WOOL": 20,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 38,
+        "harvested_FERTILIZER": 7
+      },
+      "events": [
+        {
+          "step": 253,
+          "actor": 6,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108700016,
+      "opponent": "DASH\u6751",
+      "margin": 308.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 594,
+        "harvested_WOOL": 139,
+        "harvested_COW": 0,
+        "raw_thirst_deaths": 3,
+        "harvested_MILK": 266,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "harvested_CARROT": 90
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 21,
+        "harvested_CARROT": 36,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108695778,
+      "opponent": "r13721",
+      "margin": -239.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 364,
+        "harvested_WHEAT": 550,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 85
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 34,
+        "harvested_WOOL": 8
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108694690,
+      "opponent": "VanKoha",
+      "margin": 1612.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 589,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 101
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 40,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "ml_critic",
+      "episode": 108694494,
+      "opponent": "Sergey Kutepov",
+      "margin": -1899.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 577,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 95
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 38,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108665368,
+      "opponent": "Ahmed Alhassan",
+      "margin": -8361.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 561,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 94
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 38,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108660425,
+      "opponent": "yesterdays_rebel",
+      "margin": 1675.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 373,
+        "harvested_WHEAT": 580,
+        "harvested_WOOL": 282,
+        "pickup_shortfall_WHEAT": 1,
+        "feed_without_food": 1,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 1,
+        "harvested_CARROT": 78
+      },
+      "last_day_counts": {
+        "harvested_MILK": 12,
+        "harvested_WOOL": 12,
+        "harvested_WHEAT": 16,
+        "harvested_CARROT": 40,
+        "harvested_FERTILIZER": 8
+      },
+      "events": [
+        {
+          "step": 180,
+          "actor": 7,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 1
+        },
+        {
+          "step": 182,
+          "actor": 7,
+          "event": "feed_without_food",
+          "xy": [
+            6,
+            4
+          ]
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108657834,
+      "opponent": "MKGA",
+      "margin": 1890.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 373,
+        "harvested_WHEAT": 567,
+        "harvested_WOOL": 272,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "pickup_shortfall_WHEAT": 1,
+        "harvested_STRAWBERRY": 249,
+        "feed_without_food": 1,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 86
+      },
+      "last_day_counts": {
+        "harvested_MILK": 9,
+        "harvested_WOOL": 20,
+        "harvested_WHEAT": 21,
+        "harvested_CARROT": 36,
+        "harvested_FERTILIZER": 7
+      },
+      "events": [
+        {
+          "step": 363,
+          "actor": 9,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 1
+        },
+        {
+          "step": 369,
+          "actor": 9,
+          "event": "feed_without_food",
+          "xy": [
+            7,
+            4
+          ]
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108655240,
+      "opponent": "Raagav Anand",
+      "margin": -1035.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 597,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 89
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 21,
+        "harvested_CARROT": 36,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108650228,
+      "opponent": "Satoshi_SsSs",
+      "margin": -2147.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 364,
+        "harvested_WHEAT": 550,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 85
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 34,
+        "harvested_WOOL": 8
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108645179,
+      "opponent": "Satoshi_SsSs",
+      "margin": -217.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 357,
+        "harvested_WHEAT": 548,
+        "harvested_WOOL": 251,
+        "harvested_MILK": 191,
+        "harvested_MELON": 72,
+        "pickup_shortfall_SHEEP": 1,
+        "harvested_STRAWBERRY": 247,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 1,
+        "harvested_CARROT": 92
+      },
+      "last_day_counts": {
+        "harvested_MILK": 9,
+        "harvested_WOOL": 20,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 39,
+        "harvested_FERTILIZER": 7
+      },
+      "events": [
+        {
+          "step": 254,
+          "actor": 11,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108644814,
+      "opponent": "Jesse Ferguson",
+      "margin": -3867.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 350,
+        "harvested_WHEAT": 517,
+        "harvested_WOOL": 247,
+        "harvested_MILK": 181,
+        "harvested_MELON": 72,
+        "pickup_shortfall_SHEEP": 1,
+        "pickup_shortfall_WHEAT": 9,
+        "feed_without_food": 8,
+        "harvested_STRAWBERRY": 247,
+        "raw_thirst_deaths": 2,
+        "pickup_shortfall_FERTILIZER": 1,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 84
+      },
+      "last_day_counts": {
+        "harvested_TOMATO": 20,
+        "harvested_MILK": 9,
+        "harvested_WOOL": 20,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 34
+      },
+      "events": [
+        {
+          "step": 254,
+          "actor": 11,
+          "event": "pickup_shortfall",
+          "item": "SHEEP",
+          "units": 1
+        },
+        {
+          "step": 313,
+          "actor": 4,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 4
+        },
+        {
+          "step": 313,
+          "actor": 8,
+          "event": "pickup_shortfall",
+          "item": "WHEAT",
+          "units": 5
+        },
+        {
+          "step": 314,
+          "actor": 8,
+          "event": "feed_without_food",
+          "xy": [
+            4,
+            4
+          ]
+        },
+        {
+          "step": 318,
+          "actor": 8,
+          "event": "feed_without_food",
+          "xy": [
+            4,
+            3
+          ]
+        },
+        {
+          "step": 319,
+          "actor": 4,
+          "event": "feed_without_food",
+          "xy": [
+            3,
+            3
+          ]
+        },
+        {
+          "step": 322,
+          "actor": 8,
+          "event": "feed_without_food",
+          "xy": [
+            4,
+            2
+          ]
+        },
+        {
+          "step": 323,
+          "actor": 4,
+          "event": "feed_without_food",
+          "xy": [
+            2,
+            3
+          ]
+        },
+        {
+          "step": 327,
+          "actor": 4,
+          "event": "feed_without_food",
+          "xy": [
+            2,
+            4
+          ]
+        },
+        {
+          "step": 331,
+          "actor": 4,
+          "event": "feed_without_food",
+          "xy": [
+            1,
+            4
+          ]
+        },
+        {
+          "step": 331,
+          "actor": 8,
+          "event": "feed_without_food",
+          "xy": [
+            3,
+            2
+          ]
+        },
+        {
+          "step": 505,
+          "actor": 5,
+          "event": "pickup_shortfall",
+          "item": "FERTILIZER",
+          "units": 1
+        }
+      ],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    },
+    {
+      "candidate": "matched6",
+      "episode": 108640053,
+      "opponent": "Brandon Calderon-Morales",
+      "margin": 2629.0,
+      "original_sorted_json_mismatches": 0,
+      "reconstructed_order_mismatches": [],
+      "exact_actions": true,
+      "field_counts": {
+        "harvested_FERTILIZER": 369,
+        "harvested_WHEAT": 577,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 245,
+        "harvested_MELON": 72,
+        "harvested_GOOSE": 0,
+        "harvested_EGG": 78,
+        "harvested_STRAWBERRY": 249,
+        "raw_thirst_deaths": 2,
+        "harvested_CARROT": 95
+      },
+      "last_day_counts": {
+        "harvested_MILK": 18,
+        "harvested_EGG": 4,
+        "harvested_WHEAT": 19,
+        "harvested_CARROT": 38,
+        "harvested_WOOL": 8,
+        "harvested_FERTILIZER": 5
+      },
+      "events": [],
+      "note": "Raw thirst deaths may include intentional replacements. Pickup shortfall counts units, not failed calls. Actual recorded actions drive all field accounting."
+    }
+  ]
+}

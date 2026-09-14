@@ -1,0 +1,53 @@
+{
+  "retrieved_utc": "2026-09-14T05:01:49.213035+00:00",
+  "submissions": [
+    {
+      "ref": "56216380",
+      "date": "2026-09-13 23:27:45.337000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2613.3",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    },
+    {
+      "ref": "56214804",
+      "date": "2026-09-13 20:53:30.960000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2581.4",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    },
+    {
+      "ref": "56213093",
+      "date": "2026-09-13 18:31:05.020000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2507.5",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    },
+    {
+      "ref": "56190498",
+      "date": "2026-09-12 17:42:41.490000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "2650.6",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    },
+    {
+      "ref": "55244738",
+      "date": "2026-08-04 16:08:19.040000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "763.2",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    },
+    {
+      "ref": "55170647",
+      "date": "2026-08-01 20:46:24.563000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "581.9",
+      "description": "",
+      "file_name": "submission.tar.gz"
+    }
+  ]
+}
