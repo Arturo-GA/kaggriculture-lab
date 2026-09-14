@@ -1,0 +1,18 @@
+{
+  "tests": 31,
+  "passed": 31,
+  "new_frontier3_tests": 7,
+  "initial_suite": {
+    "command": "python -m unittest test_frontier3.py test_frontier2.py test_frontier.py test_ml_policy.py test_market_gate.py test_experiment.py",
+    "ran": 31,
+    "failures": 0,
+    "errors": 1,
+    "reason": "Sandbox denied access to the temporary directory for test_archive_reproducible_and_exact"
+  },
+  "focused_retry": {
+    "command": "python -m unittest test_experiment.ExperimentTests.test_archive_reproducible_and_exact",
+    "ran": 1,
+    "passed": 1,
+    "permissions": "Authorized unsandboxed test; no source change"
+  }
+}

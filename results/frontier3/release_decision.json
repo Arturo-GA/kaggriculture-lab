@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-14T05:50:04.837114+00:00",
+  "candidate_sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+  "release_type": "experimental",
+  "original_gate_passed": false,
+  "failed_original_checks": [
+    "official: V41 score below 50%"
+  ],
+  "decision_timing": "After local results, before cloud seeds; not a preregistered success.",
+  "rationale": "The user requests the updated submission. Ship a clearly experimental candidate because it improves paired results against our deployed baseline without per-opponent score regression and passes runtime checks. The failed V41 criterion remains failed. No code retuning on holdout/official seeds.",
+  "cloud_export_checks": "Complete paired games with exact source hashes, positive baseline score difference, no per-opponent score regression, no reported errors/fallbacks/hire shortfalls, every callback below 1000 ms. Report V41 outcome even if its original criterion fails.",
+  "no_guarantee": "Neither rating improvement nor consistent superiority to V41 or gold strength is established."
+}

@@ -81,3 +81,20 @@ Further modified September 13, 2026 by Arturo-GA / Kaggriculture Lab:
   tests and cloud checks: actual unit-effect accounting, replay identity checks,
   paired ablations and independent-seed validation. Prior production and all
   inherited attributions remain unchanged.
+
+Modified September 14, 2026 by Arturo-GA / Kaggriculture Lab:
+
+- Frontier3 opening orders (5 / 10 / 60 wheat) follow the user-supplied V41,
+  which credits Rayk Kretzschmar. `_r97_budget`, `_r124_labor_reserve`,
+  `_r124_seed_budget` and `_r124_atomic` are adapted from Ahmed Berat Ozer's
+  Apache-2.0 V41. `results/frontier3/build.json` records the exact donor hash;
+  `results/frontier3/v41_funding_helpers.py` preserves the extracted helpers.
+- `frontier3_resources.py`: integrates those helpers with the existing Frontier2
+  policy, generalizes seed checks to the actual planting day, and records
+  confirmed planting and first-dawn hiring effects.
+- `frontier3_capacity.py`: original shared-capacity allocation across terminal
+  deposits, using visible inventory and price estimates. The existing option
+  critic is retained without retraining; its optimality is not claimed.
+- Frontier3 builders, tests and local/cloud verification are new project tooling.
+  V41 is also embedded as an explicitly attributed evaluation opponent in the
+  private notebook; its full source is excluded from the submitted runtime.

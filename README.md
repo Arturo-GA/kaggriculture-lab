@@ -4,6 +4,13 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**14 de septiembre: Frontier3 experimental.** Actualiza la apertura comercial,
+reserva dinero y semillas, y distribuye la capacidad compartida del almacén.
+Ganó 8/8 contra nuestra primera submission y 8/8 contra Frontier2 en el bloque
+oficial local; contra V41 obtuvo 3/8 y **no alcanzó el criterio original de 50 %**.
+La publicación experimental conserva ese fallo y no garantiza una mejora de rating.
+Estado de Kaggle, archivo y resultados completos: [FRONTIER3_RESULTS.es.md](FRONTIER3_RESULTS.es.md).
+
 - [Investigación: competencias similares y papers 2025–2026](RESEARCH.es.md)
 - [Resultados y limitaciones](RESULTS.es.md)
 - [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)

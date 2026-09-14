@@ -1,0 +1,6 @@
+{
+  "candidate": "frontier3_capacity",
+  "sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+  "reason": "All three variants have identical win/tie/loss totals in screening. Choose the resource guards plus tested capacity conservation. Capacity changes do not add screen wins and slightly reduce average V41 margin; no separate competitive advantage is claimed. No retuning after this freeze.",
+  "screen_receipt_sha256": "edc1de5cbeba7f111dda4ab0e8aba5aed1817c0c695ac2a35bb721a7a0cb01b1"
+}

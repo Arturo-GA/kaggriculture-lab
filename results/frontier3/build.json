@@ -1,0 +1,9 @@
+{
+  "parent_sha256": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+  "donor_sha256": "8951ff93742015cba535b125223cf2e541bb7b602080fc4584f30c2613d210f3",
+  "variants": {
+    "frontier3_opening": "41735f080069189d1099a72a4ef185c9ac6cf40f58d02a40bb742e607c055f6e",
+    "frontier3_funded": "95131c0139e0bbe2f465da0ec603fa0323b7edb59d67d5883759c8169a33cefc",
+    "frontier3_capacity": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981"
+  }
+}

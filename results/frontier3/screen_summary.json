@@ -1,0 +1,113 @@
+{
+  "frontier3_opening": {
+    "candidate": "frontier3_opening",
+    "sha256": "41735f080069189d1099a72a4ef185c9ac6cf40f58d02a40bb742e607c055f6e",
+    "games": 24,
+    "per_opponent": {
+      "v41_review": {
+        "games": 8,
+        "wins": 4,
+        "ties": 0,
+        "losses": 4,
+        "score_delta": 4.0,
+        "mean_margin": 272.25
+      },
+      "matched6": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 0.0,
+        "mean_margin": 33926.25
+      },
+      "frontier2_early": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 4.0,
+        "mean_margin": 32268.625
+      }
+    },
+    "errors": [],
+    "v41_score": 0.5,
+    "max_call_ms": 206.5621999790892,
+    "outcomes_passed": true,
+    "latency_required": false,
+    "passed": true
+  },
+  "frontier3_funded": {
+    "candidate": "frontier3_funded",
+    "sha256": "95131c0139e0bbe2f465da0ec603fa0323b7edb59d67d5883759c8169a33cefc",
+    "games": 24,
+    "per_opponent": {
+      "v41_review": {
+        "games": 8,
+        "wins": 4,
+        "ties": 0,
+        "losses": 4,
+        "score_delta": 4.0,
+        "mean_margin": 272.25
+      },
+      "matched6": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 0.0,
+        "mean_margin": 33926.25
+      },
+      "frontier2_early": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 4.0,
+        "mean_margin": 32268.625
+      }
+    },
+    "errors": [],
+    "v41_score": 0.5,
+    "max_call_ms": 215.98460001405329,
+    "outcomes_passed": true,
+    "latency_required": false,
+    "passed": true
+  },
+  "frontier3_capacity": {
+    "candidate": "frontier3_capacity",
+    "sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+    "games": 24,
+    "per_opponent": {
+      "v41_review": {
+        "games": 8,
+        "wins": 4,
+        "ties": 0,
+        "losses": 4,
+        "score_delta": 4.0,
+        "mean_margin": 267.25
+      },
+      "matched6": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 0.0,
+        "mean_margin": 33926.25
+      },
+      "frontier2_early": {
+        "games": 8,
+        "wins": 8,
+        "ties": 0,
+        "losses": 0,
+        "score_delta": 4.0,
+        "mean_margin": 32268.625
+      }
+    },
+    "errors": [],
+    "v41_score": 0.5,
+    "max_call_ms": 239.9773999932222,
+    "outcomes_passed": true,
+    "latency_required": false,
+    "passed": true
+  }
+}
