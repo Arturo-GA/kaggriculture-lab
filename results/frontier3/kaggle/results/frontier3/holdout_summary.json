@@ -1,0 +1,72 @@
+{
+  "candidate": "frontier3_capacity",
+  "sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+  "games": 112,
+  "per_opponent": {
+    "v41_review": {
+      "games": 16,
+      "wins": 13,
+      "ties": 0,
+      "losses": 3,
+      "score_delta": 13.0,
+      "mean_margin": 1209.4375
+    },
+    "matched6": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 31559.875
+    },
+    "frontier2_early": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 29320.0
+    },
+    "router": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 42230.125
+    },
+    "kaito": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 21547.375
+    },
+    "nagata": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 111285.4375
+    },
+    "prvsiyan": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 0.0,
+      "mean_margin": 4947.8125
+    }
+  },
+  "errors": [],
+  "v41_score": 0.8125,
+  "max_call_ms": 1847.563799994532,
+  "outcomes_passed": true,
+  "latency_required": false,
+  "passed": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "v41_gate_passed": true
+}

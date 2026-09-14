@@ -5,7 +5,7 @@ No modificar ni borrar candidatos, archivos o recibos de rondas anteriores.
 Resultados y advertencia de criterio V41 fallido: FRONTIER3_RESULTS.es.md.
 No reajustar sobre las semillas 93001–96002 ni cambiar el criterio fallido a aprobado.
 Reproducir empaquetado: make_frontier3_notebook.py; carpeta kaggle_frontier3/.
-Kaggle verificado: False
-Envío al leaderboard con recibo: False
+Kaggle verificado: True
+Envío al leaderboard con recibo: True
 Si ya existe submission_receipt.json, consultar su ID antes de cualquier intento nuevo para evitar duplicados.
 No crear automatizaciones ni iniciar nuevas rondas sin petición.

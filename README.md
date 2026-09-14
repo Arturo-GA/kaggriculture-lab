@@ -10,6 +10,11 @@ Ganó 8/8 contra nuestra primera submission y 8/8 contra Frontier2 en el bloque
 oficial local; contra V41 obtuvo 3/8 y **no alcanzó el criterio original de 50 %**.
 La publicación experimental conserva ese fallo y no garantiza una mejora de rating.
 Estado de Kaggle, archivo y resultados completos: [FRONTIER3_RESULTS.es.md](FRONTIER3_RESULTS.es.md).
+La versión 3 del notebook está COMPLETE y su archivo fue verificado por bytes.
+En la nube ganó 4/4 contra matched6, 4/4 contra Frontier2 y 2/4 contra V41.
+Arturo pidió el envío: submission **56222986**; el último estado consultado está en
+`results/frontier3/submission_receipt.json`. Archivo:
+[`results/frontier3/kaggle/submission.tar.gz`](results/frontier3/kaggle/submission.tar.gz).
 
 - [Investigación: competencias similares y papers 2025–2026](RESEARCH.es.md)
 - [Resultados y limitaciones](RESULTS.es.md)

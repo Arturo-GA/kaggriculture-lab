@@ -1,0 +1,41 @@
+{
+  "candidate": "frontier3_capacity",
+  "kernel": "jarturo/kaggriculture-frontier-joint-planner",
+  "source_sha256": {
+    "frontier3_capacity": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+    "frontier2_early": "0bb0cddbb6e3883850138cbbd3dfc39e5fa285fd83c356a0e02391bebdbff33c",
+    "matched6": "28f57454d8dab2618441d8ef2f1fe04924cf8291e069a5e2ed20daf28cded489",
+    "v41_review": "8951ff93742015cba535b125223cf2e541bb7b602080fc4584f30c2613d210f3"
+  },
+  "cloud_opponents": [
+    "v41_review",
+    "matched6",
+    "frontier2_early"
+  ],
+  "cloud_seeds": [
+    96001,
+    96002
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "fee42fd778fef124dd2e2c4e1aecb512adb95c87c07330d141d71ebaa3a9511b",
+    "official_summary.json": "d29e091f9720081c144ec49ed0af4a7552624e0f05ec543f107c36b7ca405daa"
+  },
+  "release_type": "experimental",
+  "local_strategy_gate_passed": false,
+  "review_decision": {
+    "created_utc": "2026-09-14T05:50:04.837114+00:00",
+    "candidate_sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+    "release_type": "experimental",
+    "original_gate_passed": false,
+    "failed_original_checks": [
+      "official: V41 score below 50%"
+    ],
+    "decision_timing": "After local results, before cloud seeds; not a preregistered success.",
+    "rationale": "The user requests the updated submission. Ship a clearly experimental candidate because it improves paired results against our deployed baseline without per-opponent score regression and passes runtime checks. The failed V41 criterion remains failed. No code retuning on holdout/official seeds.",
+    "cloud_export_checks": "Complete paired games with exact source hashes, positive baseline score difference, no per-opponent score regression, no reported errors/fallbacks/hire shortfalls, every callback below 1000 ms. Report V41 outcome even if its original criterion fails.",
+    "no_guarantee": "Neither rating improvement nor consistent superiority to V41 or gold strength is established."
+  },
+  "gate": "Original strategy gate remains >=50% versus V41. Experimental export decision made after the local official failure: require positive paired score versus Frontier2, no family regression, callbacks <1000ms, no reported errors or first-dawn hire shortfalls. Preserve the failed V41 gate; no claim of full acceptance.",
+  "attribution": "Opening and cash/seed guards adapted from credited V41; own general-day integration and shared terminal capacity allocation. Old ML critic remains, not retrained.",
+  "limitations": "Small, specific opponent panel; no rating or medal guarantee. Cargo retained at game end still has zero cash value."
+}

@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-14T05:31:45.032136+00:00",
+  "screen_candidates": [
+    "frontier3_opening",
+    "frontier3_funded",
+    "frontier3_capacity",
+    "frontier2_early"
+  ],
+  "screen_seeds": [
+    93001,
+    93002,
+    93003,
+    93004
+  ],
+  "screen_opponents": [
+    "v41_review",
+    "matched6",
+    "frontier2_early"
+  ],
+  "holdout_seeds": [
+    94001,
+    94002,
+    94003,
+    94004,
+    94005,
+    94006,
+    94007,
+    94008
+  ],
+  "holdout_opponents": [
+    "v41_review",
+    "matched6",
+    "frontier2_early",
+    "router",
+    "kaito",
+    "nagata",
+    "prvsiyan"
+  ],
+  "official_seeds": [
+    95001,
+    95002,
+    95003,
+    95004
+  ],
+  "cloud_seeds": [
+    96001,
+    96002
+  ],
+  "rule": "Select on screen, freeze hash before holdout. Require positive paired score versus Frontier2, no net per-opponent score regression, >=50% direct score versus V41. Official and cloud callbacks below 1000ms; no reported errors/fallbacks or first-dawn hire shortfalls. C++ latency is diagnostic, not final runtime gate. No holdout retuning.",
+  "attribution": "New opening and funding guards adapted from credited V41, general-day seed validation and terminal capacity allocation added here. Inherited ML critic unchanged and not retrained; no claim it remains optimal.",
+  "scope": "Build, test and package the updated submission. Do not overwrite previous deployed source or archives."
+}

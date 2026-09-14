@@ -1,0 +1,47 @@
+{
+  "candidate": "frontier3_capacity",
+  "sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+  "games": 12,
+  "per_opponent": {
+    "v41_review": {
+      "games": 4,
+      "wins": 2,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 2.0,
+      "mean_margin": 605.5
+    },
+    "matched6": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 19545.0
+    },
+    "frontier2_early": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 18580.0
+    }
+  },
+  "errors": [],
+  "v41_score": 0.5,
+  "max_call_ms": 374.3977109999719,
+  "outcomes_passed": true,
+  "latency_required": true,
+  "passed": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "v41_gate_passed": true,
+  "total_games": 24,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier-joint-planner",
+  "release_type": "experimental",
+  "local_strategy_gate_passed": false,
+  "export_checks_passed": true,
+  "archive_sha256": "6531b8d948d374133ab070401d730635c9b51449a5b617a0fff45f0624ef0fdc"
+}

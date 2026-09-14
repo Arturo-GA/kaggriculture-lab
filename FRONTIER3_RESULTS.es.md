@@ -57,4 +57,16 @@ El notebook exige 24 partidas oficiales adicionales con hashes exactos, ejecuci�
 
 El panel contiene V41 y otros rivales públicos almacenados anteriormente; no representa todos los agentes actuales del top. La capacidad usa precios visibles, no anticipa perfectamente al rival y no garantiza monetizar inventario antes del final. No se garantiza superar 2797, mejorar el rating anterior ni conseguir medalla.
 
-**Kaggle pendiente:** todavía no se declara verificada una ejecución en la nube ni un envío al leaderboard.
+**Kaggle: ejecución y archivo verificados.**
+
+| Rival | Victorias | Empates | Derrotas | Cambio de resultado vs control | Margen medio |
+|---|---:|---:|---:|---:|---:|
+| v41_review | 2 | 0 | 2 | +2 | +605.5 |
+| matched6 | 4 | 0 | 0 | +0 | +19545.0 |
+| frontier2_early | 4 | 0 | 0 | +2 | +18580.0 |
+
+Máximo de callback: 374.4 ms; criterio original de este bloque: `True`; comprobaciones para exportación experimental: `True`.
+
+Archivo: `results/frontier3/kaggle/submission.tar.gz`, SHA-256 `6531b8d948d374133ab070401d730635c9b51449a5b617a0fff45f0624ef0fdc`. El main.py descargado y el contenido del TAR coinciden por bytes con el candidato congelado.
+
+Envío al leaderboard solicitado por Arturo: submission `56222986`, estado observado `SubmissionStatus.PENDING` a 2026-09-14T05:57:41.493740+00:00. El rating inicial no se toma como resultado final.

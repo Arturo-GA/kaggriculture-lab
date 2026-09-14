@@ -1,0 +1,14 @@
+{
+  "id": 56222986,
+  "status": "SubmissionStatus.PENDING",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier3 funded opening 257a7248 - experimental",
+  "checked_utc": "2026-09-14T05:57:41.493740+00:00",
+  "archive_sha256": "6531b8d948d374133ab070401d730635c9b51449a5b617a0fff45f0624ef0fdc",
+  "candidate_sha256": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981",
+  "leaderboard_submitted": true,
+  "filename": "submission.tar.gz",
+  "public_score": "",
+  "error": "",
+  "date": "2026-09-14 05:56:19.330000"
+}
