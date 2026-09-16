@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-09-16T00:58:54.474502+00:00",
+  "candidate": "f4_full",
+  "control": "v45",
+  "screen_seeds": [
+    5601,
+    5602,
+    5603,
+    5604,
+    5605,
+    5606,
+    5611,
+    5612,
+    5613,
+    5614,
+    5615,
+    5616,
+    5631,
+    5632,
+    5633,
+    5634,
+    5635,
+    5636,
+    5637,
+    5638
+  ],
+  "screen_note": "Exploratory C++ screens: f4_r24 vs v45/v44/pipe4/v41; f4_full/f4_fullb/f4_r24/f4_r24b vs v45/pipe5. f4_full selected before holdout.",
+  "holdout_seeds": [
+    5721,
+    5722,
+    5723,
+    5724,
+    5725,
+    5726,
+    5727,
+    5728
+  ],
+  "holdout_opponents": [
+    "v45",
+    "v44",
+    "v43",
+    "pipe4",
+    "pipe5",
+    "lynn_v5",
+    "aurax_v5",
+    "frontier3_capacity",
+    "matched6",
+    "kaito",
+    "router",
+    "prvsiyan",
+    "nagata"
+  ],
+  "official_seeds": [
+    5811,
+    5812,
+    5813,
+    5814
+  ],
+  "official_opponents": [
+    "v45",
+    "v44",
+    "pipe5",
+    "frontier3_capacity",
+    "kaito",
+    "prvsiyan"
+  ],
+  "cloud_seeds": [
+    5901,
+    5902
+  ],
+  "cloud_opponents": [
+    "v45",
+    "pipe5",
+    "frontier3_capacity"
+  ],
+  "rule": "Freeze the selected candidate hash before holdout. Require, paired against unmodified V45 on identical opponents/seeds/seats: positive total paired score, no per-opponent regression, >=50% in the direct V45 mirror, no reported errors/fallbacks, callbacks <1000 ms on the official engine and in Kaggle. Holdout/official/cloud seeds are used once per candidate; no retuning on them.",
+  "attribution": "Base: Ahmed Berat Ozer V45 (Apache-2.0) and upstream authors credited in its source. Frontier4: race horizon change, Kaggriculture Lab terminal planner, route deliveries, shed capacity allocation.",
+  "consumed_by_f4_full": {
+    "holdout_seeds": [
+      5701,
+      5702,
+      5703,
+      5704,
+      5705,
+      5706,
+      5707,
+      5708
+    ],
+    "official_seeds": [
+      5801,
+      5802,
+      5803,
+      5804
+    ],
+    "result": "f4_full failed the holdout no-regression gate (pipe5 8/8 vs V45 16/0); official 5801-5804 passed 8/0 everywhere. Not selected."
+  },
+  "screen_seeds_round2": [
+    5741,
+    5742,
+    5743,
+    5744,
+    5745,
+    5746,
+    5747,
+    5748,
+    5751,
+    5752,
+    5753,
+    5754,
+    5755,
+    5756,
+    5757,
+    5758
+  ],
+  "screen_note_round2": "Selection round on 5741-5758 (32 games per pair): v45 control, f4_r24, f4_adapt, f4_adapt2, f4_term, f4_full, f4_adapt_full, f4_probe vs pipe4/pipe5/v43/v44/v45."
+}

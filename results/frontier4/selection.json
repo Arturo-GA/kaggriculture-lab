@@ -1,0 +1,7 @@
+{
+  "candidate": "f4_probe",
+  "sha256": "f426240eb717948205e8f19e51bc6fc3084d441a721b4f6e4557828ca7c8e860",
+  "selected_utc": "2026-09-16T01:32:18.938909+00:00",
+  "basis": "Round-2 screens on seeds 5741-5758 (32 games per pair vs pipe4/pipe5/v43/v44/v45): f4_probe 31/1, 29/3, 31/1, 31/1, 27/5 = 149 points vs V45 control 138; f4_adapt2 141; f4_adapt 137; f4_r24 135; f4_term 133; f4_full 125.",
+  "previous": "f4_full was frozen first, passed the official panel 5801-5804 (8/0 everywhere) but failed the holdout no-regression gate on 5701-5708 (pipe5 8/8 vs V45 16/0); superseded before packaging."
+}

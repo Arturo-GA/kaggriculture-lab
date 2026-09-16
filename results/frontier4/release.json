@@ -1,0 +1,29 @@
+{
+  "candidate": "f4_probe",
+  "kernel": "jarturo/kaggriculture-frontier4-sales-race",
+  "control": "v45",
+  "source_sha256": {
+    "f4_probe": "f426240eb717948205e8f19e51bc6fc3084d441a721b4f6e4557828ca7c8e860",
+    "v45": "2536d41ed5a00c75204b6350f1c76c54259c774cb065ba2a3a0072eedf210d94",
+    "pipe5": "a5cb643b0516906fb7660613a4eebe00a6cc949a8de98d7744a7071038da824c",
+    "frontier3_capacity": "257a7248affaed0ef126474e6f19de3e23045cb911ea01b8b1ecfda582825981"
+  },
+  "cloud_opponents": [
+    "v45",
+    "pipe5",
+    "frontier3_capacity"
+  ],
+  "cloud_seeds": [
+    5901,
+    5902
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "b4d3491339b3434585e4a38da8185c9be6cdfd61f53c45369870ce8c79451887",
+    "official_summary.json": "b84ac928fddfcdaaf628c61ff7cdfaf3125f9913922013377a617fee935eae87"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Paired against the unmodified public V45 on the same opponents, seeds and seats: positive total paired score, no per-opponent regression, no reported errors or fallbacks, every callback below 1000 ms, and at least 50% score in the direct V45 mirror.",
+  "attribution": "Base agent: Ahmed Berat Ozer V45 (Apache-2.0) and the upstream authors credited in its source. Frontier4 (f4_probe) adds an original probe to the clone sales-race layer: a 24-turn reservation horizon until day 14, kept only when the rival demonstrably sells products our tape sells more than four turns later, otherwise V45 behaviour. The Kaggriculture Lab terminal layers were measured and are not part of this candidate.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

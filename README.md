@@ -4,6 +4,29 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**16 de septiembre: Frontier4 (sonda de carrera de ventas).** Las dos Frontier3 activas
+(`56222986`, `56223026`) cayeron a 50 % de victorias y ~2540 de rating (puesto 710) porque el
+pool de 2500-2900 son clones del linaje público V41-V45 y nuestra base V37 pierde la carrera de
+ventas del mismo turno: 0/12 contra V43, V44 y V45 en simulación. El nuevo candidato
+`candidates/f4_probe.py` se construye sobre el V45 público (extraído como datos, hash fijado) y
+añade una sonda al horizonte de carrera que gana el espejo contra V44/V45 sin perder contra
+clones de 4 turnos: 149/160 puntos frente a 138 de V45 en selección, holdout 416 partidas sin
+regresión (11/5 contra V45, 16/0 contra otros 11 rivales) y motor oficial 8/0 contra cinco
+rivales y 6/2 contra V45, latencia máxima 157 ms. Diagnóstico, variantes descartadas (manos
+corredoras, horizonte fijo, capas terminales) y límites: [FRONTIER4_RESULTS.es.md](FRONTIER4_RESULTS.es.md);
+notas de continuidad: [RESUME_FRONTIER4.es.md](RESUME_FRONTIER4.es.md). Verificación en la nube:
+kernel privado `jarturo/kaggriculture-frontier4-sales-race`. Arturo pidió el envío: **submission 56266564**
+(recibo en `results/frontier4/submission_receipt.json`); ninguna submission se envía automáticamente.
+
+```powershell
+python extract_public_agents.py        # tras `kaggle kernels pull` de los notebooks públicos a vendor/pub/
+python build_f4.py                     # candidatos Frontier4 desde el V45 fijado
+python -m unittest -v test_frontier4.py
+python make_frontier4_notebook.py; python -m kaggle kernels push -p kaggle_frontier4
+python verify_frontier4_cloud.py       # tras `kaggle kernels output ... -p results/frontier4/kaggle`
+python live_report.py 56222986 56223026
+```
+
 **14 de septiembre: Frontier3 experimental.** Actualiza la apertura comercial,
 reserva dinero y semillas, y distribuye la capacidad compartida del almacén.
 Ganó 8/8 contra nuestra primera submission y 8/8 contra Frontier2 en el bloque

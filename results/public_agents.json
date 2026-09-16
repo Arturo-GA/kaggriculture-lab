@@ -1,0 +1,58 @@
+{
+  "v43": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v43-recovering-lost-harvests",
+    "bytes": 321555,
+    "agent_sha256": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed",
+    "notebook_sha256": "8bd567ed2aae2afa7e3bd1b77dac0de2a50055792965200c497b4fcc88becd90",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "v44": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v44-winning-the-same-turn-sale-race",
+    "bytes": 327314,
+    "agent_sha256": "797d9bca309d481e18cdbb675ce6d6de9967d266cbafb4c2352c68fb10264e2f",
+    "notebook_sha256": "8f6e2685f32c481ee96eacca7fcde9bff7c45a025778ae81b7bf0def430963cd",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "v45": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v45-first-turn-wheat-round-trip",
+    "bytes": 329112,
+    "agent_sha256": "2536d41ed5a00c75204b6350f1c76c54259c774cb065ba2a3a0072eedf210d94",
+    "notebook_sha256": "bcf5fb11f302e23980d5e2922e568af48558e9e3be37d7872eaaf563c2fcbf14",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "pipe4": {
+    "url": "https://www.kaggle.com/code/nathanjacob/beyond-v43-what-the-top-clusters-do-on-turn-1",
+    "bytes": 322038,
+    "agent_sha256": "7a37397fdb29cbbb17aaf7577352bef910fb4dd0f19bf763b9dcaff68595da54",
+    "notebook_sha256": "c876478f2fec396739bb069c2821d4b5373b68ae4b278e0a2f76fda7d0da89b6",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "pipe5": {
+    "url": "https://www.kaggle.com/code/nathanjacob/kaggriculture-pipe-5-terminal-boost",
+    "bytes": 322037,
+    "agent_sha256": "a5cb643b0516906fb7660613a4eebe00a6cc949a8de98d7744a7071038da824c",
+    "notebook_sha256": "ce672db534c48a6d8c2eed54cedcf187ea5a8d89d75b475f849099978c25af20",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "lynn_v5": {
+    "url": "https://www.kaggle.com/code/lynnsakurai/farming-score-v5-timing-optimized",
+    "bytes": 343926,
+    "agent_sha256": "6e29435651cf3e39da3cd2fb9c14cae0c6e34333556728ab029881a042b6448b",
+    "notebook_sha256": "894a912d69ea76bd279c4c606776ede4323f96a1536c97cfdaa2ccb94c4571fd",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "aurax_v5": {
+    "url": "https://www.kaggle.com/code/aurax7/kaggriculture-shop-router-reactive-v5",
+    "bytes": 339137,
+    "agent_sha256": "ea4c28e64d77ddcdd5f08cb150b408de3c10f4bc9a18c6e681758b7da2e8f022",
+    "notebook_sha256": "95766a037a346c3905d417f26c927636e53e007666903c461e0fd2675332ece1",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "harvestforge": {
+    "url": "https://www.kaggle.com/code/salemali7/kaggriculture-2900",
+    "bytes": 18498,
+    "agent_sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9",
+    "notebook_sha256": "3d29c012341723b0683af316729faec1c44ce0408e7fdc542484b85d192b7d46",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  }
+}

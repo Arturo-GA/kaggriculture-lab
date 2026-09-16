@@ -1,0 +1,46 @@
+{
+  "candidate": "f4_probe",
+  "sha256": "f426240eb717948205e8f19e51bc6fc3084d441a721b4f6e4557828ca7c8e860",
+  "games": 12,
+  "per_opponent": {
+    "v45": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 1.0,
+      "mean_margin": 180.0
+    },
+    "pipe5": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 961.5
+    },
+    "frontier3_capacity": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 6869.25
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.75,
+  "total_score_delta": 1.0,
+  "max_call_ms": 526.4963409999837,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 24,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier4-sales-race",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "172daa824d75fe64af6970ca9311326aff249435d9f86df40da2df810549ae71"
+}

@@ -1,0 +1,119 @@
+{
+  "candidate": "f4_probe",
+  "sha256": "f426240eb717948205e8f19e51bc6fc3084d441a721b4f6e4557828ca7c8e860",
+  "games": 208,
+  "per_opponent": {
+    "v45": {
+      "games": 16,
+      "wins": 11,
+      "ties": 0,
+      "losses": 5,
+      "score_delta": 3.0,
+      "mean_margin": 120.625
+    },
+    "v44": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1496.0
+    },
+    "v43": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 2552.25
+    },
+    "pipe4": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1363.875
+    },
+    "pipe5": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1235.5
+    },
+    "lynn_v5": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 3761.875
+    },
+    "aurax_v5": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 3933.0
+    },
+    "frontier3_capacity": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 4373.75
+    },
+    "matched6": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 9475.125
+    },
+    "kaito": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 22138.3125
+    },
+    "router": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 20117.875
+    },
+    "prvsiyan": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 5400.75
+    },
+    "nagata": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 113277.9375
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.6875,
+  "total_score_delta": 3.0,
+  "max_call_ms": 635.3645999988657,
+  "latency_required": false,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true
+}
