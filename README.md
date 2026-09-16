@@ -15,8 +15,8 @@ regresión (11/5 contra V45, 16/0 contra otros 11 rivales) y motor oficial 8/0 c
 rivales y 6/2 contra V45, latencia máxima 157 ms. Diagnóstico, variantes descartadas (manos
 corredoras, horizonte fijo, capas terminales) y límites: [FRONTIER4_RESULTS.es.md](FRONTIER4_RESULTS.es.md);
 notas de continuidad: [RESUME_FRONTIER4.es.md](RESUME_FRONTIER4.es.md). Verificación en la nube:
-kernel privado `jarturo/kaggriculture-frontier4-sales-race`. Arturo pidió el envío: **submission 56266564**
-(recibo en `results/frontier4/submission_receipt.json`); ninguna submission se envía automáticamente.
+kernel privado `jarturo/kaggriculture-frontier4-sales-race`. Arturo pidió el envío: **submissions 56266564 y 56266648**
+(mismo archivo, recibos en `results/frontier4/submission_receipt*.json`); ninguna submission se envía automáticamente.
 
 ```powershell
 python extract_public_agents.py        # tras `kaggle kernels pull` de los notebooks públicos a vendor/pub/

@@ -10,3 +10,4 @@ Seguimiento en vivo (solo lectura): python live_report.py <submission_id> ...
 No crear automatizaciones ni iniciar nuevas rondas sin petición.
 Kaggle verificado: True (results/frontier4/kaggle_verified.json, archivo 172daa82…).
 Envío al leaderboard con recibo: True. Arturo autorizó el 16 de septiembre ("si haz todo lo que dijiste"); submission 56266564, descripción "Frontier4 sales race f426240e on V45", recibo en results/frontier4/submission_receipt.json. Consultar ese ID antes de cualquier intento nuevo para evitar duplicados; refrescar estado con `python submit_frontier4.py` (sin --submit).
+Segunda plaza: Arturo pidió enviar el mismo archivo otra vez ("haz el submission en kaggle de lo que dices"); submission 56266648, descripción "... - second slot", recibo en results/frontier4/submission_receipt_2.json. Las dos plazas activas son ahora Frontier4 (56266564 y 56266648); Frontier3 dejó de estar en seguimiento. No enviar más copias.

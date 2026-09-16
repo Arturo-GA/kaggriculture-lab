@@ -125,8 +125,11 @@ archivo `172daa824d75fe64af6970ca9311326aff249435d9f86df40da2df810549ae71`
 
 Envío al leaderboard autorizado por Arturo el 16 de septiembre: **submission 56266564**
 ("Frontier4 sales race f426240e on V45"), recibo en `results/frontier4/submission_receipt.json`.
-Sustituye a la Frontier3 más antigua como submission activa; el rating inicial de las primeras
-horas no es el resultado final. Seguimiento: `python live_report.py 56266564 56223026`.
+A petición de Arturo se envió el mismo archivo una segunda vez (**submission 56266648**,
+recibo en `results/frontier4/submission_receipt_2.json`) para que las dos plazas activas, que son
+las que cuentan en la evaluación final, sean Frontier4; ambas Frontier3 dejan de estar en
+seguimiento. El rating inicial de las primeras horas no es el resultado final.
+Seguimiento: `python live_report.py 56266564 56266648`.
 
 ## Límites
 
