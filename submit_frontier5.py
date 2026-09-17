@@ -49,7 +49,7 @@ def main():
     assert not intent_path.exists(), 'Earlier attempt has uncertain state. Inspect Kaggle before retrying; do not duplicate.'
     intent = dict(created_utc=datetime.now(timezone.utc).isoformat(), description=description,
                   archive_sha256=verified['archive_sha256'], candidate_sha256=verified['sha256'],
-                  authorization='Arturo, 16 de septiembre de 2026: "si haz todo lo que dijiste" (enviar el archivo verificado y hacer commit/push)')
+                  authorization='Arturo, 17 de septiembre de 2026: "prosigue porfavor" (enviar el archivo verificado de Frontier5)')
     write(intent_path, intent)
     response = api.competition_submit(str(archive), description, 'kaggriculture', quiet=True)
     assert response.ref > 0, response.message

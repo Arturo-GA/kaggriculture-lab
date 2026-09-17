@@ -1,0 +1,14 @@
+{
+  "id": 56292879,
+  "status": "SubmissionStatus.PENDING",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier5 lockstep 150e8e17 on V46 - second slot",
+  "checked_utc": "2026-09-17T03:08:44.414339+00:00",
+  "archive_sha256": "3d80ca6e070fcdc2b12a8765457a4c0c5e04491bb6ffd60918ba19e5170b1398",
+  "candidate_sha256": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+  "leaderboard_submitted": true,
+  "same_archive_as": 56292870,
+  "public_score": "",
+  "error": "",
+  "date": "2026-09-17 03:07:37.357000"
+}

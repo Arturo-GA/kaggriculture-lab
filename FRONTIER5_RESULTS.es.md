@@ -125,8 +125,11 @@ semillas 5921-5922, ambos asientos, control V46): 4/0 contra V46 (+1195), 4/0 co
 (+1020), 4/0 contra Frontier4 (+1208); latencia máxima 292 ms en la CPU de Kaggle, cero errores.
 `main.py` y `submission.tar.gz` descargados coinciden byte a byte con el candidato congelado;
 SHA-256 del archivo `3d80ca6e070fcdc2b12a8765457a4c0c5e04491bb6ffd60918ba19e5170b1398`
-(`results/frontier5/kaggle_verified.json`). No se ha enviado al leaderboard: `python submit_frontier5.py --submit`
-solo con petición explícita; sustituiría a la Frontier4 más antigua (56266564).
+(`results/frontier5/kaggle_verified.json`). Envío autorizado por Arturo el 17 de septiembre ("prosigue porfavor"): **submission 56292870**
+(recibo en `results/frontier5/submission_receipt.json`) y una segunda copia del mismo archivo en la otra
+plaza activa (recibo en `results/frontier5/submission_receipt_2.json`); las dos Frontier4 dejan de
+estar en seguimiento. El rating de las primeras horas no es el resultado final. Seguimiento:
+`python live_report.py <ids>`.
 
 Qué esperar: paridad con el V46 público más un margen sistemático de ~+1000 en cada espejo contra
 clones de V46 y de la ola anterior. Eso apunta al nivel del clúster de clones actualizado (2900-3000

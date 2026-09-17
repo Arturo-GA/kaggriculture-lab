@@ -16,7 +16,9 @@ propio (`frontier5_lockstep.py`): contra una copia reproduce la liquidación uni
 elige la permutación de ventas con mejor margen. Holdout C++ (semillas nuevas, 12 rivales): 16/0 contra
 todos, V46 +1083, Beyond-48 +1202, pipe-7 +940, pipe-8 +1448; motor oficial 8/0 contra seis rivales
 incluida V46 (+965). Descartados con medición: gansos por vacas/ovejas (`frontier5_geese.py`) y las
-capas terminales sobre V46 (pierden el último día en el motor oficial). Notas: [RESUME_FRONTIER5.es.md](RESUME_FRONTIER5.es.md).
+capas terminales sobre V46 (pierden el último día en el motor oficial). Arturo pidió el envío: **submission
+56292870** y una segunda copia en la otra plaza (recibos en `results/frontier5/submission_receipt*.json`).
+Notas: [RESUME_FRONTIER5.es.md](RESUME_FRONTIER5.es.md).
 
 ```powershell
 python extract_public_agents.py        # V46 y rivales públicos desde vendor/pub/ (kaggle kernels pull)

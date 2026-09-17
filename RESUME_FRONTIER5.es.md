@@ -9,3 +9,5 @@ Seguimiento en vivo: python live_report.py <submission_id> ...
 Datos comunitarios: vendor/episodes_ds (dataset georgymamarin/kaggriculture-episodes, tablas csv) y replays propios en vendor/live_f4, vendor/live_top; todo fuera de Git.
 Siguiente salto real: clonar la cinta de un top-10 con cinta propia (Sida Zuo: 373 replays públicos de la submission 56177113) y montarla en el chasis V46; o economía propia (reinversión temprana tipo SpaTaro).
 No crear automatizaciones ni iniciar nuevas rondas sin petición.
+Kaggle verificado: True (results/frontier5/kaggle_verified.json, archivo 3d80ca6e…).
+Envío al leaderboard con recibo: True. Arturo autorizó el 17 de septiembre ("prosigue porfavor"): submission 56292870 ("Frontier5 lockstep 150e8e17 on V46", results/frontier5/submission_receipt.json) y segunda plaza con el mismo archivo ("... - second slot", results/frontier5/submission_receipt_2.json). Ambas Frontier4 dejan de estar en seguimiento. No enviar más copias; refrescar estado con `python submit_frontier5.py` (sin --submit).
