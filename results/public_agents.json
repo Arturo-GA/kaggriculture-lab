@@ -54,5 +54,82 @@
     "agent_sha256": "3b1cb91feb451b44d075d853f9211be216aea7f85df09d91fa232e4e9dff8fe9",
     "notebook_sha256": "3d29c012341723b0683af316729faec1c44ce0408e7fdc542484b85d192b7d46",
     "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "v46": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v46-first-turn-microstructure-and-s",
+    "bytes": 333658,
+    "agent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+    "notebook_sha256": "ccf23bb3e2f9c81b285de9294c6a3095bb28be8ba4c60e6bdacea9dbfa7ffc91",
+    "use": "evaluation only; excluded from Git"
+  },
+  "pipe7": {
+    "url": "https://www.kaggle.com/code/nathanjacob/kaggriculture-pipe-7-wheat-microstructure",
+    "bytes": 329111,
+    "agent_sha256": "6150b7f9a953fc54d17a0f762a4c6ba5d2afe25a1851876eeb7681719d34a200",
+    "notebook_sha256": "57e4b268c979b3fe9f2a9e3fd63c4f190ac4b90f07d3d4077926e94cf5ed02f8",
+    "use": "evaluation only; excluded from Git"
+  },
+  "pipe8": {
+    "url": "https://www.kaggle.com/code/nathanjacob/kaggriculture-pipe-8-clean-opening",
+    "bytes": 329047,
+    "agent_sha256": "bdebd4ea8aafb727aa025b2ebe7ec19509571d4501759d537da54ec4ab152c6c",
+    "notebook_sha256": "469aa3a42d024efe9dacdd3eecb44f8780871768facdf571e36530210ef735c1",
+    "use": "evaluation only; excluded from Git"
+  },
+  "beyond48": {
+    "url": "https://www.kaggle.com/code/jaxa623/2780-beyond-48-0-128-128-worlds-with-95-cis",
+    "bytes": 350794,
+    "agent_sha256": "4757f3f5b28db8a2f4614bb08993a8a567a7d49bae1ac324fbcfbcc1af60e95e",
+    "notebook_sha256": "c35398a6bbef4754dda57b1018a5fe05ceeb060418bebf16e517dd29a983d53e",
+    "use": "evaluation only; excluded from Git"
+  },
+  "orderseq": {
+    "url": "https://www.kaggle.com/code/uninhibitedscholar/kaggriculture-beyond-48-order-sequencing",
+    "bytes": 350794,
+    "agent_sha256": "4757f3f5b28db8a2f4614bb08993a8a567a7d49bae1ac324fbcfbcc1af60e95e",
+    "notebook_sha256": "6a4d7c27a650ae8da4c53d4b86126d8fb3746695e5102e0b28dcb2294b624234",
+    "use": "evaluation only; excluded from Git"
+  },
+  "seyit2820": {
+    "url": "https://www.kaggle.com/code/seyitkaangunes/kaggriculture-2820-score",
+    "bytes": 327314,
+    "agent_sha256": "797d9bca309d481e18cdbb675ce6d6de9967d266cbafb4c2352c68fb10264e2f",
+    "notebook_sha256": "09d9833a860b521db3083abd24a9abcd9a74404be81adf2b0ae096a01b6a3be4",
+    "use": "evaluation only; excluded from Git"
+  },
+  "aurax_v6": {
+    "url": "https://www.kaggle.com/code/aurax7/kaggriculture-shop-router-reactive-v6",
+    "bytes": 332048,
+    "agent_sha256": "c8cbcb58e8fa0a3161dbeeb7cf09457c8c1ee873b853aa8dae422305fc1de71f",
+    "notebook_sha256": "7591b100525da1a796f2f995c3343e0b1b1a454cbefd66f575892509fd194538",
+    "use": "evaluation only; excluded from Git"
+  },
+  "xman_top1": {
+    "url": "https://www.kaggle.com/code/xuanzhang001/kaggriculture-auto-top1",
+    "bytes": 333658,
+    "agent_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+    "notebook_sha256": "ccf23bb3e2f9c81b285de9294c6a3095bb28be8ba4c60e6bdacea9dbfa7ffc91",
+    "use": "evaluation only; excluded from Git"
+  },
+  "open78": {
+    "url": "https://www.kaggle.com/code/ayodejiibrahimlateef/kaggriculture-cloning-v45-open-78-experiment",
+    "bytes": 329112,
+    "agent_sha256": "2536d41ed5a00c75204b6350f1c76c54259c774cb065ba2a3a0072eedf210d94",
+    "notebook_sha256": "f3ca4d748e1dc28efb7193d3769c7f170c0fa3b44353d7d75d72ae1fd4d40790",
+    "use": "evaluation only; excluded from Git"
+  },
+  "purerl": {
+    "url": "https://www.kaggle.com/code/hesoponyo/pure-rl-agent-bc-ppo-self-play",
+    "bytes": 775828,
+    "agent_sha256": "f6e92e2786cc6fc122dbc5e0e0928db276fb68d45dfe0ad2a65a626031950b17",
+    "notebook_sha256": "d6afc8cd3ee39164432bc3e1dc198e25a4553099fc03c544b58dee3bfe33fea5",
+    "use": "evaluation only; excluded from Git"
+  },
+  "tetsu_market2": {
+    "url": "https://www.kaggle.com/code/tetsutani/market-smart-farming-kaggriculture",
+    "bytes": 329591,
+    "agent_sha256": "1a97f872f4af6658e3fe16f6bca401f9e66ce5a54a1527482d730b68d4011b0b",
+    "notebook_sha256": "dd4b5d458c2ac96046dce7bc30d903420af5d88a02106c5add4dbe93ddb70fb9",
+    "use": "evaluation only; excluded from Git"
   }
 }

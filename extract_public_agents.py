@@ -25,6 +25,18 @@ SOURCES = {
     'aurax_v5': ('aurax7/kaggriculture-shop-router-reactive-v5', 'writefile'),
     'alperen_v62': ('alperen5252525/v62-metabalance-kaggriculture', 'writefile'),
     'harvestforge': ('salemali7/kaggriculture-2900', 'writefile'),
+    'v46': ('ahmedberatozer/kaggriculture-v46-first-turn-microstructure-and-s', 'auto'),
+    'pipe7': ('nathanjacob/kaggriculture-pipe-7-wheat-microstructure', 'auto'),
+    'pipe8': ('nathanjacob/kaggriculture-pipe-8-clean-opening', 'auto'),
+    'beyond48': ('jaxa623/2780-beyond-48-0-128-128-worlds-with-95-cis', 'auto'),
+    'orderseq': ('uninhibitedscholar/kaggriculture-beyond-48-order-sequencing', 'auto'),
+    'seyit2820': ('seyitkaangunes/kaggriculture-2820-score', 'auto'),
+    'aurax_v6': ('aurax7/kaggriculture-shop-router-reactive-v6', 'auto'),
+    'xman_top1': ('xuanzhang001/kaggriculture-auto-top1', 'auto'),
+    'open78': ('ayodejiibrahimlateef/kaggriculture-cloning-v45-open-78-experiment', 'auto'),
+    'purerl': ('hesoponyo/pure-rl-agent-bc-ppo-self-play', 'auto'),
+    'evgen': ('evgendvorkin/kaggriculture', 'auto'),
+    'tetsu_market2': ('tetsutani/market-smart-farming-kaggriculture', 'auto'),
 }
 
 
@@ -40,6 +52,58 @@ def assign(tree, name):
         if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == name for t in node.targets):
             return node.value
     raise KeyError(name)
+
+
+def _decode_blob(blob):
+    """Try the encodings public notebooks use for an embedded main.py: base85/base64, gzip/zlib/lzma, tar."""
+    import lzma
+    raw = blob.encode() if isinstance(blob, str) else blob
+    for decode in (base64.b85decode, base64.b64decode, lambda b: b):
+        try:
+            step1 = decode(raw)
+        except Exception:
+            continue
+        for inflate in (gzip.decompress, zlib.decompress, lzma.decompress, lambda b: b):
+            try:
+                step2 = inflate(step1)
+            except Exception:
+                continue
+            try:
+                tf = tarfile.open(fileobj=io.BytesIO(step2), mode='r:*')
+                member = [m for m in tf.getnames() if m.endswith('main.py')]
+                if member:
+                    return tf.extractfile(member[0]).read()
+            except Exception:
+                pass
+            if b'def agent' in step2 and b'\x00' not in step2[:1000]:
+                return step2
+    return None
+
+
+def auto_extract(cells):
+    for c in cells:
+        if c.startswith('%%writefile main.py'):
+            return c.split('\n', 1)[1].encode('utf-8')
+    for cell in sorted(cells, key=len, reverse=True)[:4]:
+        try:
+            tree = ast.parse(cell)
+        except SyntaxError:
+            continue
+        names = {t.id for n in tree.body if isinstance(n, ast.Assign) for t in n.targets if isinstance(t, ast.Name)}
+        if 'SOURCE_BYTES' in names:
+            value = assign(tree, 'SOURCE_BYTES')
+            return b''.join(ast.literal_eval(value.args[0])) if isinstance(value, ast.Call) else ast.literal_eval(value)
+        if 'AGENT_SOURCE' in names:
+            value = assign(tree, 'AGENT_SOURCE')
+            if isinstance(value, ast.Constant) and isinstance(value.value, str):
+                return value.value.encode('utf-8')
+        blobs = sorted((n.value for n in ast.walk(tree) if isinstance(n, ast.Constant)
+                        and isinstance(n.value, (str, bytes)) and len(n.value) > 5000), key=len, reverse=True)
+        for blob in blobs:
+            data = _decode_blob(blob)
+            if data is not None:
+                return data
+    return None
 
 
 def extract(ref, kind):
@@ -75,6 +139,9 @@ def extract(ref, kind):
         assert data is not None, ref
         if hashlib.sha256(data).hexdigest() != expected:
             print('warning: declared hash differs for', ref, '(kept as evaluation opponent only)')
+    elif kind == 'auto':
+        data = auto_extract(cells)
+        assert data is not None, ref
     else:
         raise ValueError(kind)
     compile(data.decode('utf-8').replace('\r\n', '\n'), ref, 'exec')

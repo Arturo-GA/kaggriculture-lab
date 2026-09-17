@@ -1,0 +1,6 @@
+{
+  "candidate": "f5_lock",
+  "sha256": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+  "selected_utc": "2026-09-17T02:47:17.518511+00:00",
+  "basis": "V46 + lockstep only. Screens 5741-5748: 15/1 vs V46 (+659), 15/1 vs Beyond-48 (+978), 15/1 vs pipe-7 (+779), modeled gain equal to realized margin. f5_lockterm was frozen first and passed the fast holdout 16/0 everywhere, but on official seed 5821 its terminal planner lost the last day by 4150 (f5_lock +1076 in the same world); the official engine disagrees with the C++ screen there, so the terminal layers are not exported."
+}

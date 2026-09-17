@@ -1,0 +1,29 @@
+{
+  "candidate": "f5_lock",
+  "kernel": "jarturo/kaggriculture-frontier5-lockstep",
+  "control": "v46",
+  "source_sha256": {
+    "f5_lock": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+    "v46": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+    "beyond48": "4757f3f5b28db8a2f4614bb08993a8a567a7d49bae1ac324fbcfbcc1af60e95e",
+    "f4_probe": "f426240eb717948205e8f19e51bc6fc3084d441a721b4f6e4557828ca7c8e860"
+  },
+  "cloud_opponents": [
+    "v46",
+    "beyond48",
+    "f4_probe"
+  ],
+  "cloud_seeds": [
+    5921,
+    5922
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "70225aba0b79aaa33267b71a43321e93648a7065e6f3ea4a5f6ca347c8653549",
+    "official_summary.json": "cf21fef124c8f20812776a90520bc87293d9e9393d8fa0489ac09a00368f5774"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Paired against the unmodified public V46 on the same opponents, seeds and seats: positive total paired score, no per-opponent regression, no reported errors or fallbacks, every callback below 1000 ms, and at least 50% score in the direct V46 mirror.",
+  "attribution": "Base agent: Ahmed Berat Ozer V46 (Apache-2.0) and the upstream authors credited in its source. Frontier5 appends the Kaggriculture Lab lockstep sale ordering (replays the engine market per unit against a copy of our own orders and keeps the best permutation of our SELL orders). The Kaggriculture Lab terminal layers were measured and are not part of this candidate.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

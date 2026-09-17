@@ -4,6 +4,28 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**17 de septiembre: Frontier5 (orden lockstep sobre V46).** Las Frontier4 llegaron a plata (2674,
+puesto 437) y empezaron a caer: la ola pública del 16 de septiembre (pipe-7/8, Beyond-48, V46) gana
+el turno 0-1 por microestructura de órdenes y nos cuesta ~1300 monedas antes del día 12; V46 gana 11/1
+a todos los demás públicos y f4_probe pierde 1/11 contra ella. El análisis del top (dataset comunitario
+de partidas y 56 replays propios) está en [FRONTIER5_RESULTS.es.md](FRONTIER5_RESULTS.es.md): las plazas
+12-40 son clones de nuestra cinta con esos ajustes; el top 2-10 usa cintas propias (reinversión temprana,
+9-10 vacas, zanahorias y tomates tardíos); en los espejos leche, lana y fresa se saturan y solo el huevo
+aguanta. El candidato `candidates/f5_lock.py` = V46 público (hash fijado) + orden lockstep de ventas
+propio (`frontier5_lockstep.py`): contra una copia reproduce la liquidación unidad a unidad del motor y
+elige la permutación de ventas con mejor margen. Holdout C++ (semillas nuevas, 12 rivales): 16/0 contra
+todos, V46 +1083, Beyond-48 +1202, pipe-7 +940, pipe-8 +1448; motor oficial 8/0 contra seis rivales
+incluida V46 (+965). Descartados con medición: gansos por vacas/ovejas (`frontier5_geese.py`) y las
+capas terminales sobre V46 (pierden el último día en el motor oficial). Notas: [RESUME_FRONTIER5.es.md](RESUME_FRONTIER5.es.md).
+
+```powershell
+python extract_public_agents.py        # V46 y rivales públicos desde vendor/pub/ (kaggle kernels pull)
+python build_f5.py                     # variantes Frontier5 desde el V46 fijado
+python -m unittest -v test_frontier5.py
+python make_frontier5_notebook.py; python -m kaggle kernels push -p kaggle_frontier5
+python verify_frontier5_cloud.py       # tras `kaggle kernels output ... -p results/frontier5/kaggle`
+```
+
 **16 de septiembre: Frontier4 (sonda de carrera de ventas).** Las dos Frontier3 activas
 (`56222986`, `56223026`) cayeron a 50 % de victorias y ~2540 de rating (puesto 710) porque el
 pool de 2500-2900 son clones del linaje público V41-V45 y nuestra base V37 pierde la carrera de

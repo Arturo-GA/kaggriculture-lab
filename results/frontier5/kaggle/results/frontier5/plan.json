@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-17T02:31:08.810220+00:00",
+  "candidate": "f5_lock",
+  "control": "v46",
+  "screen_seeds": [
+    5601,
+    5602,
+    5603,
+    5604,
+    5605,
+    5606,
+    5741,
+    5742,
+    5743,
+    5744,
+    5745,
+    5746,
+    5747,
+    5748
+  ],
+  "screen_note": "Wave-2 pecking order on 5601-5606 (f4_probe/v45/v46 vs v46/pipe7/pipe8/beyond48/aurax_v6/tetsu_market2/v45); f5_term, f5_lock, f5_lockterm vs v46/beyond48/pipe7 on 5741-5748 (16 games per pair). Geese substitution (f5_geese*) screened on 5601-5612 and rejected.",
+  "holdout_seeds": [
+    5771,
+    5772,
+    5773,
+    5774,
+    5775,
+    5776,
+    5777,
+    5778
+  ],
+  "holdout_opponents": [
+    "v46",
+    "beyond48",
+    "pipe7",
+    "pipe8",
+    "aurax_v6",
+    "tetsu_market2",
+    "v45",
+    "f4_probe",
+    "kaito",
+    "prvsiyan",
+    "router",
+    "nagata"
+  ],
+  "official_seeds": [
+    5831,
+    5832,
+    5833,
+    5834
+  ],
+  "official_opponents": [
+    "v46",
+    "beyond48",
+    "pipe7",
+    "f4_probe",
+    "kaito",
+    "prvsiyan"
+  ],
+  "cloud_seeds": [
+    5921,
+    5922
+  ],
+  "cloud_opponents": [
+    "v46",
+    "beyond48",
+    "f4_probe"
+  ],
+  "rule": "Freeze f5_lockterm hash before holdout. Require, paired against unmodified V46 on identical opponents/seeds/seats: positive total paired score, no per-opponent regression, >=50% in the direct V46 mirror, no reported errors/fallbacks, callbacks <1000 ms on the official engine and in Kaggle. Seeds used once; no retuning on them.",
+  "attribution": "Base: Ahmed Berat Ozer V46 (Apache-2.0) and upstream authors. Frontier5: Kaggriculture Lab lockstep sale ordering against a copy, terminal planner, route deliveries, capacity allocation.",
+  "superseded": {
+    "candidate": "f5_lockterm",
+    "holdout_seeds": [
+      5761,
+      5762,
+      5763,
+      5764,
+      5765,
+      5766,
+      5767,
+      5768
+    ],
+    "official_seeds": [
+      5821,
+      5822,
+      5823,
+      5824
+    ],
+    "result": "Holdout 16/0 vs all 12 opponents, official 8/0 vs five and 6/2 vs V46, but on official seed 5821 the Frontier terminal planner lost the last day (-4150 swing, f5_term -3770) while f5_lock won +1076; one lk_errors exception at step 718 (projected shed None) fixed with a guard. Terminal layers dropped."
+  },
+  "updated_utc": "2026-09-17T02:47:17.518511+00:00"
+}

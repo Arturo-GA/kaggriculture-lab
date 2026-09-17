@@ -1,0 +1,111 @@
+{
+  "candidate": "f5_lock",
+  "sha256": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+  "games": 192,
+  "per_opponent": {
+    "v46": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 1083.0
+    },
+    "beyond48": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 1201.75
+    },
+    "pipe7": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 940.375
+    },
+    "pipe8": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1447.75
+    },
+    "aurax_v6": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1152.375
+    },
+    "tetsu_market2": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 1074.875
+    },
+    "v45": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1152.375
+    },
+    "f4_probe": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1543.0
+    },
+    "kaito": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 34263.75
+    },
+    "prvsiyan": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 6936.0
+    },
+    "router": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 7288.375
+    },
+    "nagata": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 103804.5625
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 26.0,
+  "max_call_ms": 734.79899999802,
+  "latency_required": false,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true
+}

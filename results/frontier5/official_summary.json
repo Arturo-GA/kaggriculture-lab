@@ -1,0 +1,63 @@
+{
+  "candidate": "f5_lock",
+  "sha256": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+  "games": 48,
+  "per_opponent": {
+    "v46": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 964.75
+    },
+    "beyond48": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 3.0,
+      "mean_margin": 967.75
+    },
+    "pipe7": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1708.25
+    },
+    "f4_probe": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 1267.0
+    },
+    "kaito": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 33347.5
+    },
+    "prvsiyan": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 11102.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 8.0,
+  "max_call_ms": 215.98369999264833,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true
+}

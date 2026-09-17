@@ -1,0 +1,29 @@
+{
+  "v46_sha256": "735c370383b70d3bf3aac792f2c147e0afc99166fc9f253ede10e8a030acedb6",
+  "variants": {
+    "f5_geese": {
+      "sha256": "612ca00cf93769d5f9967583c55024c8a34666b21e2fc87661f5bda79d252aa8",
+      "note": "geese for all post-day-6 cows and sheep when no yarn store and <=1 milk shop known at step 144"
+    },
+    "f5_geese_sheep": {
+      "sha256": "d35645b14d2c24a15980e53f714f88087e3e8435ba5493f5b5da5ce090e1ee88",
+      "note": "geese only for post-day-6 sheep when no yarn store known"
+    },
+    "f5_geese_any": {
+      "sha256": "11ce3b5ef5e29afadd856acf48d1265da99afda773c644346aae1dca45d02632",
+      "note": "geese for post-day-6 cows and sheep whenever no yarn store known"
+    },
+    "f5_term": {
+      "sha256": "d854b80bb6eb991ff25754cad8a7d45e252cad1303450d98bcad102854e570ee",
+      "note": "V46 + Kaggriculture Lab terminal planner, route deliveries and capacity allocation (frontier4_layers)"
+    },
+    "f5_lock": {
+      "sha256": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4",
+      "note": "V46 + lockstep sale ordering (projected-shed guard added after the 5821 step-718 exception)"
+    },
+    "f5_lockterm": {
+      "sha256": "7f4117bf2813a527b78d2d156e2baeb5d508f04d30d733b4d3a6fca9c0c531e1",
+      "note": "V46 + lockstep sale ordering + terminal layers"
+    }
+  }
+}
