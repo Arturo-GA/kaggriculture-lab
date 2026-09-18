@@ -1,0 +1,15 @@
+{
+  "id": 56318681,
+  "status": "SubmissionStatus.PENDING",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier7 lockstep 7e066d4f on V48",
+  "checked_utc": "2026-09-18T02:39:26.785532+00:00",
+  "archive_sha256": "ec4b691030f4a7227cf4d82b97ee7e544f9dd5675d9ab63e1a80dea21c292c54",
+  "candidate_sha256": "7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 18 de septiembre de 2026: \"envia una plaza\" (enviar el archivo verificado de Frontier7 a una plaza)",
+  "filename": "submission.tar.gz",
+  "public_score": "",
+  "error": "",
+  "date": "2026-09-18 02:39:11.370000"
+}

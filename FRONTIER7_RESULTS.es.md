@@ -164,7 +164,10 @@ semillas 5931-5932, ambos asientos, control V48 emparejado): **4/0 contra V48 (+
 Beyond-48 (+752), 4/0 contra f5_lock (+805)**; latencia máxima 236 ms en la CPU de Kaggle, cero errores.
 `main.py` y `submission.tar.gz` descargados coinciden byte a byte con el candidato congelado; SHA-256 del
 archivo `ec4b691030f4a7227cf4d82b97ee7e544f9dd5675d9ab63e1a80dea21c292c54`
-(`results/frontier7/kaggle_verified.json`). **No se ha enviado nada al leaderboard.**
+(`results/frontier7/kaggle_verified.json`). Envío autorizado por Arturo el 18 de septiembre ("envia una
+plaza"): **submission 56318681** (recibo en `results/frontier7/submission_receipt.json`), una sola plaza;
+la otra plaza en seguimiento sigue con Frontier5. El rating de las primeras horas no es el resultado
+final. Seguimiento: `python live_report.py 56318681`.
 
 Qué esperar: paridad con la ola pública del 17 de septiembre más ~+1000 en cada espejo contra clones de
 V48; es el nivel del clúster de clones actualizado, no el top 10. Se envía solo a petición

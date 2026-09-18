@@ -19,7 +19,8 @@ por la noche) y la capa pierde 1/11 contra V48; descartada. Superar al top 2 exi
 fijado en `build_f7.py`, punto de entrada `_e335_agent`) + `frontier5_lockstep.py`: 11/1 contra V48
 (+1124) en pantalla, holdout C++ 16/0 contra los 12 rivales (V48 +922, f5_lock +1283), motor oficial
 8/0 contra V48 (+861) y Kaggle 4/0 contra V48, Beyond-48 y f5_lock (archivo verificado,
-`results/frontier7/kaggle_verified.json`). **No enviado**: se envía solo a petición. Notas:
+`results/frontier7/kaggle_verified.json`). Arturo pidió una plaza: **submission 56318681** (recibo en
+`results/frontier7/submission_receipt.json`); la otra plaza sigue con Frontier5. Notas:
 [RESUME_FRONTIER7.es.md](RESUME_FRONTIER7.es.md).
 
 ```powershell

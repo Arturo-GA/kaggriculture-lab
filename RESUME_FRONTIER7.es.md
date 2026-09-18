@@ -10,4 +10,4 @@ Datos: vendor/top_replays (Mother-Goose 106, SpaTaro 193 replays), vendor/live_f
 Siguiente salto real: planificador propio (apertura determinista del líder + plan diario evaluado con el simulador C++ + imitación de las 299 grabaciones). Ninguna capa sobre la cinta pública supera al top 2.
 No crear automatizaciones ni iniciar nuevas rondas sin petición.
 Kaggle verificado: True (results/frontier7/kaggle_verified.json; kernel versión 1, semillas 5931-5932: 4/0 contra V48 +616, Beyond-48 +752, f5_lock +805; 236 ms; archivo ec4b691030f4a7227cf4d82b97ee7e544f9dd5675d9ab63e1a80dea21c292c54).
-Envío al leaderboard: no. Se envía solo si Arturo lo pide (las dos plazas activas siguen siendo las Frontier5 56292870 y 56292879).
+Envío al leaderboard con recibo: True. Arturo autorizó el 18 de septiembre ("envia una plaza"): submission 56318681 ("Frontier7 lockstep 7e066d4f on V48", results/frontier7/submission_receipt.json); ocupa una de las dos plazas en seguimiento y la otra sigue con Frontier5. No enviar más copias sin petición; refrescar estado con `python submit_frontier7.py` (sin --submit); segunda plaza solo con petición explícita (`--slot 2`).
