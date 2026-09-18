@@ -1,0 +1,6 @@
+{
+  "candidate": "f7_lock",
+  "sha256": "7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc",
+  "selected_utc": "2026-09-18T02:28:36.005694+00:00",
+  "basis": "V48 + lockstep only. Screen 5611-5616: 11/1 vs V48 (+1124), 11/1 vs f5_lock (+1451), 12/0 vs Beyond-48 (+3288). Holdout 5871-5878 (C++ engine, paired V48 control): 16/0 against all 12 opponents, V48 +922, paired score +10, max callback 769 ms under concurrent load. The milk/wool hold layer (f7_hold, f7_holdonly) lost 1/11 against V48 and f7_lock on 5621-5626 and is not exported."
+}

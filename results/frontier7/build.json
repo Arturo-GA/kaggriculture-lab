@@ -1,0 +1,17 @@
+{
+  "v48_sha256": "4b5402888feeb4170dce38f34bebe56788b62ca287139fce7db72df8eb89bb96",
+  "variants": {
+    "f7_lock": {
+      "sha256": "7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc",
+      "note": "V48 + lockstep sale ordering against a copy (exported candidate)"
+    },
+    "f7_hold": {
+      "sha256": "d5f3d558457a54d81cfb9f3e0491b3b2c440e67be26e611a400ece1dec1bbf92",
+      "note": "f7_lock + milk/wool hold-and-release layer (measured negative, not exported)"
+    },
+    "f7_holdonly": {
+      "sha256": "f1a83d2bc94c062803a7a1d387f0eabc7e6ad1b5310fcae570e5f128370ee2bd",
+      "note": "V48 + hold layer alone (measured negative, not exported)"
+    }
+  }
+}

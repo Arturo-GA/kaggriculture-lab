@@ -4,6 +4,33 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**18 de septiembre: Frontier7 (lockstep sobre V48) y el análisis del top 2.** Frontier5 subió a
+2751 (puesto 238) y empezó a caer: 8/24 en sus partidas contra rivales de 2800 o más, casi todas
+contra clones de V47/V48 (17 de septiembre), que integran el pre-guardia nocturno, un orden lockstep
+propio y el rebaño según tiendas de Seyit Kaan Güneş; V48 gana 10/2 a f5_lock y 12/0 a V46 en nuestro
+simulador. El análisis de Unknown Mother-Goose (#1, 106 replays) está en
+[FRONTIER7_RESULTS.es.md](FRONTIER7_RESULTS.es.md): contra 79 clones gana 75 con +13255 de media con
+la misma mano de obra y las mismas cosechas, pero vende fresa, leche y lana un 30-40 % más caras
+(producción más temprana y lotes constantes) y añade tomates, zanahorias y huevos. Con el modelo exacto
+del mercado del motor se midió la palanca de "retener y dosificar" leche y lana
+(`frontier7_hold.py`): el almacén de la cinta no deja sitio (80 de 100 al amanecer, 66 unidades en manos
+por la noche) y la capa pierde 1/11 contra V48; descartada. Superar al top 2 exige una economía propia
+(planificador), no un envoltorio. Candidato inmediato `candidates/f7_lock.py` = V48 público (hash
+fijado en `build_f7.py`, punto de entrada `_e335_agent`) + `frontier5_lockstep.py`: 11/1 contra V48
+(+1124) en pantalla, holdout C++ 16/0 contra los 12 rivales (V48 +922, f5_lock +1283), motor oficial
+8/0 contra V48 (+861) y Kaggle 4/0 contra V48, Beyond-48 y f5_lock (archivo verificado,
+`results/frontier7/kaggle_verified.json`). **No enviado**: se envía solo a petición. Notas:
+[RESUME_FRONTIER7.es.md](RESUME_FRONTIER7.es.md).
+
+```powershell
+python extract_public_agents.py        # V48 y rivales públicos desde vendor/pub/ (kaggle kernels pull)
+python build_f7.py                     # f7_lock (exportable), f7_hold y f7_holdonly (descartados) desde el V48 fijado
+python -m unittest -v test_frontier7.py
+python make_frontier7_notebook.py; python -m kaggle kernels push -p kaggle_frontier7
+python verify_frontier7_cloud.py       # tras `kaggle kernels output ... -p results/frontier7/kaggle`
+python submit_frontier7.py             # estado; --submit --authorization "..." solo con petición explícita
+```
+
 **17 de septiembre: Frontier5 (orden lockstep sobre V46).** Las Frontier4 llegaron a plata (2674,
 puesto 437) y empezaron a caer: la ola pública del 16 de septiembre (pipe-7/8, Beyond-48, V46) gana
 el turno 0-1 por microestructura de órdenes y nos cuesta ~1300 monedas antes del día 12; V46 gana 11/1

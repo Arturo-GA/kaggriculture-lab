@@ -1,0 +1,13 @@
+Frontier7 — 18 de septiembre de 2026
+Base: V48 público "Clear the Queue" de Ahmed Berat Özer (SHA-256 4b5402888feeb4170dce38f34bebe56788b62ca287139fce7db72df8eb89bb96), extraído como datos con extract_public_agents.py (modo auto); no está en Git. V48 = V46 + capas de Seyit Kaan Güneş integradas en V47 (pre-guardia 21-22, lockstep propio contra copia, rebaño según tiendas) + limpieza de la cola de órdenes.
+Candidato congelado: candidates/f7_lock.py = V48 + enlace del punto de entrada (agent=_e335_agent) + frontier5_lockstep.py sin cambios. Hash 7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc en results/frontier7/selection.json y build.json. Reconstruir: python build_f7.py (ver test_frontier7.py). Ojo: envolver el `agent` de módulo de V48 (el de V46) deja fuera las capas V47/V48 y reproduce f5_lock exactamente; la primera pantalla de f7_lock (screen_f7.json) tiene ese defecto y no cuenta.
+Análisis del top 2 y de la palanca de mercado: FRONTIER7_RESULTS.es.md.
+Semillas consumidas: 5601-5606 (pantalla V48), 5611-5616 (pantallas f7_lock), 5611-5619 (espejos oficiales V48 para el estudio de mercado), 5621-5626 (capa de retención, descartada), 5871-5878 (holdout f7_lock), 5881-5884 (oficial f7_lock), 5931-5932 (nube). No reajustar sobre ellas.
+Descartado con medición: frontier7_hold.py (retener y dosificar leche/lana: 1/11 contra V48 y contra f7_lock; results/frontier7/hold_screen.json), build_f6.py (transplante de grabaciones del líder sobre V46: 6/10, −1948). f5_lock queda obsoleto: pierde 10/2 contra V48.
+Empaquetado: make_frontier7_notebook.py → kaggle_frontier7/ → kernel jarturo/kaggriculture-frontier7-v48-lockstep → verify_frontier7_cloud.py → submit_frontier7.py (--submit --authorization "..." solo con petición explícita; --slot 2 para la segunda plaza).
+Seguimiento en vivo: python live_report.py <submission_id> ...
+Datos: vendor/top_replays (Mother-Goose 106, SpaTaro 193 replays), vendor/live_f5 (auditoría Frontier5), vendor/episodes_ds; todo fuera de Git. Estudio de mercado en outputs/session/whatif_*.py y mirror_market.py (fuera de Git).
+Siguiente salto real: planificador propio (apertura determinista del líder + plan diario evaluado con el simulador C++ + imitación de las 299 grabaciones). Ninguna capa sobre la cinta pública supera al top 2.
+No crear automatizaciones ni iniciar nuevas rondas sin petición.
+Kaggle verificado: True (results/frontier7/kaggle_verified.json; kernel versión 1, semillas 5931-5932: 4/0 contra V48 +616, Beyond-48 +752, f5_lock +805; 236 ms; archivo ec4b691030f4a7227cf4d82b97ee7e544f9dd5675d9ab63e1a80dea21c292c54).
+Envío al leaderboard: no. Se envía solo si Arturo lo pide (las dos plazas activas siguen siendo las Frontier5 56292870 y 56292879).

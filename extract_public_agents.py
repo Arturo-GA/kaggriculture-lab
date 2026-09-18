@@ -37,6 +37,7 @@ SOURCES = {
     'purerl': ('hesoponyo/pure-rl-agent-bc-ppo-self-play', 'auto'),
     'evgen': ('evgendvorkin/kaggriculture', 'auto'),
     'tetsu_market2': ('tetsutani/market-smart-farming-kaggriculture', 'auto'),
+    'v48': ('ahmedberatozer/kaggriculture-v48-clear-the-queue', 'auto'),
 }
 
 

@@ -131,5 +131,12 @@
     "agent_sha256": "1a97f872f4af6658e3fe16f6bca401f9e66ce5a54a1527482d730b68d4011b0b",
     "notebook_sha256": "dd4b5d458c2ac96046dce7bc30d903420af5d88a02106c5add4dbe93ddb70fb9",
     "use": "evaluation only; excluded from Git"
+  },
+  "v48": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v48-clear-the-queue",
+    "bytes": 357742,
+    "agent_sha256": "4b5402888feeb4170dce38f34bebe56788b62ca287139fce7db72df8eb89bb96",
+    "notebook_sha256": "10b89d7ce489345361ffcc2cc14745305a6316559d53918f365ea6d288368e6c",
+    "use": "evaluation only; excluded from Git"
   }
 }

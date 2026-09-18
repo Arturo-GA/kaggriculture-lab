@@ -50,3 +50,10 @@ results/frontier5/kaggle/candidates/v46.py
 results/frontier5/kaggle/candidates/beyond48.py
 results/frontier5/kaggle/candidates/f4_probe.py
 !candidates/f5_lock.py
+candidates/f6_*.py
+candidates/v48.py
+candidates/f7_*.py
+!candidates/f7_lock.py
+results/frontier7/kaggle/candidates/v48.py
+results/frontier7/kaggle/candidates/beyond48.py
+results/frontier7/kaggle/candidates/f5_lock.py

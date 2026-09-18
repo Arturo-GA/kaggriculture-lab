@@ -1,0 +1,29 @@
+{
+  "candidate": "f7_lock",
+  "kernel": "jarturo/kaggriculture-frontier7-v48-lockstep",
+  "control": "v48",
+  "source_sha256": {
+    "f7_lock": "7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc",
+    "v48": "4b5402888feeb4170dce38f34bebe56788b62ca287139fce7db72df8eb89bb96",
+    "beyond48": "4757f3f5b28db8a2f4614bb08993a8a567a7d49bae1ac324fbcfbcc1af60e95e",
+    "f5_lock": "150e8e173c9ee518a75e27436686a9965f64104798cc09b2a88ea776e9d438d4"
+  },
+  "cloud_opponents": [
+    "v48",
+    "beyond48",
+    "f5_lock"
+  ],
+  "cloud_seeds": [
+    5931,
+    5932
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "e878452959dd42497a8fa8a3d314edc82188511aebc14aa088f0c745e945a6fc",
+    "official_summary.json": "eccb2bbf6ab27ef89c4985e073baaffe2e1cc109347a08ab93e133f7fb96993a"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Paired against the unmodified public V48 on the same opponents, seeds and seats: positive total paired score, no per-opponent regression, no reported errors or fallbacks, every callback below 1000 ms, and at least 50% score in the direct V48 mirror.",
+  "attribution": "Base agent: Ahmed Berat Ozer V48 \"Clear the Queue\" (Apache-2.0), which carries V46, the Seyit Kaan Gunes layers integrated in V47 and the upstream authors credited in its source. Frontier7 binds the V48 entry point and appends the Kaggriculture Lab lockstep sale ordering (replays the engine market per unit against a copy of our own orders and keeps the best permutation of our SELL orders). The Kaggriculture Lab hold-and-release layer for milk and wool was measured negative and is not part of this candidate.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

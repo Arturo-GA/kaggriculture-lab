@@ -1,0 +1,46 @@
+{
+  "candidate": "f7_lock",
+  "sha256": "7e066d4f6dc3ad2bc8a65fbb7a493d133c967a8246c24b3217c3caf0e3608ddc",
+  "games": 12,
+  "per_opponent": {
+    "v48": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 616.5
+    },
+    "beyond48": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 752.0
+    },
+    "f5_lock": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 805.0
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 2.0,
+  "max_call_ms": 235.57552099998702,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 24,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier7-v48-lockstep",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "ec4b691030f4a7227cf4d82b97ee7e544f9dd5675d9ab63e1a80dea21c292c54"
+}

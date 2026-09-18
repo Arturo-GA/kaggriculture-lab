@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-09-18T02:28:36.005694+00:00",
+  "candidate": "f7_lock",
+  "control": "v48",
+  "screen_seeds": [
+    5601,
+    5602,
+    5603,
+    5604,
+    5605,
+    5606,
+    5611,
+    5612,
+    5613,
+    5614,
+    5615,
+    5616,
+    5621,
+    5622,
+    5623,
+    5624,
+    5625,
+    5626
+  ],
+  "screen_note": "5601-5606: f5_lock/v46/v48 vs v48/v46/beyond48 (V48 beats f5_lock 10/2 and V46 12/0). 5611-5616: f7_lock vs v48/f5_lock/beyond48 (a first build that wrapped the module-level `agent` bypassed the V47/V48 layers and tied f5_lock exactly; rebuilt binding _e335_agent: 11/1 vs V48 +1124). 5621-5626: f7_hold/f7_holdonly (milk/wool hold-and-release) vs v48/f7_lock, negative (1/11 everywhere), rejected. Official-engine V48 mirrors 5611-5619 were also recorded for the offline market study.",
+  "holdout_seeds": [
+    5871,
+    5872,
+    5873,
+    5874,
+    5875,
+    5876,
+    5877,
+    5878
+  ],
+  "holdout_opponents": [
+    "v48",
+    "v46",
+    "f5_lock",
+    "beyond48",
+    "pipe7",
+    "pipe8",
+    "aurax_v6",
+    "tetsu_market2",
+    "seyit2820",
+    "xman_top1",
+    "f4_probe",
+    "prvsiyan"
+  ],
+  "official_seeds": [
+    5881,
+    5882,
+    5883,
+    5884
+  ],
+  "official_opponents": [
+    "v48",
+    "beyond48",
+    "pipe7",
+    "f5_lock",
+    "prvsiyan",
+    "kaito"
+  ],
+  "cloud_seeds": [
+    5931,
+    5932
+  ],
+  "cloud_opponents": [
+    "v48",
+    "beyond48",
+    "f5_lock"
+  ],
+  "rule": "Freeze the f7_lock hash before holdout. Require, paired against unmodified V48 on identical opponents/seeds/seats: positive total paired score, no per-opponent regression, >=50% in the direct V48 mirror, no reported errors/fallbacks, callbacks <1000 ms on the official engine and in Kaggle. Seeds used once; no retuning on them.",
+  "attribution": "Base: Ahmed Berat Ozer V48 (Apache-2.0; V47 integrates Seyit Kaan Gunes layers) and upstream authors. Frontier7: Kaggriculture Lab lockstep sale ordering against a copy (frontier5_lockstep.py) on top of V48. frontier7_hold.py measured and rejected."
+}
