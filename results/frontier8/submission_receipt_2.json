@@ -1,0 +1,15 @@
+{
+  "id": 56372978,
+  "status": "SubmissionStatus.PENDING",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier8 stack+lockstep e5529ee0 on v9/4 - second slot",
+  "checked_utc": "2026-09-19T23:04:39.322247+00:00",
+  "archive_sha256": "c87445d0a0f21d588457c2c2da86b01a8ccb28ba999dbea3d52ef86ad4db5881",
+  "candidate_sha256": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 20 de septiembre de 2026: \"envia las dos\" (enviar el archivo verificado de Frontier8 a las dos plazas)",
+  "filename": "submission.tar.gz",
+  "public_score": "",
+  "error": "",
+  "date": "2026-09-19 23:04:16"
+}

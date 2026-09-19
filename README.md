@@ -17,8 +17,9 @@ compatibles + nuestra capa lockstep, y repetir tras el cierre del 23. Candidato
 `frontier5_lockstep.py` (hashes fijados en `build_f8.py`): holdout 301/336 contra 14 rivales (23/1 contra
 cada agente del linaje v9/4, 17/7 contra el linaje V50; el mejor público sin modificar gana 256), motor
 oficial 12/0 contra Tschinkel, Arlene y Gluzdov y 10/2 contra tetsutani, Kaggle 4/0 contra Arlene y
-Tschinkel (archivo verificado, `results/frontier8/kaggle_verified.json`). **No enviado**: se envía solo a
-petición. Notas: [RESUME_FRONTIER8.es.md](RESUME_FRONTIER8.es.md).
+Tschinkel (archivo verificado, `results/frontier8/kaggle_verified.json`). Arturo pidió las dos plazas:
+**submissions 56372977 y 56372978** (recibos en `results/frontier8/submission_receipt*.json`). Notas:
+[RESUME_FRONTIER8.es.md](RESUME_FRONTIER8.es.md).
 
 ```powershell
 python extract_public_agents.py tschinkel gluzdov_shock lynn_v2 tetsu_dp   # tras `kaggle kernels pull ... -p vendor/pub/<ref> -m`

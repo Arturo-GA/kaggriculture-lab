@@ -125,7 +125,10 @@ Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier8-stack-l
 (+477) y 2/2 contra tetsutani (+555 de media; el control también 2/2)**; latencia máxima 167 ms en la CPU de
 Kaggle, cero errores. `main.py` y `submission.tar.gz` descargados coinciden byte a byte con el candidato
 congelado; SHA-256 del archivo `c87445d0a0f21d588457c2c2da86b01a8ccb28ba999dbea3d52ef86ad4db5881`
-(`results/frontier8/kaggle_verified.json`). **No se ha enviado nada al leaderboard.**
+(`results/frontier8/kaggle_verified.json`). Envío autorizado por Arturo el 20 de septiembre ("envia las
+dos"): **submissions 56372977 y 56372978** (recibos en `results/frontier8/submission_receipt.json` y
+`submission_receipt_2.json`); Frontier7 y Frontier5 dejan de estar en seguimiento. El rating de las primeras
+horas no es el resultado final: juzgar a partir de unas 60 partidas.
 
 ## 6. Qué esperar y qué sigue
 
