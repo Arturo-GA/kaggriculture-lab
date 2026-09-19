@@ -1,0 +1,6 @@
+{
+  "candidate": "f8_stack_lock",
+  "sha256": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+  "selected_utc": "2026-09-19T22:52:15.045023+00:00",
+  "basis": "v9/4 + Gluzdov opening crop + Arlene queue closure + Lab lockstep. Screen 5951-5956: 72/72 against the six strongest public agents. Holdout 5961-5972 (C++ engine, paired control lynn_v2, 14 opponents, 336 games): 301 wins, 23/1 against each v9/4-lineage agent, 17/7 against the V50 lineage, paired score +45, no errors, max 418 ms. Official engine 5981-5986: 12/0 vs tschinkel, lynn_v2 and gluzdov_shock, 10/2 vs tetsu_dp, alperen_first and f7_lock, paired +16, max 153 ms. f8_lynn_lock (without the opening crop) scored 297/336 on the same holdout."
+}

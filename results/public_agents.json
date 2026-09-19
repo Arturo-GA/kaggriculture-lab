@@ -138,5 +138,96 @@
     "agent_sha256": "4b5402888feeb4170dce38f34bebe56788b62ca287139fce7db72df8eb89bb96",
     "notebook_sha256": "10b89d7ce489345361ffcc2cc14745305a6316559d53918f365ea6d288368e6c",
     "use": "evaluation only; excluded from Git"
+  },
+  "tschinkel": {
+    "url": "https://www.kaggle.com/code/thomastschinkel/the-2945-farm-96-vs-the-top-10-public-bots",
+    "bytes": 856427,
+    "agent_sha256": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd",
+    "notebook_sha256": "2be5c9bfb0bd7d1ff4b38d2964c8eb89272e7c8218f1b1f413b0f4fc2630e7ec",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "v49": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v49-funded-sale-timing-and-worker",
+    "bytes": 437804,
+    "agent_sha256": "ed89be8cd96fe58ea5ca96c91bbeda28d928a5192ed926639fe6c43aea39b368",
+    "notebook_sha256": "bbe94a8020307916025fbe48ee948112429822d702d15c6712f3f502addbb031",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "v50": {
+    "url": "https://www.kaggle.com/code/ahmedberatozer/kaggriculture-v50-early-yarn-commit",
+    "bytes": 453739,
+    "agent_sha256": "044a26601be23816d397c51c22c4d86b938f8bac4b914f9bea1fbe38bac1e8a5",
+    "notebook_sha256": "8dd24ea45602d4de8534260cc2436c1aeeaf81b9150916c5c183391f52db0ebf",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "tetsu_dp": {
+    "url": "https://www.kaggle.com/code/tetsutani/demand-preserving-turn-sale-timing",
+    "bytes": 453957,
+    "agent_sha256": "1aa3717b3201997a95920c80cf5612c23f78f8716c7b1084b6a345ca4eae7e4f",
+    "notebook_sha256": "fb4d7d68b813f509d18f7cce868f795370442e5712558fba955e3fcb8b13c7f1",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "gluzdov_shock": {
+    "url": "https://www.kaggle.com/code/dmitriigluzdov/kaggriculture-a-smaller-market-shock",
+    "bytes": 862940,
+    "agent_sha256": "d5460fc2e5488e0a340f0e4e795f2709c48b58cff7c204ced3821a4c7dae4555",
+    "notebook_sha256": "18882f757216c8d5f91039c8742fd588467bf2743e77b1518dc48d3b7866820d",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "lynn_v2": {
+    "url": "https://www.kaggle.com/code/lynnsakurai/farming-score-v2-a-better-approach",
+    "bytes": 860103,
+    "agent_sha256": "177d78bdf00aa96579d98052558e18cd3081d29f855c8a6f20a2bbfebcdbda11",
+    "notebook_sha256": "2103608625162df5254ab24da898958a3e025e2d0b6146aa8cecde0f30f042ca",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "yummers": {
+    "url": "https://www.kaggle.com/code/romantamrazov/kaggriculture-yummers",
+    "bytes": 859231,
+    "agent_sha256": "2f96c7337019295fc71f3526375078b9364322826e134455048bb3ea4363931f",
+    "notebook_sha256": "d0c1c0c648601270c64aa7245a6b2cbbf04cfd63a67c35406864c5258a1c0c3d",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "alperen_rhythm": {
+    "url": "https://www.kaggle.com/code/alperen5252525/kaggriculture-market-rhythm-sale-policy",
+    "bytes": 361915,
+    "agent_sha256": "f3be6392671608e9a575145c6caba4ab2f76d44b7ed64cdc086c8bcf845b541a",
+    "notebook_sha256": "a830ca2710ae9bd883fed34b05f5ad489a24c40b593094e804aeca70110278f5",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "alperen_first": {
+    "url": "https://www.kaggle.com/code/alperen5252525/kaggriculture-first-in-line-stock-into-income",
+    "bytes": 357814,
+    "agent_sha256": "53dc224a75301affb6ba6ea549b6d9842110b6b9913f001510d36991c8dfe07a",
+    "notebook_sha256": "69699f0815bf3a1bf604c8e3db21e78f9faf1959f162b466f350d7fe5b994e56",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "melon_squeeze": {
+    "url": "https://www.kaggle.com/code/goodpjw2008/kaggriculture-melon-threshold-squeeze-2749",
+    "bytes": 338273,
+    "agent_sha256": "1f5c7a18035e522ee91f10674e0007ceaebe8e523f2fe9440324d27d6525fd49",
+    "notebook_sha256": "ae34db0ef30bb7f858532ded3bbed229678c2db804f117d8fe5cdbad1e5d6eed",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "ziheng_best": {
+    "url": "https://www.kaggle.com/code/zihengedie/best-version",
+    "bytes": 432375,
+    "agent_sha256": "54d0287863227a280bf0c52a4909591ac0e2bd060c0bdff46c244c2cf67842ec",
+    "notebook_sha256": "ff1c2498b8a7e671090a531b23fce4e270acdc8b267390ec182712ea2a8d2af1",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "k0013": {
+    "url": "https://www.kaggle.com/code/ghazarosbarseghyan91/kaggriculture-k0013-v46-advance6",
+    "bytes": 337376,
+    "agent_sha256": "45628c719dc967f81655c19f70e579c55a5758b9fe75a5fcdad9193eebf6a017",
+    "notebook_sha256": "3d4b78ff70b530b0d50527598cc21ec574d36888156a053856a25b66b16389f9",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
+  },
+  "aurax_v7": {
+    "url": "https://www.kaggle.com/code/aurax7/kaggriculture-shop-router-reactive-v7",
+    "bytes": 347606,
+    "agent_sha256": "e221f4875daff8b03e8f0ec7c86bd3a2a72c0768b049d4c25064abd5301a532b",
+    "notebook_sha256": "a1b9fef2e5b768df66e77d88e4d93aa5a4f269bb9ef8e58a6002189eef6bdadc",
+    "use": "evaluation and, for v45, the Frontier4 base; excluded from Git"
   }
 }

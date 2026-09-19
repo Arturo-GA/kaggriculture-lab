@@ -4,6 +4,31 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**19-20 de septiembre: Frontier8 (capas públicas apiladas + lockstep) tras leer el foro.** Frontier7 cayó
+a 2600 (puesto 628; corte de plata 2665) porque el 19 de septiembre Thomas Tschinkel abrió su agente de
+2945 puntos ("The 2945 Farm" v9/4, repartido byte a byte por cuatro notebooks) y V49/V50 integraron sus
+capas: todos ganan 0/8 por −3000 a Frontier7. Del foro: los notebooks públicos se cierran el **23 de
+septiembre 23:59 UTC**, el ranking final es un único torneo Bradley-Terry sobre las dos semanas
+posteriores al 30 con las dos últimas submissions, y clonar lo público más reciente basta para el 10 %
+superior; quienes suben por fuera usan PPO con ~300k partidas. Estrategia para plata en
+[FRONTIER8_RESULTS.es.md](FRONTIER8_RESULTS.es.md): base pública más fuerte + mejoras públicas
+compatibles + nuestra capa lockstep, y repetir tras el cierre del 23. Candidato
+`candidates/f8_stack_lock.py` = v9/4 + apertura de Gluzdov + cierre de cola de Arlene +
+`frontier5_lockstep.py` (hashes fijados en `build_f8.py`): holdout 301/336 contra 14 rivales (23/1 contra
+cada agente del linaje v9/4, 17/7 contra el linaje V50; el mejor público sin modificar gana 256), motor
+oficial 12/0 contra Tschinkel, Arlene y Gluzdov y 10/2 contra tetsutani, Kaggle 4/0 contra Arlene y
+Tschinkel (archivo verificado, `results/frontier8/kaggle_verified.json`). **No enviado**: se envía solo a
+petición. Notas: [RESUME_FRONTIER8.es.md](RESUME_FRONTIER8.es.md).
+
+```powershell
+python extract_public_agents.py tschinkel gluzdov_shock lynn_v2 tetsu_dp   # tras `kaggle kernels pull ... -p vendor/pub/<ref> -m`
+python build_f8.py                     # f8_stack_lock (exportable) y variantes medidas
+python -m unittest -v test_frontier8.py
+python make_frontier8_notebook.py; python -m kaggle kernels push -p kaggle_frontier8
+python verify_frontier8_cloud.py       # tras `kaggle kernels output ... -p results/frontier8/kaggle`
+python submit_frontier8.py             # estado; --submit --authorization "..." solo con petición explícita
+```
+
 **18 de septiembre: Frontier7 (lockstep sobre V48) y el análisis del top 2.** Frontier5 subió a
 2751 (puesto 238) y empezó a caer: 8/24 en sus partidas contra rivales de 2800 o más, casi todas
 contra clones de V47/V48 (17 de septiembre), que integran el pre-guardia nocturno, un orden lockstep

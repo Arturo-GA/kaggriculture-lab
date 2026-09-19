@@ -1,0 +1,29 @@
+{
+  "candidate": "f8_stack_lock",
+  "kernel": "jarturo/kaggriculture-frontier8-stack-lockstep",
+  "control": "lynn_v2",
+  "source_sha256": {
+    "f8_stack_lock": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+    "lynn_v2": "177d78bdf00aa96579d98052558e18cd3081d29f855c8a6f20a2bbfebcdbda11",
+    "tschinkel": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd",
+    "tetsu_dp": "1aa3717b3201997a95920c80cf5612c23f78f8716c7b1084b6a345ca4eae7e4f"
+  },
+  "cloud_opponents": [
+    "lynn_v2",
+    "tschinkel",
+    "tetsu_dp"
+  ],
+  "cloud_seeds": [
+    6021,
+    6022
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "d07f0b0a4328b000f7ed0d616f23712eb5ee28ea37982c44182be106b3821bbe",
+    "official_summary.json": "3b36d68244fd0e35fe931fecd74a8d0fadc72b9ff1761763665adfa32411eb91"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Paired against the strongest unmodified public agent of 19 September 2026 (Arlene, Farming Score V2 = The 2945 Farm v9/4 + queue closure) on the same opponents, seeds and seats: positive total paired score, no per-opponent regression, no reported errors or fallbacks, every callback below 1000 ms, and at least 50% score in the direct mirror against that control.",
+  "attribution": "Base agent: Thomas Tschinkel, The 2945 Farm v9/4 (Apache-2.0), with the upstream authors credited in its source (Ahmed Berat Ozer, yhay81, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani and others). Public layers stacked on it: Dmitrii Gluzdov, temporary opening wheat crop (A Smaller Market Shock); Arlene (lynnsakurai), final effective-queue closure (Farming Score V2). Kaggriculture Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py).",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-09-19T22:52:15.045023+00:00",
+  "candidate": "f8_stack_lock",
+  "control": "lynn_v2",
+  "screen_seeds": [
+    5941,
+    5942,
+    5943,
+    5944,
+    5951,
+    5952,
+    5953,
+    5954,
+    5955,
+    5956,
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010,
+    6011,
+    6012
+  ],
+  "screen_note": "5941-5944: round robin of the 19 September public wave (tschinkel, lynn_v2, gluzdov_shock, yummers, v50, tetsu_dp, v49, ziheng_best) and f7_lock, which loses 0/8 to each of them by -2700..-3400. 5951-5956: f8_stack, f8_stack_lock, f8_lynn_lock, f8_tetsu_lock vs the six strongest public agents; f8_stack_lock 72/72. 6001-6012 (after the holdout): one-day carrot feed reserve variant (f8x_feed1) vs the frozen candidate on seven opponents: identical W/L (154/168 each, no flipped game), so the frozen candidate stays. The same variant had flipped world 5970 against the V50 lineage on the consumed holdout seeds.",
+  "holdout_seeds": [
+    5961,
+    5962,
+    5963,
+    5964,
+    5965,
+    5966,
+    5967,
+    5968,
+    5969,
+    5970,
+    5971,
+    5972
+  ],
+  "holdout_opponents": [
+    "tschinkel",
+    "lynn_v2",
+    "gluzdov_shock",
+    "yummers",
+    "tetsu_dp",
+    "v50",
+    "v49",
+    "alperen_rhythm",
+    "alperen_first",
+    "melon_squeeze",
+    "k0013",
+    "ziheng_best",
+    "aurax_v7",
+    "f7_lock"
+  ],
+  "official_seeds": [
+    5981,
+    5982,
+    5983,
+    5984,
+    5985,
+    5986
+  ],
+  "official_opponents": [
+    "tschinkel",
+    "lynn_v2",
+    "gluzdov_shock",
+    "tetsu_dp",
+    "alperen_first",
+    "f7_lock"
+  ],
+  "cloud_seeds": [
+    6021,
+    6022
+  ],
+  "cloud_opponents": [
+    "lynn_v2",
+    "tschinkel",
+    "tetsu_dp"
+  ],
+  "rule": "Freeze the candidate hash before holdout. Require, paired against the strongest unmodified public agent (lynn_v2) on identical opponents/seeds/seats: positive total paired score, no per-opponent regression, >=50% in the direct mirror against that control, no reported errors/fallbacks, callbacks <1000 ms on the official engine and in Kaggle. Seeds used once; no retuning on them.",
+  "note": "The C++ accelerator is not bit-exact for this lineage (world 5970 vs tetsu_dp: -1805 in C++, -1835 official; world 5961: -862 vs -1414); signs agree. Decisions rest on the official-engine confirmation.",
+  "attribution": "Base: Thomas Tschinkel, The 2945 Farm v9/4 (Apache-2.0) and its upstream authors. Stacked public layers: Dmitrii Gluzdov (temporary opening wheat crop), Arlene/lynnsakurai (final effective-queue closure). Lab layer: frontier5_lockstep.py."
+}

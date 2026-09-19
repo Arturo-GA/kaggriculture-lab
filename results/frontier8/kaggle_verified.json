@@ -1,0 +1,47 @@
+{
+  "candidate": "f8_stack_lock",
+  "sha256": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+  "games": 12,
+  "per_opponent": {
+    "lynn_v2": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 477.0
+    },
+    "tschinkel": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 477.0
+    },
+    "tetsu_dp": {
+      "games": 4,
+      "wins": 2,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 555.0
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 3.0,
+  "max_call_ms": 167.16661099997054,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 24,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier8-stack-lockstep",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "c87445d0a0f21d588457c2c2da86b01a8ccb28ba999dbea3d52ef86ad4db5881",
+  "verified": true
+}

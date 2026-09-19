@@ -185,32 +185,3 @@ Modified September 18, 2026 by Arturo-GA / Kaggriculture Lab (Frontier7):
   their hashes. V48, Beyond-48 and our own Frontier5 are embedded in the
   private verification notebook as attributed opponents; the submitted runtime
   contains only the V48-derived `f7_lock` source.
-
-Modified September 19-20, 2026 by Arturo-GA / Kaggriculture Lab (Frontier8):
-
-- The Frontier8 base is the public notebook "The 2945 Farm: 96% vs the Top-10
-  Public Bots" (agent v9/4) by Thomas Tschinkel (Apache-2.0, SHA-256 prefix
-  `4f3ca95dd12d9a94`), which retains its upstream notices and credits Ahmed
-  Berat Özer (V25-V48 chassis and V43 overflow sale), Yusuke Hayashi (shop
-  router tapes), prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani, lucifer19,
-  leoprovorov, destbreso, Steven Lee Hans and the public V100.24 release.
-- Two public layers are stacked on it exactly as their authors published them:
-  the temporary opening wheat crop from Dmitrii Gluzdov's "Kaggriculture: A
-  Smaller Market Shock" (Apache-2.0, SHA-256 prefix `d5460fc2e5488e0a`) and the
-  final effective-queue closure from Arlene's (lynnsakurai) "Farming Score V2:
-  A Better Approach" (SHA-256 prefix `177d78bdf00aa965`, a v9/4 derivative that
-  keeps the upstream Apache-2.0 notices). `build_f8.py` pins all hashes, checks
-  that each derivative is a pure append on v9/4 and extracts the appended block.
-- The Kaggriculture Lab layer is `frontier5_lockstep.py`, unchanged, after an
-  empty `_RACE_STATE` dict (the v9/4 chassis predates the V44 race layer).
-- tetsutani's "Demand-Preserving Turn Sale Timing" (a V50 derivative), Ahmed
-  Berat Özer's V49/V50, Roman Tamrazov's "Yummers", Alperen Aydın's sale-policy
-  notebooks, goodpjw2008's "Melon threshold squeeze", Ghazaros Barseghyan's
-  K0013, ziheng's "best version" and aurax7's V7 are used only as local
-  evaluation opponents. All third-party sources are excluded from Git;
-  `results/public_agents.json` records their hashes. Arlene's agent, v9/4 and
-  tetsutani's agent are embedded in the private verification notebook as
-  attributed opponents; the submitted runtime contains only the
-  `f8_stack_lock` source with every upstream notice retained.
-- Forum posts and third-party repositories cited in `FRONTIER8_RESULTS.es.md`
-  were read as public information; no code was taken from them.

@@ -38,6 +38,20 @@ SOURCES = {
     'evgen': ('evgendvorkin/kaggriculture', 'auto'),
     'tetsu_market2': ('tetsutani/market-smart-farming-kaggriculture', 'auto'),
     'v48': ('ahmedberatozer/kaggriculture-v48-clear-the-queue', 'auto'),
+    # 19 September 2026 wave (Frontier8)
+    'tschinkel': ('thomastschinkel/the-2945-farm-96-vs-the-top-10-public-bots', 'auto'),
+    'v49': ('ahmedberatozer/kaggriculture-v49-funded-sale-timing-and-worker', 'auto'),
+    'v50': ('ahmedberatozer/kaggriculture-v50-early-yarn-commit', 'auto'),
+    'tetsu_dp': ('tetsutani/demand-preserving-turn-sale-timing', 'auto'),
+    'gluzdov_shock': ('dmitriigluzdov/kaggriculture-a-smaller-market-shock', 'auto'),
+    'lynn_v2': ('lynnsakurai/farming-score-v2-a-better-approach', 'auto'),
+    'yummers': ('romantamrazov/kaggriculture-yummers', 'auto'),
+    'alperen_rhythm': ('alperen5252525/kaggriculture-market-rhythm-sale-policy', 'auto'),
+    'alperen_first': ('alperen5252525/kaggriculture-first-in-line-stock-into-income', 'auto'),
+    'melon_squeeze': ('goodpjw2008/kaggriculture-melon-threshold-squeeze-2749', 'auto'),
+    'ziheng_best': ('zihengedie/best-version', 'auto'),
+    'k0013': ('ghazarosbarseghyan91/kaggriculture-k0013-v46-advance6', 'auto'),
+    'aurax_v7': ('aurax7/kaggriculture-shop-router-reactive-v7', 'auto'),
 }
 
 
@@ -149,10 +163,14 @@ def extract(ref, kind):
     return notebook, data
 
 
-def main():
-    records = {}
+def main(names=None):
+    """Extract every source, or only `names` (merged into the existing record file so older pulls keep their hashes)."""
+    path = Path('results/public_agents.json')
+    records = json.loads(path.read_text(encoding='utf-8')) if names and path.exists() else {}
     Path('candidates').mkdir(exist_ok=True)
     for name, (ref, kind) in SOURCES.items():
+        if names and name not in names:
+            continue
         try:
             notebook, data = extract(ref, kind)
         except StopIteration:
@@ -169,4 +187,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    main(sys.argv[1:] or None)
