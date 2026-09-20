@@ -1,0 +1,127 @@
+{
+  "candidate": "f9_pre8c",
+  "sha256": "4f27dcc2a88094df6166d4fb68c9a74b27657c51080d2fa9250afb8fcfee9567",
+  "games": 224,
+  "per_opponent": {
+    "f8_stack_lock": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 2.0,
+      "mean_margin": 331.5
+    },
+    "f9x_pre1": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 12.0,
+      "mean_margin": 428.125
+    },
+    "f9_pre4": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 14.0,
+      "mean_margin": 390.625
+    },
+    "f9_pre12": {
+      "games": 16,
+      "wins": 0,
+      "ties": 2,
+      "losses": 14,
+      "score_delta": -1.0,
+      "mean_margin": -584.375
+    },
+    "f9_pre40": {
+      "games": 16,
+      "wins": 2,
+      "ties": 0,
+      "losses": 14,
+      "score_delta": 2.0,
+      "mean_margin": -575.375
+    },
+    "f9x_arrival": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10,
+      "score_delta": -2.0,
+      "mean_margin": 154.5
+    },
+    "tschinkel": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 827.5
+    },
+    "lynn_v2": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 821.75
+    },
+    "gluzdov_shock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 767.625
+    },
+    "tetsu_dp": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1234.625
+    },
+    "v50": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1234.625
+    },
+    "v49": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1337.25
+    },
+    "alperen_first": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 3834.25
+    },
+    "k0013": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 4815.875
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.625,
+  "total_score_delta": 33.0,
+  "max_call_ms": 215.9520999994129,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false
+}

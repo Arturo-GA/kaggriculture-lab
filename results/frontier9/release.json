@@ -1,0 +1,32 @@
+{
+  "candidate": "f9_pre4f",
+  "kernel": "jarturo/kaggriculture-frontier9-preemption",
+  "control": "f8_stack_lock",
+  "source_sha256": {
+    "f9_pre4f": "8748ba33604df92d31e802179f0aaa62d8b4abae6b84eab9cfdb0f254d3bc909",
+    "f8_stack_lock": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+    "tschinkel": "4f3ca95dd12d9a94b03339999d8803c155f450a8d3956636f050643301fcc5dd",
+    "tetsu_dp": "1aa3717b3201997a95920c80cf5612c23f78f8716c7b1084b6a345ca4eae7e4f"
+  },
+  "cloud_opponents": [
+    "f8_stack_lock",
+    "tschinkel",
+    "tetsu_dp"
+  ],
+  "cloud_seeds": [
+    7461,
+    7462,
+    7463,
+    7464
+  ],
+  "local_receipts": {
+    "holdout2_summary_f9_pre4f.json": "40bd8ef1a505996bc662a62b07b78cb6be21f62b91190ba59906c650b35f325d",
+    "replication_v48_lineage_summary.json": "8bad13cae5138be21deefbac8c7630cb49f2969b0144c3dad3da07fe2d4a8006"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Paired against our deployed Frontier8 agent (f8_stack_lock) on the same opponents, seeds and seats on the official engine: positive total paired score, no per-opponent regression, no reported errors or fallbacks, every callback below 1000 ms, and at least 50% score in the direct mirror against Frontier8.",
+  "attribution": "Base: Frontier8 = Thomas Tschinkel, The 2945 Farm v9/4 (Apache-2.0) and its upstream authors, with the public layers of Dmitrii Gluzdov (opening wheat crop) and Arlene/lynnsakurai (queue closure) and the Kaggriculture Lab lockstep ordering. Frontier9 adds one Lab change: bounded pre-emption of glutted strawberry, milk and wool lots inside the public RACEGATE reservation (window min(4, lot / town drain), taking the whole stock of the item). A one-day carrot feed reserve, a longer window, a best-response sale scheduler and an adaptive window were measured and are not part of this candidate.",
+  "known_regression": "Against the V48-lineage sale-policy agents (alperen_first, alperen_rhythm) the candidate is about one world in sixteen worse than Frontier8 (measured on the holdout and replicated on 16 fresh seeds). The strict no-regression criterion therefore failed on one opponent; Arturo decides.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

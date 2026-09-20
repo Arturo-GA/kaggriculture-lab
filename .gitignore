@@ -80,3 +80,8 @@ candidates/f8x_*.py
 results/frontier8/kaggle/candidates/lynn_v2.py
 results/frontier8/kaggle/candidates/tschinkel.py
 results/frontier8/kaggle/candidates/tetsu_dp.py
+candidates/f9*.py
+!candidates/f9_pre4f.py
+results/frontier9/kaggle/candidates/tschinkel.py
+results/frontier9/kaggle/candidates/tetsu_dp.py
+results/frontier9/kaggle/candidates/f8_stack_lock.py

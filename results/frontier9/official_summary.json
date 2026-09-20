@@ -1,0 +1,63 @@
+{
+  "candidate": "f9_pre4",
+  "sha256": "4a42fcc20abd9892bfd992f116fb7bedea9d69417b1295a7b0ee3574400d3ba2",
+  "games": 48,
+  "per_opponent": {
+    "f8_stack_lock": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 2.0,
+      "mean_margin": 437.75
+    },
+    "f9x_pre1": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 557.5
+    },
+    "tschinkel": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 785.25
+    },
+    "lynn_v2": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 785.25
+    },
+    "tetsu_dp": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 509.75
+    },
+    "alperen_first": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1193.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.75,
+  "total_score_delta": 10.0,
+  "max_call_ms": 233.7763000105042,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true
+}

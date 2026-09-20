@@ -1,0 +1,50 @@
+{
+  "f8_sha256": "e5529ee0b1a7f139497c885009b797edc8c5867e4ec0e97e67a55babcaa2a77e",
+  "variants": {
+    "f9_pre3": {
+      "kmax": 3,
+      "note": "f8_stack_lock + bounded pre-emption of glutted premium lots, KMAX 3",
+      "sha256": "18c4146261a823a5eb6cd7856cc2e5d3c57c124bcb904c718c2e055905443578"
+    },
+    "f9_pre4": {
+      "kmax": 4,
+      "note": "f8_stack_lock + bounded pre-emption of glutted premium lots, KMAX 4",
+      "sha256": "4a42fcc20abd9892bfd992f116fb7bedea9d69417b1295a7b0ee3574400d3ba2"
+    },
+    "f9_pre8": {
+      "kmax": 8,
+      "note": "KMAX 8",
+      "sha256": "cc54bf4d04570cd546e22ceeb1c2ef783d6eda1af97833f9a712f8d6770245a2"
+    },
+    "f9_pre12": {
+      "kmax": 12,
+      "note": "KMAX 12",
+      "sha256": "dfbc3ac49ee958e810fffb406e7885723b576b6c09ed0d93473c3e9e877c5b98"
+    },
+    "f9_pre20": {
+      "kmax": 20,
+      "note": "KMAX 20",
+      "sha256": "1b51aab647043714166be01ea8e7976336061461715359c19a3770c7f834e014"
+    },
+    "f9_pre40": {
+      "kmax": 40,
+      "note": "KMAX 40 (window = lot / drain, effectively uncapped)",
+      "sha256": "e1a5da8f7dbdecb9363ca8646bb122f5a579fc09e618ec89bb470d5dc68931df"
+    },
+    "f9_pre4a": {
+      "kmax": 4,
+      "note": "KMAX 4, widened to one turn more than the lead the rival has shown (tracker layer appended)",
+      "sha256": "6c2a16cc557be51ed12c03043f7d152e8e04b9aea136a3192913c2bb7aba77c3"
+    },
+    "f9_pre4f": {
+      "kmax": 4,
+      "note": "KMAX 4, and a pre-empted glutted lot takes the whole stock of the item with it",
+      "sha256": "8748ba33604df92d31e802179f0aaa62d8b4abae6b84eab9cfdb0f254d3bc909"
+    },
+    "f9_pre8c": {
+      "kmax": 8,
+      "note": "KMAX 8 + one-day wheat feed reserve in the public CARROT2 layer (_CA_FEED_DAYS 2 -> 1); exported candidate",
+      "sha256": "4f27dcc2a88094df6166d4fb68c9a74b27657c51080d2fa9250afb8fcfee9567"
+    }
+  }
+}

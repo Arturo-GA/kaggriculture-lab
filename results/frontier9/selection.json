@@ -1,0 +1,6 @@
+{
+  "candidate": "f9_pre4f",
+  "sha256": "8748ba33604df92d31e802179f0aaa62d8b4abae6b84eab9cfdb0f254d3bc909",
+  "selected_utc": "2026-09-20T19:20:53.680911+00:00",
+  "basis": "Frontier8 + bounded pre-emption (KMAX 4) that takes the whole stock of the glutted item. Replay panel over 85 recorded live games: 38 -> 54 wins (19 losses flipped, 3 wins lost, mean margin +543). Mirror against Frontier8 over 28 screen seeds: 49/56, mean +717. Fresh-seed holdout 7451-7458 on the official engine: 142/160 against the control 108/160, paired +34. Known weakness, measured and replicated: about one world in sixteen worse than Frontier8 against the V48-lineage sale-policy agents (alperen_first, alperen_rhythm). f9_pre4 (route amount only) failed the Kaggle gate on cloud seeds 7441-7442 and scored 122/160 on the same holdout."
+}

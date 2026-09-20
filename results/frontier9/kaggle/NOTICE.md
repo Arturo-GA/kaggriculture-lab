@@ -214,21 +214,3 @@ Modified September 19-20, 2026 by Arturo-GA / Kaggriculture Lab (Frontier8):
   `f8_stack_lock` source with every upstream notice retained.
 - Forum posts and third-party repositories cited in `FRONTIER8_RESULTS.es.md`
   were read as public information; no code was taken from them.
-
-Modified September 20-21, 2026 by Arturo-GA / Kaggriculture Lab (Frontier9):
-
-- The Frontier9 base is Frontier8 (`f8_stack_lock`, pinned by hash in
-  `build_f9.py`), i.e. Thomas Tschinkel's v9/4 with the public layers listed
-  above. `build_f9.py` patches the public RACEGATE re-implementation of
-  `_r36_reserve` in place: a glutted strawberry, milk or wool lot may be reserved
-  forward by at most min(4, lot / town drain) turns and takes the whole stock of
-  the item. The rule is the project's own, derived from pre-emption games
-  (Fudenberg and Tirole 1985) and predatory trading (Brunnermeier and Pedersen
-  2005; Carlin, Lobo and Viswanathan 2007) with the engine's exact price curve;
-  no third-party code was added.
-- `frontier9_sched.py` (best-response sale scheduler), the adaptive window, the
-  one-day carrot feed reserve and the longer windows built by `build_f9.py` were
-  measured and are not exported.
-- Public episode replays of our own games and of top teams, the community
-  episode tables and the forum were used as data only; they are excluded from
-  Git. Emulated rivals (`f9x_*`) are research copies of our own candidate.

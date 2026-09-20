@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-09-20T17:51:59.248608+00:00",
+  "candidate": "f9_pre4f",
+  "control": "f8_stack_lock",
+  "unit_test_seed": 7451,
+  "evidence_order": "1) frozen-rival replay panel over our 85 recorded live Frontier8 games (same seed, rival actions frozen, candidate live): outputs/session/gold/panel_*.json; 2) closed-loop official-engine meta-game among window sizes (seeds 7301-7306); 3) this holdout.",
+  "screen_seeds": [
+    7301,
+    7302,
+    7303,
+    7304,
+    7305,
+    7306,
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407,
+    7408
+  ],
+  "screen_note": "7301-7306: closed-loop meta-game (pre3/pre4/pre8/pre12/pre20/pre40, best-response scheduler, adaptive window) on the official engine. 7401-7408: first holdout, run for f9_pre8c (K8 + one-day carrot feed reserve), which failed the mirror requirement in spirit (10/6 vs Frontier8, carrot change flips worlds both ways in a reactive mirror) and is rejected; the same seeds then showed f9_pre4 16/16 vs Frontier8.",
+  "holdout_seeds": [
+    7421,
+    7422,
+    7423,
+    7424,
+    7425,
+    7426,
+    7427,
+    7428
+  ],
+  "holdout_opponents": [
+    "f8_stack_lock",
+    "f9x_pre1",
+    "tschinkel",
+    "lynn_v2",
+    "gluzdov_shock",
+    "tetsu_dp",
+    "v50",
+    "v49",
+    "alperen_first",
+    "k0013"
+  ],
+  "informational_opponents": [
+    "f9_pre8",
+    "f9_pre12",
+    "f9_pre40",
+    "f9x_arrival"
+  ],
+  "cloud_seeds": [
+    7461,
+    7462,
+    7463,
+    7464
+  ],
+  "cloud_opponents": [
+    "f8_stack_lock",
+    "tschinkel",
+    "tetsu_dp"
+  ],
+  "rule": "Hash frozen before the holdout. Gate, paired against our deployed Frontier8 (f8_stack_lock) on identical opponents/seeds/seats on the OFFICIAL engine: positive total paired score, no per-opponent regression, >=50% in the direct mirror against Frontier8, no reported errors/fallbacks, callbacks <1000 ms. The emulated longer-window rivals (pre8, pre12, pre40, sell-on-arrival) are reported but do not gate: any fixed window loses to a slightly longer one by construction, so they bound the risk instead of measuring a regression. Registered before the run.",
+  "attribution": "Base: Frontier8 (Thomas Tschinkel v9/4 + Gluzdov + Arlene public layers + Lab lockstep). Frontier9: Lab bounded pre-emption inside the public RACEGATE reservation.",
+  "official_seeds": [
+    7431,
+    7432,
+    7433,
+    7434
+  ],
+  "official_opponents": [
+    "f8_stack_lock",
+    "f9x_pre1",
+    "tschinkel",
+    "lynn_v2",
+    "tetsu_dp",
+    "alperen_first"
+  ],
+  "round2": {
+    "registered_utc": "2026-09-20T18:54:34.398088+00:00",
+    "reason": "f9_pre4 passed holdout 7421-7428 (137/160, mirror 15/1) and the official confirmation 7431-7434 but FAILED the pre-registered Kaggle gate on cloud seeds 7441-7442 (0/4 against Frontier8, -728 and -99; reproduced locally to the coin). Diagnosis: the public sale chain dumps the whole stock the turn after its small route sale; pre-empting only the route amount leaves the rest one turn late. f9_pre4f pre-empts with the whole stock (replay panel 54/85 with 19 losses flipped and 3 wins lost; mirror 49/56, mean +717).",
+    "candidates": [
+      "f9_pre4f",
+      "f9_pre4"
+    ],
+    "control": "f8_stack_lock",
+    "holdout_seeds": [
+      7451,
+      7452,
+      7453,
+      7454,
+      7455,
+      7456,
+      7457,
+      7458
+    ],
+    "rule": "Both candidates and the control play the same 10 gating opponents on fresh seeds 7451-7458 on the official engine. The candidate with the higher total score is selected if it passes the same gate as before (positive paired score, no per-opponent regression, >=50% mirror, no errors, <1000 ms). The cloud verification then uses FOUR fresh seeds (7461-7464) instead of two, same gate. If it fails again, nothing is exported.",
+    "cloud_seeds": [
+      7461,
+      7462,
+      7463,
+      7464
+    ],
+    "outcome": "f9_pre4f scored 142/160 against the control 108/160 (paired +34): 16/0 in the mirror, 16/0 against the one-turn pre-emptor and the three v9/4-lineage agents, 12/4 against the V50 lineage (control 6/10), 14/2 against K0013, but 12/4 against alperen_first where the control had 14/2. The strict no-regression criterion therefore FAILED on one opponent by one world. A targeted replication on 16 fresh seeds (7471-7486) confirmed a small real regression against the V48-lineage sale-policy agents: alperen_first 27/5 (control 29/3), alperen_rhythm 25/7 (control 29/3), k0013 29/3 (equal). f9_pre4 scored 122/160 and regressed against the v9/4 lineage. Decision left to Arturo: the candidate is better overall and worse against one minor family; recommended use is ONE slot, keeping Frontier8 in the other.",
+    "accepted_regression": {
+      "alperen_first": -2.0
+    }
+  }
+}

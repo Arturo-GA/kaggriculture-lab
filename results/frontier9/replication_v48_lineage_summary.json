@@ -1,0 +1,39 @@
+{
+  "candidate": "f9_pre4f",
+  "sha256": "8748ba33604df92d31e802179f0aaa62d8b4abae6b84eab9cfdb0f254d3bc909",
+  "games": 96,
+  "per_opponent": {
+    "alperen_first": {
+      "games": 32,
+      "wins": 27,
+      "ties": 0,
+      "losses": 5,
+      "score_delta": -2.0,
+      "mean_margin": 1518.78125
+    },
+    "alperen_rhythm": {
+      "games": 32,
+      "wins": 25,
+      "ties": 0,
+      "losses": 7,
+      "score_delta": -4.0,
+      "mean_margin": 1356.78125
+    },
+    "k0013": {
+      "games": 32,
+      "wins": 29,
+      "ties": 0,
+      "losses": 3,
+      "score_delta": 0.0,
+      "mean_margin": 2396.3125
+    }
+  },
+  "errors": [],
+  "mirror_score": null,
+  "total_score_delta": -6.0,
+  "max_call_ms": 146.20670001022518,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false
+}

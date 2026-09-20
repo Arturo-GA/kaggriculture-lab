@@ -4,6 +4,31 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**20-21 de septiembre: Frontier9 (adelanto acotado de ventas) tras investigar al top 10, papers y juegos análogos.**
+Frontier8 bajó de 2825 a 2792/2758. La auditoría de 85 partidas en vivo muestra que el 60 % de los rivales de
+2750+ son derivados de nuestra misma base y que los que venden el mismo lote un turno antes nos ganan 22-7;
+en circuito cerrado Frontier8 pierde 0/12 contra quien se adelanta un solo turno. El top 10 (85 replays con
+ingreso exacto) gana +9822 a v9/4 con venta paciente, tomates y zanahorias en casillas liberadas fertilizando
+trigo y tamaños según tiendas: son planificadores, no capas. Análisis, literatura (juegos de anticipación,
+trading depredador, pago relativo) y todos los experimentos en
+[FRONTIER9_RESULTS.es.md](FRONTIER9_RESULTS.es.md). Herramienta nueva: panel de repetición con rival congelado
+(misma semilla del replay), que reproduce nuestras partidas en vivo al céntimo. Candidato
+`candidates/f9_pre4f.py` = Frontier8 + adelanto de lotes saturados de fresa, leche y lana dentro de la reserva
+RACEGATE pública, como mucho `min(4, lote / drenaje del pueblo)` turnos y con todo el stock del producto
+(`build_f9.py`): panel de rivales reales 38 → 54 de 85, holdout oficial 142/160 frente a 108/160 de Frontier8
+(espejo 16/0, linaje V50 12/4 frente a 6/10), Kaggle 8/0 contra Frontier8, Tschinkel y tetsutani (archivo
+verificado). Debilidad medida y replicada: un mundo de cada dieciséis peor que Frontier8 contra los agentes de
+Alperen (linaje V48). Un primer candidato (adelantar solo la cantidad de la ruta) pasó el holdout y falló en
+Kaggle; está documentado. **No enviado**: se envía solo a petición. Notas: [RESUME_FRONTIER9.es.md](RESUME_FRONTIER9.es.md).
+
+```powershell
+python build_f9.py                     # f9_pre4f (exportable) y las variantes medidas, desde Frontier8 fijado por hash
+python -m unittest -v test_frontier9.py
+python make_frontier9_notebook.py; python -m kaggle kernels push -p kaggle_frontier9
+python verify_frontier9_cloud.py       # tras `kaggle kernels output ... -p results/frontier9/kaggle`
+python submit_frontier9.py             # estado; --submit --authorization "..." solo con petición explícita
+```
+
 **19-20 de septiembre: Frontier8 (capas públicas apiladas + lockstep) tras leer el foro.** Frontier7 cayó
 a 2600 (puesto 628; corte de plata 2665) porque el 19 de septiembre Thomas Tschinkel abrió su agente de
 2945 puntos ("The 2945 Farm" v9/4, repartido byte a byte por cuatro notebooks) y V49/V50 integraron sus
