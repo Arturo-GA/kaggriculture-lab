@@ -180,7 +180,9 @@ Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier9-preempt
 8/0 contra tetsutani (+641; el control 3/5)**; emparejada +10, 215 ms, cero errores. `main.py` y
 `submission.tar.gz` coinciden byte a byte con el candidato; SHA-256 del archivo
 `a5a7814ff1fbd3d7acae24099f175f6aea1813d3aeb0e88a59aca6961e8ab05a` (`results/frontier9/kaggle_verified.json`).
-Las seis pruebas de `test_frontier9.py` pasan. **No se ha enviado nada al leaderboard.**
+Las seis pruebas de `test_frontier9.py` pasan. Envío autorizado por Arturo el 20 de septiembre ("envia una
+plaza"): **submission 56404796**, una sola plaza; la otra sigue con Frontier8 (56372978) como cobertura. El
+rating de las primeras horas no es el resultado final: juzgar a partir de unas 60 partidas.
 
 ## 7. Perspectiva honesta sobre el oro
 

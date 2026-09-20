@@ -12,4 +12,4 @@ Siguiente experimento con más potencial (no hecho): intercambio neutral en trig
 Ronda obligada tras el cierre público del 23 de septiembre: repetir extracción, todos contra todos y este mismo adelanto sobre la última base pública; dejar el par final antes del 30.
 No crear automatizaciones ni iniciar nuevas rondas sin petición.
 Kaggle verificado: True (results/frontier9/kaggle_verified.json).
-Envío al leaderboard: no. Se envía solo si Arturo lo pide.
+Envío al leaderboard con recibo: True. Arturo autorizó el 20 de septiembre ("envia una plaza"): submission 56404796 ("Frontier9 preempt4 8748ba33 on v9/4", results/frontier9/submission_receipt.json), UNA plaza; al entrar retira la más antigua de las dos activas (56372977), así que la otra plaza sigue con Frontier8 (56372978) como cobertura contra los agentes de Alperen. No enviar más copias sin petición; refrescar con `python submit_frontier9.py` (sin --submit). Seguimiento: `python live_report.py 56404796 56372978` (juzgar a partir de ~60 partidas).

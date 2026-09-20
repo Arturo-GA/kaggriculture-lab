@@ -19,7 +19,8 @@ RACEGATE pública, como mucho `min(4, lote / drenaje del pueblo)` turnos y con t
 (espejo 16/0, linaje V50 12/4 frente a 6/10), Kaggle 8/0 contra Frontier8, Tschinkel y tetsutani (archivo
 verificado). Debilidad medida y replicada: un mundo de cada dieciséis peor que Frontier8 contra los agentes de
 Alperen (linaje V48). Un primer candidato (adelantar solo la cantidad de la ruta) pasó el holdout y falló en
-Kaggle; está documentado. **No enviado**: se envía solo a petición. Notas: [RESUME_FRONTIER9.es.md](RESUME_FRONTIER9.es.md).
+Kaggle; está documentado. Arturo pidió una plaza: **submission 56404796** (recibo en
+`results/frontier9/submission_receipt.json`); la otra plaza sigue con Frontier8. Notas: [RESUME_FRONTIER9.es.md](RESUME_FRONTIER9.es.md).
 
 ```powershell
 python build_f9.py                     # f9_pre4f (exportable) y las variantes medidas, desde Frontier8 fijado por hash

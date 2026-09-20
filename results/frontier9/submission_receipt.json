@@ -1,0 +1,15 @@
+{
+  "id": 56404796,
+  "status": "SubmissionStatus.PENDING",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier9 preempt4 8748ba33 on v9/4",
+  "checked_utc": "2026-09-20T19:41:05.791397+00:00",
+  "archive_sha256": "a5a7814ff1fbd3d7acae24099f175f6aea1813d3aeb0e88a59aca6961e8ab05a",
+  "candidate_sha256": "8748ba33604df92d31e802179f0aaa62d8b4abae6b84eab9cfdb0f254d3bc909",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 20 de septiembre de 2026: \"envia una plaza\" (enviar el archivo verificado de Frontier9 a una plaza; Frontier8 sigue en la otra)",
+  "filename": "submission.tar.gz",
+  "public_score": "",
+  "error": "",
+  "date": "2026-09-20 19:40:46.210000"
+}
