@@ -114,3 +114,5 @@ candidates/n21_*.py
 results/frontier10c/kaggle/candidates/prvsiyan_guard.py
 results/frontier10c/kaggle/candidates/gluzdov_omw.py
 results/frontier10c/kaggle/candidates/f10_omw_lock.py
+# Replay downloads that land in the repo root when the Kaggle API is called without path= (archived copies live in vendor/live_*)
+episode-*-replay.json
