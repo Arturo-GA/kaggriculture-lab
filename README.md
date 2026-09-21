@@ -17,7 +17,9 @@ verificados en Kaggle (`results/frontier10*/kaggle_verified.json`). Al repetir l
 las 00:30 UTC apareció un clon público de One More Wheat con una guarda de precio del trigo (prvsiyan, +30
 monedas exactas por partida); `candidates/f10_omwg_lock.py` lleva esa guarda bajo la misma capa lockstep, pasó su
 puerta registrada contra `f10_omw_lock` (173/208, 14/2 cara a cara, ninguna victoria perdida) y la verificación en
-Kaggle, y **sustituye a `f10_omw_lock` como plaza de la familia Metav4**. **No enviados**: se envían solo a petición.
+Kaggle, y **sustituye a `f10_omw_lock` como plaza de la familia Metav4**. **Enviados el 21 de septiembre (01:53 UTC) a
+petición de Arturo: `f10_omwg_lock` = submission 56410971 y `f10_v53_lock` = submission 56410981**; seguimiento con
+`python live_report.py 56410971 56410981`.
 Notas: [RESUME_FRONTIER10.es.md](RESUME_FRONTIER10.es.md).
 
 ```powershell

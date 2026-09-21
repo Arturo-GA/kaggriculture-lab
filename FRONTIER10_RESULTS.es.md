@@ -109,8 +109,7 @@ Sin errores, 312 ms. Kaggle (kernel `jarturo/kaggriculture-frontier10b-v53-locks
 
 Los dos candidatos se complementan: uno domina la familia Metav4 y el otro la familia V5x, y cada uno queda
 cerca del 50 % contra la familia contraria. Como el leaderboard toma la mejor de las dos plazas, van uno en
-cada plaza (la de la familia Metav4 pasa a ser `f10_omwg_lock`, sección 7). **No se ha enviado nada al
-leaderboard.**
+cada plaza (la de la familia Metav4 pasa a ser `f10_omwg_lock`, sección 7).
 
 ## 7. Revisión de última hora: la guarda de trigo de prvsiyan (`f10_omwg_lock`)
 
@@ -158,7 +157,11 @@ Wheat (+165) y 7/1 cara a cara contra `f10_omw_lock` (+28)**; 222 ms, cero error
 `de3bee6da15c22fd62a64e7781df4223b7553befa2951d9ff579e4337cc94796` (`results/frontier10c/kaggle_verified.json`).
 Las cinco pruebas de `test_frontier10c.py` pasan.
 
-## 8. Qué esperar y límites
+## 8. Envío
+
+**Enviado el 21 de septiembre de 2026 a las 01:53 UTC a petición de Arturo ("envia 2 plazas")**: `f10_omwg_lock` como submission **56410971** y `f10_v53_lock` como submission **56410981** (recibos en `results/frontier10c/submission_receipt.json` y `results/frontier10b/submission_receipt.json`). Sustituyen a Frontier9 (56404796, 2718) y Frontier8 (56372978, 2647), que dejan de seguirse. Seguimiento: `python live_report.py 56410971 56410981`.
+
+## 9. Qué esperar y límites
 
 Estado del ladder el 21 de septiembre a las 00:28 UTC: Frontier9 2718 (82 partidas, 10/12 contra rivales de
 2700-2800), puesto 276 de 9694; corte de plata 2637, corte de oro 2916; 2800 equivale al puesto 105.

@@ -1,0 +1,15 @@
+{
+  "id": 56410971,
+  "status": "SubmissionStatus.COMPLETE",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier10C lockstep b7a4c92f on OMW+guard",
+  "checked_utc": "2026-09-21T01:59:17.606953+00:00",
+  "archive_sha256": "de3bee6da15c22fd62a64e7781df4223b7553befa2951d9ff579e4337cc94796",
+  "candidate_sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 20 de septiembre de 2026 (21 sep 01:53 UTC): \"envia 2 plazas\" (enviar los dos candidatos verificados de Frontier10: f10_omwg_lock a una plaza y f10_v53_lock a la otra)",
+  "filename": "submission.tar.gz",
+  "public_score": "600.0",
+  "error": "",
+  "date": "2026-09-21 01:53:26.320000"
+}
