@@ -5,6 +5,8 @@ Public bases (extracted as data, pinned by hash, excluded from Git):
   pipe16       Nathan Jacob, "Pipe-16: Idle Workers" = Metav4 v13 + HybridOpening (after Dmitrii Gluzdov)
   degnon_best  "V54 - Productive Idle Workers" (the same bytes are distributed by four notebooks)
   gluzdov_omw  Dmitrii Gluzdov, "One More Wheat"
+  prvsiyan_guard  prvsiyan, "Kaggriculture Frontier | The Soil Remembers Rain" (21 Sep, Apache-2.0) = One More Wheat
+               byte-identical + a 16-line visible-price guard (keep the step-91 wheat when its price is below 31)
 Lab layers: the bounded full-lot pre-emption inside the public RACEGATE reservation (build_f9.py) and, optionally, the
 lockstep sale ordering (frontier5_lockstep.py).  The Metav4 lineage keeps the RACEGATE re-implementation unchanged,
 so the Frontier9 patch applies verbatim; its files already end on their real entry point.
@@ -21,6 +23,7 @@ PINS = {
     'degnon_best': 'fd39dffa68e2171f',
     'gluzdov_omw': '10f58185b916392c',
     'v53': '20fe549dd4573b9f',
+    'prvsiyan_guard': '5fbb75c9c40e6d9e',
 }
 
 
@@ -67,6 +70,7 @@ VARIANTS = {
     'f10_omw_prelock': ('gluzdov_omw', 4, True, 'One More Wheat + pre-emption + Lab lockstep ordering'),
     'f10_omw_lock': ('gluzdov_omw', 0, True, 'One More Wheat + Lab lockstep ordering only (no pre-emption); exported candidate'),
     'f10_v53_lock': ('v53', 0, '_e363_agent', 'Ahmed Berat Ozer V53 + Lab lockstep ordering (second lineage); exported candidate'),
+    'f10_omwg_lock': ('prvsiyan_guard', 0, 'final_price_guard', 'One More Wheat + prvsiyan visible-price wheat guard (public, 21 Sep) + Lab lockstep ordering'),
 }
 
 

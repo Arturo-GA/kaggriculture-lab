@@ -4,7 +4,8 @@
     "pipe16": "827ddf2997fa442e80baadebc4cc91ffaeedec1ff333c1fa7d872b0f1d448181",
     "degnon_best": "fd39dffa68e2171fe6fc016b79804b52b862dc5c2af3427e9ca4c54e9fb410d8",
     "gluzdov_omw": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
-    "v53": "20fe549dd4573b9fd1dfb32a1782c205fa74f0edfdfd6cbe935079533e0a9d0e"
+    "v53": "20fe549dd4573b9fd1dfb32a1782c205fa74f0edfdfd6cbe935079533e0a9d0e",
+    "prvsiyan_guard": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c"
   },
   "variants": {
     "f10_pipe16_pre": {
@@ -62,6 +63,13 @@
       "lockstep": "_e363_agent",
       "note": "Ahmed Berat Ozer V53 + Lab lockstep ordering (second lineage); exported candidate",
       "sha256": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48"
+    },
+    "f10_omwg_lock": {
+      "base": "prvsiyan_guard",
+      "kmax": 0,
+      "lockstep": "final_price_guard",
+      "note": "One More Wheat + prvsiyan visible-price wheat guard (public, 21 Sep) + Lab lockstep ordering",
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883"
     }
   }
 }

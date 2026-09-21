@@ -1,0 +1,6 @@
+{
+  "candidate": "f10_omwg_lock",
+  "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+  "selected_utc": "2026-09-21T01:03:42.438655+00:00",
+  "basis": "One More Wheat + public visible-price wheat guard + Lab lockstep ordering; registered gate passed on fresh seeds 7581-7588 against our own frozen f10_omw_lock: same W/L against every public agent, 14/2 head to head, +25 coins of paired margin per game (see holdout_summary.json). Replaces f10_omw_lock as the Metav4-family slot."
+}

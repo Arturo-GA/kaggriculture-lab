@@ -1,0 +1,47 @@
+{
+  "candidate": "f10_omwg_lock",
+  "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+  "games": 24,
+  "per_opponent": {
+    "f10_omw_lock": {
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 3.0,
+      "mean_margin": 28.0
+    },
+    "prvsiyan_guard": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 137.125
+    },
+    "gluzdov_omw": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 165.125
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.875,
+  "total_score_delta": 3.0,
+  "max_call_ms": 221.51817400003893,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 48,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier10c-guard-lockstep",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "de3bee6da15c22fd62a64e7781df4223b7553befa2951d9ff579e4337cc94796",
+  "verified": true
+}

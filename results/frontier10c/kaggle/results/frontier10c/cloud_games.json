@@ -1,0 +1,2479 @@
+{
+  "engine": "1.32.7",
+  "expected_games": 48,
+  "complete": true,
+  "rows": [
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78733.0,
+        78703.0
+      ],
+      "margin": 30.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.41787778999992,
+      "max_call_ms": 106.71440700002677,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78703.0,
+        78733.0
+      ],
+      "margin": 30.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.551666682999894,
+      "max_call_ms": 101.38972200002172,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96418.0,
+        96518.0
+      ],
+      "margin": -100.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.601446217000102,
+      "max_call_ms": 84.49349400007122,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96388.0,
+        96548.0
+      ],
+      "margin": 160.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.76581046299998,
+      "max_call_ms": 81.14910900007999,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        125998.0,
+        125974.0
+      ],
+      "margin": 24.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.247545890000083,
+      "max_call_ms": 153.28754600000138,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125974.0,
+        125998.0
+      ],
+      "margin": 24.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.374936147000199,
+      "max_call_ms": 79.22442800008866,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85649.0,
+        85621.0
+      ],
+      "margin": 28.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.34476800199991,
+      "max_call_ms": 211.11617099995783,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85621.0,
+        85649.0
+      ],
+      "margin": 28.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.53855050900006,
+      "max_call_ms": 81.3119290000941,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78747.0,
+        78682.0
+      ],
+      "margin": 65.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.332275066999955,
+      "max_call_ms": 207.43047800010572,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78682.0,
+        78747.0
+      ],
+      "margin": 65.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.459445278999965,
+      "max_call_ms": 79.74944900001901,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96402.0,
+        96329.0
+      ],
+      "margin": 73.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.773144089000198,
+      "max_call_ms": 213.13214400015568,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96199.0,
+        96532.0
+      ],
+      "margin": 333.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.856004116999884,
+      "max_call_ms": 81.23410899997907,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        126072.0,
+        125877.0
+      ],
+      "margin": 195.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.278876029999992,
+      "max_call_ms": 80.62973899995995,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125877.0,
+        126072.0
+      ],
+      "margin": 195.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.102660143000094,
+      "max_call_ms": 81.8107710001641,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85681.0,
+        85592.0
+      ],
+      "margin": 89.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.33335441700001,
+      "max_call_ms": 79.98301900011029,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85596.0,
+        85678.0
+      ],
+      "margin": 82.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.169736716999978,
+      "max_call_ms": 81.00660500008416,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78755.0,
+        78660.0
+      ],
+      "margin": 95.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.152391808999937,
+      "max_call_ms": 217.2222829999555,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78660.0,
+        78755.0
+      ],
+      "margin": 95.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.134366455999952,
+      "max_call_ms": 79.39103199987585,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96411.0,
+        96308.0
+      ],
+      "margin": 103.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.522644225000022,
+      "max_call_ms": 221.51817400003893,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96178.0,
+        96541.0
+      ],
+      "margin": 363.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.538981064000154,
+      "max_call_ms": 78.85204200010776,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        126079.0,
+        125860.0
+      ],
+      "margin": 219.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.034440572999983,
+      "max_call_ms": 178.20586699986052,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125860.0,
+        126079.0
+      ],
+      "margin": 219.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 11.920064479999837,
+      "max_call_ms": 80.68432599998232,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85684.0,
+        85567.0
+      ],
+      "margin": 117.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.108796999999868,
+      "max_call_ms": 176.54637200007528,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omwg_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85571.0,
+        85681.0
+      ],
+      "margin": 110.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 11.910076245000027,
+      "max_call_ms": 79.9276140000984,
+      "calls": 719,
+      "telemetry": {
+        "sale_price_threshold": 31,
+        "lk_turns": 39,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78711.0,
+        78711.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.480668085999923,
+      "max_call_ms": 215.40487399988706,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78711.0,
+        78711.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.386030927999855,
+      "max_call_ms": 81.98866399993676,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96400.0,
+        96530.0
+      ],
+      "margin": -130.0,
+      "win": 0,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.73176128199998,
+      "max_call_ms": 82.26859100000183,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96400.0,
+        96530.0
+      ],
+      "margin": 130.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.830404358999886,
+      "max_call_ms": 79.24659599984807,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        125989.0,
+        125989.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.103744588000154,
+      "max_call_ms": 155.00857899996845,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125989.0,
+        125989.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.187443501999951,
+      "max_call_ms": 80.89050900002803,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85623.0,
+        85623.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.515230804000112,
+      "max_call_ms": 205.5057919999399,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "f10_omw_lock",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85623.0,
+        85623.0
+      ],
+      "margin": 0.0,
+      "win": 0,
+      "tie": 1,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.67943842800014,
+      "max_call_ms": 80.93403499992746,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78725.0,
+        78690.0
+      ],
+      "margin": 35.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.505354714000077,
+      "max_call_ms": 221.68236900006377,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78690.0,
+        78725.0
+      ],
+      "margin": 35.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.593333153000003,
+      "max_call_ms": 79.7594680000202,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96381.0,
+        96338.0
+      ],
+      "margin": 43.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.739037572000143,
+      "max_call_ms": 208.62561400008417,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96208.0,
+        96511.0
+      ],
+      "margin": 303.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.96013749299982,
+      "max_call_ms": 80.31028999994305,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        126055.0,
+        125884.0
+      ],
+      "margin": 171.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.814112482000155,
+      "max_call_ms": 82.36768899996605,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125884.0,
+        126055.0
+      ],
+      "margin": 171.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.650567453999884,
+      "max_call_ms": 81.70246600002429,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85656.0,
+        85595.0
+      ],
+      "margin": 61.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.493730297999946,
+      "max_call_ms": 80.61586899998474,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "prvsiyan_guard",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85599.0,
+        85653.0
+      ],
+      "margin": 54.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.412469149999879,
+      "max_call_ms": 78.86490900000354,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+      "entrypoints": [
+        "agent",
+        "final_price_guard"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7591,
+      "seat": 0,
+      "rewards": [
+        78733.0,
+        78668.0
+      ],
+      "margin": 65.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.301152178999928,
+      "max_call_ms": 222.32719100020404,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7591,
+      "seat": 1,
+      "rewards": [
+        78668.0,
+        78733.0
+      ],
+      "margin": 65.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.338687069000116,
+      "max_call_ms": 91.972369999894,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 47,
+        "lk_reordered": 3,
+        "lk_gain": 65.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "BAKERY",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "ICE_CREAM_SHOP",
+        "YARN_STORE",
+        "PET_CAFE",
+        "FARMERS_MARKET"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7592,
+      "seat": 0,
+      "rewards": [
+        96393.0,
+        96320.0
+      ],
+      "margin": 73.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.618121074999863,
+      "max_call_ms": 214.75715999986278,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7592,
+      "seat": 1,
+      "rewards": [
+        96190.0,
+        96523.0
+      ],
+      "margin": 333.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.518833124000139,
+      "max_call_ms": 79.35864000000947,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 51,
+        "lk_reordered": 6,
+        "lk_gain": 217.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "PIZZA_SHOP",
+        "BRUNCH_SPOT",
+        "BAKERY",
+        "FARMERS_MARKET",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7593,
+      "seat": 0,
+      "rewards": [
+        126070.0,
+        125875.0
+      ],
+      "margin": 195.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.197887412,
+      "max_call_ms": 154.35144399998535,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7593,
+      "seat": 1,
+      "rewards": [
+        125875.0,
+        126070.0
+      ],
+      "margin": 195.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 11.888935335000042,
+      "max_call_ms": 82.82577799991486,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 46,
+        "lk_reordered": 7,
+        "lk_gain": 209.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "SMOOTHIE_SHOP",
+        "FARMERS_MARKET",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7594,
+      "seat": 0,
+      "rewards": [
+        85658.0,
+        85569.0
+      ],
+      "margin": 89.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 12.113611870999875,
+      "max_call_ms": 179.17217099989102,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 2,
+        "lk_gain": 78.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    },
+    {
+      "candidate": "f10_omw_lock",
+      "opponent": "gluzdov_omw",
+      "seed": 7594,
+      "seat": 1,
+      "rewards": [
+        85573.0,
+        85655.0
+      ],
+      "margin": 82.0,
+      "win": 1,
+      "tie": 0,
+      "status": [
+        "DONE",
+        "DONE"
+      ],
+      "steps": 720,
+      "seconds": 11.84287365099999,
+      "max_call_ms": 80.88578299998517,
+      "calls": 719,
+      "telemetry": {
+        "cl_harvested": 3,
+        "cl_pasture": 1,
+        "cl_delivered": 3,
+        "cl_errors": 0,
+        "lk_turns": 38,
+        "lk_reordered": 3,
+        "lk_gain": 85.0,
+        "lk_errors": 0,
+        "chassis_layer_fallbacks": 0,
+        "chassis_entry_fallbacks": 0,
+        "chassis_terminal_rescue_errors": 0,
+        "chassis_v28_entry_errors": 0,
+        "chassis_production_errors": 0,
+        "chassis_v31_entry_errors": 0
+      },
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT",
+        "BRUNCH_SPOT",
+        "ICE_CREAM_SHOP",
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+      "opponent_sha256": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+      "entrypoints": [
+        "agent",
+        "agent"
+      ]
+    }
+  ]
+}

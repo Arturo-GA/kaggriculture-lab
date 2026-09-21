@@ -1,0 +1,15 @@
+{
+  "id": "jarturo/kaggriculture-frontier10c-guard-lockstep",
+  "title": "Kaggriculture Frontier10C Guard Lockstep",
+  "code_file": "experiment.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [
+    "kaggriculture"
+  ],
+  "kernel_sources": []
+}

@@ -66,7 +66,7 @@ Holdout (semillas nuevas 7531-7538, 384 partidas): **170 de 192** (control 162).
 | V53 | 6/10 | 6/10 | −31 |
 | V52 | 10/6 | 11/5 | +317 |
 | Frontier9 | 12/4 | 12/4 | +656 |
-| Frontier8, Tschinkel 2945, Pipe-15, Gluzdov (19 sep), Alperen | 16/0 cada uno | igual | +1650 a +3800 |
+| Frontier8, Tschinkel 2945, Pipe-15, Gluzdov «More Wheat, Smarter Sales», Alperen | 16/0 cada uno | igual | +1650 a +3800 |
 | tetsutani (V50) | 14/2 | 14/2 | +2137 |
 
 Sin errores, latencia máxima 282 ms. **El umbral de total (+10) no se alcanzó: +8.** El control ya gana 162 de
@@ -100,7 +100,7 @@ superada**:
 | Metav4 | 10/6 | 8/8 |
 | f10_omw_lock (nuestro otro candidato) | 6/10 | 4/12 |
 | Frontier9 | 10/6 | 6/10 |
-| Tschinkel 2945, Pipe-15, Gluzdov (19 sep) | 14/2 | 12/4 |
+| Tschinkel 2945, Pipe-15, Gluzdov «More Wheat, Smarter Sales» | 14/2 | 12/4 |
 | tetsutani (V50), Alperen | 16/0 | 16/0 |
 
 Sin errores, 312 ms. Kaggle (kernel `jarturo/kaggriculture-frontier10b-v53-lockstep`, semillas 7561-7564):
@@ -109,9 +109,59 @@ Sin errores, 312 ms. Kaggle (kernel `jarturo/kaggriculture-frontier10b-v53-locks
 
 Los dos candidatos se complementan: uno domina la familia Metav4 y el otro la familia V5x, y cada uno queda
 cerca del 50 % contra la familia contraria. Como el leaderboard toma la mejor de las dos plazas, van uno en
-cada plaza. **No se ha enviado nada al leaderboard.**
+cada plaza (la de la familia Metav4 pasa a ser `f10_omwg_lock`, sección 7). **No se ha enviado nada al
+leaderboard.**
 
-## 7. Qué esperar y límites
+## 7. Revisión de última hora: la guarda de trigo de prvsiyan (`f10_omwg_lock`)
+
+Antes de cerrar la ronda se repitió la búsqueda de notebooks (21 de septiembre, 00:30 UTC), porque llegar un día
+tarde fue exactamente el fallo de Frontier9. Resultado:
+
+- **Un agente nuevo**: prvsiyan republicó dos notebooks (20 sep, 21:42 UTC) con One More Wheat sin cambios más
+  una guarda de 16 líneas: en el paso 91 conserva el trigo temporal si su precio visible es menor que 31, y lo
+  liquida después el controlador. En el motor oficial gana **11/1 a One More Wheat, por exactamente 30 monedas**.
+- El notebook de kaibaur es otra copia byte a byte de Pipe-16 (ya son cinco). Los de leoprovorov son análisis
+  sin agente nuevo: controlar las tiendas es posible conociendo la semilla oculta, pero el propio autor no
+  consigue inferirla a tiempo ni ganar con ello (coincide con lo descartado aquí), y los tres primeros del
+  ladder reaccionan desde el paso 1-4 mientras que los clones siguen un guion hasta el paso 144.
+
+Contra ese agente nuevo `f10_omw_lock` gana 10/2 (pierde el mundo 7571 por 9 monedas) y `f10_v53_lock` 8/4.
+La guarda es independiente de nuestra capa, así que `build_f10.py` construye `f10_omwg_lock` = agente de
+prvsiyan (fijado por hash `5fbb75c9…`) + enlace de su punto de entrada `final_price_guard` + lockstep. En la
+pantalla 7571-7576 suma +30 en todos los mundos contra todos los rivales sin alterar ninguna cadena de ventas:
+12/0 contra el agente con guarda, 12/0 contra One More Wheat, Pipe-16 y Metav4, 6/6 contra V53 igual que antes.
+
+Puerta registrada antes de correr (`results/frontier10c/plan.json`; control emparejado: nuestro propio
+`f10_omw_lock`; como el cambio es una constante de +30, se exige ninguna regresión de victorias y ganancia de
+margen medida). Holdout (semillas nuevas 7581-7588, motor oficial, 416 partidas): **173 de 208, puerta superada**.
+
+| Rival (16 partidas) | f10_omwg_lock | f10_omw_lock | Ganancia de margen |
+|---|---:|---:|---:|
+| f10_omw_lock (cara a cara) | **14/2** | empates | +28 |
+| Agente con guarda (prvsiyan), One More Wheat, Pipe-16, Metav4 | 15/1 cada uno | 15/1 | +28 |
+| V53 | 9/7 | 9/7 | +24 |
+| V52, f10_v53_lock | 8/8 | 8/8 | +24 |
+| tetsutani (V50) | 10/6 | 10/6 | +3 |
+| Frontier9, Tschinkel 2945, Pipe-15, Gluzdov «More Wheat, Smarter Sales» | 16/0 | 16/0 | +28 |
+
+Sin errores, 261 ms. Lectura honesta: en estas ocho semillas la guarda **no cambió ninguna victoria contra
+agentes públicos** (en la pantalla cambió un mundo de seis contra el agente con guarda); lo que aporta es +25
+monedas de margen en cada partida, que solo decide los mundos más apretados, y quita la única desventaja conocida
+frente al clon público más reciente. La única derrota contra la familia Metav4 es un mundo asimétrico por
+asiento que también pierde el control. `f10_omwg_lock` sustituye a `f10_omw_lock` en la plaza de la familia
+Metav4; `f10_omw_lock` queda en el repositorio como su control.
+
+Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier10c-guard-lockstep`, versión 1, semillas
+7591-7594, control emparejado `f10_omw_lock`): **8/0 contra el agente con guarda (+137), 8/0 contra One More
+Wheat (+165) y 7/1 cara a cara contra `f10_omw_lock` (+28)**; 222 ms, cero errores; `main.py` y
+`submission.tar.gz` coinciden byte a byte con el candidato; SHA-256 del archivo
+`de3bee6da15c22fd62a64e7781df4223b7553befa2951d9ff579e4337cc94796` (`results/frontier10c/kaggle_verified.json`).
+Las cinco pruebas de `test_frontier10c.py` pasan.
+
+## 8. Qué esperar y límites
+
+Estado del ladder el 21 de septiembre a las 00:28 UTC: Frontier9 2718 (82 partidas, 10/12 contra rivales de
+2700-2800), puesto 276 de 9694; corte de plata 2637, corte de oro 2916; 2800 equivale al puesto 105.
 
 Frontier9 quedó en 2700 por estar una generación por detrás; estos dos están sobre la ola del 20 de septiembre
 y ganan por poco pero casi siempre a los clones de su familia, que es lo que pasó con Frontier8 en su primer

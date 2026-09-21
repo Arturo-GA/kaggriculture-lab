@@ -1,0 +1,30 @@
+{
+  "candidate": "f10_omwg_lock",
+  "kernel": "jarturo/kaggriculture-frontier10c-guard-lockstep",
+  "control": "f10_omw_lock",
+  "source_sha256": {
+    "f10_omwg_lock": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+    "f10_omw_lock": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+    "prvsiyan_guard": "5fbb75c9c40e6d9e26d95272ace47329b1ca319b3b2118232404de30806e7e9c",
+    "gluzdov_omw": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970"
+  },
+  "cloud_opponents": [
+    "f10_omw_lock",
+    "prvsiyan_guard",
+    "gluzdov_omw"
+  ],
+  "cloud_seeds": [
+    7591,
+    7592,
+    7593,
+    7594
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "17e64defe6894a60991b9b5799c80a90b06644da808696b367e21b887c861877"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine, paired against our own frozen candidate f10_omw_lock on identical opponents/seeds/seats. The change is a constant +30 coins, so it can only move W/L in worlds decided by less than that; the gate therefore asks for no W/L regression plus a measured margin gain: total paired score >= 0, score against the guarded public agent >= 75% and not below the control's, head to head against the control >= 50%, mean paired margin gain >= +15 coins over all games, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. The Kaggle kernel then repeats the paired comparison on four fresh seeds against Metav4-family opponents (total > 0 and no opponent below the control). If it passes, f10_omwg_lock replaces f10_omw_lock as the Metav4-family slot; f10_v53_lock is unchanged. Registered before the run.",
+  "attribution": "Base: prvsiyan, Kaggriculture Frontier | The Soil Remembers Rain / The Moon Counts Melons (Apache-2.0), which embeds Dmitrii Gluzdov's One More Wheat unchanged (itself a derivative of Thomas Tschinkel's The Metav4 Farm v13, Apache-2.0, with the upstream authors credited in its source) and adds the visible-price wheat guard. Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point final_price_guard.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

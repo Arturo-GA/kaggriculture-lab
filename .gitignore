@@ -108,3 +108,9 @@ results/frontier10/kaggle/candidates/metav4.py
 results/frontier10b/kaggle/candidates/v53.py
 results/frontier10b/kaggle/candidates/v52.py
 results/frontier10b/kaggle/candidates/tetsu_dp.py
+candidates/prvsiyan_guard.py
+candidates/n21_*.py
+!candidates/f10_omwg_lock.py
+results/frontier10c/kaggle/candidates/prvsiyan_guard.py
+results/frontier10c/kaggle/candidates/gluzdov_omw.py
+results/frontier10c/kaggle/candidates/f10_omw_lock.py

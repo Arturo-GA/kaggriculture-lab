@@ -13,16 +13,21 @@ base nueva falló la puerta registrada (10/6 donde la base sin tocar hace 14/2) 
 sola gana poco pero casi siempre. Dos candidatos, uno por familia pública: `candidates/f10_omw_lock.py` (One
 More Wheat + lockstep: 16/0 contra One More Wheat, Pipe-16 y Metav4 en el holdout oficial, 170/192) y
 `candidates/f10_v53_lock.py` (V53 + lockstep: 16/0 contra V53 y V52, 148/192 frente a 110 del control), ambos
-verificados en Kaggle (`results/frontier10*/kaggle_verified.json`). **No enviados**: se envían solo a petición.
+verificados en Kaggle (`results/frontier10*/kaggle_verified.json`). Al repetir la búsqueda de notebooks el 21 a
+las 00:30 UTC apareció un clon público de One More Wheat con una guarda de precio del trigo (prvsiyan, +30
+monedas exactas por partida); `candidates/f10_omwg_lock.py` lleva esa guarda bajo la misma capa lockstep, pasó su
+puerta registrada contra `f10_omw_lock` (173/208, 14/2 cara a cara, ninguna victoria perdida) y la verificación en
+Kaggle, y **sustituye a `f10_omw_lock` como plaza de la familia Metav4**. **No enviados**: se envían solo a petición.
 Notas: [RESUME_FRONTIER10.es.md](RESUME_FRONTIER10.es.md).
 
 ```powershell
 python build_f10.py                    # f10_omw_lock, f10_v53_lock y las variantes medidas, con las bases fijadas por hash
-python -m unittest -v test_frontier10.py test_frontier10b.py
+python -m unittest -v test_frontier10.py test_frontier10b.py test_frontier10c.py
 python make_frontier10_notebook.py;  python -m kaggle kernels push -p kaggle_frontier10
 python make_frontier10b_notebook.py; python -m kaggle kernels push -p kaggle_frontier10b
-python verify_frontier10_cloud.py; python verify_frontier10b_cloud.py
-python submit_frontier10.py; python submit_frontier10b.py   # estado; --submit --authorization "..." solo con petición explícita
+python make_frontier10c_notebook.py; python -m kaggle kernels push -p kaggle_frontier10c
+python verify_frontier10_cloud.py; python verify_frontier10b_cloud.py; python verify_frontier10c_cloud.py
+python submit_frontier10c.py; python submit_frontier10b.py   # estado; --submit --authorization "..." solo con petición explícita
 ```
 
 **20-21 de septiembre: Frontier9 (adelanto acotado de ventas) tras investigar al top 10, papers y juegos análogos.**

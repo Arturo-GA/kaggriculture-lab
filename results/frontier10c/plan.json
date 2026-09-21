@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-09-21T00:45:15.175057+00:00",
+  "candidate": "f10_omwg_lock",
+  "candidate_sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+  "control": "f10_omw_lock",
+  "control_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+  "unit_test_seed": 7571,
+  "why": "Re-check of the public notebooks on 2026-09-21 00:30 UTC, after f10_omw_lock and f10_v53_lock were frozen: prvsiyan republished two notebooks (20 Sep 21:42 UTC) with a new agent, sha 5fbb75c9...: One More Wheat byte-for-byte (modulo line endings) plus a 16-line visible-price guard that keeps the step-91 wheat when its visible price is below 31 (Apache-2.0; the author reports +28 per game on 128 paired games). Every other new notebook is a copy of Pipe-16 (kaibaur) or an analysis without a new agent (leoprovorov: shop control is possible with the hidden seed but not measured as profitable; fixed vs flexible play of the top teams).",
+  "screen_seeds": [
+    7571,
+    7572,
+    7573,
+    7574,
+    7575,
+    7576
+  ],
+  "screen_note": "Official engine, both seats. The guarded public agent beats plain One More Wheat 11/1 by exactly 30 coins. f10_omw_lock beats it 10/2 (world 7571 lost by 9 coins); f10_v53_lock beats it 8/4. f10_omwg_lock (the same guard under the Lab lockstep layer) adds +30 in every world against every opponent without changing any sale chain: 12/0 against the guarded agent, 12/0 against gluzdov_omw, pipe16 and metav4, 6/6 against v53 and f10_v53_lock exactly like f10_omw_lock (losses shrink by 26-44 coins), 11/1 head to head against f10_omw_lock (the only loss is the seat-asymmetric world 7576).",
+  "holdout_seeds": [
+    7581,
+    7582,
+    7583,
+    7584,
+    7585,
+    7586,
+    7587,
+    7588
+  ],
+  "holdout_opponents": [
+    "f10_omw_lock",
+    "prvsiyan_guard",
+    "gluzdov_omw",
+    "pipe16",
+    "metav4",
+    "v53",
+    "v52",
+    "f10_v53_lock",
+    "f9_pre4f",
+    "tschinkel",
+    "tetsu_dp",
+    "pipe15",
+    "gluzdov_mwss"
+  ],
+  "cloud_seeds": [
+    7591,
+    7592,
+    7593,
+    7594
+  ],
+  "cloud_opponents": [
+    "f10_omw_lock",
+    "prvsiyan_guard",
+    "gluzdov_omw"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine, paired against our own frozen candidate f10_omw_lock on identical opponents/seeds/seats. The change is a constant +30 coins, so it can only move W/L in worlds decided by less than that; the gate therefore asks for no W/L regression plus a measured margin gain: total paired score >= 0, score against the guarded public agent >= 75% and not below the control's, head to head against the control >= 50%, mean paired margin gain >= +15 coins over all games, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. The Kaggle kernel then repeats the paired comparison on four fresh seeds against Metav4-family opponents (total > 0 and no opponent below the control). If it passes, f10_omwg_lock replaces f10_omw_lock as the Metav4-family slot; f10_v53_lock is unchanged. Registered before the run.",
+  "attribution": "Base: prvsiyan, Kaggriculture Frontier | The Soil Remembers Rain / The Moon Counts Melons (Apache-2.0), which embeds Dmitrii Gluzdov's One More Wheat unchanged (itself a derivative of Thomas Tschinkel's The Metav4 Farm v13, Apache-2.0, with the upstream authors credited in its source) and adds the visible-price wheat guard. Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point final_price_guard."
+}

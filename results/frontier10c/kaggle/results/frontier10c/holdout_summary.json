@@ -1,0 +1,211 @@
+{
+  "candidate": "f10_omwg_lock",
+  "sha256": "b7a4c92f427a0d06e8311fec223b0280e4fde259d478f8feb11cad34cd29e883",
+  "games": 208,
+  "per_opponent": {
+    "f10_omw_lock": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 6.0,
+      "mean_margin": 27.625
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 0.0,
+      "mean_margin": 216.875
+    },
+    "gluzdov_omw": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 0.0,
+      "mean_margin": 244.25
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 0.0,
+      "mean_margin": 271.0
+    },
+    "metav4": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 0.0,
+      "mean_margin": 318.25
+    },
+    "v53": {
+      "games": 16,
+      "wins": 9,
+      "ties": 0,
+      "losses": 7,
+      "score_delta": 0.0,
+      "mean_margin": -160.375
+    },
+    "v52": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8,
+      "score_delta": 0.0,
+      "mean_margin": -172.875
+    },
+    "f10_v53_lock": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8,
+      "score_delta": 0.0,
+      "mean_margin": -354.4375
+    },
+    "f9_pre4f": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 668.6875
+    },
+    "tschinkel": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 2021.75
+    },
+    "tetsu_dp": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 0.0,
+      "mean_margin": 438.5625
+    },
+    "pipe15": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1974.25
+    },
+    "gluzdov_mwss": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1942.875
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.875,
+  "total_score_delta": 6.0,
+  "max_call_ms": 261.033300019335,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "paired_margin_gain": 25.235576923076923,
+  "paired_margin_gain_per_opponent": {
+    "f10_omw_lock": 27.625,
+    "prvsiyan_guard": 27.875,
+    "gluzdov_omw": 27.75,
+    "pipe16": 28.75,
+    "metav4": 28.0,
+    "v53": 24.0,
+    "v52": 24.0,
+    "f10_v53_lock": 24.0,
+    "f9_pre4f": 28.75,
+    "tschinkel": 28.0,
+    "tetsu_dp": 3.1875,
+    "pipe15": 28.5,
+    "gluzdov_mwss": 27.625
+  },
+  "control_per_opponent": {
+    "f10_omw_lock": {
+      "games": 16,
+      "wins": 2,
+      "ties": 12
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0
+    },
+    "gluzdov_omw": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0
+    },
+    "metav4": {
+      "games": 16,
+      "wins": 15,
+      "ties": 0
+    },
+    "v53": {
+      "games": 16,
+      "wins": 9,
+      "ties": 0
+    },
+    "v52": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0
+    },
+    "f10_v53_lock": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0
+    },
+    "f9_pre4f": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "tschinkel": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "tetsu_dp": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0
+    },
+    "pipe15": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "gluzdov_mwss": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    }
+  },
+  "registered_gate": {
+    "total_score_delta_ok": true,
+    "guard_score_ok": true,
+    "head_to_head_ok": true,
+    "margin_gain_ok": true,
+    "no_opponent_below_minus_two": true,
+    "runtime_ok": true
+  },
+  "registered_gate_passed": true
+}
