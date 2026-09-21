@@ -1,0 +1,6 @@
+{
+  "candidate": "f10_omw_lock",
+  "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+  "selected_utc": "2026-09-20T23:48:56.493570+00:00",
+  "basis": "One More Wheat (Metav4 lineage, 20 September) + Lab lockstep ordering only. Exploration on 14 consumed seeds: 26/28, 26/28, 27/28 against gluzdov_omw, pipe16, metav4. Fresh-seed official holdout 7531-7538: 170/192 (control 162), mirror 16/0, pipe16 16/0, metav4 16/0, v53 6/10 and v52 10/6 (control 6/10 and 11/5). Registered total threshold +10 missed by 2 (documented). The Frontier9 pre-emption patch failed the gate on this base and is not included."
+}

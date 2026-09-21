@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-20T23:56:39.509519+00:00",
+  "candidate": "f10_v53_lock",
+  "candidate_sha256": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48",
+  "control": "v53",
+  "unit_test_seed": 7513,
+  "why": "The 2700-2900 band now holds two public families of equal strength: the Metav4 family (Tschinkel, Pipe-16/V54, Gluzdov) and the V5x family (Ahmed Berat Ozer V52/V53). f10_omw_lock beats the first family in every game and only ties the second (6/10, 10/6). On the consumed seeds 7511-7516 V53 + Lab lockstep scored 12/12 against v53 and v52 (+189..+531), 11/12 against gluzdov_omw and pipe16 and 9/12 against f10_omw_lock, with a modeled lockstep gain of +412 per game.",
+  "holdout_seeds": [
+    7551,
+    7552,
+    7553,
+    7554,
+    7555,
+    7556,
+    7557,
+    7558
+  ],
+  "holdout_opponents": [
+    "v53",
+    "v52",
+    "gluzdov_omw",
+    "pipe16",
+    "metav4",
+    "f10_omw_lock",
+    "f9_pre4f",
+    "tschinkel",
+    "tetsu_dp",
+    "alperen_first",
+    "pipe15",
+    "gluzdov_mwss"
+  ],
+  "cloud_seeds": [
+    7561,
+    7562,
+    7563,
+    7564
+  ],
+  "cloud_opponents": [
+    "v53",
+    "v52",
+    "tetsu_dp"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine, paired against unmodified V53 on identical opponents/seeds/seats. Gate: total paired score >= +8, mirror against V53 >= 50%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms; then the Kaggle kernel on four fresh seeds against V5x-family opponents (the notebook must stay under 1 MB). Registered before the run.",
+  "attribution": "Base: Ahmed Berat Ozer, Kaggriculture V53 - Opening Signature (Apache-2.0; carries V50, layers from Thomas Tschinkel and the upstream authors credited in its source). Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point _e363_agent."
+}

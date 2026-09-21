@@ -1,0 +1,47 @@
+{
+  "candidate": "f10_v53_lock",
+  "sha256": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48",
+  "games": 24,
+  "per_opponent": {
+    "v53": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 229.75
+    },
+    "v52": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 229.75
+    },
+    "tetsu_dp": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1196.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 8.0,
+  "max_call_ms": 288.662785999918,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 48,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier10b-v53-lockstep",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "1e1651fc2747260b1210698d344a72627e948999d4fef4a00339a0d2063fbcb8",
+  "verified": true
+}

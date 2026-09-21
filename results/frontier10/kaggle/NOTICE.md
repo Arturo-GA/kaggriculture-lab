@@ -232,26 +232,3 @@ Modified September 20-21, 2026 by Arturo-GA / Kaggriculture Lab (Frontier9):
 - Public episode replays of our own games and of top teams, the community
   episode tables and the forum were used as data only; they are excluded from
   Git. Emulated rivals (`f9x_*`) are research copies of our own candidate.
-
-Modified September 21, 2026 by Arturo-GA / Kaggriculture Lab (Frontier10):
-
-- `f10_omw_lock` is the public notebook agent "Kaggriculture: One More Wheat" by
-  Dmitrii Gluzdov (SHA-256 prefix `10f58185b916392c`), itself a derivative of
-  Thomas Tschinkel's "The Metav4 Farm: Submission v13" (Apache-2.0), with every
-  upstream notice retained, followed by the unchanged Kaggriculture Lab lockstep
-  layer (`frontier5_lockstep.py`).
-- `f10_v53_lock` is the public notebook agent "Kaggriculture V53 - Opening
-  Signature" by Ahmed Berat Özer (Apache-2.0, SHA-256
-  `20fe549dd4573b9fd1dfb32a1782c205fa74f0edfdfd6cbe935079533e0a9d0e`, which
-  carries V50 and layers credited to Thomas Tschinkel, Nathan Jacob, Dmitrii
-  Gluzdov and the upstream authors), with its public entry point bound before
-  the same lockstep layer.
-- `build_f10.py` pins all hashes. The Frontier9 pre-emption patch was measured
-  on these bases and is not part of either exported candidate.
-- Tschinkel's Metav4 v13, Nathan Jacob's Pipe-15/Pipe-16, the "V54" repackaging
-  (degnonguidi, haodou092, xuanzhang001, guruprasaathas111: identical bytes),
-  Roman Tamrazov's Yummers, Hanif Noer Rofiq's notebooks and Ahmed Berat Özer's
-  V51/V52 are used only as local evaluation opponents and are excluded from
-  Git. The private verification notebooks embed the control and two opponents
-  of the same family as attributed opponents; each submitted runtime contains
-  only its candidate source with every upstream notice retained.

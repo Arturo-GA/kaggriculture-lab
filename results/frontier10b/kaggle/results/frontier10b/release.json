@@ -1,0 +1,30 @@
+{
+  "candidate": "f10_v53_lock",
+  "kernel": "jarturo/kaggriculture-frontier10b-v53-lockstep",
+  "control": "v53",
+  "source_sha256": {
+    "f10_v53_lock": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48",
+    "v53": "20fe549dd4573b9fd1dfb32a1782c205fa74f0edfdfd6cbe935079533e0a9d0e",
+    "v52": "8c0f7d90db965a676bd0e211e0250aa9b9235d64d43ff0b4e3852a71d1ef7c24",
+    "tetsu_dp": "1aa3717b3201997a95920c80cf5612c23f78f8716c7b1084b6a345ca4eae7e4f"
+  },
+  "cloud_opponents": [
+    "v53",
+    "v52",
+    "tetsu_dp"
+  ],
+  "cloud_seeds": [
+    7561,
+    7562,
+    7563,
+    7564
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "ee06bc584513ede4df2fa591bfeb9c86bad598535e006ef402fbb7a9de27fe6f"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine, paired against unmodified V53 on identical opponents/seeds/seats. Gate: total paired score >= +8, mirror against V53 >= 50%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms; then the Kaggle kernel on four fresh seeds against V5x-family opponents (the notebook must stay under 1 MB). Registered before the run.",
+  "attribution": "Base: Ahmed Berat Ozer, Kaggriculture V53 - Opening Signature (Apache-2.0; carries V50, layers from Thomas Tschinkel and the upstream authors credited in its source). Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point _e363_agent.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

@@ -4,6 +4,27 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**21 de septiembre: Frontier10 (lockstep sobre la ola pública del 20 de septiembre, una plaza por familia).**
+Frontier9 se quedó en 2695 y Frontier8 cayó a 2671: el 20 de septiembre salió otra ola pública una generación
+por encima de nuestra base (Tschinkel "Metav4 v13", 40-0 contra su 2945; Pipe-16 = "V54" repartido por cuatro
+notebooks; Gluzdov "One More Wheat"; Ahmed V51-V53) y Frontier9 empata 4/4 contra cada uno. Diagnóstico y
+mediciones en [FRONTIER10_RESULTS.es.md](FRONTIER10_RESULTS.es.md). El adelanto de Frontier9 aplicado a la
+base nueva falló la puerta registrada (10/6 donde la base sin tocar hace 14/2) y se descartó; la capa lockstep
+sola gana poco pero casi siempre. Dos candidatos, uno por familia pública: `candidates/f10_omw_lock.py` (One
+More Wheat + lockstep: 16/0 contra One More Wheat, Pipe-16 y Metav4 en el holdout oficial, 170/192) y
+`candidates/f10_v53_lock.py` (V53 + lockstep: 16/0 contra V53 y V52, 148/192 frente a 110 del control), ambos
+verificados en Kaggle (`results/frontier10*/kaggle_verified.json`). **No enviados**: se envían solo a petición.
+Notas: [RESUME_FRONTIER10.es.md](RESUME_FRONTIER10.es.md).
+
+```powershell
+python build_f10.py                    # f10_omw_lock, f10_v53_lock y las variantes medidas, con las bases fijadas por hash
+python -m unittest -v test_frontier10.py test_frontier10b.py
+python make_frontier10_notebook.py;  python -m kaggle kernels push -p kaggle_frontier10
+python make_frontier10b_notebook.py; python -m kaggle kernels push -p kaggle_frontier10b
+python verify_frontier10_cloud.py; python verify_frontier10b_cloud.py
+python submit_frontier10.py; python submit_frontier10b.py   # estado; --submit --authorization "..." solo con petición explícita
+```
+
 **20-21 de septiembre: Frontier9 (adelanto acotado de ventas) tras investigar al top 10, papers y juegos análogos.**
 Frontier8 bajó de 2825 a 2792/2758. La auditoría de 85 partidas en vivo muestra que el 60 % de los rivales de
 2750+ son derivados de nuestra misma base y que los que venden el mismo lote un turno antes nos ganan 22-7;

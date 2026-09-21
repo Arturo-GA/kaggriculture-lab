@@ -1,0 +1,111 @@
+{
+  "candidate": "f10_omw_lock",
+  "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+  "games": 192,
+  "per_opponent": {
+    "gluzdov_omw": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 232.25
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 280.75
+    },
+    "metav4": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 328.0
+    },
+    "v53": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10,
+      "score_delta": 0.0,
+      "mean_margin": -30.75
+    },
+    "v52": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": -2.0,
+      "mean_margin": 316.75
+    },
+    "pipe15": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 2075.125
+    },
+    "gluzdov_mwss": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 2049.4375
+    },
+    "f9_pre4f": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 0.0,
+      "mean_margin": 656.5
+    },
+    "f8_stack_lock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1650.5625
+    },
+    "tschinkel": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 2133.625
+    },
+    "tetsu_dp": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 2137.4375
+    },
+    "alperen_first": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 3799.5625
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 8.0,
+  "max_call_ms": 282.06100000534207,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false
+}

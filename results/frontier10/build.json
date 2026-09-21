@@ -1,0 +1,67 @@
+{
+  "pins": {
+    "metav4": "9d63494603f88219857a3101d7dc19cc750ded04e5886732ee428580326967d9",
+    "pipe16": "827ddf2997fa442e80baadebc4cc91ffaeedec1ff333c1fa7d872b0f1d448181",
+    "degnon_best": "fd39dffa68e2171fe6fc016b79804b52b862dc5c2af3427e9ca4c54e9fb410d8",
+    "gluzdov_omw": "10f58185b916392ca39697c83f67f455df81a74dfb6eb1aacd60fd81d50c9970",
+    "v53": "20fe549dd4573b9fd1dfb32a1782c205fa74f0edfdfd6cbe935079533e0a9d0e"
+  },
+  "variants": {
+    "f10_pipe16_pre": {
+      "base": "pipe16",
+      "kmax": 4,
+      "lockstep": false,
+      "note": "Pipe-16 + bounded full-lot pre-emption (KMAX 4)",
+      "sha256": "c75d7c98b0465243e5a8d97e665bd5b0ca0353e093bdefc2ee881a0a82e192c5"
+    },
+    "f10_pipe16_prelock": {
+      "base": "pipe16",
+      "kmax": 4,
+      "lockstep": true,
+      "note": "Pipe-16 + pre-emption + Lab lockstep ordering",
+      "sha256": "336102f9edef1e80e55bef7dcadb80444cc4fda0a60c6e4668b9cc349660a43e"
+    },
+    "f10_v54_pre": {
+      "base": "degnon_best",
+      "kmax": 4,
+      "lockstep": false,
+      "note": "V54 (four public notebooks) + bounded full-lot pre-emption",
+      "sha256": "7e2391d9b6bd64b6c860fba349074c6f2c2bd81857373bb847b521ec364dd53d"
+    },
+    "f10_metav4_pre": {
+      "base": "metav4",
+      "kmax": 4,
+      "lockstep": false,
+      "note": "Metav4 v13 + bounded full-lot pre-emption",
+      "sha256": "268441550a08249f552426ec0a1861b454e2acafd59ba9cc0c3ff7e29b712b72"
+    },
+    "f10_omw_pre": {
+      "base": "gluzdov_omw",
+      "kmax": 4,
+      "lockstep": false,
+      "note": "One More Wheat + bounded full-lot pre-emption",
+      "sha256": "399ae11ca645b3ee6579b26fbf8c423af17c4de4b3d69fb9984000b581f8f0d2"
+    },
+    "f10_omw_prelock": {
+      "base": "gluzdov_omw",
+      "kmax": 4,
+      "lockstep": true,
+      "note": "One More Wheat + pre-emption + Lab lockstep ordering",
+      "sha256": "9a4e21ae285a488b89bc6455b4d4a0f274f0eec3885830f7da95f28e426a3ccd"
+    },
+    "f10_omw_lock": {
+      "base": "gluzdov_omw",
+      "kmax": 0,
+      "lockstep": true,
+      "note": "One More Wheat + Lab lockstep ordering only (no pre-emption); exported candidate",
+      "sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca"
+    },
+    "f10_v53_lock": {
+      "base": "v53",
+      "kmax": 0,
+      "lockstep": "_e363_agent",
+      "note": "Ahmed Berat Ozer V53 + Lab lockstep ordering (second lineage); exported candidate",
+      "sha256": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48"
+    }
+  }
+}

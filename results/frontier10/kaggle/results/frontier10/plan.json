@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-09-20T22:58:04.434856+00:00",
+  "candidate": "f10_omw_lock",
+  "candidate_sha256": "3e06ceaf4f3109a8141c9871df2efabda7c70fcb60257b3ea3496490ce1c6cca",
+  "control": "gluzdov_omw",
+  "unit_test_seed": 7512,
+  "diagnosis": "Frontier9 (56404796) sat at 2695 after 47 games: 7/4 against 2600-2700, 6/6 against 2700-2800. On 20 September a new public wave appeared one generation above its base: Tschinkel Metav4 v13 (40-0 against his own 2945 agent), Pipe-16 / V54 (the same bytes in four notebooks), Gluzdov One More Wheat, and Ahmed V51-V53 with a forecaster that sells one step before the recorded sale streams of the public agents. In the official engine Frontier9 splits 4/4 with each of them (mean -114..-188); Frontier8 fell to 10/50 in its last 50 live games.",
+  "screen_seeds": [
+    7501,
+    7502,
+    7503,
+    7504,
+    7511,
+    7512,
+    7513,
+    7514,
+    7515,
+    7516
+  ],
+  "screen_note": "7501-7504: round robin of the 20 September wave (stopped at 216/384 once the order was clear): gluzdov_omw > pipe16 = degnon_best (V54) = yummers2 > metav4 = hanif_sos > v53 inside the wave, by 28-78 coins. 7511-7516: f10_omw_pre, f10_omw_prelock, f10_pipe16_pre against gluzdov_omw, pipe16, metav4, v53, f9_pre4f: 12/0 (+950..+1140) against each Metav4-family agent, 10/2 against Frontier9, 5/7 against V53 (the unpatched bases score 2/6 there on the same seeds). The lockstep layer changed no result and is left out.",
+  "holdout_seeds": [
+    7531,
+    7532,
+    7533,
+    7534,
+    7535,
+    7536,
+    7537,
+    7538
+  ],
+  "holdout_opponents": [
+    "gluzdov_omw",
+    "pipe16",
+    "metav4",
+    "v53",
+    "v52",
+    "pipe15",
+    "gluzdov_mwss",
+    "f9_pre4f",
+    "f8_stack_lock",
+    "tschinkel",
+    "tetsu_dp",
+    "alperen_first"
+  ],
+  "cloud_seeds": [
+    7541,
+    7542,
+    7543,
+    7544
+  ],
+  "cloud_opponents": [
+    "gluzdov_omw",
+    "pipe16",
+    "metav4"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine, paired against the strongest unmodified public agent of the wave (gluzdov_omw) on identical opponents/seeds/seats. Gate: total paired score >= +10, mirror against the control >= 50%, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. The Kaggle kernel then repeats the gate on four fresh seeds against three Metav4-family opponents (the verification notebook must stay under 1 MB, so all embedded agents share one sale library). Registered before the run.",
+  "attribution": "Base: Dmitrii Gluzdov, One More Wheat (a derivative of Thomas Tschinkel, The Metav4 Farm v13, Apache-2.0, with the upstream authors credited in its source). Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged. The pre-emption patch of Frontier9 was measured on this base and is not part of the candidate.",
+  "round1_outcome": "f10_omw_pre (pre-emption on One More Wheat) FAILED the registered gate on seeds 7521-7528: total 161/192 against 147/192 for the control (paired +14), mirror 10/6, but paired -4 against pipe16 and -4 against metav4 (the unpatched base beats them 14/2 by 27-79 coins; the patched one wins bigger and loses three worlds in eight). Per-product ledgers of the lost worlds: milk and wool pre-emption gain, strawberry pre-emption loses 1.0-1.6k. Item-restricted variants (milk+wool, milk, wool) still lose 2-4 of 14 worlds to the base. Receipts kept as rejected_pre4f_holdout*.json.",
+  "round2": {
+    "registered_utc": "2026-09-20T23:30:17.072234+00:00",
+    "exploration": "On the consumed seeds 7511-7516 and 7521-7528 (both seats) One More Wheat + Lab lockstep ordering alone scored 26/28 against gluzdov_omw, 26/28 against pipe16, 27/28 against metav4 (margins +39..+886, the only loss is the seat-asymmetric world 7524) and 15/28 against v53 (the base scores the same there).",
+    "holdout_seeds": [
+      7531,
+      7532,
+      7533,
+      7534,
+      7535,
+      7536,
+      7537,
+      7538
+    ],
+    "rule": "Same gate as round 1, registered before the run: official engine, paired against gluzdov_omw on identical opponents/seeds/seats; total paired score >= +10, mirror >= 50%, no opponent with a paired delta below -2.0, no errors, every callback < 1000 ms; then the Kaggle kernel on four fresh seeds.",
+    "outcome": "Fresh seeds 7531-7538: 170/192 against 162/192 for the control (paired +8). Mirror 16/0 (+232), pipe16 16/0, metav4 16/0, every older agent 12/4..16/0 like the control, v53 6/10 like the control, v52 10/6 where the control has 11/5 (-2, one world), no errors, max 282 ms. The registered total threshold (+10) was NOT met: the control already wins 162 of 192, so only ties in its own mirror (+8) and one world each against pipe16 and metav4 were left to gain, and those were all gained. Reported as a shortfall of 2 points on the total criterion; every other criterion passed. Arturo decides.",
+    "accepted_shortfall": {
+      "total_score_delta_min": 8.0
+    }
+  }
+}

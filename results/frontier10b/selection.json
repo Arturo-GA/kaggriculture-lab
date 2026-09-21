@@ -1,0 +1,6 @@
+{
+  "candidate": "f10_v53_lock",
+  "sha256": "ca4c5c306b330661b08ea6eb9c33b1d0c8ccef8141e240619625bd594092ff48",
+  "selected_utc": "2026-09-21T00:14:21.910345+00:00",
+  "basis": "V53 + Lab lockstep ordering; registered gate passed on fresh seeds 7551-7558 (see holdout_summary.json)."
+}
