@@ -151,6 +151,14 @@
       "note": "prvsiyan \"The Soil Remembers Rain\" (22 Sep) + Frontier5 lockstep; exported candidate",
       "overrides": {},
       "sha256": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca"
+    },
+    "f11b_hs3_lock": {
+      "base": "n23_arsgorynich_4f8637",
+      "entry": "herdsafe_forecast_agent",
+      "layer": "lock",
+      "note": "arsgorynich \"Herd-Safe v3 forecast4\" (23 Sep) + Frontier5 lockstep; exported second-slot candidate",
+      "overrides": {},
+      "sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b"
     }
   }
 }

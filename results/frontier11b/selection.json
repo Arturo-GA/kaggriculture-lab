@@ -1,0 +1,6 @@
+{
+  "candidate": "f11b_hs3_lock",
+  "sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "selected_utc": "2026-09-24T03:54:30.781799+00:00",
+  "basis": "Herd-Safe v3 forecast4 (arsgorynich, 23 Sep) + Frontier5 lockstep for the second slot; registered gate passed on fresh seeds 7651-7658 against the unmodified public base: 176/224 against 162/224 (+16 mirror ties), paired +7, mirror 14/16 with 2 ties, no opponent below the base, +61 coins per game (see holdout_summary.json)."
+}

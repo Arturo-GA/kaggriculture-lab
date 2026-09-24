@@ -13,17 +13,20 @@ nuevos únicos, el de prvsiyan (22 sep) gana el round robin de los diez mejores 
 = ese agente + el entry point enlazado + `frontier5_lockstep.py` sin cambios: holdout oficial 206/256 frente a
 186/256 del agente sin tocar (espejo 16/16, ningún rival peor, +56 monedas por partida), verificado en Kaggle.
 La capa nueva de tres modelos (`frontier11_order.py`) se midió y no se exporta. **Enviado el 24 de septiembre
-(03:03 UTC) a petición de Arturo: submission 56509994** (retira 56410971; sigue activa 56410981); seguimiento con
-`python live_report.py 56509994 56410981`. Resultados y límites en
+(03:03 UTC) a petición de Arturo: submission 56509994.** Segunda plaza, también a petición:
+`candidates/f11b_hs3_lock.py` = Herd-Safe v3 forecast4 de arsgorynich + el mismo lockstep (holdout 176/224 frente a
+162/224 de la base, gana 14/16 a casi toda la rama Herd-Safe, verificado en Kaggle) = **submission 56511120**
+(04:00 UTC). Activas: 56509994 y 56511120; seguimiento con `python live_report.py 56509994 56511120`. Resultados y límites en
 [FRONTIER11_RESULTS.es.md](FRONTIER11_RESULTS.es.md); notas en [RESUME_FRONTIER11.es.md](RESUME_FRONTIER11.es.md).
 
 ```powershell
 python build_f11.py                    # f11_pv_lock y las variantes medidas, con las bases públicas fijadas por hash
 python rr_run.py --agents A B C --seeds 7611 7612 7613 --output rr.json   # round robin sin partidas espejo duplicadas
-python -m unittest -v test_frontier11.py
+python -m unittest -v test_frontier11.py test_frontier11b.py
 python make_frontier11_notebook.py; python -m kaggle kernels push -p kaggle_frontier11
-python verify_frontier11_cloud.py
-python submit_frontier11.py            # estado; --submit --authorization "..." solo con petición explícita
+python make_frontier11b_notebook.py; python -m kaggle kernels push -p kaggle_frontier11b
+python verify_frontier11_cloud.py; python verify_frontier11b_cloud.py
+python submit_frontier11.py; python submit_frontier11b.py   # estado; --submit --authorization "..." solo con petición explícita
 ```
 
 **21 de septiembre: Frontier10 (lockstep sobre la ola pública del 20 de septiembre, una plaza por familia).**

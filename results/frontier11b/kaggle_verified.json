@@ -1,0 +1,47 @@
+{
+  "candidate": "f11b_hs3_lock",
+  "sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "games": 24,
+  "per_opponent": {
+    "n23_arsgorynich_4f8637": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 73.5
+    },
+    "f11_pv_lock": {
+      "games": 8,
+      "wins": 3,
+      "ties": 0,
+      "losses": 5,
+      "score_delta": 0.0,
+      "mean_margin": -506.75
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 546.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 4.0,
+  "max_call_ms": 210.82037199994375,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 48,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier11b-herdsafe-lockstep",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": true,
+  "archive_sha256": "4fd4b72400c3241b404de9c013b272a1afb577a13f8f0e4647fe61d6dd1c76fb",
+  "verified": true
+}

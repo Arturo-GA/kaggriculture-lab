@@ -1,0 +1,209 @@
+{
+  "candidate": "f11b_hs3_lock",
+  "sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "games": 224,
+  "per_opponent": {
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 14,
+      "ties": 2,
+      "losses": 0,
+      "score_delta": 7.0,
+      "mean_margin": 61.875
+    },
+    "f11_pv_lock": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10,
+      "score_delta": 0.0,
+      "mean_margin": -185.375
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10,
+      "score_delta": 0.0,
+      "mean_margin": -145.5
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 0.0,
+      "mean_margin": 701.5
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1150.5
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1115.75
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1099.75
+    },
+    "n23_wzhengbiao_f6175f": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 0.0,
+      "mean_margin": 371.75
+    },
+    "n23_yasutakababa_0957ba": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 0.0,
+      "mean_margin": 401.875
+    },
+    "n23_arsgorynich_8045c8": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1317.5
+    },
+    "n23_degnonguidi_a16e0e": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1377.875
+    },
+    "n23_ahmedberatozer_2ee689": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1384.375
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1554.125
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1610.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.9375,
+  "total_score_delta": 7.0,
+  "max_call_ms": 568.1761999730952,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "paired_margin_gain": 60.535714285714285,
+  "control_per_opponent": {
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 0,
+      "ties": 16
+    },
+    "f11_pv_lock": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "n23_wzhengbiao_f6175f": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0
+    },
+    "n23_yasutakababa_0957ba": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0
+    },
+    "n23_arsgorynich_8045c8": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "n23_degnonguidi_a16e0e": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "n23_ahmedberatozer_2ee689": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    }
+  },
+  "control_max_call_ms": 862.358000013046,
+  "merge_note": "Merged: 240 rows from the first run (stalled at 240/672 on a failed write) + 208 control rows rerun on the same seeds.",
+  "registered_gate": {
+    "total_score_delta_ok": true,
+    "mirror_ok": true,
+    "no_opponent_below_minus_two": true,
+    "runtime_ok": true
+  },
+  "registered_gate_passed": true
+}

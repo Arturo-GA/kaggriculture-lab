@@ -59,6 +59,7 @@ VARIANTS = {
     'f11x_wz_lock': ('n23_wzhengbiao_f6175f', 'v15_submission_entry', 'lock', 'wzhengbiao hybu (23 Sep) + Frontier5 lockstep (exploratory)'),
     'f11x_wz_br': ('n23_wzhengbiao_f6175f', 'v15_submission_entry', 'f11', 'wzhengbiao hybu (23 Sep) + level-2 best response (exploratory)', {'_F11_W': (0.0, 1.0, 0.0), '_F11_HARD': False}),
     'f11_pv_lock': ('n23_prvsiyan_178ae0', '_final_sell_block_reorder_entrypoint', 'lock', 'prvsiyan "The Soil Remembers Rain" (22 Sep) + Frontier5 lockstep; exported candidate'),
+    'f11b_hs3_lock': ('n23_arsgorynich_4f8637', 'herdsafe_forecast_agent', 'lock', 'arsgorynich "Herd-Safe v3 forecast4" (23 Sep) + Frontier5 lockstep; exported second-slot candidate'),
 }
 
 

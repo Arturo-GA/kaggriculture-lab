@@ -118,3 +118,5 @@ candidates/n23_*.py
 candidates/f11*.py
 !candidates/f11_pv_lock.py
 results/frontier11/kaggle/candidates/n23_*.py
+!candidates/f11b_hs3_lock.py
+results/frontier11b/kaggle/candidates/n23_*.py

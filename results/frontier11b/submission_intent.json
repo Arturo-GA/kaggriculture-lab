@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-24T04:00:10.729558+00:00",
+  "description": "Frontier11B lockstep 4aac62c8 on Herd-Safe forecast4 4f8637a3",
+  "archive_sha256": "4fd4b72400c3241b404de9c013b272a1afb577a13f8f0e4647fe61d6dd1c76fb",
+  "candidate_sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "authorization": "Arturo, 23 de septiembre de 2026 (hora de Peru; 24 sep ~03:10 UTC): \"si preparalo para la otra plaza y dale submission\" (enviar a la otra plaza el candidato verificado de Frontier11B, f11b_hs3_lock; retira la submission activa mas antigua, 56410981, y conserva 56509994)"
+}

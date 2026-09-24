@@ -1,0 +1,30 @@
+{
+  "candidate": "f11b_hs3_lock",
+  "kernel": "jarturo/kaggriculture-frontier11b-herdsafe-lockstep",
+  "control": "n23_arsgorynich_4f8637",
+  "source_sha256": {
+    "f11b_hs3_lock": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+    "f11_pv_lock": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+    "n23_dmitriigluzdov_488913": "4889137f1adf1f9266b2ad5a6ac6700c40e9be6dfe3654e39db375fb55b71341"
+  },
+  "cloud_opponents": [
+    "n23_arsgorynich_4f8637",
+    "f11_pv_lock",
+    "n23_dmitriigluzdov_488913"
+  ],
+  "cloud_seeds": [
+    7661,
+    7662,
+    7663,
+    7664
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "4075402981e3e1dc3b01bab19eb37950ff32d14c03f52b6b757a41b13500ca6e"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, paired against the unmodified public base on identical opponents/seeds/seats, both seats. Gate (same as Frontier11): total paired score >= +6, score against the base (mirror) >= 70%, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: arsgorynich, 'Herd Safe v3 Experimental Risk Aware Feed' (notebook version 2, 'Four-Turn Forecast', 23 Sep 2026, Apache-2.0), a derivative of Dmitrii Gluzdov's 'Herd-Safe Sale Window' v2, which builds on shiiin9's Order Book, Ahmed Berat Ozer's V55/V56, Thomas Tschinkel's Metav4 and Yusuke Hayashi's ShopRouter; every upstream notice retained. Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point herdsafe_forecast_agent.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

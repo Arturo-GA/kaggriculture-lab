@@ -123,13 +123,54 @@ Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier11-lockst
 `8ed05fd54b7ec7b2c38dbc8f14994af6e28ed122e1de344871efc66f103ea4e7` (`results/frontier11/kaggle_verified.json`).
 Las cinco pruebas de `test_frontier11.py` pasan.
 
-## 6. Envío
+## 6. Envío de la primera plaza
 
 **Enviado el 24 de septiembre de 2026 a las 03:03 UTC a petición de Arturo** ("haz una submission que tenga un
 puntaje parecido al anterior de 2800"): `f11_pv_lock` = submission **56509994** (recibo en
-`results/frontier11/submission_receipt.json`), validada por Kaggle sin errores y arrancando en 600. Retira la
-submission activa más antigua, 56410971 (`f10_omwg_lock`, 2206). Quedan activas 56509994 y 56410981
-(`f10_v53_lock`, 2382). Seguimiento: `python live_report.py 56509994 56410981`.
+`results/frontier11/submission_receipt.json`), validada por Kaggle sin errores y arrancando en 600. Retiró la
+submission activa más antigua, 56410971 (`f10_omwg_lock`, 2206). Una hora después iba en 1556 y subiendo.
+
+## 6b. Segunda plaza: Herd-Safe forecast4 + lockstep (`f11b_hs3_lock`)
+
+Arturo pidió preparar y enviar la otra plaza ("si preparalo para la otra plaza y dale submission"). La plaza la
+ocupaba `f10_v53_lock` (2382), ya superado. Como el leaderboard se queda con la mejor de las dos, la segunda plaza
+lleva el segundo agente más fuerte que no es copia del primero: el Herd-Safe v3 "forecast4" de arsgorynich (48/54
+en el round robin, la otra rama de la familia), con el mismo lockstep sin cambios (`candidates/f11b_hs3_lock.py`,
+hash `4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b`, `build_f11.py`).
+
+Puerta registrada antes de correr (`results/frontier11b/plan.json`), la misma que la de la primera plaza. Holdout
+(semillas nuevas 7651-7658, 14 rivales, incluido `f11_pv_lock`): **176 de 224 frente a 162 de 224 (+16 empates) de
+la base; emparejado +7, espejo 14/16 con 2 empates, ningún rival peor, +61 monedas por partida, 568 ms. Puerta
+superada.**
+
+| Rival (16 partidas) | f11b_hs3_lock | Base sin tocar | Margen ganado |
+|---|---:|---:|---:|
+| Herd-Safe forecast4 sin tocar (espejo) | **14/16** (2 empates) | empates | +62 |
+| Herd-Safe (Gluzdov), 2965 de haideptry, statma ca20, Order Book v3, Order Book, V57 | 14/16 cada uno | 14/16 | +53 a +117 |
+| Gluzdov, More Wheat Smarter Sales | 10/16 | 10/16 | +103 |
+| wzhengbiao hybu, yasutakababa v16 | 12/16 cada uno | 12/16 | +26 |
+| prvsiyan (22 sep) | 6/16 | 6/16 | +54 |
+| `f11_pv_lock` (nuestra primera plaza) | 6/16 | 6/16 | +59 |
+| guarda V54, Pipe-16 | 16/16 cada uno | 16/16 | +12 |
+
+Las dos plazas se complementan (semillas distintas, así que es indicativo): `f11_pv_lock` gana a la rama de
+prvsiyan/haideptry y queda cerca del 50-60 % contra la rama Herd-Safe; `f11b_hs3_lock` gana 14 de 16 a casi toda la
+rama Herd-Safe y pierde contra la de prvsiyan.
+
+Incidente registrado: la primera ejecución del holdout se quedó parada en 240 de 672 partidas. El proceso principal
+falló al escribir el JSON (`OSError [Errno 22]`) porque yo lo leía a la vez para ver el avance, y los workers
+siguieron calculando sin poder guardar. Se conservaron las 240 filas guardadas (`holdout_part1.json`), se repitieron
+en las mismas semillas las 208 partidas de control que faltaban (`holdout_part2.json`) y se fusionaron en
+`holdout.json` (nota dentro del archivo). Lección: vigilar el log, nunca el JSON mientras se escribe.
+
+Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier11b-herdsafe-lockstep`, semillas 7661-7664,
+control emparejado): **8/0 contra la base (+74), 6/2 contra Herd-Safe (+546), 3/5 contra `f11_pv_lock`** (igual que
+el control); 211 ms, cero errores; archivo `4fd4b72400c3241b404de9c013b272a1afb577a13f8f0e4647fe61d6dd1c76fb`
+(`results/frontier11b/kaggle_verified.json`). Las cinco pruebas de `test_frontier11b.py` pasan.
+
+**Enviado el 24 de septiembre a las 04:00 UTC: `f11b_hs3_lock` = submission 56511120** (recibo en
+`results/frontier11b/submission_receipt.json`), validada sin errores. Retiró 56410981. **Quedan activas 56509994 y
+56511120.** Seguimiento: `python live_report.py 56509994 56511120`.
 
 ## 7. Qué esperar y límites
 
@@ -142,6 +183,5 @@ submission activa más antigua, 56410971 (`f10_omwg_lock`, 2206). Quedan activas
   pública más nueva, y esta vez esa condición se cumple hasta el final. Aun así no lo prometo: lo razonable es
   esperar la franja de 2600-2800. Además, según el foro, las submissions nuevas se pasan de largo al principio y
   necesitan de 40 a 70 partidas (unas 5-8 horas) para asentarse.
-- La segunda plaza activa sigue con `f10_v53_lock` (2382), que ya está superado. El próximo envío retiraría esa
-  plaza y no la nueva, porque se retira la más antigua. Conviene usarla con un segundo candidato complementario
-  solo si Arturo lo pide.
+- Las dos plazas activas son ahora las dos Frontier11. Un envío más retiraría la más antigua (56509994), así que
+  no se debe enviar nada más sin revisar antes cuál de las dos va mejor en vivo.

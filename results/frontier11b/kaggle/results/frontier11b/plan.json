@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-09-24T03:12:20.373012+00:00",
+  "candidate": "f11b_hs3_lock",
+  "candidate_sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "control": "n23_arsgorynich_4f8637",
+  "control_sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+  "unit_test_seed": 7609,
+  "request": "Arturo, 24 Sep 2026: 'si preparalo para la otra plaza y dale submission' (second slot: Herd-Safe fork of arsgorynich + our lockstep).",
+  "why": "Second active slot held f10_v53_lock (2382), obsolete. The leaderboard keeps the better of the two active submissions, so the second slot should hold the next strongest agent that is not a copy of the first. arsgorynich's Herd-Safe v3 forecast4 (4f8637) is second in the 270-game round robin of the ten best new agents (48/54; 2/6 against prvsiyan's agent, 6/6 against the rest on seeds 7611-7613) and belongs to the other branch of the family (Herd-Safe on the Order Book layer instead of haideptry's hybrid). On the screen seeds 7621-7623 the lockstep added +143 coins per game on this base (32/48 against 27/48 for the base).",
+  "holdout_seeds": [
+    7651,
+    7652,
+    7653,
+    7654,
+    7655,
+    7656,
+    7657,
+    7658
+  ],
+  "holdout_opponents": [
+    "n23_arsgorynich_4f8637",
+    "f11_pv_lock",
+    "n23_prvsiyan_178ae0",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_dmitriigluzdov_488913",
+    "n23_haideptry_a58ee3",
+    "n23_statma_29454a",
+    "n23_wzhengbiao_f6175f",
+    "n23_yasutakababa_0957ba",
+    "n23_arsgorynich_8045c8",
+    "n23_degnonguidi_a16e0e",
+    "n23_ahmedberatozer_2ee689",
+    "prvsiyan_guard",
+    "pipe16"
+  ],
+  "holdout_extra_candidates": [
+    "f11_pv_lock"
+  ],
+  "holdout_extra_note": "f11_pv_lock (first slot, submission 56509994) also plays the same panel on the same seeds, only to report how the two slots split the worlds; it is not part of the gate.",
+  "cloud_seeds": [
+    7661,
+    7662,
+    7663,
+    7664
+  ],
+  "cloud_opponents": [
+    "n23_arsgorynich_4f8637",
+    "f11_pv_lock",
+    "n23_dmitriigluzdov_488913"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, paired against the unmodified public base on identical opponents/seeds/seats, both seats. Gate (same as Frontier11): total paired score >= +6, score against the base (mirror) >= 70%, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: arsgorynich, 'Herd Safe v3 Experimental Risk Aware Feed' (notebook version 2, 'Four-Turn Forecast', 23 Sep 2026, Apache-2.0), a derivative of Dmitrii Gluzdov's 'Herd-Safe Sale Window' v2, which builds on shiiin9's Order Book, Ahmed Berat Ozer's V55/V56, Thomas Tschinkel's Metav4 and Yusuke Hayashi's ShopRouter; every upstream notice retained. Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point herdsafe_forecast_agent."
+}
