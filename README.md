@@ -4,6 +4,28 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**24 de septiembre: Frontier11 (lockstep sobre la ola pública definitiva, tras el cierre de notebooks del 23).**
+Las dos Frontier10 cayeron a 2230 y 2402: entre el 21 y el 23 de septiembre el público copió la idea del lockstep
+(shiiin9, "Your Market List Is an Order Book": V55 + una capa que ordena las ventas del turno contra una copia de
+la propia pila), Gluzdov publicó "Herd-Safe Sale Window" sobre ella, arsgorynich su fork "forecast4" y prvsiyan
+un compuesto con compactación de la cola del mercado; Ahmed pasó sus V54-V57 a esa misma familia. De 31 agentes
+nuevos únicos, el de prvsiyan (22 sep) gana el round robin de los diez mejores (52/54). `candidates/f11_pv_lock.py`
+= ese agente + el entry point enlazado + `frontier5_lockstep.py` sin cambios: holdout oficial 206/256 frente a
+186/256 del agente sin tocar (espejo 16/16, ningún rival peor, +56 monedas por partida), verificado en Kaggle.
+La capa nueva de tres modelos (`frontier11_order.py`) se midió y no se exporta. **Enviado el 24 de septiembre
+(03:03 UTC) a petición de Arturo: submission 56509994** (retira 56410971; sigue activa 56410981); seguimiento con
+`python live_report.py 56509994 56410981`. Resultados y límites en
+[FRONTIER11_RESULTS.es.md](FRONTIER11_RESULTS.es.md); notas en [RESUME_FRONTIER11.es.md](RESUME_FRONTIER11.es.md).
+
+```powershell
+python build_f11.py                    # f11_pv_lock y las variantes medidas, con las bases públicas fijadas por hash
+python rr_run.py --agents A B C --seeds 7611 7612 7613 --output rr.json   # round robin sin partidas espejo duplicadas
+python -m unittest -v test_frontier11.py
+python make_frontier11_notebook.py; python -m kaggle kernels push -p kaggle_frontier11
+python verify_frontier11_cloud.py
+python submit_frontier11.py            # estado; --submit --authorization "..." solo con petición explícita
+```
+
 **21 de septiembre: Frontier10 (lockstep sobre la ola pública del 20 de septiembre, una plaza por familia).**
 Frontier9 se quedó en 2695 y Frontier8 cayó a 2671: el 20 de septiembre salió otra ola pública una generación
 por encima de nuestra base (Tschinkel "Metav4 v13", 40-0 contra su 2945; Pipe-16 = "V54" repartido por cuatro

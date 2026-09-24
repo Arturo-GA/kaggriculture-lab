@@ -1,0 +1,30 @@
+{
+  "candidate": "f11_pv_lock",
+  "kernel": "jarturo/kaggriculture-frontier11-lockstep",
+  "control": "n23_prvsiyan_178ae0",
+  "source_sha256": {
+    "f11_pv_lock": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+    "n23_haideptry_a58ee3": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba"
+  },
+  "cloud_opponents": [
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n23_haideptry_a58ee3"
+  ],
+  "cloud_seeds": [
+    7641,
+    7642,
+    7643,
+    7644
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "2be021da93f4545ea132c170c3866caff39499a4f7c06e56762cf39355f1a3c8"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, paired against the unmodified public base on identical opponents/seeds/seats, both seats. Gate: total paired score >= +6, score against the base (mirror) >= 70%, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. The panel includes the ten strongest agents of the final public wave, the most copied older ones (V54 guard, One More Wheat, Pipe-16) and our own two live Frontier10 agents, so that a candidate that loses on the climb from 600 would show it. The Kaggle kernel then repeats the paired comparison on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: prvsiyan, 'Kaggriculture Frontier | The Soil Remembers Rain' (22 Sep 2026, Apache-2.0; the same bytes ship in 'The Moon Counts Melons' and tetsutani's 'Demand-Preserving Turn Sale Timing'), built on haideptry's 'The 2965 Master Hybrid Engine' and its upstream contributors credited in the source (shiiin9, Ahmed Berat Ozer, Dmitrii Gluzdov, Thomas Tschinkel, Nathan Jacob, Yusuke Hayashi, aurax7, tetsutani, Seyit Kaan Gunes and others). Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point _final_sell_block_reorder_entrypoint.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

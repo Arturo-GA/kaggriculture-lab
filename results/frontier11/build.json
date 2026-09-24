@@ -1,0 +1,156 @@
+{
+  "pins": {
+    "n23_dmitriigluzdov_488913": "4889137f1adf1f9266b2ad5a6ac6700c40e9be6dfe3654e39db375fb55b71341",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n23_wzhengbiao_f6175f": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+  },
+  "variants": {
+    "f11x_hs_rob": {
+      "base": "n23_dmitriigluzdov_488913",
+      "entry": "opening_liquidity_agent",
+      "layer": "f11",
+      "note": "Herd-Safe + robust order response (exploratory)",
+      "overrides": {},
+      "sha256": "dd4e869878b2c16235fb87f31de70ef01e69dfdfbc5c1f4806f624123e0c44cc"
+    },
+    "f11x_hs_lock": {
+      "base": "n23_dmitriigluzdov_488913",
+      "entry": "opening_liquidity_agent",
+      "layer": "lock",
+      "note": "Herd-Safe + Frontier5 lockstep (exploratory)",
+      "overrides": {},
+      "sha256": "9f1938236087e4ef39510cfdfc7970fa281e286ced66c4e29a8ff37a7c862272"
+    },
+    "f11x_hs3_rob": {
+      "base": "n23_arsgorynich_4f8637",
+      "entry": "herdsafe_forecast_agent",
+      "layer": "f11",
+      "note": "Herd-Safe v3 risk-aware feed + robust order response (exploratory)",
+      "overrides": {},
+      "sha256": "c6e318c6501b61d71e2774c90aa68ebaf7d54ad644eb8e3c2bdce027554554d9"
+    },
+    "f11x_hs3_lock": {
+      "base": "n23_arsgorynich_4f8637",
+      "entry": "herdsafe_forecast_agent",
+      "layer": "lock",
+      "note": "Herd-Safe v3 risk-aware feed + Frontier5 lockstep (exploratory)",
+      "overrides": {},
+      "sha256": "bc4ecd5dd5882e610904c28e7b150067ade5edc886ee9475d3ea2f2fdfac7565"
+    },
+    "f11x_hs_br": {
+      "base": "n23_dmitriigluzdov_488913",
+      "entry": "opening_liquidity_agent",
+      "layer": "f11",
+      "note": "Herd-Safe + level-2 best response to the exact copy (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "46cd4776d62ab9947f129e9c081301f2f1d970d3ce50b69d1bbffe696b1fa8f6"
+    },
+    "f11x_hs_mix": {
+      "base": "n23_dmitriigluzdov_488913",
+      "entry": "opening_liquidity_agent",
+      "layer": "f11",
+      "note": "Herd-Safe + weighted three-model response, no hard floor (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          1.0,
+          2.0,
+          1.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "7ff2d6b019f8720fdb89a15244b2fa48a4a172ecfd76b4c74bbcdc09a1778bd9"
+    },
+    "f11x_hs3_br": {
+      "base": "n23_arsgorynich_4f8637",
+      "entry": "herdsafe_forecast_agent",
+      "layer": "f11",
+      "note": "Herd-Safe v3 forecast4 + level-2 best response to the exact copy (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "d0212d0d4a3803be6e06970fbd231f4e6b5504763a6a2329567ad8b0bfe3291c"
+    },
+    "f11x_hs3_mix": {
+      "base": "n23_arsgorynich_4f8637",
+      "entry": "herdsafe_forecast_agent",
+      "layer": "f11",
+      "note": "Herd-Safe v3 forecast4 + weighted three-model response, no hard floor (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          1.0,
+          2.0,
+          1.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "451e94ebeb27fd1bd92458122c92f516d923b16445e5ad860a92acfd79768ab9"
+    },
+    "f11x_pv_lock": {
+      "base": "n23_prvsiyan_178ae0",
+      "entry": "_final_sell_block_reorder_entrypoint",
+      "layer": "lock",
+      "note": "prvsiyan Soil/Moon (22 Sep) + Frontier5 lockstep (exploratory)",
+      "overrides": {},
+      "sha256": "d4e02b28ac2f2e5a26245e65056241ea3e4928cc306f81752fbb648acdef9c0b"
+    },
+    "f11x_pv_br": {
+      "base": "n23_prvsiyan_178ae0",
+      "entry": "_final_sell_block_reorder_entrypoint",
+      "layer": "f11",
+      "note": "prvsiyan Soil/Moon (22 Sep) + level-2 best response (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "9dad62f29cd730bc570840d8e50d3f723e63ac85574c5eb233fa13314b855c3e"
+    },
+    "f11x_wz_lock": {
+      "base": "n23_wzhengbiao_f6175f",
+      "entry": "v15_submission_entry",
+      "layer": "lock",
+      "note": "wzhengbiao hybu (23 Sep) + Frontier5 lockstep (exploratory)",
+      "overrides": {},
+      "sha256": "bed559f9d06c84c0636429a5c5f4f95816873a442d4f20e75a59cb3114699495"
+    },
+    "f11x_wz_br": {
+      "base": "n23_wzhengbiao_f6175f",
+      "entry": "v15_submission_entry",
+      "layer": "f11",
+      "note": "wzhengbiao hybu (23 Sep) + level-2 best response (exploratory)",
+      "overrides": {
+        "_F11_W": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "_F11_HARD": false
+      },
+      "sha256": "584ddbffee34c3aa9662bfea080475d969b5ec9ad171d8352068552b82347d97"
+    },
+    "f11_pv_lock": {
+      "base": "n23_prvsiyan_178ae0",
+      "entry": "_final_sell_block_reorder_entrypoint",
+      "layer": "lock",
+      "note": "prvsiyan \"The Soil Remembers Rain\" (22 Sep) + Frontier5 lockstep; exported candidate",
+      "overrides": {},
+      "sha256": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca"
+    }
+  }
+}

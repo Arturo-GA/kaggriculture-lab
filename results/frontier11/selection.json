@@ -1,0 +1,6 @@
+{
+  "candidate": "f11_pv_lock",
+  "sha256": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+  "selected_utc": "2026-09-24T02:54:52.923234+00:00",
+  "basis": "prvsiyan Soil/Moon (22 Sep) + Frontier5 lockstep; registered gate passed on fresh seeds 7631-7638 against the unmodified public base: 206/256 against 186/256 (+16 mirror ties), paired +12, mirror 16/16, no opponent below the base, +56 coins per game (see holdout_summary.json)."
+}

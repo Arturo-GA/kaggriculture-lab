@@ -1,0 +1,233 @@
+{
+  "candidate": "f11_pv_lock",
+  "sha256": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+  "games": 256,
+  "per_opponent": {
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 111.125
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8,
+      "score_delta": 0.0,
+      "mean_margin": 91.75
+    },
+    "n23_wzhengbiao_f6175f": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 993.875
+    },
+    "n23_yasutakababa_0957ba": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1099.625
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 0.0,
+      "mean_margin": 422.5
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0,
+      "losses": 10,
+      "score_delta": 0.0,
+      "mean_margin": 249.25
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 2.0,
+      "mean_margin": 416.625
+    },
+    "n23_arsgorynich_8045c8": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 0.0,
+      "mean_margin": 600.875
+    },
+    "n23_degnonguidi_a16e0e": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 0.0,
+      "mean_margin": 624.5
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 2.0,
+      "mean_margin": 422.5
+    },
+    "n23_ahmedberatozer_2ee689": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 943.5
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1246.125
+    },
+    "f10_omwg_lock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1161.375
+    },
+    "f10_v53_lock": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0,
+      "losses": 6,
+      "score_delta": 0.0,
+      "mean_margin": 428.875
+    },
+    "gluzdov_omw": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1278.875
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1304.125
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 12.0,
+  "max_call_ms": 380.1557999686338,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "paired_margin_gain": 56.3984375,
+  "control_per_opponent": {
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 0,
+      "ties": 16
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0
+    },
+    "n23_wzhengbiao_f6175f": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "n23_yasutakababa_0957ba": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 6,
+      "ties": 0
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0
+    },
+    "n23_arsgorynich_8045c8": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0
+    },
+    "n23_degnonguidi_a16e0e": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0
+    },
+    "n23_ahmedberatozer_2ee689": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "f10_omwg_lock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "f10_v53_lock": {
+      "games": 16,
+      "wins": 10,
+      "ties": 0
+    },
+    "gluzdov_omw": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    },
+    "pipe16": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0
+    }
+  },
+  "registered_gate": {
+    "total_score_delta_ok": true,
+    "mirror_ok": true,
+    "no_opponent_below_minus_two": true,
+    "runtime_ok": true
+  },
+  "registered_gate_passed": true
+}

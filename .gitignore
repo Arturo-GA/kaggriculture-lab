@@ -114,3 +114,7 @@ candidates/n21_*.py
 results/frontier10c/kaggle/candidates/prvsiyan_guard.py
 results/frontier10c/kaggle/candidates/gluzdov_omw.py
 results/frontier10c/kaggle/candidates/f10_omw_lock.py
+candidates/n23_*.py
+candidates/f11*.py
+!candidates/f11_pv_lock.py
+results/frontier11/kaggle/candidates/n23_*.py

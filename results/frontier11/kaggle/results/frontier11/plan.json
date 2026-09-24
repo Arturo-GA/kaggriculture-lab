@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-24T02:28:59.838658+00:00",
+  "candidate": "f11_pv_lock",
+  "candidate_sha256": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+  "control": "n23_prvsiyan_178ae0",
+  "control_sha256": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+  "unit_test_seed": 7609,
+  "diagnosis": "Live on 2026-09-24 01:30 UTC: Frontier10C (56410971) 2229.9 after 371 games and Frontier10B (56410981) 2401.6 after 381 (team rank 757 of 9937; silver cut 2501, gold cut 2854, 2800 = rank 45). The 21-23 September wave overtook both: shiiin9's 'Your Market List Is an Order Book' (V55 + layer D, a best-response ordering of the market list against a copy of the stack, i.e. our lockstep idea generalised), Dmitrii Gluzdov's 'Herd-Safe Sale Window' on top of it, arsgorynich's forecast4 fork, and prvsiyan's composite (haideptry's 2965 hybrid + sale lookahead 4 + queue compaction + late SELL-block reorder). Ahmed Berat Ozer's V54-V57 moved to the same family, so the V5x slot is gone. In a 384-game gauntlet f10_omwg_lock scores 4/12 and f10_v53_lock 0/12 against the new references. Public notebook sharing closed on 2026-09-23 23:59 UTC, so this wave is final.",
+  "screen_seeds": [
+    7601,
+    7602,
+    7611,
+    7612,
+    7613,
+    7621,
+    7622,
+    7623
+  ],
+  "screen_note": "7601-7602: gauntlet of 32 new agents against three references. 7611-7613: 270-game round robin of the ten strongest: n23_prvsiyan_178ae0 52/54, n23_arsgorynich_4f8637 (Herd-Safe forecast4) 48/54, then a cluster at 24-28/54. 7621-7623: Lab layers on both top bases against eight top agents, paired with the base: 178ae0 + Frontier5 lockstep 45/48 (base 38/48, +139 coins per game, gains against all eight, mirror 5/6 against ties), 178ae0 + frontier11 level-2 response 45/48 (+94), Herd-Safe forecast4 + either layer 32/48 (1/6 against 178ae0). The lockstep variant is frozen.",
+  "holdout_seeds": [
+    7631,
+    7632,
+    7633,
+    7634,
+    7635,
+    7636,
+    7637,
+    7638
+  ],
+  "holdout_opponents": [
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n23_wzhengbiao_f6175f",
+    "n23_yasutakababa_0957ba",
+    "n23_statma_29454a",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_dmitriigluzdov_488913",
+    "n23_arsgorynich_8045c8",
+    "n23_degnonguidi_a16e0e",
+    "n23_haideptry_a58ee3",
+    "n23_ahmedberatozer_2ee689",
+    "prvsiyan_guard",
+    "f10_omwg_lock",
+    "f10_v53_lock",
+    "gluzdov_omw",
+    "pipe16"
+  ],
+  "cloud_seeds": [
+    7641,
+    7642,
+    7643,
+    7644
+  ],
+  "cloud_opponents": [
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n23_haideptry_a58ee3"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, paired against the unmodified public base on identical opponents/seeds/seats, both seats. Gate: total paired score >= +6, score against the base (mirror) >= 70%, no opponent with a paired delta below -2.0 (one world, both seats), no reported errors/fallbacks, every callback < 1000 ms. The panel includes the ten strongest agents of the final public wave, the most copied older ones (V54 guard, One More Wheat, Pipe-16) and our own two live Frontier10 agents, so that a candidate that loses on the climb from 600 would show it. The Kaggle kernel then repeats the paired comparison on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: prvsiyan, 'Kaggriculture Frontier | The Soil Remembers Rain' (22 Sep 2026, Apache-2.0; the same bytes ship in 'The Moon Counts Melons' and tetsutani's 'Demand-Preserving Turn Sale Timing'), built on haideptry's 'The 2965 Master Hybrid Engine' and its upstream contributors credited in the source (shiiin9, Ahmed Berat Ozer, Dmitrii Gluzdov, Thomas Tschinkel, Nathan Jacob, Yusuke Hayashi, aurax7, tetsutani, Seyit Kaan Gunes and others). Lab layer: lockstep sale ordering against a copy (frontier5_lockstep.py), unchanged, after binding the public entry point _final_sell_block_reorder_entrypoint."
+}
