@@ -161,7 +161,7 @@ Incidente registrado: la primera ejecución del holdout se quedó parada en 240 
 falló al escribir el JSON (`OSError [Errno 22]`) porque yo lo leía a la vez para ver el avance, y los workers
 siguieron calculando sin poder guardar. Se conservaron las 240 filas guardadas (`holdout_part1.json`), se repitieron
 en las mismas semillas las 208 partidas de control que faltaban (`holdout_part2.json`) y se fusionaron en
-`holdout.json` (nota dentro del archivo). Lección: vigilar el log, nunca el JSON mientras se escribe.
+`holdout.json` (nota dentro del archivo). Las partidas extra de `f11_pv_lock` contra el mismo panel, previstas en el plan solo como información, se perdieron en la parada y no se repitieron. Lección: vigilar el log, nunca el JSON mientras se escribe.
 
 Verificación en Kaggle (kernel privado `jarturo/kaggriculture-frontier11b-herdsafe-lockstep`, semillas 7661-7664,
 control emparejado): **8/0 contra la base (+74), 6/2 contra Herd-Safe (+546), 3/5 contra `f11_pv_lock`** (igual que
