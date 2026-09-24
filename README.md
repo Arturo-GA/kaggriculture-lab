@@ -14,9 +14,10 @@ su rama, Herd-Safe+lockstep 93/100 a la suya). `candidates/f12_router.py` (`buil
 candidatos de Frontier11, juega la apertura Herd-Safe (+8 monedas), lee la rama del rival en el paso 1 por su dinero
 público y en el 144 se queda con la base de esa rama. Holdout registrado con los dos candidatos como controles: 200
 puntos frente a 190 y 164; Kaggle sin errores, con un incumplimiento aceptado (−2 contra haideptry, donde Herd-Safe
-sería mejor). **Enviado a petición: submission 56523438** (retira 56509994); seguimiento con
-`python live_report.py 56523438 56511120`. La versión 2 (tabla por rama y mundo con perfiles de constantes, búsqueda
-en bucle cerrado sobre 200 semillas) va a la segunda plaza cuando pase su puerta. Notas:
+sería mejor). **Enviado a petición a las dos plazas: submissions 56523438 y 56524328** (retiran 56509994 y
+56511120); seguimiento con `python live_report.py 56523438 56524328`. La versión 2 (tabla por rama y mundo con
+perfiles de constantes, búsqueda en bucle cerrado sobre 200 semillas) sustituirá a la más antigua cuando pase su
+puerta. Notas:
 [RESUME_FRONTIER12.es.md](RESUME_FRONTIER12.es.md).
 
 ```powershell

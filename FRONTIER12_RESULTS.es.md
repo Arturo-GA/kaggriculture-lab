@@ -96,8 +96,14 @@ kernel reconstruyó (SHA-256 `be0fa3caa6a2730925ebb3da1bea5c0c06102d9a5dbd38a0b6
 
 **Enviado el 24 de septiembre de 2026 a las 14:13 UTC a petición de Arturo** ("cuando termines haz submission 2
 plazas a kaggle"): `f12_router` = submission **56523438** (recibo en `results/frontier12/submission_receipt.json`),
-validada sin errores, arranca en 600. Retiró 56509994 (`f11_pv_lock`, 2147). Activas: 56511120 (`f11b_hs3_lock`,
-2256) y 56523438. Seguimiento: `python live_report.py 56523438 56511120`.
+validada sin errores, arranca en 600. Retiró 56509994 (`f11_pv_lock`, 2147).
+
+**Segunda plaza, a petición de Arturo ("Prepara y manda el segundo spot para kaggle", 14:50 UTC):** el mismo archivo
+verificado, submission **56524328** (14:52 UTC, recibo en `results/frontier12/submission_receipt_2.json`), validada
+sin errores. Retiró 56511120 (`f11b_hs3_lock`, 2264). La versión 2 no estaba lista (búsqueda al 25 %), y las dos
+plazas debían quedar cubiertas con el agente más fuerte validado. **Activas: 56523438 y 56524328** (la primera iba en
+1561 y 8/8 a los 40 minutos). Seguimiento: `python live_report.py 56523438 56524328`. Cuando la v2 pase su puerta
+sustituirá a la más antigua de las dos (56523438).
 
 ## 6. Versión 2 (segunda plaza, en curso)
 
