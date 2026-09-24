@@ -1,0 +1,202 @@
+{
+  "candidate": "f12_router",
+  "sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "games": 224,
+  "per_opponent": {
+    "f11_pv_lock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 10.0,
+      "mean_margin": 8.0
+    },
+    "f11b_hs3_lock": {
+      "games": 16,
+      "wins": 0,
+      "ties": 16,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 0.0
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 10.0,
+      "mean_margin": 67.125
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1337.75
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 12,
+      "ties": 4,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 51.125
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": -2.0,
+      "mean_margin": 895.625
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1333.75
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1323.875
+    },
+    "n23_wzhengbiao_f6175f": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 6.0,
+      "mean_margin": 1109.75
+    },
+    "n23_yasutakababa_0957ba": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 1069.0
+    },
+    "n23_arsgorynich_8045c8": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1587.875
+    },
+    "n23_degnonguidi_a16e0e": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1601.875
+    },
+    "n23_ahmedberatozer_2ee689": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 4.0,
+      "mean_margin": 1339.375
+    },
+    "prvsiyan_guard": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1638.25
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.5,
+  "total_score_delta": 36.0,
+  "max_call_ms": 336.914399988018,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false,
+  "totals": {
+    "f12_router": 200.0,
+    "f11b_hs3_lock": 164.0,
+    "f11_pv_lock": 190.0
+  },
+  "per_opponent_points": {
+    "f12_router": {
+      "f11_pv_lock": 16.0,
+      "f11b_hs3_lock": 8.0,
+      "n23_prvsiyan_178ae0": 16.0,
+      "n23_dmitriigluzdov_488913": 14.0,
+      "n23_arsgorynich_4f8637": 14.0,
+      "n23_dmitriigluzdov_7ac1a2": 12.0,
+      "n23_haideptry_a58ee3": 14.0,
+      "n23_statma_29454a": 14.0,
+      "n23_wzhengbiao_f6175f": 16.0,
+      "n23_yasutakababa_0957ba": 16.0,
+      "n23_arsgorynich_8045c8": 14.0,
+      "n23_degnonguidi_a16e0e": 14.0,
+      "n23_ahmedberatozer_2ee689": 16.0,
+      "prvsiyan_guard": 16.0
+    },
+    "f11b_hs3_lock": {
+      "f11_pv_lock": 6.0,
+      "f11b_hs3_lock": 8.0,
+      "n23_prvsiyan_178ae0": 6.0,
+      "n23_dmitriigluzdov_488913": 14.0,
+      "n23_arsgorynich_4f8637": 14.0,
+      "n23_dmitriigluzdov_7ac1a2": 14.0,
+      "n23_haideptry_a58ee3": 14.0,
+      "n23_statma_29454a": 14.0,
+      "n23_wzhengbiao_f6175f": 10.0,
+      "n23_yasutakababa_0957ba": 8.0,
+      "n23_arsgorynich_8045c8": 14.0,
+      "n23_degnonguidi_a16e0e": 14.0,
+      "n23_ahmedberatozer_2ee689": 12.0,
+      "prvsiyan_guard": 16.0
+    },
+    "f11_pv_lock": {
+      "f11_pv_lock": 8.0,
+      "f11b_hs3_lock": 10.0,
+      "n23_prvsiyan_178ae0": 16.0,
+      "n23_dmitriigluzdov_488913": 14.0,
+      "n23_arsgorynich_4f8637": 10.0,
+      "n23_dmitriigluzdov_7ac1a2": 12.0,
+      "n23_haideptry_a58ee3": 14.0,
+      "n23_statma_29454a": 14.0,
+      "n23_wzhengbiao_f6175f": 16.0,
+      "n23_yasutakababa_0957ba": 16.0,
+      "n23_arsgorynich_8045c8": 14.0,
+      "n23_degnonguidi_a16e0e": 14.0,
+      "n23_ahmedberatozer_2ee689": 16.0,
+      "prvsiyan_guard": 16.0
+    }
+  },
+  "controls": [
+    "f11b_hs3_lock",
+    "f11_pv_lock"
+  ],
+  "better_control": "f11_pv_lock",
+  "registered_gate": {
+    "total_vs_better": 10.0,
+    "total_vs_weaker": 36.0,
+    "total_ok": true,
+    "per_opponent_ok": true,
+    "per_opponent_shortfalls": {
+      "f11b_hs3_lock": -2.0,
+      "n23_dmitriigluzdov_7ac1a2": -2.0
+    },
+    "runtime_ok": true,
+    "max_call_ms": 336.914399988018,
+    "errors": [],
+    "registered_gate_passed": true
+  },
+  "registered_gate_passed": true
+}

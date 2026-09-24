@@ -1,0 +1,15 @@
+{
+  "id": 56523438,
+  "status": "SubmissionStatus.COMPLETE",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier12 world router 50a576e1 (prvsiyan/Herd-Safe + lockstep)",
+  "checked_utc": "2026-09-24T14:19:06.358724+00:00",
+  "archive_sha256": "be0fa3caa6a2730925ebb3da1bea5c0c06102d9a5dbd38a0b66301aca9a64bd1",
+  "candidate_sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 24 de septiembre de 2026 (~12:30 UTC): \"cuando termines haz submission 2 plazas a kaggle\", tras \"no tienes que llegar a 2800, apunta al top 100\" (enviar el enrutador Frontier12 v1b, f12_router, a la primera plaza; retira la submission activa mas antigua, 56509994)",
+  "filename": "submission.tar.gz",
+  "public_score": "600.0",
+  "error": "",
+  "date": "2026-09-24 14:13:28.883000"
+}

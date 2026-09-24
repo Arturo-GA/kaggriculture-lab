@@ -1,0 +1,21 @@
+{
+ "adv2": {
+  "_ADV_LOOK": 2
+ },
+ "adv6": {
+  "_ADV_LOOK": 6
+ },
+ "pe4": {
+  "_V92_P_EVERY": 4
+ },
+ "pe2": {
+  "_V92_P_EVERY": 2
+ },
+ "rd46": {
+  "V9_RACE_DEFAULT": 46,
+  "V9_RACE_MARGIN": 24
+ },
+ "rd36": {
+  "V9_RACE_DEFAULT": 36
+ }
+}

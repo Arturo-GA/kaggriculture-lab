@@ -1,0 +1,7 @@
+{
+  "candidate": "f12_router",
+  "sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "selected_utc": "2026-09-24T14:00:39.700771+00:00",
+  "version": "v1b",
+  "basis": "World/branch router (v1b); registered gate passed on fresh seeds [8421, 8422, 8423, 8424, 8425, 8426, 8427, 8428]: 200.0 points vs 164.0 (f11b_hs3_lock) and 190.0 (f11_pv_lock)."
+}

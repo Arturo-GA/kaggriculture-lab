@@ -1,0 +1,62 @@
+{
+  "candidate": "f12_router",
+  "sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "games": 32,
+  "per_opponent": {
+    "f11b_hs3_lock": {
+      "games": 8,
+      "wins": 0,
+      "ties": 8,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 0.0
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 400.75
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 6.0,
+      "mean_margin": 89.25
+    },
+    "n23_haideptry_a58ee3": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 698.5
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.5,
+  "total_score_delta": 4.0,
+  "max_call_ms": 363.8191030000826,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false,
+  "total_games": 64,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier12-world-router",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "export_checks_passed": false,
+  "verified": true,
+  "archive_sha256": "be0fa3caa6a2730925ebb3da1bea5c0c06102d9a5dbd38a0b66301aca9a64bd1",
+  "archive_path": "results\\frontier12\\submission.tar.gz",
+  "archive_built": "locally from candidates/f12_router.py, byte-identical to the router the kernel rebuilt (hash checked)",
+  "cloud_baseline_rule_passed": false,
+  "cloud_shortfalls": {
+    "n23_haideptry_a58ee3": -2.0
+  },
+  "accepted_shortfall": true
+}

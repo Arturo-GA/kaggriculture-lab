@@ -120,3 +120,7 @@ candidates/f11*.py
 results/frontier11/kaggle/candidates/n23_*.py
 !candidates/f11b_hs3_lock.py
 results/frontier11b/kaggle/candidates/n23_*.py
+candidates/f12*.py
+results/frontier12/kaggle/candidates/n23_*.py
+!candidates/f12_router.py
+candidates/f12a_*.py

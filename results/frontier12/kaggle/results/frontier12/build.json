@@ -1,0 +1,19 @@
+{
+  "bases": {
+    "pv": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca",
+    "hs": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b"
+  },
+  "table_keys": [
+    "hs",
+    "pv"
+  ],
+  "profiles": [],
+  "branch_money": {
+    "2850": "pv",
+    "2854": "hs"
+  },
+  "default": "pv",
+  "opening": "hs",
+  "sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "bytes": 1589460
+}

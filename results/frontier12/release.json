@@ -1,0 +1,33 @@
+{
+  "candidate": "f12_router",
+  "kernel": "jarturo/kaggriculture-frontier12-world-router",
+  "control": "f11b_hs3_lock",
+  "source_sha256": {
+    "f12_router": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+    "f11b_hs3_lock": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+    "n23_dmitriigluzdov_488913": "4889137f1adf1f9266b2ad5a6ac6700c40e9be6dfe3654e39db375fb55b71341",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n23_haideptry_a58ee3": "a58ee3a1e78dbbd0e5a27a37eb7d3ae16cc3064f5101d7b955608f23719e9dba",
+    "f11_pv_lock": "def14a5a7c98c9847103bb41ae916a492d3e4e405995616bf25c8363427e47ca"
+  },
+  "cloud_opponents": [
+    "f11b_hs3_lock",
+    "n23_dmitriigluzdov_488913",
+    "n23_prvsiyan_178ae0",
+    "n23_haideptry_a58ee3"
+  ],
+  "cloud_seeds": [
+    8431,
+    8432,
+    8433,
+    8434
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "d0778c9b5d47c75e30a163964080eff8f4db293d73ec0f1a0ff268667bc13190"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, fresh seeds never used for the table, both seats, the two embedded candidates play the same panel as paired controls. Gate: the router's total score >= the better control's total + 4 and >= the weaker control's + 8; against no opponent below the better of the two controls by more than 2.0 (one world, both seats); no reported errors or shadow errors; every callback < 1000 ms. Then the Kaggle kernel rebuilds the router from its parts, checks the hash and repeats the paired comparison against f11b_hs3_lock on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Embedded: f11_pv_lock (prvsiyan, 'The Soil Remembers Rain', 22 Sep 2026, Apache-2.0, on haideptry's 2965 hybrid and the public chain it credits) and f11b_hs3_lock (arsgorynich, 'Herd Safe v3 forecast4', 23 Sep 2026, Apache-2.0, on Dmitrii Gluzdov's Herd-Safe Sale Window and its chain), each with every upstream notice retained and the unchanged Lab lockstep layer. Router, table and profiles: Kaggriculture Lab.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

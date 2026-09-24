@@ -1,0 +1,21 @@
+{
+ "built_utc": "2026-09-24T13:16:08.231190+00:00",
+ "version": "v1b",
+ "note": "branch mirror with the Herd-Safe opening: pv against the BUY20/SELL15 group, hs against the Herd-Safe group, pv otherwise",
+ "evidence": "100 seeds x 2 rivals (worlds_0924.json): pv vs prvsiyan 96/100, hs vs Herd-Safe 93/100; branch-mirror 0.953 points vs always-pv 0.892, oracle 0.988. v1 (pv opening) holdout 8401-8408: 179 points vs 177 (pv) and 172 (hs), gate missed by 2 because the BUY 20 / SELL 15 opening is worth -8 coins against the BUY 8 / SELL 3 opening in every game (mirror games against Herd-Safe clones lost by 8); v1b plays the Herd-Safe opening.",
+ "table": {
+  "pv": "pv",
+  "hs": "hs"
+ },
+ "default": "pv",
+ "opening": "hs",
+ "profiles": {},
+ "branch_money": {
+  "2850": "pv",
+  "2854": "hs"
+ },
+ "seeds": 100,
+ "files": [
+  "outputs/session/gold/worlds_0924.json"
+ ]
+}

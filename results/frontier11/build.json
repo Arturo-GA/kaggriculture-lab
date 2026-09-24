@@ -3,7 +3,8 @@
     "n23_dmitriigluzdov_488913": "4889137f1adf1f9266b2ad5a6ac6700c40e9be6dfe3654e39db375fb55b71341",
     "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
     "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
-    "n23_wzhengbiao_f6175f": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34"
+    "n23_wzhengbiao_f6175f": "f6175fd1bc3850f74185e7a813bb5a87d54e7e15212c874133dafc6e1ce91d34",
+    "n23_dmitriigluzdov_7ac1a2": "7ac1a2545ea285fa75b6a51b7ea0bbdb5f334f405f20e72b72f8188a1d898a35"
   },
   "variants": {
     "f11x_hs_rob": {
@@ -159,6 +160,14 @@
       "note": "arsgorynich \"Herd-Safe v3 forecast4\" (23 Sep) + Frontier5 lockstep; exported second-slot candidate",
       "overrides": {},
       "sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b"
+    },
+    "f11x_gm_lock": {
+      "base": "n23_dmitriigluzdov_7ac1a2",
+      "entry": "rescue_agent",
+      "layer": "lock",
+      "note": "Gluzdov \"More Wheat, Smarter Sales\" (22 Sep) + Frontier5 lockstep (exploratory third base)",
+      "overrides": {},
+      "sha256": "cae3fb919efde28c8985036113adbfa0c827e97575a3050f327013020b567174"
     }
   }
 }

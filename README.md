@@ -4,6 +4,31 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**24 de septiembre (tarde): Frontier12, el enrutador por rama y mundo.** Las dos Frontier11 se quedaron en 2122 y
+2237: 25 de sus 33 derrotas en vivo son contra clones de la familia pública en partidas que decide el mundo (711 de
+759 pares locales tienen el mismo margen en los dos asientos) y cada rama gana unos mundos y pierde otros. Revisión de
+supuestos y estrategias en [FRONTIER12_RESULTS.es.md](FRONTIER12_RESULTS.es.md): la sombra de un rival público
+reproduce 719/719 acciones, pero responder al turno con su lista exacta empeora (el rival reacciona); una constante de
+tiempo de venta cambia mundos perdidos; y la rama del rival decide más que el mundo (prvsiyan+lockstep gana 96/100 a
+su rama, Herd-Safe+lockstep 93/100 a la suya). `candidates/f12_router.py` (`build_f12.py`) lleva dentro los dos
+candidatos de Frontier11, juega la apertura Herd-Safe (+8 monedas), lee la rama del rival en el paso 1 por su dinero
+público y en el 144 se queda con la base de esa rama. Holdout registrado con los dos candidatos como controles: 200
+puntos frente a 190 y 164; Kaggle sin errores, con un incumplimiento aceptado (−2 contra haideptry, donde Herd-Safe
+sería mejor). **Enviado a petición: submission 56523438** (retira 56509994); seguimiento con
+`python live_report.py 56523438 56511120`. La versión 2 (tabla por rama y mundo con perfiles de constantes, búsqueda
+en bucle cerrado sobre 200 semillas) va a la segunda plaza cuando pase su puerta. Notas:
+[RESUME_FRONTIER12.es.md](RESUME_FRONTIER12.es.md).
+
+```powershell
+python build_f12_table.py outputs/session/gold/worlds_0924.json    # tabla por mundo (la v1b usa solo la rama)
+python build_f12.py                                                # candidates/f12_router.py desde los dos candidatos fijados por hash
+python -m unittest -v test_frontier12.py
+python make_frontier12_notebook.py; python -m kaggle kernels push -p kaggle_frontier12
+python verify_frontier12_cloud.py [--accept-shortfall]             # tras `kaggle kernels output ... -p results/frontier12/kaggle`
+python submit_frontier12.py                                        # estado; --submit --authorization "..." solo con petición explícita
+python resume_eval.py <parcial.json> <candidatos> <rivales> <semillas> <workers>   # reanuda un holdout cortado por un fallo de escritura
+```
+
 **24 de septiembre: Frontier11 (lockstep sobre la ola pública definitiva, tras el cierre de notebooks del 23).**
 Las dos Frontier10 cayeron a 2230 y 2402: entre el 21 y el 23 de septiembre el público copió la idea del lockstep
 (shiiin9, "Your Market List Is an Order Book": V55 + una capa que ordena las ventas del turno contra una copia de

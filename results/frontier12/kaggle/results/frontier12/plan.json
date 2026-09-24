@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-09-24T13:17:00.633077+00:00",
+  "version": "v1b",
+  "candidate": "f12_router",
+  "candidate_sha256": "50a576e15f46531ecf6f51446f548f471fe68b35715bebf8a173a1488da6746b",
+  "control": "f11b_hs3_lock",
+  "controls": [
+    "f11b_hs3_lock",
+    "f11_pv_lock"
+  ],
+  "control_sha256": "4aac62c84ba5be940d31131651b3b2c118b8cee99371e8bd8706ca929eba5c9b",
+  "unit_test_seed": 7682,
+  "request": "Arturo, 24 Sep 2026: 'no tienes que llegar a 2800, apunta al top 100' and 'cuando termines haz submission 2 plazas a kaggle'.",
+  "why": "Both Frontier11 submissions stalled (2122 / 2237): 25 of their 33 live losses are against clones of the final public family in games decided by the world (711 of 759 local pairs are seat-symmetric; each branch wins some worlds and loses others), and the other base wins 12 of those 33 games in the replay panel. The router runs both Frontier11 candidates side by side, plays one until the second shop is known (their actions agree on 142 of the first 144 steps; switching reproduces the chosen base within 8 coins) and keeps the one that wins that world according to a table from closed-loop games against the family.",
+  "table": {
+    "built_utc": "2026-09-24T13:16:08.231190+00:00",
+    "seeds": 100,
+    "files": [
+      "outputs/session/gold/worlds_0924.json"
+    ],
+    "table_keys": [
+      "hs",
+      "pv"
+    ],
+    "note": "branch mirror with the Herd-Safe opening: pv against the BUY20/SELL15 group, hs against the Herd-Safe group, pv otherwise",
+    "default": "pv",
+    "opening": "hs",
+    "profiles": []
+  },
+  "training_seeds": "8001-8300 (table); never reused for validation. v1 (pv opening, hash b3b91a0b...) was measured on 8401-8408 and missed its gate by 2 points because the BUY20/SELL15 opening costs 8 coins in every game against the BUY8/SELL3 opening; v1b plays the Herd-Safe opening (results/frontier12/holdout_v1_pvopening.json, plan_v1_pvopening.json).",
+  "holdout_seeds": [
+    8421,
+    8422,
+    8423,
+    8424,
+    8425,
+    8426,
+    8427,
+    8428
+  ],
+  "holdout_opponents": [
+    "f11_pv_lock",
+    "f11b_hs3_lock",
+    "n23_prvsiyan_178ae0",
+    "n23_dmitriigluzdov_488913",
+    "n23_arsgorynich_4f8637",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_haideptry_a58ee3",
+    "n23_statma_29454a",
+    "n23_wzhengbiao_f6175f",
+    "n23_yasutakababa_0957ba",
+    "n23_arsgorynich_8045c8",
+    "n23_degnonguidi_a16e0e",
+    "n23_ahmedberatozer_2ee689",
+    "prvsiyan_guard"
+  ],
+  "cloud_seeds": [
+    8431,
+    8432,
+    8433,
+    8434
+  ],
+  "cloud_opponents": [
+    "f11b_hs3_lock",
+    "n23_dmitriigluzdov_488913",
+    "n23_prvsiyan_178ae0",
+    "n23_haideptry_a58ee3"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, fresh seeds never used for the table, both seats, the two embedded candidates play the same panel as paired controls. Gate: the router's total score >= the better control's total + 4 and >= the weaker control's + 8; against no opponent below the better of the two controls by more than 2.0 (one world, both seats); no reported errors or shadow errors; every callback < 1000 ms. Then the Kaggle kernel rebuilds the router from its parts, checks the hash and repeats the paired comparison against f11b_hs3_lock on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Embedded: f11_pv_lock (prvsiyan, 'The Soil Remembers Rain', 22 Sep 2026, Apache-2.0, on haideptry's 2965 hybrid and the public chain it credits) and f11b_hs3_lock (arsgorynich, 'Herd Safe v3 forecast4', 23 Sep 2026, Apache-2.0, on Dmitrii Gluzdov's Herd-Safe Sale Window and its chain), each with every upstream notice retained and the unchanged Lab lockstep layer. Router, table and profiles: Kaggriculture Lab."
+}
