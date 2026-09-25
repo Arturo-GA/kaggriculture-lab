@@ -15,11 +15,12 @@ OUT = Path('outputs/session/gold')
 
 
 def game(job):
-    agent_path, episode, seat = job
+    agent_path, episode, seat = job[:3]
+    raw_dir = Path(job[3]) if len(job) > 3 else RAW
     with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
         from kaggle_environments import make
         from kaggle_environments.agent import get_last_callable
-    with gzip.open(RAW / f'episode-{episode}-replay.json.gz', 'rt', encoding='utf-8') as f:
+    with gzip.open(raw_dir / f'episode-{episode}-replay.json.gz', 'rt', encoding='utf-8') as f:
         data = json.load(f)
     steps = data['steps']
     seed = data['info']['seed']
@@ -55,14 +56,17 @@ def main():
     ap.add_argument('--workers', type=int, default=6)
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--out', default='')
+    ap.add_argument('--raw', default=str(RAW), help='folder with episode-<id>-replay.json.gz files')
+    ap.add_argument('--episodes', default=str(OUT / 'episodes_f8.json'), help='JSON list with id, seat, op_name, op_score (and op_sub)')
     a = ap.parse_args()
-    eps = json.load(open(OUT / 'episodes_f8.json', encoding='utf-8'))
-    eps = [e for e in eps if (RAW / f"episode-{e['id']}-replay.json.gz").exists()]
+    raw_dir = Path(a.raw)
+    eps = json.load(open(a.episodes, encoding='utf-8'))
+    eps = [e for e in eps if (raw_dir / f"episode-{e['id']}-replay.json.gz").exists()]
     eps.sort(key=lambda e: e['id'])
     if a.limit:
         eps = eps[:a.limit]
     meta = {e['id']: e for e in eps}
-    jobs = [(p, e['id'], e['seat']) for p in a.agents for e in eps]
+    jobs = [(p, e['id'], e['seat'], str(raw_dir)) for p in a.agents for e in eps]
     out = Path(a.out) if a.out else OUT / ('panel_' + '_'.join(Path(p).stem for p in a.agents)[:80] + '.json')
     rows = []
     with ProcessPoolExecutor(max_workers=a.workers) as ex:
@@ -72,7 +76,7 @@ def main():
             m = meta[r['episode']]
             r.update(opponent=m.get('op_name'), op_score=m.get('op_score'), op_sub=m.get('op_sub'))
             rows.append(r)
-            out.write_text(json.dumps(rows, indent=1), encoding='utf-8')
+            tmp = out.with_name(out.name + '.tmp'); tmp.write_text(json.dumps(rows, indent=1), encoding='utf-8'); tmp.replace(out)
             print(f"{i}/{len(jobs)} {r['agent']} ep {r['episode']} rec {r['recorded_margin']:+.0f} now {r['margin']:+.0f} rival_kept {r['rival_kept']} {r['seconds']}s", flush=True)
     for p in a.agents:
         name = Path(p).stem

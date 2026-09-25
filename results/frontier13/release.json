@@ -1,0 +1,30 @@
+{
+  "candidate": "f13_c22_lock",
+  "kernel": "jarturo/kaggriculture-frontier13-cha22",
+  "control": "n25_abhinav0370_127ed3",
+  "source_sha256": {
+    "f13_c22_lock": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n25_haideptry_cda529": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+  },
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "n23_prvsiyan_178ae0",
+    "n25_haideptry_cda529"
+  ],
+  "cloud_seeds": [
+    9151,
+    9152,
+    9153,
+    9154
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "12b9fa3d54f8866261d40ede6287d5be7e6362a147105fe671a8b95ce8aced89"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, paired against unmodified cha22 on identical opponents/seeds/seats, both seats. Gate: total paired score >= +6, score against cha22 (mirror) >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. The panel spans the post-lock top (cha22, haideptry v7, Shepherd's Ledger), the pre-lock top ten and the low-band families the forum flags for the climb (a1-t31, hack, utils-v1/V43, shop-router v7). f13x_c22_br also plays the panel for comparison only. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: 'Kaggriculture cha22 - route-replay agent' (notebook abhinav0370/cha22-agent; identical bytes in tetsutani/demand-preserving-turn-sale-timing, guruprasaathas111/kaggriculture-master-engine-v3 and evgendvorkin/kaggriculture), Apache-2.0, built on the v9/3 lineage of Thomas Tschinkel, Ahmed Berat Ozer, yhay81's route tapes, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani, shiiin9 and others credited in its source; every upstream notice retained. Lab layer: frontier5_lockstep.py, unchanged, bound to the public entry point ig_agent.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

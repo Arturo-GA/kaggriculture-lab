@@ -1,0 +1,6 @@
+{
+  "candidate": "f13_c22_lock",
+  "sha256": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+  "selected_utc": "2026-09-25T21:17:29.332511+00:00",
+  "basis": "cha22 + Frontier5 lockstep; registered gate passed on fresh seeds 9141-9148 against unmodified cha22: 251/256 vs 234/256 (+14 mirror ties), paired +11, mirror 15/16, 16/16 against our router, the Herd-Safe branch and the four low-band families, +54 coins per game (see holdout_summary.json). The level-2 variant f13x_c22_br scored 245/256 (paired +5) and is not exported."
+}

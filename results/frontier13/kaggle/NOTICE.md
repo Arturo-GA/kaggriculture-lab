@@ -320,19 +320,3 @@ Modified September 24, 2026 by Arturo-GA / Kaggriculture Lab (Frontier12):
   numeric constants that the embedded sources already expose.
 - The other public agents of the final wave remain local evaluation opponents
   only and are excluded from Git.
-
-Modified September 25, 2026 by Arturo-GA / Kaggriculture Lab (Frontier13):
-
-- `f13_c22_lock` is the public agent "Kaggriculture cha22 - route-replay agent"
-  (SHA-256 `127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652`,
-  Apache-2.0), published in the Kaggle notebook abhinav0370/cha22-agent and, byte
-  for byte, in tetsutani's "Demand-Preserving Turn Sale Timing",
-  guruprasaathas111's "Kaggriculture Master Engine V3" and evgendvorkin's
-  "Kaggriculture". It is built on the v9/3 lineage of Thomas Tschinkel, Ahmed
-  Berat Özer, yhay81's route tapes, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani,
-  shiiin9 and the other authors credited in its source; every upstream notice is
-  retained, its public entry point `ig_agent` is bound, and the unchanged
-  Kaggriculture Lab lockstep layer (`frontier5_lockstep.py`) is appended.
-- `build_f13.py` pins the hashes. Agents from other post-lock notebooks, Kaggle
-  datasets and GitHub repositories (many without a license) are used only as
-  local evaluation opponents and are excluded from Git.

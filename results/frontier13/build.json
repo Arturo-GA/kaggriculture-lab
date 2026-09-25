@@ -1,0 +1,36 @@
+{
+  "pins": {
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "n25_haideptry_cda529": "cda529cb6b359fc4a9ab124d4d7950d5912bd5de846dcec4be70ca83b7150b2d"
+  },
+  "variants": {
+    "f13_c22_lock": {
+      "base": "n25_abhinav0370_127ed3",
+      "entry": "ig_agent",
+      "layer": "lock",
+      "note": "cha22 route-replay agent + Frontier5 lockstep",
+      "sha256": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a"
+    },
+    "f13x_hd_lock": {
+      "base": "n25_haideptry_cda529",
+      "entry": "agent",
+      "layer": "lock",
+      "note": "haideptry 2965 hybrid (25 Sep) + Frontier5 lockstep (exploratory)",
+      "sha256": "b2ba1ff73dd433173c54d1b8c2c690cba74b4192f552185880aff98dab7ac3d6"
+    },
+    "f13x_c22_br": {
+      "base": "n25_abhinav0370_127ed3",
+      "entry": "ig_agent",
+      "layer": "f11",
+      "note": "cha22 + frontier11 level-2 best response over layer D orderings (exploratory)",
+      "sha256": "09faa514e0520f97e44412d1c1ff207c8bd98f35d82c552642c6592f90af9236"
+    },
+    "f13x_c22_mix": {
+      "base": "n25_abhinav0370_127ed3",
+      "entry": "ig_agent",
+      "layer": "f11",
+      "note": "cha22 + frontier11 weighted three-model response (exploratory)",
+      "sha256": "4477551ddb14ff1f21d590f008c251b9f61a985b3bc921da0fa7b8c15a6211a0"
+    }
+  }
+}

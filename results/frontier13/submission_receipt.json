@@ -1,0 +1,15 @@
+{
+  "id": 56560449,
+  "status": "SubmissionStatus.COMPLETE",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Frontier13 83195206 on cha22 127ed3e6",
+  "checked_utc": "2026-09-25T21:32:11.132071+00:00",
+  "archive_sha256": "475e416302c39880d41abc3005b318551df44672cd75888340e8e18aaf213a72",
+  "candidate_sha256": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+  "leaderboard_submitted": true,
+  "authorization": "Arturo, 25 de septiembre de 2026: \"puedes tener una nueva tanda de 2 envios para la competencia? el objetivo es plata al cierre revisa repositorios publicos\" (enviar f13_c22_lock, cha22 + lockstep, a las dos plazas; retira las dos copias del enrutador Frontier12, 56523438 y 56524328)",
+  "filename": "submission.tar.gz",
+  "public_score": "600.0",
+  "error": "",
+  "date": "2026-09-25 21:26:39.417000"
+}

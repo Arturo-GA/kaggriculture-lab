@@ -4,6 +4,28 @@ Investigación y experimentos para Kaggriculture sobre el V37 compartido por Art
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.
 
+**Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
+competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
+
+**25 de septiembre: Frontier13, cha22 + lockstep en las dos plazas.** Revisión de todo lo público tras el cierre
+(notebooks actualizados después del 23, datasets, GitHub, foro) y de 172 derrotas en vivo: el agente "cha22"
+(route-replay, publicado por actualización de notebooks existentes) domina la franja de plata y gana a todo lo que
+teníamos (56/56; nuestro enrutador 0/4 contra él). `candidates/f13_c22_lock.py` = cha22 + `frontier5_lockstep.py`
+(`build_f13.py`): holdout oficial 251/256 (15/16 en el espejo), 60/64 en una prueba complementaria contra agentes
+vivos de GitHub y variantes, repetición de partidas en vivo 29 → 99 victorias de 166, verificado en Kaggle. **Enviado
+a petición a las dos plazas: submissions 56560449 y 56560450.** Detalle en [FRONTIER13_RESULTS.es.md](FRONTIER13_RESULTS.es.md)
+y [RESUME_FRONTIER13.es.md](RESUME_FRONTIER13.es.md).
+
+```powershell
+python pull_public_notebooks.py vendor/pub0925; python scan_public_agents.py vendor/pub0925 n25 outputs/session/gold/research_0925/notebooks_scan.json
+python build_f13.py
+python -m unittest -v test_frontier13.py
+python make_frontier13_notebook.py; python -m kaggle kernels push -p kaggle_frontier13
+python verify_frontier13_cloud.py
+python live_report.py 56560449 56560450
+python submit_frontier13.py; python submit_frontier13.py --slot 2      # solo lectura; --submit --authorization "..." solo con petición
+```
+
 **24 de septiembre (tarde): Frontier12, el enrutador por rama y mundo.** Las dos Frontier11 se quedaron en 2122 y
 2237: 25 de sus 33 derrotas en vivo son contra clones de la familia pública en partidas que decide el mundo (711 de
 759 pares locales tienen el mismo margen en los dos asientos) y cada rama gana unos mundos y pierde otros. Revisión de

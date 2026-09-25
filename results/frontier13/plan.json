@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-25T20:34:28.820990+00:00",
+  "candidate": "f13_c22_lock",
+  "candidate_sha256": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+  "control": "n25_abhinav0370_127ed3",
+  "control_sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+  "unit_test_seed": 9121,
+  "request": "Arturo, 25 Sep 2026: 'puedes tener una nueva tanda de 2 envios para la competencia? el objetivo es plata al cierre revisa repositorios publicos' and 'recuerda usar todo lo que hemos aprendido en github y la seccion de discussion y codigo abierto'.",
+  "diagnosis": "Both Frontier12 router submissions sit at 2199/2246 after ~188 games (silver cut 2427). Live-loss research (outputs/session/gold/research_0925/live.json): against rival submissions made after 24 Sep the router is 19-123; the largest cluster opens BUY 5 wheat / BUY_SEED 1 and is 6-61 against us (ALLAI 2583 reproduces cha22 at 0.998 of 432 steps). cha22 ('route-replay agent', abhinav0370/cha22-agent, the same bytes in tetsutani's, guruprasaathas111's and evgendvorkin's notebooks, updated after the lock) beats every pre-lock public agent: 56/56 on seeds 9111-9114 (+200 to +4500), 4/4 against our router.",
+  "screen_seeds": [
+    9101,
+    9102,
+    9103,
+    9111,
+    9112,
+    9113,
+    9114,
+    9121
+  ],
+  "screen_note": "9111-9114 (seat 0): cha22 + Frontier5 lockstep 60/60 including 4/4 against plain cha22 (+82..+144); plain cha22 56/56; f12_router 36.5/56 and 0/4 against cha22.",
+  "holdout_seeds": [
+    9141,
+    9142,
+    9143,
+    9144,
+    9145,
+    9146,
+    9147,
+    9148
+  ],
+  "holdout_opponents": [
+    "n25_abhinav0370_127ed3",
+    "f12_router",
+    "f11b_hs3_lock",
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n25_haideptry_cda529",
+    "n25_haideptry_8378f7",
+    "n23_dmitriigluzdov_488913",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_statma_29454a",
+    "n25_guruprasaathas_701c01",
+    "n23_kenanzhang9_b52378",
+    "d25_kenanzhang9_602ae8",
+    "n23_syedtahahassan_a2047e",
+    "v43",
+    "aurax_v7"
+  ],
+  "holdout_extra_candidates": [
+    "f13x_c22_br"
+  ],
+  "cloud_seeds": [
+    9151,
+    9152,
+    9153,
+    9154
+  ],
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "n23_prvsiyan_178ae0",
+    "n25_haideptry_cda529"
+  ],
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, paired against unmodified cha22 on identical opponents/seeds/seats, both seats. Gate: total paired score >= +6, score against cha22 (mirror) >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. The panel spans the post-lock top (cha22, haideptry v7, Shepherd's Ledger), the pre-lock top ten and the low-band families the forum flags for the climb (a1-t31, hack, utils-v1/V43, shop-router v7). f13x_c22_br also plays the panel for comparison only. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: 'Kaggriculture cha22 - route-replay agent' (notebook abhinav0370/cha22-agent; identical bytes in tetsutani/demand-preserving-turn-sale-timing, guruprasaathas111/kaggriculture-master-engine-v3 and evgendvorkin/kaggriculture), Apache-2.0, built on the v9/3 lineage of Thomas Tschinkel, Ahmed Berat Ozer, yhay81's route tapes, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani, shiiin9 and others credited in its source; every upstream notice retained. Lab layer: frontier5_lockstep.py, unchanged, bound to the public entry point ig_agent."
+}

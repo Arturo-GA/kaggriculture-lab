@@ -124,3 +124,10 @@ candidates/f12*.py
 results/frontier12/kaggle/candidates/n23_*.py
 !candidates/f12_router.py
 candidates/f12a_*.py
+candidates/n25_*.py
+candidates/d25_*.py
+candidates/g25_*.py
+candidates/f13*.py
+!candidates/f13_c22_lock.py
+results/frontier13/kaggle/candidates/n2*.py
+candidates/g25_*.py
