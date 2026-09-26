@@ -190,5 +190,7 @@ recupera casi todos.
 Herd-Safe forecast4, Frontier13 como control): **48/48 sin errores, 300 ms, 22/24 frente a 20/24 del control** (7-1
 contra prvsiyan donde el control hace 5-3; 7-1 contra cha22 con +877 por partida), regla de la nube completa sin
 incumplimientos; archivo `ba02f4a5b2eba0e1990df6e35b8b2e9c5c578900602dda34042ba31d05ef9778`
-(`results/frontier14b/kaggle_verified.json`). **Verificada y lista; no enviada** (su envío retiraría la 56560450).
-`python submit_frontier14b.py --submit --authorization "..."`.
+(`results/frontier14b/kaggle_verified.json`). **Enviada el 26 de septiembre a las ~05:55 UTC a la segunda plaza** cuando Arturo eligió "Enviar Frontier14B ahora"
+(Frontier13 había bajado a 2390, por debajo del corte de plata 2407): **submission 56570873**, retira la 56560450.
+**Par activo final: 56568493 (Frontier14) + 56570873 (Frontier14B)**; seguimiento con
+`python live_report.py 56568493 56570873`.

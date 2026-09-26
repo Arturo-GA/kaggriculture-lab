@@ -27,12 +27,12 @@ minutos. Léelo entero antes de tocar nada. El dueño es **Arturo** (GitHub `Art
 ## 2. Estado actual (lo primero que tienes que comprobar)
 
 **Submissions activas: 56568493 (Frontier14, `candidates/f14_adv4_h12.py`, enviada el 26 de septiembre a las 03:55 UTC)
-y 56560450 (Frontier13, `candidates/f13_c22_lock.py`, 2408 el 26 a la 01:43 UTC)**. La 56560449 (segunda copia de
-Frontier13) fue retirada por el envío de Frontier14. Recibos: `results/frontier14/submission_receipt.json`,
-`results/frontier13/submission_receipt_2.json`.
+y 56570873 (Frontier14B, `candidates/f14_adv4_h16.py`, enviada el 26 a las ~05:55 UTC)**. Las dos Frontier13 (56560449,
+56560450) quedaron retiradas. Recibos: `results/frontier14/submission_receipt.json`,
+`results/frontier14b/submission_receipt.json`.
 
 ```bash
-python live_report.py 56568493 56560450      # rating, victorias por tramo de rival, peores rivales
+python live_report.py 56568493 56570873      # rating, victorias por tramo de rival, peores rivales
 python submit_frontier13.py; python submit_frontier13.py --slot 2    # solo lectura: refresca los recibos
 ```
 
@@ -46,8 +46,7 @@ las 39 derrotas en vivo son casi todas contra variantes privadas de cha22/prvsiy
 lana unos turnos antes en los días 20-27. `candidates/f14_adv4_h12.py` = Frontier13 + reasignación de constantes del
 propio cha22 (`_ADV_LOOK` 4, ventanas EV/DP/MP 12): holdout registrado +10 (espejo 16/16, cha22 16/16, −2 en un mundo
 contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, ventanas 16): puerta registrada superada
-con +30 (`results/frontier14b/`), Kaggle limpio (300 ms), verificada y NO enviada (`submit_frontier14b.py`; retiraría la
-56560450); con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
+con +30 (`results/frontier14b/`), Kaggle limpio (300 ms), ENVIADA como 56570873 (retiró la 56560450); con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
 pide): `python submit_frontier14.py --submit --authorization "..."` (una plaza; retira 56560449 y conserva 56560450).
 
 Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIERn.es.md`):

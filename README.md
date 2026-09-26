@@ -16,10 +16,10 @@ código de terceros nuevo. `candidates/f14_adv4_h12.py`: panel congelado 18→31
 48/56 (8-0 contra Frontier13 y contra cha22), holdout registrado +10 sobre 19 rivales (espejo 16/16, cha22 16/16;
 −2 en un mundo contra la familia Herd-Safe), Kaggle 48/48 sin errores y 224 ms (incumplimiento aceptado: total en la
 nube 0,0, no > 0). **Frontier14B** (`f14_adv4_h16`, ventanas 16): holdout registrado **+30** (espejo 15/16, cha22 15/16, Wangyh v44 +6,
-un solo −2), Kaggle 48/48 limpio a 300 ms sin incumplimientos; verificada y lista (`submit_frontier14b.py`), no
-enviada; con ventanas 24 aparece el límite de Frontier9. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
-[RESUME_FRONTIER14.es.md](RESUME_FRONTIER14.es.md). **Enviada a petición a una plaza: submission 56568493** (retira 56560449; la 56560450 de Frontier13 sigue como
-cobertura). Seguimiento: `python live_report.py 56568493 56560450`.
+un solo −2), Kaggle 48/48 limpio a 300 ms sin incumplimientos; **enviada a petición a la segunda plaza: submission 56570873**
+(retira 56560450); con ventanas 24 aparece el límite de Frontier9. **Par activo: 56568493 + 56570873**;
+seguimiento `python live_report.py 56568493 56570873`. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
+[RESUME_FRONTIER14.es.md](RESUME_FRONTIER14.es.md). **Enviada a petición: submission 56568493** (retira 56560449).
 
 ```powershell
 python build_f14.py; python -m unittest -v test_frontier14.py
