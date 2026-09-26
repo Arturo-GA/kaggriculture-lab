@@ -1,0 +1,11 @@
+{
+  "candidate": "f14_adv4_h12",
+  "sha256": "a1561a1b64932239f0631d1f0e25a4d682122a5639e0fb7551b9ccf6ead4bfdc",
+  "knobs": {
+    "_ADV_LOOK": 4,
+    "_EV_H": 12,
+    "_DP_H": 12,
+    "_MP_H": 12
+  },
+  "selected_utc": "2026-09-26T02:33:02.180372+00:00"
+}

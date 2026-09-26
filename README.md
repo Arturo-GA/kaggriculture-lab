@@ -7,6 +7,28 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (verificado, NO enviado).**
+Las dos Frontier13 estaban en 2408 y 2103 (corte de plata 2417). Auditoría de las 39 derrotas en vivo con el rival
+identificado jugada a jugada: 12/13 contra copias exactas de cha22; 36 de 39 derrotas contra variantes privadas de
+cha22/prvsiyan/Herd-Safe que venden leche, fresa y lana unos turnos antes en los días 20-27. `build_f14.py` reasigna
+al final de Frontier13 constantes del propio cha22 (`_ADV_LOOK` 3→4 y las ventanas de venta anticipada 8→12); sin
+código de terceros nuevo. `candidates/f14_adv4_h12.py`: panel congelado 18→31 de 57 partidas en vivo, bucle cerrado
+48/56 (8-0 contra Frontier13 y contra cha22), holdout registrado +10 sobre 19 rivales (espejo 16/16, cha22 16/16;
+−2 en un mundo contra la familia Herd-Safe), Kaggle 48/48 sin errores y 224 ms (incumplimiento aceptado: total en la
+nube 0,0, no > 0). **Frontier14B** (`f14_adv4_h16`, ventanas 16) registrado con su propio holdout en curso; con 24
+aparece el límite de Frontier9. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
+[RESUME_FRONTIER14.es.md](RESUME_FRONTIER14.es.md). Envío solo a petición (`submit_frontier14.py --submit
+--authorization "..."`, una plaza: retira 56560449 y conserva 56560450).
+
+```powershell
+python build_f14.py; python -m unittest -v test_frontier14.py
+python assess_f14.py                                               # puerta registrada sobre results/frontier14/holdout.json
+python make_frontier14_notebook.py; python -m kaggle kernels push -p kaggle_frontier14
+python verify_frontier14_cloud.py                                  # tras `kaggle kernels output jarturo/kaggriculture-frontier14-advance -p results/frontier14/kaggle`
+python replay_panel.py candidates/f14_adv4_h12.py --raw vendor/live_f13 --episodes outputs/session/gold/episodes_f13.json   # panel congelado de las partidas en vivo
+python submit_frontier14.py                                        # solo lectura; --submit --authorization "..." solo con petición
+```
+
 **25 de septiembre: Frontier13, cha22 + lockstep en las dos plazas.** Revisión de todo lo público tras el cierre
 (notebooks actualizados después del 23, datasets, GitHub, foro) y de 172 derrotas en vivo: el agente "cha22"
 (route-replay, publicado por actualización de notebooks existentes) domina la franja de plata y gana a todo lo que

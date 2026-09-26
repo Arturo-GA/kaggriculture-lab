@@ -131,3 +131,8 @@ candidates/f13*.py
 !candidates/f13_c22_lock.py
 results/frontier13/kaggle/candidates/n2*.py
 candidates/g25_*.py
+candidates/f14*.py
+!candidates/f14_adv4_h12.py
+!candidates/f14_adv4_h16.py
+results/frontier14/kaggle/candidates/n2*.py
+results/frontier14b/kaggle/candidates/n2*.py

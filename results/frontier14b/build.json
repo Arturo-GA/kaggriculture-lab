@@ -1,0 +1,115 @@
+{
+  "parent": "f13_c22_lock",
+  "variants": {
+    "f14_adv4": {
+      "knobs": {
+        "_ADV_LOOK": 4
+      },
+      "note": "Frontier13 + ready-stock sale advance 4 turns",
+      "sha256": "6a6a49546429bd29e7fabafa630f364779c5815cc13b6994b3df4c0714265615"
+    },
+    "f14_adv5": {
+      "knobs": {
+        "_ADV_LOOK": 5
+      },
+      "note": "Frontier13 + ready-stock sale advance 5 turns",
+      "sha256": "9e103b4a1687150d52b3e8da8db1e002d5afcac0c1908108937661bf689a0f47"
+    },
+    "f14_adv6": {
+      "knobs": {
+        "_ADV_LOOK": 6
+      },
+      "note": "Frontier13 + ready-stock sale advance 6 turns",
+      "sha256": "47e09b0c1300cde2f826d466191290cc6882ec421cd29d5e421c61a248d6af33"
+    },
+    "f14_adv8": {
+      "knobs": {
+        "_ADV_LOOK": 8
+      },
+      "note": "Frontier13 + ready-stock sale advance 8 turns",
+      "sha256": "d4896b7eadf420dbcd6bf8205c97ebbe766160faafaadc90c47a4e3bb6b0a1d8"
+    },
+    "f14_adv6_h12": {
+      "knobs": {
+        "_ADV_LOOK": 6,
+        "_EV_H": 12,
+        "_DP_H": 12,
+        "_MP_H": 12
+      },
+      "note": "Frontier13 + advance 6 + evening/dawn/midday chunked lead-sell windows 8->12 turns",
+      "sha256": "458897255223097ee6d5672fabeb5383bdd6c3ca87eb7ce03cd8e386123c9d62"
+    },
+    "f14_h12": {
+      "knobs": {
+        "_EV_H": 12,
+        "_DP_H": 12,
+        "_MP_H": 12
+      },
+      "note": "Frontier13 + evening/dawn/midday chunked lead-sell windows 8->12 turns",
+      "sha256": "c422b423b3cc170aa71dc715aad511f4b66d9930edf39dae45cbc19fee4178f6"
+    },
+    "f14_adv4_h12": {
+      "knobs": {
+        "_ADV_LOOK": 4,
+        "_EV_H": 12,
+        "_DP_H": 12,
+        "_MP_H": 12
+      },
+      "note": "Frontier13 + advance 4 + lead-sell windows 12",
+      "sha256": "a1561a1b64932239f0631d1f0e25a4d682122a5639e0fb7551b9ccf6ead4bfdc"
+    },
+    "f14_adv6_h16": {
+      "knobs": {
+        "_ADV_LOOK": 6,
+        "_EV_H": 16,
+        "_DP_H": 16,
+        "_MP_H": 16
+      },
+      "note": "Frontier13 + advance 6 + lead-sell windows 16",
+      "sha256": "a4733dced062a9e4823729c7f284bb3ca1fc62d70793e33ea9dfab526c6d4369"
+    },
+    "f14_adv4_h16": {
+      "knobs": {
+        "_ADV_LOOK": 4,
+        "_EV_H": 16,
+        "_DP_H": 16,
+        "_MP_H": 16
+      },
+      "note": "Frontier13 + advance 4 + lead-sell windows 16",
+      "sha256": "8e8751cede9a3cad20c770e53fb894f86704984ddbc72e7f49b9c94704caf697"
+    },
+    "f14_adv4_h24": {
+      "knobs": {
+        "_ADV_LOOK": 4,
+        "_EV_H": 24,
+        "_DP_H": 24,
+        "_MP_H": 24
+      },
+      "note": "Frontier13 + advance 4 + lead-sell windows 24",
+      "sha256": "7c1459250fe43037d89cbb87316e5828a99a66d980faf75a1190e1f9412a943f"
+    },
+    "f14_fx6": {
+      "knobs": {
+        "_FX_FLOW_MIN": 6
+      },
+      "note": "Frontier13 + rival-flow lead-sell enabled (rival >= 6 units in 8 turns)",
+      "sha256": "d719a467f7f0668d5a53fe5384013ff5c948c32c628710152973ccef0e21f20e"
+    },
+    "f14_adv6_fx6": {
+      "knobs": {
+        "_ADV_LOOK": 6,
+        "_FX_FLOW_MIN": 6
+      },
+      "note": "Frontier13 + advance 6 + rival-flow lead-sell",
+      "sha256": "eb431c169d45b34f6eedad45b87e927e2e3a72e869c757efa9cc89cb1e7afc37"
+    },
+    "f14_adv4_fx6": {
+      "knobs": {
+        "_ADV_LOOK": 4,
+        "_FX_FLOW_MIN": 6
+      },
+      "note": "Frontier13 + advance 4 + rival-flow lead-sell",
+      "sha256": "f5bd1e950f145846c5e6a45b0833427f3614222bebd5192826d5ce00d9b9a192"
+    }
+  }
+}

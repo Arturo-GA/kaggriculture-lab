@@ -1,0 +1,31 @@
+{
+  "candidate": "f14_adv4_h12",
+  "kernel": "jarturo/kaggriculture-frontier14-advance",
+  "control": "f13_c22_lock",
+  "source_sha256": {
+    "f14_adv4_h12": "a1561a1b64932239f0631d1f0e25a4d682122a5639e0fb7551b9ccf6ead4bfdc",
+    "f13_c22_lock": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+  },
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637"
+  ],
+  "cloud_seeds": [
+    9321,
+    9322,
+    9323,
+    9324
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "3ac2dadc736bc5971d2bf56e707bbda1f3389fe25dc3045a7439a70064e25996"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, paired against Frontier13 (f13_c22_lock, our live submission) on identical opponents/seeds/seats, both seats. Gate: total paired score >= +4 over the 19-rival panel, score against Frontier13 itself (mirror, the game the new slot would play against our other slot's rivals' copies) >= 50%, score against exact cha22 >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. The panel spans the post-lock top (cha22, haideptry v7, Shepherd's Ledger, Master Engine V4), the private-variant families that beat us live (Wangyh v41/v44 and mooman E081/E082 from GitHub, local evaluation only), the pre-lock top and the low-band families for the climb (a1-t31, hack, utils-v1/V43, shop-router v7). Extra candidates play the panel for comparison only. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: Frontier13 = 'Kaggriculture cha22 - route-replay agent' (notebook abhinav0370/cha22-agent; identical bytes in tetsutani's, guruprasaathas111's and evgendvorkin's notebooks), Apache-2.0, v9/3 lineage of Thomas Tschinkel, Ahmed Berat Ozer, yhay81, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani, shiiin9 and others credited in its source, every notice retained, plus frontier5_lockstep.py bound to ig_agent. Frontier14 only re-binds the base's own sale-advance constants ({\"_ADV_LOOK\": 4, \"_EV_H\": 12, \"_DP_H\": 12, \"_MP_H\": 12}) after the Lab layer; the idea of a longer ready-stock sale advance is public (alperen5252525 'First in Line', Wangyh666 v44, ghazaros K0013).",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

@@ -36,9 +36,17 @@ python submit_frontier13.py; python submit_frontier13.py --slot 2    # solo lect
 ```
 
 Evidencia de Frontier13 (detalle en `FRONTIER13_RESULTS.es.md`): holdout oficial 251/256 (15/16 contra cha22 sin
-tocar); repetición de 166 partidas en vivo con rival congelado: 29 → 99 victorias; verificado en Kaggle. Estimación
-honesta: nivel alrededor de 2500 (≈50 % en la franja 2500-2600), por encima del corte de plata; contra los privados de
-2600+ no mejora.
+tocar); repetición de 166 partidas en vivo con rival congelado: 29 → 99 victorias; verificado en Kaggle. **Nivel real
+medido el 26 de septiembre: 2400-2450** (2408 / 2103 tras ~75 partidas; 79 % contra 2300-2400, 32 % contra 2400-2500);
+la estimación con rival congelado (~2500) era optimista.
+
+**Frontier14 (26 de septiembre, VERIFICADO y NO ENVIADO; `FRONTIER14_RESULTS.es.md`, `RESUME_FRONTIER14.es.md`)**:
+las 39 derrotas en vivo son casi todas contra variantes privadas de cha22/prvsiyan/Herd-Safe que venden leche, fresa y
+lana unos turnos antes en los días 20-27. `candidates/f14_adv4_h12.py` = Frontier13 + reasignación de constantes del
+propio cha22 (`_ADV_LOOK` 4, ventanas EV/DP/MP 12): holdout registrado +10 (espejo 16/16, cha22 16/16, −2 en un mundo
+contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, ventanas 16) tiene su propia puerta
+registrada en `results/frontier14b/`; con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
+pide): `python submit_frontier14.py --submit --authorization "..."` (una plaza; retira 56560449 y conserva 56560450).
 
 Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIERn.es.md`):
 

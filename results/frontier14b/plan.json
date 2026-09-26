@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-09-26T03:41:50.084845+00:00",
+  "candidate": "f14_adv4_h16",
+  "candidate_sha256": "8e8751cede9a3cad20c770e53fb894f86704984ddbc72e7f49b9c94704caf697",
+  "knobs": {
+    "_ADV_LOOK": 4,
+    "_EV_H": 16,
+    "_DP_H": 16,
+    "_MP_H": 16
+  },
+  "control": "f13_c22_lock",
+  "control_sha256": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+  "public_base": "n25_abhinav0370_127ed3",
+  "public_base_sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+  "unit_test_seed": 9345,
+  "request": "Arturo, 26 Sep 2026: 'revisa como le fue a nuestras ultimas submission y haz una estrategia que pueda superar a la competencia' (and earlier: 'todavia no mandes ninguna submission porsiacaso me avisas cuando tengas el contexto'). NOTHING is submitted without a further explicit request.",
+  "diagnosis": "Frontier13 (cha22 + lockstep, subs 56560449/56560450) sits at 2103/2408 after 71/78 games (silver cut 2417). Audit of all 39 live losses (vendor/live_f13, rival identified by replaying the public reference on the rival's own observations): 12/13 wins against exact cha22 copies; 36 of 39 losses are private variants of cha22 (13), prvsiyan (8), Herd-Safe forecast4 (8) and Wangyh/mooman-like agents that play identically until day ~19 and then sell milk, strawberry and wool a few turns EARLIER than cha22's tape in days 20-27 (182 divergences where the rival sells more vs 76 where it sells less). Public evidence for a longer ready-stock sale advance on this lineage: Wangyh666 v44 (_ADV_LOOK 4->6: 55->61% vs cha22 over 400 games, two seed blocks) and ghazaros (live 2644 at 6, inverted at 9/10).",
+  "screen_seeds": [
+    9301,
+    9302,
+    9303,
+    9304
+  ],
+  "screen_note": "Frozen-rival replay of the 57 downloaded live games (control reproduces all 57 to the coin): adv4 18->25 wins (7 L->W, 0 W->L), adv5 23, adv6 22, adv8 26, fx6 21, adv6_h12 32 (14/0). Closed loop 9301-9304 both seats vs cha22 / F13 / Wangyh v41+v44 / mooman E081 / prvsiyan / HS forecast4: control 34/48; adv4 44/56 (8/8 vs F13, 8/8 vs cha22, 6/2 vs Wangyh v41), adv5 42/56, adv6 42/56 (6/2 vs F13). Screen 2 (window variants): adv4_h12 48/56 (8-0 vs F13, 8-0 vs cha22, 8-0 Wangyh v41), adv6_h12 46/56, h12 44/56. Frontier14 (adv4_h12) then passed its registered holdout at +10.0 (results/frontier14). Frozen panel 4: adv4_h12 31/57, adv6_h16 37/57 (19 L->W, 0 W->L). Screen 3 (closed loop, seat 0, seeds 9301-9304, outputs/session/gold/screen_f14c_0926.json): adv4_h16 28.5/32 (4-0 F13 +764, 4-0 cha22 +895, 3-0-1 vs adv4_h12, 3-1 mooman, 3-1 Wangyh v41/v44, 4-0 Herd-Safe, 4-0 prvsiyan); adv6_h16 29/32; adv4_h24 29/32 but 3-1 vs F13 and 3-1 vs Herd-Safe (the Frontier9 limit: too long a window stops beating the clones). Frontier14B therefore tests adv4_h16 with adv6_h16 as comparison, on fresh seeds.",
+  "holdout_seeds": [
+    9331,
+    9332,
+    9333,
+    9334,
+    9335,
+    9336,
+    9337,
+    9338
+  ],
+  "holdout_opponents": [
+    "n25_abhinav0370_127ed3",
+    "f13_c22_lock",
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n25_haideptry_cda529",
+    "n25_haideptry_8378f7",
+    "n23_dmitriigluzdov_488913",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_statma_29454a",
+    "n25_guruprasaathas_701c01",
+    "g25_wangyh_v41",
+    "g25_wangyh_v44",
+    "g25_mooman0222_a62376",
+    "g25_mooman0222_baf0d3",
+    "n23_kenanzhang9_b52378",
+    "d25_kenanzhang9_602ae8",
+    "n23_syedtahahassan_a2047e",
+    "v43",
+    "aurax_v7"
+  ],
+  "holdout_extra_candidates": [
+    "f14_adv6_h16"
+  ],
+  "cloud_seeds": [
+    9341,
+    9342,
+    9343,
+    9344
+  ],
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637"
+  ],
+  "gate": {
+    "total_min": 4.0,
+    "mirror_min": 0.5,
+    "cha22": "n25_abhinav0370_127ed3",
+    "cha22_min": 0.7,
+    "opponent_floor": -2.0
+  },
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, paired against Frontier13 (f13_c22_lock, our live submission) on identical opponents/seeds/seats, both seats. Gate: total paired score >= +4 over the 19-rival panel, score against Frontier13 itself (mirror, the game the new slot would play against our other slot's rivals' copies) >= 50%, score against exact cha22 >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. The panel spans the post-lock top (cha22, haideptry v7, Shepherd's Ledger, Master Engine V4), the private-variant families that beat us live (Wangyh v41/v44 and mooman E081/E082 from GitHub, local evaluation only), the pre-lock top and the low-band families for the climb (a1-t31, hack, utils-v1/V43, shop-router v7). Extra candidates play the panel for comparison only. Then the Kaggle kernel on four fresh seeds (total > 0, no opponent below the control). Registered before the run.",
+  "attribution": "Base: Frontier13 = 'Kaggriculture cha22 - route-replay agent' (notebook abhinav0370/cha22-agent; identical bytes in tetsutani's, guruprasaathas111's and evgendvorkin's notebooks), Apache-2.0, v9/3 lineage of Thomas Tschinkel, Ahmed Berat Ozer, yhay81, prvsiyan, Dmitrii Gluzdov, aurax7, tetsutani, shiiin9 and others credited in its source, every notice retained, plus frontier5_lockstep.py bound to ig_agent. Frontier14B only re-binds the base's own sale-advance constants ({\"_ADV_LOOK\": 4, \"_EV_H\": 16, \"_DP_H\": 16, \"_MP_H\": 16}) after the Lab layer; the idea of a longer ready-stock sale advance is public (alperen5252525 'First in Line', Wangyh666 v44, ghazaros K0013)."
+}

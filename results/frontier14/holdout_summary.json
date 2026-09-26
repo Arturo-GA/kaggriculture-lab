@@ -1,0 +1,206 @@
+{
+  "candidate": "f14_adv4_h12",
+  "sha256": "a1561a1b64932239f0631d1f0e25a4d682122a5639e0fb7551b9ccf6ead4bfdc",
+  "games": 304,
+  "per_opponent": {
+    "n25_abhinav0370_127ed3": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 729.625
+    },
+    "f13_c22_lock": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 8.0,
+      "mean_margin": 613.25
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1650.8125
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 1397.125
+    },
+    "n25_haideptry_cda529": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": -2.0,
+      "mean_margin": 1354.1875
+    },
+    "n25_haideptry_8378f7": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 1454.25
+    },
+    "n23_dmitriigluzdov_488913": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 1473.0625
+    },
+    "n23_dmitriigluzdov_7ac1a2": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 1186.125
+    },
+    "n23_statma_29454a": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": -2.0,
+      "mean_margin": 1460.3125
+    },
+    "n25_guruprasaathas_701c01": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 1.0,
+      "mean_margin": 2936.25
+    },
+    "g25_wangyh_v41": {
+      "games": 16,
+      "wins": 14,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 4.0,
+      "mean_margin": 1182.0
+    },
+    "g25_wangyh_v44": {
+      "games": 16,
+      "wins": 12,
+      "ties": 0,
+      "losses": 4,
+      "score_delta": 5.0,
+      "mean_margin": 926.75
+    },
+    "g25_mooman0222_a62376": {
+      "games": 16,
+      "wins": 9,
+      "ties": 0,
+      "losses": 7,
+      "score_delta": 2.0,
+      "mean_margin": 669.4375
+    },
+    "g25_mooman0222_baf0d3": {
+      "games": 16,
+      "wins": 8,
+      "ties": 0,
+      "losses": 8,
+      "score_delta": 2.0,
+      "mean_margin": 483.3125
+    },
+    "n23_kenanzhang9_b52378": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 7736.125
+    },
+    "d25_kenanzhang9_602ae8": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 7663.5625
+    },
+    "n23_syedtahahassan_a2047e": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 6548.0625
+    },
+    "v43": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 5738.8125
+    },
+    "aurax_v7": {
+      "games": 16,
+      "wins": 16,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 5345.125
+    }
+  },
+  "errors": [],
+  "mirror_score": 1.0,
+  "total_score_delta": 10.0,
+  "max_call_ms": 378.18920001154765,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false,
+  "paired_margin_gain": 70.73684210526316,
+  "cha22_score": 1.0,
+  "gate_checks": {
+    "total": true,
+    "mirror": true,
+    "cha22": true,
+    "floor": true,
+    "runtime": true
+  },
+  "registered_gate_passed": true,
+  "extra_candidates": {
+    "f14_adv6_h12": {
+      "total_score_delta": 10.0,
+      "mirror_score": 1.0,
+      "per_opponent": {
+        "n25_abhinav0370_127ed3": 0.0,
+        "f13_c22_lock": 8.0,
+        "n23_prvsiyan_178ae0": 0.0,
+        "n23_arsgorynich_4f8637": -2.0,
+        "n25_haideptry_cda529": 0.0,
+        "n25_haideptry_8378f7": -1.0,
+        "n23_dmitriigluzdov_488913": -2.0,
+        "n23_dmitriigluzdov_7ac1a2": -2.0,
+        "n23_statma_29454a": -2.0,
+        "n25_guruprasaathas_701c01": 1.0,
+        "g25_wangyh_v41": 2.0,
+        "g25_wangyh_v44": 5.0,
+        "g25_mooman0222_a62376": 2.0,
+        "g25_mooman0222_baf0d3": 1.0,
+        "n23_kenanzhang9_b52378": 0.0,
+        "d25_kenanzhang9_602ae8": 0.0,
+        "n23_syedtahahassan_a2047e": 0.0,
+        "v43": 0.0,
+        "aurax_v7": 0.0
+      },
+      "max_call_ms": 701.0271000035573,
+      "runtime_passed": true
+    }
+  }
+}

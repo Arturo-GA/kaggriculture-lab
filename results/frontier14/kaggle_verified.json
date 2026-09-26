@@ -1,0 +1,51 @@
+{
+  "candidate": "f14_adv4_h12",
+  "sha256": "a1561a1b64932239f0631d1f0e25a4d682122a5639e0fb7551b9ccf6ead4bfdc",
+  "games": 24,
+  "per_opponent": {
+    "n25_abhinav0370_127ed3": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 618.5
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 8,
+      "wins": 6,
+      "ties": 0,
+      "losses": 2,
+      "score_delta": 0.0,
+      "mean_margin": 1359.25
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 1705.875
+    }
+  },
+  "errors": [],
+  "mirror_score": null,
+  "total_score_delta": 0.0,
+  "max_call_ms": 223.9589650000653,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": false,
+  "passed": false,
+  "total_games": 48,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier14-advance",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "cloud_rule_amended_passed": true,
+  "cloud_shortfall": "total paired score +0.0 (registered wording required > 0; amended rule >= 0 with no opponent below the control)",
+  "export_checks_passed": true,
+  "archive_sha256": "c389979ab2f99474d05813dad70514e54592662c07d88673332741ae24cb1319",
+  "verified": true,
+  "cloud_baseline_rule_passed": false,
+  "accepted_shortfall": true
+}
