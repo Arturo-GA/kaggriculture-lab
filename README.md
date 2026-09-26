@@ -7,7 +7,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
-**26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (verificado, NO enviado).**
+**26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (submission 56568493).**
 Las dos Frontier13 estaban en 2408 y 2103 (corte de plata 2417). Auditoría de las 39 derrotas en vivo con el rival
 identificado jugada a jugada: 12/13 contra copias exactas de cha22; 36 de 39 derrotas contra variantes privadas de
 cha22/prvsiyan/Herd-Safe que venden leche, fresa y lana unos turnos antes en los días 20-27. `build_f14.py` reasigna

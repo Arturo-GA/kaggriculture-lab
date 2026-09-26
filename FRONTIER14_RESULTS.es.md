@@ -149,8 +149,10 @@ holdout de 912 partidas (+10). El motor local reprodujo las 48 partidas de la nu
   ocho empeora).
 - Estimación honesta: unos 50-100 puntos por encima de Frontier13 en la misma población, es decir 2450-2500, con la
   misma incertidumbre de camino (±100) que ya vimos entre las dos copias de Frontier13.
-- **No se ha enviado.** Si Arturo lo pide, `python submit_frontier14.py --submit --authorization "..."` la manda a
-  una plaza: retira 56560449 (2103, la más antigua) y deja intacta 56560450 (2408).
+- **Enviada el 26 de septiembre a las 03:55 UTC a petición de Arturo ("subir ambas"): submission 56568493**, validada
+  por Kaggle (arranca en 600); retiró la 56560449 (2103). Para la segunda plaza Arturo decidió "nada por ahora": la
+  56560450 (2408, Frontier13) se queda como cobertura. Par activo: 56568493 + 56560450; seguimiento con
+  `python live_report.py 56568493 56560450`.
 
 ## 8. Frontier14B: ventana 16 (en curso)
 
