@@ -26,12 +26,13 @@ minutos. Léelo entero antes de tocar nada. El dueño es **Arturo** (GitHub `Art
 
 ## 2. Estado actual (lo primero que tienes que comprobar)
 
-**Submissions activas: 56560449 y 56560450**, las dos con el mismo archivo `candidates/f13_c22_lock.py`
-(cha22 + nuestra capa lockstep), enviadas el 25 de septiembre a las 21:26 UTC y validadas (arrancan en 600).
-Recibos: `results/frontier13/submission_receipt.json` y `submission_receipt_2.json`.
+**Submissions activas: 56568493 (Frontier14, `candidates/f14_adv4_h12.py`, enviada el 26 de septiembre a las 03:55 UTC)
+y 56560450 (Frontier13, `candidates/f13_c22_lock.py`, 2408 el 26 a la 01:43 UTC)**. La 56560449 (segunda copia de
+Frontier13) fue retirada por el envío de Frontier14. Recibos: `results/frontier14/submission_receipt.json`,
+`results/frontier13/submission_receipt_2.json`.
 
 ```bash
-python live_report.py 56560449 56560450      # rating, victorias por tramo de rival, peores rivales
+python live_report.py 56568493 56560450      # rating, victorias por tramo de rival, peores rivales
 python submit_frontier13.py; python submit_frontier13.py --slot 2    # solo lectura: refresca los recibos
 ```
 
@@ -40,7 +41,7 @@ tocar); repetición de 166 partidas en vivo con rival congelado: 29 → 99 victo
 medido el 26 de septiembre: 2400-2450** (2408 / 2103 tras ~75 partidas; 79 % contra 2300-2400, 32 % contra 2400-2500);
 la estimación con rival congelado (~2500) era optimista.
 
-**Frontier14 (26 de septiembre, VERIFICADO y NO ENVIADO; `FRONTIER14_RESULTS.es.md`, `RESUME_FRONTIER14.es.md`)**:
+**Frontier14 (26 de septiembre, ENVIADA como 56568493; `FRONTIER14_RESULTS.es.md`, `RESUME_FRONTIER14.es.md`)**:
 las 39 derrotas en vivo son casi todas contra variantes privadas de cha22/prvsiyan/Herd-Safe que venden leche, fresa y
 lana unos turnos antes en los días 20-27. `candidates/f14_adv4_h12.py` = Frontier13 + reasignación de constantes del
 propio cha22 (`_ADV_LOOK` 4, ventanas EV/DP/MP 12): holdout registrado +10 (espejo 16/16, cha22 16/16, −2 en un mundo
