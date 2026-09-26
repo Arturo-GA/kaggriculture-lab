@@ -168,4 +168,27 @@ Con ventana 16 se sigue ganando a todos los clones y al propio adv4_h12; con 24 
 Frontier9 (una ventana demasiado larga deja de ganar a los clones: pierde una semilla contra F13 y otra contra
 Herd-Safe). Por eso se registró **Frontier14B = `f14_adv4_h16`** (hash `8e8751ce…`, extra de comparación
 `f14_adv6_h16`) con la misma puerta y panel en semillas nuevas 9331-9338 (`results/frontier14b/plan.json`).
-Resultado: ver `RESUME_FRONTIER14.es.md`.
+**Holdout de Frontier14B (semillas 9331-9338, 912 partidas, `results/frontier14b/`): puerta superada con total +30**
+(Frontier14: +10), +117 monedas por partida emparejada, 847 ms, sin errores.
+
+| Rival (16 partidas) | adv4_h16 | Frontier13 (control) | Delta |
+|---|---:|---:|---:|
+| Frontier13 (espejo) | 15-1 (+688) | 8-8 | **+7** |
+| Wangyh v44 | 14-2 | 8-8 | **+6** |
+| prvsiyan, Master Engine V4 | 15-1 | 11-5 | +4 |
+| Wangyh v41 | 13-3 | 10-6 | +3 |
+| statma, mooman E081 / E082 | 15-1, 11-5 / 10-6 | 13-3, 9-7 / 8-8 | +2 |
+| cha22 exacto, haideptry Shepherd's | 15-1 (+790), 14-2 | 14-2, 13-3 | +1 |
+| Herd-Safe forecast4, Gluzdov Herd-Safe, haideptry v7, familias débiles | igual que el control | | 0 |
+| Gluzdov More Wheat | 13-3 | 15-1 | −2 |
+
+El extra `f14_adv6_h16` queda en +18 con tres −2 y un −4 contra la familia Herd-Safe: el adelanto 4 se confirma
+frente al 6. En estas semillas el control pierde 5 de 16 contra prvsiyan y 2 contra cha22 (mundos), y la ventana 16
+recupera casi todos.
+
+**Kaggle** (kernel privado `jarturo/kaggriculture-frontier14b-window16`, semillas 9341-9344 contra cha22, prvsiyan y
+Herd-Safe forecast4, Frontier13 como control): **48/48 sin errores, 300 ms, 22/24 frente a 20/24 del control** (7-1
+contra prvsiyan donde el control hace 5-3; 7-1 contra cha22 con +877 por partida), regla de la nube completa sin
+incumplimientos; archivo `ba02f4a5b2eba0e1990df6e35b8b2e9c5c578900602dda34042ba31d05ef9778`
+(`results/frontier14b/kaggle_verified.json`). **Verificada y lista; no enviada** (su envío retiraría la 56560450).
+`python submit_frontier14b.py --submit --authorization "..."`.

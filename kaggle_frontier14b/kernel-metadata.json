@@ -1,0 +1,15 @@
+{
+  "id": "jarturo/kaggriculture-frontier14b-window16",
+  "title": "Kaggriculture Frontier14B window16",
+  "code_file": "experiment.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [
+    "kaggriculture"
+  ],
+  "kernel_sources": []
+}

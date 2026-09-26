@@ -15,8 +15,9 @@ al final de Frontier13 constantes del propio cha22 (`_ADV_LOOK` 3→4 y las vent
 código de terceros nuevo. `candidates/f14_adv4_h12.py`: panel congelado 18→31 de 57 partidas en vivo, bucle cerrado
 48/56 (8-0 contra Frontier13 y contra cha22), holdout registrado +10 sobre 19 rivales (espejo 16/16, cha22 16/16;
 −2 en un mundo contra la familia Herd-Safe), Kaggle 48/48 sin errores y 224 ms (incumplimiento aceptado: total en la
-nube 0,0, no > 0). **Frontier14B** (`f14_adv4_h16`, ventanas 16) registrado con su propio holdout en curso; con 24
-aparece el límite de Frontier9. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
+nube 0,0, no > 0). **Frontier14B** (`f14_adv4_h16`, ventanas 16): holdout registrado **+30** (espejo 15/16, cha22 15/16, Wangyh v44 +6,
+un solo −2), Kaggle 48/48 limpio a 300 ms sin incumplimientos; verificada y lista (`submit_frontier14b.py`), no
+enviada; con ventanas 24 aparece el límite de Frontier9. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
 [RESUME_FRONTIER14.es.md](RESUME_FRONTIER14.es.md). **Enviada a petición a una plaza: submission 56568493** (retira 56560449; la 56560450 de Frontier13 sigue como
 cobertura). Seguimiento: `python live_report.py 56568493 56560450`.
 

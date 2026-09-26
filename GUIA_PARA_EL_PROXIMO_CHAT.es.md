@@ -45,8 +45,9 @@ la estimación con rival congelado (~2500) era optimista.
 las 39 derrotas en vivo son casi todas contra variantes privadas de cha22/prvsiyan/Herd-Safe que venden leche, fresa y
 lana unos turnos antes en los días 20-27. `candidates/f14_adv4_h12.py` = Frontier13 + reasignación de constantes del
 propio cha22 (`_ADV_LOOK` 4, ventanas EV/DP/MP 12): holdout registrado +10 (espejo 16/16, cha22 16/16, −2 en un mundo
-contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, ventanas 16) tiene su propia puerta
-registrada en `results/frontier14b/`; con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
+contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, ventanas 16): puerta registrada superada
+con +30 (`results/frontier14b/`), Kaggle limpio (300 ms), verificada y NO enviada (`submit_frontier14b.py`; retiraría la
+56560450); con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
 pide): `python submit_frontier14.py --submit --authorization "..."` (una plaza; retira 56560449 y conserva 56560450).
 
 Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIERn.es.md`):
