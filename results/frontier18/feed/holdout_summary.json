@@ -1,0 +1,50 @@
+{
+  "complete": true,
+  "engine": "1.32.7",
+  "games": 96,
+  "scores": {
+    "f18_feed": 48.0,
+    "f18_small": 48.0
+  },
+  "candidates": {
+    "f18_feed": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": false,
+        "nonmirror": true,
+        "opponent_floor": true,
+        "head_to_head": true,
+        "positive_worlds": false,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 0.0,
+      "nonmirror_delta": 0.0,
+      "head_to_head_score": 0,
+      "per_opponent_delta": {
+        "f17_selected": 0.0,
+        "f16_repaired": 0.0,
+        "f17_robust": 0.0,
+        "n25_abhinav0370_127ed3": 0.0,
+        "n23_kenanzhang9_b52378": 0.0,
+        "v43": 0.0
+      },
+      "per_seed_delta": {
+        "18301": 0.0,
+        "18302": 0.0,
+        "18303": 0.0,
+        "18304": 0.0
+      },
+      "max_call_ms": 799.7881000046618,
+      "error_games": 0,
+      "wlt": [
+        48,
+        0,
+        0
+      ]
+    }
+  },
+  "plan_sha256": "a6b16ebd5d2852a4fc8dc729cecd5cf6122eb42c3a1c162eb064fd2db51e009d",
+  "holdout_sha256": "28d7784b3d5c3067f6c44d66aacdf75f7b7f5964c231dc6192580a02ae2dcc19",
+  "both_pass": false
+}

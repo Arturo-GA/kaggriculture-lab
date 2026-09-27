@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-27T19:30:55.481358+00:00",
+  "description": "Frontier18 f18_small (d9289a3e)",
+  "authorization": "Si es mejor entonces haz 2 submissioj con enfoques un poco distintos y vemos cómo les va en el leader board para asegurarnos la mejor estrategia",
+  "archive_sha256": "28d30e598de4ac49ac6330484a29a2ebcb6d01a9ec17b5fc18a2679f2756d491",
+  "candidate_sha256": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+  "members_sha256": {
+    "main.py": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "8dd11c566bb8f3607fe49e6e83fa8c603a6ac016d5cc640a922caac55c371ec1"
+  }
+}

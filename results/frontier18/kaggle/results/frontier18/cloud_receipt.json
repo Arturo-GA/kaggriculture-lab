@@ -1,0 +1,25 @@
+{
+  "scores": {
+    "f18_small": 8.0,
+    "f17_selected": 4.0
+  },
+  "max_call_ms": {
+    "f18_small": 150.6998039999985,
+    "f17_selected": 376.21382700001504
+  },
+  "games": 16,
+  "error_games": 0,
+  "cloud_gate_passed": true,
+  "cloud_games_sha256": "0f4974bd6037c518d9ed6ed748c5f0c9fbaeb8867241cdb59360602f32745955",
+  "exports": {
+    "f18_small": {
+      "archive_sha256": "28d30e598de4ac49ac6330484a29a2ebcb6d01a9ec17b5fc18a2679f2756d491",
+      "candidate_sha256": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+      "members_sha256": {
+        "main.py": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE.txt": "8dd11c566bb8f3607fe49e6e83fa8c603a6ac016d5cc640a922caac55c371ec1"
+      }
+    }
+  }
+}

@@ -1,5 +1,13 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+> **Actualización más reciente: Frontier18, 27/09, submission 56617687.** Leer
+> [RESUME_FRONTIER18.es.md](RESUME_FRONTIER18.es.md). Censo de cuatro partidas por equipo:
+> 400 actuaciones en 336 partidas, cuatro reconstrucciones exactas del líder y un fallo
+> de alimentación demostrado en F17. Solo `f18_small` superó su puerta principal: 94/96,
+> 16/16 contra F17 y +4 fuera de ese duelo. Kaggle confirmó 8/8 y paquete idéntico, privado.
+> Se realizó un solo envío de las dos plazas autorizadas **si mejoran**; las otras variantes
+> no pasaron. Consultar recibos antes de actuar. Los apartados siguientes son históricos.
+
 > **Investigación más reciente: top 100 completo (27/09).** Leer [TOP100_ESTRATEGIAS.es.md](TOP100_ESTRATEGIAS.es.md).
 > 184 partidas, 200 actuaciones de los 100 equipos, 11 reconstrucciones exactas y cuatro partidas de F17.
 > La mediana actual es 11 trabajadores; SE aparece en 52/200 actuaciones. Corrige las generalizaciones del

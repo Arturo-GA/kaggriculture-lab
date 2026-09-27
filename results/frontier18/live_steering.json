@@ -1,0 +1,79 @@
+{
+  "checked_utc": "2026-09-27T18:55:00.233522+00:00",
+  "active": [
+    {
+      "id": 56615489,
+      "date_submitted": "2026-09-27T17:49:32.127000",
+      "public_score": "1870.8",
+      "is_frozen": true
+    },
+    {
+      "id": 56609913,
+      "date_submitted": "2026-09-27T13:31:13.193000",
+      "public_score": "2414.4",
+      "is_frozen": true
+    }
+  ],
+  "submissions": [
+    {
+      "ref": 56615489,
+      "total_bytes": 670271,
+      "date": "2026-09-27T17:49:32.127000",
+      "description": "Frontier17 62b76688 (f17_selected) input market",
+      "error_description": null,
+      "file_name": "submission.tar.gz",
+      "public_score": "1870.8",
+      "private_score": null,
+      "status": {
+        "value_": 1,
+        "name_": "COMPLETE",
+        "sort_order_": 1
+      },
+      "submitted_by": "jarturo",
+      "submitted_by_ref": "jarturo",
+      "team_name": "Arturo Gutiérrez Aguilar",
+      "url": "/submissions/56615489/56615489.raw",
+      "is_frozen": true
+    },
+    {
+      "ref": 56609913,
+      "total_bytes": 667944,
+      "date": "2026-09-27T13:31:13.193000",
+      "description": "Frontier16 0c6ac464 (f16_repaired) on Idle Seller 03165654",
+      "error_description": null,
+      "file_name": "submission.tar.gz",
+      "public_score": "2414.4",
+      "private_score": null,
+      "status": {
+        "value_": 1,
+        "name_": "COMPLETE",
+        "sort_order_": 1
+      },
+      "submitted_by": "jarturo",
+      "submitted_by_ref": "jarturo",
+      "team_name": "Arturo Gutiérrez Aguilar",
+      "url": "/submissions/56609913/56609913.raw",
+      "is_frozen": true
+    },
+    {
+      "ref": 56592376,
+      "total_bytes": 182369,
+      "date": "2026-09-27T00:06:15.090000",
+      "description": "Frontier15 9f0b05ea (f15_e81) on cha22 127ed3e6",
+      "error_description": null,
+      "file_name": "submission.tar.gz",
+      "public_score": "2104.5",
+      "private_score": null,
+      "status": {
+        "value_": 1,
+        "name_": "COMPLETE",
+        "sort_order_": 1
+      },
+      "submitted_by": "jarturo",
+      "submitted_by_ref": "jarturo",
+      "team_name": "Arturo Gutiérrez Aguilar",
+      "url": "/submissions/56592376/56592376.raw",
+      "is_frozen": true
+    }
+  ]
+}

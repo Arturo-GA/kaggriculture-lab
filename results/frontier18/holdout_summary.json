@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "engine": "1.32.7",
+  "games": 288,
+  "scores": {
+    "f18_small": 94.0,
+    "f18_micro_robust": 83.0,
+    "f17_selected": 82.0
+  },
+  "candidates": {
+    "f18_small": {
+      "pass_gate": true,
+      "checks": {
+        "score_delta": true,
+        "nonmirror": true,
+        "opponent_floor": true,
+        "head_to_head": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 12.0,
+      "nonmirror_delta": 4.0,
+      "head_to_head_score": 16.0,
+      "per_opponent_delta": {
+        "f17_selected": 8.0,
+        "f16_repaired": 0.0,
+        "f17_robust": 4.0,
+        "n25_abhinav0370_127ed3": 0.0,
+        "n23_kenanzhang9_b52378": 0.0,
+        "v43": 0.0
+      },
+      "per_seed_delta": {
+        "18101": 3.0,
+        "18102": 3.0,
+        "18103": -1.0,
+        "18104": 1.0,
+        "18105": 3.0,
+        "18106": 1.0,
+        "18107": 1.0,
+        "18108": 1.0
+      },
+      "max_call_ms": 615.5826000031084,
+      "error_games": 0,
+      "wlt": [
+        94,
+        2,
+        0
+      ]
+    },
+    "f18_micro_robust": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": false,
+        "nonmirror": true,
+        "opponent_floor": false,
+        "head_to_head": false,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 1.0,
+      "nonmirror_delta": 1.0,
+      "head_to_head_score": 8.0,
+      "per_opponent_delta": {
+        "f17_selected": 0.0,
+        "f16_repaired": -2.0,
+        "f17_robust": 3.0,
+        "n25_abhinav0370_127ed3": 0.0,
+        "n23_kenanzhang9_b52378": 0.0,
+        "v43": 0.0
+      },
+      "per_seed_delta": {
+        "18101": 1.0,
+        "18102": 3.0,
+        "18103": -3.0,
+        "18104": -2.0,
+        "18105": 3.0,
+        "18106": -1.0,
+        "18107": 1.0,
+        "18108": -1.0
+      },
+      "max_call_ms": 937.8360999980941,
+      "error_games": 0,
+      "wlt": [
+        82,
+        12,
+        2
+      ]
+    }
+  },
+  "plan_sha256": "c2efd5eeee82c6b4a2edf22c71a9c19462c7577e673f6df0785e52db04c42ee7",
+  "holdout_sha256": "5bc98933902a4fae761fecfeeb39a5b41a58f2920372d5822034a01a659c1830",
+  "both_pass": false
+}

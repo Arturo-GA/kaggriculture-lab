@@ -1,0 +1,46 @@
+[
+ {
+  "agent": "f18_feed",
+  "episode": 114306320,
+  "seat": 0,
+  "seed": 1434285831,
+  "recorded_margin": -737.0,
+  "margin": 909.0,
+  "own": 86736.0,
+  "rival": 85827.0,
+  "rival_recorded": 87158.0,
+  "rival_kept": 0.9847,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 20.6,
+  "telemetry": {},
+  "opponent": "BlueSky_sora",
+  "op_score": 1875.1,
+  "op_sub": null
+ },
+ {
+  "agent": "f18_feed",
+  "episode": 114307805,
+  "seat": 1,
+  "seed": 1525922479,
+  "recorded_margin": 428.0,
+  "margin": 358.0,
+  "own": 120832.0,
+  "rival": 120474.0,
+  "rival_recorded": 120439.0,
+  "rival_kept": 1.0003,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 20.3,
+  "telemetry": {},
+  "opponent": "VanKoha",
+  "op_score": 2215.0,
+  "op_sub": null
+ }
+]

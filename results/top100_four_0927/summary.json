@@ -1,0 +1,147 @@
+{
+  "snapshot_utc": "2026-09-27T19:00:03.397799+00:00",
+  "complete": true,
+  "player_games": 400,
+  "unique_top100_games": 336,
+  "independent_seeds": 336,
+  "top100_cut": {
+    "team_id": 16891058,
+    "name": "Navier-stokes",
+    "score": 2613.9,
+    "rank": 100
+  },
+  "prior_two_census_overlap_games": 54,
+  "all_four": {
+    "player_games": 400,
+    "teams": 100,
+    "wins": 192,
+    "hands": 11.0,
+    "animals": 19.0,
+    "strawberries": 24.0,
+    "sw": 219.0,
+    "se": 113,
+    "tomato_by288": 199,
+    "carrot_by288": 151,
+    "heavy_input": 42,
+    "final_leftovers": 135
+  },
+  "latest_two": {
+    "player_games": 200,
+    "teams": 100,
+    "wins": 96,
+    "hands": 11.0,
+    "animals": 19.0,
+    "strawberries": 24.5,
+    "sw": 220.0,
+    "se": 55,
+    "tomato_by288": 100,
+    "carrot_by288": 74,
+    "heavy_input": 21,
+    "final_leftovers": 63
+  },
+  "preceding_two": {
+    "player_games": 200,
+    "teams": 100,
+    "wins": 96,
+    "hands": 11.0,
+    "animals": 19.0,
+    "strawberries": 23.0,
+    "sw": 219.0,
+    "se": 58,
+    "tomato_by288": 99,
+    "carrot_by288": 77,
+    "heavy_input": 21,
+    "final_leftovers": 72
+  },
+  "top10": {
+    "player_games": 40,
+    "teams": 10,
+    "wins": 23,
+    "hands": 11.0,
+    "animals": 20.0,
+    "strawberries": 20.0,
+    "sw": 217.5,
+    "se": 14,
+    "tomato_by288": 17,
+    "carrot_by288": 11,
+    "heavy_input": 4,
+    "final_leftovers": 22
+  },
+  "own": {
+    "player_games": 16,
+    "teams": 1,
+    "wins": 15,
+    "hands": 11.0,
+    "animals": 17.0,
+    "strawberries": 33.0,
+    "sw": 266.0,
+    "se": 3,
+    "tomato_by288": 0,
+    "carrot_by288": 3,
+    "heavy_input": 15,
+    "final_leftovers": 0
+  },
+  "stability_team_counts": {
+    "SE": {
+      "0": 66,
+      "4": 21,
+      "3": 5,
+      "2": 6,
+      "1": 2
+    },
+    "SW_before_day10": {
+      "4": 82,
+      "3": 7,
+      "2": 3,
+      "0": 6,
+      "1": 2
+    },
+    "early_tomato": {
+      "4": 28,
+      "0": 34,
+      "2": 13,
+      "1": 7,
+      "3": 18
+    },
+    "early_carrot": {
+      "4": 14,
+      "2": 25,
+      "0": 32,
+      "1": 21,
+      "3": 8
+    },
+    "heavy_input": {
+      "0": 85,
+      "3": 2,
+      "4": 7,
+      "2": 2,
+      "1": 4
+    },
+    "at_least_20_animals": {
+      "1": 27,
+      "2": 19,
+      "4": 12,
+      "0": 18,
+      "3": 24
+    },
+    "at_least_12_hands": {
+      "0": 45,
+      "3": 11,
+      "4": 17,
+      "1": 14,
+      "2": 13
+    }
+  },
+  "own_public_wlt": [
+    15,
+    1,
+    0
+  ],
+  "caveats": [
+    "Four games do not identify a private algorithm or establish causality.",
+    "Selection uses one best active agent per team, current ranks, and no outcome filter.",
+    "Latest-two versus preceding-two comparisons hold team and submission fixed, not world or rival.",
+    "Same-turn orders are requested quantities, not measured profit.",
+    "Team rating belongs to its best active submission, which may differ from the observed rival."
+  ]
+}

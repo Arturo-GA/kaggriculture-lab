@@ -1,0 +1,23 @@
+{
+  "kernel": "jarturo/kaggriculture-frontier18-policy-validation",
+  "candidates": [
+    "f18_small"
+  ],
+  "control": "f17_selected",
+  "cloud_seeds": [
+    18201,
+    18202,
+    18203,
+    18204
+  ],
+  "source_sha256": {
+    "f18_small": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f"
+  },
+  "evidence_sha256": {
+    "results/frontier18/plan.json": "c2efd5eeee82c6b4a2edf22c71a9c19462c7577e673f6df0785e52db04c42ee7",
+    "results/frontier18/holdout_summary.json": "6528815147186d3788af15c63e2614ba997c7a95d83479526fb91befda783c9d"
+  },
+  "cloud_rule": "16 complete official-engine games; no errors; each candidate score >= F17 control; under 1000ms per call.",
+  "created_utc": "2026-09-27T19:25:11.031485+00:00"
+}

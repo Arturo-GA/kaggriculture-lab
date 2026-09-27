@@ -152,3 +152,8 @@ candidates/n17_*.py
 results/frontier17/kaggle/candidates/
 results/frontier17/remote_metadata/*.ipynb
 results/top100_0927/features.json
+candidates/f18_*.py
+!candidates/f18_small.py
+results/frontier18/kaggle/candidates/
+results/frontier18/kaggle/attribution/
+results/frontier18/remote_metadata/*.ipynb

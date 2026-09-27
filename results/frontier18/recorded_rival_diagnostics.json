@@ -1,0 +1,134 @@
+[
+ {
+  "agent": "f17_selected",
+  "episode": 114306320,
+  "seat": 0,
+  "seed": 1434285831,
+  "recorded_margin": -737.0,
+  "margin": -737.0,
+  "own": 86421.0,
+  "rival": 87158.0,
+  "rival_recorded": 87158.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 16.4,
+  "telemetry": {},
+  "opponent": "BlueSky_sora",
+  "op_score": 1875.1,
+  "op_sub": null
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114307805,
+  "seat": 1,
+  "seed": 1525922479,
+  "recorded_margin": 428.0,
+  "margin": 428.0,
+  "own": 120867.0,
+  "rival": 120439.0,
+  "rival_recorded": 120439.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.6,
+  "telemetry": {},
+  "opponent": "VanKoha",
+  "op_score": 2215.0,
+  "op_sub": null
+ },
+ {
+  "agent": "f18_small",
+  "episode": 114306320,
+  "seat": 0,
+  "seed": 1434285831,
+  "recorded_margin": -737.0,
+  "margin": -601.0,
+  "own": 86494.0,
+  "rival": 87095.0,
+  "rival_recorded": 87158.0,
+  "rival_kept": 0.9993,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 18.9,
+  "telemetry": {},
+  "opponent": "BlueSky_sora",
+  "op_score": 1875.1,
+  "op_sub": null
+ },
+ {
+  "agent": "f18_small",
+  "episode": 114307805,
+  "seat": 1,
+  "seed": 1525922479,
+  "recorded_margin": 428.0,
+  "margin": 358.0,
+  "own": 120832.0,
+  "rival": 120474.0,
+  "rival_recorded": 120439.0,
+  "rival_kept": 1.0003,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 19.5,
+  "telemetry": {},
+  "opponent": "VanKoha",
+  "op_score": 2215.0,
+  "op_sub": null
+ },
+ {
+  "agent": "f18_micro_robust",
+  "episode": 114306320,
+  "seat": 0,
+  "seed": 1434285831,
+  "recorded_margin": -737.0,
+  "margin": -605.0,
+  "own": 86492.0,
+  "rival": 87097.0,
+  "rival_recorded": 87158.0,
+  "rival_kept": 0.9993,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.1,
+  "telemetry": {},
+  "opponent": "BlueSky_sora",
+  "op_score": 1875.1,
+  "op_sub": null
+ },
+ {
+  "agent": "f18_micro_robust",
+  "episode": 114307805,
+  "seat": 1,
+  "seed": 1525922479,
+  "recorded_margin": 428.0,
+  "margin": 322.0,
+  "own": 120814.0,
+  "rival": 120492.0,
+  "rival_recorded": 120439.0,
+  "rival_kept": 1.0004,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 18.2,
+  "telemetry": {},
+  "opponent": "VanKoha",
+  "op_score": 2215.0,
+  "op_sub": null
+ }
+]

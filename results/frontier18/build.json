@@ -1,0 +1,29 @@
+{
+  "parent_sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+  "variants": {
+    "f18_calendar": {
+      "sha256": "6c1f3f3550b79219f4735ff4c148ad28adc6aeea2fb6a88e2725cce4c4a44c9f",
+      "calendar": true,
+      "rotation": false,
+      "premium": 12
+    },
+    "f18_rotation": {
+      "sha256": "d2ccd2eb18c215377c1d26116e91de3b9c86294bf6b470a3d1b5abc17d0f7ae8",
+      "calendar": false,
+      "rotation": true,
+      "premium": 12
+    },
+    "f18_rotation_cautious": {
+      "sha256": "30d3fb5a618bef60a90bc7ce20702bef8360acc35078a427957333ce6860f339",
+      "calendar": false,
+      "rotation": true,
+      "premium": 30
+    },
+    "f18_combined": {
+      "sha256": "01d744bc0011c9d18a64fcc83cebc45c66dbc6f26cd40bf084dbba8ed456cba7",
+      "calendar": true,
+      "rotation": true,
+      "premium": 12
+    }
+  }
+}

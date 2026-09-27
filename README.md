@@ -7,7 +7,15 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
-**27 de septiembre: censo de los 100 mejores equipos.** [Estrategias aplicables](TOP100_ESTRATEGIAS.es.md):
+**27 de septiembre, ampliación a cuatro partidas por equipo.**
+[Análisis de repetición y derrota de F17](TOP100_CUATRO_PARTIDAS.es.md).
+Frontier18 prueba microoperaciones, un escenario rival alternativo y un arreglo de alimentación.
+`f18_small` supera su validación: 94V/2D en 96 partidas, 16/16 frente a F17, +12 puntos emparejados
+y +4 fuera de ese duelo. La variante de escenario alternativo no pasa. Kaggle confirmó 8/8
+contra F17 y bytes idénticos. Se envió solo F18 pequeño, **submission 56617687**, con notebook
+privado; consultar [resultados y recibos](FRONTIER18_RESULTS.es.md) y [continuación](RESUME_FRONTIER18.es.md).
+
+**27 de septiembre, censo anterior de dos partidas.** [Estrategias aplicables](TOP100_ESTRATEGIAS.es.md):
 184 partidas distintas, dos actuaciones por equipo; 11 partidas reconstruidas exactamente y comparación con
 las cuatro primeras partidas públicas de F17. La mediana del top 100 es 11 trabajadores, 19 animales y 23 fresas
 al paso 288; F17 tiene 11, 17 y 33. Solo 52/200 actuaciones abren el cuarto cuadrante. Prioridades propuestas:
@@ -44,10 +52,10 @@ Consulta del 27/09 a las 17:33 UTC: F16 2449,8, puesto 273, 45 victorias y 22 de
 No se promete rating 2660–2700.
 
 **27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario
-(dataset público), reglas de producción del motor y foro. Los de arriba compran el cuarto cuadrante hacia el día 10, llevan
-12-13 manos y 20-25 animales el día 12 elegidos por las tiendas, con tomates y zanahorias tempranos; nuestra cinta se
-congela el día 11. Probado y descartado antes del cierre: bloques en el SE, trasplante de cintas grabadas (Boey gana 4/12),
-dirigir el sorteo de tiendas. Para ganarles hace falta otra economía (planificador o PPO + clonación), no otros tiempos.
+(dataset público), reglas de producción del motor y foro. Sus generalizaciones sobre cuatro cuadrantes y 12–13 manos
+fueron corregidas por el censo completo: no son requisitos universales del top 100. Tampoco se puede identificar
+PPO o clonación a partir de partidas públicas. Se conservan los experimentos descartados y sus resultados en el informe;
+las prioridades actuales deben leerse en los censos posteriores y en la validación de Frontier18.
 
 **27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (submission 56592376).**
 Revisión de las 96 partidas en vivo del par activo contra rivales de 2400+ (`vendor/live_f14`): los de 2450-2600 son

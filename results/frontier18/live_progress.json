@@ -1,0 +1,178 @@
+{
+  "checked_utc": "2026-09-27T19:17:31.029932+00:00",
+  "active": [
+    {
+      "id": 56615489,
+      "date_submitted": "2026-09-27T17:49:32.127000",
+      "public_score": "2315.4",
+      "is_frozen": true
+    },
+    {
+      "id": 56609913,
+      "date_submitted": "2026-09-27T13:31:13.193000",
+      "public_score": "2407.0",
+      "is_frozen": true
+    }
+  ],
+  "f17_public_wlt": [
+    21,
+    1,
+    0
+  ],
+  "rows": [
+    {
+      "id": 114315497,
+      "created": "2026-09-27 19:14:00.634000",
+      "seat": 0,
+      "margin": 898,
+      "op_name": "Shuqi Zhang"
+    },
+    {
+      "id": 114313775,
+      "created": "2026-09-27 19:10:00.791000",
+      "seat": 0,
+      "margin": 998,
+      "op_name": "bee_lx_xl"
+    },
+    {
+      "id": 114313212,
+      "created": "2026-09-27 19:06:04.430000",
+      "seat": 0,
+      "margin": 455,
+      "op_name": "Le Trong Hieu"
+    },
+    {
+      "id": 114312275,
+      "created": "2026-09-27 19:06:02.835000",
+      "seat": 0,
+      "margin": 407,
+      "op_name": "Aura Farming"
+    },
+    {
+      "id": 114310755,
+      "created": "2026-09-27 19:02:00.002000",
+      "seat": 0,
+      "margin": 1573,
+      "op_name": "MarvinTMB"
+    },
+    {
+      "id": 114309289,
+      "created": "2026-09-27 18:58:00.187000",
+      "seat": 1,
+      "margin": 317,
+      "op_name": "RngRng"
+    },
+    {
+      "id": 114307805,
+      "created": "2026-09-27 18:54:00.587000",
+      "seat": 1,
+      "margin": 428,
+      "op_name": "VanKoha"
+    },
+    {
+      "id": 114306320,
+      "created": "2026-09-27 18:50:00.731000",
+      "seat": 0,
+      "margin": -737,
+      "op_name": "BlueSky_sora"
+    },
+    {
+      "id": 114304866,
+      "created": "2026-09-27 18:46:05.756000",
+      "seat": 0,
+      "margin": 2307,
+      "op_name": "David Estevez"
+    },
+    {
+      "id": 114303408,
+      "created": "2026-09-27 18:41:59.816000",
+      "seat": 0,
+      "margin": 370,
+      "op_name": "Yuta"
+    },
+    {
+      "id": 114301933,
+      "created": "2026-09-27 18:37:59.834000",
+      "seat": 0,
+      "margin": 660,
+      "op_name": "大山"
+    },
+    {
+      "id": 114300486,
+      "created": "2026-09-27 18:33:59.745000",
+      "seat": 1,
+      "margin": 2151,
+      "op_name": "Heisnotanimposter"
+    },
+    {
+      "id": 114299033,
+      "created": "2026-09-27 18:29:59.554000",
+      "seat": 0,
+      "margin": 1606,
+      "op_name": "Kobamiyannnn"
+    },
+    {
+      "id": 114297577,
+      "created": "2026-09-27 18:25:40.568000",
+      "seat": 0,
+      "margin": 1794,
+      "op_name": "kfsky"
+    },
+    {
+      "id": 114296131,
+      "created": "2026-09-27 18:21:30.030000",
+      "seat": 1,
+      "margin": 8569,
+      "op_name": "フナコシ"
+    },
+    {
+      "id": 114294667,
+      "created": "2026-09-27 18:17:30.647000",
+      "seat": 0,
+      "margin": 27358,
+      "op_name": "yangyiqing6"
+    },
+    {
+      "id": 114293208,
+      "created": "2026-09-27 18:13:33.544000",
+      "seat": 1,
+      "margin": 40405,
+      "op_name": "Pascal"
+    },
+    {
+      "id": 114291765,
+      "created": "2026-09-27 18:09:31.397000",
+      "seat": 0,
+      "margin": 11329,
+      "op_name": "Floth"
+    },
+    {
+      "id": 114290321,
+      "created": "2026-09-27 18:05:41.108000",
+      "seat": 0,
+      "margin": 20461,
+      "op_name": "prateek chandra"
+    },
+    {
+      "id": 114288900,
+      "created": "2026-09-27 18:01:30.316000",
+      "seat": 0,
+      "margin": 33945,
+      "op_name": "Mint"
+    },
+    {
+      "id": 114287459,
+      "created": "2026-09-27 17:57:30.188000",
+      "seat": 1,
+      "margin": 958,
+      "op_name": "tongmian1314"
+    },
+    {
+      "id": 114287808,
+      "created": "2026-09-27 17:57:30.715000",
+      "seat": 1,
+      "margin": 105562,
+      "op_name": "Arthurs Torres24"
+    }
+  ]
+}

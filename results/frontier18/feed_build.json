@@ -1,0 +1,6 @@
+{
+  "candidate": "f18_feed",
+  "parent": "f18_small",
+  "sha256": "27ab54673ae2d31432baad6c31a71c66f1093600575a39c1bea89f8f56e34620",
+  "rationale": "F17 loss 114306320: day25 zero wheat pickup blocks inherited rescue, six sheep miss feeding."
+}

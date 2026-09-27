@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "engine": "1.32.7",
+  "four_per_team": true,
+  "feature_uncompressed_sha256": "9b083c2551f304ceb9ba68eed75cf791985224241d126277c4112988304cb002",
+  "files": {
+    "selection.json": "008297f16ef2fef95d376600e1972156b8677c1b25fada55094af0f942cba561",
+    "features.json.gz": "76216ee4a50533ede322aee984f22350311e748026939d9b01bf33e2dff53bb8",
+    "profiles.json": "f99f93181f3784687965c922cffa73ccab5711a5d360bfcfe3eb939076811b0c",
+    "summary.json": "cf712786b11886f328a847a5c917c7e1a49bd3f4cdfcfceb56b4b849f9af9451"
+  },
+  "exact_leader_replays": 4,
+  "exact_snapshot_fields": 320,
+  "leader_accounting_sha256": "667b2c4d4be3bb3dc4bd05592be0c740d4cfb9f8b7b3a263335c262841959cbb"
+}

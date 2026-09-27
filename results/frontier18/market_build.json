@@ -1,0 +1,42 @@
+{
+  "f18_micro": {
+    "sha256": "321875eb166903c4b0ed47b145d073693d3837697064939e3d8286c80b35d299",
+    "quantities": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      48
+    ],
+    "min_gain": 0.5,
+    "rival_scenarios": 1
+  },
+  "f18_micro_robust": {
+    "sha256": "79c345649441d614fb6639f411778052f5e6023c24799b0489f5639eed87fe45",
+    "quantities": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      48
+    ],
+    "min_gain": 0.5,
+    "rival_scenarios": 2
+  },
+  "f18_small": {
+    "sha256": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "quantities": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "min_gain": 0.5,
+    "rival_scenarios": 1
+  }
+}

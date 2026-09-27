@@ -1,0 +1,52 @@
+{
+  "registered_at": "2026-09-27T18:59:53.268524+00:00",
+  "candidates": [
+    "f18_small",
+    "f18_micro_robust"
+  ],
+  "control": "f17_selected",
+  "opponents": [
+    "f17_selected",
+    "f16_repaired",
+    "f17_robust",
+    "n25_abhinav0370_127ed3",
+    "n23_kenanzhang9_b52378",
+    "v43"
+  ],
+  "seeds": [
+    18101,
+    18102,
+    18103,
+    18104,
+    18105,
+    18106,
+    18107,
+    18108
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 288,
+  "hashes": {
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "f17_robust": "1486568e15fdaf8caddda3aedaaea951c472d772e494a40cebf15373e634c011",
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f18_micro_robust": "79c345649441d614fb6639f411778052f5e6023c24799b0489f5639eed87fe45",
+    "f18_small": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "n23_kenanzhang9_b52378": "b523788e5e4103588487e80ecb1a96591a463cfd8a6228ae914072e64fda607f",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "v43": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+  },
+  "gate": {
+    "score_delta_min": 4,
+    "nonmirror_delta_min": 0,
+    "per_opponent_floor": -1,
+    "head_to_head_score_min": 9,
+    "positive_seed_deltas_min": 3,
+    "errors": 0,
+    "max_call_ms": 1000
+  },
+  "selection": "Four exploration seeds 18001..18004. Freeze small-volume and two-scenario market approaches before fresh 18101..18108 worlds. No post-holdout tuning.",
+  "limitations": "Six public or synthetic rival policies; eight independent worlds with correlated seats. Local score is wins plus half ties, not Kaggle rating. Private top100 code unavailable."
+}
