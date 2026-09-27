@@ -1,0 +1,32 @@
+{
+  "candidate": "f16_repaired",
+  "source_sha256": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+  "local_gate_passed": true,
+  "cloud_verified": false,
+  "leaderboard_submitted": false,
+  "archive_sha256": "13de630eb92cf78d3c74d47073867e6f70899d2441531a98a9ec3cef19e86067",
+  "archive_members_sha256": {
+    "main.py": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "7dd20e5029b7ed776c2522dc6c971fa49899587bb98e24eb74a5d523c22cad35"
+  },
+  "notebook_sha256": "dbbe49f991e6385c4532aa3294e7c84b1ef18556d6da2933feb38b2ff5602a01",
+  "notebook_bytes": 901957,
+  "notebook_payload_files": [
+    "candidates/f16_repaired.py",
+    "candidates/f15_e81.py",
+    "candidates/n27_lynnsakurai_031656.py",
+    "evaluate.py",
+    "frontier5_validation.py",
+    "cloud_frontier16.py",
+    "NOTICE.md",
+    "attribution/frontier16/LICENSE.txt",
+    "attribution/frontier16/NOTICE.txt",
+    "attribution/frontier16/LAB_NOTICE.md",
+    "results/frontier16/repaired/release.json",
+    "results/frontier16/repaired/plan.json",
+    "results/frontier16/repaired/holdout_summary.json"
+  ],
+  "notebook_payload_verified": true,
+  "kaggle_upload_status": "Blocked by automatic approval review; explicit authorization for this notebook and destination is required."
+}

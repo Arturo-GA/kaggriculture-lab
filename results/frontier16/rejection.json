@@ -1,0 +1,329 @@
+{
+  "candidate": "f16_selected",
+  "sha256": "f349f4797f84bce18d2617e41c3c056dc6ecd056927586446eb41668da852749",
+  "validation_stopped": true,
+  "completed_games": 66,
+  "reason": "Swallowed upstream IndexError in step839 for legal empty market slots.",
+  "errors": [
+    {
+      "seed": 16102,
+      "opponent": "f15_e81",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "f15_e81",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "f15_e81",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "f15_e81",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "f15_e81",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "f15_e81",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "f15_e81",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "f15_e81",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "f15_e81",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "f15_e81",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 8
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 8
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "n27_lynnsakurai_031656",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "g25_mooman0222_a62376",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16102,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 2
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16105,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16104,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 9
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16107,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 1,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    },
+    {
+      "seed": 16108,
+      "opponent": "g25_mooman0222_baf0d3",
+      "seat": 0,
+      "errors": {
+        "upstream_S839_REPORT_errors": 10
+      }
+    }
+  ]
+}

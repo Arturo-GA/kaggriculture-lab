@@ -1,0 +1,43 @@
+[
+  {
+    "step": 529,
+    "market": [
+      [
+        "SELL",
+        "FERTILIZER",
+        7
+      ],
+      [
+        "SELL",
+        "EGG",
+        2
+      ],
+      [],
+      [
+        "HIRE"
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "error": "IndexError('list index out of range')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Arturo\\Documents\\RSNA - ChatGPT\\kaggriculture-lab\\diagnose_f16.py\", line 13, in traced\n    try:return original(obs,action)\n               ^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 8514, in _s839_apply\n  File \"<string>\", line 1837, in _r37_reorder_sales\nIndexError: list index out of range\n"
+  },
+  {
+    "step": 554,
+    "market": [
+      [],
+      [],
+      [
+        "BUY_PRODUCT",
+        "FERTILIZER",
+        3
+      ],
+      [
+        "HIRE"
+      ]
+    ],
+    "error": "IndexError('list index out of range')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Arturo\\Documents\\RSNA - ChatGPT\\kaggriculture-lab\\diagnose_f16.py\", line 13, in traced\n    try:return original(obs,action)\n               ^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 8514, in _s839_apply\n  File \"<string>\", line 1833, in _r37_reorder_sales\nIndexError: list index out of range\n"
+  }
+]

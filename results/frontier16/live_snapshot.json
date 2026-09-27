@@ -1,0 +1,293 @@
+{
+  "checked_utc": "2026-09-27T12:32:00.968177+00:00",
+  "cuts": {
+    "teams": 10079,
+    "gold": 2773.4,
+    "silver": 2351.2,
+    "bronze": 2124.1
+  },
+  "top40": [
+    {
+      "id": "16623559",
+      "name": "DECEM",
+      "score": 3056.5,
+      "rank": 1
+    },
+    {
+      "id": "16915014",
+      "name": "Boey",
+      "score": 3022.8,
+      "rank": 2
+    },
+    {
+      "id": "16681125",
+      "name": "M & M & P & Q",
+      "score": 2983.3,
+      "rank": 3
+    },
+    {
+      "id": "16718819",
+      "name": "Majkel1337",
+      "score": 2974.8,
+      "rank": 4
+    },
+    {
+      "id": "16770421",
+      "name": "Vadim Vasilenko",
+      "score": 2947.4,
+      "rank": 5
+    },
+    {
+      "id": "16730612",
+      "name": "Unknown Mother-Goose",
+      "score": 2930.3,
+      "rank": 6
+    },
+    {
+      "id": "16667959",
+      "name": "Fourth Quadrant",
+      "score": 2917.4,
+      "rank": 7
+    },
+    {
+      "id": "16657750",
+      "name": "Just A game on your lips",
+      "score": 2904.7,
+      "rank": 8
+    },
+    {
+      "id": "16654697",
+      "name": "KawattaTaido",
+      "score": 2889.2,
+      "rank": 9
+    },
+    {
+      "id": "16628664",
+      "name": "Anton Tikhonov",
+      "score": 2884.8,
+      "rank": 10
+    },
+    {
+      "id": "16743356",
+      "name": "Azat Akhtyamov",
+      "score": 2872.7,
+      "rank": 11
+    },
+    {
+      "id": "16624026",
+      "name": "有辣条有权",
+      "score": 2863.3,
+      "rank": 12
+    },
+    {
+      "id": "16673205",
+      "name": "Arda Ceylan",
+      "score": 2852.0,
+      "rank": 13
+    },
+    {
+      "id": "16887437",
+      "name": "TheEggman",
+      "score": 2843.2,
+      "rank": 14
+    },
+    {
+      "id": "16730326",
+      "name": "atsushi11o7",
+      "score": 2838.4,
+      "rank": 15
+    },
+    {
+      "id": "16734966",
+      "name": "kigasudayooo",
+      "score": 2837.5,
+      "rank": 16
+    },
+    {
+      "id": "16758882",
+      "name": "mtmr_s1",
+      "score": 2836.3,
+      "rank": 17
+    },
+    {
+      "id": "16730357",
+      "name": "My second life",
+      "score": 2835.7,
+      "rank": 18
+    },
+    {
+      "id": "16712258",
+      "name": "Yizhou",
+      "score": 2832.5,
+      "rank": 19
+    },
+    {
+      "id": "16854176",
+      "name": "吃白饭的大肥鱼",
+      "score": 2816.2,
+      "rank": 20
+    },
+    {
+      "id": "16658248",
+      "name": "Aaweg",
+      "score": 2815.2,
+      "rank": 21
+    },
+    {
+      "id": "16660137",
+      "name": "Densike",
+      "score": 2806.0,
+      "rank": 22
+    },
+    {
+      "id": "16623697",
+      "name": "yuto083",
+      "score": 2804.4,
+      "rank": 23
+    },
+    {
+      "id": "16763230",
+      "name": "flg",
+      "score": 2796.6,
+      "rank": 24
+    },
+    {
+      "id": "16862183",
+      "name": "Smackaveli",
+      "score": 2794.7,
+      "rank": 25
+    },
+    {
+      "id": "16730524",
+      "name": "THIRD FARM CLUB",
+      "score": 2790.9,
+      "rank": 26
+    },
+    {
+      "id": "16760569",
+      "name": "Otter Vibe",
+      "score": 2787.8,
+      "rank": 27
+    },
+    {
+      "id": "16632327",
+      "name": "We wanna be tomatos",
+      "score": 2786.7,
+      "rank": 28
+    },
+    {
+      "id": "16623451",
+      "name": "Ueddy",
+      "score": 2785.9,
+      "rank": 29
+    },
+    {
+      "id": "16690867",
+      "name": "HowardLeeTW",
+      "score": 2773.4,
+      "rank": 30
+    },
+    {
+      "id": "16811307",
+      "name": "elmo",
+      "score": 2772.8,
+      "rank": 31
+    },
+    {
+      "id": "16621799",
+      "name": "Artem The Farmer 🍅",
+      "score": 2772.6,
+      "rank": 32
+    },
+    {
+      "id": "16621497",
+      "name": "Victor @ Tufa Labs",
+      "score": 2769.6,
+      "rank": 33
+    },
+    {
+      "id": "16752196",
+      "name": "sekai013",
+      "score": 2766.4,
+      "rank": 34
+    },
+    {
+      "id": "16732403",
+      "name": "ymg_aq",
+      "score": 2763.2,
+      "rank": 35
+    },
+    {
+      "id": "16623716",
+      "name": "tetsuya & yuanzhe & guoqin",
+      "score": 2762.0,
+      "rank": 36
+    },
+    {
+      "id": "16709127",
+      "name": "IsaiahP",
+      "score": 2751.8,
+      "rank": 37
+    },
+    {
+      "id": "16760701",
+      "name": "Yannik Schiffner",
+      "score": 2743.2,
+      "rank": 38
+    },
+    {
+      "id": "16640510",
+      "name": "SpaTaro",
+      "score": 2739.3,
+      "rank": 39
+    },
+    {
+      "id": "16863512",
+      "name": "YumeNeko",
+      "score": 2738.0,
+      "rank": 40
+    }
+  ],
+  "own": {
+    "name": "Arturo Gutiérrez Aguilar",
+    "score": 2308.7,
+    "rank": 599
+  },
+  "submissions": [
+    {
+      "id": 56592376,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2097.3",
+      "description": "Frontier15 9f0b05ea (f15_e81) on cha22 127ed3e6",
+      "date": "2026-09-27 00:06:15.090000"
+    },
+    {
+      "id": 56570873,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2308.7",
+      "description": "Frontier14B 8e8751ce (f14_adv4_h16) on cha22 127ed3e6",
+      "date": "2026-09-26 06:05:54.197000"
+    },
+    {
+      "id": 56568493,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2328.7",
+      "description": "Frontier14 a1561a1b (f14_adv4_h12) on cha22 127ed3e6",
+      "date": "2026-09-26 03:55:39.217000"
+    },
+    {
+      "id": 56560450,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2379.9",
+      "description": "Frontier13 83195206 on cha22 127ed3e6 - second slot",
+      "date": "2026-09-25 21:26:44.250000"
+    },
+    {
+      "id": 56560449,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2136.8",
+      "description": "Frontier13 83195206 on cha22 127ed3e6",
+      "date": "2026-09-25 21:26:39.417000"
+    }
+  ]
+}

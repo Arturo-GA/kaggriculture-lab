@@ -1,0 +1,41 @@
+[
+  {
+    "notebook": "vendor\\f16_public\\guruprasaathas111_kaggriculture-top-2-master-engine-v4\\kaggriculture-top-2-master-engine-v4.ipynb",
+    "candidate": "n27_guruprasaathas_55be5d",
+    "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8",
+    "bytes": 1196081,
+    "members": [
+      "LICENSE.txt",
+      "NOTICE.txt",
+      "main.py"
+    ],
+    "archive_sha256": "33532d53ca12d49f2af7e817a6b17cf7dad3d81c0036a109c63a4fb57778181a",
+    "method": "literal AST extraction only; no notebook cells executed"
+  },
+  {
+    "notebook": "vendor\\f16_public\\lynnsakurai_farmer-john-and-the-idle-seller\\farmer-john-and-the-idle-seller.ipynb",
+    "candidate": "n27_lynnsakurai_031656",
+    "sha256": "03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82",
+    "bytes": 1148715,
+    "members": [
+      "LICENSE.txt",
+      "NOTICE.txt",
+      "main.py"
+    ],
+    "archive_sha256": "642d1e410be2c67775d60756e22dea3ecfeeec87111ebbdfa3821acfb8ad7b06",
+    "method": "literal AST extraction only; no notebook cells executed"
+  },
+  {
+    "notebook": "vendor\\f16_public\\tetsutani_demand-preserving-turn-sale-timing\\demand-preserving-turn-sale-timing.ipynb",
+    "candidate": "n27_tetsutani_55be5d",
+    "sha256": "55be5d5f124c8daaaa63c1a29ba4aab096004909666f04748007603c67b7d2a8",
+    "bytes": 1196081,
+    "members": [
+      "LICENSE.txt",
+      "NOTICE.txt",
+      "main.py"
+    ],
+    "archive_sha256": "33532d53ca12d49f2af7e817a6b17cf7dad3d81c0036a109c63a4fb57778181a",
+    "method": "literal AST extraction only; no notebook cells executed"
+  }
+]

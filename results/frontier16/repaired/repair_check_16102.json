@@ -1,0 +1,8 @@
+{
+  "seed": 16102,
+  "calls": 719,
+  "actions_identical": true,
+  "old_s839_errors": 2,
+  "explicit_hole_skips": 2,
+  "nonzero_errors": {}
+}

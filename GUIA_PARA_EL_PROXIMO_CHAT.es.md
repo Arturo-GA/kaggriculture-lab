@@ -1,5 +1,13 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+> **Actualización posterior: Frontier16 (27 de septiembre).** Leer primero
+> [RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). El nuevo candidato local es
+> `f16_repaired`, SHA `0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd`.
+> F14B y F15 continúan siendo el par activo. La subida privada F16 a Kaggle fue
+> rechazada por el control automático de aprobación, que exige autorización
+> explícita para el notebook y su destino. No reintentar por otra vía sin resolver
+> ese bloqueo. Los apartados siguientes conservan la historia anterior.
+
 Este documento existe para que un chat nuevo, sin memoria de la conversación anterior, pueda retomar el proyecto en
 minutos. Léelo entero antes de tocar nada. El dueño es **Arturo** (GitHub `Arturo-GA`, Kaggle `jarturo`, equipo
 "Arturo Gutiérrez Aguilar", team id 16639155). Escribe en español; aprueba acciones externas con frases cortas

@@ -1,0 +1,178 @@
+{
+  "f16_queue": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 66.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "margin_sum": -2418.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2053.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 1140.0
+    }
+  },
+  "f16_queue3": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 1,
+      "ties": 0,
+      "margin_sum": -188.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "margin_sum": -2386.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2108.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 1016.0
+    }
+  },
+  "f16_queue_all": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 66.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "margin_sum": -2414.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2096.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 1140.0
+    }
+  },
+  "f16_new_queue": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 2432.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 3,
+      "ties": 1,
+      "margin_sum": 174.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 7649.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2734.0
+    }
+  },
+  "f16_new_window": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 1897.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 1,
+      "ties": 0,
+      "margin_sum": -323.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 7633.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2386.0
+    }
+  },
+  "f16_new_both": {
+    "f15_e81": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 2436.0
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 176.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 4,
+      "ties": 0,
+      "margin_sum": 7836.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2699.0
+    }
+  },
+  "f15_e81": {
+    "n27_lynnsakurai_031656": {
+      "games": 4,
+      "wins": 0,
+      "ties": 0,
+      "margin_sum": -2151.0
+    },
+    "g25_mooman0222_a62376": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 2265.0
+    },
+    "n23_arsgorynich_4f8637": {
+      "games": 4,
+      "wins": 3,
+      "ties": 0,
+      "margin_sum": 1296.0
+    }
+  }
+}

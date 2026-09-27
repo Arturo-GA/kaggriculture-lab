@@ -1,0 +1,116 @@
+{
+  "upload_metadata": {
+    "id": "jarturo/kaggriculture-frontier16-queue",
+    "title": "Kaggriculture Frontier16 queue",
+    "code_file": "experiment.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_internet": true,
+    "dataset_sources": [],
+    "competition_sources": [
+      "kaggriculture"
+    ],
+    "kernel_sources": []
+  },
+  "files": [
+    "candidates/f16_repaired.py",
+    "candidates/f15_e81.py",
+    "candidates/n27_lynnsakurai_031656.py",
+    "evaluate.py",
+    "frontier5_validation.py",
+    "cloud_frontier16.py",
+    "NOTICE.md",
+    "attribution/frontier16/LICENSE.txt",
+    "attribution/frontier16/NOTICE.txt",
+    "attribution/frontier16/LAB_NOTICE.md",
+    "results/frontier16/repaired/release.json",
+    "results/frontier16/repaired/plan.json"
+  ],
+  "competition_submission": false,
+  "owned_notebooks_api_response": [
+    {
+      "ref": "jarturo/kaggriculture-frontier13-cha22",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier10-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier14b-window16",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier5-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier15-windowhead",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier11-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier14-advance",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-hamburger",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier9-preemption",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier-joint-planner",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier8-stack-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier10b-v53-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier12-world-router",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier10c-guard-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-lab-cpu-search",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-learned-option-critic",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier11b-herdsafe-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier4-sales-race",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-frontier7-v48-lockstep",
+      "is_private": false
+    },
+    {
+      "ref": "jarturo/kaggriculture-night-harvest",
+      "is_private": false
+    }
+  ],
+  "upload_executed": false,
+  "blocked_by_approval_review": true
+}

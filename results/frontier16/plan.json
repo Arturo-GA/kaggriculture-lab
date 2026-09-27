@@ -1,0 +1,69 @@
+{
+  "registered_at": "2026-09-27T12:50:55.728792+00:00",
+  "candidate": "f16_selected",
+  "control": "f15_e81",
+  "public_base": "n27_lynnsakurai_031656",
+  "screen_parent": "f16_new_both",
+  "screen_parent_sha256": "70419c322214bff4e11fbb8f79882eff8c9cf915eae4f9e783d8a2f39d645529",
+  "selection": "Highest win-plus-half-tie score among six variants on exploration seeds 16001..16004; 15/16.",
+  "opponents": [
+    "f15_e81",
+    "n27_lynnsakurai_031656",
+    "g25_mooman0222_a62376",
+    "g25_mooman0222_baf0d3",
+    "n23_arsgorynich_4f8637",
+    "n23_prvsiyan_178ae0",
+    "g25_wangyh_v44",
+    "n25_abhinav0370_127ed3",
+    "n23_kenanzhang9_b52378",
+    "v43"
+  ],
+  "holdout_seeds": [
+    16101,
+    16102,
+    16103,
+    16104,
+    16105,
+    16106,
+    16107,
+    16108
+  ],
+  "cloud_seeds": [
+    16201,
+    16202,
+    16203,
+    16204
+  ],
+  "cloud_opponents": [
+    "f15_e81",
+    "n27_lynnsakurai_031656"
+  ],
+  "hashes": {
+    "f16_selected": "f349f4797f84bce18d2617e41c3c056dc6ecd056927586446eb41668da852749",
+    "f15_e81": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb",
+    "n27_lynnsakurai_031656": "03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82",
+    "g25_mooman0222_a62376": "a623767bf01414f23a1353a0d64b6f4bdc39f67e289dd347e073cca2aa4c7675",
+    "g25_mooman0222_baf0d3": "baf0d31ee5796ee7012b79ef54217556f63d3d455c3a3a7e13a2ecb8d7b12343",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "g25_wangyh_v44": "7483aea8e242358881d9ace0a7340c37444e8bea8f12f2cc3f3a0d13287ce450",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "n23_kenanzhang9_b52378": "b523788e5e4103588487e80ecb1a96591a463cfd8a6228ae914072e64fda607f",
+    "v43": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed"
+  },
+  "gate": {
+    "total_min": 6,
+    "mirror_min": 0.65,
+    "public_base_min": 0.5,
+    "opponent_floor": -2,
+    "ablation_min": 0
+  },
+  "cloud_gate": {
+    "total_min": 0,
+    "opponent_floor": 0,
+    "callback_max_ms": 1000
+  },
+  "rule": "Official 1.32.7 engine, complete 720-step games, 719 callbacks, no recorded errors/fallbacks; callbacks <1000 ms. Paired W+0.5T versus F15 >=+6; direct F15 score >=65%; direct public base >=50%; no rival delta below -2; total delta versus unmodified public base >=0.",
+  "attribution": "Apache-2.0 public Farmer John and the Idle Seller by lynnsakurai (03165654), inherited notices preserved; Arturo-GA original queue DP and integration of mooman0222 MIT E081 window-head idea.",
+  "limitations": "Public lineage panel, only eight independent worlds; no calibrated mapping to live rating and no access to private top agents."
+}

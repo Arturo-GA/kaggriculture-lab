@@ -16,6 +16,7 @@ candidates/router.py
 candidates/v41_review.py
 candidates/v41_old_opening.py
 results/frontier3/kaggle/candidates/v41_review.py
+candidates/n27_*.py
 candidates/v43.py
 candidates/v44.py
 candidates/v45.py
@@ -140,3 +141,8 @@ candidates/f15*.py
 results/frontier15/kaggle/candidates/n2*.py
 !candidates/f15_e81.py
 episode-*-replay.json
+candidates/f16_*.py
+!candidates/f16_selected.py
+!candidates/f16_repaired.py
+results/frontier16/repaired/kaggle/candidates/
+results/frontier16/repaired/kaggle/main.py

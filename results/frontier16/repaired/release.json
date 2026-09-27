@@ -1,0 +1,32 @@
+{
+  "candidate": "f16_repaired",
+  "control": "f15_e81",
+  "kernel": "jarturo/kaggriculture-frontier16-queue",
+  "source_sha256": {
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "f15_e81": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb",
+    "n27_lynnsakurai_031656": "03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82"
+  },
+  "local_receipts": {
+    "plan.json": "4e734dee70630cc9715e20431f5ce29df71fc17501f525c8fb98b2d27ed9cbae",
+    "holdout_summary.json": "312b84a4ee1895733be2b49fa727bc63652414f4043202d0832126cd9dbdab49"
+  },
+  "cloud_opponents": [
+    "f15_e81",
+    "n27_lynnsakurai_031656"
+  ],
+  "cloud_seeds": [
+    16401,
+    16402,
+    16403,
+    16404
+  ],
+  "cloud_gate": {
+    "total_min": 0,
+    "opponent_floor": 0,
+    "callback_max_ms": 1000
+  },
+  "attribution": "Apache-2.0 public Farmer John and the Idle Seller by lynnsakurai (03165654), inherited notices preserved; Arturo-GA original queue DP and integration of mooman0222 MIT E081 window-head idea.",
+  "limitations": "Public lineage panel, only eight independent worlds; no calibrated mapping to live rating and no access to private top agents.",
+  "local_gate_passed": true
+}

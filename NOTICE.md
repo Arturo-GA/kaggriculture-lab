@@ -361,3 +361,24 @@ Modified September 27, 2026 by Arturo-GA / Kaggriculture Lab (Frontier15):
   (github.com/mooman0222/Kaggriculture-opencode, MIT licence; the agents used as
   local rivals stay out of Git); the Lab implementation reuses only cha22's own
   helpers (`projected_shed`, `_adv_future`, `_v9_town_draw`, `_lk_reorder`).
+
+Modified September 27, 2026 by Arturo-GA / Kaggriculture Lab (Frontier16):
+
+- `f16_selected` retains the complete public "Farmer John and the Idle Seller"
+  source by lynnsakurai, SHA-256
+  `03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82`,
+  https://www.kaggle.com/code/lynnsakurai/farmer-john-and-the-idle-seller,
+  Apache-2.0, including its inherited source notices. Its original archive
+  LICENSE.txt and NOTICE.txt are preserved in `attribution/frontier16/`.
+- The Lab appends an original subset dynamic program assigning stock-covered
+  sales to market slots while preserving quantities and the relative order of
+  fixed spending orders. The queue uses the base's attributed price helpers
+  and is inspired by the public fixed-SELL closure of lynnsakurai / tetsutani.
+  It assumes a copy of our own orders for the opposing price response; it does
+  not observe hidden rival stock or claim an exact global economic optimum.
+- A separate original integration applies the same mooman0222 E081 idea used
+  in Frontier15 (MIT, https://github.com/mooman0222/Kaggriculture-opencode).
+  A final behavior-neutral wrapper exposes inherited error counters.
+- The submission archive includes the original LICENSE.txt and NOTICE.txt
+  followed by this project's additional attribution and modification notice.
+  The other public rivals remain local evaluation inputs excluded from Git.

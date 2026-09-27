@@ -1,0 +1,19 @@
+{
+  "command": "python -m unittest test_frontier16 -v",
+  "tests": 9,
+  "passed": true,
+  "source_sha256": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+  "test_input_hashes": {
+    "frontier16_queue.py": "ad5d4d367251cff0d0a0c77693fe083d1bccd7435ee011709a12d9152d404b68",
+    "frontier16_window.py": "c218e15c201a20c64b4b503fe7820ee7fd1fb5699910048eb37f277df34133bd",
+    "frontier16_hole_guard.py": "7bceb6330ab730e7f9cb490c21044888a8e99c4237a05bd20c74e4b8d9e4ed98",
+    "frontier16_observability.py": "cd0659e22160ee9695dbea13812af570afb223e7df4eced7bf7d6312bb017ee5",
+    "test_frontier16.py": "3a2e6c526fadf15e5723146ef230cf7e650f963440be5c9588caa6ec71b17a65"
+  },
+  "repair_differential_seeds": [
+    16102,
+    16107
+  ],
+  "repair_differential_calls": 1438,
+  "actions_identical": true
+}

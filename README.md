@@ -7,6 +7,16 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**27 de septiembre: Frontier16, candidato nuevo pendiente de verificación en Kaggle.** Se revisó GitHub y la nueva
+ola pública del 27; la base elegida es *Farmer John and the Idle Seller*, con una capa propia de asignación de
+posiciones de venta mediante programación dinámica y la integración E081. `f16_repaired` ganó **156/160** y obtuvo
+**+32 puntos emparejados frente a F15**. Son ocho semillas, diez rivales y ambos asientos, no 160 mundos independientes.
+También se mide por separado el aporte frente a la base pública sin modificar. Investigación:
+[FRONTIER16_RESEARCH.es.md](FRONTIER16_RESEARCH.es.md); resultados:
+[FRONTIER16_RESULTS.es.md](FRONTIER16_RESULTS.es.md); continuación:
+[RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). El push a Kaggle quedó bloqueado por el control automático de
+aprobación; el notebook y el paquete se preparan localmente. No hay nueva submission ni promesa de rating 2660–2700.
+
 **27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario
 (dataset público), reglas de producción del motor y foro. Los de arriba compran el cuarto cuadrante hacia el día 10, llevan
 12-13 manos y 20-25 animales el día 12 elegidos por las tiendas, con tomates y zanahorias tempranos; nuestra cinta se

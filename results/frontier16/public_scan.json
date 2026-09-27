@@ -1,0 +1,213 @@
+{
+ "degnonguidi_kaggriculture-utils-v1": {
+  "title": "kaggriculture_utils_v1",
+  "agent": null
+ },
+ "evgendvorkin_kaggriculture-version-31-26-09-bronze-going-up": {
+  "title": "Kaggriculture. Version 31, 26.09, bronze, going up",
+  "sha256": "0516696da984cf8efce5a649219f9a213b62af9a52f667bc5002909fca17b002",
+  "bytes": 22861,
+  "files": [
+   "main.py"
+  ],
+  "known": "n25_evgendvorkin_051669",
+  "closest": [
+   [
+    "tschinkel",
+    0.003
+   ],
+   [
+    "lynn_v2",
+    0.003
+   ]
+  ]
+ },
+ "flexonafft_kaggriculture-multi-route-farming-agent": {
+  "title": "Kaggriculture | Multi-Route Farming Agent",
+  "sha256": "36812d632b181fee7e0f249fa3a1eb364e0d373d6e4211f4e49803e8dd3582aa",
+  "bytes": 494061,
+  "files": [
+   "main.py"
+  ],
+  "known": null,
+  "closest": [
+   [
+    "metav4",
+    0.817
+   ],
+   [
+    "pipe16",
+    0.815
+   ]
+  ],
+  "candidate": "n27_flexonafft_36812d"
+ },
+ "guruprasaathas111_kaggriculture-top-2-master-engine-v4": {
+  "title": "Kaggriculture (TOP 2 )Master Engine V4 ",
+  "agent": null
+ },
+ "haideptry_the-2965-master-hybrid-engine": {
+  "title": "The 2965 Master Hybrid Engine",
+  "sha256": "1816efad1aecfba6c0791132a3bee16ddd4115fcd1f10a8d271b4a2af1e68ad9",
+  "bytes": 1047778,
+  "files": [
+   "main.py"
+  ],
+  "known": null,
+  "closest": [
+   [
+    "prvsiyan_guard",
+    0.903
+   ],
+   [
+    "gluzdov_omw",
+    0.901
+   ]
+  ],
+  "candidate": "n27_haideptry_1816ef"
+ },
+ "haideptry_the-shepherds-ledger-herd-safe-sovereign": {
+  "title": "The Shepherds Ledger Herd Safe Sovereign",
+  "sha256": "36812d632b181fee7e0f249fa3a1eb364e0d373d6e4211f4e49803e8dd3582aa",
+  "bytes": 494061,
+  "files": [
+   "main.py"
+  ],
+  "known": "n27_flexonafft_36812d",
+  "closest": [
+   [
+    "metav4",
+    0.817
+   ],
+   [
+    "pipe16",
+    0.815
+   ]
+  ]
+ },
+ "haodou092_kaggriculture-harvest-ledger": {
+  "title": "Kaggriculture | Harvest Ledger",
+  "sha256": "63dde9e4f73eb6c4c60cd453d085c17f4fec7110a6d52a2946b20e7ddb9f32bc",
+  "bytes": 1196118,
+  "files": [
+   "main.py"
+  ],
+  "known": null,
+  "closest": [
+   [
+    "prvsiyan_guard",
+    0.687
+   ],
+   [
+    "gluzdov_omw",
+    0.685
+   ]
+  ],
+  "candidate": "n27_haodou092_63dde9"
+ },
+ "kunaldesale2408_kaggriculture-2026-v1": {
+  "title": "Kaggriculture 2026 V1",
+  "sha256": "dc5433c7996f3f18bc766083a3b6b0ef22ba290cf917fd680ee41c62b8de734d",
+  "bytes": 299347,
+  "files": [
+   "main.py"
+  ],
+  "known": null,
+  "closest": [
+   [
+    "tschinkel",
+    0.494
+   ],
+   [
+    "lynn_v2",
+    0.485
+   ]
+  ],
+  "candidate": "n27_kunaldesale240_dc5433"
+ },
+ "kunaldesale2408_kaggriculture-ttv1": {
+  "title": "Kaggriculture TTV1",
+  "sha256": "63dde9e4f73eb6c4c60cd453d085c17f4fec7110a6d52a2946b20e7ddb9f32bc",
+  "bytes": 1196118,
+  "files": [
+   "main.py"
+  ],
+  "known": "n27_haodou092_63dde9",
+  "closest": [
+   [
+    "prvsiyan_guard",
+    0.687
+   ],
+   [
+    "gluzdov_omw",
+    0.685
+   ]
+  ]
+ },
+ "leoprovorov_a-song-of-ice-and-fire-fixed-flexible": {
+  "title": "❄️🔥 A Song of Ice and Fire | Fixed + Flexible",
+  "sha256": "12ad317ecac6c07fb2c2e10bf4820ecd1fd4551a5a36aa0e34ab93b2c33c2693",
+  "bytes": 897851,
+  "files": [
+   "main.py"
+  ],
+  "known": "n25_leoprovorov_12ad31",
+  "closest": [
+   [
+    "tschinkel",
+    0.965
+   ],
+   [
+    "gluzdov_mwss",
+    0.959
+   ]
+  ]
+ },
+ "leoprovorov_four-turn-forecast-notebook-version-2": {
+  "title": "Four-Turn Forecast — Notebook Version 2",
+  "sha256": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01",
+  "bytes": 1038890,
+  "files": [
+   "main.py"
+  ],
+  "known": "n23_arsgorynich_4f8637",
+  "closest": [
+   [
+    "prvsiyan_guard",
+    0.933
+   ],
+   [
+    "gluzdov_omw",
+    0.931
+   ]
+  ]
+ },
+ "lynnsakurai_farmer-john-and-the-idle-seller": {
+  "title": "Farmer John and the Idle Seller",
+  "agent": null
+ },
+ "lynnsakurai_farmer-john-and-the-wheat-seller": {
+  "title": "Farmer John and the Wheat Seller",
+  "sha256": "a91efdd0fb1c96f7342e89e59217e72764160fcebac5f0de5c9ea6c6b775e788",
+  "bytes": 505779,
+  "files": [
+   "main.py"
+  ],
+  "known": null,
+  "closest": [
+   [
+    "metav4",
+    0.806
+   ],
+   [
+    "pipe16",
+    0.804
+   ]
+  ],
+  "candidate": "n27_lynnsakurai_a91efd"
+ },
+ "tetsutani_demand-preserving-turn-sale-timing": {
+  "title": "🌾 Demand-Preserving Turn Sale Timing",
+  "agent": null
+ }
+}
