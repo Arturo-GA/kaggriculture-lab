@@ -7,6 +7,17 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**27 de septiembre: Frontier17 preparado, sin nueva submission.** Se analizaron las 22 derrotas de F16
+disponibles durante la sesión. Se eliminaron parejas especulativas de compra/reventa entre turnos y se añadió
+una búsqueda de operaciones de insumos dentro del turno, con límites de caja y capacidad. El candidato congelado
+ganó **128/128** en ocho semillas nuevas frente a ocho rivales, incluidas **16/16 contra F16**; puntuación emparejada
+128 frente a 118, de la que +2 viene de rivales distintos de F16. Cero errores y máximo 458 ms. Una prueba adicional
+contra una variante de compras dio 4/8 frente a 0/8 del control. Los replays con rivales grabados convierten 4/17
+derrotas usadas para diagnóstico y 2/5 nuevas posteriores a congelar el código; no estiman la fuerza competitiva.
+Paquete y notebook configurado como privado preparados localmente, todavía sin ejecución ni envío en Kaggle.
+[Investigación](FRONTIER17_RESEARCH.es.md), [resultados](FRONTIER17_RESULTS.es.md),
+[continuación](RESUME_FRONTIER17.es.md). No hay promesa de top 100; el corte observado fue 2621,9.
+
 **27 de septiembre: Frontier16, submission 56609913, notebook privado.** Se revisó GitHub y la nueva
 ola pública del 27; la base elegida es *Farmer John and the Idle Seller*, con una capa propia de asignación de
 posiciones de venta mediante programación dinámica y la integración E081. `f16_repaired` ganó **156/160** y obtuvo
@@ -17,7 +28,8 @@ También se mide por separado el aporte frente a la base pública sin modificar.
 [RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). Arturo autorizó la subida privada y la submission; la ejecución
 en Kaggle completó 32 partidas (F16 14/16, delta +9 frente a F15, cero errores, máximo 365 ms). El paquete coincide
 byte por byte con el local. [Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue).
-La submission está pendiente de evaluación inicial; al activarse F16 reemplaza a F14B y conserva F15.
+La submission está COMPLETE y el par activo es F16 + F15; F14B está retirada.
+Consulta del 27/09 a las 17:33 UTC: F16 2449,8, puesto 273, 45 victorias y 22 derrotas.
 No se promete rating 2660–2700.
 
 **27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario

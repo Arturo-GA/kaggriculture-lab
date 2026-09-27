@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-09-27T17:33:58.058397+00:00",
+  "own": {
+    "name": "Arturo Gutiérrez Aguilar",
+    "score": 2449.8,
+    "rank": 273
+  },
+  "top100_cut": {
+    "name": "Navier-stokes",
+    "score": 2621.9,
+    "rank": 100
+  },
+  "submissions": [
+    {
+      "id": 56609913,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2449.8",
+      "games": 67,
+      "wins": 45,
+      "ties": 0,
+      "losses": 22
+    },
+    {
+      "id": 56592376,
+      "status": "SubmissionStatus.COMPLETE",
+      "score": "2105.0",
+      "games": 118,
+      "wins": 93,
+      "ties": 0,
+      "losses": 25
+    }
+  ]
+}

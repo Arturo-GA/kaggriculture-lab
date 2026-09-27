@@ -1,0 +1,14 @@
+{
+  "kernel": "jarturo/kaggriculture-frontier17-input-market",
+  "is_private": true,
+  "notebook_bytes": 863303,
+  "notebook_sha256": "758bd3dc11cdf3d294690928ab97e12264cad9dd129e4d9eca42bb35f274f5cc",
+  "source_sha256": {
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd"
+  },
+  "payload_verified": true,
+  "uploaded": false,
+  "cloud_verified": false,
+  "leaderboard_submitted": false
+}

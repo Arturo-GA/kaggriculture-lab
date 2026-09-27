@@ -1,0 +1,14 @@
+{
+  "registered_at": "2026-09-27T17:34:59.625575+00:00",
+  "candidate": "f17_selected",
+  "control": "f16_repaired",
+  "frozen_source_sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+  "episode_ids": [
+    114267513,
+    114270595,
+    114273378,
+    114274845,
+    114274929
+  ],
+  "rule": "Out-of-sample recorded-rival diagnostic; no tuning after these results. Not a rating estimator."
+}

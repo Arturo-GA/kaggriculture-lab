@@ -382,3 +382,13 @@ Modified September 27, 2026 by Arturo-GA / Kaggriculture Lab (Frontier16):
 - The submission archive includes the original LICENSE.txt and NOTICE.txt
   followed by this project's additional attribution and modification notice.
   The other public rivals remain local evaluation inputs excluded from Git.
+
+Modified September 27, 2026 by Arturo-GA / Kaggriculture Lab (Frontier17):
+
+- Frontier16 is retained byte-for-byte as the source prefix. Original own-route
+  speculative-pair removal and bounded same-turn input-market search are added.
+  The search uses inherited attributed price functions, current own inventory
+  and cash, and public farm similarity. It does not inspect hidden rival orders.
+- Replay accounting and official-engine paired validation are new Lab tooling.
+  Full additional notice: `attribution/frontier17/LAB_NOTICE.md`. No new public
+  notebook source or opponent tape is incorporated in the runtime this round.

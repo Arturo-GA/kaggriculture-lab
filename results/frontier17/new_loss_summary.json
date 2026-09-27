@@ -1,0 +1,39 @@
+{
+  "games": 5,
+  "flips": 2,
+  "improved": 5,
+  "errors": 0,
+  "note": "Five newly arrived losses, read only after the source was frozen. Recorded rivals cannot react; no tuning.",
+  "rows": [
+    {
+      "episode": 114267513,
+      "opponent": "Agent 0",
+      "before": -258.0,
+      "after": 486.0
+    },
+    {
+      "episode": 114270595,
+      "opponent": "Justin Yang",
+      "before": -1056.0,
+      "after": -774.0
+    },
+    {
+      "episode": 114273378,
+      "opponent": "哈基米南北路多",
+      "before": -511.0,
+      "after": -269.0
+    },
+    {
+      "episode": 114274845,
+      "opponent": "JezzLynn",
+      "before": -227.0,
+      "after": 360.0
+    },
+    {
+      "episode": 114274929,
+      "opponent": "Rishant Sharma",
+      "before": -206.0,
+      "after": -139.0
+    }
+  ]
+}

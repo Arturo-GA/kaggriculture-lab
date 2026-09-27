@@ -1,0 +1,329 @@
+{
+  "games": 21,
+  "original_losses": 17,
+  "original_wins": 4,
+  "losses_flipped": 4,
+  "wins_lost": 0,
+  "improved": 15,
+  "worsened": 2,
+  "unchanged": 4,
+  "mean_margin_gain": 666.2857142857143,
+  "warning": "Opponents are recorded action streams and cannot react. Selected set is loss-heavy, not a random leaderboard sample. Rival cash preservation does not make it a competitive strength estimate.",
+  "rows": [
+    {
+      "episode": 114226202,
+      "opponent": "keiz",
+      "before": -17320.0,
+      "after": -17320.0,
+      "delta": 0.0,
+      "own_cash_delta": 0.0,
+      "rival_cash_delta": 0.0,
+      "rival_kept": 1.0,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114227694,
+      "opponent": "ALLAI",
+      "before": -973.0,
+      "after": -259.0,
+      "delta": 714.0,
+      "own_cash_delta": 399.0,
+      "rival_cash_delta": -315.0,
+      "rival_kept": 0.9964,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114230636,
+      "opponent": "Batuhan Ustun",
+      "before": -970.0,
+      "after": -744.0,
+      "delta": 226.0,
+      "own_cash_delta": 112.0,
+      "rival_cash_delta": -114.0,
+      "rival_kept": 0.9987,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114233609,
+      "opponent": "Ryo Takaki",
+      "before": -171.0,
+      "after": -70.0,
+      "delta": 101.0,
+      "own_cash_delta": 51.0,
+      "rival_cash_delta": -50.0,
+      "rival_kept": 0.9994,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114235088,
+      "opponent": "Vlas Veles",
+      "before": -1710.0,
+      "after": -1710.0,
+      "delta": 0.0,
+      "own_cash_delta": 0.0,
+      "rival_cash_delta": 0.0,
+      "rival_kept": 1.0,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114236554,
+      "opponent": "Matin Urdu",
+      "before": -4868.0,
+      "after": -4963.0,
+      "delta": -95.0,
+      "own_cash_delta": -117.0,
+      "rival_cash_delta": -22.0,
+      "rival_kept": 0.9998,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114238020,
+      "opponent": "Odyssey",
+      "before": 61.0,
+      "after": 603.0,
+      "delta": 542.0,
+      "own_cash_delta": 267.0,
+      "rival_cash_delta": -275.0,
+      "rival_kept": 0.9979,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114239575,
+      "opponent": "dodoshark",
+      "before": -113.0,
+      "after": 811.0,
+      "delta": 924.0,
+      "own_cash_delta": 470.0,
+      "rival_cash_delta": -454.0,
+      "rival_kept": 0.9914,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114242467,
+      "opponent": "Morylov Yehor",
+      "before": -558.0,
+      "after": -432.0,
+      "delta": 126.0,
+      "own_cash_delta": 63.0,
+      "rival_cash_delta": -63.0,
+      "rival_kept": 0.9993,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114242808,
+      "opponent": "Nagahama",
+      "before": -267.0,
+      "after": 37.0,
+      "delta": 304.0,
+      "own_cash_delta": 147.0,
+      "rival_cash_delta": -157.0,
+      "rival_kept": 0.998,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114243937,
+      "opponent": "trantrikien239",
+      "before": -8488.0,
+      "after": -306.0,
+      "delta": 8182.0,
+      "own_cash_delta": 3849.0,
+      "rival_cash_delta": -4333.0,
+      "rival_kept": 0.9542,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114246885,
+      "opponent": "in blue",
+      "before": -772.0,
+      "after": -714.0,
+      "delta": 58.0,
+      "own_cash_delta": 28.0,
+      "rival_cash_delta": -30.0,
+      "rival_kept": 0.9995,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114248358,
+      "opponent": "Utkarsh #2",
+      "before": -170.0,
+      "after": 115.0,
+      "delta": 285.0,
+      "own_cash_delta": 141.0,
+      "rival_cash_delta": -144.0,
+      "rival_kept": 0.9986,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114249820,
+      "opponent": "Yunioshi",
+      "before": 24.0,
+      "after": 467.0,
+      "delta": 443.0,
+      "own_cash_delta": 214.0,
+      "rival_cash_delta": -229.0,
+      "rival_kept": 0.9977,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114252770,
+      "opponent": "Tamasaki217",
+      "before": 95.0,
+      "after": 392.0,
+      "delta": 297.0,
+      "own_cash_delta": 144.0,
+      "rival_cash_delta": -153.0,
+      "rival_kept": 0.9983,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114255708,
+      "opponent": "Ezzzzzekki",
+      "before": -889.0,
+      "after": -1059.0,
+      "delta": -170.0,
+      "own_cash_delta": -84.0,
+      "rival_cash_delta": 86.0,
+      "rival_kept": 1.0009,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114257296,
+      "opponent": "xi luo",
+      "before": -1168.0,
+      "after": -1110.0,
+      "delta": 58.0,
+      "own_cash_delta": 29.0,
+      "rival_cash_delta": -29.0,
+      "rival_kept": 0.9998,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114258365,
+      "opponent": "Smackaveli",
+      "before": -20845.0,
+      "after": -20845.0,
+      "delta": 0.0,
+      "own_cash_delta": 0.0,
+      "rival_cash_delta": 0.0,
+      "rival_kept": 1.0,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114258667,
+      "opponent": "Vaibhav Gupta",
+      "before": -455.0,
+      "after": 1191.0,
+      "delta": 1646.0,
+      "own_cash_delta": 838.0,
+      "rival_cash_delta": -808.0,
+      "rival_kept": 0.9928,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114260075,
+      "opponent": "@Suzumaru_1666",
+      "before": 48.0,
+      "after": 399.0,
+      "delta": 351.0,
+      "own_cash_delta": 173.0,
+      "rival_cash_delta": -178.0,
+      "rival_kept": 0.9983,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    },
+    {
+      "episode": 114263114,
+      "opponent": "ShunkiKyoya",
+      "before": -11583.0,
+      "after": -11583.0,
+      "delta": 0.0,
+      "own_cash_delta": 0.0,
+      "rival_cash_delta": 0.0,
+      "rival_kept": 1.0,
+      "errors": {},
+      "status": [
+        "DONE",
+        "DONE"
+      ]
+    }
+  ]
+}

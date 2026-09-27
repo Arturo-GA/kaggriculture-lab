@@ -1,0 +1,222 @@
+[
+  {
+    "trace": [
+      {
+        "function": "_deepcopy_dict",
+        "line": 217,
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            3
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "SELL",
+            "MILK",
+            6
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": []
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "BUY_SEED",
+            "WHEAT",
+            1
+          ],
+          [
+            "SELL",
+            "WHEAT",
+            48
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": []
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": [
+          [
+            "SELL",
+            "WHEAT",
+            9
+          ]
+        ]
+      },
+      {
+        "function": "_ch_tape",
+        "line": 4987,
+        "market": []
+      },
+      {
+        "function": "agent",
+        "line": 5030,
+        "market": [
+          [
+            "BUY_PRODUCT",
+            "WHEAT",
+            48
+          ]
+        ]
+      }
+    ],
+    "action": {
+      "farmer": [
+        "SOUTH"
+      ],
+      "hands": [
+        [
+          "CARE"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "EAST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "COLLECT_FERTILIZER"
+        ],
+        [
+          "WATER"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "WEST"
+        ],
+        [
+          "SOUTH"
+        ]
+      ],
+      "market": [
+        [
+          "BUY_PRODUCT",
+          "WHEAT",
+          48
+        ]
+      ]
+    },
+    "native": {
+      "last_step": 296,
+      "route": 103,
+      "router_state": {
+        "rkey": [
+          1042.0,
+          9989
+        ],
+        "expert": "EXP240",
+        "route": 103,
+        "day6": true
+      },
+      "pending": {},
+      "sell_state": {
+        "due_step": -1,
+        "suppress": {},
+        "r36_debts": {}
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "kernel": "jarturo/kaggriculture-frontier17-input-market",
+  "source_sha256": {
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd"
+  },
+  "cloud_opponents": [
+    "f16_repaired"
+  ],
+  "cloud_seeds": [
+    17201,
+    17202,
+    17203,
+    17204
+  ],
+  "cloud_rule": "Official engine, complete games, zero reported errors, <1000ms, score no lower than F16 control.",
+  "evidence_sha256": {
+    "plan.json": "0755029087fbb119a165d96aa343654bb25a4d7a2a7877a761d32b2375d84ff8",
+    "holdout_summary.json": "fac77ef801db9052804bf171203ba8923e332e5504ed9a450be1352cacc23004"
+  }
+}

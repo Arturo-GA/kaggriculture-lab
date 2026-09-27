@@ -4,8 +4,9 @@
 Notebook privado confirmado por los metadatos remotos:
 https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue .
 El recibo de submission y la comprobación de la nube están en
-`results/frontier16/repaired/`. Última consulta: `PENDING`, sin error ni puntaje
-todavía. El nuevo par previsto es F15 + F16 al activarse el agente.
+`results/frontier16/repaired/`. Actualización del 27/09, 17:33 UTC: `COMPLETE`,
+2449,8 puntos, puesto 273, 67 partidas (45 victorias y 22 derrotas).
+Par activo: F15 + F16. Snapshot posterior en `results/frontier17/live_snapshot_final.json`.
 
 Solicitud del 27/09: revisar el GitHub actualizado, discusiones, notebooks y
 líderes de Kaggle, y mejorar la estrategia con objetivo 2660–2700 o el mejor

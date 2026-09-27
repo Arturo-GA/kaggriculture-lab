@@ -1,0 +1,2301 @@
+{
+  "exact_reproductions": 28,
+  "f16_losses": 17,
+  "f16_small_wins": 4,
+  "losses_with_equal_counts_day15_and27": 8,
+  "note": "Same crop/animal counts is not identical coordinates or labor scheduling. Gross resale revenue is offset by input purchases. No financial causal attribution from revenue differences alone.",
+  "rows": [
+    {
+      "episode": 114226202,
+      "opponent": "keiz",
+      "opponent_team_rating_at_snapshot": 2631.6,
+      "margin": -17320,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 3078,
+          "rival": 3116,
+          "delta": -38,
+          "sold_ours": 94,
+          "sold_rival": 91
+        },
+        "EGG": {
+          "ours": 0,
+          "rival": 1376,
+          "delta": -1376,
+          "sold_ours": 0,
+          "sold_rival": 25
+        },
+        "FERTILIZER": {
+          "ours": 12838,
+          "rival": 12241,
+          "delta": 597,
+          "sold_ours": 341,
+          "sold_rival": 279
+        },
+        "MELON": {
+          "ours": 14389,
+          "rival": 15538,
+          "delta": -1149,
+          "sold_ours": 72,
+          "sold_rival": 90
+        },
+        "MILK": {
+          "ours": 30763,
+          "rival": 40343,
+          "delta": -9580,
+          "sold_ours": 296,
+          "sold_rival": 330
+        },
+        "STRAWBERRY": {
+          "ours": 28231,
+          "rival": 25075,
+          "delta": 3156,
+          "sold_ours": 241,
+          "sold_rival": 200
+        },
+        "TOMATO": {
+          "ours": 0,
+          "rival": 5828,
+          "delta": -5828,
+          "sold_ours": 0,
+          "sold_rival": 69
+        },
+        "WHEAT": {
+          "ours": 10911,
+          "rival": 11539,
+          "delta": -628,
+          "sold_ours": 396,
+          "sold_rival": 1097
+        },
+        "WOOL": {
+          "ours": 19051,
+          "rival": 24780,
+          "delta": -5729,
+          "sold_ours": 136,
+          "sold_rival": 147
+        }
+      },
+      "capex_and_wage_advantage": 3255.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 436,
+        "command_NORTH": 919,
+        "command_SOUTH": 502,
+        "command_PICKUP": 208,
+        "command_WEST": 870,
+        "command_BUILD_PASTURE": 19,
+        "command_PLACE": 96,
+        "command_PLANT": 238,
+        "command_CARE": 389,
+        "command_WATER": 1096,
+        "command_FEED": 336,
+        "command_COLLECT_FERTILIZER": 390,
+        "harvested_FERTILIZER": 377,
+        "command_EAST": 583,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 612,
+        "command_HARVEST": 481,
+        "market_failed_SELL_WHEAT": 5,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 12,
+        "noop_WATER": 20,
+        "harvested_WOOL": 136,
+        "market_failed_SELL_WOOL": 4,
+        "harvested_COW": 0,
+        "command_DIG": 40,
+        "noop_DIG": 5,
+        "harvested_MILK": 298,
+        "harvested_MELON": 72,
+        "command_FERTILIZE": 122,
+        "empty_HARVEST": 26,
+        "harvested_STRAWBERRY": 241,
+        "market_failed_SELL_STRAWBERRY": 7,
+        "noop_FERTILIZE": 3,
+        "market_failed_SELL_MILK": 10,
+        "harvested_CARROT": 94,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114263114,
+      "opponent": "ShunkiKyoya",
+      "opponent_team_rating_at_snapshot": 2584.5,
+      "margin": -11583,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 9494,
+          "rival": 5123,
+          "delta": 4371,
+          "sold_ours": 194,
+          "sold_rival": 106
+        },
+        "EGG": {
+          "ours": 0,
+          "rival": 1698,
+          "delta": -1698,
+          "sold_ours": 0,
+          "sold_rival": 27
+        },
+        "FERTILIZER": {
+          "ours": 12690,
+          "rival": 12360,
+          "delta": 330,
+          "sold_ours": 328,
+          "sold_rival": 3167
+        },
+        "MELON": {
+          "ours": 17440,
+          "rival": 15684,
+          "delta": 1756,
+          "sold_ours": 72,
+          "sold_rival": 102
+        },
+        "MILK": {
+          "ours": 5077,
+          "rival": 3959,
+          "delta": 1118,
+          "sold_ours": 148,
+          "sold_rival": 126
+        },
+        "STRAWBERRY": {
+          "ours": 6433,
+          "rival": 8855,
+          "delta": -2422,
+          "sold_ours": 238,
+          "sold_rival": 232
+        },
+        "TOMATO": {
+          "ours": 0,
+          "rival": 5787,
+          "delta": -5787,
+          "sold_ours": 0,
+          "sold_rival": 86
+        },
+        "WHEAT": {
+          "ours": 5988,
+          "rival": 8425,
+          "delta": -2437,
+          "sold_ours": 311,
+          "sold_rival": 12799
+        },
+        "WOOL": {
+          "ours": 17603,
+          "rival": 25893,
+          "delta": -8290,
+          "sold_ours": 222,
+          "sold_rival": 347
+        }
+      },
+      "capex_and_wage_advantage": 1476.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 730,
+        "command_NORTH": 939,
+        "command_SOUTH": 583,
+        "command_PICKUP": 155,
+        "command_WEST": 894,
+        "command_BUILD_PASTURE": 17,
+        "command_PLACE": 109,
+        "command_PLANT": 239,
+        "command_CARE": 383,
+        "command_WATER": 1097,
+        "command_FEED": 289,
+        "command_COLLECT_FERTILIZER": 391,
+        "harvested_FERTILIZER": 380,
+        "command_EAST": 614,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 455,
+        "command_HARVEST": 471,
+        "market_failed_SELL_WHEAT": 2,
+        "noop_CARE": 2,
+        "command_DROP": 31,
+        "empty_COLLECT_FERTILIZER": 11,
+        "market_failed_SELL_FERTILIZER": 8,
+        "noop_WATER": 8,
+        "harvested_WOOL": 225,
+        "command_DIG": 36,
+        "noop_DIG": 2,
+        "harvested_MILK": 148,
+        "harvested_CARROT": 200,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 2,
+        "market_failed_SELL_MILK": 10,
+        "market_failed_SELL_WOOL": 12,
+        "command_FERTILIZE": 96,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 5,
+        "empty_HARVEST": 13,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114243937,
+      "opponent": "trantrikien239",
+      "opponent_team_rating_at_snapshot": 2502.2,
+      "margin": -8488,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 2420,
+          "rival": 2189,
+          "delta": 231,
+          "sold_ours": 87,
+          "sold_rival": 78
+        },
+        "EGG": {
+          "ours": 9236,
+          "rival": 9348,
+          "delta": -112,
+          "sold_ours": 163,
+          "sold_rival": 165
+        },
+        "FERTILIZER": {
+          "ours": 12518,
+          "rival": 12522,
+          "delta": -4,
+          "sold_ours": 320,
+          "sold_rival": 318
+        },
+        "MELON": {
+          "ours": 14079,
+          "rival": 14425,
+          "delta": -346,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 20761,
+          "rival": 20583,
+          "delta": 178,
+          "sold_ours": 192,
+          "sold_rival": 192
+        },
+        "STRAWBERRY": {
+          "ours": 29714,
+          "rival": 29852,
+          "delta": -138,
+          "sold_ours": 249,
+          "sold_rival": 249
+        },
+        "TOMATO": {
+          "ours": 8101,
+          "rival": 8261,
+          "delta": -160,
+          "sold_ours": 80,
+          "sold_rival": 80
+        },
+        "WHEAT": {
+          "ours": 8594,
+          "rival": 16152,
+          "delta": -7558,
+          "sold_ours": 3665,
+          "sold_rival": 3688
+        },
+        "WOOL": {
+          "ours": 5484,
+          "rival": 5474,
+          "delta": 10,
+          "sold_ours": 99,
+          "sold_rival": 100
+        }
+      },
+      "capex_and_wage_advantage": -589.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 488,
+        "command_NORTH": 922,
+        "command_SOUTH": 516,
+        "command_PICKUP": 211,
+        "command_WEST": 905,
+        "command_BUILD_PASTURE": 12,
+        "command_PLACE": 105,
+        "command_PLANT": 249,
+        "command_CARE": 396,
+        "command_WATER": 1183,
+        "command_FEED": 329,
+        "command_COLLECT_FERTILIZER": 374,
+        "harvested_FERTILIZER": 366,
+        "command_EAST": 650,
+        "market_failed_BUY_PRODUCT_WHEAT": 5,
+        "harvested_WHEAT": 594,
+        "command_HARVEST": 538,
+        "market_failed_SELL_WHEAT": 2,
+        "noop_CARE": 20,
+        "command_DROP": 54,
+        "empty_COLLECT_FERTILIZER": 8,
+        "market_failed_SELL_FERTILIZER": 10,
+        "noop_WATER": 12,
+        "harvested_WOOL": 99,
+        "command_BUILD_COOP": 7,
+        "harvested_COW": 0,
+        "harvested_MILK": 192,
+        "harvested_EGG": 165,
+        "harvested_MELON": 72,
+        "empty_HARVEST": 7,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 125,
+        "harvested_STRAWBERRY": 249,
+        "command_DIG": 37,
+        "market_failed_SELL_STRAWBERRY": 8,
+        "market_failed_SELL_WOOL": 8,
+        "noop_DIG": 2,
+        "market_failed_SELL_MILK": 9,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 87,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114258365,
+      "opponent": "Smackaveli",
+      "opponent_team_rating_at_snapshot": 2800.5,
+      "margin": -20845,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 9867,
+          "rival": 45513,
+          "delta": -35646,
+          "sold_ours": 253,
+          "sold_rival": 996
+        },
+        "EGG": {
+          "ours": 6923,
+          "rival": 8016,
+          "delta": -1093,
+          "sold_ours": 165,
+          "sold_rival": 187
+        },
+        "FERTILIZER": {
+          "ours": 12787,
+          "rival": 12125,
+          "delta": 662,
+          "sold_ours": 328,
+          "sold_rival": 197
+        },
+        "MELON": {
+          "ours": 16037,
+          "rival": 11395,
+          "delta": 4642,
+          "sold_ours": 72,
+          "sold_rival": 60
+        },
+        "MILK": {
+          "ours": 7017,
+          "rival": 3803,
+          "delta": 3214,
+          "sold_ours": 158,
+          "sold_rival": 59
+        },
+        "STRAWBERRY": {
+          "ours": 2935,
+          "rival": 4448,
+          "delta": -1513,
+          "sold_ours": 247,
+          "sold_rival": 55
+        },
+        "TOMATO": {
+          "ours": 0,
+          "rival": 2646,
+          "delta": -2646,
+          "sold_ours": 0,
+          "sold_rival": 47
+        },
+        "WHEAT": {
+          "ours": 1852,
+          "rival": 5560,
+          "delta": -3708,
+          "sold_ours": 254,
+          "sold_rival": 401
+        },
+        "WOOL": {
+          "ours": 15567,
+          "rival": 11290,
+          "delta": 4277,
+          "sold_ours": 134,
+          "sold_rival": 75
+        }
+      },
+      "capex_and_wage_advantage": 10966.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 465,
+        "command_NORTH": 917,
+        "command_SOUTH": 498,
+        "command_PICKUP": 205,
+        "command_WEST": 858,
+        "command_BUILD_PASTURE": 12,
+        "command_PLACE": 95,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1097,
+        "command_FEED": 315,
+        "command_COLLECT_FERTILIZER": 375,
+        "harvested_FERTILIZER": 362,
+        "command_EAST": 573,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 402,
+        "command_HARVEST": 491,
+        "market_failed_SELL_WHEAT": 8,
+        "noop_CARE": 10,
+        "command_DROP": 54,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 12,
+        "harvested_WOOL": 134,
+        "command_BUILD_COOP": 7,
+        "harvested_COW": 0,
+        "harvested_MILK": 158,
+        "harvested_CARROT": 253,
+        "harvested_MELON": 72,
+        "harvested_EGG": 165,
+        "market_failed_SELL_MILK": 14,
+        "harvested_GOOSE": 0,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 97,
+        "noop_FEED": 1,
+        "feed_without_food": 1,
+        "harvested_STRAWBERRY": 247,
+        "market_failed_SELL_STRAWBERRY": 7,
+        "market_failed_SELL_WOOL": 3,
+        "noop_FERTILIZE": 1,
+        "empty_HARVEST": 6,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114236554,
+      "opponent": "Matin Urdu",
+      "opponent_team_rating_at_snapshot": 2538.5,
+      "margin": -4868,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 10949,
+          "rival": 10116,
+          "delta": 833,
+          "sold_ours": 180,
+          "sold_rival": 164
+        },
+        "EGG": {
+          "ours": 7478,
+          "rival": 13300,
+          "delta": -5822,
+          "sold_ours": 165,
+          "sold_rival": 293
+        },
+        "FERTILIZER": {
+          "ours": 12982,
+          "rival": 12089,
+          "delta": 893,
+          "sold_ours": 331,
+          "sold_rival": 330
+        },
+        "MELON": {
+          "ours": 14079,
+          "rival": 14425,
+          "delta": -346,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 7152,
+          "rival": 6342,
+          "delta": 810,
+          "sold_ours": 168,
+          "sold_rival": 123
+        },
+        "STRAWBERRY": {
+          "ours": 45030,
+          "rival": 45725,
+          "delta": -695,
+          "sold_ours": 247,
+          "sold_rival": 249
+        },
+        "WHEAT": {
+          "ours": 7975,
+          "rival": 8781,
+          "delta": -806,
+          "sold_ours": 1684,
+          "sold_rival": 1389
+        },
+        "WOOL": {
+          "ours": 5557,
+          "rival": 5373,
+          "delta": 184,
+          "sold_ours": 99,
+          "sold_rival": 72
+        }
+      },
+      "capex_and_wage_advantage": 81.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 459,
+        "command_NORTH": 924,
+        "command_SOUTH": 497,
+        "command_PICKUP": 207,
+        "command_WEST": 867,
+        "command_BUILD_PASTURE": 12,
+        "command_PLACE": 96,
+        "command_PLANT": 239,
+        "command_CARE": 394,
+        "command_WATER": 1102,
+        "command_FEED": 305,
+        "command_COLLECT_FERTILIZER": 377,
+        "harvested_FERTILIZER": 368,
+        "command_EAST": 584,
+        "market_failed_BUY_PRODUCT_WHEAT": 2,
+        "harvested_WHEAT": 497,
+        "command_HARVEST": 495,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 15,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 9,
+        "market_failed_SELL_FERTILIZER": 10,
+        "noop_WATER": 12,
+        "harvested_WOOL": 99,
+        "command_BUILD_COOP": 7,
+        "harvested_COW": 0,
+        "harvested_MILK": 168,
+        "harvested_MELON": 72,
+        "harvested_EGG": 165,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 110,
+        "harvested_STRAWBERRY": 247,
+        "market_failed_SELL_MILK": 9,
+        "command_DIG": 36,
+        "market_failed_SELL_STRAWBERRY": 5,
+        "market_failed_SELL_WOOL": 3,
+        "noop_DIG": 2,
+        "market_failed_SELL_EGG": 1,
+        "noop_FERTILIZE": 2,
+        "harvested_CARROT": 180,
+        "empty_HARVEST": 5,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114235088,
+      "opponent": "Vlas Veles",
+      "opponent_team_rating_at_snapshot": 2552.3,
+      "margin": -1710,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 6880,
+          "rival": 3852,
+          "delta": 3028,
+          "sold_ours": 149,
+          "sold_rival": 80
+        },
+        "EGG": {
+          "ours": 5163,
+          "rival": 4312,
+          "delta": 851,
+          "sold_ours": 93,
+          "sold_rival": 78
+        },
+        "FERTILIZER": {
+          "ours": 13017,
+          "rival": 11994,
+          "delta": 1023,
+          "sold_ours": 332,
+          "sold_rival": 221
+        },
+        "MELON": {
+          "ours": 16346,
+          "rival": 12345,
+          "delta": 4001,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 11601,
+          "rival": 8654,
+          "delta": 2947,
+          "sold_ours": 165,
+          "sold_rival": 176
+        },
+        "STRAWBERRY": {
+          "ours": 8959,
+          "rival": 15169,
+          "delta": -6210,
+          "sold_ours": 249,
+          "sold_rival": 183
+        },
+        "TOMATO": {
+          "ours": 0,
+          "rival": 6441,
+          "delta": -6441,
+          "sold_ours": 0,
+          "sold_rival": 83
+        },
+        "WHEAT": {
+          "ours": 7833,
+          "rival": 10420,
+          "delta": -2587,
+          "sold_ours": 334,
+          "sold_rival": 475
+        },
+        "WOOL": {
+          "ours": 34517,
+          "rival": 34171,
+          "delta": 346,
+          "sold_ours": 161,
+          "sold_rival": 152
+        }
+      },
+      "capex_and_wage_advantage": 1332.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 453,
+        "command_NORTH": 921,
+        "command_SOUTH": 496,
+        "command_PICKUP": 207,
+        "command_WEST": 869,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 96,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1098,
+        "command_FEED": 321,
+        "command_COLLECT_FERTILIZER": 385,
+        "harvested_FERTILIZER": 372,
+        "command_EAST": 583,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 535,
+        "command_HARVEST": 486,
+        "market_failed_SELL_WHEAT": 6,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 12,
+        "noop_WATER": 12,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 165,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 112,
+        "harvested_EGG": 93,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 11,
+        "market_failed_SELL_MILK": 12,
+        "empty_HARVEST": 7,
+        "noop_FERTILIZE": 1,
+        "harvested_CARROT": 149,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114257296,
+      "opponent": "xi luo",
+      "opponent_team_rating_at_snapshot": 2541.8,
+      "margin": -1168,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 2586,
+          "rival": 2628,
+          "delta": -42,
+          "sold_ours": 97,
+          "sold_rival": 97
+        },
+        "EGG": {
+          "ours": 4948,
+          "rival": 5055,
+          "delta": -107,
+          "sold_ours": 91,
+          "sold_rival": 93
+        },
+        "FERTILIZER": {
+          "ours": 12519,
+          "rival": 12592,
+          "delta": -73,
+          "sold_ours": 332,
+          "sold_rival": 333
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 31047,
+          "rival": 31906,
+          "delta": -859,
+          "sold_ours": 257,
+          "sold_rival": 257
+        },
+        "STRAWBERRY": {
+          "ours": 47827,
+          "rival": 47923,
+          "delta": -96,
+          "sold_ours": 249,
+          "sold_rival": 249
+        },
+        "WHEAT": {
+          "ours": 8872,
+          "rival": 8882,
+          "delta": -10,
+          "sold_ours": 371,
+          "sold_rival": 632
+        },
+        "WOOL": {
+          "ours": 19054,
+          "rival": 19045,
+          "delta": 9,
+          "sold_ours": 120,
+          "sold_rival": 120
+        }
+      },
+      "capex_and_wage_advantage": 10.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 428,
+        "command_NORTH": 921,
+        "command_SOUTH": 497,
+        "command_PICKUP": 207,
+        "command_WEST": 868,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 97,
+        "command_PLANT": 239,
+        "command_CARE": 390,
+        "command_WATER": 1097,
+        "command_FEED": 345,
+        "command_COLLECT_FERTILIZER": 385,
+        "harvested_FERTILIZER": 372,
+        "command_EAST": 583,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 594,
+        "command_HARVEST": 484,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 10,
+        "harvested_WOOL": 120,
+        "market_failed_SELL_WOOL": 3,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 257,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 112,
+        "harvested_EGG": 91,
+        "harvested_STRAWBERRY": 249,
+        "empty_HARVEST": 7,
+        "market_failed_SELL_STRAWBERRY": 6,
+        "market_failed_SELL_MILK": 13,
+        "noop_FERTILIZE": 1,
+        "market_failed_SELL_EGG": 1,
+        "harvested_CARROT": 97,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114227694,
+      "opponent": "ALLAI",
+      "opponent_team_rating_at_snapshot": 2510.8,
+      "margin": -973,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 5451,
+          "rival": 5451,
+          "delta": 0,
+          "sold_ours": 115,
+          "sold_rival": 115
+        },
+        "EGG": {
+          "ours": 5059,
+          "rival": 5053,
+          "delta": 6,
+          "sold_ours": 91,
+          "sold_rival": 91
+        },
+        "FERTILIZER": {
+          "ours": 12043,
+          "rival": 13063,
+          "delta": -1020,
+          "sold_ours": 331,
+          "sold_rival": 1078
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 19044,
+          "rival": 19111,
+          "delta": -67,
+          "sold_ours": 228,
+          "sold_rival": 228
+        },
+        "STRAWBERRY": {
+          "ours": 28654,
+          "rival": 28558,
+          "delta": 96,
+          "sold_ours": 249,
+          "sold_rival": 249
+        },
+        "WHEAT": {
+          "ours": 10818,
+          "rival": 10880,
+          "delta": -62,
+          "sold_ours": 382,
+          "sold_rival": 634
+        },
+        "WOOL": {
+          "ours": 9411,
+          "rival": 9337,
+          "delta": 74,
+          "sold_ours": 124,
+          "sold_rival": 124
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 465,
+        "command_NORTH": 919,
+        "command_SOUTH": 498,
+        "command_PICKUP": 208,
+        "command_WEST": 873,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 95,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1097,
+        "command_FEED": 325,
+        "command_COLLECT_FERTILIZER": 382,
+        "harvested_FERTILIZER": 369,
+        "command_EAST": 586,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 585,
+        "command_HARVEST": 483,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 10,
+        "command_DROP": 54,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 9,
+        "noop_WATER": 10,
+        "harvested_WOOL": 124,
+        "market_failed_SELL_WOOL": 3,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 228,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 118,
+        "harvested_EGG": 91,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 9,
+        "market_failed_SELL_MILK": 8,
+        "empty_HARVEST": 6,
+        "noop_FERTILIZE": 1,
+        "market_failed_SELL_EGG": 1,
+        "harvested_CARROT": 115,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114230636,
+      "opponent": "Batuhan Ustun",
+      "opponent_team_rating_at_snapshot": 2511.7,
+      "margin": -970,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 6010,
+          "rival": 6014,
+          "delta": -4,
+          "sold_ours": 130,
+          "sold_rival": 130
+        },
+        "EGG": {
+          "ours": 4889,
+          "rival": 5003,
+          "delta": -114,
+          "sold_ours": 91,
+          "sold_rival": 93
+        },
+        "FERTILIZER": {
+          "ours": 12490,
+          "rival": 12613,
+          "delta": -123,
+          "sold_ours": 334,
+          "sold_rival": 344
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 15822,
+          "delta": -1555,
+          "sold_ours": 72,
+          "sold_rival": 90
+        },
+        "MILK": {
+          "ours": 12003,
+          "rival": 11380,
+          "delta": 623,
+          "sold_ours": 192,
+          "sold_rival": 192
+        },
+        "STRAWBERRY": {
+          "ours": 17688,
+          "rival": 17595,
+          "delta": 93,
+          "sold_ours": 249,
+          "sold_rival": 229
+        },
+        "WHEAT": {
+          "ours": 9149,
+          "rival": 9331,
+          "delta": -182,
+          "sold_ours": 359,
+          "sold_rival": 361
+        },
+        "WOOL": {
+          "ours": 30451,
+          "rival": 30129,
+          "delta": 322,
+          "sold_ours": 161,
+          "sold_rival": 161
+        }
+      },
+      "capex_and_wage_advantage": -30.0,
+      "same_counts_day15": false,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 450,
+        "command_NORTH": 922,
+        "command_SOUTH": 503,
+        "command_PICKUP": 208,
+        "command_WEST": 872,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 97,
+        "command_PLANT": 239,
+        "command_CARE": 390,
+        "command_WATER": 1100,
+        "command_FEED": 323,
+        "command_COLLECT_FERTILIZER": 385,
+        "harvested_FERTILIZER": 372,
+        "command_EAST": 583,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 563,
+        "command_HARVEST": 485,
+        "market_failed_SELL_WHEAT": 5,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 12,
+        "harvested_WOOL": 161,
+        "harvested_COW": 0,
+        "harvested_MILK": 192,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 119,
+        "harvested_EGG": 91,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 9,
+        "market_failed_SELL_MILK": 14,
+        "empty_HARVEST": 7,
+        "noop_FERTILIZE": 1,
+        "market_failed_SELL_WOOL": 1,
+        "market_failed_SELL_EGG": 1,
+        "harvested_CARROT": 130,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114246885,
+      "opponent": "in blue",
+      "opponent_team_rating_at_snapshot": 2528.2,
+      "margin": -772,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 6243,
+          "rival": 7776,
+          "delta": -1533,
+          "sold_ours": 139,
+          "sold_rival": 165
+        },
+        "EGG": {
+          "ours": 9042,
+          "rival": 9145,
+          "delta": -103,
+          "sold_ours": 165,
+          "sold_rival": 167
+        },
+        "FERTILIZER": {
+          "ours": 12675,
+          "rival": 12422,
+          "delta": 253,
+          "sold_ours": 325,
+          "sold_rival": 325
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 10728,
+          "rival": 10478,
+          "delta": 250,
+          "sold_ours": 173,
+          "sold_rival": 173
+        },
+        "STRAWBERRY": {
+          "ours": 15238,
+          "rival": 15752,
+          "delta": -514,
+          "sold_ours": 247,
+          "sold_rival": 251
+        },
+        "WHEAT": {
+          "ours": 9380,
+          "rival": 8498,
+          "delta": 882,
+          "sold_ours": 353,
+          "sold_rival": 337
+        },
+        "WOOL": {
+          "ours": 5473,
+          "rival": 5490,
+          "delta": -17,
+          "sold_ours": 99,
+          "sold_rival": 99
+        }
+      },
+      "capex_and_wage_advantage": 10.0,
+      "same_counts_day15": true,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 477,
+        "command_NORTH": 918,
+        "command_SOUTH": 493,
+        "command_PICKUP": 207,
+        "command_WEST": 869,
+        "command_BUILD_PASTURE": 12,
+        "command_PLACE": 96,
+        "command_PLANT": 238,
+        "command_CARE": 389,
+        "command_WATER": 1097,
+        "command_FEED": 310,
+        "command_COLLECT_FERTILIZER": 375,
+        "harvested_FERTILIZER": 362,
+        "command_EAST": 585,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 541,
+        "command_HARVEST": 491,
+        "market_failed_SELL_WHEAT": 5,
+        "noop_CARE": 10,
+        "command_DROP": 54,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 13,
+        "noop_WATER": 15,
+        "harvested_WOOL": 99,
+        "command_BUILD_COOP": 7,
+        "harvested_COW": 0,
+        "harvested_MILK": 173,
+        "harvested_MELON": 72,
+        "harvested_EGG": 165,
+        "harvested_GOOSE": 0,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 112,
+        "harvested_STRAWBERRY": 247,
+        "market_failed_SELL_STRAWBERRY": 10,
+        "market_failed_SELL_WOOL": 3,
+        "market_failed_SELL_MILK": 12,
+        "noop_FERTILIZE": 2,
+        "harvested_CARROT": 139,
+        "empty_HARVEST": 6,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114255708,
+      "opponent": "Ezzzzzekki",
+      "opponent_team_rating_at_snapshot": 2461.1,
+      "margin": -889,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 4167,
+          "rival": 4768,
+          "delta": -601,
+          "sold_ours": 97,
+          "sold_rival": 113
+        },
+        "EGG": {
+          "ours": 4845,
+          "rival": 4848,
+          "delta": -3,
+          "sold_ours": 90,
+          "sold_rival": 90
+        },
+        "FERTILIZER": {
+          "ours": 12461,
+          "rival": 12651,
+          "delta": -190,
+          "sold_ours": 333,
+          "sold_rival": 656
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 20927,
+          "rival": 21383,
+          "delta": -456,
+          "sold_ours": 234,
+          "sold_rival": 234
+        },
+        "STRAWBERRY": {
+          "ours": 42113,
+          "rival": 42412,
+          "delta": -299,
+          "sold_ours": 246,
+          "sold_rival": 246
+        },
+        "WHEAT": {
+          "ours": 11858,
+          "rival": 11351,
+          "delta": 507,
+          "sold_ours": 410,
+          "sold_rival": 644
+        },
+        "WOOL": {
+          "ours": 5495,
+          "rival": 5472,
+          "delta": 23,
+          "sold_ours": 99,
+          "sold_rival": 99
+        }
+      },
+      "capex_and_wage_advantage": 130.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 461,
+        "command_NORTH": 925,
+        "command_SOUTH": 498,
+        "command_PICKUP": 208,
+        "command_WEST": 871,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 96,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1097,
+        "command_FEED": 318,
+        "command_COLLECT_FERTILIZER": 385,
+        "harvested_FERTILIZER": 372,
+        "command_EAST": 585,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 606,
+        "command_HARVEST": 485,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 10,
+        "harvested_WOOL": 99,
+        "market_failed_SELL_WOOL": 5,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 234,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 118,
+        "harvested_EGG": 93,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 9,
+        "market_failed_SELL_MILK": 10,
+        "empty_HARVEST": 6,
+        "noop_FERTILIZE": 1,
+        "market_failed_SELL_EGG": 1,
+        "harvested_CARROT": 97,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114242467,
+      "opponent": "Morylov Yehor",
+      "opponent_team_rating_at_snapshot": 2486.7,
+      "margin": -558,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 9010,
+          "rival": 10102,
+          "delta": -1092,
+          "sold_ours": 170,
+          "sold_rival": 189
+        },
+        "EGG": {
+          "ours": 4068,
+          "rival": 3864,
+          "delta": 204,
+          "sold_ours": 93,
+          "sold_rival": 88
+        },
+        "FERTILIZER": {
+          "ours": 12560,
+          "rival": 12541,
+          "delta": 19,
+          "sold_ours": 334,
+          "sold_rival": 338
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 21263,
+          "rival": 21106,
+          "delta": 157,
+          "sold_ours": 234,
+          "sold_rival": 234
+        },
+        "STRAWBERRY": {
+          "ours": 28367,
+          "rival": 28788,
+          "delta": -421,
+          "sold_ours": 249,
+          "sold_rival": 251
+        },
+        "WHEAT": {
+          "ours": 6666,
+          "rival": 6195,
+          "delta": 471,
+          "sold_ours": 284,
+          "sold_rival": 274
+        },
+        "WOOL": {
+          "ours": 16250,
+          "rival": 16340,
+          "delta": -90,
+          "sold_ours": 158,
+          "sold_rival": 158
+        }
+      },
+      "capex_and_wage_advantage": 194.0,
+      "same_counts_day15": true,
+      "same_counts_day27": false,
+      "own_physical": {
+        "command_PASS": 421,
+        "command_NORTH": 923,
+        "command_SOUTH": 499,
+        "command_PICKUP": 207,
+        "command_WEST": 865,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 97,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1099,
+        "command_FEED": 350,
+        "command_COLLECT_FERTILIZER": 385,
+        "harvested_FERTILIZER": 372,
+        "command_EAST": 582,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 512,
+        "command_HARVEST": 486,
+        "market_failed_SELL_WHEAT": 7,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 11,
+        "harvested_WOOL": 158,
+        "market_failed_SELL_WOOL": 1,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 234,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 112,
+        "harvested_EGG": 93,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 8,
+        "market_failed_SELL_MILK": 9,
+        "market_failed_SELL_EGG": 1,
+        "empty_HARVEST": 7,
+        "noop_FERTILIZE": 1,
+        "harvested_CARROT": 170,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114249820,
+      "opponent": "Yunioshi",
+      "opponent_team_rating_at_snapshot": 2438.4,
+      "margin": 24,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 4184,
+          "rival": 4184,
+          "delta": 0,
+          "sold_ours": 97,
+          "sold_rival": 97
+        },
+        "EGG": {
+          "ours": 5076,
+          "rival": 5076,
+          "delta": 0,
+          "sold_ours": 89,
+          "sold_rival": 89
+        },
+        "FERTILIZER": {
+          "ours": 12563,
+          "rival": 12564,
+          "delta": -1,
+          "sold_ours": 334,
+          "sold_rival": 334
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 22127,
+          "rival": 22093,
+          "delta": 34,
+          "sold_ours": 246,
+          "sold_rival": 246
+        },
+        "STRAWBERRY": {
+          "ours": 42172,
+          "rival": 42184,
+          "delta": -12,
+          "sold_ours": 247,
+          "sold_rival": 247
+        },
+        "WHEAT": {
+          "ours": 12529,
+          "rival": 12526,
+          "delta": 3,
+          "sold_ours": 427,
+          "sold_rival": 427
+        },
+        "WOOL": {
+          "ours": 5470,
+          "rival": 5470,
+          "delta": 0,
+          "sold_ours": 87,
+          "sold_rival": 87
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 462,
+        "command_NORTH": 927,
+        "command_SOUTH": 503,
+        "command_PICKUP": 209,
+        "command_WEST": 878,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 97,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1098,
+        "command_FEED": 313,
+        "command_COLLECT_FERTILIZER": 386,
+        "harvested_FERTILIZER": 373,
+        "command_EAST": 586,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 618,
+        "command_HARVEST": 484,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 10,
+        "noop_WATER": 10,
+        "harvested_WOOL": 87,
+        "market_failed_SELL_WOOL": 6,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 246,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 124,
+        "harvested_EGG": 91,
+        "harvested_STRAWBERRY": 249,
+        "empty_HARVEST": 7,
+        "market_failed_SELL_STRAWBERRY": 9,
+        "market_failed_SELL_MILK": 10,
+        "noop_FERTILIZE": 1,
+        "market_failed_SELL_EGG": 1,
+        "harvested_CARROT": 97,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114260075,
+      "opponent": "@Suzumaru_1666",
+      "opponent_team_rating_at_snapshot": 2409.8,
+      "margin": 48,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 3977,
+          "rival": 3977,
+          "delta": 0,
+          "sold_ours": 113,
+          "sold_rival": 113
+        },
+        "FERTILIZER": {
+          "ours": 12586,
+          "rival": 12570,
+          "delta": 16,
+          "sold_ours": 341,
+          "sold_rival": 341
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 14128,
+          "rival": 14075,
+          "delta": 53,
+          "sold_ours": 183,
+          "sold_rival": 183
+        },
+        "STRAWBERRY": {
+          "ours": 50744,
+          "rival": 50765,
+          "delta": -21,
+          "sold_ours": 249,
+          "sold_rival": 249
+        },
+        "WHEAT": {
+          "ours": 9258,
+          "rival": 9258,
+          "delta": 0,
+          "sold_ours": 387,
+          "sold_rival": 387
+        },
+        "WOOL": {
+          "ours": 20660,
+          "rival": 20660,
+          "delta": 0,
+          "sold_ours": 202,
+          "sold_rival": 202
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 464,
+        "command_NORTH": 921,
+        "command_SOUTH": 497,
+        "command_PICKUP": 207,
+        "command_WEST": 868,
+        "command_BUILD_PASTURE": 19,
+        "command_PLACE": 96,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1097,
+        "command_FEED": 311,
+        "command_COLLECT_FERTILIZER": 393,
+        "harvested_FERTILIZER": 380,
+        "command_EAST": 583,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 576,
+        "command_HARVEST": 478,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 12,
+        "noop_WATER": 10,
+        "harvested_WOOL": 204,
+        "market_failed_SELL_WOOL": 4,
+        "harvested_COW": 0,
+        "command_DIG": 38,
+        "noop_DIG": 4,
+        "harvested_MILK": 183,
+        "harvested_MELON": 72,
+        "harvested_SHEEP": 0,
+        "command_FERTILIZE": 111,
+        "empty_HARVEST": 17,
+        "market_failed_SELL_MILK": 10,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 8,
+        "noop_FERTILIZE": 1,
+        "harvested_CARROT": 113,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114238020,
+      "opponent": "Odyssey",
+      "opponent_team_rating_at_snapshot": 2415.9,
+      "margin": 61,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 4319,
+          "rival": 4294,
+          "delta": 25,
+          "sold_ours": 95,
+          "sold_rival": 95
+        },
+        "FERTILIZER": {
+          "ours": 12509,
+          "rival": 12505,
+          "delta": 4,
+          "sold_ours": 328,
+          "sold_rival": 328
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 66941,
+          "rival": 66910,
+          "delta": 31,
+          "sold_ours": 323,
+          "sold_rival": 323
+        },
+        "STRAWBERRY": {
+          "ours": 3558,
+          "rival": 3560,
+          "delta": -2,
+          "sold_ours": 251,
+          "sold_rival": 251
+        },
+        "TOMATO": {
+          "ours": 33550,
+          "rival": 33550,
+          "delta": 0,
+          "sold_ours": 80,
+          "sold_rival": 80
+        },
+        "WHEAT": {
+          "ours": 10575,
+          "rival": 10572,
+          "delta": 3,
+          "sold_ours": 366,
+          "sold_rival": 366
+        },
+        "WOOL": {
+          "ours": 14037,
+          "rival": 14037,
+          "delta": 0,
+          "sold_ours": 130,
+          "sold_rival": 130
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 502,
+        "command_NORTH": 917,
+        "command_SOUTH": 514,
+        "command_PICKUP": 212,
+        "command_WEST": 909,
+        "command_BUILD_PASTURE": 19,
+        "command_PLACE": 106,
+        "command_PLANT": 249,
+        "command_CARE": 392,
+        "command_WATER": 1179,
+        "command_FEED": 358,
+        "command_COLLECT_FERTILIZER": 382,
+        "harvested_FERTILIZER": 369,
+        "command_EAST": 657,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 602,
+        "command_HARVEST": 523,
+        "market_failed_SELL_WHEAT": 4,
+        "noop_CARE": 11,
+        "command_DROP": 53,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 9,
+        "noop_WATER": 11,
+        "harvested_WOOL": 130,
+        "harvested_COW": 0,
+        "harvested_MILK": 323,
+        "harvested_MELON": 72,
+        "empty_HARVEST": 24,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 134,
+        "harvested_STRAWBERRY": 251,
+        "market_failed_SELL_STRAWBERRY": 13,
+        "market_failed_SELL_WOOL": 5,
+        "market_failed_SELL_MILK": 3,
+        "harvested_TOMATO": 80,
+        "harvested_CARROT": 95,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114252770,
+      "opponent": "Tamasaki217",
+      "opponent_team_rating_at_snapshot": 2394.4,
+      "margin": 95,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 3476,
+          "rival": 3476,
+          "delta": 0,
+          "sold_ours": 83,
+          "sold_rival": 83
+        },
+        "FERTILIZER": {
+          "ours": 12653,
+          "rival": 12653,
+          "delta": 0,
+          "sold_ours": 387,
+          "sold_rival": 387
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 12984,
+          "rival": 12984,
+          "delta": 0,
+          "sold_ours": 169,
+          "sold_rival": 169
+        },
+        "STRAWBERRY": {
+          "ours": 15360,
+          "rival": 15370,
+          "delta": -10,
+          "sold_ours": 246,
+          "sold_rival": 246
+        },
+        "WHEAT": {
+          "ours": 6091,
+          "rival": 6091,
+          "delta": 0,
+          "sold_ours": 388,
+          "sold_rival": 388
+        },
+        "WOOL": {
+          "ours": 58255,
+          "rival": 58150,
+          "delta": 105,
+          "sold_ours": 397,
+          "sold_rival": 397
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 735,
+        "command_NORTH": 957,
+        "command_SOUTH": 611,
+        "command_PICKUP": 181,
+        "command_WEST": 917,
+        "command_BUILD_PASTURE": 23,
+        "command_PLACE": 137,
+        "command_PLANT": 239,
+        "command_CARE": 486,
+        "command_WATER": 1096,
+        "command_FEED": 449,
+        "command_COLLECT_FERTILIZER": 454,
+        "harvested_FERTILIZER": 443,
+        "command_EAST": 676,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 584,
+        "command_HARVEST": 497,
+        "market_failed_SELL_WHEAT": 2,
+        "noop_CARE": 2,
+        "command_DROP": 29,
+        "empty_COLLECT_FERTILIZER": 11,
+        "market_failed_SELL_FERTILIZER": 3,
+        "noop_WATER": 1,
+        "harvested_WOOL": 401,
+        "command_DIG": 36,
+        "noop_DIG": 2,
+        "harvested_MILK": 169,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 2,
+        "market_failed_SELL_WOOL": 7,
+        "command_FERTILIZE": 96,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_MILK": 8,
+        "market_failed_SELL_STRAWBERRY": 3,
+        "harvested_CARROT": 83,
+        "empty_HARVEST": 9,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114233609,
+      "opponent": "Ryo Takaki",
+      "opponent_team_rating_at_snapshot": 2399.9,
+      "margin": -171,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 2295,
+          "rival": 2322,
+          "delta": -27,
+          "sold_ours": 82,
+          "sold_rival": 83
+        },
+        "FERTILIZER": {
+          "ours": 12406,
+          "rival": 12731,
+          "delta": -325,
+          "sold_ours": 328,
+          "sold_rival": 324
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 11898,
+          "rival": 11344,
+          "delta": 554,
+          "sold_ours": 176,
+          "sold_rival": 176
+        },
+        "STRAWBERRY": {
+          "ours": 22429,
+          "rival": 22268,
+          "delta": 161,
+          "sold_ours": 244,
+          "sold_rival": 244
+        },
+        "WHEAT": {
+          "ours": 9736,
+          "rival": 10265,
+          "delta": -529,
+          "sold_ours": 397,
+          "sold_rival": 405
+        },
+        "WOOL": {
+          "ours": 29860,
+          "rival": 29865,
+          "delta": -5,
+          "sold_ours": 247,
+          "sold_rival": 247
+        }
+      },
+      "capex_and_wage_advantage": 0.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 694,
+        "command_NORTH": 942,
+        "command_SOUTH": 581,
+        "command_PICKUP": 156,
+        "command_WEST": 901,
+        "command_BUILD_PASTURE": 17,
+        "command_PLACE": 111,
+        "command_PLANT": 239,
+        "command_CARE": 382,
+        "command_WATER": 1096,
+        "command_FEED": 334,
+        "command_COLLECT_FERTILIZER": 392,
+        "harvested_FERTILIZER": 381,
+        "command_EAST": 616,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 596,
+        "command_HARVEST": 464,
+        "market_failed_SELL_WHEAT": 1,
+        "noop_CARE": 2,
+        "command_DROP": 32,
+        "empty_COLLECT_FERTILIZER": 11,
+        "market_failed_SELL_FERTILIZER": 6,
+        "noop_WATER": 1,
+        "harvested_WOOL": 248,
+        "command_DIG": 36,
+        "noop_DIG": 2,
+        "harvested_MILK": 176,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 2,
+        "market_failed_SELL_MILK": 12,
+        "market_failed_SELL_WOOL": 8,
+        "command_FERTILIZE": 101,
+        "harvested_STRAWBERRY": 249,
+        "market_failed_SELL_STRAWBERRY": 2,
+        "harvested_CARROT": 82,
+        "empty_HARVEST": 6,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114239575,
+      "opponent": "dodoshark",
+      "opponent_team_rating_at_snapshot": 2446.9,
+      "margin": -113,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 13753,
+          "rival": 13555,
+          "delta": 198,
+          "sold_ours": 207,
+          "sold_rival": 204
+        },
+        "EGG": {
+          "ours": 9209,
+          "rival": 9187,
+          "delta": 22,
+          "sold_ours": 167,
+          "sold_rival": 167
+        },
+        "FERTILIZER": {
+          "ours": 12460,
+          "rival": 12663,
+          "delta": -203,
+          "sold_ours": 329,
+          "sold_rival": 489
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 4295,
+          "rival": 4293,
+          "delta": 2,
+          "sold_ours": 147,
+          "sold_rival": 147
+        },
+        "STRAWBERRY": {
+          "ours": 3587,
+          "rival": 3601,
+          "delta": -14,
+          "sold_ours": 247,
+          "sold_rival": 247
+        },
+        "WHEAT": {
+          "ours": 7857,
+          "rival": 7977,
+          "delta": -120,
+          "sold_ours": 316,
+          "sold_rival": 352
+        },
+        "WOOL": {
+          "ours": 5492,
+          "rival": 5480,
+          "delta": 12,
+          "sold_ours": 99,
+          "sold_rival": 99
+        }
+      },
+      "capex_and_wage_advantage": -10.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 489,
+        "command_NORTH": 923,
+        "command_SOUTH": 501,
+        "command_PICKUP": 208,
+        "command_WEST": 870,
+        "command_BUILD_PASTURE": 12,
+        "command_PLACE": 96,
+        "command_PLANT": 239,
+        "command_CARE": 390,
+        "command_WATER": 1100,
+        "command_FEED": 284,
+        "command_COLLECT_FERTILIZER": 378,
+        "harvested_FERTILIZER": 364,
+        "command_EAST": 586,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 479,
+        "command_HARVEST": 494,
+        "market_failed_SELL_WHEAT": 6,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 14,
+        "market_failed_SELL_FERTILIZER": 11,
+        "noop_WATER": 13,
+        "harvested_WOOL": 99,
+        "command_BUILD_COOP": 7,
+        "harvested_COW": 0,
+        "harvested_MILK": 147,
+        "harvested_MELON": 72,
+        "harvested_EGG": 167,
+        "harvested_GOOSE": 0,
+        "command_DIG": 37,
+        "noop_DIG": 3,
+        "command_FERTILIZE": 118,
+        "harvested_STRAWBERRY": 247,
+        "market_failed_SELL_MILK": 17,
+        "market_failed_SELL_STRAWBERRY": 11,
+        "market_failed_SELL_WOOL": 2,
+        "harvested_CARROT": 207,
+        "noop_FERTILIZE": 2,
+        "empty_HARVEST": 6,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114242808,
+      "opponent": "Nagahama",
+      "opponent_team_rating_at_snapshot": 2403.2,
+      "margin": -267,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 9751,
+          "rival": 9738,
+          "delta": 13,
+          "sold_ours": 189,
+          "sold_rival": 189
+        },
+        "FERTILIZER": {
+          "ours": 12568,
+          "rival": 12606,
+          "delta": -38,
+          "sold_ours": 332,
+          "sold_rival": 332
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 10546,
+          "rival": 10717,
+          "delta": -171,
+          "sold_ours": 167,
+          "sold_rival": 167
+        },
+        "STRAWBERRY": {
+          "ours": 16955,
+          "rival": 16820,
+          "delta": 135,
+          "sold_ours": 249,
+          "sold_rival": 249
+        },
+        "WHEAT": {
+          "ours": 5307,
+          "rival": 5430,
+          "delta": -123,
+          "sold_ours": 273,
+          "sold_rival": 276
+        },
+        "WOOL": {
+          "ours": 30547,
+          "rival": 30640,
+          "delta": -93,
+          "sold_ours": 272,
+          "sold_rival": 272
+        }
+      },
+      "capex_and_wage_advantage": 10.0,
+      "same_counts_day15": false,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 670,
+        "command_NORTH": 942,
+        "command_SOUTH": 581,
+        "command_PICKUP": 156,
+        "command_WEST": 904,
+        "command_BUILD_PASTURE": 17,
+        "command_PLACE": 110,
+        "command_PLANT": 238,
+        "command_CARE": 382,
+        "command_WATER": 1094,
+        "command_FEED": 342,
+        "command_COLLECT_FERTILIZER": 392,
+        "harvested_FERTILIZER": 381,
+        "command_EAST": 620,
+        "market_failed_BUY_PRODUCT_WHEAT": 2,
+        "harvested_WHEAT": 462,
+        "command_HARVEST": 475,
+        "market_failed_SELL_WHEAT": 2,
+        "noop_CARE": 2,
+        "command_DROP": 32,
+        "empty_COLLECT_FERTILIZER": 11,
+        "market_failed_SELL_FERTILIZER": 7,
+        "noop_WATER": 15,
+        "harvested_WOOL": 275,
+        "command_DIG": 38,
+        "noop_DIG": 2,
+        "harvested_MILK": 167,
+        "harvested_CARROT": 192,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 2,
+        "market_failed_SELL_MILK": 10,
+        "market_failed_SELL_WOOL": 8,
+        "command_FERTILIZE": 102,
+        "harvested_STRAWBERRY": 249,
+        "empty_HARVEST": 19,
+        "market_failed_SELL_STRAWBERRY": 4,
+        "market_failed_SELL_CARROT": 2
+      }
+    },
+    {
+      "episode": 114248358,
+      "opponent": "Utkarsh #2",
+      "opponent_team_rating_at_snapshot": 2506.8,
+      "margin": -170,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 3959,
+          "rival": 4429,
+          "delta": -470,
+          "sold_ours": 95,
+          "sold_rival": 108
+        },
+        "EGG": {
+          "ours": 4096,
+          "rival": 3987,
+          "delta": 109,
+          "sold_ours": 90,
+          "sold_rival": 87
+        },
+        "FERTILIZER": {
+          "ours": 13346,
+          "rival": 11643,
+          "delta": 1703,
+          "sold_ours": 332,
+          "sold_rival": 330
+        },
+        "MELON": {
+          "ours": 14267,
+          "rival": 14267,
+          "delta": 0,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 24750,
+          "rival": 24837,
+          "delta": -87,
+          "sold_ours": 243,
+          "sold_rival": 243
+        },
+        "STRAWBERRY": {
+          "ours": 20676,
+          "rival": 20249,
+          "delta": 427,
+          "sold_ours": 247,
+          "sold_rival": 247
+        },
+        "WHEAT": {
+          "ours": 9868,
+          "rival": 12718,
+          "delta": -2850,
+          "sold_ours": 371,
+          "sold_rival": 440
+        },
+        "WOOL": {
+          "ours": 27963,
+          "rival": 27923,
+          "delta": 40,
+          "sold_ours": 139,
+          "sold_rival": 139
+        }
+      },
+      "capex_and_wage_advantage": 958.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 427,
+        "command_NORTH": 915,
+        "command_SOUTH": 490,
+        "command_PICKUP": 206,
+        "command_WEST": 864,
+        "command_BUILD_PASTURE": 14,
+        "command_PLACE": 98,
+        "command_PLANT": 239,
+        "command_CARE": 390,
+        "command_WATER": 1096,
+        "command_FEED": 341,
+        "command_COLLECT_FERTILIZER": 383,
+        "harvested_FERTILIZER": 370,
+        "command_EAST": 584,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 590,
+        "command_HARVEST": 486,
+        "market_failed_SELL_WHEAT": 5,
+        "noop_CARE": 10,
+        "command_DROP": 54,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 12,
+        "noop_WATER": 10,
+        "harvested_WOOL": 139,
+        "market_failed_SELL_WOOL": 2,
+        "harvested_COW": 0,
+        "command_DIG": 39,
+        "noop_DIG": 4,
+        "harvested_MILK": 243,
+        "harvested_MELON": 72,
+        "command_BUILD_COOP": 5,
+        "harvested_GOOSE": 0,
+        "command_FERTILIZE": 109,
+        "harvested_EGG": 93,
+        "harvested_STRAWBERRY": 247,
+        "empty_HARVEST": 9,
+        "market_failed_SELL_STRAWBERRY": 7,
+        "market_failed_SELL_MILK": 11,
+        "noop_FERTILIZE": 2,
+        "market_failed_SELL_EGG": 3,
+        "harvested_CARROT": 95,
+        "market_failed_SELL_CARROT": 1
+      }
+    },
+    {
+      "episode": 114258667,
+      "opponent": "Vaibhav Gupta",
+      "opponent_team_rating_at_snapshot": 2445.6,
+      "margin": -455,
+      "net_by_item": {
+        "CARROT": {
+          "ours": 6931,
+          "rival": 6936,
+          "delta": -5,
+          "sold_ours": 128,
+          "sold_rival": 128
+        },
+        "FERTILIZER": {
+          "ours": 12225,
+          "rival": 12851,
+          "delta": -626,
+          "sold_ours": 339,
+          "sold_rival": 1065
+        },
+        "MELON": {
+          "ours": 14079,
+          "rival": 14425,
+          "delta": -346,
+          "sold_ours": 72,
+          "sold_rival": 72
+        },
+        "MILK": {
+          "ours": 13137,
+          "rival": 12973,
+          "delta": 164,
+          "sold_ours": 203,
+          "sold_rival": 203
+        },
+        "STRAWBERRY": {
+          "ours": 52711,
+          "rival": 52220,
+          "delta": 491,
+          "sold_ours": 251,
+          "sold_rival": 251
+        },
+        "WHEAT": {
+          "ours": 11235,
+          "rival": 11645,
+          "delta": -410,
+          "sold_ours": 395,
+          "sold_rival": 2836
+        },
+        "WOOL": {
+          "ours": 20720,
+          "rival": 20617,
+          "delta": 103,
+          "sold_ours": 201,
+          "sold_rival": 201
+        }
+      },
+      "capex_and_wage_advantage": 174.0,
+      "same_counts_day15": true,
+      "same_counts_day27": true,
+      "own_physical": {
+        "command_PASS": 469,
+        "command_NORTH": 923,
+        "command_SOUTH": 505,
+        "command_PICKUP": 209,
+        "command_WEST": 879,
+        "command_BUILD_PASTURE": 19,
+        "command_PLACE": 97,
+        "command_PLANT": 239,
+        "command_CARE": 389,
+        "command_WATER": 1098,
+        "command_FEED": 304,
+        "command_COLLECT_FERTILIZER": 393,
+        "harvested_FERTILIZER": 380,
+        "command_EAST": 586,
+        "market_failed_BUY_PRODUCT_WHEAT": 1,
+        "harvested_WHEAT": 579,
+        "command_HARVEST": 479,
+        "market_failed_SELL_WHEAT": 5,
+        "noop_CARE": 10,
+        "command_DROP": 56,
+        "empty_COLLECT_FERTILIZER": 13,
+        "market_failed_SELL_FERTILIZER": 9,
+        "noop_WATER": 11,
+        "harvested_WOOL": 202,
+        "market_failed_SELL_WOOL": 2,
+        "harvested_COW": 0,
+        "command_DIG": 39,
+        "noop_DIG": 4,
+        "harvested_MILK": 203,
+        "harvested_MELON": 72,
+        "harvested_SHEEP": 0,
+        "command_FERTILIZE": 125,
+        "empty_HARVEST": 18,
+        "market_failed_SELL_MILK": 10,
+        "harvested_STRAWBERRY": 251,
+        "market_failed_SELL_STRAWBERRY": 6,
+        "harvested_CARROT": 128,
+        "market_failed_SELL_CARROT": 1
+      }
+    }
+  ]
+}

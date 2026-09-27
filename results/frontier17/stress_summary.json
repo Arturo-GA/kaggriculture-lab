@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scores": {
+    "f17_selected": 4.0,
+    "f16_repaired": 0.0
+  },
+  "error_or_runtime_games": 0,
+  "games": 16,
+  "independent_seeds": 4,
+  "limitations": "Original synthetic stress rival, not a known top100 submission."
+}

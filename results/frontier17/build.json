@@ -1,0 +1,26 @@
+{
+  "parent": "f16_repaired",
+  "parent_sha256": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+  "variants": {
+    "f17_cancel": {
+      "sha256": "708ecfb02a46f611e3f893b05a693ffd546a3ca30a62b56beda9d02f26b81c92",
+      "mode": "cancel"
+    },
+    "f17_close": {
+      "sha256": "eb1b7fb94af4e989c617c95bfd928821cf85f56145b2d8f880035ddad8506098",
+      "mode": "close"
+    },
+    "f17_cycle": {
+      "sha256": "767f815a8dd1a07df9af119aaaa6ec11d331e6aec42ff926ce885b1eeaa30593",
+      "mode": "cycle"
+    },
+    "f17_robust": {
+      "sha256": "1486568e15fdaf8caddda3aedaaea951c472d772e494a40cebf15373e634c011",
+      "mode": "robust"
+    },
+    "f17_combined": {
+      "sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+      "mode": "cancel+cycle"
+    }
+  }
+}

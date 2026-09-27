@@ -1,10 +1,17 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+> **Última actualización: Frontier17 preparado (27/09).** Leer primero
+> [RESUME_FRONTIER17.es.md](RESUME_FRONTIER17.es.md). Se analizaron 22 derrotas de F16;
+> el nuevo candidato ganó 128/128 en la validación principal y pasó la prueba adicional.
+> No se creó una submission F17 ni se subió su notebook: paquete y notebook privado están preparados localmente.
+> El objetivo solicitado es mejorar hacia el top 100. Persisten derrotas contra economías privadas distintas
+> y una duda sin aclarar en el foro sobre actualizaciones públicas posteriores al cierre de publicación.
+
 > **Actualización posterior: Frontier16 (27 de septiembre).** Leer primero
 > [RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). El nuevo candidato local es
 > `f16_repaired`, SHA `0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd`.
-> F16 (`56609913`) y F15 (`56592376`) son los envíos más recientes. F16 está
-> pendiente de evaluación inicial; al activarse retira F14B.
+> F16 (`56609913`) y F15 (`56592376`) son los envíos activos. F16 está COMPLETE;
+> F14B está retirada. Al 27/09, 17:33 UTC: F16 2449,8, puesto 273, 45V/22D.
 > Arturo autorizó explícitamente la subida privada y la submission el 27/09.
 > Kaggle completó 32 partidas de verificación (F16 14/16, delta +9, sin errores)
 > y se verificó el hash del paquete. El bloqueo anterior de aprobación quedó
@@ -30,7 +37,7 @@ minutos. Léelo entero antes de tocar nada. El dueño es **Arturo** (GitHub `Art
   hora), así que el rating tarda más de un día en asentarse. El número en vivo es ruidoso (el mismo agente puede quedar
   a 300 puntos de su copia) y tiene un fallo de actualización concurrente que el staff no arreglará.
 - Medallas (~10.000 equipos): oro ≈ top 30, **plata ≈ top 5 % (≈ puesto 500, corte ≈ 2427 el 25 de septiembre)**,
-  bronce ≈ top 10 %. **Objetivo actual de Arturo: plata al cierre.**
+  bronce ≈ top 10 %. **Objetivo actual de Arturo (27/09): acercarse al top 100 mediante análisis de derrotas y nuevas mejoras.**
 - Compartir código público cerró el 23 de septiembre 23:59 UTC, pero los notebooks ya públicos se siguen pudiendo
   **actualizar** (hueco denunciado en el foro; el staff dice que lo revisa). Así apareció cha22 el 24. Compartir código
   en privado fuera del equipo está prohibido.

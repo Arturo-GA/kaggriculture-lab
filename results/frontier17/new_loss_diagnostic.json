@@ -1,0 +1,222 @@
+[
+ {
+  "agent": "f16_repaired",
+  "episode": 114270595,
+  "seat": 1,
+  "seed": 1505688046,
+  "recorded_margin": -1056.0,
+  "margin": -1056.0,
+  "own": 126225.0,
+  "rival": 127281.0,
+  "rival_recorded": 127281.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 16.3,
+  "telemetry": {},
+  "opponent": "Justin Yang",
+  "op_score": 2453.1,
+  "op_sub": 56593891
+ },
+ {
+  "agent": "f16_repaired",
+  "episode": 114267513,
+  "seat": 1,
+  "seed": 1498789993,
+  "recorded_margin": -258.0,
+  "margin": -258.0,
+  "own": 104011.0,
+  "rival": 104269.0,
+  "rival_recorded": 104269.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 16.4,
+  "telemetry": {},
+  "opponent": "Agent 0",
+  "op_score": 2464.8,
+  "op_sub": 56584611
+ },
+ {
+  "agent": "f16_repaired",
+  "episode": 114274845,
+  "seat": 1,
+  "seed": 317331043,
+  "recorded_margin": -227.0,
+  "margin": -227.0,
+  "own": 74433.0,
+  "rival": 74660.0,
+  "rival_recorded": 74660.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.4,
+  "telemetry": {},
+  "opponent": "JezzLynn",
+  "op_score": 2444.4,
+  "op_sub": 56606073
+ },
+ {
+  "agent": "f16_repaired",
+  "episode": 114273378,
+  "seat": 0,
+  "seed": 1138506250,
+  "recorded_margin": -511.0,
+  "margin": -511.0,
+  "own": 95189.0,
+  "rival": 95700.0,
+  "rival_recorded": 95700.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.6,
+  "telemetry": {},
+  "opponent": "\u54c8\u57fa\u7c73\u5357\u5317\u8def\u591a",
+  "op_score": 2432.2,
+  "op_sub": 56497107
+ },
+ {
+  "agent": "f16_repaired",
+  "episode": 114274929,
+  "seat": 1,
+  "seed": 707092914,
+  "recorded_margin": -206.0,
+  "margin": -206.0,
+  "own": 110264.0,
+  "rival": 110470.0,
+  "rival_recorded": 110470.0,
+  "rival_kept": 1.0,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 16.8,
+  "telemetry": {},
+  "opponent": "Rishant Sharma",
+  "op_score": 2468.6,
+  "op_sub": 56609449
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114267513,
+  "seat": 1,
+  "seed": 1498789993,
+  "recorded_margin": -258.0,
+  "margin": 486.0,
+  "own": 104292.0,
+  "rival": 103806.0,
+  "rival_recorded": 104269.0,
+  "rival_kept": 0.9956,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 16.7,
+  "telemetry": {},
+  "opponent": "Agent 0",
+  "op_score": 2464.8,
+  "op_sub": 56584611
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114270595,
+  "seat": 1,
+  "seed": 1505688046,
+  "recorded_margin": -1056.0,
+  "margin": -774.0,
+  "own": 126366.0,
+  "rival": 127140.0,
+  "rival_recorded": 127281.0,
+  "rival_kept": 0.9989,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 14.9,
+  "telemetry": {},
+  "opponent": "Justin Yang",
+  "op_score": 2453.1,
+  "op_sub": 56593891
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114273378,
+  "seat": 0,
+  "seed": 1138506250,
+  "recorded_margin": -511.0,
+  "margin": -269.0,
+  "own": 95309.0,
+  "rival": 95578.0,
+  "rival_recorded": 95700.0,
+  "rival_kept": 0.9987,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.0,
+  "telemetry": {},
+  "opponent": "\u54c8\u57fa\u7c73\u5357\u5317\u8def\u591a",
+  "op_score": 2432.2,
+  "op_sub": 56497107
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114274845,
+  "seat": 1,
+  "seed": 317331043,
+  "recorded_margin": -227.0,
+  "margin": 360.0,
+  "own": 74722.0,
+  "rival": 74362.0,
+  "rival_recorded": 74660.0,
+  "rival_kept": 0.996,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 14.4,
+  "telemetry": {},
+  "opponent": "JezzLynn",
+  "op_score": 2444.4,
+  "op_sub": 56606073
+ },
+ {
+  "agent": "f17_selected",
+  "episode": 114274929,
+  "seat": 1,
+  "seed": 707092914,
+  "recorded_margin": -206.0,
+  "margin": -139.0,
+  "own": 110300.0,
+  "rival": 110439.0,
+  "rival_recorded": 110470.0,
+  "rival_kept": 0.9997,
+  "status": [
+   "DONE",
+   "DONE"
+  ],
+  "errors": {},
+  "seconds": 15.3,
+  "telemetry": {},
+  "opponent": "Rishant Sharma",
+  "op_score": 2468.6,
+  "op_sub": 56609449
+ }
+]

@@ -146,3 +146,6 @@ candidates/f16_*.py
 !candidates/f16_repaired.py
 results/frontier16/repaired/kaggle/candidates/
 results/frontier16/repaired/kaggle/main.py
+candidates/f17_*.py
+!candidates/f17_selected.py
+candidates/n17_*.py

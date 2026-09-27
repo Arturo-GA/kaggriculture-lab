@@ -1,0 +1,23 @@
+{
+  "registered_at": "2026-09-27T17:29:29.456319+00:00",
+  "candidate": "f17_selected",
+  "control": "f16_repaired",
+  "opponent": "f17_robust",
+  "seeds": [
+    17301,
+    17302,
+    17303,
+    17304
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "reason": "Stress the input-market mirror assumption against an independently screened two-scenario queue policy; does not replace or tune the main holdout.",
+  "gate": "No paired score regression versus F16; no errors; callbacks <1000ms.",
+  "hashes": {
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "f17_robust": "1486568e15fdaf8caddda3aedaaea951c472d772e494a40cebf15373e634c011"
+  }
+}

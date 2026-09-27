@@ -1,0 +1,14 @@
+{
+  "archive_sha256": "0660e5c4f80c0cb0bbfd67a542d444ee1527a4ed3d409e4c5b30090cdecc4cb3",
+  "source_sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+  "members_sha256": {
+    "main.py": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "d325d882aed13b2ee1fad2da923ecf2130621ff2f738ec5c4209b4340a01e8d1"
+  },
+  "candidate": "f17_selected",
+  "local_gate_passed": true,
+  "cloud_verified": false,
+  "leaderboard_submitted": false,
+  "note": "Prepared locally. No notebook upload, notebook run or competition submission is performed by this script."
+}

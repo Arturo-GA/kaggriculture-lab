@@ -1,0 +1,200 @@
+{
+  "complete": true,
+  "pass_gate": true,
+  "checks": {
+    "total": true,
+    "nonmirror": true,
+    "families": true,
+    "direct": true,
+    "no_errors": true,
+    "runtime": true
+  },
+  "paired_score_delta": 10.0,
+  "nonmirror_delta": 2.0,
+  "candidate_score": 128.0,
+  "control_score": 118.0,
+  "games_per_agent": 128,
+  "independent_seeds": 8,
+  "max_call_ms": 458.0017999978736,
+  "seed_paired_deltas": {
+    "17101": 1.0,
+    "17102": 1.0,
+    "17103": 3.0,
+    "17104": 1.0,
+    "17105": 1.0,
+    "17106": 1.0,
+    "17107": 1.0,
+    "17108": 1.0
+  },
+  "errors": [],
+  "by_opponent": [
+    {
+      "opponent": "f16_repaired",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 8.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        1,
+        14,
+        1
+      ],
+      "candidate_mean_margin": 308.0,
+      "control_mean_margin": 0.0,
+      "lost_control_wins": 0,
+      "gained": 15,
+      "delta": 8.0
+    },
+    {
+      "opponent": "g25_mooman0222_a62376",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 2600.375,
+      "control_mean_margin": 2339.75,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    },
+    {
+      "opponent": "g25_mooman0222_baf0d3",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 2448.125,
+      "control_mean_margin": 2187.5,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    },
+    {
+      "opponent": "g25_wangyh_v44",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 1034.375,
+      "control_mean_margin": 855.5,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    },
+    {
+      "opponent": "n25_abhinav0370_127ed3",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 14.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        14,
+        0,
+        2
+      ],
+      "candidate_mean_margin": 983.25,
+      "control_mean_margin": 693.375,
+      "lost_control_wins": 0,
+      "gained": 2,
+      "delta": 2.0
+    },
+    {
+      "opponent": "n23_prvsiyan_178ae0",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 878.625,
+      "control_mean_margin": 709.125,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    },
+    {
+      "opponent": "n23_kenanzhang9_b52378",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 7111.9375,
+      "control_mean_margin": 7104.9375,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    },
+    {
+      "opponent": "v43",
+      "games": 16,
+      "candidate_score": 16.0,
+      "control_score": 16.0,
+      "candidate_wtl": [
+        16,
+        0,
+        0
+      ],
+      "control_wtl": [
+        16,
+        0,
+        0
+      ],
+      "candidate_mean_margin": 4477.8125,
+      "control_mean_margin": 4301.6875,
+      "lost_control_wins": 0,
+      "gained": 0,
+      "delta": 0.0
+    }
+  ]
+}
