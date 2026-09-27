@@ -1,0 +1,59 @@
+{
+  "parent": "f14_adv4_h16",
+  "variants": {
+    "f15_wh": {
+      "mode": "wh",
+      "tom": 0,
+      "note": "Frontier14B + window-head sale of this window planned lots (MILK/WOOL/STRAWBERRY/MELON)",
+      "sha256": "b61191f264e5de963eb76e21597cb4cb5cc53af8b567ef5babffe1a238536dff"
+    },
+    "f15_e81": {
+      "mode": "e81",
+      "tom": 0,
+      "note": "Frontier14B + E081 full projected shed of MILK/WOOL/STRAWBERRY at every window head",
+      "sha256": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb"
+    },
+    "f15_e81g": {
+      "mode": "e81g",
+      "tom": 0,
+      "note": "Frontier14B + E081 restricted to items in glut (inventory >= I0), MELON included",
+      "sha256": "14225ad816f07d18eb70e122ca14fe0ab5152726dca215c2a842700bf601a3d1"
+    },
+    "f15_slk": {
+      "mode": "slk",
+      "tom": 0,
+      "note": "Frontier14B + window-head planned lots + next town draw, items in glut only",
+      "sha256": "9e79da3d440353bfdffdad33417c63abff542c0d6013f7a00098eacb74e3f4be"
+    },
+    "f15_ad": {
+      "mode": "ad",
+      "tom": 0,
+      "note": "Frontier14B + rival-adaptive window escalation 16 -> 24",
+      "sha256": "c730a80cdea84e54383bee1eb0d5fc5e772cd0dfd94ebfad7b6328722a69482b"
+    },
+    "f15_tom2": {
+      "mode": "none",
+      "tom": 2,
+      "note": "Frontier14B + tomato investment gate relaxed to >= 2 pizza/farmers shops and >= 9000 coins",
+      "sha256": "a187ec6a04d9233e69bfa02d08494341c51acfadf71ab9a64cb2dc739496a42f"
+    },
+    "f15_tom1": {
+      "mode": "none",
+      "tom": 1,
+      "note": "Frontier14B + tomato investment gate relaxed to >= 1 pizza/farmers shop and >= 9000 coins",
+      "sha256": "12f7de3268e618c134c5e640ed7098c625c1359f6765b7122d2d73e200d55cdc"
+    },
+    "f15_e81_tom2": {
+      "mode": "e81",
+      "tom": 2,
+      "note": "Frontier14B + E081 window-head liquidation + tomato gate >= 2 shops",
+      "sha256": "6f6d647d018a45a5243e3b147e7f4a4ef92bd420421055224a6e54b60e91fbb7"
+    },
+    "f15_e81_tom1": {
+      "mode": "e81",
+      "tom": 1,
+      "note": "Frontier14B + E081 window-head liquidation + tomato gate >= 1 shop",
+      "sha256": "c560d7b136449daa57be565310af297ebe573c4491469b95f037d3e7452ae002"
+    }
+  }
+}

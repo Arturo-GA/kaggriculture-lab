@@ -7,6 +7,30 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (no enviada).**
+Revisión de las 96 partidas en vivo del par activo contra rivales de 2400+ (`vendor/live_f14`): los de 2450-2600 son
+clones de nuestra línea (misma granja) y se deciden por tiempos de venta en los días 16-28; las palizas son agentes
+privados de otra producción. Del motor: el precio depende solo del inventario, el pueblo retira su demanda tras cada
+paso múltiplo de 4 y ambas listas se liquidan unidad a unidad al mismo precio; leche, lana y melón están saturados
+desde el día 12-15, así que el primero en vender tras cada retirada cobra la holgura. `build_f15.py` añade UNA capa
+propia al final de Frontier14B: `candidates/f15_e81.py` vende todo el almacén proyectado de leche, lana y fresa en el
+primer paso de cada ventana (idea E081 de mooman0222, MIT; código propio con funciones del propio cha22). Bucle
+cerrado en dos bloques de semillas nuevas: 34/36 y 34/36 (+875 y +861 por partida; 8/8 contra nuestro agente activo
+`f14_adv4_h16`, 6/8 contra mooman E081, 8/8 contra Wangyh v44, cha22 y prvsiyan); panel congelado de las 96 partidas
+reales 29 → 52 victorias (2400-2500: 21 → 42 de 62; 2500-2600: 5 → 7 de 22; 2600+ sin cambio). Variante
+`f15_e81_tom2` (además permite la inversión en tomates de cha22 con 2 pizzerías-mercados): +730 en el único mundo en
+que actúa. Puerta registrada en `results/frontier15/plan.json` (control = Frontier14B, 22 rivales, semillas
+9411-9418): ver [FRONTIER15_RESULTS.es.md](FRONTIER15_RESULTS.es.md) §7 y [RESUME_FRONTIER15.es.md](RESUME_FRONTIER15.es.md).
+
+```powershell
+python build_f15.py; python -m unittest -v test_frontier15.py
+python assess_f15.py                                               # puerta registrada sobre results/frontier15/holdout.json
+python make_frontier15_notebook.py; python -m kaggle kernels push -p kaggle_frontier15
+python verify_frontier15_cloud.py                                  # tras `kaggle kernels output jarturo/kaggriculture-frontier15-windowhead -p results/frontier15/kaggle`
+python replay_panel.py candidates/f15_e81.py --raw vendor/live_f14 --episodes outputs/session/gold/episodes_f14live.json
+python submit_frontier15.py                                        # solo lectura; --submit --authorization "..." solo con petición (retira 56568493)
+```
+
 **26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (submission 56568493).**
 Las dos Frontier13 estaban en 2408 y 2103 (corte de plata 2417). Auditoría de las 39 derrotas en vivo con el rival
 identificado jugada a jugada: 12/13 contra copias exactas de cha22; 36 de 39 derrotas contra variantes privadas de

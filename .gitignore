@@ -136,3 +136,7 @@ candidates/f14*.py
 !candidates/f14_adv4_h16.py
 results/frontier14/kaggle/candidates/n2*.py
 results/frontier14b/kaggle/candidates/n2*.py
+candidates/f15*.py
+results/frontier15/kaggle/candidates/n2*.py
+!candidates/f15_e81.py
+episode-*-replay.json

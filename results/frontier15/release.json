@@ -1,0 +1,31 @@
+{
+  "candidate": "f15_e81",
+  "kernel": "jarturo/kaggriculture-frontier15-windowhead",
+  "control": "f14_adv4_h16",
+  "source_sha256": {
+    "f15_e81": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb",
+    "f14_adv4_h16": "8e8751cede9a3cad20c770e53fb894f86704984ddbc72e7f49b9c94704caf697",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "f13_c22_lock": "831952068d102bfefe413091b6cc2aa0b6fbe7cc0b870ab2dfe139be2b861d8a",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a"
+  },
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "f13_c22_lock",
+    "n23_prvsiyan_178ae0"
+  ],
+  "cloud_seeds": [
+    9421,
+    9422,
+    9423,
+    9424
+  ],
+  "local_receipts": {
+    "holdout_summary.json": "6f9507ad8ce34dee5c4f47bd54b580d4ed803616b4b5e268b0a528d4ccd815f4"
+  },
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "gate": "Hash frozen before the holdout. Official engine 1.32.7, paired against Frontier14B (f14_adv4_h16, our live submission 56570873) on identical opponents/seeds/seats, both seats. Gate: total paired score >= +4 over the panel (the 19-rival Frontier14B panel plus our three Frontier14 window variants adv4_h16 / adv4_h12 / adv4_h24), score against Frontier14B itself (mirror) >= 50%, score against exact cha22 >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. Extra candidates play the panel for comparison only. Then the Kaggle kernel on four fresh seeds (clean, no opponent below the control, total >= 0). Registered before the run.",
+  "attribution": "Base: Frontier14B = cha22 ('Kaggriculture cha22 - route-replay agent', abhinav0370, Apache-2.0, v9/3 lineage, every notice retained) + frontier5_lockstep.py + re-bound advance constants. Frontier15 appends one Lab layer (Apache-2.0) implementing the window-head liquidation idea of Team MMN0222's E081 (github.com/mooman0222/Kaggriculture-opencode, MIT) with cha22's own helpers; the tom variants relax cha22's own tomato-investment gate.",
+  "limitations": "Local panels are small and dominated by public tape lineages; no rating or medal guarantee."
+}

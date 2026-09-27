@@ -49,6 +49,20 @@ contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, vent
 con +30 (`results/frontier14b/`), Kaggle limpio (300 ms), ENVIADA como 56570873 (retiró la 56560450); con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
 pide): `python submit_frontier14.py --submit --authorization "..."` (una plaza; retira 56560449 y conserva 56560450).
 
+**Frontier15 (27 de septiembre, NO ENVIADA; `FRONTIER15_RESULTS.es.md`, `RESUME_FRONTIER15.es.md`)**: revisión de
+las 96 partidas en vivo del par activo contra 2400+ (`vendor/live_f14`, `outputs/session/gold/ledger_f14live.json`):
+los de 2450-2600 son clones de nuestra línea decididos por tiempos de venta (−7…−1500); las palizas son privados de
+otra producción. Hechos del motor: precio = f(inventario); retirada del pueblo tras cada paso múltiplo de 4; ambas
+listas se liquidan unidad a unidad al mismo precio; leche/lana/melón saturados desde el día 12-15 → el primero en
+vender tras cada retirada cobra la holgura. `candidates/f15_e81.py` = Frontier14B + capa propia que vende todo el
+almacén proyectado de leche/lana/fresa en el paso % 4 == 1 (idea E081 de mooman0222, MIT): bucle cerrado 34/36 y 34/36
+(+870 por partida, 8/8 contra `f14_adv4_h16`), panel congelado 29 → 52 de 96. `f15_e81_tom2` además permite la
+inversión en tomates con 2 pizzerías-mercados (+730 en el único mundo en que actúa). Puerta registrada con control =
+Frontier14B (`results/frontier15/plan.json`); resultado del holdout y de Kaggle en `RESUME_FRONTIER15.es.md`. Para
+enviar (solo si Arturo lo pide): `python submit_frontier15.py --submit --authorization "..."` (una plaza; retira
+56568493, la más antigua). Las variantes `f15_ad` (ventanas 16→24 si el rival vende antes), `f15_e81g`, `f15_slk` y
+`f15_wh` quedaron por debajo; `f15_e81` gana 4/4 a `f15_ad`.
+
 Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIERn.es.md`):
 
 | Ronda | Idea | Resultado en vivo |
@@ -162,7 +176,11 @@ Semillas ya usadas (no reajustar sobre ellas): 5601-6022, 7101-7704, 8001-8434, 
    **No reemplaces una submission que aún sube por una diferencia de 100-200 puntos.**
 2. **Revisa si hay agentes nuevos por actualización de notebooks** (paso 1 del proceso). Si aparece uno que gana a cha22,
    repite el proceso: base nueva + lockstep, holdout, Kaggle, y pide permiso a Arturo para enviar.
-3. Si hay tiempo para mejorar el agente: el hueco está en los días 18-29 del espejo contra cha22 (conversión final).
+3. Lo que sabemos ahora del espejo (Frontier15): en mercados saturados gana el primero que vende tras cada retirada del
+   pueblo; la liquidación al abrir la ventana (`f15_e81`) domina a las ventanas fijas y a la escalada adaptativa. Lo que
+   queda por explorar: cultivo ligado a las tiendas (zanahorias con PET_CAFE, tomates con PIZZA_SHOP: los clones que
+   lo hacen nos ganan por 2700-3300), y nada de tiempos sirve contra los privados de 2600+.
+   Antes (Frontier13): el hueco estaba en los días 18-29 del espejo contra cha22 (conversión final).
    **Puntos flojos medidos** (prueba complementaria, `FRONTIER13_RESULTS.es.md` §5): `g25_mooman0222_a62376` (E081,
    3/4) y `g25_mooman0222_baf0d3` (E082, 2/4) — Herd-Safe que vende todo el almacén de leche/lana/fresa al abrir cada
    ventana de demanda — y `g25_wangyh_v44` (3/4, cha22-like con `_ADV_LOOK` 6). Ideas sin probar: "reparar la acción

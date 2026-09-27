@@ -348,3 +348,16 @@ Modified September 26, 2026 by Arturo-GA / Kaggriculture Lab (Frontier14):
 - `build_f14.py` derives them from `build_f13.build('f13_c22_lock')`. The GitHub
   agents of Wangyh666 and mooman0222 used as evaluation rivals are excluded from
   Git (no OSI license / local evaluation only).
+
+Modified September 27, 2026 by Arturo-GA / Kaggriculture Lab (Frontier15):
+
+- `f15_*` candidates are Frontier14B (`f14_adv4_h16`) unchanged, followed by one
+  Lab layer appended at the end of the file (`build_f15.py`): it sells the
+  projected shed of milk, wool and strawberry at the first step of every
+  town-demand window (step % 4 == 1) and, in the `tom` variants, relaxes the
+  base's own tomato-investment gate by calling it with a padded observation.
+  No third-party code is added or edited; every upstream notice is retained.
+  The window-head liquidation idea is Team MMN0222's E081 layer
+  (github.com/mooman0222/Kaggriculture-opencode, MIT licence; the agents used as
+  local rivals stay out of Git); the Lab implementation reuses only cha22's own
+  helpers (`projected_shed`, `_adv_future`, `_v9_town_draw`, `_lk_reorder`).
