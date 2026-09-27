@@ -90,5 +90,6 @@ arutyunoff, feel the agi y by usan gansos y tomates. Nuestra granja se congela e
 - **Después del cierre** (si quieres seguir): clonación de comportamiento sobre `ashok205/kaggriculture-top10-replay-
   archive` y `kaggle/kaggriculture-episodes-*` (acciones macro por día: compras, contrataciones, cultivos por casilla) y
   luego PPO contra un panel de clones; el simulador Rust público (`Debmalya`, 550k pasos/s) permite el volumen.
-- Ajuste menor en curso: incluir huevos (y melón) en la liquidación al abrir ventana (`f15_e81e`, `f15_e81em`); huevo
-  y trigo son los productos que no se saturan. Resultado en `RESUME_FRONTIER15.es.md` cuando termine el cribado.
+- Ajuste menor probado: incluir huevos (y melón) en la liquidación al abrir ventana (`f15_e81e`, `f15_e81em`): 24/24
+  contra 6 clones, igual que `f15_e81` (24/24), delta emparejado −23 por partida y ningún cambio de resultado → no se
+  adopta (`outputs/session/gold/screen_f15c_0927.json`).
