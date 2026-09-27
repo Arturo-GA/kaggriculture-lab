@@ -2,7 +2,7 @@
 
 Petición de Arturo (26 sep, 22:30 UTC): "Revisa nuestras partidas y analizar una estrategia que pueda llevarnos a 2600
 de raiting ya puede ser una tercera idea combinada con las 2 que usamos sino busca cómo se podría ganar a los de
-2500-2600" y "revisa que ese chat no sea antiguo y avanza". Nada se envía sin una petición explícita posterior.
+2500-2600" y "revisa que ese chat no sea antiguo y avanza". Enviada solo tras su autorización posterior (§8).
 
 ## 1. Situación (26 sep, 22:27 UTC)
 
@@ -140,8 +140,15 @@ prvsiyan y −6 contra Master Engine V3 → rechazada.** El tomate con menos de 
 ## 8. Kaggle
 
 Kernel privado `jarturo/kaggriculture-frontier15-windowhead` (`make_frontier15_notebook.py`, 880 KB; semillas
-9421-9424 contra cha22, Frontier13 y prvsiyan, control Frontier14B). Resultado en `RESUME_FRONTIER15.es.md` y
-`results/frontier15/kaggle_verified.json`.
+9421-9424 contra cha22, Frontier13 y prvsiyan, control Frontier14B): **48/48 limpias, 258 ms; cha22 8/0 (+936),
+Frontier13 8/0 (+851), prvsiyan 8/0 (+1727; el control 6/2); total +2 sobre el control, regla completa sin
+incumplimiento**; archivo `9b4f993b8b4186477279b7ff5b902766b5324763ac43ed1b99fdaa517e779eba`
+(`results/frontier15/kaggle_verified.json`).
+
+**Enviada el 27 de septiembre de 2026 a las 00:06 UTC a petición de Arturo** ("Cuando termine y tengas un nuevo su
+misión que cumpla los requerimientos dale submit en kaggle"): **submission 56592376** (recibo
+`results/frontier15/submission_receipt.json`); retira la 56568493 (Frontier14 adv4_h12, 2341). Par activo:
+56570873 (Frontier14B, 2396) + 56592376 (Frontier15). Seguimiento: `python live_report.py 56570873 56592376`.
 
 ## 9. Qué esperar y qué haría falta para 2600
 

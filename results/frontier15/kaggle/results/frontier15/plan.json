@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-09-26T23:11:05.193492+00:00",
+  "candidate": "f15_e81",
+  "candidate_sha256": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb",
+  "layer": {
+    "mode": "e81",
+    "tom": 0,
+    "note": "Frontier14B + E081 full projected shed of MILK/WOOL/STRAWBERRY at every window head"
+  },
+  "control": "f14_adv4_h16",
+  "control_sha256": "8e8751cede9a3cad20c770e53fb894f86704984ddbc72e7f49b9c94704caf697",
+  "parent_plan": "results/frontier14b/plan.json",
+  "public_base": "n25_abhinav0370_127ed3",
+  "public_base_sha256": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+  "unit_test_seed": 9425,
+  "request": "Arturo, 26 Sep 2026 22:30 UTC: 'Revisa nuestras partidas y analizar una estrategia que pueda llevarnos a 2600 de raiting ya puede ser una tecercera idea combinada con las 2 que usamos sino busca cómo se podría ganar a los de 2500-2600' and 'Ok porfavor revisa que ese chat no sea antiguo y avanza gracias'. NOTHING is submitted without a further explicit request.",
+  "diagnosis": "96 live games of the active pair (56568493 adv4_h12, 56570873 adv4_h16) against rivals rated 2400+ (vendor/live_f14, outputs/session/gold/ledger_f14live.json): in the 2450-2600 band the rivals are same-production clones of our lineage (same hands, land, animals, opening money 1042) and the margins (-7 to -1500) are decided by sale timing in days 16-28; every blowout (-3000 to -35486) is a private agent with different production. Engine: price = f(market inventory); the town removes its draw after every step = 0 mod 4; both players' i-th orders settle unit by unit at the same quote. Live regime in clone games: MILK/WOOL/MELON in glut from day 12-15 (price 0.3-0.6 of base), STRAWBERRY from day 21 -> the first seller after each consumption tick takes the recovered slack. Layer idea: mooman0222 E081 (MIT): sell the whole projected shed of MILK/WOOL/STRAWBERRY at step % 4 == 1.",
+  "screen_seeds": [
+    9401,
+    9402,
+    9403,
+    9404
+  ],
+  "screen_file": "outputs/session/gold/screen_f15_0926.json",
+  "holdout_seeds": [
+    9411,
+    9412,
+    9413,
+    9414,
+    9415,
+    9416,
+    9417,
+    9418
+  ],
+  "holdout_opponents": [
+    "n25_abhinav0370_127ed3",
+    "f13_c22_lock",
+    "n23_prvsiyan_178ae0",
+    "n23_arsgorynich_4f8637",
+    "n25_haideptry_cda529",
+    "n25_haideptry_8378f7",
+    "n23_dmitriigluzdov_488913",
+    "n23_dmitriigluzdov_7ac1a2",
+    "n23_statma_29454a",
+    "n25_guruprasaathas_701c01",
+    "g25_wangyh_v41",
+    "g25_wangyh_v44",
+    "g25_mooman0222_a62376",
+    "g25_mooman0222_baf0d3",
+    "n23_kenanzhang9_b52378",
+    "d25_kenanzhang9_602ae8",
+    "n23_syedtahahassan_a2047e",
+    "v43",
+    "aurax_v7",
+    "f14_adv4_h16",
+    "f14_adv4_h12",
+    "f14_adv4_h24"
+  ],
+  "holdout_extra_candidates": [
+    "f15_e81_tom2"
+  ],
+  "cloud_seeds": [
+    9421,
+    9422,
+    9423,
+    9424
+  ],
+  "cloud_opponents": [
+    "n25_abhinav0370_127ed3",
+    "f13_c22_lock",
+    "n23_prvsiyan_178ae0"
+  ],
+  "gate": {
+    "total_min": 4.0,
+    "mirror_min": 0.5,
+    "cha22": "n25_abhinav0370_127ed3",
+    "cha22_min": 0.7,
+    "opponent_floor": -2.0
+  },
+  "rule": "Hash frozen before the holdout. Official engine 1.32.7, paired against Frontier14B (f14_adv4_h16, our live submission 56570873) on identical opponents/seeds/seats, both seats. Gate: total paired score >= +4 over the panel (the 19-rival Frontier14B panel plus our three Frontier14 window variants adv4_h16 / adv4_h12 / adv4_h24), score against Frontier14B itself (mirror) >= 50%, score against exact cha22 >= 70%, no opponent with a paired delta below -2.0, no reported errors/fallbacks, every callback < 1000 ms. Extra candidates play the panel for comparison only. Then the Kaggle kernel on four fresh seeds (clean, no opponent below the control, total >= 0). Registered before the run.",
+  "attribution": "Base: Frontier14B = cha22 ('Kaggriculture cha22 - route-replay agent', abhinav0370, Apache-2.0, v9/3 lineage, every notice retained) + frontier5_lockstep.py + re-bound advance constants. Frontier15 appends one Lab layer (Apache-2.0) implementing the window-head liquidation idea of Team MMN0222's E081 (github.com/mooman0222/Kaggriculture-opencode, MIT) with cha22's own helpers; the tom variants relax cha22's own tomato-investment gate."
+}

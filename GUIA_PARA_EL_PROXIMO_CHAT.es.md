@@ -26,13 +26,13 @@ minutos. Léelo entero antes de tocar nada. El dueño es **Arturo** (GitHub `Art
 
 ## 2. Estado actual (lo primero que tienes que comprobar)
 
-**Submissions activas: 56568493 (Frontier14, `candidates/f14_adv4_h12.py`, enviada el 26 de septiembre a las 03:55 UTC)
-y 56570873 (Frontier14B, `candidates/f14_adv4_h16.py`, enviada el 26 a las ~05:55 UTC)**. Las dos Frontier13 (56560449,
-56560450) quedaron retiradas. Recibos: `results/frontier14/submission_receipt.json`,
-`results/frontier14b/submission_receipt.json`.
+**Submissions activas: 56570873 (Frontier14B, `candidates/f14_adv4_h16.py`, enviada el 26 de septiembre a las ~05:55 UTC)
+y 56592376 (Frontier15, `candidates/f15_e81.py`, enviada el 27 a las 00:06 UTC)**. Retiradas: las dos Frontier13
+(56560449, 56560450) y Frontier14 56568493. Recibos: `results/frontier14b/submission_receipt.json`,
+`results/frontier15/submission_receipt.json`.
 
 ```bash
-python live_report.py 56568493 56570873      # rating, victorias por tramo de rival, peores rivales
+python live_report.py 56570873 56592376      # rating, victorias por tramo de rival, peores rivales
 python submit_frontier13.py; python submit_frontier13.py --slot 2    # solo lectura: refresca los recibos
 ```
 
@@ -49,7 +49,7 @@ contra Herd-Safe), Kaggle limpio (224 ms). **Frontier14B** (`f14_adv4_h16`, vent
 con +30 (`results/frontier14b/`), Kaggle limpio (300 ms), ENVIADA como 56570873 (retiró la 56560450); con ventanas 24 aparece el límite de Frontier9. Para enviar (solo si Arturo lo
 pide): `python submit_frontier14.py --submit --authorization "..."` (una plaza; retira 56560449 y conserva 56560450).
 
-**Frontier15 (27 de septiembre, NO ENVIADA; `FRONTIER15_RESULTS.es.md`, `RESUME_FRONTIER15.es.md`)**: revisión de
+**Frontier15 (27 de septiembre, ENVIADA como 56592376; `FRONTIER15_RESULTS.es.md`, `RESUME_FRONTIER15.es.md`)**: revisión de
 las 96 partidas en vivo del par activo contra 2400+ (`vendor/live_f14`, `outputs/session/gold/ledger_f14live.json`):
 los de 2450-2600 son clones de nuestra línea decididos por tiempos de venta (−7…−1500); las palizas son privados de
 otra producción. Hechos del motor: precio = f(inventario); retirada del pueblo tras cada paso múltiplo de 4; ambas
@@ -58,9 +58,9 @@ vender tras cada retirada cobra la holgura. `candidates/f15_e81.py` = Frontier14
 almacén proyectado de leche/lana/fresa en el paso % 4 == 1 (idea E081 de mooman0222, MIT): bucle cerrado 34/36 y 34/36
 (+870 por partida, 8/8 contra `f14_adv4_h16`), panel congelado 29 → 52 de 96. `f15_e81_tom2` además permite la
 inversión en tomates con 2 pizzerías-mercados (+730 en el único mundo en que actúa). Puerta registrada con control =
-Frontier14B (`results/frontier15/plan.json`); resultado del holdout y de Kaggle en `RESUME_FRONTIER15.es.md`. Para
-enviar (solo si Arturo lo pide): `python submit_frontier15.py --submit --authorization "..."` (una plaza; retira
-56568493, la más antigua). Las variantes `f15_ad` (ventanas 16→24 si el rival vende antes), `f15_e81g`, `f15_slk` y
+Frontier14B (`results/frontier15/plan.json`): holdout +33 (espejo 14/16, cha22 16/16, suelo −2 respetado, 289 ms),
+Kaggle 48/48 limpio a 258 ms (cha22/F13/prvsiyan 8/0). Enviada a petición de Arturo el 27 a las 00:06 UTC como
+56592376 (retiró 56568493). Un envío nuevo retiraría 56570873 (Frontier14B). Las variantes `f15_ad` (ventanas 16→24 si el rival vende antes), `f15_e81g`, `f15_slk` y
 `f15_wh` quedaron por debajo; `f15_e81` gana 4/4 a `f15_ad`.
 
 Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIERn.es.md`):
@@ -73,7 +73,9 @@ Historial de rondas (cada una tiene `FRONTIERn_RESULTS.es.md` y `RESUME_FRONTIER
 | F10 | lockstep sobre One More Wheat y V53 | 2400 / 2200 (el público copió el lockstep) |
 | F11 | prvsiyan + lockstep / Herd-Safe forecast4 + lockstep | 2150 / 2265 |
 | F12 | enrutador por rama del rival (dos bases F11) | 2246 / 2199 (cha22 lo aplasta) |
-| **F13** | **cha22 + lockstep, dos copias** | **en curso (desde 600)** |
+| F13 | cha22 + lockstep, dos copias | 2380 / 2137 (retiradas) |
+| F14 / F14B | + adelanto 4 y ventanas 12 / 16 del propio cha22 | 2341 (retirada) / 2396 (activa) |
+| **F15** | **+ venta de todo el almacén al abrir cada ventana de demanda** | **en curso desde el 27 sep (56592376)** |
 
 ## 3. Lo que hemos aprendido (lecciones con evidencia)
 

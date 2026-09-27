@@ -1,0 +1,48 @@
+{
+  "candidate": "f15_e81",
+  "sha256": "9f0b05ea0b081134268b281c182b6e3cd1c9298d358e016ea2a8c447014db7eb",
+  "games": 24,
+  "per_opponent": {
+    "n25_abhinav0370_127ed3": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 935.5
+    },
+    "f13_c22_lock": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 0.0,
+      "mean_margin": 851.25
+    },
+    "n23_prvsiyan_178ae0": {
+      "games": 8,
+      "wins": 8,
+      "ties": 0,
+      "losses": 0,
+      "score_delta": 2.0,
+      "mean_margin": 1726.75
+    }
+  },
+  "errors": [],
+  "mirror_score": null,
+  "total_score_delta": 2.0,
+  "max_call_ms": 257.6365119999764,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 48,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier15-windowhead",
+  "release_type": "candidate",
+  "local_gate_passed": true,
+  "cloud_rule_amended_passed": true,
+  "cloud_shortfall": null,
+  "export_checks_passed": true,
+  "archive_sha256": "9b4f993b8b4186477279b7ff5b902766b5324763ac43ed1b99fdaa517e779eba"
+}

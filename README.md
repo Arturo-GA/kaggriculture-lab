@@ -7,7 +7,7 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
-**27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (no enviada).**
+**27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (submission 56592376).**
 Revisión de las 96 partidas en vivo del par activo contra rivales de 2400+ (`vendor/live_f14`): los de 2450-2600 son
 clones de nuestra línea (misma granja) y se deciden por tiempos de venta en los días 16-28; las palizas son agentes
 privados de otra producción. Del motor: el precio depende solo del inventario, el pueblo retira su demanda tras cada
@@ -20,7 +20,11 @@ cerrado en dos bloques de semillas nuevas: 34/36 y 34/36 (+875 y +861 por partid
 reales 29 → 52 victorias (2400-2500: 21 → 42 de 62; 2500-2600: 5 → 7 de 22; 2600+ sin cambio). Variante
 `f15_e81_tom2` (además permite la inversión en tomates de cha22 con 2 pizzerías-mercados): +730 en el único mundo en
 que actúa. Puerta registrada en `results/frontier15/plan.json` (control = Frontier14B, 22 rivales, semillas
-9411-9418): ver [FRONTIER15_RESULTS.es.md](FRONTIER15_RESULTS.es.md) §7 y [RESUME_FRONTIER15.es.md](RESUME_FRONTIER15.es.md).
+9411-9418, 1056 partidas): **PUERTA SUPERADA con total +33** (espejo contra Frontier14B 14/16, cha22 16/16, ningún rival
+por debajo de −2, 289 ms); la variante de tomate quedó en −1 y se rechazó. Kaggle 48/48 limpio a 258 ms (cha22, Frontier13
+y prvsiyan 8/0 cada uno). **Enviada a petición el 27 a las 00:06 UTC: submission 56592376** (retira 56568493).
+**Par activo: 56570873 + 56592376**; seguimiento `python live_report.py 56570873 56592376`. Detalle en
+[FRONTIER15_RESULTS.es.md](FRONTIER15_RESULTS.es.md) y [RESUME_FRONTIER15.es.md](RESUME_FRONTIER15.es.md).
 
 ```powershell
 python build_f15.py; python -m unittest -v test_frontier15.py
@@ -28,7 +32,7 @@ python assess_f15.py                                               # puerta regi
 python make_frontier15_notebook.py; python -m kaggle kernels push -p kaggle_frontier15
 python verify_frontier15_cloud.py                                  # tras `kaggle kernels output jarturo/kaggriculture-frontier15-windowhead -p results/frontier15/kaggle`
 python replay_panel.py candidates/f15_e81.py --raw vendor/live_f14 --episodes outputs/session/gold/episodes_f14live.json
-python submit_frontier15.py                                        # solo lectura; --submit --authorization "..." solo con petición (retira 56568493)
+python submit_frontier15.py                                        # solo lectura: refresca el recibo de 56592376
 ```
 
 **26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (submission 56568493).**
