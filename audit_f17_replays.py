@@ -15,7 +15,8 @@ def audit(meta):
     with contextlib.redirect_stdout(io.StringIO()),contextlib.redirect_stderr(io.StringIO()):
         from kaggle_environments import make
         engine=importlib.import_module('kaggle_environments.envs.kaggriculture.kaggriculture')
-    with gzip.open(Path('vendor/live_f16',f"episode-{meta['id']}-replay.json.gz"),'rt',encoding='utf-8') as f:data=json.load(f)
+    raw_path=Path(meta['raw_path']) if 'raw_path' in meta else Path('vendor/live_f16',f"episode-{meta['id']}-replay.json.gz")
+    with gzip.open(raw_path,'rt',encoding='utf-8') as f:data=json.load(f)
     assert data['module_version']=='1.32.7'
     money=[Counter(),Counter()];units=[Counter(),Counter()];physical=[Counter(),Counter()]
     daily=[[Counter() for _ in range(30)] for _ in range(2)];events=[];owners={};tick=[-1];snapshots={}

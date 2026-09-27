@@ -7,6 +7,14 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**27 de septiembre: censo de los 100 mejores equipos.** [Estrategias aplicables](TOP100_ESTRATEGIAS.es.md):
+184 partidas distintas, dos actuaciones por equipo; 11 partidas reconstruidas exactamente y comparación con
+las cuatro primeras partidas públicas de F17. La mediana del top 100 es 11 trabajadores, 19 animales y 23 fresas
+al paso 288; F17 tiene 11, 17 y 33. Solo 52/200 actuaciones abren el cuarto cuadrante. Prioridades propuestas:
+previsión por ciclo y resiembra, rotación de cultivos, puesta en producción más temprana del tercer cuadrante y
+escenarios de rival. Esta investigación no modifica el agente congelado ni envía otra submission.
+F17 `56615489` ya está **COMPLETE**; agentes activos comprobados: F17 + F16.
+
 **27 de septiembre: Frontier17 enviado, submission 56615489, notebook privado.** Se analizaron las 22 derrotas de F16
 disponibles durante la sesión. Se eliminaron parejas especulativas de compra/reventa entre turnos y se añadió
 una búsqueda de operaciones de insumos dentro del turno, con límites de caja y capacidad. El candidato congelado

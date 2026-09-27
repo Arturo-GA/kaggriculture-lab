@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "engine": "1.32.7",
+  "exact_snapshot_field_checks": 960,
+  "accounts_balanced": true,
+  "source_sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+  "feature_sha256": "821b9fb9c32c3296867dc891ac12251d9a1b8cb361a9d98b3a25d2f66434f779",
+  "files": {
+    "selection.json": "43e9e1fb869675e8d8adde2ab98c3c278af6d334d761cd726caf4c5c83b9a655",
+    "accounting.json": "d0a603b83694b74f737262e0d74143367010838f2f5f054ecac9d0327daa92f5",
+    "baseline.json": "eacf5876de4a773549b21ade2625da3db0d8d74221abfe5e7256a5a9019dad78",
+    "features.json.gz": "78dd1e11e73b7b6def21c07d3bf23e3b7f468f46ccc14fc5960cd88bf266443e",
+    "profiles.json": "700759a1680f752763702d04000fd443d9010fa93785da8ffd88808220911c9b",
+    "summary.json": "bfc886264934e661807b385699453b6f5d02b1154423dab21998045d68d9a675"
+  }
+}

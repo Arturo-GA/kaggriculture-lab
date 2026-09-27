@@ -151,3 +151,4 @@ candidates/f17_*.py
 candidates/n17_*.py
 results/frontier17/kaggle/candidates/
 results/frontier17/remote_metadata/*.ipynb
+results/top100_0927/features.json

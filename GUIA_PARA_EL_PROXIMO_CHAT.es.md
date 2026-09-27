@@ -1,5 +1,14 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+> **Investigación más reciente: top 100 completo (27/09).** Leer [TOP100_ESTRATEGIAS.es.md](TOP100_ESTRATEGIAS.es.md).
+> 184 partidas, 200 actuaciones de los 100 equipos, 11 reconstrucciones exactas y cuatro partidas de F17.
+> La mediana actual es 11 trabajadores; SE aparece en 52/200 actuaciones. Corrige las generalizaciones del
+> informe anterior sobre expandir siempre a cuatro cuadrantes con 12–13 trabajadores. Se proponen previsión
+> por ciclo y escenarios de resiembra, rotación en casillas existentes y tercer cuadrante más temprano.
+> Los componentes heredados `_cxtb_their_supply`, `_cxtb_expected_revenue` y `_v9_carrot` ya cubren parte de ello;
+> distinguir mejoras nuevas de funciones existentes. Esta ronda investigó, no construyó ni envió F18.
+> F17 `56615489` está COMPLETE y acompaña a F16 `56609913`; F15 ya no figura en la lista activa.
+
 > **Última actualización: Frontier17 enviado (27/09), submission 56615489.** Leer primero
 > [RESUME_FRONTIER17.es.md](RESUME_FRONTIER17.es.md). Se analizaron 22 derrotas de F16;
 > el nuevo candidato ganó 128/128 en la validación principal y pasó la prueba adicional.

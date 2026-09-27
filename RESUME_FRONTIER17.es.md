@@ -4,6 +4,12 @@ Petición de Arturo: analizar las pérdidas del modelo actual y desarrollar
 estrategias para acercarse al top 100. Después autorizó «Y lanza una plaza a kaggle».
 **F17 se envió una sola vez: submission 56615489**. El notebook y el repositorio siguen privados.
 
+Actualización: F17 ya está **COMPLETE**. La lista oficial de agentes activos contiene F17 y F16;
+F15 dejó de estar activa. El análisis posterior de los 100 mejores equipos está en
+[TOP100_ESTRATEGIAS.es.md](TOP100_ESTRATEGIAS.es.md): 184 partidas distintas, 200 actuaciones,
+11 reconstrucciones exactas y cuatro partidas iniciales de F17. Propone mejoras de previsión y
+producción; el candidato congelado conserva sus bytes y no hubo otra submission.
+
 ## Estado comprobado
 
 - Consulta del 27/09/2026, 17:33 UTC: F16 `56609913`, COMPLETE, **2449,8**, puesto
@@ -68,8 +74,8 @@ el id devuelto. Conservar privado el notebook y el repo.
 
 La autorización de una plaza está ejecutada. No volver a subir otra copia de F17.
 `python submit_frontier17.py` sin argumentos solo refresca el recibo existente.
-La nueva submission está destinada a acompañar F16 y retirar F15 al activarse;
-usar la lista oficial de agentes activos para comprobar que ya ocurrió.
+La lista oficial confirmó que F17 acompaña a F16 y retiró F15. Consultar de nuevo si se necesita
+el estado o rating actual; la fotografía guardada no es una predicción del puntaje final.
 
 Semillas consumidas: exploración 17001–17004; pruebas de contratos 17091;
 holdout 17101–17108; estrés 17301–17304; Kaggle 17201–17204.

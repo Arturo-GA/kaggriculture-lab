@@ -1,16 +1,16 @@
 {
-  "checked_utc": "2026-09-27T17:52:20.640195+00:00",
+  "checked_utc": "2026-09-27T17:57:56.999211+00:00",
   "submissions": [
     {
-      "id": 56609913,
-      "date_submitted": "2026-09-27T13:31:13.193000",
-      "public_score": "2438.0",
+      "id": 56615489,
+      "date_submitted": "2026-09-27T17:49:32.127000",
+      "public_score": "600.0",
       "is_frozen": true
     },
     {
-      "id": 56592376,
-      "date_submitted": "2026-09-27T00:06:15.090000",
-      "public_score": "2104.5",
+      "id": 56609913,
+      "date_submitted": "2026-09-27T13:31:13.193000",
+      "public_score": "2427.5",
       "is_frozen": true
     }
   ]

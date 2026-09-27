@@ -1,0 +1,185 @@
+{
+  "snapshot_utc": "2026-09-27T17:57:56.999211+00:00",
+  "teams": 100,
+  "player_games": 200,
+  "unique_games": 184,
+  "independent_seeds": 184,
+  "top100_cut": {
+    "team_id": 16891058,
+    "name": "Navier-stokes",
+    "score": 2616.3,
+    "rank": 100
+  },
+  "baseline": {
+    "candidate": "f17_selected",
+    "submission": 56615489,
+    "games": 4,
+    "peak_hands_median": 11.0,
+    "animals_step288_median": 17.0,
+    "strawberry_step288_median": 33.0,
+    "sw_step_median": 266.0
+  },
+  "bands": [
+    {
+      "rank_band": [
+        1,
+        100
+      ],
+      "team_count": 100,
+      "player_games": 200,
+      "wins": 99,
+      "ties": 0,
+      "midgame_peak_hands_median": 11.0,
+      "se_by_step288": 47,
+      "any_se": 52,
+      "animals_step288_median": 19.0,
+      "crops_step288_median": {
+        "WHEAT": 26.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 23.0,
+        "MELON": 3.0
+      },
+      "tomato_by_step288": 94,
+      "carrot_by_step288": 70,
+      "late_melon_planting": 52,
+      "input_roundtrip_games": 140
+    },
+    {
+      "rank_band": [
+        1,
+        10
+      ],
+      "team_count": 10,
+      "player_games": 20,
+      "wins": 11,
+      "ties": 0,
+      "midgame_peak_hands_median": 11.0,
+      "se_by_step288": 6,
+      "any_se": 6,
+      "animals_step288_median": 20.5,
+      "crops_step288_median": {
+        "WHEAT": 30.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 20.5,
+        "MELON": 3.0
+      },
+      "tomato_by_step288": 7,
+      "carrot_by_step288": 2,
+      "late_melon_planting": 0,
+      "input_roundtrip_games": 18
+    },
+    {
+      "rank_band": [
+        11,
+        30
+      ],
+      "team_count": 20,
+      "player_games": 40,
+      "wins": 17,
+      "ties": 0,
+      "midgame_peak_hands_median": 11.0,
+      "se_by_step288": 17,
+      "any_se": 17,
+      "animals_step288_median": 21.0,
+      "crops_step288_median": {
+        "WHEAT": 29.0,
+        "CARROT": 0.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 20.0,
+        "MELON": 2.0
+      },
+      "tomato_by_step288": 22,
+      "carrot_by_step288": 14,
+      "late_melon_planting": 8,
+      "input_roundtrip_games": 30
+    },
+    {
+      "rank_band": [
+        31,
+        60
+      ],
+      "team_count": 30,
+      "player_games": 60,
+      "wins": 35,
+      "ties": 0,
+      "midgame_peak_hands_median": 11.0,
+      "se_by_step288": 16,
+      "any_se": 17,
+      "animals_step288_median": 19.0,
+      "crops_step288_median": {
+        "WHEAT": 27.0,
+        "CARROT": 0.0,
+        "TOMATO": 1.0,
+        "STRAWBERRY": 23.5,
+        "MELON": 3.0
+      },
+      "tomato_by_step288": 32,
+      "carrot_by_step288": 17,
+      "late_melon_planting": 20,
+      "input_roundtrip_games": 48
+    },
+    {
+      "rank_band": [
+        61,
+        100
+      ],
+      "team_count": 40,
+      "player_games": 80,
+      "wins": 36,
+      "ties": 0,
+      "midgame_peak_hands_median": 11.0,
+      "se_by_step288": 8,
+      "any_se": 12,
+      "animals_step288_median": 18.0,
+      "crops_step288_median": {
+        "WHEAT": 23.0,
+        "CARROT": 0.0,
+        "TOMATO": 0.0,
+        "STRAWBERRY": 25.0,
+        "MELON": 3.0
+      },
+      "tomato_by_step288": 33,
+      "carrot_by_step288": 37,
+      "late_melon_planting": 24,
+      "input_roundtrip_games": 44
+    }
+  ],
+  "heavy_same_turn_input_games": 20,
+  "heavy_same_turn_input_teams": 12,
+  "sw_step_median": 218.0,
+  "reconstructed_team_cases": 12,
+  "reconstructed_unique_games": 11,
+  "exact_snapshot_field_checks": 960,
+  "final_leftover_games": 70,
+  "own_final_leftover_games": 0,
+  "decem_boey_case": {
+    "episode": 114279609,
+    "teams": [
+      "DECEM",
+      "Boey"
+    ],
+    "rewards": [
+      112302.0,
+      106494.0
+    ],
+    "decem_minus_boey": {
+      "WHEAT": -970,
+      "CARROT": -1559,
+      "TOMATO": 15440,
+      "STRAWBERRY": 1156,
+      "MELON": -1128,
+      "FERTILIZER": -379,
+      "EGG": 1580,
+      "MILK": -1225,
+      "WOOL": -6487,
+      "HIRE": -620.0,
+      "LAND": 0.0
+    },
+    "margin": 5808.0,
+    "tomato_sale": 15990,
+    "tomato_seed_cost": 550,
+    "note": "Accounting decomposition, not causal incremental profit. Fertilizer, feed, land and shared labor are reported separately."
+  }
+}

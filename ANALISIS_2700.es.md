@@ -1,5 +1,11 @@
 # Cómo juegan los de 2700-3000 y qué haría falta para ganarles — 27 de septiembre de 2026
 
+> **Revisión posterior:** consultar [TOP100_ESTRATEGIAS.es.md](TOP100_ESTRATEGIAS.es.md), que analiza
+> los 100 equipos actuales y 184 partidas distintas. En esa muestra la mediana es 11 trabajadores y solo
+> 52/200 actuaciones abren el cuarto cuadrante. La necesidad general de cuatro cuadrantes, 12–13 trabajadores
+> y RL que se sugiere más abajo excede la evidencia; las grabaciones no revelan el algoritmo privado.
+> Este documento conserva el análisis histórico de otra muestra, principalmente del día 25.
+
 Petición de Arturo: "Busca una estrategia que pueda ganar también a los de 2700 considerando todo lo aprendido y
 revisando las estrategias actuales en kaggle utilizadas".
 

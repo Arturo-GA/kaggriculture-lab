@@ -1,0 +1,9109 @@
+[
+  {
+    "team": "DECEM",
+    "rank": 1,
+    "submission": 56601866,
+    "episode": 114279609,
+    "seat": 0,
+    "margin": 5808.0,
+    "seed": 1748286565,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "COW": 12,
+      "WHEAT": 33,
+      "GOOSE": 4,
+      "SHEEP": 8,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 219,
+      "STRAWBERRY": 16,
+      "TOMATO": 11,
+      "CARROT": 9
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 152,
+      "STRAWBERRY": 5,
+      "TOMATO": 11,
+      "CARROT": 9
+    }
+  },
+  {
+    "team": "DECEM",
+    "rank": 1,
+    "submission": 56601866,
+    "episode": 114267880,
+    "seat": 1,
+    "margin": 812.0,
+    "seed": 1390733823,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "COW": 7,
+      "WHEAT": 22,
+      "GOOSE": 7,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 157,
+      "STRAWBERRY": 42,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 9,
+      "WHEAT": 113,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "DSM",
+    "rank": 2,
+    "submission": 56606993,
+    "episode": 114279377,
+    "seat": 1,
+    "margin": 2952.0,
+    "seed": 934918530,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "COW": 5,
+      "CARROT": 26,
+      "WHEAT": 12,
+      "GOOSE": 12,
+      "SHEEP": 3,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 154,
+      "STRAWBERRY": 17,
+      "CARROT": 138
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 116,
+      "CARROT": 97,
+      "STRAWBERRY": 6
+    }
+  },
+  {
+    "team": "DSM",
+    "rank": 2,
+    "submission": 56606993,
+    "episode": 114267880,
+    "seat": 0,
+    "margin": -812.0,
+    "seed": 1390733823,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 31,
+      "COW": 6,
+      "WHEAT": 23,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 124,
+      "STRAWBERRY": 44,
+      "TOMATO": 10,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 13,
+      "WHEAT": 82,
+      "TOMATO": 10,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "Boey",
+    "rank": 3,
+    "submission": 56521745,
+    "episode": 114279609,
+    "seat": 1,
+    "margin": -5808.0,
+    "seed": 1748286565,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 201
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 343,
+      "WHEAT_units": 2447,
+      "FERTILIZER_turns": 259,
+      "FERTILIZER_units": 757
+    },
+    "layout_step288": {
+      "MELON": 6,
+      "WHEAT": 34,
+      "STRAWBERRY": 12,
+      "COW": 11,
+      "SHEEP": 10,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 240,
+      "STRAWBERRY": 15,
+      "CARROT": 32
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 172,
+      "STRAWBERRY": 3,
+      "CARROT": 32
+    }
+  },
+  {
+    "team": "Boey",
+    "rank": 3,
+    "submission": 56521745,
+    "episode": 114266440,
+    "seat": 1,
+    "margin": 6098.0,
+    "seed": 1042173125,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 233,
+      "FERTILIZER_units": 841,
+      "WHEAT_turns": 373,
+      "WHEAT_units": 2761
+    },
+    "layout_step288": {
+      "MELON": 5,
+      "WHEAT": 32,
+      "STRAWBERRY": 17,
+      "SHEEP": 12,
+      "GOOSE": 6,
+      "COW": 3
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BAKERY",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 193,
+      "STRAWBERRY": 22,
+      "CARROT": 57
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 136,
+      "STRAWBERRY": 5,
+      "CARROT": 57
+    }
+  },
+  {
+    "team": "M & M & P & Q",
+    "rank": 4,
+    "submission": 56607039,
+    "episode": 114273501,
+    "seat": 0,
+    "margin": 3625.0,
+    "seed": 907563006,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "SHEEP": 10,
+      "WHEAT": 27,
+      "MELON": 5,
+      "COW": 6,
+      "GOOSE": 6
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 147,
+      "STRAWBERRY": 22,
+      "CARROT": 96
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 95,
+      "STRAWBERRY": 1,
+      "CARROT": 96
+    }
+  },
+  {
+    "team": "M & M & P & Q",
+    "rank": 4,
+    "submission": 56607039,
+    "episode": 114265030,
+    "seat": 0,
+    "margin": 12900.0,
+    "seed": 1832957472,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 12,
+      "GOOSE": 8,
+      "WHEAT": 36,
+      "MELON": 5,
+      "COW": 5,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "BAKERY",
+      "YARN_STORE",
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 241,
+      "STRAWBERRY": 17,
+      "CARROT": 6
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 173,
+      "STRAWBERRY": 5,
+      "CARROT": 6
+    }
+  },
+  {
+    "team": "Vadim Vasilenko",
+    "rank": 5,
+    "submission": 56602695,
+    "episode": 114282257,
+    "seat": 0,
+    "margin": 13516.0,
+    "seed": 1312044263,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "COW": 9,
+      "WHEAT": 31,
+      "SHEEP": 9,
+      "GOOSE": 7,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 173,
+      "STRAWBERRY": 22,
+      "CARROT": 72
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 108,
+      "CARROT": 72
+    }
+  },
+  {
+    "team": "Vadim Vasilenko",
+    "rank": 5,
+    "submission": 56602695,
+    "episode": 114277892,
+    "seat": 1,
+    "margin": 6825.0,
+    "seed": 532099606,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "COW": 13,
+      "WHEAT": 24,
+      "SHEEP": 3,
+      "MELON": 3,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 174,
+      "STRAWBERRY": 33,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 129,
+      "STRAWBERRY": 4,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Majkel1337",
+    "rank": 6,
+    "submission": 56577255,
+    "episode": 114280858,
+    "seat": 1,
+    "margin": 3732.0,
+    "seed": 1720007805,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 224
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 25,
+      "STRAWBERRY": 29,
+      "COW": 5,
+      "GOOSE": 4,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 159,
+      "STRAWBERRY": 35,
+      "TOMATO": 4,
+      "CARROT": 30
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 6,
+      "WHEAT": 116,
+      "TOMATO": 4,
+      "CARROT": 30
+    }
+  },
+  {
+    "team": "Majkel1337",
+    "rank": 6,
+    "submission": 56577255,
+    "episode": 114276717,
+    "seat": 1,
+    "margin": -6834.0,
+    "seed": 1930632990,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 224
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 33,
+      "STRAWBERRY": 21,
+      "COW": 5,
+      "GOOSE": 3,
+      "SHEEP": 9,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 162,
+      "STRAWBERRY": 28,
+      "TOMATO": 13,
+      "CARROT": 56
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 7,
+      "WHEAT": 111,
+      "TOMATO": 12,
+      "CARROT": 56
+    }
+  },
+  {
+    "team": "Unknown Mother-Goose",
+    "rank": 7,
+    "submission": 56608595,
+    "episode": 114280858,
+    "seat": 0,
+    "margin": -3732.0,
+    "seed": 1720007805,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 7
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "COW": 7,
+      "SHEEP": 9,
+      "WHEAT": 27,
+      "MELON": 4,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 174,
+      "STRAWBERRY": 35,
+      "TOMATO": 7,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "TOMATO": 7,
+      "WHEAT": 118,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Unknown Mother-Goose",
+    "rank": 7,
+    "submission": 56608595,
+    "episode": 114280795,
+    "seat": 1,
+    "margin": 8187.0,
+    "seed": 250119209,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "COW": 8,
+      "WHEAT": 27,
+      "GOOSE": 7,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 154,
+      "STRAWBERRY": 36,
+      "TOMATO": 4,
+      "CARROT": 55
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 101,
+      "STRAWBERRY": 10,
+      "TOMATO": 4,
+      "CARROT": 55
+    }
+  },
+  {
+    "team": "Just A game on your lips",
+    "rank": 8,
+    "submission": 56602011,
+    "episode": 114276185,
+    "seat": 0,
+    "margin": -6762.0,
+    "seed": 1137888409,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 36,
+      "TOMATO": 10,
+      "COW": 12,
+      "SHEEP": 10,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 188,
+      "STRAWBERRY": 35,
+      "TOMATO": 22,
+      "CARROT": 36
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 15,
+      "WHEAT": 121,
+      "TOMATO": 12,
+      "CARROT": 36
+    }
+  },
+  {
+    "team": "Just A game on your lips",
+    "rank": 8,
+    "submission": 56602011,
+    "episode": 114274968,
+    "seat": 1,
+    "margin": -5486.0,
+    "seed": 1345036986,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 253
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "WHEAT": 29,
+      "SHEEP": 10,
+      "COW": 8,
+      "GOOSE": 7,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 177,
+      "STRAWBERRY": 44,
+      "TOMATO": 15,
+      "CARROT": 17
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 124,
+      "STRAWBERRY": 14,
+      "TOMATO": 10,
+      "CARROT": 17
+    }
+  },
+  {
+    "team": "Anton Tikhonov",
+    "rank": 9,
+    "submission": 56587629,
+    "episode": 114277857,
+    "seat": 1,
+    "margin": -7847.0,
+    "seed": 1620433338,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 45,
+      "WHEAT": 26,
+      "COW": 15,
+      "GOOSE": 2,
+      "SHEEP": 3,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 172,
+      "STRAWBERRY": 46,
+      "TOMATO": 8,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 131,
+      "TOMATO": 6,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Anton Tikhonov",
+    "rank": 9,
+    "submission": 56587629,
+    "episode": 114270638,
+    "seat": 1,
+    "margin": -129.0,
+    "seed": 751271786,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 253
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 31,
+      "CARROT": 11,
+      "COW": 6,
+      "GOOSE": 12,
+      "SHEEP": 3,
+      "TOMATO": 7
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 188,
+      "STRAWBERRY": 30,
+      "TOMATO": 13,
+      "CARROT": 83
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 127,
+      "CARROT": 72,
+      "STRAWBERRY": 10,
+      "TOMATO": 6
+    }
+  },
+  {
+    "team": "KawattaTaido",
+    "rank": 10,
+    "submission": 56590457,
+    "episode": 114276358,
+    "seat": 1,
+    "margin": -1496.0,
+    "seed": 263274133,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 31,
+      "TOMATO": 18,
+      "COW": 11,
+      "GOOSE": 6,
+      "SHEEP": 3,
+      "MELON": 2
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 171,
+      "STRAWBERRY": 27,
+      "TOMATO": 34,
+      "CARROT": 43
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 115,
+      "STRAWBERRY": 7,
+      "TOMATO": 16,
+      "CARROT": 43
+    }
+  },
+  {
+    "team": "KawattaTaido",
+    "rank": 10,
+    "submission": 56590457,
+    "episode": 114272232,
+    "seat": 0,
+    "margin": 4037.0,
+    "seed": 1886527812,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 15,
+      "MELON": 2,
+      "WHEAT": 37,
+      "COW": 3,
+      "SHEEP": 19,
+      "GOOSE": 2,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 184,
+      "STRAWBERRY": 18,
+      "TOMATO": 13,
+      "CARROT": 134
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 122,
+      "STRAWBERRY": 3,
+      "TOMATO": 9,
+      "CARROT": 134
+    }
+  },
+  {
+    "team": "kigasudayooo",
+    "rank": 11,
+    "submission": 56591236,
+    "episode": 114274891,
+    "seat": 0,
+    "margin": 1559.0,
+    "seed": 1889090875,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 10,
+      "MELON": 1,
+      "WHEAT": 42,
+      "COW": 11,
+      "GOOSE": 3,
+      "SHEEP": 10,
+      "TOMATO": 7
+    },
+    "shops_step288": [
+      "BAKERY",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 211,
+      "STRAWBERRY": 10,
+      "TOMATO": 20,
+      "CARROT": 122
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 13,
+      "WHEAT": 138,
+      "CARROT": 122
+    }
+  },
+  {
+    "team": "kigasudayooo",
+    "rank": 11,
+    "submission": 56591236,
+    "episode": 114273655,
+    "seat": 0,
+    "margin": 4149.0,
+    "seed": 1782717272,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 16,
+      "WHEAT": 26,
+      "TOMATO": 13,
+      "CARROT": 7,
+      "COW": 10,
+      "GOOSE": 8,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 189,
+      "STRAWBERRY": 31,
+      "TOMATO": 24,
+      "CARROT": 68
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 127,
+      "STRAWBERRY": 15,
+      "TOMATO": 11,
+      "CARROT": 61
+    }
+  },
+  {
+    "team": "Yizhou",
+    "rank": 12,
+    "submission": 56608085,
+    "episode": 114277547,
+    "seat": 1,
+    "margin": -10867.0,
+    "seed": 678049674,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "CARROT": 13,
+      "WHEAT": 20,
+      "COW": 7,
+      "GOOSE": 7,
+      "SHEEP": 3,
+      "TOMATO": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 148,
+      "STRAWBERRY": 22,
+      "TOMATO": 5,
+      "CARROT": 124
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 102,
+      "CARROT": 111,
+      "TOMATO": 2
+    }
+  },
+  {
+    "team": "Yizhou",
+    "rank": 12,
+    "submission": 56608085,
+    "episode": 114276536,
+    "seat": 1,
+    "margin": -3064.0,
+    "seed": 555506342,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 253
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 13
+    },
+    "layout_step288": {
+      "STRAWBERRY": 19,
+      "WHEAT": 32,
+      "CARROT": 6,
+      "COW": 8,
+      "SHEEP": 10,
+      "GOOSE": 6,
+      "TOMATO": 9
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 183,
+      "STRAWBERRY": 33,
+      "TOMATO": 14,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 124,
+      "STRAWBERRY": 14,
+      "TOMATO": 5,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "TheEggman",
+    "rank": 13,
+    "submission": 56608276,
+    "episode": 114275027,
+    "seat": 1,
+    "margin": 10018.0,
+    "seed": 763653587,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 242
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 17,
+      "SHEEP": 14,
+      "WHEAT": 33,
+      "COW": 3,
+      "GOOSE": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 162,
+      "STRAWBERRY": 24,
+      "CARROT": 108
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 6,
+      "WHEAT": 108,
+      "CARROT": 108
+    }
+  },
+  {
+    "team": "TheEggman",
+    "rank": 13,
+    "submission": 56608276,
+    "episode": 114273546,
+    "seat": 0,
+    "margin": -122.0,
+    "seed": 1431066722,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 224
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 7,
+      "SHEEP": 17,
+      "WHEAT": 42,
+      "COW": 3,
+      "MELON": 4,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 239,
+      "STRAWBERRY": 10,
+      "CARROT": 30
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 167,
+      "STRAWBERRY": 3,
+      "CARROT": 30
+    }
+  },
+  {
+    "team": "Azat Akhtyamov",
+    "rank": 14,
+    "submission": 56561951,
+    "episode": 114278089,
+    "seat": 1,
+    "margin": -13275.0,
+    "seed": 1112193381,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 262
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 36,
+      "WHEAT": 28,
+      "COW": 5,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "TOMATO": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 197,
+      "STRAWBERRY": 39,
+      "TOMATO": 19,
+      "CARROT": 24
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 152,
+      "STRAWBERRY": 3,
+      "TOMATO": 16,
+      "CARROT": 24
+    }
+  },
+  {
+    "team": "Azat Akhtyamov",
+    "rank": 14,
+    "submission": 56561951,
+    "episode": 114264626,
+    "seat": 0,
+    "margin": -717.0,
+    "seed": 1254101821,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 13,
+      "WHEAT": 34,
+      "TOMATO": 12,
+      "COW": 10,
+      "GOOSE": 8,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 179,
+      "STRAWBERRY": 24,
+      "TOMATO": 28,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 117,
+      "STRAWBERRY": 11,
+      "TOMATO": 16,
+      "CARROT": 48
+    }
+  },
+  {
+    "team": "atsushi11o7",
+    "rank": 15,
+    "submission": 56599450,
+    "episode": 114280634,
+    "seat": 0,
+    "margin": 4762.0,
+    "seed": 185749772,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 217,
+      "SE": 256
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 17,
+      "TOMATO": 11,
+      "WHEAT": 31,
+      "CARROT": 7,
+      "COW": 11,
+      "GOOSE": 7,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 172,
+      "STRAWBERRY": 20,
+      "TOMATO": 28,
+      "CARROT": 116
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 109,
+      "WHEAT": 109,
+      "TOMATO": 17,
+      "STRAWBERRY": 3
+    }
+  },
+  {
+    "team": "atsushi11o7",
+    "rank": 15,
+    "submission": 56599450,
+    "episode": 114273553,
+    "seat": 0,
+    "margin": -2043.0,
+    "seed": 342387732,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 217,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "WHEAT": 41,
+      "COW": 13,
+      "GOOSE": 1,
+      "SHEEP": 3,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 212,
+      "STRAWBERRY": 33,
+      "TOMATO": 17,
+      "CARROT": 73
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 153,
+      "STRAWBERRY": 6,
+      "TOMATO": 12,
+      "CARROT": 73
+    }
+  },
+  {
+    "team": "有辣条有权",
+    "rank": 16,
+    "submission": 56597625,
+    "episode": 114274698,
+    "seat": 1,
+    "margin": -10058.0,
+    "seed": 295196575,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 7,
+      "WHEAT_units": 13
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 34,
+      "COW": 9,
+      "GOOSE": 10,
+      "SHEEP": 3,
+      "TOMATO": 6
+    },
+    "shops_step288": [
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 187,
+      "STRAWBERRY": 35,
+      "TOMATO": 21,
+      "CARROT": 55
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 127,
+      "STRAWBERRY": 13,
+      "TOMATO": 15,
+      "CARROT": 55
+    }
+  },
+  {
+    "team": "有辣条有权",
+    "rank": 16,
+    "submission": 56597625,
+    "episode": 114262952,
+    "seat": 0,
+    "margin": -8139.0,
+    "seed": 1395805855,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 258
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "WHEAT": 34,
+      "COW": 9,
+      "SHEEP": 9,
+      "GOOSE": 3,
+      "TOMATO": 6
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 225,
+      "STRAWBERRY": 25,
+      "TOMATO": 15,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 171,
+      "TOMATO": 9,
+      "STRAWBERRY": 1,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Arda Ceylan",
+    "rank": 17,
+    "submission": 56595701,
+    "episode": 114283842,
+    "seat": 1,
+    "margin": -3678.0,
+    "seed": 223865376,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 253
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 8,
+      "WHEAT_units": 15
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "WHEAT": 35,
+      "TOMATO": 15,
+      "SHEEP": 10,
+      "COW": 7,
+      "GOOSE": 9
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 197,
+      "STRAWBERRY": 18,
+      "TOMATO": 29,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 136,
+      "TOMATO": 14,
+      "STRAWBERRY": 7,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "Arda Ceylan",
+    "rank": 17,
+    "submission": 56595701,
+    "episode": 114283937,
+    "seat": 0,
+    "margin": 1448.0,
+    "seed": 45244156,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 260
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 43,
+      "COW": 13,
+      "WHEAT": 24,
+      "GOOSE": 2,
+      "SHEEP": 3,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 150,
+      "STRAWBERRY": 51,
+      "TOMATO": 9,
+      "CARROT": 72
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 109,
+      "STRAWBERRY": 8,
+      "TOMATO": 8,
+      "CARROT": 72
+    }
+  },
+  {
+    "team": "Densike",
+    "rank": 18,
+    "submission": 56598742,
+    "episode": 114271948,
+    "seat": 0,
+    "margin": -6997.0,
+    "seed": 1992163756,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "CARROT": 12,
+      "WHEAT": 34,
+      "COW": 5,
+      "GOOSE": 8,
+      "SHEEP": 8,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 189,
+      "STRAWBERRY": 26,
+      "TOMATO": 16,
+      "CARROT": 114
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 126,
+      "CARROT": 102,
+      "STRAWBERRY": 15,
+      "TOMATO": 11
+    }
+  },
+  {
+    "team": "Densike",
+    "rank": 18,
+    "submission": 56598742,
+    "episode": 114270616,
+    "seat": 1,
+    "margin": 7430.0,
+    "seed": 266563213,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "WHEAT": 35,
+      "MELON": 1,
+      "TOMATO": 11,
+      "COW": 13,
+      "GOOSE": 6,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BAKERY",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 174,
+      "STRAWBERRY": 36,
+      "TOMATO": 27,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 110,
+      "STRAWBERRY": 18,
+      "TOMATO": 16,
+      "CARROT": 48
+    }
+  },
+  {
+    "team": "tetsuya & yuanzhe & guoqin",
+    "rank": 19,
+    "submission": 56605099,
+    "episode": 114277977,
+    "seat": 1,
+    "margin": 1452.0,
+    "seed": 501718963,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 224
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "WHEAT": 24,
+      "COW": 5,
+      "SHEEP": 11,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 156,
+      "STRAWBERRY": 35,
+      "TOMATO": 9,
+      "CARROT": 29
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 6,
+      "WHEAT": 107,
+      "TOMATO": 9,
+      "CARROT": 29
+    }
+  },
+  {
+    "team": "tetsuya & yuanzhe & guoqin",
+    "rank": 19,
+    "submission": 56605099,
+    "episode": 114275222,
+    "seat": 0,
+    "margin": 7655.0,
+    "seed": 56549975,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 29,
+      "SHEEP": 11,
+      "COW": 7,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 165,
+      "STRAWBERRY": 26,
+      "TOMATO": 11,
+      "CARROT": 60
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 116,
+      "STRAWBERRY": 3,
+      "TOMATO": 11,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "Kaggledew Valley 🏆",
+    "rank": 20,
+    "submission": 56608484,
+    "episode": 114282259,
+    "seat": 1,
+    "margin": -3023.0,
+    "seed": 1517363691,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 169,
+      "SW": 206
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 12,
+      "WHEAT": 16,
+      "COW": 11,
+      "STRAWBERRY": 19,
+      "TOMATO": 2,
+      "SHEEP": 7,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 153,
+      "CARROT": 5,
+      "MELON": 16,
+      "STRAWBERRY": 24,
+      "TOMATO": 2
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 5,
+      "WHEAT": 106,
+      "MELON": 1,
+      "CARROT": 3
+    }
+  },
+  {
+    "team": "Kaggledew Valley 🏆",
+    "rank": 20,
+    "submission": 56608484,
+    "episode": 114277661,
+    "seat": 0,
+    "margin": -4983.0,
+    "seed": 1353837475,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 158,
+      "SW": 217
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 11,
+      "STRAWBERRY": 32,
+      "GOOSE": 8,
+      "SHEEP": 4,
+      "TOMATO": 12,
+      "COW": 5,
+      "WHEAT": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 73,
+      "CARROT": 36,
+      "MELON": 14,
+      "STRAWBERRY": 38,
+      "TOMATO": 15
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 6,
+      "TOMATO": 3,
+      "MELON": 1,
+      "WHEAT": 49,
+      "CARROT": 33
+    }
+  },
+  {
+    "team": "吃白饭的大肥鱼",
+    "rank": 21,
+    "submission": 56609493,
+    "episode": 114285194,
+    "seat": 0,
+    "margin": 6242.0,
+    "seed": 1788755374,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "WHEAT": 28,
+      "TOMATO": 2,
+      "COW": 11,
+      "SHEEP": 3,
+      "GOOSE": 7,
+      "MELON": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 117,
+      "MELON": 12,
+      "STRAWBERRY": 30,
+      "TOMATO": 22,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 71,
+      "STRAWBERRY": 9,
+      "TOMATO": 20,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "吃白饭的大肥鱼",
+    "rank": 21,
+    "submission": 56609493,
+    "episode": 114283536,
+    "seat": 0,
+    "margin": 8691.0,
+    "seed": 1879917911,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "COW": 8,
+      "MELON": 3,
+      "WHEAT": 17,
+      "SHEEP": 17,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 155,
+      "MELON": 14,
+      "STRAWBERRY": 25,
+      "TOMATO": 13,
+      "CARROT": 8
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 114,
+      "TOMATO": 13,
+      "STRAWBERRY": 4,
+      "MELON": 1,
+      "CARROT": 8
+    }
+  },
+  {
+    "team": "THIRD FARM CLUB",
+    "rank": 22,
+    "submission": 56603901,
+    "episode": 114280772,
+    "seat": 1,
+    "margin": 5548.0,
+    "seed": 1647068978,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 5,
+      "WHEAT": 15,
+      "STRAWBERRY": 35,
+      "COW": 9,
+      "GOOSE": 5,
+      "SHEEP": 3,
+      "CARROT": 2,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 159,
+      "STRAWBERRY": 38,
+      "TOMATO": 7,
+      "CARROT": 5
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 115,
+      "MELON": 1,
+      "TOMATO": 6,
+      "STRAWBERRY": 3,
+      "CARROT": 3
+    }
+  },
+  {
+    "team": "THIRD FARM CLUB",
+    "rank": 22,
+    "submission": 56603901,
+    "episode": 114269170,
+    "seat": 0,
+    "margin": 386.0,
+    "seed": 496909983,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 5,
+      "WHEAT": 13,
+      "STRAWBERRY": 37,
+      "COW": 11,
+      "GOOSE": 2,
+      "SHEEP": 4,
+      "CARROT": 2,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 129,
+      "STRAWBERRY": 42,
+      "CARROT": 33,
+      "TOMATO": 3
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 91,
+      "STRAWBERRY": 5,
+      "CARROT": 31,
+      "MELON": 3,
+      "TOMATO": 2
+    }
+  },
+  {
+    "team": "mtmr_s1",
+    "rank": 23,
+    "submission": 56600449,
+    "episode": 114272207,
+    "seat": 1,
+    "margin": -9128.0,
+    "seed": 1413456082,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 264
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 13,
+      "TOMATO": 31,
+      "WHEAT": 18,
+      "COW": 9,
+      "GOOSE": 9,
+      "SHEEP": 5,
+      "MELON": 2,
+      "CARROT": 7
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 113,
+      "STRAWBERRY": 24,
+      "CARROT": 64,
+      "TOMATO": 45
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 75,
+      "STRAWBERRY": 9,
+      "TOMATO": 14,
+      "MELON": 4,
+      "CARROT": 57
+    }
+  },
+  {
+    "team": "mtmr_s1",
+    "rank": 23,
+    "submission": 56600449,
+    "episode": 114261430,
+    "seat": 0,
+    "margin": -9416.0,
+    "seed": 272349393,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 221,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 28,
+      "MELON": 2,
+      "CARROT": 12,
+      "WHEAT": 37,
+      "COW": 13,
+      "GOOSE": 1,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 145,
+      "STRAWBERRY": 40,
+      "CARROT": 35,
+      "TOMATO": 31
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "TOMATO": 31,
+      "MELON": 2,
+      "WHEAT": 91,
+      "CARROT": 23
+    }
+  },
+  {
+    "team": "We wanna be tomatos",
+    "rank": 24,
+    "submission": 56603409,
+    "episode": 114283277,
+    "seat": 0,
+    "margin": -15401.0,
+    "seed": 1328243333,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 218,
+      "SE": 266
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "WHEAT": 39,
+      "TOMATO": 4,
+      "COW": 17,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 213,
+      "STRAWBERRY": 28,
+      "TOMATO": 13,
+      "CARROT": 11
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 141,
+      "TOMATO": 9,
+      "STRAWBERRY": 10,
+      "CARROT": 11
+    }
+  },
+  {
+    "team": "We wanna be tomatos",
+    "rank": 24,
+    "submission": 56603409,
+    "episode": 114278151,
+    "seat": 1,
+    "margin": 4549.0,
+    "seed": 497556614,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 218,
+      "SE": 252
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 14,
+      "WHEAT": 29,
+      "GOOSE": 8,
+      "TOMATO": 6,
+      "CARROT": 11,
+      "COW": 10,
+      "SHEEP": 3,
+      "MELON": 1
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 237,
+      "STRAWBERRY": 14,
+      "CARROT": 51,
+      "TOMATO": 18
+    },
+    "late_plantings_by_crop": {
+      "MELON": 4,
+      "CARROT": 39,
+      "WHEAT": 172,
+      "TOMATO": 12
+    }
+  },
+  {
+    "team": "Smackaveli",
+    "rank": 25,
+    "submission": 56602322,
+    "episode": 114279433,
+    "seat": 0,
+    "margin": 8136.0,
+    "seed": 552224937,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "COW": 7,
+      "WHEAT": 29,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "MELON": 4,
+      "CARROT": 2
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 163,
+      "STRAWBERRY": 26,
+      "CARROT": 78
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 5,
+      "WHEAT": 108,
+      "CARROT": 76
+    }
+  },
+  {
+    "team": "Smackaveli",
+    "rank": 25,
+    "submission": 56602322,
+    "episode": 114279137,
+    "seat": 0,
+    "margin": -643.0,
+    "seed": 614004482,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "COW": 5,
+      "WHEAT": 31,
+      "GOOSE": 12,
+      "MELON": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 142,
+      "STRAWBERRY": 32,
+      "CARROT": 78
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 12,
+      "WHEAT": 82,
+      "CARROT": 78
+    }
+  },
+  {
+    "team": "flg",
+    "rank": 26,
+    "submission": 56548059,
+    "episode": 114282107,
+    "seat": 1,
+    "margin": 29499.0,
+    "seed": 912135932,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "MELON": 2,
+      "WHEAT": 20,
+      "SHEEP": 9,
+      "COW": 5,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 141,
+      "STRAWBERRY": 34,
+      "TOMATO": 3
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 109,
+      "TOMATO": 3
+    }
+  },
+  {
+    "team": "flg",
+    "rank": 26,
+    "submission": 56548059,
+    "episode": 114272099,
+    "seat": 1,
+    "margin": -8495.0,
+    "seed": 390259455,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 41,
+      "MELON": 2,
+      "COW": 13,
+      "WHEAT": 13,
+      "GOOSE": 3,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 139,
+      "STRAWBERRY": 41,
+      "TOMATO": 9,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 107,
+      "TOMATO": 9,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "yuto083",
+    "rank": 27,
+    "submission": 56603077,
+    "episode": 114283861,
+    "seat": 1,
+    "margin": -6497.0,
+    "seed": 480548290,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "WHEAT": 34,
+      "COW": 8,
+      "SHEEP": 7,
+      "GOOSE": 10,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 213,
+      "STRAWBERRY": 19,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 142,
+      "STRAWBERRY": 8,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "yuto083",
+    "rank": 27,
+    "submission": 56603077,
+    "episode": 114280983,
+    "seat": 0,
+    "margin": -9065.0,
+    "seed": 1798146072,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 197
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "WHEAT": 40,
+      "STRAWBERRY": 10,
+      "COW": 7,
+      "GOOSE": 11,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 230,
+      "STRAWBERRY": 17,
+      "CARROT": 60
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 153,
+      "STRAWBERRY": 7,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "Artem The Farmer 🍅",
+    "rank": 28,
+    "submission": 56610858,
+    "episode": 114285047,
+    "seat": 1,
+    "margin": 2245.0,
+    "seed": 1982789704,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 15
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "WHEAT": 22,
+      "MELON": 2,
+      "COW": 9,
+      "GOOSE": 6,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 96,
+      "STRAWBERRY": 35,
+      "TOMATO": 20,
+      "CARROT": 35
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 55,
+      "STRAWBERRY": 2,
+      "TOMATO": 20,
+      "CARROT": 35
+    }
+  },
+  {
+    "team": "Artem The Farmer 🍅",
+    "rank": 28,
+    "submission": 56610858,
+    "episode": 114283536,
+    "seat": 1,
+    "margin": -8691.0,
+    "seed": 1879917911,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "WHEAT": 29,
+      "SHEEP": 15,
+      "MELON": 3,
+      "COW": 4,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 217,
+      "STRAWBERRY": 20,
+      "TOMATO": 7,
+      "CARROT": 15
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 7,
+      "STRAWBERRY": 2,
+      "WHEAT": 157,
+      "CARROT": 15
+    }
+  },
+  {
+    "team": "Aaweg",
+    "rank": 29,
+    "submission": 56597458,
+    "episode": 114286155,
+    "seat": 0,
+    "margin": -5772.0,
+    "seed": 2033995945,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "COW": 7,
+      "WHEAT": 28,
+      "GOOSE": 12,
+      "MELON": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 215,
+      "STRAWBERRY": 21,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 160,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Aaweg",
+    "rank": 29,
+    "submission": 56597458,
+    "episode": 114283450,
+    "seat": 1,
+    "margin": -2393.0,
+    "seed": 217165029,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 29,
+      "MELON": 5,
+      "COW": 7,
+      "GOOSE": 9,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BAKERY",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 221,
+      "STRAWBERRY": 24,
+      "CARROT": 44
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 169,
+      "CARROT": 44,
+      "STRAWBERRY": 2
+    }
+  },
+  {
+    "team": "Ueddy",
+    "rank": 30,
+    "submission": 56602374,
+    "episode": 114273541,
+    "seat": 0,
+    "margin": -9444.0,
+    "seed": 299750373,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "SHEEP": 13,
+      "WHEAT": 24,
+      "COW": 7,
+      "GOOSE": 5,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 102,
+      "STRAWBERRY": 33,
+      "TOMATO": 21,
+      "CARROT": 14
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 21,
+      "STRAWBERRY": 11,
+      "WHEAT": 46,
+      "CARROT": 14
+    }
+  },
+  {
+    "team": "Ueddy",
+    "rank": 30,
+    "submission": 56602374,
+    "episode": 114273384,
+    "seat": 1,
+    "margin": 6876.0,
+    "seed": 1607810174,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 12,
+      "COW": 7,
+      "WHEAT": 34,
+      "CARROT": 3,
+      "GOOSE": 11,
+      "SHEEP": 3,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "BAKERY",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 134,
+      "STRAWBERRY": 25,
+      "CARROT": 66,
+      "TOMATO": 15
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 13,
+      "CARROT": 63,
+      "WHEAT": 69,
+      "TOMATO": 15
+    }
+  },
+  {
+    "team": "🐚seek inspiration🐚",
+    "rank": 31,
+    "submission": 56599555,
+    "episode": 114277142,
+    "seat": 0,
+    "margin": 5422.0,
+    "seed": 1165594942,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 32,
+      "MELON": 3,
+      "WHEAT": 31,
+      "COW": 15,
+      "GOOSE": 2,
+      "SHEEP": 3,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 165,
+      "STRAWBERRY": 40,
+      "TOMATO": 24,
+      "CARROT": 54
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 110,
+      "STRAWBERRY": 8,
+      "TOMATO": 19,
+      "CARROT": 54
+    }
+  },
+  {
+    "team": "🐚seek inspiration🐚",
+    "rank": 31,
+    "submission": 56599555,
+    "episode": 114264979,
+    "seat": 0,
+    "margin": 12337.0,
+    "seed": 1148512321,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "WHEAT": 28,
+      "MELON": 5,
+      "COW": 9,
+      "SHEEP": 9,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 155,
+      "STRAWBERRY": 27,
+      "TOMATO": 5,
+      "CARROT": 66
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 106,
+      "STRAWBERRY": 6,
+      "TOMATO": 5,
+      "CARROT": 66
+    }
+  },
+  {
+    "team": "elmo",
+    "rank": 32,
+    "submission": 56596607,
+    "episode": 114285355,
+    "seat": 0,
+    "margin": -6397.0,
+    "seed": 875388951,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 203,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4,
+      "FERTILIZER_turns": 4,
+      "FERTILIZER_units": 9
+    },
+    "layout_step288": {
+      "STRAWBERRY": 39,
+      "MELON": 2,
+      "WHEAT": 26,
+      "COW": 6,
+      "GOOSE": 8,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 152,
+      "STRAWBERRY": 53,
+      "TOMATO": 15,
+      "CARROT": 35
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 106,
+      "STRAWBERRY": 14,
+      "TOMATO": 15,
+      "CARROT": 35
+    }
+  },
+  {
+    "team": "elmo",
+    "rank": 32,
+    "submission": 56596607,
+    "episode": 114280367,
+    "seat": 0,
+    "margin": -26278.0,
+    "seed": 1515972931,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 251,
+      "SE": 262
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "WHEAT": 23,
+      "STRAWBERRY": 24,
+      "SHEEP": 22,
+      "COW": 2
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 212,
+      "STRAWBERRY": 25,
+      "TOMATO": 1,
+      "CARROT": 74
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 174,
+      "TOMATO": 1,
+      "CARROT": 74
+    }
+  },
+  {
+    "team": "Otter Vibe",
+    "rank": 33,
+    "submission": 56596320,
+    "episode": 114282402,
+    "seat": 0,
+    "margin": -1318.0,
+    "seed": 1384820695,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 128,
+      "SW": 200
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 12,
+      "MELON": 5,
+      "WHEAT": 29,
+      "SHEEP": 10,
+      "TOMATO": 5,
+      "GOOSE": 10,
+      "COW": 3
+    },
+    "shops_step288": [
+      "BAKERY",
+      "YARN_STORE",
+      "BAKERY",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 144,
+      "CARROT": 36,
+      "STRAWBERRY": 13,
+      "TOMATO": 11
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 99,
+      "TOMATO": 6,
+      "STRAWBERRY": 1,
+      "CARROT": 32
+    }
+  },
+  {
+    "team": "Otter Vibe",
+    "rank": 33,
+    "submission": 56596320,
+    "episode": 114268982,
+    "seat": 1,
+    "margin": -927.0,
+    "seed": 497898289,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 128,
+      "SW": 200
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 23,
+      "MELON": 4,
+      "WHEAT": 25,
+      "GOOSE": 4,
+      "COW": 7,
+      "TOMATO": 2,
+      "SHEEP": 10
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 104,
+      "CARROT": 28,
+      "STRAWBERRY": 34,
+      "TOMATO": 2
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 69,
+      "CARROT": 24
+    }
+  },
+  {
+    "team": "akmr",
+    "rank": 34,
+    "submission": 56605610,
+    "episode": 114279163,
+    "seat": 0,
+    "margin": 4293.0,
+    "seed": 1206159173,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "COW": 7,
+      "WHEAT": 29,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 148,
+      "STRAWBERRY": 32,
+      "CARROT": 78
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 8,
+      "WHEAT": 97,
+      "CARROT": 78
+    }
+  },
+  {
+    "team": "akmr",
+    "rank": 34,
+    "submission": 56605610,
+    "episode": 114277941,
+    "seat": 0,
+    "margin": -4266.0,
+    "seed": 256327618,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 19,
+      "COW": 5,
+      "WHEAT": 33,
+      "SHEEP": 11,
+      "MELON": 6,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 192,
+      "STRAWBERRY": 29,
+      "CARROT": 66
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 130,
+      "STRAWBERRY": 10,
+      "CARROT": 66
+    }
+  },
+  {
+    "team": "IsaiahP",
+    "rank": 35,
+    "submission": 56586654,
+    "episode": 114282246,
+    "seat": 0,
+    "margin": -4941.0,
+    "seed": 1123845828,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 169,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 9,
+      "STRAWBERRY": 15,
+      "GOOSE": 7,
+      "WHEAT": 24,
+      "TOMATO": 6,
+      "COW": 4,
+      "SHEEP": 10
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BAKERY",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 149,
+      "MELON": 18,
+      "STRAWBERRY": 16,
+      "TOMATO": 6,
+      "CARROT": 40
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 98,
+      "STRAWBERRY": 1,
+      "MELON": 2,
+      "CARROT": 40
+    }
+  },
+  {
+    "team": "IsaiahP",
+    "rank": 35,
+    "submission": 56586654,
+    "episode": 114276458,
+    "seat": 0,
+    "margin": 1343.0,
+    "seed": 683481816,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 169,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 6,
+      "WHEAT": 19,
+      "STRAWBERRY": 31,
+      "COW": 9,
+      "SHEEP": 3,
+      "GOOSE": 6,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 78,
+      "MELON": 15,
+      "STRAWBERRY": 32,
+      "TOMATO": 8,
+      "CARROT": 66
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 43,
+      "CARROT": 66,
+      "TOMATO": 7,
+      "MELON": 2,
+      "STRAWBERRY": 1
+    }
+  },
+  {
+    "team": "WarRusher",
+    "rank": 36,
+    "submission": 56606776,
+    "episode": 114280638,
+    "seat": 0,
+    "margin": 12093.0,
+    "seed": 2016619323,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 14,
+      "COW": 5,
+      "WHEAT": 34,
+      "GOOSE": 12,
+      "SHEEP": 3,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 160,
+      "STRAWBERRY": 17,
+      "TOMATO": 10,
+      "CARROT": 64
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 2,
+      "WHEAT": 96,
+      "TOMATO": 10,
+      "CARROT": 64
+    }
+  },
+  {
+    "team": "WarRusher",
+    "rank": 36,
+    "submission": 56606776,
+    "episode": 114273414,
+    "seat": 0,
+    "margin": -1192.0,
+    "seed": 512743104,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 9,
+      "COW": 5,
+      "WHEAT": 29,
+      "CARROT": 11,
+      "SHEEP": 10,
+      "GOOSE": 6,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "YARN_STORE",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 156,
+      "STRAWBERRY": 25,
+      "CARROT": 72,
+      "TOMATO": 6
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 16,
+      "TOMATO": 6,
+      "WHEAT": 87,
+      "CARROT": 61
+    }
+  },
+  {
+    "team": "SpaTaro",
+    "rank": 37,
+    "submission": 56551307,
+    "episode": 114273045,
+    "seat": 1,
+    "margin": 3037.0,
+    "seed": 1393868098,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 226
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 8,
+      "WHEAT_units": 22,
+      "WOOL_turns": 4,
+      "WOOL_units": 15,
+      "STRAWBERRY_turns": 1,
+      "STRAWBERRY_units": 4,
+      "MILK_turns": 1,
+      "MILK_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "WHEAT": 25,
+      "COW": 13,
+      "SHEEP": 10
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 180,
+      "STRAWBERRY": 26
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 125
+    }
+  },
+  {
+    "team": "SpaTaro",
+    "rank": 37,
+    "submission": 56551307,
+    "episode": 114272341,
+    "seat": 0,
+    "margin": 1510.0,
+    "seed": 292695304,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 13,
+      "WHEAT_units": 30,
+      "MILK_turns": 3,
+      "MILK_units": 8,
+      "STRAWBERRY_turns": 1,
+      "STRAWBERRY_units": 2,
+      "FERTILIZER_turns": 1,
+      "FERTILIZER_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "WHEAT": 36,
+      "COW": 6,
+      "SHEEP": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 163,
+      "STRAWBERRY": 29,
+      "CARROT": 152
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 152,
+      "WHEAT": 96
+    }
+  },
+  {
+    "team": "Victor @ Tufa Labs",
+    "rank": 38,
+    "submission": 56566913,
+    "episode": 114286543,
+    "seat": 1,
+    "margin": -7836.0,
+    "seed": 1112463695,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 254
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 28,
+      "CARROT": 12,
+      "COW": 9,
+      "GOOSE": 8,
+      "SHEEP": 3,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "PET_CAFE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 198,
+      "STRAWBERRY": 29,
+      "TOMATO": 13,
+      "CARROT": 104
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 144,
+      "CARROT": 92,
+      "STRAWBERRY": 8,
+      "TOMATO": 9
+    }
+  },
+  {
+    "team": "Victor @ Tufa Labs",
+    "rank": 38,
+    "submission": 56566913,
+    "episode": 114285159,
+    "seat": 0,
+    "margin": 1974.0,
+    "seed": 1774435332,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 6
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 34,
+      "COW": 6,
+      "SHEEP": 10,
+      "GOOSE": 5,
+      "TOMATO": 6
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 192,
+      "STRAWBERRY": 32,
+      "TOMATO": 17,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 127,
+      "STRAWBERRY": 9,
+      "TOMATO": 11,
+      "CARROT": 48
+    }
+  },
+  {
+    "team": "Snorlax",
+    "rank": 39,
+    "submission": 56593103,
+    "episode": 114277597,
+    "seat": 0,
+    "margin": -3538.0,
+    "seed": 254674221,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 196
+    },
+    "peak_hands_midgame": 9,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 7,
+      "WHEAT": 37,
+      "STRAWBERRY": 13,
+      "GOOSE": 3,
+      "COW": 13,
+      "SHEEP": 2
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 117,
+      "MELON": 14,
+      "STRAWBERRY": 33,
+      "CARROT": 91
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 52,
+      "STRAWBERRY": 20,
+      "CARROT": 91
+    }
+  },
+  {
+    "team": "Snorlax",
+    "rank": 39,
+    "submission": 56593103,
+    "episode": 114277478,
+    "seat": 0,
+    "margin": 3249.0,
+    "seed": 309173277,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 202
+    },
+    "peak_hands_midgame": 9,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 25,
+      "STRAWBERRY": 27,
+      "COW": 15,
+      "SHEEP": 3,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 150,
+      "MELON": 10,
+      "STRAWBERRY": 40,
+      "CARROT": 22
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 13,
+      "WHEAT": 99,
+      "CARROT": 22
+    }
+  },
+  {
+    "team": "Christoffer Thimsen",
+    "rank": 40,
+    "submission": 56601033,
+    "episode": 114286668,
+    "seat": 0,
+    "margin": -8276.0,
+    "seed": 540283542,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 200
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 302,
+      "WHEAT_units": 2262,
+      "FERTILIZER_turns": 168,
+      "FERTILIZER_units": 216
+    },
+    "layout_step288": {
+      "MELON": 8,
+      "WHEAT": 27,
+      "STRAWBERRY": 22,
+      "GOOSE": 3,
+      "COW": 12,
+      "SHEEP": 2
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 152,
+      "STRAWBERRY": 33,
+      "TOMATO": 20,
+      "CARROT": 9
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 95,
+      "TOMATO": 20,
+      "CARROT": 9
+    }
+  },
+  {
+    "team": "Christoffer Thimsen",
+    "rank": 40,
+    "submission": 56601033,
+    "episode": 114283342,
+    "seat": 1,
+    "margin": 749.0,
+    "seed": 572165280,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 201
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 362,
+      "WHEAT_units": 2645,
+      "FERTILIZER_turns": 179,
+      "FERTILIZER_units": 258
+    },
+    "layout_step288": {
+      "MELON": 8,
+      "WHEAT": 29,
+      "STRAWBERRY": 20,
+      "GOOSE": 6,
+      "SHEEP": 3,
+      "COW": 7,
+      "CARROT": 2
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 151,
+      "STRAWBERRY": 24,
+      "CARROT": 96
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 96,
+      "STRAWBERRY": 4,
+      "CARROT": 94
+    }
+  },
+  {
+    "team": "by",
+    "rank": 41,
+    "submission": 56608132,
+    "episode": 114283943,
+    "seat": 1,
+    "margin": 4844.0,
+    "seed": 498350478,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 236
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 13
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 20,
+      "SHEEP": 8,
+      "MELON": 6,
+      "GOOSE": 5,
+      "COW": 3,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "CARROT": 6,
+      "WHEAT": 119,
+      "STRAWBERRY": 24,
+      "TOMATO": 29
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 25,
+      "STRAWBERRY": 4,
+      "WHEAT": 82
+    }
+  },
+  {
+    "team": "by",
+    "rank": 41,
+    "submission": 56608132,
+    "episode": 114270756,
+    "seat": 1,
+    "margin": 41328.0,
+    "seed": 2025013284,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 135,
+      "SW": 223
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "TOMATO": 8,
+      "MELON": 13,
+      "COW": 13,
+      "WHEAT": 10,
+      "SHEEP": 3,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 23,
+      "WHEAT": 108,
+      "STRAWBERRY": 30,
+      "TOMATO": 11,
+      "CARROT": 20
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 8,
+      "TOMATO": 3,
+      "WHEAT": 78,
+      "CARROT": 20
+    }
+  },
+  {
+    "team": "Syed Asad Ali",
+    "rank": 42,
+    "submission": 56595847,
+    "episode": 114283823,
+    "seat": 1,
+    "margin": -21891.0,
+    "seed": 1603596661,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 28,
+      "TOMATO": 4,
+      "WHEAT": 36,
+      "MELON": 1,
+      "COW": 6,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 208,
+      "STRAWBERRY": 28,
+      "TOMATO": 15,
+      "CARROT": 86
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 149,
+      "TOMATO": 11,
+      "CARROT": 86
+    }
+  },
+  {
+    "team": "Syed Asad Ali",
+    "rank": 42,
+    "submission": 56595847,
+    "episode": 114283951,
+    "seat": 0,
+    "margin": 7177.0,
+    "seed": 1048876459,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 7,
+      "WHEAT_units": 19
+    },
+    "layout_step288": {
+      "STRAWBERRY": 12,
+      "WHEAT": 29,
+      "CARROT": 9,
+      "COW": 5,
+      "SHEEP": 15,
+      "GOOSE": 1,
+      "TOMATO": 7
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "YARN_STORE",
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 176,
+      "STRAWBERRY": 13,
+      "TOMATO": 18,
+      "CARROT": 125
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 116,
+      "WHEAT": 116,
+      "TOMATO": 11,
+      "STRAWBERRY": 1
+    }
+  },
+  {
+    "team": "HowardLeeTW",
+    "rank": 43,
+    "submission": 56605257,
+    "episode": 114285220,
+    "seat": 1,
+    "margin": -24151.0,
+    "seed": 574276849,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 208
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "COW": 9,
+      "MELON": 8,
+      "WHEAT": 21,
+      "GOOSE": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 115,
+      "STRAWBERRY": 31,
+      "TOMATO": 19,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 19,
+      "WHEAT": 73,
+      "STRAWBERRY": 1,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "HowardLeeTW",
+    "rank": 43,
+    "submission": 56605257,
+    "episode": 114284872,
+    "seat": 1,
+    "margin": 72.0,
+    "seed": 1423003684,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 208
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "COW": 7,
+      "WHEAT": 21,
+      "CARROT": 2,
+      "MELON": 7,
+      "SHEEP": 3,
+      "GOOSE": 5
+    },
+    "shops_step288": [
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 142,
+      "STRAWBERRY": 41,
+      "CARROT": 28,
+      "TOMATO": 5
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "MELON": 1,
+      "TOMATO": 5,
+      "WHEAT": 98,
+      "CARROT": 26
+    }
+  },
+  {
+    "team": "Gordeev Max",
+    "rank": 44,
+    "submission": 56596982,
+    "episode": 114286317,
+    "seat": 1,
+    "margin": 2920.0,
+    "seed": 1569090004,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 14
+    },
+    "layout_step288": {
+      "STRAWBERRY": 28,
+      "WHEAT": 25,
+      "COW": 10,
+      "SHEEP": 9,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 152,
+      "STRAWBERRY": 33,
+      "TOMATO": 7,
+      "CARROT": 54
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 108,
+      "STRAWBERRY": 5,
+      "TOMATO": 5,
+      "CARROT": 54
+    }
+  },
+  {
+    "team": "Gordeev Max",
+    "rank": 44,
+    "submission": 56596982,
+    "episode": 114285313,
+    "seat": 1,
+    "margin": 22163.0,
+    "seed": 982465523,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 254
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 6
+    },
+    "layout_step288": {
+      "STRAWBERRY": 16,
+      "WHEAT": 25,
+      "CARROT": 15,
+      "COW": 5,
+      "SHEEP": 11,
+      "GOOSE": 5,
+      "TOMATO": 8
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 148,
+      "STRAWBERRY": 18,
+      "TOMATO": 13,
+      "CARROT": 144
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 93,
+      "STRAWBERRY": 2,
+      "TOMATO": 5,
+      "CARROT": 129
+    }
+  },
+  {
+    "team": "Aguacates",
+    "rank": 45,
+    "submission": 56610796,
+    "episode": 114287993,
+    "seat": 1,
+    "margin": 5322.0,
+    "seed": 1254196409,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "COW": 7,
+      "GOOSE": 9,
+      "WHEAT": 28,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 147,
+      "STRAWBERRY": 36,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 12,
+      "WHEAT": 91,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "Aguacates",
+    "rank": 45,
+    "submission": 56610796,
+    "episode": 114285051,
+    "seat": 0,
+    "margin": 3477.0,
+    "seed": 292905732,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "COW": 6,
+      "GOOSE": 9,
+      "TOMATO": 3,
+      "WHEAT": 28,
+      "SHEEP": 4,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 147,
+      "STRAWBERRY": 33,
+      "TOMATO": 3,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 12,
+      "WHEAT": 91,
+      "CARROT": 42
+    }
+  },
+  {
+    "team": "arutyunoff",
+    "rank": 46,
+    "submission": 56609979,
+    "episode": 114288090,
+    "seat": 0,
+    "margin": 6171.0,
+    "seed": 1602406977,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 221
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 9
+    },
+    "layout_step288": {
+      "STRAWBERRY": 16,
+      "WHEAT": 26,
+      "COW": 9,
+      "SHEEP": 11,
+      "GOOSE": 4,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 101,
+      "STRAWBERRY": 39,
+      "TOMATO": 4,
+      "CARROT": 37
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 23,
+      "WHEAT": 53,
+      "CARROT": 37
+    }
+  },
+  {
+    "team": "arutyunoff",
+    "rank": 46,
+    "submission": 56609979,
+    "episode": 114287766,
+    "seat": 0,
+    "margin": -5207.0,
+    "seed": 434512075,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 8
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 27,
+      "COW": 9,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 126,
+      "STRAWBERRY": 47,
+      "TOMATO": 4
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 25,
+      "WHEAT": 74
+    }
+  },
+  {
+    "team": "Cow Boy",
+    "rank": 47,
+    "submission": 56604358,
+    "episode": 114286560,
+    "seat": 1,
+    "margin": 55563.0,
+    "seed": 420663113,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "WHEAT": 23,
+      "STRAWBERRY": 19,
+      "COW": 7,
+      "TOMATO": 5,
+      "GOOSE": 8,
+      "SHEEP": 4,
+      "CARROT": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 110,
+      "STRAWBERRY": 35,
+      "CARROT": 13,
+      "TOMATO": 5
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 16,
+      "WHEAT": 64,
+      "MELON": 2,
+      "CARROT": 4
+    }
+  },
+  {
+    "team": "Cow Boy",
+    "rank": 47,
+    "submission": 56604358,
+    "episode": 114286320,
+    "seat": 0,
+    "margin": -10833.0,
+    "seed": 1748718881,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 196
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 40,
+      "COW": 15,
+      "SHEEP": 2,
+      "GOOSE": 2,
+      "WHEAT": 11,
+      "MELON": 1
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 111,
+      "STRAWBERRY": 40,
+      "CARROT": 36,
+      "TOMATO": 1
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 83,
+      "TOMATO": 1,
+      "CARROT": 34
+    }
+  },
+  {
+    "team": "feel the agi",
+    "rank": 48,
+    "submission": 56584428,
+    "episode": 114283451,
+    "seat": 0,
+    "margin": -8309.0,
+    "seed": 1244398629,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 174,
+      "WHEAT_units": 1069,
+      "FERTILIZER_turns": 58,
+      "FERTILIZER_units": 94
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 16,
+      "STRAWBERRY": 37,
+      "COW": 10,
+      "GOOSE": 7,
+      "SHEEP": 2
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 172,
+      "STRAWBERRY": 38
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 134,
+      "STRAWBERRY": 1
+    }
+  },
+  {
+    "team": "feel the agi",
+    "rank": 48,
+    "submission": 56584428,
+    "episode": 114283216,
+    "seat": 0,
+    "margin": -8877.0,
+    "seed": 1524477524,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 200
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 168,
+      "WHEAT_units": 1220,
+      "FERTILIZER_turns": 72,
+      "FERTILIZER_units": 144
+    },
+    "layout_step288": {
+      "MELON": 5,
+      "WHEAT": 23,
+      "STRAWBERRY": 28,
+      "COW": 11,
+      "GOOSE": 6,
+      "SHEEP": 2
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 172,
+      "STRAWBERRY": 30,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 124,
+      "STRAWBERRY": 2,
+      "TOMATO": 13
+    }
+  },
+  {
+    "team": "ymg_aq",
+    "rank": 49,
+    "submission": 56612952,
+    "episode": 114288017,
+    "seat": 1,
+    "margin": 3538.0,
+    "seed": 774315103,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 221,
+      "SE": 256
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 14
+    },
+    "layout_step288": {
+      "STRAWBERRY": 35,
+      "WHEAT": 30,
+      "COW": 6,
+      "GOOSE": 11,
+      "TOMATO": 2,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 171,
+      "STRAWBERRY": 38,
+      "TOMATO": 20,
+      "CARROT": 27
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 127,
+      "STRAWBERRY": 3,
+      "MELON": 4,
+      "TOMATO": 18,
+      "CARROT": 27
+    }
+  },
+  {
+    "team": "ymg_aq",
+    "rank": 49,
+    "submission": 56612952,
+    "episode": 114286191,
+    "seat": 0,
+    "margin": 6329.0,
+    "seed": 403202460,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 225,
+      "SE": 257
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 14
+    },
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "WHEAT": 31,
+      "SHEEP": 9,
+      "COW": 11,
+      "GOOSE": 3,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 163,
+      "STRAWBERRY": 43,
+      "TOMATO": 9,
+      "CARROT": 24
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 18,
+      "MELON": 4,
+      "WHEAT": 113,
+      "CARROT": 24,
+      "TOMATO": 7
+    }
+  },
+  {
+    "team": "dodsters",
+    "rank": 50,
+    "submission": 56608401,
+    "episode": 114284835,
+    "seat": 0,
+    "margin": -358.0,
+    "seed": 2045706210,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266,
+      "SE": 409
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 8
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "WHEAT": 20,
+      "GOOSE": 5,
+      "COW": 6,
+      "SHEEP": 6
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 91,
+      "MELON": 15,
+      "STRAWBERRY": 34,
+      "TOMATO": 34,
+      "CARROT": 90
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 41,
+      "MELON": 3,
+      "TOMATO": 34,
+      "STRAWBERRY": 1,
+      "CARROT": 90
+    }
+  },
+  {
+    "team": "dodsters",
+    "rank": 50,
+    "submission": 56608401,
+    "episode": 114273486,
+    "seat": 0,
+    "margin": -12777.0,
+    "seed": 1180116028,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266
+    },
+    "peak_hands_midgame": 9,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 8,
+      "FERTILIZER_turns": 2,
+      "FERTILIZER_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "WHEAT": 20,
+      "GOOSE": 3,
+      "COW": 8,
+      "SHEEP": 6
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 119,
+      "MELON": 16,
+      "STRAWBERRY": 33,
+      "CARROT": 97
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 69,
+      "MELON": 4,
+      "CARROT": 97
+    }
+  },
+  {
+    "team": "marwar22",
+    "rank": 51,
+    "submission": 56507022,
+    "episode": 114288286,
+    "seat": 1,
+    "margin": 21153.0,
+    "seed": 371400470,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "CARROT": 15,
+      "SHEEP": 9,
+      "TOMATO": 8,
+      "MELON": 6,
+      "WHEAT": 10,
+      "COW": 3,
+      "GOOSE": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 18,
+      "WHEAT": 62,
+      "STRAWBERRY": 23,
+      "CARROT": 182,
+      "TOMATO": 10
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 150,
+      "STRAWBERRY": 5,
+      "TOMATO": 2,
+      "MELON": 2,
+      "WHEAT": 42
+    }
+  },
+  {
+    "team": "marwar22",
+    "rank": 51,
+    "submission": 56507022,
+    "episode": 114288260,
+    "seat": 1,
+    "margin": 13405.0,
+    "seed": 1116992310,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 9,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 39,
+      "MELON": 6,
+      "TOMATO": 4,
+      "COW": 7,
+      "SHEEP": 3,
+      "GOOSE": 2,
+      "WHEAT": 14
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 20,
+      "WHEAT": 120,
+      "STRAWBERRY": 49,
+      "TOMATO": 11,
+      "CARROT": 4
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 10,
+      "TOMATO": 7,
+      "MELON": 4,
+      "WHEAT": 95,
+      "CARROT": 2
+    }
+  },
+  {
+    "team": "Excluding",
+    "rank": 52,
+    "submission": 56588326,
+    "episode": 114277927,
+    "seat": 1,
+    "margin": 122.0,
+    "seed": 1893755998,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 201
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 37,
+      "FERTILIZER_units": 53,
+      "WHEAT_turns": 107,
+      "WHEAT_units": 712
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 36,
+      "STRAWBERRY": 18,
+      "SHEEP": 10,
+      "GOOSE": 4,
+      "COW": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 157,
+      "STRAWBERRY": 30,
+      "TOMATO": 8,
+      "CARROT": 21
+    },
+    "late_plantings_by_crop": {
+      "MELON": 3,
+      "STRAWBERRY": 12,
+      "WHEAT": 98,
+      "TOMATO": 8,
+      "CARROT": 21
+    }
+  },
+  {
+    "team": "Excluding",
+    "rank": 52,
+    "submission": 56588326,
+    "episode": 114277434,
+    "seat": 1,
+    "margin": 8282.0,
+    "seed": 1406032209,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 200
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 37,
+      "FERTILIZER_units": 53,
+      "WHEAT_turns": 107,
+      "WHEAT_units": 712
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 32,
+      "STRAWBERRY": 24,
+      "GOOSE": 3,
+      "SHEEP": 3,
+      "COW": 10
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 130,
+      "STRAWBERRY": 24,
+      "CARROT": 61,
+      "TOMATO": 8
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 61,
+      "MELON": 3,
+      "WHEAT": 83,
+      "TOMATO": 8
+    }
+  },
+  {
+    "team": "keiz",
+    "rank": 53,
+    "submission": 56612446,
+    "episode": 114287773,
+    "seat": 0,
+    "margin": 7466.0,
+    "seed": 8437953,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 200
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 8,
+      "WHEAT_units": 74
+    },
+    "layout_step288": {
+      "STRAWBERRY": 23,
+      "COW": 7,
+      "WHEAT": 25,
+      "GOOSE": 8,
+      "TOMATO": 3,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 157,
+      "STRAWBERRY": 25,
+      "TOMATO": 16,
+      "CARROT": 45
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 2,
+      "WHEAT": 111,
+      "TOMATO": 13,
+      "MELON": 2,
+      "CARROT": 45
+    }
+  },
+  {
+    "team": "keiz",
+    "rank": 53,
+    "submission": 56612446,
+    "episode": 114286317,
+    "seat": 0,
+    "margin": -2920.0,
+    "seed": 1569090004,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "COW": 10,
+      "WHEAT": 16,
+      "GOOSE": 4,
+      "TOMATO": 3,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 85,
+      "STRAWBERRY": 38,
+      "TOMATO": 3,
+      "CARROT": 63
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 5,
+      "WHEAT": 50,
+      "MELON": 3,
+      "CARROT": 63
+    }
+  },
+  {
+    "team": "sekai013",
+    "rank": 54,
+    "submission": 56579498,
+    "episode": 114288240,
+    "seat": 0,
+    "margin": 7522.0,
+    "seed": 2025955925,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 153,
+      "SW": 223,
+      "SE": 256
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 40,
+      "WHEAT": 28,
+      "COW": 11,
+      "GOOSE": 7,
+      "SHEEP": 3,
+      "TOMATO": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 17,
+      "WHEAT": 125,
+      "STRAWBERRY": 51,
+      "TOMATO": 16,
+      "CARROT": 22
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 82,
+      "STRAWBERRY": 11,
+      "TOMATO": 13,
+      "MELON": 7,
+      "CARROT": 22
+    }
+  },
+  {
+    "team": "sekai013",
+    "rank": 54,
+    "submission": 56579498,
+    "episode": 114274839,
+    "seat": 1,
+    "margin": -5293.0,
+    "seed": 1757104360,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 153,
+      "SW": 223,
+      "SE": 257
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "WHEAT": 24,
+      "MELON": 3,
+      "CARROT": 8,
+      "COW": 10,
+      "GOOSE": 8,
+      "SHEEP": 3,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 133,
+      "STRAWBERRY": 28,
+      "TOMATO": 10,
+      "CARROT": 107
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 79,
+      "CARROT": 99,
+      "STRAWBERRY": 2,
+      "TOMATO": 8,
+      "MELON": 2
+    }
+  },
+  {
+    "team": "Breaking1800",
+    "rank": 55,
+    "submission": 56571572,
+    "episode": 114274773,
+    "seat": 1,
+    "margin": -7854.0,
+    "seed": 1118379838,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 218,
+      "SE": 252
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 7,
+      "WHEAT_units": 380
+    },
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "WHEAT": 38,
+      "COW": 6,
+      "GOOSE": 12,
+      "SHEEP": 3,
+      "TOMATO": 8
+    },
+    "shops_step288": [
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 181,
+      "STRAWBERRY": 32,
+      "TOMATO": 27,
+      "CARROT": 35
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 123,
+      "STRAWBERRY": 5,
+      "TOMATO": 19,
+      "CARROT": 35
+    }
+  },
+  {
+    "team": "Breaking1800",
+    "rank": 55,
+    "submission": 56571572,
+    "episode": 114272341,
+    "seat": 1,
+    "margin": -1510.0,
+    "seed": 292695304,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 220,
+      "SE": 252
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 240
+    },
+    "layout_step288": {
+      "STRAWBERRY": 38,
+      "WHEAT": 27,
+      "COW": 7,
+      "GOOSE": 11,
+      "SHEEP": 3,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 178,
+      "STRAWBERRY": 44,
+      "TOMATO": 9,
+      "CARROT": 7
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 135,
+      "STRAWBERRY": 5,
+      "TOMATO": 8,
+      "CARROT": 7
+    }
+  },
+  {
+    "team": "YumeNeko",
+    "rank": 56,
+    "submission": 56602408,
+    "episode": 114278088,
+    "seat": 0,
+    "margin": -8318.0,
+    "seed": 308034941,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 169,
+      "SW": 249
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 17,
+      "SHEEP": 10,
+      "WHEAT": 31,
+      "MELON": 3,
+      "COW": 7,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 116,
+      "STRAWBERRY": 19,
+      "TOMATO": 23,
+      "CARROT": 34
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 81,
+      "TOMATO": 21,
+      "STRAWBERRY": 2,
+      "MELON": 1,
+      "CARROT": 34
+    }
+  },
+  {
+    "team": "YumeNeko",
+    "rank": 56,
+    "submission": 56602408,
+    "episode": 114276433,
+    "seat": 0,
+    "margin": 2652.0,
+    "seed": 1330890553,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 197
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 32,
+      "MELON": 6,
+      "SHEEP": 3,
+      "COW": 10,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 107,
+      "STRAWBERRY": 28,
+      "TOMATO": 15,
+      "CARROT": 30
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 15,
+      "WHEAT": 63,
+      "STRAWBERRY": 8,
+      "MELON": 1,
+      "CARROT": 30
+    }
+  },
+  {
+    "team": "MAC",
+    "rank": 57,
+    "submission": 56611810,
+    "episode": 114284835,
+    "seat": 1,
+    "margin": 358.0,
+    "seed": 2045706210,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "WHEAT": 17,
+      "CARROT": 10,
+      "COW": 6,
+      "GOOSE": 11,
+      "SHEEP": 3,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 134,
+      "STRAWBERRY": 27,
+      "CARROT": 64,
+      "TOMATO": 14
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 13,
+      "WHEAT": 94,
+      "CARROT": 54
+    }
+  },
+  {
+    "team": "MAC",
+    "rank": 57,
+    "submission": 56611810,
+    "episode": 114283487,
+    "seat": 1,
+    "margin": -2920.0,
+    "seed": 1073032565,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 7,
+      "WHEAT_units": 23
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "WHEAT": 24,
+      "COW": 9,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 174,
+      "STRAWBERRY": 32,
+      "TOMATO": 6
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 132,
+      "STRAWBERRY": 3,
+      "TOMATO": 5
+    }
+  },
+  {
+    "team": "Dieter",
+    "rank": 58,
+    "submission": 56590456,
+    "episode": 114287640,
+    "seat": 0,
+    "margin": 1012.0,
+    "seed": 923874502,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "TOMATO": 8,
+      "WHEAT": 34,
+      "COW": 8,
+      "SHEEP": 10,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 206,
+      "STRAWBERRY": 23,
+      "TOMATO": 32,
+      "CARROT": 54
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 24,
+      "WHEAT": 148,
+      "STRAWBERRY": 1,
+      "CARROT": 54
+    }
+  },
+  {
+    "team": "Dieter",
+    "rank": 58,
+    "submission": 56590456,
+    "episode": 114280414,
+    "seat": 0,
+    "margin": -11583.0,
+    "seed": 2092767762,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "CARROT": 6,
+      "WHEAT": 35,
+      "COW": 6,
+      "GOOSE": 6,
+      "SHEEP": 9,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 138,
+      "STRAWBERRY": 40,
+      "TOMATO": 24,
+      "CARROT": 97
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 84,
+      "STRAWBERRY": 16,
+      "TOMATO": 19,
+      "CARROT": 91
+    }
+  },
+  {
+    "team": "Ryo Hasegawa",
+    "rank": 59,
+    "submission": 56559703,
+    "episode": 114277439,
+    "seat": 1,
+    "margin": 5317.0,
+    "seed": 1583917047,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 241
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 20,
+      "FERTILIZER_turns": 4,
+      "FERTILIZER_units": 4
+    },
+    "layout_step288": {
+      "WHEAT": 14,
+      "STRAWBERRY": 20,
+      "SHEEP": 10,
+      "COW": 6,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 97,
+      "STRAWBERRY": 27,
+      "CARROT": 68,
+      "TOMATO": 17
+    },
+    "late_plantings_by_crop": {
+      "MELON": 4,
+      "WHEAT": 57,
+      "CARROT": 68,
+      "STRAWBERRY": 7,
+      "TOMATO": 17
+    }
+  },
+  {
+    "team": "Ryo Hasegawa",
+    "rank": 59,
+    "submission": 56559703,
+    "episode": 114274976,
+    "seat": 1,
+    "margin": 518.0,
+    "seed": 1594287500,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 252
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 20,
+      "FERTILIZER_turns": 2,
+      "FERTILIZER_units": 2
+    },
+    "layout_step288": {
+      "WHEAT": 18,
+      "STRAWBERRY": 20,
+      "GOOSE": 2,
+      "COW": 12,
+      "SHEEP": 5,
+      "CARROT": 1
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 154,
+      "STRAWBERRY": 26,
+      "CARROT": 6,
+      "TOMATO": 19
+    },
+    "late_plantings_by_crop": {
+      "MELON": 4,
+      "WHEAT": 110,
+      "STRAWBERRY": 6,
+      "TOMATO": 19,
+      "CARROT": 5
+    }
+  },
+  {
+    "team": "Orbital Terraformer",
+    "rank": 60,
+    "submission": 56573336,
+    "episode": 114279456,
+    "seat": 1,
+    "margin": 2777.0,
+    "seed": 1604706273,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "MELON": 2,
+      "WHEAT": 35,
+      "COW": 10,
+      "SHEEP": 5,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 149,
+      "STRAWBERRY": 21,
+      "TOMATO": 15,
+      "CARROT": 91
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 92,
+      "TOMATO": 15,
+      "CARROT": 91,
+      "STRAWBERRY": 1
+    }
+  },
+  {
+    "team": "Orbital Terraformer",
+    "rank": 60,
+    "submission": 56573336,
+    "episode": 114274960,
+    "seat": 1,
+    "margin": 2296.0,
+    "seed": 525533718,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "MELON": 2,
+      "WHEAT": 31,
+      "COW": 5,
+      "SHEEP": 13,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 175,
+      "STRAWBERRY": 26,
+      "TOMATO": 5,
+      "CARROT": 60
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 122,
+      "STRAWBERRY": 6,
+      "TOMATO": 5,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "kuro0315",
+    "rank": 61,
+    "submission": 56600548,
+    "episode": 114278101,
+    "seat": 1,
+    "margin": 718.0,
+    "seed": 1871170907,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 34,
+      "MELON": 3,
+      "COW": 12,
+      "WHEAT": 18,
+      "GOOSE": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 141,
+      "STRAWBERRY": 34,
+      "CARROT": 60
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 104,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "kuro0315",
+    "rank": 61,
+    "submission": 56600548,
+    "episode": 114275040,
+    "seat": 0,
+    "margin": 3215.0,
+    "seed": 1332752899,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199,
+      "SE": 434
+    },
+    "peak_hands_midgame": 13,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 34,
+      "MELON": 3,
+      "COW": 12,
+      "WHEAT": 18,
+      "GOOSE": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 141,
+      "STRAWBERRY": 34,
+      "TOMATO": 10,
+      "CARROT": 60
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 104,
+      "TOMATO": 10,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "Alan C52",
+    "rank": 62,
+    "submission": 56605342,
+    "episode": 114276554,
+    "seat": 1,
+    "margin": -25989.0,
+    "seed": 1217549898,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "MELON": 1,
+      "WHEAT": 20,
+      "COW": 12,
+      "GOOSE": 6,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 150,
+      "STRAWBERRY": 33,
+      "CARROT": 25
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 110,
+      "CARROT": 25
+    }
+  },
+  {
+    "team": "Alan C52",
+    "rank": 62,
+    "submission": 56605342,
+    "episode": 114261815,
+    "seat": 0,
+    "margin": -13877.0,
+    "seed": 2045442326,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 3
+    },
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "MELON": 1,
+      "WHEAT": 26,
+      "COW": 8,
+      "GOOSE": 5,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 141,
+      "STRAWBERRY": 26,
+      "CARROT": 80
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 92,
+      "CARROT": 80
+    }
+  },
+  {
+    "team": "len8487",
+    "rank": 63,
+    "submission": 56611029,
+    "episode": 114288017,
+    "seat": 0,
+    "margin": -3538.0,
+    "seed": 774315103,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "COW": 7,
+      "WHEAT": 30,
+      "GOOSE": 9,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 193,
+      "STRAWBERRY": 30,
+      "CARROT": 36
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 8,
+      "WHEAT": 136,
+      "CARROT": 36
+    }
+  },
+  {
+    "team": "len8487",
+    "rank": 63,
+    "submission": 56611029,
+    "episode": 114286560,
+    "seat": 0,
+    "margin": -55563.0,
+    "seed": 420663113,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 197
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 11,
+      "COW": 4,
+      "WHEAT": 27,
+      "CARROT": 10,
+      "GOOSE": 14,
+      "SHEEP": 3,
+      "MELON": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 170,
+      "STRAWBERRY": 16,
+      "CARROT": 113
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 112,
+      "CARROT": 98,
+      "STRAWBERRY": 5
+    }
+  },
+  {
+    "team": "forever young",
+    "rank": 64,
+    "submission": 56608054,
+    "episode": 114287818,
+    "seat": 0,
+    "margin": -5902.0,
+    "seed": 2063420161,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 22,
+      "FERTILIZER_turns": 3,
+      "FERTILIZER_units": 10
+    },
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "WHEAT": 20,
+      "GOOSE": 3,
+      "COW": 9,
+      "SHEEP": 5,
+      "TOMATO": 8
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 186,
+      "STRAWBERRY": 25,
+      "TOMATO": 23,
+      "CARROT": 19
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 137,
+      "CARROT": 19,
+      "TOMATO": 15
+    }
+  },
+  {
+    "team": "forever young",
+    "rank": 64,
+    "submission": 56608054,
+    "episode": 114283579,
+    "seat": 1,
+    "margin": 5627.0,
+    "seed": 757118650,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 13,
+      "WHEAT_units": 556,
+      "FERTILIZER_turns": 4,
+      "FERTILIZER_units": 12
+    },
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "WHEAT": 12,
+      "GOOSE": 3,
+      "COW": 8,
+      "SHEEP": 6,
+      "TOMATO": 3,
+      "CARROT": 8
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 128,
+      "STRAWBERRY": 30,
+      "TOMATO": 13,
+      "CARROT": 82
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 74,
+      "WHEAT": 87,
+      "TOMATO": 10
+    }
+  },
+  {
+    "team": "feles99",
+    "rank": 65,
+    "submission": 56546787,
+    "episode": 114285369,
+    "seat": 0,
+    "margin": -11066.0,
+    "seed": 1672365652,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 18
+    },
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "WHEAT": 28,
+      "COW": 7,
+      "GOOSE": 8,
+      "SHEEP": 3,
+      "TOMATO": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 154,
+      "STRAWBERRY": 32,
+      "TOMATO": 7,
+      "CARROT": 45
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 107,
+      "STRAWBERRY": 7,
+      "CARROT": 45,
+      "TOMATO": 5
+    }
+  },
+  {
+    "team": "feles99",
+    "rank": 65,
+    "submission": 56546787,
+    "episode": 114272027,
+    "seat": 0,
+    "margin": -1745.0,
+    "seed": 299967027,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 255
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 14
+    },
+    "layout_step288": {
+      "STRAWBERRY": 10,
+      "WHEAT": 37,
+      "CARROT": 7,
+      "COW": 5,
+      "SHEEP": 11,
+      "GOOSE": 3,
+      "TOMATO": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 212,
+      "STRAWBERRY": 15,
+      "TOMATO": 12,
+      "CARROT": 120
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 146,
+      "CARROT": 113,
+      "STRAWBERRY": 5,
+      "TOMATO": 7
+    }
+  },
+  {
+    "team": "Yannik Schiffner",
+    "rank": 66,
+    "submission": 56610190,
+    "episode": 114288104,
+    "seat": 0,
+    "margin": 26408.0,
+    "seed": 1274626013,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 109,
+      "FERTILIZER_units": 326,
+      "WHEAT_turns": 217,
+      "WHEAT_units": 1869
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "WHEAT": 29,
+      "STRAWBERRY": 18,
+      "SHEEP": 13,
+      "GOOSE": 2,
+      "COW": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 158,
+      "STRAWBERRY": 29,
+      "CARROT": 2
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 101,
+      "CARROT": 2,
+      "STRAWBERRY": 11,
+      "MELON": 4
+    }
+  },
+  {
+    "team": "Yannik Schiffner",
+    "rank": 66,
+    "submission": 56610190,
+    "episode": 114286635,
+    "seat": 1,
+    "margin": 8482.0,
+    "seed": 920695649,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 146,
+      "SW": 199
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 113,
+      "FERTILIZER_units": 319,
+      "WHEAT_turns": 243,
+      "WHEAT_units": 1834
+    },
+    "layout_step288": {
+      "MELON": 5,
+      "WHEAT": 23,
+      "STRAWBERRY": 27,
+      "COW": 9,
+      "GOOSE": 4,
+      "SHEEP": 3,
+      "CARROT": 2
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 17,
+      "WHEAT": 129,
+      "STRAWBERRY": 37,
+      "CARROT": 46,
+      "TOMATO": 7
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 82,
+      "CARROT": 44,
+      "STRAWBERRY": 10,
+      "MELON": 5,
+      "TOMATO": 7
+    }
+  },
+  {
+    "team": "ActiveMusyoku",
+    "rank": 67,
+    "submission": 56588806,
+    "episode": 114277801,
+    "seat": 0,
+    "margin": 43886.0,
+    "seed": 1518365672,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 147,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 17
+    },
+    "layout_step288": {
+      "STRAWBERRY": 34,
+      "TOMATO": 2,
+      "WHEAT": 21,
+      "CARROT": 2,
+      "COW": 6,
+      "SHEEP": 3,
+      "GOOSE": 6
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 98,
+      "STRAWBERRY": 42,
+      "CARROT": 58,
+      "TOMATO": 11
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 57,
+      "STRAWBERRY": 8,
+      "TOMATO": 9,
+      "CARROT": 56
+    }
+  },
+  {
+    "team": "ActiveMusyoku",
+    "rank": 67,
+    "submission": 56588806,
+    "episode": 114268703,
+    "seat": 1,
+    "margin": -1458.0,
+    "seed": 1113609850,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 147,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 19
+    },
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 28,
+      "TOMATO": 3,
+      "CARROT": 5,
+      "GOOSE": 6,
+      "COW": 8,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 126,
+      "STRAWBERRY": 29,
+      "CARROT": 57,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 50,
+      "STRAWBERRY": 7,
+      "TOMATO": 10,
+      "WHEAT": 78,
+      "MELON": 2
+    }
+  },
+  {
+    "team": "lingxiaojun",
+    "rank": 68,
+    "submission": 56570482,
+    "episode": 114279248,
+    "seat": 1,
+    "margin": 12071.0,
+    "seed": 1850103781,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 97,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "GOOSE": 3,
+      "STRAWBERRY": 12,
+      "CARROT": 21,
+      "WHEAT": 20,
+      "MELON": 7,
+      "SHEEP": 7,
+      "COW": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 123,
+      "CARROT": 155,
+      "STRAWBERRY": 18,
+      "TOMATO": 8
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 109,
+      "WHEAT": 62,
+      "TOMATO": 8,
+      "MELON": 1,
+      "STRAWBERRY": 6
+    }
+  },
+  {
+    "team": "lingxiaojun",
+    "rank": 68,
+    "submission": 56570482,
+    "episode": 114270571,
+    "seat": 1,
+    "margin": 1960.0,
+    "seed": 937569887,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 97,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "COW": 14,
+      "WHEAT": 27,
+      "STRAWBERRY": 20,
+      "MELON": 7,
+      "SHEEP": 4,
+      "CARROT": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 154,
+      "CARROT": 16,
+      "STRAWBERRY": 30,
+      "TOMATO": 8
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 86,
+      "STRAWBERRY": 10,
+      "TOMATO": 8,
+      "MELON": 2,
+      "CARROT": 1
+    }
+  },
+  {
+    "team": "liyupengli",
+    "rank": 69,
+    "submission": 56591627,
+    "episode": 114279165,
+    "seat": 1,
+    "margin": -8879.0,
+    "seed": 1482583558,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 242
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "MELON": 5,
+      "WHEAT": 22,
+      "CARROT": 11,
+      "GOOSE": 3,
+      "COW": 10,
+      "SHEEP": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 118,
+      "STRAWBERRY": 29,
+      "CARROT": 93,
+      "TOMATO": 20
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 80,
+      "WHEAT": 84,
+      "STRAWBERRY": 4,
+      "TOMATO": 20
+    }
+  },
+  {
+    "team": "liyupengli",
+    "rank": 69,
+    "submission": 56591627,
+    "episode": 114270742,
+    "seat": 1,
+    "margin": -3282.0,
+    "seed": 1571700255,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "CARROT": 8,
+      "MELON": 8,
+      "WHEAT": 13,
+      "COW": 8,
+      "GOOSE": 5,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 17,
+      "WHEAT": 102,
+      "STRAWBERRY": 39,
+      "CARROT": 20,
+      "TOMATO": 14
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 14,
+      "CARROT": 11,
+      "STRAWBERRY": 9,
+      "WHEAT": 76
+    }
+  },
+  {
+    "team": "huaiyuyoung",
+    "rank": 70,
+    "submission": 56575146,
+    "episode": 114285384,
+    "seat": 0,
+    "margin": 1517.0,
+    "seed": 907015833,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "MELON": 4,
+      "WHEAT": 11,
+      "TOMATO": 9,
+      "CARROT": 9,
+      "COW": 8,
+      "SHEEP": 4,
+      "GOOSE": 6
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 107,
+      "STRAWBERRY": 40,
+      "TOMATO": 15,
+      "CARROT": 19
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 15,
+      "WHEAT": 83,
+      "TOMATO": 6,
+      "CARROT": 10
+    }
+  },
+  {
+    "team": "huaiyuyoung",
+    "rank": 70,
+    "submission": 56575146,
+    "episode": 114272199,
+    "seat": 1,
+    "margin": -22940.0,
+    "seed": 1298366826,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "MELON": 4,
+      "WHEAT": 17,
+      "CARROT": 4,
+      "GOOSE": 9,
+      "TOMATO": 4,
+      "COW": 9,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 104,
+      "STRAWBERRY": 31,
+      "TOMATO": 10,
+      "CARROT": 90
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 68,
+      "STRAWBERRY": 6,
+      "MELON": 1,
+      "CARROT": 86,
+      "TOMATO": 6
+    }
+  },
+  {
+    "team": "Sida Zuo",
+    "rank": 71,
+    "submission": 56508421,
+    "episode": 114286057,
+    "seat": 0,
+    "margin": -35333.0,
+    "seed": 1560237197,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 205
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 15,
+      "SHEEP": 15,
+      "WHEAT": 33,
+      "COW": 6,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 163,
+      "STRAWBERRY": 21,
+      "TOMATO": 10,
+      "CARROT": 26
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 108,
+      "STRAWBERRY": 6,
+      "TOMATO": 10,
+      "CARROT": 26
+    }
+  },
+  {
+    "team": "Sida Zuo",
+    "rank": 71,
+    "submission": 56508421,
+    "episode": 114282438,
+    "seat": 0,
+    "margin": -19028.0,
+    "seed": 1447276761,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "SHEEP": 10,
+      "WHEAT": 30,
+      "MELON": 4,
+      "COW": 5
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 179,
+      "STRAWBERRY": 31,
+      "TOMATO": 5
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 5,
+      "MELON": 1,
+      "WHEAT": 132,
+      "TOMATO": 5
+    }
+  },
+  {
+    "team": "Lucien de Rubempre",
+    "rank": 72,
+    "submission": 56608292,
+    "episode": 114281085,
+    "seat": 0,
+    "margin": -8714.0,
+    "seed": 32366468,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "WHEAT": 37,
+      "COW": 10,
+      "SHEEP": 8,
+      "GOOSE": 4,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 203,
+      "STRAWBERRY": 42,
+      "TOMATO": 9,
+      "CARROT": 16
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 149,
+      "STRAWBERRY": 14,
+      "TOMATO": 5,
+      "CARROT": 16
+    }
+  },
+  {
+    "team": "Lucien de Rubempre",
+    "rank": 72,
+    "submission": 56608292,
+    "episode": 114268681,
+    "seat": 0,
+    "margin": 3997.0,
+    "seed": 862692000,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 253
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "WHEAT": 33,
+      "COW": 11,
+      "GOOSE": 7,
+      "SHEEP": 3,
+      "TOMATO": 9
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "ICE_CREAM_SHOP",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 168,
+      "STRAWBERRY": 30,
+      "TOMATO": 21,
+      "CARROT": 78
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 113,
+      "STRAWBERRY": 4,
+      "TOMATO": 12,
+      "CARROT": 78
+    }
+  },
+  {
+    "team": "ready or not here i come",
+    "rank": 73,
+    "submission": 56584172,
+    "episode": 114280794,
+    "seat": 1,
+    "margin": 3124.0,
+    "seed": 882470914,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 201
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 31,
+      "WHEAT_units": 343,
+      "FERTILIZER_turns": 14,
+      "FERTILIZER_units": 155
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 22,
+      "MELON": 11,
+      "CARROT": 2,
+      "SHEEP": 3,
+      "COW": 8,
+      "TOMATO": 1,
+      "GOOSE": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 159,
+      "STRAWBERRY": 20,
+      "CARROT": 31,
+      "TOMATO": 12
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 29,
+      "WHEAT": 112,
+      "TOMATO": 11
+    }
+  },
+  {
+    "team": "ready or not here i come",
+    "rank": 73,
+    "submission": 56584172,
+    "episode": 114279031,
+    "seat": 1,
+    "margin": -3418.0,
+    "seed": 514509209,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 218
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 83,
+      "WHEAT_units": 2137,
+      "FERTILIZER_turns": 37,
+      "FERTILIZER_units": 923
+    },
+    "layout_step288": {
+      "STRAWBERRY": 31,
+      "MELON": 7,
+      "GOOSE": 2,
+      "WHEAT": 19,
+      "COW": 10,
+      "SHEEP": 6
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 135,
+      "STRAWBERRY": 31,
+      "TOMATO": 9,
+      "CARROT": 14
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 9,
+      "WHEAT": 93,
+      "CARROT": 14
+    }
+  },
+  {
+    "team": "mhw",
+    "rank": 74,
+    "submission": 56607599,
+    "episode": 114286342,
+    "seat": 1,
+    "margin": -7683.0,
+    "seed": 1148264648,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "MELON": 5,
+      "CARROT": 5,
+      "WHEAT": 13,
+      "TOMATO": 9,
+      "COW": 10,
+      "SHEEP": 3,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 14,
+      "WHEAT": 85,
+      "STRAWBERRY": 45,
+      "CARROT": 25,
+      "TOMATO": 12
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 18,
+      "WHEAT": 58,
+      "CARROT": 20,
+      "TOMATO": 3
+    }
+  },
+  {
+    "team": "mhw",
+    "rank": 74,
+    "submission": 56607599,
+    "episode": 114285502,
+    "seat": 0,
+    "margin": 3603.0,
+    "seed": 339373652,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 23,
+      "MELON": 3,
+      "WHEAT": 20,
+      "TOMATO": 7,
+      "GOOSE": 10,
+      "CARROT": 1,
+      "COW": 7,
+      "SHEEP": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 161,
+      "STRAWBERRY": 27,
+      "TOMATO": 13,
+      "CARROT": 7
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 6,
+      "WHEAT": 124,
+      "STRAWBERRY": 2,
+      "CARROT": 6,
+      "MELON": 1
+    }
+  },
+  {
+    "team": "Hamed Vakili",
+    "rank": 75,
+    "submission": 56596713,
+    "episode": 114284821,
+    "seat": 0,
+    "margin": -7726.0,
+    "seed": 1577371335,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 206
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "MELON": 4,
+      "STRAWBERRY": 38,
+      "COW": 13,
+      "SHEEP": 3,
+      "GOOSE": 2,
+      "WHEAT": 14
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 117,
+      "STRAWBERRY": 52,
+      "CARROT": 13
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 13,
+      "WHEAT": 89,
+      "CARROT": 13
+    }
+  },
+  {
+    "team": "Hamed Vakili",
+    "rank": 75,
+    "submission": 56596713,
+    "episode": 114282392,
+    "seat": 0,
+    "margin": -2862.0,
+    "seed": 1880850009,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 194
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 10,
+      "COW": 5,
+      "WHEAT": 41,
+      "SHEEP": 9,
+      "MELON": 3,
+      "GOOSE": 6
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BAKERY",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 230,
+      "STRAWBERRY": 21,
+      "CARROT": 19
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 10,
+      "WHEAT": 159,
+      "CARROT": 19
+    }
+  },
+  {
+    "team": "tine.sh agent",
+    "rank": 76,
+    "submission": 56569111,
+    "episode": 114278061,
+    "seat": 1,
+    "margin": 1018.0,
+    "seed": 529413587,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 147,
+      "SW": 210
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "MELON": 9,
+      "WHEAT": 21,
+      "SHEEP": 3,
+      "COW": 15,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 125,
+      "MELON": 17,
+      "STRAWBERRY": 42,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 16,
+      "WHEAT": 89,
+      "MELON": 2,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "tine.sh agent",
+    "rank": 76,
+    "submission": 56569111,
+    "episode": 114271626,
+    "seat": 1,
+    "margin": 8059.0,
+    "seed": 34672644,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 213
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "MELON": 8,
+      "STRAWBERRY": 18,
+      "CARROT": 23,
+      "WHEAT": 7,
+      "SHEEP": 3,
+      "GOOSE": 8,
+      "COW": 7
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 113,
+      "MELON": 16,
+      "STRAWBERRY": 30,
+      "CARROT": 73
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 12,
+      "MELON": 2,
+      "WHEAT": 91,
+      "CARROT": 45
+    }
+  },
+  {
+    "team": "fshindo",
+    "rank": 77,
+    "submission": 56597057,
+    "episode": 114288090,
+    "seat": 1,
+    "margin": -6171.0,
+    "seed": 1602406977,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 225
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 10
+    },
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "WHEAT": 24,
+      "MELON": 9,
+      "SHEEP": 9,
+      "COW": 6,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "FARMERS_MARKET",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 119,
+      "STRAWBERRY": 34,
+      "TOMATO": 18,
+      "CARROT": 8
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 8,
+      "TOMATO": 18,
+      "WHEAT": 85,
+      "CARROT": 8
+    }
+  },
+  {
+    "team": "fshindo",
+    "rank": 77,
+    "submission": 56597057,
+    "episode": 114282317,
+    "seat": 0,
+    "margin": -4525.0,
+    "seed": 320165431,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 10
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "WHEAT": 28,
+      "MELON": 9,
+      "COW": 9,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 108,
+      "STRAWBERRY": 20,
+      "TOMATO": 30,
+      "CARROT": 14
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 30,
+      "WHEAT": 62,
+      "CARROT": 14
+    }
+  },
+  {
+    "team": "redblackbst",
+    "rank": 78,
+    "submission": 56606844,
+    "episode": 114282389,
+    "seat": 0,
+    "margin": 1840.0,
+    "seed": 1404016704,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 199,
+      "SE": 410
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "SHEEP": 9,
+      "WHEAT": 25,
+      "COW": 10,
+      "MELON": 6,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 155,
+      "STRAWBERRY": 29,
+      "CARROT": 29,
+      "TOMATO": 1
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 103,
+      "CARROT": 29,
+      "MELON": 2,
+      "TOMATO": 1
+    }
+  },
+  {
+    "team": "redblackbst",
+    "rank": 78,
+    "submission": 56606844,
+    "episode": 114268839,
+    "seat": 1,
+    "margin": 77279.0,
+    "seed": 340588468,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "COW": 7,
+      "WHEAT": 23,
+      "GOOSE": 6,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 134,
+      "STRAWBERRY": 39,
+      "CARROT": 33
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 9,
+      "WHEAT": 92,
+      "MELON": 1,
+      "CARROT": 33
+    }
+  },
+  {
+    "team": "Black Mamba Farm",
+    "rank": 79,
+    "submission": 56611817,
+    "episode": 114287818,
+    "seat": 1,
+    "margin": 5902.0,
+    "seed": 2063420161,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 14,
+      "WHEAT_units": 26
+    },
+    "layout_step288": {
+      "STRAWBERRY": 14,
+      "WHEAT": 36,
+      "TOMATO": 6,
+      "COW": 11,
+      "GOOSE": 5,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "BAKERY",
+      "PIZZA_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 179,
+      "STRAWBERRY": 14,
+      "TOMATO": 33,
+      "CARROT": 26
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 27,
+      "WHEAT": 114,
+      "CARROT": 26
+    }
+  },
+  {
+    "team": "Black Mamba Farm",
+    "rank": 79,
+    "submission": 56611817,
+    "episode": 114286342,
+    "seat": 0,
+    "margin": 7683.0,
+    "seed": 1148264648,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 217
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 5,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 36,
+      "MELON": 2,
+      "WHEAT": 19,
+      "COW": 10,
+      "GOOSE": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 111,
+      "STRAWBERRY": 46,
+      "TOMATO": 4,
+      "CARROT": 49
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 76,
+      "STRAWBERRY": 9,
+      "TOMATO": 4,
+      "CARROT": 49
+    }
+  },
+  {
+    "team": "Pico",
+    "rank": 80,
+    "submission": 56605393,
+    "episode": 114284837,
+    "seat": 0,
+    "margin": -8431.0,
+    "seed": 1270364110,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 13,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 19,
+      "SHEEP": 9,
+      "MELON": 9,
+      "WHEAT": 23,
+      "COW": 7,
+      "GOOSE": 6
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 17,
+      "WHEAT": 128,
+      "STRAWBERRY": 24,
+      "TOMATO": 4,
+      "CARROT": 49
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 76,
+      "STRAWBERRY": 5,
+      "TOMATO": 4,
+      "CARROT": 49
+    }
+  },
+  {
+    "team": "Pico",
+    "rank": 80,
+    "submission": 56605393,
+    "episode": 114283568,
+    "seat": 1,
+    "margin": 5959.0,
+    "seed": 511045363,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 194
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 9,
+      "COW": 5,
+      "WHEAT": 33,
+      "GOOSE": 14,
+      "MELON": 9,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BAKERY",
+      "BAKERY",
+      "ICE_CREAM_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 17,
+      "WHEAT": 220,
+      "STRAWBERRY": 9,
+      "TOMATO": 9,
+      "CARROT": 4
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 151,
+      "TOMATO": 9,
+      "CARROT": 4
+    }
+  },
+  {
+    "team": "Matt Motoki",
+    "rank": 81,
+    "submission": 56591492,
+    "episode": 114288404,
+    "seat": 1,
+    "margin": -116.0,
+    "seed": 1423240877,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 221
+    },
+    "peak_hands_midgame": 9,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 22,
+      "WHEAT": 36,
+      "COW": 5,
+      "SHEEP": 3,
+      "GOOSE": 2,
+      "MELON": 1,
+      "CARROT": 2,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "FARMERS_MARKET",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 79,
+      "STRAWBERRY": 25,
+      "CARROT": 149,
+      "TOMATO": 23
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 22,
+      "CARROT": 147,
+      "STRAWBERRY": 3,
+      "WHEAT": 18,
+      "MELON": 1
+    }
+  },
+  {
+    "team": "Matt Motoki",
+    "rank": 81,
+    "submission": 56591492,
+    "episode": 114275994,
+    "seat": 0,
+    "margin": -7710.0,
+    "seed": 394063177,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 221
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 15,
+      "WHEAT": 41,
+      "GOOSE": 4,
+      "COW": 11,
+      "SHEEP": 3,
+      "MELON": 1
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 156,
+      "STRAWBERRY": 17,
+      "TOMATO": 22,
+      "CARROT": 39
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 22,
+      "WHEAT": 95,
+      "STRAWBERRY": 2,
+      "MELON": 5,
+      "CARROT": 39
+    }
+  },
+  {
+    "team": "Dipam Chakraborty",
+    "rank": 82,
+    "submission": 56527897,
+    "episode": 114282572,
+    "seat": 0,
+    "margin": 1564.0,
+    "seed": 1881630177,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 147,
+      "SW": 204
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 145,
+      "WHEAT_units": 315,
+      "FERTILIZER_turns": 143,
+      "FERTILIZER_units": 252
+    },
+    "layout_step288": {
+      "STRAWBERRY": 36,
+      "COW": 5,
+      "WHEAT": 22,
+      "CARROT": 2,
+      "SHEEP": 6
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 170,
+      "STRAWBERRY": 49,
+      "CARROT": 4
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 13,
+      "WHEAT": 131,
+      "CARROT": 2
+    }
+  },
+  {
+    "team": "Dipam Chakraborty",
+    "rank": 82,
+    "submission": 56527897,
+    "episode": 114270228,
+    "seat": 1,
+    "margin": -6307.0,
+    "seed": 759000515,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 147,
+      "SW": 204
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 238,
+      "WHEAT_units": 746,
+      "FERTILIZER_turns": 117,
+      "FERTILIZER_units": 203
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "COW": 10,
+      "WHEAT": 18,
+      "CARROT": 10,
+      "SHEEP": 6
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 168,
+      "STRAWBERRY": 36,
+      "CARROT": 78
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 68,
+      "STRAWBERRY": 7,
+      "WHEAT": 130
+    }
+  },
+  {
+    "team": "fuxi",
+    "rank": 83,
+    "submission": 56494377,
+    "episode": 114281115,
+    "seat": 1,
+    "margin": 10620.0,
+    "seed": 1920672236,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 121,
+      "SW": 155,
+      "SE": 266
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 6,
+      "FERTILIZER_units": 12
+    },
+    "layout_step288": {
+      "MELON": 16,
+      "COW": 13,
+      "STRAWBERRY": 44,
+      "WHEAT": 10,
+      "SHEEP": 3,
+      "CARROT": 2,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 119,
+      "CARROT": 16,
+      "MELON": 17,
+      "STRAWBERRY": 55,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 63,
+      "TOMATO": 12,
+      "CARROT": 2
+    }
+  },
+  {
+    "team": "fuxi",
+    "rank": 83,
+    "submission": 56494377,
+    "episode": 114278960,
+    "seat": 0,
+    "margin": -32399.0,
+    "seed": 114126270,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 121,
+      "SW": 236,
+      "SE": 306
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 13,
+      "FERTILIZER_units": 38
+    },
+    "layout_step288": {
+      "MELON": 12,
+      "GOOSE": 1,
+      "SHEEP": 17,
+      "STRAWBERRY": 18,
+      "WHEAT": 13,
+      "COW": 4,
+      "TOMATO": 2,
+      "CARROT": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 156,
+      "CARROT": 16,
+      "MELON": 15,
+      "TOMATO": 24,
+      "STRAWBERRY": 28
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 102,
+      "STRAWBERRY": 10,
+      "CARROT": 8,
+      "TOMATO": 22,
+      "MELON": 2
+    }
+  },
+  {
+    "team": "THUNDER THUNDER",
+    "rank": 84,
+    "submission": 56392823,
+    "episode": 114287799,
+    "seat": 1,
+    "margin": -4931.0,
+    "seed": 421765458,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 132,
+      "SW": 200
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 15,
+      "TOMATO": 6,
+      "COW": 5,
+      "WHEAT": 25,
+      "CARROT": 6,
+      "SHEEP": 12
+    },
+    "shops_step288": [
+      "BAKERY",
+      "YARN_STORE",
+      "PIZZA_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 195,
+      "STRAWBERRY": 20,
+      "CARROT": 22,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 136,
+      "CARROT": 13,
+      "STRAWBERRY": 5,
+      "TOMATO": 7
+    }
+  },
+  {
+    "team": "THUNDER THUNDER",
+    "rank": 84,
+    "submission": 56392823,
+    "episode": 114281790,
+    "seat": 0,
+    "margin": -9770.0,
+    "seed": 1472785790,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 138,
+      "SW": 200
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "WHEAT": 13,
+      "CARROT": 19,
+      "COW": 5,
+      "TOMATO": 6,
+      "SHEEP": 4,
+      "GOOSE": 5
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BAKERY",
+      "FARMERS_MARKET",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 8,
+      "WHEAT": 132,
+      "STRAWBERRY": 23,
+      "CARROT": 116,
+      "TOMATO": 15
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 9,
+      "WHEAT": 92,
+      "CARROT": 86,
+      "STRAWBERRY": 2
+    }
+  },
+  {
+    "team": "Koba",
+    "rank": 85,
+    "submission": 56612364,
+    "episode": 114287777,
+    "seat": 0,
+    "margin": -856.0,
+    "seed": 421145937,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 220
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "SHEEP": 11,
+      "STRAWBERRY": 28,
+      "MELON": 4,
+      "CARROT": 1,
+      "WHEAT": 26,
+      "COW": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 189,
+      "STRAWBERRY": 31,
+      "CARROT": 36
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 137,
+      "STRAWBERRY": 3,
+      "CARROT": 35
+    }
+  },
+  {
+    "team": "Koba",
+    "rank": 85,
+    "submission": 56612364,
+    "episode": 114286310,
+    "seat": 1,
+    "margin": 1195.0,
+    "seed": 1388587378,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 223
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 30,
+      "MELON": 4,
+      "WHEAT": 24,
+      "SHEEP": 10,
+      "COW": 4,
+      "CARROT": 1
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 235,
+      "STRAWBERRY": 30,
+      "CARROT": 50
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 180,
+      "CARROT": 49
+    }
+  },
+  {
+    "team": "kuengo",
+    "rank": 86,
+    "submission": 56570906,
+    "episode": 114281695,
+    "seat": 1,
+    "margin": -17320.0,
+    "seed": 404339278,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "WHEAT": 25,
+      "MELON": 2,
+      "COW": 9,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PIZZA_SHOP",
+      "BAKERY",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 137,
+      "STRAWBERRY": 33,
+      "TOMATO": 15,
+      "CARROT": 59
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 15,
+      "CARROT": 59,
+      "WHEAT": 100,
+      "STRAWBERRY": 4,
+      "MELON": 4
+    }
+  },
+  {
+    "team": "kuengo",
+    "rank": 86,
+    "submission": 56570906,
+    "episode": 114279545,
+    "seat": 0,
+    "margin": 13209.0,
+    "seed": 1023246679,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 218
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "MELON": 2,
+      "WHEAT": 25,
+      "COW": 9,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 126,
+      "STRAWBERRY": 33,
+      "TOMATO": 22
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 22,
+      "WHEAT": 89,
+      "MELON": 2,
+      "STRAWBERRY": 4
+    }
+  },
+  {
+    "team": "unreal",
+    "rank": 87,
+    "submission": 56590061,
+    "episode": 114282430,
+    "seat": 1,
+    "margin": 4977.0,
+    "seed": 1700365891,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 36,
+      "MELON": 2,
+      "GOOSE": 4,
+      "WHEAT": 20,
+      "COW": 10,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 121,
+      "STRAWBERRY": 44,
+      "TOMATO": 10,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 86,
+      "STRAWBERRY": 8,
+      "TOMATO": 10,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "unreal",
+    "rank": 87,
+    "submission": 56590061,
+    "episode": 114269286,
+    "seat": 0,
+    "margin": 59746.0,
+    "seed": 528178320,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 6
+    },
+    "layout_step288": {
+      "MELON": 3,
+      "STRAWBERRY": 40,
+      "WHEAT": 16,
+      "COW": 9,
+      "GOOSE": 4,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 149,
+      "STRAWBERRY": 45,
+      "TOMATO": 4,
+      "CARROT": 12
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 118,
+      "STRAWBERRY": 5,
+      "TOMATO": 4,
+      "CARROT": 12
+    }
+  },
+  {
+    "team": "Yuxuan Ba",
+    "rank": 88,
+    "submission": 56568189,
+    "episode": 114285117,
+    "seat": 1,
+    "margin": -18586.0,
+    "seed": 1622453121,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 23,
+      "MELON": 5,
+      "TOMATO": 7,
+      "GOOSE": 4,
+      "WHEAT": 17,
+      "SHEEP": 5,
+      "COW": 11,
+      "CARROT": 3
+    },
+    "shops_step288": [
+      "BAKERY",
+      "SMOOTHIE_SHOP",
+      "PIZZA_SHOP",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 143,
+      "STRAWBERRY": 37,
+      "CARROT": 9,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 12,
+      "WHEAT": 107,
+      "TOMATO": 6,
+      "MELON": 1
+    }
+  },
+  {
+    "team": "Yuxuan Ba",
+    "rank": 88,
+    "submission": 56568189,
+    "episode": 114284923,
+    "seat": 1,
+    "margin": 1528.0,
+    "seed": 1041040458,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "MELON": 2,
+      "WHEAT": 23,
+      "COW": 14,
+      "GOOSE": 1,
+      "TOMATO": 4,
+      "SHEEP": 4
+    },
+    "shops_step288": [
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 93,
+      "STRAWBERRY": 33,
+      "TOMATO": 14,
+      "CARROT": 46
+    },
+    "late_plantings_by_crop": {
+      "TOMATO": 10,
+      "WHEAT": 55,
+      "CARROT": 46,
+      "STRAWBERRY": 6,
+      "MELON": 4
+    }
+  },
+  {
+    "team": "Kucing Garong",
+    "rank": 89,
+    "submission": 56590730,
+    "episode": 114288260,
+    "seat": 0,
+    "margin": -13405.0,
+    "seed": 1116992310,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 221,
+      "SE": 266
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 6
+    },
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "WHEAT": 23,
+      "CARROT": 6,
+      "COW": 10,
+      "GOOSE": 5,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "SMOOTHIE_SHOP",
+      "BRUNCH_SPOT",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 155,
+      "STRAWBERRY": 32,
+      "CARROT": 72,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 66,
+      "WHEAT": 112,
+      "TOMATO": 13,
+      "STRAWBERRY": 7
+    }
+  },
+  {
+    "team": "Kucing Garong",
+    "rank": 89,
+    "submission": 56590730,
+    "episode": 114282566,
+    "seat": 0,
+    "margin": 10296.0,
+    "seed": 93747562,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 266
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 6
+    },
+    "layout_step288": {
+      "STRAWBERRY": 26,
+      "WHEAT": 30,
+      "CARROT": 6,
+      "COW": 11,
+      "GOOSE": 6,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "PET_CAFE",
+      "BAKERY",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 161,
+      "STRAWBERRY": 33,
+      "CARROT": 72,
+      "TOMATO": 13
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 66,
+      "WHEAT": 111,
+      "TOMATO": 13,
+      "STRAWBERRY": 7
+    }
+  },
+  {
+    "team": "Xuanhao Wang",
+    "rank": 90,
+    "submission": 56576472,
+    "episode": 114288160,
+    "seat": 1,
+    "margin": -6818.0,
+    "seed": 1116520419,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 219
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 8,
+      "WHEAT": 20,
+      "GOOSE": 7,
+      "TOMATO": 3,
+      "COW": 4,
+      "SHEEP": 18,
+      "MELON": 1
+    },
+    "shops_step288": [
+      "BAKERY",
+      "YARN_STORE",
+      "YARN_STORE",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 16,
+      "WHEAT": 123,
+      "STRAWBERRY": 38,
+      "TOMATO": 6,
+      "CARROT": 21
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 90,
+      "TOMATO": 3,
+      "MELON": 5,
+      "CARROT": 21
+    }
+  },
+  {
+    "team": "Xuanhao Wang",
+    "rank": 90,
+    "submission": 56576472,
+    "episode": 114283578,
+    "seat": 1,
+    "margin": -1772.0,
+    "seed": 395655828,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 218
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 28,
+      "MELON": 4,
+      "WHEAT": 23,
+      "COW": 13,
+      "SHEEP": 3,
+      "CARROT": 3,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 141,
+      "STRAWBERRY": 31,
+      "CARROT": 19,
+      "TOMATO": 14
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 104,
+      "CARROT": 16,
+      "STRAWBERRY": 3,
+      "TOMATO": 14
+    }
+  },
+  {
+    "team": "liminhai",
+    "rank": 91,
+    "submission": 56593853,
+    "episode": 114285313,
+    "seat": 0,
+    "margin": -22163.0,
+    "seed": 982465523,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 265
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "MELON": 5,
+      "TOMATO": 17,
+      "COW": 6,
+      "SHEEP": 9,
+      "WHEAT": 12,
+      "GOOSE": 3,
+      "CARROT": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 90,
+      "STRAWBERRY": 33,
+      "TOMATO": 17,
+      "CARROT": 63
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 8,
+      "WHEAT": 66,
+      "MELON": 1,
+      "CARROT": 60
+    }
+  },
+  {
+    "team": "liminhai",
+    "rank": 91,
+    "submission": 56593853,
+    "episode": 114284572,
+    "seat": 0,
+    "margin": -20220.0,
+    "seed": 1880251175,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "CARROT": 5,
+      "MELON": 6,
+      "TOMATO": 6,
+      "WHEAT": 20,
+      "GOOSE": 6,
+      "COW": 5,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 115,
+      "STRAWBERRY": 33,
+      "CARROT": 72,
+      "TOMATO": 11
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 7,
+      "TOMATO": 5,
+      "WHEAT": 83,
+      "CARROT": 67
+    }
+  },
+  {
+    "team": "xiy lin",
+    "rank": 92,
+    "submission": 56599179,
+    "episode": 114288286,
+    "seat": 0,
+    "margin": -21153.0,
+    "seed": 371400470,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 200
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 37
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "COW": 8,
+      "WHEAT": 22,
+      "SHEEP": 3,
+      "MELON": 3,
+      "GOOSE": 2
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "YARN_STORE",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 151,
+      "STRAWBERRY": 30,
+      "CARROT": 46
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 4,
+      "WHEAT": 111,
+      "CARROT": 46
+    }
+  },
+  {
+    "team": "xiy lin",
+    "rank": 92,
+    "submission": 56599179,
+    "episode": 114275118,
+    "seat": 1,
+    "margin": 3918.0,
+    "seed": 1349385121,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 200
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 6,
+      "WHEAT_units": 37
+    },
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "SHEEP": 10,
+      "WHEAT": 26,
+      "COW": 6,
+      "GOOSE": 5,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 175,
+      "STRAWBERRY": 31,
+      "CARROT": 24
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 122,
+      "STRAWBERRY": 7,
+      "CARROT": 24
+    }
+  },
+  {
+    "team": "syouya tobita",
+    "rank": 93,
+    "submission": 56584074,
+    "episode": 114286310,
+    "seat": 0,
+    "margin": -1195.0,
+    "seed": 1388587378,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 3,
+      "WHEAT_units": 18,
+      "FERTILIZER_turns": 2,
+      "FERTILIZER_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "WHEAT": 20,
+      "SHEEP": 11,
+      "COW": 6
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 148,
+      "MELON": 13,
+      "STRAWBERRY": 34,
+      "CARROT": 47,
+      "TOMATO": 10
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 98,
+      "STRAWBERRY": 1,
+      "CARROT": 47,
+      "TOMATO": 10,
+      "MELON": 1
+    }
+  },
+  {
+    "team": "syouya tobita",
+    "rank": 93,
+    "submission": 56584074,
+    "episode": 114280440,
+    "seat": 0,
+    "margin": -1774.0,
+    "seed": 577755911,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 151,
+      "SW": 266,
+      "SE": 361
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 15,
+      "FERTILIZER_turns": 5,
+      "FERTILIZER_units": 9
+    },
+    "layout_step288": {
+      "STRAWBERRY": 33,
+      "WHEAT": 20,
+      "GOOSE": 5,
+      "COW": 8,
+      "SHEEP": 4
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "WHEAT": 152,
+      "MELON": 13,
+      "STRAWBERRY": 39,
+      "TOMATO": 11,
+      "CARROT": 42
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 102,
+      "STRAWBERRY": 6,
+      "TOMATO": 11,
+      "CARROT": 42,
+      "MELON": 1
+    }
+  },
+  {
+    "team": "Nevska",
+    "rank": 94,
+    "submission": 56611523,
+    "episode": 114289321,
+    "seat": 0,
+    "margin": -18785.0,
+    "seed": 867017502,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 20,
+      "MELON": 4,
+      "WHEAT": 24,
+      "TOMATO": 4,
+      "COW": 6,
+      "SHEEP": 13,
+      "GOOSE": 1
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 145,
+      "STRAWBERRY": 23,
+      "TOMATO": 10,
+      "CARROT": 54
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 106,
+      "TOMATO": 6,
+      "STRAWBERRY": 3,
+      "CARROT": 54
+    }
+  },
+  {
+    "team": "Nevska",
+    "rank": 94,
+    "submission": 56611523,
+    "episode": 114288913,
+    "seat": 0,
+    "margin": 6330.0,
+    "seed": 1432287577,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 5
+    },
+    "layout_step288": {
+      "STRAWBERRY": 29,
+      "TOMATO": 4,
+      "MELON": 3,
+      "WHEAT": 19,
+      "COW": 7,
+      "GOOSE": 3,
+      "SHEEP": 9
+    },
+    "shops_step288": [
+      "BRUNCH_SPOT",
+      "PIZZA_SHOP",
+      "YARN_STORE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 136,
+      "STRAWBERRY": 34,
+      "TOMATO": 10,
+      "CARROT": 18
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 5,
+      "WHEAT": 110,
+      "TOMATO": 6,
+      "CARROT": 18
+    }
+  },
+  {
+    "team": "Nakano",
+    "rank": 95,
+    "submission": 56604719,
+    "episode": 114288414,
+    "seat": 1,
+    "margin": 1411.0,
+    "seed": 1243130037,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "FERTILIZER_turns": 1,
+      "FERTILIZER_units": 1
+    },
+    "layout_step288": {
+      "WHEAT": 25,
+      "STRAWBERRY": 27,
+      "COW": 14,
+      "TOMATO": 1,
+      "GOOSE": 3,
+      "SHEEP": 4,
+      "CARROT": 1
+    },
+    "shops_step288": [
+      "ICE_CREAM_SHOP",
+      "SMOOTHIE_SHOP",
+      "PET_CAFE",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 122,
+      "STRAWBERRY": 38,
+      "TOMATO": 1,
+      "CARROT": 69
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 11,
+      "WHEAT": 72,
+      "CARROT": 68
+    }
+  },
+  {
+    "team": "Nakano",
+    "rank": 95,
+    "submission": 56604719,
+    "episode": 114276103,
+    "seat": 1,
+    "margin": 10155.0,
+    "seed": 983187007,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 194
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "WHEAT": 25,
+      "STRAWBERRY": 22,
+      "MELON": 1,
+      "SHEEP": 20,
+      "COW": 3,
+      "CARROT": 1
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "YARN_STORE",
+      "BRUNCH_SPOT",
+      "PET_CAFE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 208,
+      "STRAWBERRY": 22,
+      "CARROT": 17,
+      "TOMATO": 7
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 141,
+      "TOMATO": 7,
+      "CARROT": 16
+    }
+  },
+  {
+    "team": "boominginging",
+    "rank": 96,
+    "submission": 56579883,
+    "episode": 114286568,
+    "seat": 0,
+    "margin": 6132.0,
+    "seed": 1598959862,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 242
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 25,
+      "MELON": 4,
+      "WHEAT": 20,
+      "CARROT": 1,
+      "GOOSE": 8,
+      "SHEEP": 4,
+      "TOMATO": 7,
+      "COW": 6
+    },
+    "shops_step288": [
+      "BAKERY",
+      "FARMERS_MARKET",
+      "ICE_CREAM_SHOP",
+      "PIZZA_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 15,
+      "WHEAT": 129,
+      "STRAWBERRY": 31,
+      "TOMATO": 17,
+      "CARROT": 8
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 7,
+      "TOMATO": 10,
+      "MELON": 2,
+      "STRAWBERRY": 6,
+      "WHEAT": 97
+    }
+  },
+  {
+    "team": "boominginging",
+    "rank": 96,
+    "submission": 56579883,
+    "episode": 114277848,
+    "seat": 0,
+    "margin": -6349.0,
+    "seed": 423582480,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 152,
+      "SW": 217
+    },
+    "peak_hands_midgame": 10,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "WHEAT": 26,
+      "MELON": 4,
+      "CARROT": 5,
+      "COW": 9,
+      "TOMATO": 1,
+      "SHEEP": 3,
+      "GOOSE": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "SMOOTHIE_SHOP",
+      "SMOOTHIE_SHOP",
+      "ICE_CREAM_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 85,
+      "STRAWBERRY": 46,
+      "CARROT": 22,
+      "TOMATO": 10
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 22,
+      "TOMATO": 9,
+      "WHEAT": 46,
+      "CARROT": 16
+    }
+  },
+  {
+    "team": "Junliang Ye",
+    "rank": 97,
+    "submission": 56601497,
+    "episode": 114288403,
+    "seat": 1,
+    "margin": 160.0,
+    "seed": 510049732,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "COW": 9,
+      "WHEAT": 27,
+      "GOOSE": 4,
+      "SHEEP": 3,
+      "MELON": 3
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "BRUNCH_SPOT",
+      "PET_CAFE",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 11,
+      "WHEAT": 161,
+      "STRAWBERRY": 28,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 4,
+      "WHEAT": 111,
+      "CARROT": 48
+    }
+  },
+  {
+    "team": "Junliang Ye",
+    "rank": 97,
+    "submission": 56601497,
+    "episode": 114275984,
+    "seat": 0,
+    "margin": -3318.0,
+    "seed": 1102816291,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 148,
+      "SW": 199
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 1,
+      "WHEAT_units": 1
+    },
+    "layout_step288": {
+      "STRAWBERRY": 23,
+      "COW": 7,
+      "WHEAT": 29,
+      "GOOSE": 8,
+      "SHEEP": 3,
+      "MELON": 4
+    },
+    "shops_step288": [
+      "BAKERY",
+      "FARMERS_MARKET",
+      "PET_CAFE",
+      "YARN_STORE"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 132,
+      "STRAWBERRY": 31,
+      "CARROT": 66,
+      "TOMATO": 10
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 79,
+      "STRAWBERRY": 8,
+      "CARROT": 66,
+      "TOMATO": 10
+    }
+  },
+  {
+    "team": "Winter Lamb",
+    "rank": 98,
+    "submission": 56613060,
+    "episode": 114288387,
+    "seat": 1,
+    "margin": 20638.0,
+    "seed": 1611780484,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 221
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 2,
+      "WHEAT_units": 2
+    },
+    "layout_step288": {
+      "STRAWBERRY": 24,
+      "WHEAT": 28,
+      "SHEEP": 18,
+      "COW": 5
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "YARN_STORE",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 142,
+      "STRAWBERRY": 26,
+      "TOMATO": 2,
+      "CARROT": 66
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 92,
+      "STRAWBERRY": 2,
+      "TOMATO": 2,
+      "CARROT": 66
+    }
+  },
+  {
+    "team": "Winter Lamb",
+    "rank": 98,
+    "submission": 56613060,
+    "episode": 114287664,
+    "seat": 0,
+    "margin": 21597.0,
+    "seed": 1781493629,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 149,
+      "SW": 206
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 4,
+      "WHEAT_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 31,
+      "TOMATO": 9,
+      "WHEAT": 18,
+      "COW": 8,
+      "GOOSE": 6,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "FARMERS_MARKET",
+      "FARMERS_MARKET",
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP"
+    ],
+    "plantings_by_crop": {
+      "MELON": 9,
+      "WHEAT": 103,
+      "STRAWBERRY": 37,
+      "TOMATO": 30,
+      "CARROT": 30
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 6,
+      "WHEAT": 67,
+      "TOMATO": 21,
+      "CARROT": 30
+    }
+  },
+  {
+    "team": "Hello San Francisco",
+    "rank": 99,
+    "submission": 56591915,
+    "episode": 114286964,
+    "seat": 1,
+    "margin": -4240.0,
+    "seed": 2080463925,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 220,
+      "SE": 255
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 8,
+      "WHEAT_units": 15,
+      "FERTILIZER_turns": 4,
+      "FERTILIZER_units": 14
+    },
+    "layout_step288": {
+      "STRAWBERRY": 35,
+      "CARROT": 8,
+      "COW": 9,
+      "GOOSE": 9,
+      "WHEAT": 15,
+      "SHEEP": 3,
+      "TOMATO": 1
+    },
+    "shops_step288": [
+      "PET_CAFE",
+      "PET_CAFE",
+      "PET_CAFE",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 53,
+      "STRAWBERRY": 39,
+      "CARROT": 167,
+      "TOMATO": 7
+    },
+    "late_plantings_by_crop": {
+      "CARROT": 153,
+      "STRAWBERRY": 4,
+      "WHEAT": 27,
+      "TOMATO": 6
+    }
+  },
+  {
+    "team": "Hello San Francisco",
+    "rank": 99,
+    "submission": 56591915,
+    "episode": 114286319,
+    "seat": 0,
+    "margin": 10755.0,
+    "seed": 1807412620,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222,
+      "SE": 266
+    },
+    "peak_hands_midgame": 12,
+    "same_turn_buy_sell": {
+      "WHEAT_turns": 19,
+      "WHEAT_units": 72,
+      "FERTILIZER_turns": 1,
+      "FERTILIZER_units": 4
+    },
+    "layout_step288": {
+      "STRAWBERRY": 18,
+      "WHEAT": 28,
+      "SHEEP": 16,
+      "CARROT": 6,
+      "COW": 7,
+      "TOMATO": 4
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "ICE_CREAM_SHOP",
+      "BAKERY",
+      "FARMERS_MARKET"
+    ],
+    "plantings_by_crop": {
+      "MELON": 10,
+      "WHEAT": 159,
+      "STRAWBERRY": 33,
+      "TOMATO": 9,
+      "CARROT": 94
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 103,
+      "CARROT": 88,
+      "STRAWBERRY": 15,
+      "TOMATO": 5
+    }
+  },
+  {
+    "team": "Navier-stokes",
+    "rank": 100,
+    "submission": 56607634,
+    "episode": 114283872,
+    "seat": 1,
+    "margin": -6506.0,
+    "seed": 1541525308,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 27,
+      "MELON": 3,
+      "WHEAT": 27,
+      "COW": 6,
+      "SHEEP": 10
+    },
+    "shops_step288": [
+      "YARN_STORE",
+      "FARMERS_MARKET",
+      "BRUNCH_SPOT",
+      "BAKERY"
+    ],
+    "plantings_by_crop": {
+      "MELON": 13,
+      "WHEAT": 181,
+      "STRAWBERRY": 29,
+      "TOMATO": 4,
+      "CARROT": 47
+    },
+    "late_plantings_by_crop": {
+      "STRAWBERRY": 2,
+      "WHEAT": 135,
+      "TOMATO": 4,
+      "CARROT": 47
+    }
+  },
+  {
+    "team": "Navier-stokes",
+    "rank": 100,
+    "submission": 56607634,
+    "episode": 114277926,
+    "seat": 0,
+    "margin": -2194.0,
+    "seed": 1062988095,
+    "first_land_step": {
+      "NW": 0,
+      "NE": 150,
+      "SW": 222
+    },
+    "peak_hands_midgame": 11,
+    "same_turn_buy_sell": {},
+    "layout_step288": {
+      "STRAWBERRY": 21,
+      "MELON": 2,
+      "WHEAT": 31,
+      "TOMATO": 2,
+      "COW": 13,
+      "SHEEP": 3
+    },
+    "shops_step288": [
+      "PIZZA_SHOP",
+      "SMOOTHIE_SHOP",
+      "BAKERY",
+      "BRUNCH_SPOT"
+    ],
+    "plantings_by_crop": {
+      "MELON": 12,
+      "WHEAT": 182,
+      "STRAWBERRY": 27,
+      "TOMATO": 17,
+      "CARROT": 48
+    },
+    "late_plantings_by_crop": {
+      "WHEAT": 132,
+      "STRAWBERRY": 5,
+      "TOMATO": 15,
+      "CARROT": 48
+    }
+  }
+]

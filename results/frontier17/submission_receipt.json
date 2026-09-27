@@ -1,15 +1,15 @@
 {
   "id": 56615489,
-  "status": "SubmissionStatus.PENDING",
+  "status": "SubmissionStatus.COMPLETE",
   "message": "Successfully submitted to Kaggriculture",
   "description": "Frontier17 62b76688 (f17_selected) input market",
-  "checked_utc": "2026-09-27T17:54:58.532074+00:00",
+  "checked_utc": "2026-09-27T17:56:30.630596+00:00",
   "archive_sha256": "0660e5c4f80c0cb0bbfd67a542d444ee1527a4ed3d409e4c5b30090cdecc4cb3",
   "candidate_sha256": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
   "leaderboard_submitted": true,
   "authorization": "Y lanza una plaza a kaggle",
   "filename": "submission.tar.gz",
-  "public_score": "",
+  "public_score": "600.0",
   "error": "",
   "date": "2026-09-27 17:49:32.127000"
 }
