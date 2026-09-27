@@ -54,6 +54,18 @@
       "tom": 1,
       "note": "Frontier14B + E081 window-head liquidation + tomato gate >= 1 shop",
       "sha256": "c560d7b136449daa57be565310af297ebe573c4491469b95f037d3e7452ae002"
+    },
+    "f15_e81e": {
+      "mode": "e81",
+      "tom": 0,
+      "note": "Frontier14B + E081 liquidation of MILK/WOOL/STRAWBERRY/EGG at every window head",
+      "sha256": "d2d868d1a1d8d668bb0dfd3bf49b0e7df648743538000147d0fbad0ac6d23bf4"
+    },
+    "f15_e81em": {
+      "mode": "e81",
+      "tom": 0,
+      "note": "Frontier14B + E081 liquidation of MILK/WOOL/STRAWBERRY/EGG/MELON at every window head",
+      "sha256": "403559c364b7cb39bbfb2c627484a10011d8dc033ecaaf2ad13315ad28651d2c"
     }
   }
 }

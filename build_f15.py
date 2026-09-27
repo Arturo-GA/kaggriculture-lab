@@ -53,7 +53,7 @@ def _v219_qualifies(obs, native):
     except Exception:
         return _F15_Q_ORIG(obs, native)
 _F15_ITEMS = ('MILK', 'WOOL', 'STRAWBERRY', 'MELON')
-_F15_E81_ITEMS = ('MILK', 'WOOL', 'STRAWBERRY')
+_F15_E81_ITEMS = %(items)r
 _F15_FROM = 216
 _F15_TO = 700
 _F15_AD_WIN = 48
@@ -176,19 +176,24 @@ VARIANTS = {
     'f15_tom1': ('none', 1, 'Frontier14B + tomato investment gate relaxed to >= 1 pizza/farmers shop and >= 9000 coins'),
     'f15_e81_tom2': ('e81', 2, 'Frontier14B + E081 window-head liquidation + tomato gate >= 2 shops'),
     'f15_e81_tom1': ('e81', 1, 'Frontier14B + E081 window-head liquidation + tomato gate >= 1 shop'),
+    'f15_e81e': ('e81', 0, 'Frontier14B + E081 liquidation of MILK/WOOL/STRAWBERRY/EGG at every window head', ('MILK', 'WOOL', 'STRAWBERRY', 'EGG')),
+    'f15_e81em': ('e81', 0, 'Frontier14B + E081 liquidation of MILK/WOOL/STRAWBERRY/EGG/MELON at every window head', ('MILK', 'WOOL', 'STRAWBERRY', 'EGG', 'MELON')),
 }
+E81_DEFAULT_ITEMS = ('MILK', 'WOOL', 'STRAWBERRY')
 
 
 def build(name):
-    mode, tom, note = VARIANTS[name]
+    mode, tom, note = VARIANTS[name][:3]
     src = build_f14.build('f14_adv4_h16')
     nl = chr(10)
-    return src + nl + ('# Frontier15 (%s): %s' % (name, note)) + nl + (LAYER % {'mode': mode, 'tom': tom}).replace('\n', nl)
+    items = VARIANTS[name][3] if len(VARIANTS[name]) > 3 else E81_DEFAULT_ITEMS
+    return src + nl + ('# Frontier15 (%s): %s' % (name, note)) + nl + (LAYER % {'mode': mode, 'tom': tom, 'items': items}).replace(chr(10), nl)
 
 
 if __name__ == '__main__':
     manifest = {'parent': 'f14_adv4_h16', 'variants': {}}
-    for name, (mode, tom, note) in VARIANTS.items():
+    for name, spec in VARIANTS.items():
+        mode, tom, note = spec[:3]
         src = build(name)
         compile(src.replace('\r\n', '\n'), name, 'exec')
         Path('candidates', name + '.py').write_text(src, encoding='utf-8', newline='')

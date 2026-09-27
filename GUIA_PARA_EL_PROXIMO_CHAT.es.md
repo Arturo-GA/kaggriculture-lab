@@ -183,6 +183,11 @@ Semillas ya usadas (no reajustar sobre ellas): 5601-6022, 7101-7704, 8001-8434, 
    queda por explorar: cultivo ligado a las tiendas (zanahorias con PET_CAFE, tomates con PIZZA_SHOP: los clones que
    lo hacen nos ganan por 2700-3300), y nada de tiempos sirve contra los privados de 2600+.
    Antes (Frontier13): el hueco estaba en los días 18-29 del espejo contra cha22 (conversión final).
+   **Para ganar a los de 2700 hace falta otra economía** (`ANALISIS_2700.es.md`, 27 sep): 4 cuadrantes hacia el día 10,
+   12-13 manos, 20-25 animales el día 12 elegidos por las tiendas, tomates/zanahorias tempranos, trigo de caja; los
+   top-100 lo hacen con planificadores propios o PPO + clonación de comportamiento sobre los replays oficiales del top.
+   Probado y descartado antes del cierre: bloques de expansión en el SE con manos 12-13 (no rentan), trasplante de
+   cintas grabadas del top-10 (Boey gana 4/12 y se derrumba en 8/12), dirigir el sorteo de tiendas (God's mode).
    **Puntos flojos medidos** (prueba complementaria, `FRONTIER13_RESULTS.es.md` §5): `g25_mooman0222_a62376` (E081,
    3/4) y `g25_mooman0222_baf0d3` (E082, 2/4) — Herd-Safe que vende todo el almacén de leche/lana/fresa al abrir cada
    ventana de demanda — y `g25_wangyh_v44` (3/4, cha22-like con `_ADV_LOOK` 6). Ideas sin probar: "reparar la acción

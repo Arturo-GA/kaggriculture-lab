@@ -7,6 +7,12 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
+**27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario
+(dataset público), reglas de producción del motor y foro. Los de arriba compran el cuarto cuadrante hacia el día 10, llevan
+12-13 manos y 20-25 animales el día 12 elegidos por las tiendas, con tomates y zanahorias tempranos; nuestra cinta se
+congela el día 11. Probado y descartado antes del cierre: bloques en el SE, trasplante de cintas grabadas (Boey gana 4/12),
+dirigir el sorteo de tiendas. Para ganarles hace falta otra economía (planificador o PPO + clonación), no otros tiempos.
+
 **27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (submission 56592376).**
 Revisión de las 96 partidas en vivo del par activo contra rivales de 2400+ (`vendor/live_f14`): los de 2450-2600 son
 clones de nuestra línea (misma granja) y se deciden por tiempos de venta en los días 16-28; las palizas son agentes
