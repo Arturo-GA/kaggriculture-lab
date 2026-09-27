@@ -1,0 +1,45 @@
+{
+  "candidate": "f16_repaired",
+  "sha256": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+  "games": 16,
+  "per_opponent": {
+    "f15_e81": {
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 3.0,
+      "mean_margin": 427.625
+    },
+    "n27_lynnsakurai_031656": {
+      "games": 8,
+      "wins": 7,
+      "ties": 0,
+      "losses": 1,
+      "score_delta": 6.0,
+      "mean_margin": 182.0
+    }
+  },
+  "errors": [],
+  "mirror_score": 0.875,
+  "total_score_delta": 9.0,
+  "max_call_ms": 364.50237899998683,
+  "latency_required": true,
+  "runtime_passed": true,
+  "baseline_comparison_passed": true,
+  "passed": true,
+  "total_games": 32,
+  "leaderboard_submitted": false,
+  "kernel": "jarturo/kaggriculture-frontier16-queue",
+  "cloud_gate_passed": true,
+  "export_checks_passed": true,
+  "local_gate_passed": true,
+  "validation_origin": "Executed in this Kaggle notebook run",
+  "cloud_games_sha256": "d4d168a774dd5465fc543d8e369652f30713eeca13c499b4e3c1a2e424e27d56",
+  "archive_members_sha256": {
+    "main.py": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "7dd20e5029b7ed776c2522dc6c971fa49899587bb98e24eb74a5d523c22cad35"
+  },
+  "archive_sha256": "13de630eb92cf78d3c74d47073867e6f70899d2441531a98a9ec3cef19e86067"
+}

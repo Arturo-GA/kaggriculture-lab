@@ -1,0 +1,30 @@
+[
+  {
+    "id": 56592376,
+    "date": "2026-09-27 00:06:15.090000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "2093.6",
+    "description": "Frontier15 9f0b05ea (f15_e81) on cha22 127ed3e6"
+  },
+  {
+    "id": 56570873,
+    "date": "2026-09-26 06:05:54.197000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "2300.5",
+    "description": "Frontier14B 8e8751ce (f14_adv4_h16) on cha22 127ed3e6"
+  },
+  {
+    "id": 56568493,
+    "date": "2026-09-26 03:55:39.217000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "2328.7",
+    "description": "Frontier14 a1561a1b (f14_adv4_h12) on cha22 127ed3e6"
+  },
+  {
+    "id": 56560450,
+    "date": "2026-09-25 21:26:44.250000",
+    "status": "SubmissionStatus.COMPLETE",
+    "score": "2379.9",
+    "description": "Frontier13 83195206 on cha22 127ed3e6 - second slot"
+  }
+]

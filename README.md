@@ -7,15 +7,18 @@ solo cuando la granja rival mantiene una semejanza alta con la propia.
 **Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
 competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
 
-**27 de septiembre: Frontier16, candidato nuevo pendiente de verificación en Kaggle.** Se revisó GitHub y la nueva
+**27 de septiembre: Frontier16, submission 56609913, notebook privado.** Se revisó GitHub y la nueva
 ola pública del 27; la base elegida es *Farmer John and the Idle Seller*, con una capa propia de asignación de
 posiciones de venta mediante programación dinámica y la integración E081. `f16_repaired` ganó **156/160** y obtuvo
 **+32 puntos emparejados frente a F15**. Son ocho semillas, diez rivales y ambos asientos, no 160 mundos independientes.
 También se mide por separado el aporte frente a la base pública sin modificar. Investigación:
 [FRONTIER16_RESEARCH.es.md](FRONTIER16_RESEARCH.es.md); resultados:
 [FRONTIER16_RESULTS.es.md](FRONTIER16_RESULTS.es.md); continuación:
-[RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). El push a Kaggle quedó bloqueado por el control automático de
-aprobación; el notebook y el paquete se preparan localmente. No hay nueva submission ni promesa de rating 2660–2700.
+[RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). Arturo autorizó la subida privada y la submission; la ejecución
+en Kaggle completó 32 partidas (F16 14/16, delta +9 frente a F15, cero errores, máximo 365 ms). El paquete coincide
+byte por byte con el local. [Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue).
+La submission está pendiente de evaluación inicial; al activarse F16 reemplaza a F14B y conserva F15.
+No se promete rating 2660–2700.
 
 **27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario
 (dataset público), reglas de producción del motor y foro. Los de arriba compran el cuarto cuadrante hacia el día 10, llevan

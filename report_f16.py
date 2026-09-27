@@ -7,12 +7,15 @@ def main():
     root=Path('results/frontier16/repaired');plan=json.loads((root/'plan.json').read_text());gate=json.loads((root/'holdout_summary.json').read_text())
     raw=json.loads((root/'holdout.json').read_text());package=json.loads((root/'local_package.json').read_text())
     assert raw['complete'] and gate['registered_gate_passed'] and package['notebook_payload_verified']
+    cloud=json.loads((root/'kaggle_verified.json').read_text()) if (root/'kaggle_verified.json').exists() else None
+    submission=json.loads((root/'submission_receipt.json').read_text()) if (root/'submission_receipt.json').exists() else None
     def summary(name):
         rs=[r for r in raw['rows'] if r['candidate']==name];w=sum(r['win'] for r in rs);t=sum(r['tie'] for r in rs)
         return w,t,len(rs)-w-t,w+.5*t
     names=[('F15 desplegado',plan['control']),('Base pública sin modificar',plan['public_base']),('F16 corregido',plan['candidate'])]
     lines=['# Frontier16 — resultados del 27 de septiembre de 2026','',
-        '**Candidato recomendado para la siguiente verificación en Kaggle:** `f16_repaired`. Validado localmente; todavía no enviado al leaderboard ni verificado en la nube.','',
+        ('**Frontier16 enviada:** `f16_repaired`, submission `%s`, estado `%s`. Notebook privado y verificación en Kaggle completados.' % (submission['id'],submission['status']) if submission and cloud else
+         '**Candidato recomendado para la siguiente verificación en Kaggle:** `f16_repaired`. Validado localmente; todavía no enviado al leaderboard ni verificado en la nube.'),'',
         '## Comparación congelada','',
         'Motor oficial `kaggle-environments==1.32.7`. Ocho semillas nuevas (`16301..16308`), diez rivales, ambos asientos y tres políticas: 480 partidas completas. Cada política juega 160. Los asientos comparten mundo: hay ocho semillas independientes, no 160.','',
         '| Política | Victorias | Empates | Derrotas | Puntos (V + ½E) |','|---|---:|---:|---:|---:|']
@@ -35,9 +38,11 @@ def main():
         '- Evidencia: `plan.json`, `holdout.json`, `holdout_summary.json`, `unit_tests.json` y `local_package.json` en `results/frontier16/repaired/`.',
         '- Reconstrucción: `python build_f16.py`; pruebas: `python -m unittest test_frontier16 -v`; aceptación: `python assess_f16.py`; notebook: `python make_frontier16_notebook.py`; paquete: `python pack_frontier16_local.py`.',
         '- Investigación y fuentes: [FRONTIER16_RESEARCH.es.md](FRONTIER16_RESEARCH.es.md).','',
-        'El control automático de aprobación bloqueó el push a Kaggle y exige autorización explícita para este notebook y `jarturo/kaggriculture-frontier16-queue`. No se sorteó ese bloqueo. El notebook privado está preparado para 32 partidas oficiales adicionales con semillas `16401..16404`; esas partidas todavía no se han ejecutado. Solo exporta un archivo en Kaggle si pasan sus comprobaciones.','',
+        (f"Kaggle: **{cloud['total_games']} partidas oficiales completas**, delta emparejado **{cloud['total_score_delta']:+g}** frente a F15, máximo **{cloud['max_call_ms']:.1f} ms** y ningún error registrado. Se verificaron fuente, resultados, licencias y hash del archivo descargado. Notebook privado: https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue . La autorización explícita de Arturo («Dale submissions y súbelo como privado») resolvió el bloqueo anterior de subida." if cloud else
+         'El control automático de aprobación bloqueó el push a Kaggle y exige autorización explícita para este notebook y `jarturo/kaggriculture-frontier16-queue`. No se sorteó ese bloqueo. El notebook privado está preparado para 32 partidas oficiales adicionales con semillas `16401..16404`; esas partidas todavía no se han ejecutado. Solo exporta un archivo en Kaggle si pasan sus comprobaciones.'),'',
         '## Qué implica para 2660–2700','',
-        'Es una mejora medida sobre F15 y sobre la base pública, dentro de este panel. No hay una conversión validada de estos resultados al rating objetivo. Los agentes privados de los primeros puestos tienen diferencias económicas que el panel público no reproduce. Las dos submissions activas siguen siendo F14B y F15; no se sustituyeron.','']
+        'Es una mejora medida sobre F15 y sobre la base pública, dentro de este panel. No hay una conversión validada de estos resultados al rating objetivo. Los agentes privados de los primeros puestos tienen diferencias económicas que el panel público no reproduce. '+
+        ('La nueva submission conserva F15 y reemplaza F14B al activarse; su último estado está en el recibo.' if submission else 'Las dos submissions activas siguen siendo F14B y F15; no se sustituyeron.'),'']
     Path('FRONTIER16_RESULTS.es.md').write_text('\n'.join(lines),encoding='utf-8')
     print('FRONTIER16_RESULTS.es.md written from complete evidence')
 

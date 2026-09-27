@@ -1,5 +1,12 @@
 # Retomar Frontier16
 
+**Estado posterior: enviada como `56609913` el 27/09/2026 a las 13:31 UTC.**
+Notebook privado confirmado por los metadatos remotos:
+https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue .
+El recibo de submission y la comprobación de la nube están en
+`results/frontier16/repaired/`. Última consulta: `PENDING`, sin error ni puntaje
+todavía. El nuevo par previsto es F15 + F16 al activarse el agente.
+
 Solicitud del 27/09: revisar el GitHub actualizado, discusiones, notebooks y
 líderes de Kaggle, y mejorar la estrategia con objetivo 2660–2700 o el mejor
 resultado posible. Se trabajó desde `36ee7d1` en el repositorio privado
@@ -59,21 +66,34 @@ excluida de Git. Los rivales de otras familias continúan siendo entradas
 locales; no se redistribuyen sueltos. Las licencias originales y el aviso de
 modificaciones congelado están en `attribution/frontier16/`.
 
-## Bloqueo de subida a Kaggle
+## Subida privada, verificación y submission
 
-La revisión automática rechazó dos veces `kaggle kernels push -p kaggle_frontier16`.
+La revisión automática rechazó inicialmente dos veces `kaggle kernels push -p kaggle_frontier16`.
 Después de la primera se comprobó, en lectura, la cuenta con `mine=True` y se
 enumeró el contenido exacto del notebook. La segunda revisión exige que Arturo
 autorice explícitamente este notebook privado y
-`jarturo/kaggriculture-frontier16-queue`. **No se ejecutó ningún push a Kaggle**;
-no intentar sortear la revisión con otra API, navegador o comando indirecto.
+`jarturo/kaggriculture-frontier16-queue`. Arturo resolvió ese bloqueo con
+**«Dale submissions y súbelo como privado»**. El ejecutable CLI no estaba
+instalado; una vez autorizada la acción, la API oficial subió la versión 1
+(kernel id `136116215`). Se descargaron sus metadatos y se confirmó
+`is_private=true`.
 
-Cuando el usuario resuelva el bloqueo, el notebook está preparado para 32
-partidas oficiales nuevas (semillas 16401–16404), control F15 y dos rivales.
-`cloud_frontier16.py` exige el gate local y el gate de nube antes de exportar;
-`verify_frontier16_cloud.py` verifica los resultados descargados y los tres
-miembros del TAR. No afirmar que ya se ejecutaron esas partidas.
+La nube completó las 32 partidas oficiales nuevas (semillas 16401–16404):
+F16 ganó 7/8 a F15 y 7/8 a la base pública. Delta emparejado +9 frente a F15,
+sin errores y máximo 364,5 ms por callback. `verify_frontier16_cloud.py`
+recalculó la comparación y verificó fuente, licencias y archivo completo.
+SHA-256 del TAR de Kaggle, idéntico al paquete local:
+`13de630eb92cf78d3c74d47073867e6f70899d2441531a98a9ec3cef19e86067`.
 
-F14B (`56570873`) y F15 (`56592376`) siguen activas. No se envió una nueva
-submission. Una solicitud futura de subir el notebook no debe confundirse
-automáticamente con reemplazar un agente activo del torneo.
+`submit_frontier16.py` envió una sola submission, `56609913`, conservando F15
+(`56592376`) y reemplazando F14B (`56570873`) cuando se active. Para consultar su estado sin enviar
+de nuevo:
+
+```powershell
+.venv\Scripts\python.exe -X utf8 submit_frontier16.py
+```
+
+El script comprueba hashes y privacidad, guarda intención antes de subir y
+no repite una subida incierta. Los recibos del intento anterior bloqueado y
+del empaquetado local conservan el estado histórico de ese momento; el estado
+actual está en `kaggle_verified.json` y `submission_receipt.json`.
