@@ -1,8 +1,8 @@
 # Retomar Frontier17
 
 Petición de Arturo: analizar las pérdidas del modelo actual y desarrollar
-estrategias para acercarse al top 100. Se implementaron y validaron mejoras;
-**no se ha enviado F17 a Kaggle en esta ronda**. El repositorio sigue privado.
+estrategias para acercarse al top 100. Después autorizó «Y lanza una plaza a kaggle».
+**F17 se envió una sola vez: submission 56615489**. El notebook y el repositorio siguen privados.
 
 ## Estado comprobado
 
@@ -13,9 +13,14 @@ estrategias para acercarse al top 100. Se implementaron y validaron mejoras;
   `62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f`.
 - Paquete: `results/frontier17/local/submission.tar.gz`, SHA-256
   `0660e5c4f80c0cb0bbfd67a542d444ee1527a4ed3d409e4c5b30090cdecc4cb3`.
-- Notebook LOCAL: `kaggle_frontier17/experiment.ipynb`, 863303 bytes, con
-  `kernel-metadata.json` privado. Slug previsto `jarturo/kaggriculture-frontier17-input-market`.
-  No se debe afirmar que existe en Kaggle. `notebook_prepared.json` registra `uploaded=false`.
+- Notebook subido y completado, versión 1: `jarturo/kaggriculture-frontier17-input-market`.
+  Privacidad y coincidencia de todas las celdas verificadas mediante descarga desde Kaggle.
+  `notebook_prepared.json` conserva el estado histórico de preparación; los recibos actuales son
+  `kaggle_upload.json`, `kaggle_private_verified.json`, `kaggle_run_status.json` y `kaggle_verified.json`.
+- Kaggle completó 16 partidas, semillas 17201–17204: F17 8 victorias de 8 contra F16,
+  control F16 8 empates contra sí mismo, cero errores, máximo 248,4 ms. Paquete idéntico al local.
+- Submission `56615489`, enviada el 27/09 a las 17:49 UTC. Consultar `submission_receipt.json`
+  para el estado verificado más reciente y `active_after_submission.json` para los agentes activos.
 
 ## Qué cambió y qué demostró
 
@@ -54,20 +59,20 @@ Smackaveli y ShunkiKyoya siguen sin resolver. La siguiente mejora productiva
 debe considerar tiendas, ciclos, alimentación y trabajo; revisar composiciones
 y ledger en `FRONTIER17_RESEARCH.es.md`, no trasplantar cintas rivales.
 
-## Próximo envío, si Arturo lo solicita
+## Envío realizado y continuación
 
-El notebook está preparado para una verificación nueva de 16 partidas oficiales
-en Kaggle contra F16, semillas 17201–17204. Exporta solamente si no hay errores,
-cumple <1000 ms y su puntuación no queda debajo de F16. No envía automáticamente
-a la competencia. Antes de enviarlo, revisar resultados y hash del archive.
-Conservar privado el notebook y el repo. F17 aún no tiene id de submission.
+El notebook ejecutó su verificación y exportó el paquete tras superar los controles.
+`verify_frontier17_cloud.py` recomputó la matriz, puntuación, tiempos, hashes y contenido
+del archive. `submit_frontier17.py` registró intención antes de llamar a Kaggle y guardó
+el id devuelto. Conservar privado el notebook y el repo.
 
-La autorización anterior de subida/submission fue ejecutada para F16. En esta
-ronda Arturo pidió análisis y mejora; no inventar una nueva autorización ni
-duplicar envíos existentes. Los pasos locales de preparación ya están completos.
+La autorización de una plaza está ejecutada. No volver a subir otra copia de F17.
+`python submit_frontier17.py` sin argumentos solo refresca el recibo existente.
+La nueva submission está destinada a acompañar F16 y retirar F15 al activarse;
+usar la lista oficial de agentes activos para comprobar que ya ocurrió.
 
 Semillas consumidas: exploración 17001–17004; pruebas de contratos 17091;
-holdout 17101–17108; estrés 17301–17304. Las 17201–17204 siguen reservadas para Kaggle.
+holdout 17101–17108; estrés 17301–17304; Kaggle 17201–17204.
 Resultados y hashes en `results/frontier17/`; datos brutos en `vendor/live_f16`
 y `vendor/research_f17`, excluidos de Git. `resume_eval.py` sirve si una futura
 evaluación se interrumpe; esta ronda quedó completa.
@@ -82,4 +87,5 @@ sin afirmar una interpretación definitiva ni elegibilidad para premios.
 Archivos de informe: `FRONTIER17_RESULTS.es.md`, `FRONTIER17_RESEARCH.es.md`.
 Scripts: `research_f17.py`, `audit_f17_replays.py`, `analyze_f17.py`,
 `summarize_f17_diagnostics.py`, `fetch_f17_new_losses.py`, `report_f17.py`,
-`pack_frontier17.py`, `make_frontier17_notebook.py`, `cloud_frontier17.py`.
+`pack_frontier17.py`, `make_frontier17_notebook.py`, `cloud_frontier17.py`,
+`verify_frontier17_cloud.py`, `submit_frontier17.py`.

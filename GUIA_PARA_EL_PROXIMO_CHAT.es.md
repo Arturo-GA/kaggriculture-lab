@@ -1,16 +1,19 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
-> **Última actualización: Frontier17 preparado (27/09).** Leer primero
+> **Última actualización: Frontier17 enviado (27/09), submission 56615489.** Leer primero
 > [RESUME_FRONTIER17.es.md](RESUME_FRONTIER17.es.md). Se analizaron 22 derrotas de F16;
 > el nuevo candidato ganó 128/128 en la validación principal y pasó la prueba adicional.
-> No se creó una submission F17 ni se subió su notebook: paquete y notebook privado están preparados localmente.
+> Arturo autorizó «Y lanza una plaza a kaggle» y se realizó exactamente un envío.
+> Notebook privado, versión 1; Kaggle validó 16 partidas, F17 8/8 contra F16, cero errores y máximo 248 ms.
+> El paquete coincide byte por byte con el local. Revisar `results/frontier17/submission_receipt.json`
+> y `active_after_submission.json` antes de cualquier acción; no duplicar el envío.
 > El objetivo solicitado es mejorar hacia el top 100. Persisten derrotas contra economías privadas distintas
 > y una duda sin aclarar en el foro sobre actualizaciones públicas posteriores al cierre de publicación.
 
 > **Actualización posterior: Frontier16 (27 de septiembre).** Leer primero
 > [RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). El nuevo candidato local es
 > `f16_repaired`, SHA `0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd`.
-> F16 (`56609913`) y F15 (`56592376`) son los envíos activos. F16 está COMPLETE;
+> Antes de F17, F16 (`56609913`) y F15 (`56592376`) eran los envíos activos. F16 está COMPLETE;
 > F14B está retirada. Al 27/09, 17:33 UTC: F16 2449,8, puesto 273, 45V/22D.
 > Arturo autorizó explícitamente la subida privada y la submission el 27/09.
 > Kaggle completó 32 partidas de verificación (F16 14/16, delta +9, sin errores)

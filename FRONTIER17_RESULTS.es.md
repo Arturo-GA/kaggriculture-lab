@@ -33,9 +33,9 @@ La derrota de −8488 contra trantrikien239 pasa a −306. Las derrotas amplias 
 
 ## Estado y alcance
 
-El candidato se preparó localmente para revisión y para un notebook configurado como privado. No se ha ejecutado Frontier17 en Kaggle ni enviado una nueva submission en esta ronda. Las submissions activas anteriores conservan su evaluación.
+Arturo autorizó una plaza con «Y lanza una plaza a kaggle». Submission **56615489**, estado **SubmissionStatus.PENDING** al 2026-09-27T17:54:58.532074+00:00. [Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier17-input-market), versión 1. La verificación en Kaggle completó 16 partidas: F17 ganó 8/8 contra F16, con cero errores y máximo 248.4 ms. El paquete exportado coincide byte por byte con el local. Se realizó un solo envío. El estado del par activo se conserva en `results/frontier17/active_after_submission.json`.
 
-Última consulta (2026-09-27T17:33:58.058397+00:00): corte top 100 **2621.9**, Frontier16 **2449.8**, puesto **273**. No hay una conversión validada entre este panel público y el rating. Tampoco se dispone del código privado de los mejores rivales. La duda del foro sobre versiones públicas posteriores al cierre de publicación sigue registrada en el informe de investigación.
+Consulta previa al envío (2026-09-27T17:33:58.058397+00:00): corte top 100 **2621.9**, Frontier16 **2449.8**, puesto **273**. No hay una conversión validada entre este panel público y el rating. Tampoco se dispone del código privado de los mejores rivales. La duda del foro sobre versiones públicas posteriores al cierre de publicación sigue registrada en el informe de investigación.
 
 ## Reproducción
 

@@ -9,6 +9,23 @@ diag=json.loads((root/'diagnostic_summary.json').read_text())
 stress=json.loads((root/'stress.json').read_text())
 stress_plan=json.loads((root/'stress_plan.json').read_text())
 live=json.loads((root/'live_snapshot_final.json').read_text(encoding='utf-8'))
+submission_path=root/'submission_receipt.json'
+if submission_path.exists():
+    submission=json.loads(submission_path.read_text(encoding='utf-8'))
+    cloud=json.loads((root/'kaggle_verified.json').read_text(encoding='utf-8'))
+    deployment_status=(
+        f"Arturo autorizó una plaza con «{submission['authorization']}». "
+        f"Submission **{submission['id']}**, estado **{submission['status']}** "
+        f"al {submission['checked_utc']}. "
+        '[Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier17-input-market), versión 1. '
+        f"La verificación en Kaggle completó {cloud['games']} partidas: F17 ganó 8/8 contra F16, "
+        f"con cero errores y máximo {cloud['max_call_ms']:.1f} ms. "
+        'El paquete exportado coincide byte por byte con el local. Se realizó un solo envío. '
+        'El estado del par activo se conserva en `results/frontier17/active_after_submission.json`.')
+else:
+    deployment_status=('El candidato se preparó localmente para revisión y para un notebook configurado como privado. '
+        'No se ha ejecutado Frontier17 en Kaggle ni enviado una nueva submission en esta ronda. '
+        'Las submissions activas anteriores conservan su evaluación.')
 fresh=json.loads((root/'new_loss_diagnostic.json').read_text(encoding='utf-8'))
 fresh_control={r['episode']:r for r in fresh if r['agent']==plan['control']}
 fresh_new=[r for r in fresh if r['agent']==plan['candidate']]
@@ -68,10 +85,8 @@ lines += ['',f"Ganancia excluyendo el enfrentamiento contra F16: **{summary['non
     'Smackaveli y ShunkiKyoya siguen presentes; requieren mejorar la composición productiva. '
     'Detalles, contabilidad y fuentes en [FRONTIER17_RESEARCH.es.md](FRONTIER17_RESEARCH.es.md).','',
     '## Estado y alcance','',
-    'El candidato se preparó localmente para revisión y para un notebook configurado como privado. '
-    'No se ha ejecutado Frontier17 en Kaggle ni enviado una nueva submission en esta ronda. '
-    'Las submissions activas anteriores conservan su evaluación.','',
-    f"Última consulta ({live['checked_utc']}): corte top 100 **{live['top100_cut']['score']}**, "
+    deployment_status,'',
+    f"Consulta previa al envío ({live['checked_utc']}): corte top 100 **{live['top100_cut']['score']}**, "
     f"Frontier16 **{live['own']['score']}**, puesto **{live['own']['rank']}**. "
     'No hay una conversión validada entre este panel público y el rating. Tampoco se dispone '
     'del código privado de los mejores rivales. La duda del foro sobre versiones públicas posteriores '

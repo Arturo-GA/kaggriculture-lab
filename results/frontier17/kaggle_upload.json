@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-27T17:45:56.458865+00:00",
+  "authorization": "Y lanza una plaza a kaggle",
+  "requested_private": true,
+  "response": {
+    "ref": "/code/jarturo/kaggriculture-frontier17-input-market",
+    "url": "https://www.kaggle.com/code/jarturo/kaggriculture-frontier17-input-market",
+    "version_number": 1,
+    "error": null,
+    "invalid_tags": [],
+    "invalid_dataset_sources": [],
+    "invalid_competition_sources": [],
+    "invalid_kernel_sources": [],
+    "invalid_model_sources": [],
+    "kernel_id": 136146452,
+    "is_frozen": true
+  }
+}

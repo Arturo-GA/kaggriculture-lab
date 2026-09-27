@@ -1,0 +1,51 @@
+{
+  "registered_at": "2026-09-27T17:20:32.996939+00:00",
+  "candidate": "f17_selected",
+  "control": "f16_repaired",
+  "opponents": [
+    "f16_repaired",
+    "g25_mooman0222_a62376",
+    "g25_mooman0222_baf0d3",
+    "g25_wangyh_v44",
+    "n25_abhinav0370_127ed3",
+    "n23_prvsiyan_178ae0",
+    "n23_kenanzhang9_b52378",
+    "v43"
+  ],
+  "seeds": [
+    17101,
+    17102,
+    17103,
+    17104,
+    17105,
+    17106,
+    17107,
+    17108
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 256,
+  "hashes": {
+    "f16_repaired": "0c6ac464ec556dc96a045c6575e718bb3aa77a153a97f9bae506eec3a32807cd",
+    "g25_mooman0222_a62376": "a623767bf01414f23a1353a0d64b6f4bdc39f67e289dd347e073cca2aa4c7675",
+    "g25_mooman0222_baf0d3": "baf0d31ee5796ee7012b79ef54217556f63d3d455c3a3a7e13a2ecb8d7b12343",
+    "g25_wangyh_v44": "7483aea8e242358881d9ace0a7340c37444e8bea8f12f2cc3f3a0d13287ce450",
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "n23_prvsiyan_178ae0": "178ae0f727641cf4b618ebb98ade7aa1a1bed7517281aab9849de82a59d8ed3a",
+    "n23_kenanzhang9_b52378": "b523788e5e4103588487e80ecb1a96591a463cfd8a6228ae914072e64fda607f",
+    "v43": "919fc1d61050cd96f799979e49177ae3ac7bce98ec9835724238bea73f4a08ed",
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f"
+  },
+  "gate": {
+    "score_delta_min": 8,
+    "nonmirror_delta_min": 0,
+    "per_opponent_floor": -2,
+    "head_to_head_score_min": 0.65,
+    "errors": 0,
+    "max_call_ms": 1000
+  },
+  "selection": "Combine cancellation of next-turn speculative input pairs with bounded same-turn input search. Exploration 17001..17004 only. Freeze before unseen holdout. Replay diagnostics are descriptive, not competitive validation.",
+  "limitations": "Public family panel; eight independent worlds, seats correlated; private top100 policies unavailable. No mapping of local win rate to ladder rating."
+}
