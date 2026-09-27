@@ -85,3 +85,7 @@ SHA-256 del paquete: `28d30e598de4ac49ac6330484a29a2ebcb6d01a9ec17b5fc18a2679f27
 Enviado una sola vez el 27/09 a las 19:31 UTC: **submission 56617687**.
 Se usó **una de las dos plazas autorizadas condicionalmente**. Las otras variantes no pasaron;
 no se efectuó un segundo envío. No duplicar: consultar primero el recibo y la lista remota.
+
+Confirmación a las **19:36 UTC (14:36 Lima)**: submission **COMPLETE**, sin error, rating inicial
+600. Los dos agentes activos son F18 `56617687` y F17 `56615489` (2366,0 en esa consulta).
+F16 dejó de figurar entre los activos. El 600 inicial no es una predicción de convergencia.

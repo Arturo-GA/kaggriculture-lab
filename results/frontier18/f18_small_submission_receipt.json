@@ -1,6 +1,6 @@
 {
   "id": 56617687,
-  "status": "SubmissionStatus.PENDING",
+  "status": "SubmissionStatus.COMPLETE",
   "message": "Successfully submitted to Kaggriculture",
   "description": "Frontier18 f18_small (d9289a3e)",
   "archive_sha256": "28d30e598de4ac49ac6330484a29a2ebcb6d01a9ec17b5fc18a2679f2756d491",
@@ -10,10 +10,10 @@
     "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "NOTICE.txt": "8dd11c566bb8f3607fe49e6e83fa8c603a6ac016d5cc640a922caac55c371ec1"
   },
-  "checked_utc": "2026-09-27T19:33:08.977027+00:00",
+  "checked_utc": "2026-09-27T19:36:01.478885+00:00",
   "leaderboard_submitted": true,
   "authorization": "Si es mejor entonces haz 2 submissioj con enfoques un poco distintos y vemos cómo les va en el leader board para asegurarnos la mejor estrategia",
-  "public_score": "",
+  "public_score": "600.0",
   "error": "",
   "date": "2026-09-27 19:31:00.273000"
 }

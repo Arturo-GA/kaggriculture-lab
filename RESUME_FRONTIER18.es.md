@@ -10,6 +10,10 @@ La segunda plaza no se usó: el escenario rival alternativo falla su puerta y el
 alimentación no muestra mejora en el panel adicional, donde el fallo nunca aparece.
 No convertir la autorización condicional en permiso para gastar la segunda plaza sin evidencia.
 
+**Estado confirmado a las 19:36 UTC:** F18 `56617687` está COMPLETE, sin error, rating inicial
+600. Activos: F18 y F17 `56615489` (2366,0). F16 ya no está activo. Los paneles locales,
+la ejecución privada en Kaggle y los análisis terminaron; no queda un experimento ejecutándose.
+
 ## Fuente y recibos
 
 - Candidato congelado: `candidates/f18_small.py`.

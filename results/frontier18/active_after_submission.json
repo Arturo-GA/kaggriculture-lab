@@ -1,16 +1,16 @@
 {
-  "checked_utc": "2026-09-27T19:33:09.341025+00:00",
+  "checked_utc": "2026-09-27T19:36:03.114541+00:00",
   "active": [
     {
-      "id": 56615489,
-      "date_submitted": "2026-09-27T17:49:32.127000",
-      "public_score": "2341.7",
+      "id": 56617687,
+      "date_submitted": "2026-09-27T19:31:00.273000",
+      "public_score": "600.0",
       "is_frozen": true
     },
     {
-      "id": 56609913,
-      "date_submitted": "2026-09-27T13:31:13.193000",
-      "public_score": "2407.0",
+      "id": 56615489,
+      "date_submitted": "2026-09-27T17:49:32.127000",
+      "public_score": "2366.0",
       "is_frozen": true
     }
   ]
