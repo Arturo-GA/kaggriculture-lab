@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-30T23:08:28.701747+00:00",
+  "candidates": {
+    "f21_cap12": {
+      "cap": 12,
+      "sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+      "parent": "f20_fill"
+    },
+    "f21_cap16": {
+      "cap": 16,
+      "sha256": "af0c21374eb53e70e21189ede0c05546c6fb51ee00cae4e645c723ca869c08f8",
+      "parent": "f20_fill"
+    }
+  },
+  "control": "f20_value",
+  "control_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+  "opponents": [
+    "f20_value",
+    "f19_market2",
+    "n30b_haodou092_531a42",
+    "n30b_evgendvorkin_8ddb01",
+    "n23_arsgorynich_4f8637"
+  ],
+  "seeds": [
+    20201,
+    20206
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "games": 60,
+  "rationale": "Test selling slightly larger covered residual lots (12 or16 versus8 units). Preserve production, feed controls, similarity threshold, sale window, order count, and existing product exclusions.",
+  "selection": "Development only: require strictly more win/tie points than f20_value, then choose highest points, then smaller cap. Freeze the selected source before new holdout seeds. If neither improves, use already-validated f20_fill as explicitly authorized by user.",
+  "authorization": "User: osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+  "deadline_utc": "2026-09-30T23:59:00Z",
+  "target_submit_by_utc": "2026-09-30T23:45:00Z"
+}

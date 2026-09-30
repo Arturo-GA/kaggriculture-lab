@@ -1,0 +1,19 @@
+{
+  "id": 56721777,
+  "status": "SubmissionStatus.COMPLETE",
+  "message": "Successfully submitted to Kaggriculture",
+  "description": "Final Frontier21 f21_cap12 (557a048a)",
+  "archive_sha256": "ce70a88ce8549960a8e86774ffc790f3839877b8dc187d743a7f74ee7b0c8953",
+  "candidate_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+  "members_sha256": {
+    "main.py": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "b4fe15622552a4e1ec0ea78bdacc58b291744f0768ac3d885e7f2c1d8c9c1c9a"
+  },
+  "checked_utc": "2026-09-30T23:45:29.629527+00:00",
+  "leaderboard_submitted": true,
+  "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+  "public_score": "600.0",
+  "error": "",
+  "date": "2026-09-30 23:40:31.070000"
+}

@@ -1,0 +1,36 @@
+{
+  "kernel": "jarturo/kaggriculture-frontier21-final-validation",
+  "candidates": [
+    "f21_cap12"
+  ],
+  "control": "f20_value",
+  "cloud_seeds": [
+    21201,
+    21202,
+    21203,
+    21204
+  ],
+  "source_sha256": {
+    "f21_cap12": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+    "f20_value": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07"
+  },
+  "evidence_sha256": {
+    "results/frontier21/selection.json": "88052f864e16bba287676e4312ed88204ddeb0430f948495c3c98ec3d3fb01c2",
+    "results/frontier21/contracts.json": "d699d188ed0af334c6256d813e4f3d14f7485d0b0e2ecabd90227935a4a85748",
+    "results/frontier21/development_plan.json": "832e2baa44f513f44ea17bb21aa9fb1820d9628961c2666b45f16852685b2f3a",
+    "results/frontier21/development_summary.json": "865b1faa4594b7dbedc7d954dd450904d3215c9c788d0b01f9cc5db99ab4c8f9",
+    "results/frontier20/value_gate/plan.json": "2da7d011aef7538e0770a050783b8b22329f883ebd55e10144690ea913fb920f",
+    "results/frontier20/value_gate/holdout_summary.json": "5eb0f1535580fb100f6efa53b30874e237ca327d4829e1a86187418d378b05a6",
+    "results/frontier21/holdout_plan.json": "0982f401c825938e81013f7a19e51c2ce4b1fd17ad0d69750a9f8da90f5ccab3",
+    "results/frontier21/holdout_summary.json": "ea91761ba8230614846aabab4bb11ed5b467d80c315ade2ef00f9bf5e178b69f"
+  },
+  "validation_mode": "measured_improvement",
+  "created_utc": "2026-09-30T23:35:46.510582+00:00",
+  "cloud_rule": "16 official-engine games; zero errors and candidate calls below1000ms. Runtime/archive check only, not a new competitive selection sample.",
+  "expected_active_before": [
+    56719762,
+    56714342
+  ],
+  "preserve_submission": 56719762,
+  "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas"
+}

@@ -1,0 +1,81 @@
+{
+  "updated_utc": "2026-09-30T23:48:32.809163+00:00",
+  "task": "One final private submission before23:59UTC; small improvement or explicitly authorized tied f20_fill fallback. Also audit Tm-ACCS and WeAreFarmers losses.",
+  "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+  "running_exec_session": null,
+  "deadline_utc": "2026-09-30T23:59:00Z",
+  "target_submit_by_utc": "2026-09-30T23:45:00Z",
+  "development_scores": {
+    "f21_cap12": 14,
+    "f21_cap16": 13,
+    "f20_value": 11
+  },
+  "selected_for_fresh_holdout": "f21_cap12",
+  "candidate_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+  "pipeline": "Complete: one final submission accepted; both requested losses audited; no further submissions scheduled.",
+  "next_steps": [],
+  "audits_complete": [
+    "latest_loss_findings.json",
+    "we_are_farmers_findings.json"
+  ],
+  "losses": {
+    "Tm_ACCS": -23432,
+    "WeAreFarmers": -276
+  },
+  "frozen_replay_cap12": {
+    "Tm_ACCS": -23432,
+    "WeAreFarmers": -236
+  },
+  "limitations": "Cap adjustment reverses neither audited loss; frozen rivals cannot react. No rank guarantee.",
+  "submission_exec_session": null,
+  "holdout_complete": true,
+  "selection": {
+    "selected": "f21_cap12",
+    "mode": "measured_improvement",
+    "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+    "created_utc": "2026-09-30T23:35:32.631701+00:00",
+    "source_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+    "proof": "results/frontier21/holdout_summary.json",
+    "caveat": "Eight independent seed clusters and related public opponents; local improvements do not guarantee a leaderboard rating or medal."
+  },
+  "scores": {
+    "f21_cap12": 80,
+    "f20_value": 74
+  },
+  "notebook_private_verified": true,
+  "submission_id": 56721777,
+  "submission_status": "SubmissionStatus.COMPLETE",
+  "submissions_this_round": 1,
+  "notebook_status": "COMPLETE",
+  "active": {
+    "active": [
+      {
+        "id": 56721777,
+        "date_submitted": "2026-09-30T23:40:31.070000",
+        "public_score": "600.0",
+        "is_frozen": true
+      },
+      {
+        "id": 56719762,
+        "date_submitted": "2026-09-30T22:00:47.620000",
+        "public_score": "1695.9",
+        "is_frozen": true
+      }
+    ],
+    "checked_utc": "2026-09-30T23:45:31.859804+00:00"
+  },
+  "task_status": "complete",
+  "integrity_checks": {
+    "results/frontier21/selection.json": true,
+    "results/frontier21/contracts.json": true,
+    "results/frontier21/development_plan.json": true,
+    "results/frontier21/development_summary.json": true,
+    "results/frontier20/value_gate/plan.json": true,
+    "results/frontier20/value_gate/holdout_summary.json": true,
+    "results/frontier21/holdout_plan.json": true,
+    "results/frontier21/holdout_summary.json": true,
+    "candidate": true,
+    "local_archive": true,
+    "cloud_archive": true
+  }
+}

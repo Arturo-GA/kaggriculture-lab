@@ -1,0 +1,393 @@
+{
+  "checked_utc": "2026-09-30T23:48:31.427131+00:00",
+  "selection": {
+    "selected": "f21_cap12",
+    "mode": "measured_improvement",
+    "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+    "created_utc": "2026-09-30T23:35:32.631701+00:00",
+    "source_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+    "proof": "results/frontier21/holdout_summary.json",
+    "caveat": "Eight independent seed clusters and related public opponents; local improvements do not guarantee a leaderboard rating or medal."
+  },
+  "submission": {
+    "id": 56721777,
+    "status": "SubmissionStatus.COMPLETE",
+    "message": "Successfully submitted to Kaggriculture",
+    "description": "Final Frontier21 f21_cap12 (557a048a)",
+    "archive_sha256": "ce70a88ce8549960a8e86774ffc790f3839877b8dc187d743a7f74ee7b0c8953",
+    "candidate_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+    "members_sha256": {
+      "main.py": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+      "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "NOTICE.txt": "b4fe15622552a4e1ec0ea78bdacc58b291744f0768ac3d885e7f2c1d8c9c1c9a"
+    },
+    "checked_utc": "2026-09-30T23:45:29.629527+00:00",
+    "leaderboard_submitted": true,
+    "authorization": "osea puede ser un poquito mejor vasta y si no puedes envia la que empata nomas",
+    "public_score": "600.0",
+    "error": "",
+    "date": "2026-09-30 23:40:31.070000"
+  },
+  "active": {
+    "active": [
+      {
+        "id": 56721777,
+        "date_submitted": "2026-09-30T23:40:31.070000",
+        "public_score": "600.0",
+        "is_frozen": true
+      },
+      {
+        "id": 56719762,
+        "date_submitted": "2026-09-30T22:00:47.620000",
+        "public_score": "1695.9",
+        "is_frozen": true
+      }
+    ],
+    "checked_utc": "2026-09-30T23:45:31.859804+00:00"
+  },
+  "development": {
+    "scores": {
+      "f21_cap12": 14.0,
+      "f21_cap16": 13.0,
+      "f20_value": 11.0
+    },
+    "eligible": [
+      "f21_cap12",
+      "f21_cap16"
+    ],
+    "selected": [
+      "f21_cap12"
+    ],
+    "data_sha256": "5d4d626edf1c8d9bdaaba75a1afff123d9479d94250cefb253cb8487ec1d7623",
+    "interpretation": "Adaptive development on known earlier loss worlds, not independent validation."
+  },
+  "holdout": {
+    "complete": true,
+    "games": 192,
+    "scores": {
+      "f21_cap12": 80.0,
+      "f20_value": 74.0
+    },
+    "checks": {
+      "total_delta": true,
+      "nonmirror": true,
+      "opponent_floor": true,
+      "direct_duels": true,
+      "positive_worlds": true,
+      "zero_errors": true,
+      "latency": true
+    },
+    "pass_gate": true,
+    "delta": 6.0,
+    "nonmirror_delta": 4.0,
+    "per_opponent_delta": {
+      "f20_value": 2.0,
+      "f19_market2": 0.0,
+      "n30b_haodou092_531a42": 4.0,
+      "n30b_evgendvorkin_8ddb01": 0.0,
+      "n23_arsgorynich_4f8637": 0.0,
+      "n30b_lynnsakurai_2f6da4": 0.0
+    },
+    "per_seed_delta": {
+      "21101": 0.0,
+      "21102": 0.0,
+      "21103": -1.0,
+      "21104": 1.0,
+      "21105": 0.0,
+      "21106": 3.0,
+      "21107": 0.0,
+      "21108": 3.0
+    },
+    "head_to_head": 10.0,
+    "paired_seed_bootstrap_95": [
+      -1.0,
+      14.0
+    ],
+    "max_call_ms": 772.741099994164,
+    "error_games": 0,
+    "plan_sha256": "0982f401c825938e81013f7a19e51c2ce4b1fd17ad0d69750a9f8da90f5ccab3",
+    "holdout_sha256": "65fb86c1d7401d83fe96fb9525a4285602266888f7dd9cbd41fac72307fa8deb"
+  },
+  "cloud": {
+    "scores": {
+      "f21_cap12": 5.0,
+      "f20_value": 4.0
+    },
+    "max_call_ms": {
+      "f21_cap12": 674.7267509999801,
+      "f20_value": 600.9759589999248
+    },
+    "games": 16,
+    "error_games": 0,
+    "cloud_gate_passed": true,
+    "cloud_games_sha256": "876753486ab5bf10f1fac69a5f561560c135e5517aa234cb41e9100579ec7069",
+    "exports": {
+      "f21_cap12": {
+        "archive_sha256": "ce70a88ce8549960a8e86774ffc790f3839877b8dc187d743a7f74ee7b0c8953",
+        "candidate_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+        "members_sha256": {
+          "main.py": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+          "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "NOTICE.txt": "b4fe15622552a4e1ec0ea78bdacc58b291744f0768ac3d885e7f2c1d8c9c1c9a"
+        }
+      }
+    },
+    "verified": true,
+    "export_checks_passed": true,
+    "checked_utc": "2026-09-30T23:40:25.120506+00:00"
+  },
+  "private_notebook": {
+    "id": "jarturo/kaggriculture-frontier21-final-validation",
+    "is_private": true,
+    "notebook_cells_match": true,
+    "local_sha256": "6c992579ffa4d02c43467b2f88e605c54183e70a3b0161604c4e438bd901f931",
+    "remote_sha256": "3308da6d7cf658fc5bf70ff3e5a1791000d67a2ec3c56670c3790c80a8c25c7a",
+    "version": 1,
+    "checked_utc": "2026-09-30T23:36:07.693135+00:00"
+  },
+  "direct_records": {
+    "local": {
+      "games": 16,
+      "wins": 6,
+      "draws": 8,
+      "losses": 2,
+      "points": 10.0
+    },
+    "cloud": {
+      "games": 8,
+      "wins": 3,
+      "draws": 4,
+      "losses": 1,
+      "points": 5.0
+    }
+  },
+  "scoring": "One point per win and half a point per draw. Points are not win counts.",
+  "requested_loss_analyses": {
+    "latest_loss": {
+      "episode": 116004248,
+      "margin": -23432,
+      "exact_reconstruction": true,
+      "total_cashflow_gap": -23432.0,
+      "cashflow_components": [
+        [
+          "SELL_WOOL",
+          -38251
+        ],
+        [
+          "SELL_STRAWBERRY",
+          -5463
+        ],
+        [
+          "SELL_TOMATO",
+          -4585
+        ],
+        [
+          "BUY_LAND",
+          -4000.0
+        ],
+        [
+          "BUY_PRODUCT_FERTILIZER",
+          -1969
+        ],
+        [
+          "BUY_SEED_WHEAT",
+          -520
+        ],
+        [
+          "BUY_SEED_CARROT",
+          -440
+        ],
+        [
+          "BUY_ANIMAL_GOOSE",
+          -300
+        ],
+        [
+          "BUY_SEED_STRAWBERRY",
+          -200
+        ],
+        [
+          "BUY_SEED_MELON",
+          80
+        ],
+        [
+          "HIRE",
+          160.0
+        ],
+        [
+          "BUY_SEED_TOMATO",
+          300
+        ],
+        [
+          "BUY_ANIMAL_COW",
+          1200
+        ],
+        [
+          "SELL_MELON",
+          1533
+        ],
+        [
+          "SELL_FERTILIZER",
+          1722
+        ],
+        [
+          "SELL_EGG",
+          2487
+        ],
+        [
+          "SELL_CARROT",
+          3161
+        ],
+        [
+          "BUY_PRODUCT_WHEAT",
+          4296
+        ],
+        [
+          "SELL_MILK",
+          4947
+        ],
+        [
+          "SELL_WHEAT",
+          5410
+        ],
+        [
+          "BUY_ANIMAL_SHEEP",
+          7000
+        ]
+      ],
+      "main_evidence": {
+        "sheep_at_step432": [
+          5,
+          19
+        ],
+        "wool_units": [
+          139,
+          310
+        ],
+        "wool_net_cashflow_gap": -38251
+      },
+      "diagnostic_margins": {
+        "f20_value": -23432.0,
+        "f20_fill": -23432.0,
+        "f21_cap12": -23432.0
+      },
+      "implemented_cap_adjustment_fixes_this_loss": false,
+      "lesson": "The dominant observable gap was wool production capacity, not inventory overflow or feeding deadlock. Rival expanded sheep after wool-shop demand appeared; ours kept five sheep and bought the fourth land quadrant. This suggests testing shop-conditioned herd expansion and worker allocation in a separately validated policy; a small residual-sale adjustment does not solve it.",
+      "limits": "One public loss and frozen-rival counterfactuals do not prove the rival policy would be stronger on other seeds. No further production-policy change is included in the frozen final candidate."
+    },
+    "we_are_farmers": {
+      "episode": 116007343,
+      "margin": -276,
+      "exact_reconstruction": true,
+      "same_layouts_at_steps": [
+        "288",
+        "432",
+        "648",
+        "718"
+      ],
+      "cashflow_components": [
+        [
+          "SELL_WHEAT",
+          -297164
+        ],
+        [
+          "BUY_PRODUCT_FERTILIZER",
+          -2228
+        ],
+        [
+          "SELL_STRAWBERRY",
+          -318
+        ],
+        [
+          "SELL_EGG",
+          -121
+        ],
+        [
+          "SELL_CARROT",
+          -9
+        ],
+        [
+          "BUY_ANIMAL_COW",
+          0
+        ],
+        [
+          "HIRE",
+          -0.0
+        ],
+        [
+          "SELL_MELON",
+          0
+        ],
+        [
+          "BUY_LAND",
+          -0.0
+        ],
+        [
+          "BUY_ANIMAL_SHEEP",
+          0
+        ],
+        [
+          "BUY_SEED_MELON",
+          0
+        ],
+        [
+          "BUY_SEED_CARROT",
+          0
+        ],
+        [
+          "BUY_ANIMAL_GOOSE",
+          0
+        ],
+        [
+          "BUY_SEED_WHEAT",
+          0
+        ],
+        [
+          "BUY_SEED_STRAWBERRY",
+          0
+        ],
+        [
+          "SELL_WOOL",
+          19
+        ],
+        [
+          "SELL_MILK",
+          944
+        ],
+        [
+          "SELL_FERTILIZER",
+          2286
+        ],
+        [
+          "BUY_PRODUCT_WHEAT",
+          296315
+        ]
+      ],
+      "wheat_net_cashflow": [
+        12210,
+        13059
+      ],
+      "wheat_product_bought_units": [
+        139,
+        7352
+      ],
+      "wheat_product_sold_units": [
+        435,
+        7648
+      ],
+      "harvested_eggs": [
+        91,
+        93
+      ],
+      "diagnostic_margins": {
+        "f20_value": -276.0,
+        "f20_fill": -276.0,
+        "f21_cap12": -236.0
+      },
+      "candidate_diagnostic_gain": 40,
+      "defeat_flipped": false,
+      "lesson": "The same farm layout and identical non-product expenditure produced a narrow loss. Rival cycled7352 bought wheat units and7648 sold units; its net wheat cashflow was13059 versus12210, not314328 profit. Strawberry and egg shortfalls partly offset our milk-price advantage. The12-unit adjustment helps40 in the frozen replay but does not recover the loss.",
+      "limits": "Opponent actions are frozen and cannot react. This is diagnosis, not competitive validation. Production capacity and timing differ from the separate Tm-ACCS loss."
+    }
+  },
+  "limitations": "No rank or medal guarantee. The latest two requested losses remain losses in the frozen diagnostics; the bounded sale adjustment does not solve production-plan gaps. Frozen rivals cannot react."
+}

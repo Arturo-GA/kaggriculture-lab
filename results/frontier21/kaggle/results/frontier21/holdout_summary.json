@@ -1,0 +1,47 @@
+{
+  "complete": true,
+  "games": 192,
+  "scores": {
+    "f21_cap12": 80.0,
+    "f20_value": 74.0
+  },
+  "checks": {
+    "total_delta": true,
+    "nonmirror": true,
+    "opponent_floor": true,
+    "direct_duels": true,
+    "positive_worlds": true,
+    "zero_errors": true,
+    "latency": true
+  },
+  "pass_gate": true,
+  "delta": 6.0,
+  "nonmirror_delta": 4.0,
+  "per_opponent_delta": {
+    "f20_value": 2.0,
+    "f19_market2": 0.0,
+    "n30b_haodou092_531a42": 4.0,
+    "n30b_evgendvorkin_8ddb01": 0.0,
+    "n23_arsgorynich_4f8637": 0.0,
+    "n30b_lynnsakurai_2f6da4": 0.0
+  },
+  "per_seed_delta": {
+    "21101": 0.0,
+    "21102": 0.0,
+    "21103": -1.0,
+    "21104": 1.0,
+    "21105": 0.0,
+    "21106": 3.0,
+    "21107": 0.0,
+    "21108": 3.0
+  },
+  "head_to_head": 10.0,
+  "paired_seed_bootstrap_95": [
+    -1.0,
+    14.0
+  ],
+  "max_call_ms": 772.741099994164,
+  "error_games": 0,
+  "plan_sha256": "0982f401c825938e81013f7a19e51c2ce4b1fd17ad0d69750a9f8da90f5ccab3",
+  "holdout_sha256": "65fb86c1d7401d83fe96fb9525a4285602266888f7dd9cbd41fac72307fa8deb"
+}

@@ -1,0 +1,24 @@
+{
+  "active": [
+    {
+      "id": 56719762,
+      "date_submitted": "2026-09-30T22:00:47.620000",
+      "public_score": "1723.7",
+      "is_frozen": true
+    },
+    {
+      "id": 56714342,
+      "date_submitted": "2026-09-30T17:19:27.003000",
+      "public_score": "1798.0",
+      "is_frozen": true
+    }
+  ],
+  "limits": {
+    "num_today": 3,
+    "num_total": 33,
+    "num_allowed_now": 2,
+    "limited_by_total": false,
+    "is_frozen": true
+  },
+  "checked_utc": "2026-09-30T23:40:29.068258+00:00"
+}

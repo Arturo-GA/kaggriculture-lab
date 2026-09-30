@@ -1,0 +1,25 @@
+{
+  "candidates": {
+    "f21_cap12": {
+      "tests": 6,
+      "passed": 6,
+      "success": true,
+      "source_sha256": "557a048a24ed4027cf82c7afb30877abb379aae2fbc123ecd92367ee660739b0",
+      "log": "test_no_rescue_on_final_day_or_without_cash (__main__.suite_for.<locals>.Food.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.suite_for.<locals>.Food.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.suite_for.<locals>.Food.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.suite_for.<locals>.Food.test_rescue_preserves_capacity_guard) ... ok\ntest_final_day_and_dissimilar_farms (__main__.suite_for.<locals>.Sales.test_final_day_and_dissimilar_farms) ... ok\ntest_size_boundary_and_coverage (__main__.suite_for.<locals>.Sales.test_size_boundary_and_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.089s\n\nOK\n"
+    },
+    "f21_cap16": {
+      "tests": 6,
+      "passed": 6,
+      "success": true,
+      "source_sha256": "af0c21374eb53e70e21189ede0c05546c6fb51ee00cae4e645c723ca869c08f8",
+      "log": "test_no_rescue_on_final_day_or_without_cash (__main__.suite_for.<locals>.Food.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.suite_for.<locals>.Food.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.suite_for.<locals>.Food.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.suite_for.<locals>.Food.test_rescue_preserves_capacity_guard) ... ok\ntest_final_day_and_dissimilar_farms (__main__.suite_for.<locals>.Sales.test_final_day_and_dissimilar_farms) ... ok\ntest_size_boundary_and_coverage (__main__.suite_for.<locals>.Sales.test_size_boundary_and_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.045s\n\nOK\n"
+    },
+    "f20_fill": {
+      "tests": 6,
+      "passed": 6,
+      "success": true,
+      "source_sha256": "9924b8f2dec2930a046e0edee28463f6cda2e64453252e04bfeba2d50d5a2a8a",
+      "log": "test_no_rescue_on_final_day_or_without_cash (__main__.suite_for.<locals>.Food.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.suite_for.<locals>.Food.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.suite_for.<locals>.Food.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.suite_for.<locals>.Food.test_rescue_preserves_capacity_guard) ... ok\ntest_final_day_and_dissimilar_farms (__main__.suite_for.<locals>.Sales.test_final_day_and_dissimilar_farms) ... ok\ntest_size_boundary_and_coverage (__main__.suite_for.<locals>.Sales.test_size_boundary_and_coverage) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.035s\n\nOK\n"
+    }
+  }
+}
