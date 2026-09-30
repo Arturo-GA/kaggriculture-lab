@@ -1,0 +1,114 @@
+{
+  "messages": [
+    {
+      "id": 3527563,
+      "post_date": "2026-09-24T05:46:06.460000",
+      "content": "<p>The thread has already settled whether they do, so here is what it costs.</p>\n<p>The unlock order is fixed: <code>LAND_ORDER = [\"NE\", \"SW\", \"SE\"]</code>, <code>LAND_PRICES = [1000, 2000, 4000]</code>, and <code>_do_buy_land</code> always takes the next entry. Reaching the southeast therefore costs 7,000 coins, not the 4,000 on its own price tag, and the farm that gets there owns 100 tiles instead of its starting 25, all of them needing cover.</p>\n<p>Caveat: my test bed is a naive carrot bot against the starter, so it says nothing about what the top of the leaderboard manages. Twelve paired seeds, same opponent, only the farm plan moving:</p>\n<ul>\n<li>25 tiles, one farmer, all of it free land: -930 ± 432 against the 6-tile baseline</li>\n<li>12 tiles, 3 hands sharing one job list: -601 ± 320</li>\n<li>12 tiles, 3 hands each owning a slice: +3,871 ± 990</li>\n<li>50 tiles, 6 hands, after buying NE: +1,217 ± 619</li>\n</ul>\n<p>Ground on its own is worth less than nothing to a bot that cannot cover it. Bare ground at nightfall tracks the bank far better than ground per worker does: the two middle arms both work three tiles per worker and finish about 4,500 apart. Sharing one list, every unit takes its next job off the top of that list and they converge on the same tile, leaving five or six of the twelve bare at day's end against almost none when each owns a slice.</p>\n<p>Dipam's last clause has a size. The hire ladder is Fibonacci from one coin and resets every morning along with the crew, so the climb is paid again each day instead of compounding across the season. My six-hand arm paid 20 coins a day, 600 for the season, against the 1,000 the quadrant cost it. Ten hands a day would be 143. That arm still finished ahead after paying for both, though well behind the 12-tile farm that stayed on free land.</p>",
+      "raw_markdown": "The thread has already settled whether they do, so here is what it costs.\n\nThe unlock order is fixed: `LAND_ORDER = [\"NE\", \"SW\", \"SE\"]`, `LAND_PRICES = [1000, 2000, 4000]`, and `_do_buy_land` always takes the next entry. Reaching the southeast therefore costs 7,000 coins, not the 4,000 on its own price tag, and the farm that gets there owns 100 tiles instead of its starting 25, all of them needing cover.\n\nCaveat: my test bed is a naive carrot bot against the starter, so it says nothing about what the top of the leaderboard manages. Twelve paired seeds, same opponent, only the farm plan moving:\n\n- 25 tiles, one farmer, all of it free land: -930 ± 432 against the 6-tile baseline\n- 12 tiles, 3 hands sharing one job list: -601 ± 320\n- 12 tiles, 3 hands each owning a slice: +3,871 ± 990\n- 50 tiles, 6 hands, after buying NE: +1,217 ± 619\n\nGround on its own is worth less than nothing to a bot that cannot cover it. Bare ground at nightfall tracks the bank far better than ground per worker does: the two middle arms both work three tiles per worker and finish about 4,500 apart. Sharing one list, every unit takes its next job off the top of that list and they converge on the same tile, leaving five or six of the twelve bare at day's end against almost none when each owns a slice.\n\nDipam's last clause has a size. The hire ladder is Fibonacci from one coin and resets every morning along with the crew, so the climb is paid again each day instead of compounding across the season. My six-hand arm paid 20 coins a day, 600 for the season, against the 1,000 the quadrant cost it. Ten hands a day would be 143. That arm still finished ahead after paying for both, though well behind the 12-tile farm that stayed on free land.",
+      "author_name": null,
+      "votes": 2,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3527420,
+      "post_date": "2026-09-23T18:47:09.093000",
+      "content": "<p>The top of the leaderboard is planting in the fourth quadrant under certain conditions\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F35366071%2Fffb8a999198724b5598b3be7917bda49%2FScreenshot%202026-09-23%20at%202.44.34PM.png?generation=1790255602689374&amp;alt=media\" alt=\"\">\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F35366071%2F28fd9577e06830cac50f7013944c8951%2FScreenshot%202026-09-23%20at%202.44.47PM.png?generation=1790255612185003&amp;alt=media\" alt=\"\"></p>",
+      "raw_markdown": "The top of the leaderboard is planting in the fourth quadrant under certain conditions\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F35366071%2Fffb8a999198724b5598b3be7917bda49%2FScreenshot%202026-09-23%20at%202.44.34PM.png?generation=1790255602689374&alt=media)\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F35366071%2F28fd9577e06830cac50f7013944c8951%2FScreenshot%202026-09-23%20at%202.44.47PM.png?generation=1790255612185003&alt=media)",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3526941,
+      "post_date": "2026-09-22T16:47:51.047000",
+      "content": "<p>I checked, and there are games in which those agents plant in the southeast.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1263004%2Fed7acf605db085d80e4146345354d4ca%2FCaptura%20desde%202026-09-22%2018-46-30.png?generation=1790095685478741&amp;alt=media\" alt=\"\"></p>",
+      "raw_markdown": "I checked, and there are games in which those agents plant in the southeast.\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F1263004%2Fed7acf605db085d80e4146345354d4ca%2FCaptura%20desde%202026-09-22%2018-46-30.png?generation=1790095685478741&alt=media)",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [
+        {
+          "id": 3527054,
+          "post_date": "2026-09-22T21:06:53.867000",
+          "content": "<p>yeah there are, but not many </p>",
+          "raw_markdown": "yeah there are, but not many ",
+          "author_name": null,
+          "votes": 0,
+          "is_deleted": false,
+          "is_pinned": false,
+          "replies": [],
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 3526866,
+      "post_date": "2026-09-22T12:18:51.077000",
+      "content": "<p>Its not clear that you can make more money with it in 30 days, and you need more hires to manage it effectively, cost of hires keeps increasing a lot.</p>",
+      "raw_markdown": "Its not clear that you can make more money with it in 30 days, and you need more hires to manage it effectively, cost of hires keeps increasing a lot.",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3527042,
+      "post_date": "2026-09-22T20:37:23.237000",
+      "content": "<p>Number one on LB is actively using SE quadrant lol</p>",
+      "raw_markdown": "Number one on LB is actively using SE quadrant lol",
+      "author_name": null,
+      "votes": 2,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3526689,
+      "post_date": "2026-09-22T02:28:45.273000",
+      "content": "<p>I was watching some of the top agents and noticed they weren't planting anything in the southeast. </p>",
+      "raw_markdown": "I was watching some of the top agents and noticed they weren't planting anything in the southeast. \n",
+      "author_name": null,
+      "votes": 2,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3527588,
+      "post_date": "2026-09-24T07:14:57.673000",
+      "content": "<p>They can plant in the Southeast, but reaching it is expensive.</p>\n<p>Unlock order: NE → SW → SE\nCosts: 1,000 + 2,000 + 4,000 = 7,000 coins</p>",
+      "raw_markdown": "They can plant in the Southeast, but reaching it is expensive.\n\nUnlock order: NE → SW → SE\nCosts: 1,000 + 2,000 + 4,000 = 7,000 coins",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3526701,
+      "post_date": "2026-09-22T03:55:23.003000",
+      "content": null,
+      "raw_markdown": "",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": true,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    }
+  ],
+  "is_frozen": true
+}

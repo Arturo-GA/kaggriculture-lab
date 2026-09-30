@@ -1,0 +1,136 @@
+{
+  "complete": true,
+  "games": 480,
+  "scores": {
+    "f20_delivery": 145.0,
+    "f19_market1": 129.0,
+    "f19_market2": 144.0
+  },
+  "per_opponent_scores": {
+    "f20_delivery": {
+      "f19_market1": 14.0,
+      "f19_market2": 12.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 11.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 14.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 14.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    },
+    "f19_market1": {
+      "f19_market1": 8.0,
+      "f19_market2": 1.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 11.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 16.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 13.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    },
+    "f19_market2": {
+      "f19_market1": 15.0,
+      "f19_market2": 8.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 13.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 16.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 12.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    }
+  },
+  "candidates": {
+    "f20_delivery": {
+      "pass_gate": false,
+      "checks": {
+        "total_delta": false,
+        "nonmirror": false,
+        "opponent_floor": true,
+        "direct_duels": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "comparisons": {
+        "f19_market1": {
+          "score_delta": 16.0,
+          "nonmirror_delta": -1.0,
+          "per_opponent_delta": {
+            "f19_market1": 6.0,
+            "f19_market2": 11.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": 0.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": -2.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": 1.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20101": 3.0,
+            "20102": 3.0,
+            "20103": 3.0,
+            "20104": -6.0,
+            "20105": 4.0,
+            "20106": 3.0,
+            "20107": 3.0,
+            "20108": 3.0
+          },
+          "positive_seeds": 7,
+          "paired_seed_bootstrap_95": [
+            -3.0,
+            27.0
+          ],
+          "mean_paired_margin_gain": 49.96875
+        },
+        "f19_market2": {
+          "score_delta": 1.0,
+          "nonmirror_delta": -2.0,
+          "per_opponent_delta": {
+            "f19_market1": -1.0,
+            "f19_market2": 4.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": -2.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": -2.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": 2.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20101": 1.0,
+            "20102": 1.0,
+            "20103": 1.0,
+            "20104": -6.0,
+            "20105": 3.0,
+            "20106": 1.0,
+            "20107": -1.0,
+            "20108": 1.0
+          },
+          "positive_seeds": 6,
+          "paired_seed_bootstrap_95": [
+            -15.0,
+            12.0
+          ],
+          "mean_paired_margin_gain": 14.10625
+        }
+      },
+      "max_call_ms": 758.5843999986537,
+      "error_games": 0,
+      "wlt": [
+        145,
+        15,
+        0
+      ]
+    }
+  },
+  "plan_sha256": "7f168c001b0e3bb3d70917badaae51f5bf6de63d091c9c21539b665ab6663e9a",
+  "holdout_sha256": "d11d91495fb8e001ede8cf785eb45cac4771f6e215ab1c98e0b8ecdc7d510723"
+}

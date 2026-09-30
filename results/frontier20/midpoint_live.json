@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-09-30T21:32:06.832108+00:00",
+  "own": {
+    "name": "Arturo Gutiérrez Aguilar",
+    "score": 1800.5,
+    "rank": 1157
+  },
+  "active": [
+    {
+      "id": 56714342,
+      "date_submitted": "2026-09-30T17:19:27.003000",
+      "public_score": "1800.5",
+      "is_frozen": true
+    },
+    {
+      "id": 56714336,
+      "date_submitted": "2026-09-30T17:19:10.553000",
+      "public_score": "1562.5",
+      "is_frozen": true
+    }
+  ],
+  "target_cuts": {
+    "300": {
+      "name": "Ilya & Yurnero",
+      "score": 2259.7,
+      "rank": 300
+    },
+    "400": {
+      "name": "yomogii",
+      "score": 2160.9,
+      "rank": 400
+    }
+  },
+  "limits": {
+    "num_today": 2,
+    "num_total": 32,
+    "num_allowed_now": 3,
+    "limited_by_total": false,
+    "is_frozen": true
+  }
+}

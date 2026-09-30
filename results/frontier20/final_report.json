@@ -1,0 +1,282 @@
+{
+  "submission": {
+    "id": 56719762,
+    "status": "SubmissionStatus.PENDING",
+    "message": "Successfully submitted to Kaggriculture",
+    "description": "Frontier20 f20_value (ff3912c4)",
+    "archive_sha256": "4cc56851114326e2792b7b7604ef9d2a2117ec04a43fe43148bb2c0c3a03b21f",
+    "candidate_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+    "members_sha256": {
+      "main.py": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+      "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "NOTICE.txt": "3b62f1ded999196078a382f72f0a35035bd8cfd17440f9d6a7d222076df771f8"
+    },
+    "checked_utc": "2026-09-30T22:03:25.518858+00:00",
+    "leaderboard_submitted": true,
+    "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+    "public_score": "",
+    "error": "",
+    "date": "2026-09-30 22:00:47.620000"
+  },
+  "active": {
+    "active": [
+      {
+        "id": 56714342,
+        "date_submitted": "2026-09-30T17:19:27.003000",
+        "public_score": "1812.2",
+        "is_frozen": true
+      },
+      {
+        "id": 56714336,
+        "date_submitted": "2026-09-30T17:19:10.553000",
+        "public_score": "1567.8",
+        "is_frozen": true
+      }
+    ],
+    "checked_utc": "2026-09-30T22:03:25.886816+00:00"
+  },
+  "holdout": null,
+  "cloud": {
+    "scores": {
+      "f20_value": 8.0,
+      "f19_market2": 4.0
+    },
+    "max_call_ms": {
+      "f20_value": 278.9951990000077,
+      "f19_market2": 344.86778899997717
+    },
+    "games": 16,
+    "error_games": 0,
+    "cloud_gate_passed": true,
+    "cloud_games_sha256": "11d62c85c15c322d21169d8aef7272567c38f0b68bd1093f126de13f07e52555",
+    "exports": {
+      "f20_value": {
+        "archive_sha256": "4cc56851114326e2792b7b7604ef9d2a2117ec04a43fe43148bb2c0c3a03b21f",
+        "candidate_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+        "members_sha256": {
+          "main.py": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+          "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "NOTICE.txt": "3b62f1ded999196078a382f72f0a35035bd8cfd17440f9d6a7d222076df771f8"
+        }
+      }
+    },
+    "verified": true,
+    "export_checks_passed": true,
+    "checked_utc": "2026-09-30T22:00:44.053780+00:00"
+  },
+  "private_notebook": {
+    "id": "jarturo/kaggriculture-frontier20-policy-validation",
+    "is_private": true,
+    "notebook_cells_match": true,
+    "kernel_id": 136577392,
+    "version": 1,
+    "local_sha256": "49b302989a650d7d4d7f3eea932bb67b59cd200c7c2ca998c8ebf6074fa5465f",
+    "remote_sha256": "5c8f255f2fc33154a381ca78a3da8e207a564d4bb31da708be91fe7e62e7cb45",
+    "checked_utc": "2026-09-30T21:58:04.655174+00:00"
+  },
+  "changes": {
+    "candidate": "f20_value",
+    "residual_sales": true,
+    "wool_urgency_with_economic_guard": true
+  },
+  "diagnostic_gain": {
+    "games": 23,
+    "wins": 1,
+    "ties": 0,
+    "mean_margin": -1197.8695652173913,
+    "errors": 0,
+    "rival_retention_range": [
+      0.9728,
+      1.004
+    ],
+    "mean_paired_margin_gain": 232.8695652173913,
+    "parent_losses_flipped": 1,
+    "parent_wins_lost": 0,
+    "per_episode": [
+      {
+        "episode": 115899730,
+        "parent_margin": -53.0,
+        "margin": -21.0,
+        "gain": 32.0
+      },
+      {
+        "episode": 115887745,
+        "parent_margin": -6555.0,
+        "margin": -6555.0,
+        "gain": 0.0
+      },
+      {
+        "episode": 115900067,
+        "parent_margin": -263.0,
+        "margin": -102.0,
+        "gain": 161.0
+      },
+      {
+        "episode": 115908873,
+        "parent_margin": -187.0,
+        "margin": -48.0,
+        "gain": 139.0
+      },
+      {
+        "episode": 115909216,
+        "parent_margin": -397.0,
+        "margin": -60.0,
+        "gain": 337.0
+      },
+      {
+        "episode": 115910656,
+        "parent_margin": -211.0,
+        "margin": -268.0,
+        "gain": -57.0
+      },
+      {
+        "episode": 115915148,
+        "parent_margin": -7709.0,
+        "margin": -7709.0,
+        "gain": 0.0
+      },
+      {
+        "episode": 115920903,
+        "parent_margin": -681.0,
+        "margin": -599.0,
+        "gain": 82.0
+      },
+      {
+        "episode": 115923003,
+        "parent_margin": -497.0,
+        "margin": -515.0,
+        "gain": -18.0
+      },
+      {
+        "episode": 115924257,
+        "parent_margin": -136.0,
+        "margin": -71.0,
+        "gain": 65.0
+      },
+      {
+        "episode": 115926016,
+        "parent_margin": -263.0,
+        "margin": -206.0,
+        "gain": 57.0
+      },
+      {
+        "episode": 115927302,
+        "parent_margin": -242.0,
+        "margin": -104.0,
+        "gain": 138.0
+      },
+      {
+        "episode": 115930651,
+        "parent_margin": -97.0,
+        "margin": -162.0,
+        "gain": -65.0
+      },
+      {
+        "episode": 115933479,
+        "parent_margin": -267.0,
+        "margin": -316.0,
+        "gain": -49.0
+      },
+      {
+        "episode": 115933722,
+        "parent_margin": -5998.0,
+        "margin": -1906.0,
+        "gain": 4092.0
+      },
+      {
+        "episode": 115936559,
+        "parent_margin": -268.0,
+        "margin": -229.0,
+        "gain": 39.0
+      },
+      {
+        "episode": 115937772,
+        "parent_margin": -906.0,
+        "margin": -752.0,
+        "gain": 154.0
+      },
+      {
+        "episode": 115939202,
+        "parent_margin": -2680.0,
+        "margin": -2871.0,
+        "gain": -191.0
+      },
+      {
+        "episode": 115938075,
+        "parent_margin": -95.0,
+        "margin": -66.0,
+        "gain": 29.0
+      },
+      {
+        "episode": 115941142,
+        "parent_margin": -2297.0,
+        "margin": -1987.0,
+        "gain": 310.0
+      },
+      {
+        "episode": 115939598,
+        "parent_margin": -75.0,
+        "margin": -105.0,
+        "gain": -30.0
+      },
+      {
+        "episode": 115941386,
+        "parent_margin": -2907.0,
+        "margin": -2907.0,
+        "gain": 0.0
+      },
+      {
+        "episode": 115942658,
+        "parent_margin": -123.0,
+        "margin": 8.0,
+        "gain": 131.0
+      }
+    ]
+  },
+  "selection": {
+    "selected": [
+      "f20_value"
+    ],
+    "source_plans": {
+      "f20_value": "results/frontier20/value_gate/plan.json"
+    },
+    "validation_status": "experimental_controls_pending_user_requested",
+    "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+    "caveat": "Immediate experimental release explicitly requested by user; comparative gate not yet assessed. Original failed selection and all frozen thresholds are preserved."
+  },
+  "grigor": {
+    "status": "source_search_stopped_at_user_request",
+    "checked_utc": "2026-09-30T20:51:09.308035+00:00",
+    "user_instruction": "No lo tengo sino puedes entonces olvidalo",
+    "completed": "Located team16945978, two active submissions and eight latest public replays; extracted observable economic signatures. No attributable public source found by Kaggle code search.",
+    "not_performed": "No reactive match against exact Grigor code and no frozen replay stress matches. User withdrew this optional investigation; main holdout continues.",
+    "won_against_grigor_verified": false
+  },
+  "experimental_admission": {
+    "candidate": "f20_value",
+    "source_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+    "candidate_games_sha256": "97292b546e551537d9db0df95de5fc9cbae98e5c0d656731fc491a849d83cd00",
+    "created_utc": "2026-09-30T21:56:31.807543+00:00",
+    "user_authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+    "user_requested_immediate_submission": true,
+    "controls_pending": true,
+    "competitive_gate_passed": null,
+    "original_candidate_gate_passed": false,
+    "wlt": [
+      149,
+      11,
+      0
+    ],
+    "max_call_ms": 727.1757000125945,
+    "second_submission": "Only if completed controls demonstrate improvement over this first release; not merely a tie."
+  },
+  "second_submission_decision": null,
+  "limitation": "First experimental submission explicitly requested before the full controls completed. Eight independent seeds and correlated public families. No demonstrated top300-400 rank, guaranteed rating, silver medal or victory against Grigor. One immediate submission authorized and sent; a second is authorized only if subsequent controls demonstrate improvement.",
+  "source_evidence": [
+    "results/frontier20/value_gate/plan.json",
+    "results\\frontier20\\value_gate\\holdout.json",
+    "results/frontier20/loss_audit.json",
+    "results/frontier20/diagnostic_summary.json",
+    "results/frontier20/kaggle_verified.json"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 115949088,
+    "seat": 0,
+    "grigor_seat": 1,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56700896,
+    "original_other_team": "Emile Andrieu",
+    "original_other_margin": 8574
+  },
+  {
+    "id": 115943837,
+    "seat": 1,
+    "grigor_seat": 0,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56700896,
+    "original_other_team": "Xiangyu Liu",
+    "original_other_margin": -11582
+  },
+  {
+    "id": 115943235,
+    "seat": 0,
+    "grigor_seat": 1,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56700896,
+    "original_other_team": "tyz123456",
+    "original_other_margin": -22763
+  },
+  {
+    "id": 115932694,
+    "seat": 0,
+    "grigor_seat": 1,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56700896,
+    "original_other_team": "Lam Dang",
+    "original_other_margin": 13477
+  },
+  {
+    "id": 115950339,
+    "seat": 0,
+    "grigor_seat": 1,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56691870,
+    "original_other_team": "kibuna",
+    "original_other_margin": 17932
+  },
+  {
+    "id": 115947887,
+    "seat": 1,
+    "grigor_seat": 0,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56691870,
+    "original_other_team": "darktetradgod",
+    "original_other_margin": -8817
+  },
+  {
+    "id": 115943243,
+    "seat": 1,
+    "grigor_seat": 0,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56691870,
+    "original_other_team": "Cow Boy",
+    "original_other_margin": 5636
+  },
+  {
+    "id": 115932720,
+    "seat": 0,
+    "grigor_seat": 1,
+    "op_name": "Grigor Sargsyan",
+    "op_score": 2471.9,
+    "grigor_submission": 56691870,
+    "original_other_team": "Yaroslav",
+    "original_other_margin": 38149
+  }
+]

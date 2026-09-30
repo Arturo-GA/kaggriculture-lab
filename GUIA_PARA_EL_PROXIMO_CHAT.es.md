@@ -1,5 +1,9 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+<!-- frontier20-current -->
+**30 de septiembre, Frontier20: una submission privada, 56719762, PENDING.** Se reconstruyeron las 23 derrotas públicas disponibles de las dos submissions anteriores. La nueva capa completa pequeñas ventas cubiertas y prioriza lana solo si el riesgo de precio supera el fertilizante. Se envió por petición explícita como experimento con controles pendientes, después de 149V/11D/0E en 160 juegos de la candidata. Los controles comparativos siguen pendientes. La primera candidata falló y se conserva su resultado. Kaggle completó 16 juegos de verificación y confirmó el paquete idéntico. Par activo confirmado a 2026-09-30T22:03:25.886816+00:00: 56714342 + 56714336. Segunda plaza condicionada a demostrar una mejora después de los controles. [Resultados y recibos](results/frontier20/final_report.json), [investigación](results/frontier20/research_summary.json), [código](candidates/f20_value.py), [notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier20-policy-validation). La mejora local no garantiza puesto ni medalla; no se verificó una victoria contra Grigor.
+<!-- /frontier20-current -->
+
 **30 de septiembre: Frontier19, submissions 56714342 y 56714336.** Cuatro partidas por cada equipo del puesto 200–300, veinte contabilidades propias exactas, 544 juegos de comparación y dos estrategias verificadas funcionalmente en un notebook privado. Market2 pasa su puerta; Market1 es una segunda plaza experimental con un retroceso documentado. [Resultados](FRONTIER19_RESULTS.es.md) y [estado para continuar](RESUME_FRONTIER19.es.md). La mejora local no garantiza top 300.
 
 Los estados anteriores que siguen son históricos.

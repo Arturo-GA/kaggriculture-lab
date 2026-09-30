@@ -1,0 +1,116 @@
+{
+  "messages": [
+    {
+      "id": 3530147,
+      "post_date": "2026-09-29T16:45:42.607000",
+      "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F27681700%2Fe6ba4e34d1dc0e87c4576743b5d4be2c%2FScreenshot%20from%202026-09-29%2012-44-36.png?generation=1790700338474615&amp;alt=media\" alt=\"\"></p>",
+      "raw_markdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F27681700%2Fe6ba4e34d1dc0e87c4576743b5d4be2c%2FScreenshot%20from%202026-09-29%2012-44-36.png?generation=1790700338474615&alt=media)",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [
+        {
+          "id": 3530165,
+          "post_date": "2026-09-29T17:28:02.177000",
+          "content": "<p>how have you divided the folders? what goes in what?</p>",
+          "raw_markdown": "how have you divided the folders? what goes in what?",
+          "author_name": null,
+          "votes": 0,
+          "is_deleted": false,
+          "is_pinned": false,
+          "replies": [
+            {
+              "id": 3530170,
+              "post_date": "2026-09-29T17:38:34.793000",
+              "content": "<p>\"The previous work has become too bloated. Help me setup a new folder with these subfolders [list].  Transfer ONLY [list what you're working on] and any dependencies.  Make sure they're completely independent.  Transfer only what's needed, like a summary of a failed experiment and not the experiment.\"       If, in the rare case I needed more things, I can always say, Look back at older folder to find this. The more you let go of, the better, generally.</p>",
+              "raw_markdown": "\"The previous work has become too bloated. Help me setup a new folder with these subfolders [list].  Transfer ONLY [list what you're working on] and any dependencies.  Make sure they're completely independent.  Transfer only what's needed, like a summary of a failed experiment and not the experiment.\"       If, in the rare case I needed more things, I can always say, Look back at older folder to find this. The more you let go of, the better, generally.",
+              "author_name": null,
+              "votes": 1,
+              "is_deleted": false,
+              "is_pinned": false,
+              "replies": [],
+              "is_frozen": true
+            },
+            {
+              "id": 3530216,
+              "post_date": "2026-09-29T19:16:01.240000",
+              "content": "<p>That's REALLY HELPFUL thank you so much!</p>",
+              "raw_markdown": "That's REALLY HELPFUL thank you so much!",
+              "author_name": null,
+              "votes": 1,
+              "is_deleted": false,
+              "is_pinned": false,
+              "replies": [],
+              "is_frozen": true
+            }
+          ],
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 3530108,
+      "post_date": "2026-09-29T15:26:26.120000",
+      "content": "<p>First of all, I'm very new to online tech competitions, and have vibe coded almost everything i've done so far.</p>\n<p>first kaggle competition here, im having a hard time navigating through iterating newer agents from modifying old agents. Continuing this loop for a while and my directory is filled with very old strategies and old agent submissions that the harness still refers to and indirectly applying strategies of the old data.</p>\n<p>I know its almost ended but I'd like to know how others take their approach to working though such competitions and how they know what to keep and what to completely stop working on (like agents and strategies here)</p>\n<p>Any advice would be helpful I just wanna learn more.</p>",
+      "raw_markdown": "First of all, I'm very new to online tech competitions, and have vibe coded almost everything i've done so far.\n\nfirst kaggle competition here, im having a hard time navigating through iterating newer agents from modifying old agents. Continuing this loop for a while and my directory is filled with very old strategies and old agent submissions that the harness still refers to and indirectly applying strategies of the old data.\n\nI know its almost ended but I'd like to know how others take their approach to working though such competitions and how they know what to keep and what to completely stop working on (like agents and strategies here)\n\nAny advice would be helpful I just wanna learn more.",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3530560,
+      "post_date": "2026-09-30T12:55:24.150000",
+      "content": "<p>Use git, create new branches.</p>",
+      "raw_markdown": "Use git, create new branches.",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3530194,
+      "post_date": "2026-09-29T18:33:20.317000",
+      "content": "<p>Honestly I just start a new repo or folder when it gets too messy sometimes. Another approach is to use github and have your agent create a new branch for every experiment it runs and keep the main branch clean</p>",
+      "raw_markdown": "Honestly I just start a new repo or folder when it gets too messy sometimes. Another approach is to use github and have your agent create a new branch for every experiment it runs and keep the main branch clean",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3530135,
+      "post_date": "2026-09-29T16:18:35.627000",
+      "content": "<p>I prompt the agent to delete stuff as much as possible from time to time. In the past, writing code was the hard part. Now, generation is easy, keeping the absolute core code and delete all the other bloat is the hard part.</p>",
+      "raw_markdown": "I prompt the agent to delete stuff as much as possible from time to time. In the past, writing code was the hard part. Now, generation is easy, keeping the absolute core code and delete all the other bloat is the hard part.",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [
+        {
+          "id": 3530167,
+          "post_date": "2026-09-29T17:30:06.270000",
+          "content": "<p>exactly, and i've realised so late that my agent had been rederring to very old submissions which were scoring much higher as a \"submit agent recommendation\", even after deleting bloat there are always traces that affect the main workflow that leaves the agents astray </p>",
+          "raw_markdown": "exactly, and i've realised so late that my agent had been rederring to very old submissions which were scoring much higher as a \"submit agent recommendation\", even after deleting bloat there are always traces that affect the main workflow that leaves the agents astray ",
+          "author_name": null,
+          "votes": 0,
+          "is_deleted": false,
+          "is_pinned": false,
+          "replies": [],
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    }
+  ],
+  "is_frozen": true
+}

@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-30T20:38:36.052545+00:00",
+  "source_sha256": "f6af68946f9e4e1bb80a9365e75f0efc4a536776ec0a56c2d422ed469af25ae0",
+  "delivery_contracts": {
+    "tests": 5,
+    "passed": 5,
+    "log": "Verified by python -m unittest test_frontier20 -v at20:26UTC; real replay fixture preserved."
+  },
+  "inherited_feed_contracts": {
+    "tests": 4,
+    "passed": 4,
+    "log": "test_no_rescue_on_final_day_or_without_cash (__main__.F20FeedContracts.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.F20FeedContracts.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.F20FeedContracts.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.F20FeedContracts.test_rescue_preserves_capacity_guard) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.017s\n\nOK\n"
+  }
+}

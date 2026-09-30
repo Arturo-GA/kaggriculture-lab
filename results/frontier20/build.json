@@ -1,0 +1,17 @@
+{
+  "f20_react6": {
+    "reactive": true,
+    "look": 6,
+    "sha256": "c4127926c65d93b334aaa6a43a42044051151f6347f4bb2ab70e3c1b020d428d"
+  },
+  "f20_ready3": {
+    "reactive": false,
+    "look": 3,
+    "sha256": "eded6c8e3c7eeeb63ea5b0fe473c0ccdfd307b1c81823cf478706f4a31c156d6"
+  },
+  "f20_ready6": {
+    "reactive": false,
+    "look": 6,
+    "sha256": "46d03818db613736b0c6f3194df934f45613980e9f5ab22c1dbb54c15d13c128"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "f20_woolfast": {
+    "wool": true,
+    "fill": false,
+    "sha256": "83ec1d442c2af82302ccbab55d3284cd3ecd971384344cd47decb461d0b341b7"
+  },
+  "f20_fill": {
+    "wool": false,
+    "fill": true,
+    "sha256": "9924b8f2dec2930a046e0edee28463f6cda2e64453252e04bfeba2d50d5a2a8a"
+  },
+  "f20_delivery": {
+    "wool": true,
+    "fill": true,
+    "sha256": "f6af68946f9e4e1bb80a9365e75f0efc4a536776ec0a56c2d422ed469af25ae0"
+  }
+}

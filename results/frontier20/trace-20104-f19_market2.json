@@ -1,0 +1,1517 @@
+{
+  "seed": 20104,
+  "opponent": "f19_market2",
+  "rewards": [
+    118485.0,
+    118584.0
+  ],
+  "rows": [
+    {
+      "step": 414,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 132,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 3,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 6
+      },
+      "standing_wool": 12,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 417,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 135,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 6
+      },
+      "standing_wool": 12,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 418,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 135,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 12
+      },
+      "standing_wool": 6,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 421,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 137,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 12
+      },
+      "standing_wool": 6,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 422,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 137,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 423,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 137,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 33
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 424,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        18
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 137,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 32
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 425,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 139,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 9,
+        "WOOL": 248,
+        "FERTILIZER": 32
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 426,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 139,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 9,
+        "WOOL": 248,
+        "FERTILIZER": 32
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 427,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "NORTH"
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 139,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 9,
+        "WOOL": 248,
+        "FERTILIZER": 32
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 428,
+      "actor": 13,
+      "original": [
+        "SOUTH"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        18
+      ],
+      "prices": {
+        "WHEAT": 40,
+        "CARROT": 35,
+        "TOMATO": 62,
+        "STRAWBERRY": 107,
+        "MELON": 91,
+        "EGG": 51,
+        "MILK": 9,
+        "WOOL": 247,
+        "FERTILIZER": 32
+      },
+      "inventory": {
+        "WOOL": 18
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ]
+    },
+    {
+      "step": 487,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 36,
+        "TOMATO": 64,
+        "STRAWBERRY": 3,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 1,
+        "WOOL": 247,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 487,
+      "actor": 14,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 36,
+        "TOMATO": 64,
+        "STRAWBERRY": 3,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 1,
+        "WOOL": 247,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 491,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 7,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 3,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 491,
+      "actor": 14,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 7,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 3,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 495,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 11,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 495,
+      "actor": 14,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 11,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 496,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 11,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 496,
+      "actor": 14,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 64,
+        "STRAWBERRY": 11,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 5,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 497,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 65,
+        "STRAWBERRY": 14,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 497,
+      "actor": 14,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "NORTH"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 65,
+        "STRAWBERRY": 14,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 498,
+      "actor": 14,
+      "original": [
+        "SOUTH"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 37,
+        "TOMATO": 65,
+        "STRAWBERRY": 14,
+        "MELON": 99,
+        "EGG": 51,
+        "MILK": 7,
+        "WOOL": 248,
+        "FERTILIZER": 18
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET"
+      ]
+    },
+    {
+      "step": 559,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 1,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 11,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 560,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 1,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 11,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 563,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 7,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 15,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 564,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 1,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 15,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 567,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 5,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 19,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 568,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 5,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 19,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 568,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 5,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 19,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 569,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 11,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 24,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 569,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 11,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 24,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 570,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "NORTH"
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 11,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 24,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 571,
+      "actor": 13,
+      "original": [
+        "SOUTH"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 38,
+        "CARROT": 38,
+        "TOMATO": 67,
+        "STRAWBERRY": 11,
+        "MELON": 106,
+        "EGG": 51,
+        "MILK": 24,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP"
+      ]
+    },
+    {
+      "step": 630,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 1,
+        "MELON": 113,
+        "EGG": 52,
+        "MILK": 17,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 633,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 7,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 22,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 2,
+        "WOOL": 4
+      },
+      "standing_wool": 8,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 634,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 7,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 22,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 637,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "EAST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 12,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 26,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WHEAT": 1,
+        "WOOL": 8
+      },
+      "standing_wool": 4,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 638,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 12,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 26,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 639,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 12,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 26,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 640,
+      "actor": 12,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 69,
+        "STRAWBERRY": 12,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 26,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 641,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 70,
+        "STRAWBERRY": 18,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 30,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 642,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "WEST"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 70,
+        "STRAWBERRY": 18,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 30,
+        "WOOL": 249,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 643,
+      "actor": 13,
+      "original": [
+        "COLLECT_FERTILIZER"
+      ],
+      "proposal": [
+        "NORTH"
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 70,
+        "STRAWBERRY": 18,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 30,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    },
+    {
+      "step": 644,
+      "actor": 13,
+      "original": [
+        "SOUTH"
+      ],
+      "proposal": [
+        "PLACE",
+        "WOOL",
+        12
+      ],
+      "prices": {
+        "WHEAT": 37,
+        "CARROT": 40,
+        "TOMATO": 70,
+        "STRAWBERRY": 18,
+        "MELON": 113,
+        "EGG": 53,
+        "MILK": 30,
+        "WOOL": 248,
+        "FERTILIZER": 1
+      },
+      "inventory": {
+        "WOOL": 12
+      },
+      "standing_wool": 0,
+      "shops": [
+        "YARN_STORE",
+        "YARN_STORE",
+        "YARN_STORE",
+        "SMOOTHIE_SHOP",
+        "YARN_STORE",
+        "FARMERS_MARKET",
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ]
+    }
+  ],
+  "interpretation": "Exploratory diagnosis after seeing a held-out failure. Any resulting new policy requires separate new seeds. Original selection criteria and results stay unchanged."
+}

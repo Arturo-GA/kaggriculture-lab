@@ -9,6 +9,7 @@ Usage: python replay_panel.py <agent.py> [<agent2.py> ...] --workers 6 [--limit 
 import argparse, contextlib, gzip, hashlib, io, json, time
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
+from evaluate import write_json_atomic
 
 RAW = Path('vendor/live_f8')
 OUT = Path('outputs/session/gold')
@@ -57,6 +58,7 @@ def main():
     ap.add_argument('--workers', type=int, default=6)
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--out', default='')
+    ap.add_argument('--resume', action='store_true', help='Reuse verified completed rows from the same output and exact agent sources')
     ap.add_argument('--raw', default=str(RAW), help='folder with episode-<id>-replay.json.gz files')
     ap.add_argument('--episodes', default=str(OUT / 'episodes_f8.json'), help='JSON list with id, seat, op_name, op_score (and op_sub)')
     a = ap.parse_args()
@@ -70,15 +72,28 @@ def main():
     jobs = [(p, e['id'], e['seat'], str(raw_dir)) for p in a.agents for e in eps]
     out = Path(a.out) if a.out else OUT / ('panel_' + '_'.join(Path(p).stem for p in a.agents)[:80] + '.json')
     rows = []
+    if a.resume and out.exists():
+        rows=json.loads(out.read_text(encoding='utf-8'))
+        hashes={Path(p).stem:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in a.agents}
+        expected={(Path(p).stem,e['id'],e['seat']) for p in a.agents for e in eps}
+        done=set()
+        for r in rows:
+            key=(r['agent'],r['episode'],r['seat'])
+            assert key in expected and key not in done and r['sha256']==hashes[r['agent']]
+            assert r['steps']==720 and r['status']==['DONE','DONE']
+            done.add(key)
+        jobs=[j for j in jobs if (Path(j[0]).stem,j[1],j[2]) not in done]
+        print('Resuming',len(rows),'verified rows;',len(jobs),'pending',flush=True)
+    total=len(rows)+len(jobs);completed=len(rows)
     with ProcessPoolExecutor(max_workers=a.workers) as ex:
         futs = [ex.submit(game, j) for j in jobs]
-        for i, f in enumerate(as_completed(futs), 1):
+        for i, f in enumerate(as_completed(futs), completed+1):
             r = f.result()
             m = meta[r['episode']]
             r.update(opponent=m.get('op_name'), op_score=m.get('op_score'), op_sub=m.get('op_sub'))
             rows.append(r)
-            tmp = out.with_name(out.name + '.tmp'); tmp.write_text(json.dumps(rows, indent=1), encoding='utf-8'); tmp.replace(out)
-            print(f"{i}/{len(jobs)} {r['agent']} ep {r['episode']} rec {r['recorded_margin']:+.0f} now {r['margin']:+.0f} rival_kept {r['rival_kept']} {r['seconds']}s", flush=True)
+            write_json_atomic(out,json.dumps(rows, indent=1))
+            print(f"{i}/{total} {r['agent']} ep {r['episode']} rec {r['recorded_margin']:+.0f} now {r['margin']:+.0f} rival_kept {r['rival_kept']} {r['seconds']}s", flush=True)
     for p in a.agents:
         name = Path(p).stem
         rs = [r for r in rows if r['agent'] == name]

@@ -1,0 +1,11 @@
+{
+  "selected": [
+    "f20_value"
+  ],
+  "source_plans": {
+    "f20_value": "results/frontier20/value_gate/plan.json"
+  },
+  "validation_status": "experimental_controls_pending_user_requested",
+  "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+  "caveat": "Immediate experimental release explicitly requested by user; comparative gate not yet assessed. Original failed selection and all frozen thresholds are preserved."
+}

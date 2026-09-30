@@ -1,0 +1,116 @@
+[
+  {
+    "notebook": "vendor/f20_public/evgendvorkin_kaggriculture-version-31-26-09-bronze-going-up/kaggriculture-version-31-26-09-bronze-going-up.ipynb",
+    "candidate": "n30b_evgendvorkin_8ddb01",
+    "sha256": "8ddb01d0fef69c841c804ba47433800e1207794bedbb50567d03b8d01db756f7",
+    "bytes": 1004513,
+    "members": [],
+    "metadata": {
+      "id": "evgendvorkin/kaggriculture-version-31-26-09-bronze-going-up",
+      "id_no": 132685767,
+      "title": "Kaggriculture. Version 31, 26.09, bronze, going up",
+      "code_file": "kaggriculture-version-31-26-09-bronze-going-up.ipynb",
+      "language": "python",
+      "kernel_type": "notebook",
+      "is_private": false,
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "enable_internet": true,
+      "keywords": [],
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "competition_sources": [
+        "kaggriculture"
+      ],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "machine_shape": "None"
+    }
+  },
+  {
+    "notebook": "vendor/f20_public/haideptry_the-shepherds-ledger-herd-safe-sovereign/the-shepherds-ledger-herd-safe-sovereign.ipynb",
+    "candidate": "n30b_haideptry_1eb093",
+    "sha256": "1eb0938d1a032e6189f5c08963cb2114ce71166942dd97727cccd405a002d2ee",
+    "bytes": 897884,
+    "members": [],
+    "metadata": {
+      "id": "haideptry/the-shepherds-ledger-herd-safe-sovereign",
+      "id_no": 135478583,
+      "title": "The Shepherds Ledger Herd Safe Sovereign",
+      "code_file": "the-shepherds-ledger-herd-safe-sovereign.ipynb",
+      "language": "python",
+      "kernel_type": "notebook",
+      "is_private": false,
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "enable_internet": true,
+      "keywords": [],
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "competition_sources": [
+        "kaggriculture"
+      ],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "machine_shape": "None"
+    }
+  },
+  {
+    "notebook": "vendor/f20_public/haodou092_kaggriculture-harvest-ledger/kaggriculture-harvest-ledger.ipynb",
+    "candidate": "n30b_haodou092_531a42",
+    "sha256": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb",
+    "bytes": 1196770,
+    "members": [],
+    "metadata": {
+      "id": "haodou092/kaggriculture-harvest-ledger",
+      "id_no": 131331249,
+      "title": "Kaggriculture | Harvest Ledger",
+      "code_file": "kaggriculture-harvest-ledger.ipynb",
+      "language": "python",
+      "kernel_type": "notebook",
+      "is_private": false,
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "enable_internet": true,
+      "keywords": [],
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "competition_sources": [
+        "kaggriculture"
+      ],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "machine_shape": "None"
+    }
+  },
+  {
+    "notebook": "vendor/f20_public/lynnsakurai_farmer-john-and-the-wheat-seller/farmer-john-and-the-wheat-seller.ipynb",
+    "candidate": "n30b_lynnsakurai_2f6da4",
+    "sha256": "2f6da44df0ce3b4a70d7320f45f3eca32d2a0b2593ff827db005f480481ce222",
+    "bytes": 872169,
+    "members": [
+      "main.py"
+    ],
+    "metadata": {
+      "id": "lynnsakurai/farmer-john-and-the-wheat-seller",
+      "id_no": 135211310,
+      "title": "Farmer John and the Wheat Seller",
+      "code_file": "farmer-john-and-the-wheat-seller.ipynb",
+      "language": "python",
+      "kernel_type": "notebook",
+      "is_private": false,
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "enable_internet": true,
+      "keywords": [],
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "competition_sources": [
+        "kaggriculture"
+      ],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "machine_shape": "None"
+    }
+  }
+]

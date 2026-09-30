@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-30T20:37:05.558378+00:00",
+  "candidate": "f20_delivery",
+  "candidates": [
+    "f20_delivery"
+  ],
+  "controls": [
+    "f19_market1",
+    "f19_market2"
+  ],
+  "control": "f19_market2",
+  "opponents": [
+    "f19_market1",
+    "f19_market2",
+    "n30b_lynnsakurai_2f6da4",
+    "n30b_haodou092_531a42",
+    "n30b_haideptry_1eb093",
+    "n30b_evgendvorkin_8ddb01",
+    "n25_abhinav0370_127ed3",
+    "n23_arsgorynich_4f8637",
+    "d25_llccqq624_c26402",
+    "d25_tschinkel_b87a27"
+  ],
+  "seeds": [
+    20101,
+    20102,
+    20103,
+    20104,
+    20105,
+    20106,
+    20107,
+    20108
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "workers": 5,
+  "engine": "1.32.7",
+  "development_selection": {
+    "f20_delivery": 32.0,
+    "f20_woolfast": 31.0
+  },
+  "thresholds": {
+    "min_total_delta": 4,
+    "min_nonmirror_delta": 0,
+    "min_each_opponent_delta": -2,
+    "min_head_score": 9,
+    "min_positive_seeds": 3,
+    "max_call_ms": 1000
+  },
+  "hashes": {
+    "n25_abhinav0370_127ed3": "127ed3e62988c0474d386db6527ae8ca9de9bb1fe7004128557ddef67126c652",
+    "d25_tschinkel_b87a27": "b87a27ed614a33329be85f1b662e51cf4078a019fee937afcebbbbf2f51f8522",
+    "n30b_haodou092_531a42": "531a423a43184bc5864714189595ec1dbbe3c873de48691b0ebd32fa0a2359bb",
+    "f20_delivery": "f6af68946f9e4e1bb80a9365e75f0efc4a536776ec0a56c2d422ed469af25ae0",
+    "n30b_evgendvorkin_8ddb01": "8ddb01d0fef69c841c804ba47433800e1207794bedbb50567d03b8d01db756f7",
+    "n30b_haideptry_1eb093": "1eb0938d1a032e6189f5c08963cb2114ce71166942dd97727cccd405a002d2ee",
+    "f19_market2": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516",
+    "n30b_lynnsakurai_2f6da4": "2f6da44df0ce3b4a70d7320f45f3eca32d2a0b2593ff827db005f480481ce222",
+    "f19_market1": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+    "d25_llccqq624_c26402": "c26402b67a0d04a46348353069645b1a49c3cb3df6df69d7fa35d8adbbdbeae4",
+    "n23_arsgorynich_4f8637": "4f8637a3e33348b98f531de246d353f5d2955b2f85480e3fd02bf4a7874f0d01"
+  },
+  "authorization": "Arturo: solo una submission privada; revisar todas las derrotas de las últimas dos submissions y enviar en cuanto haya una mejora validada.",
+  "caveat": "Eight seeds are the independent clusters. Public opponents share ancestry; paired local gains and replay diagnostics do not assure a top300-400 rank or a silver medal."
+}

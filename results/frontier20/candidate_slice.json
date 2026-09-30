@@ -1,0 +1,10 @@
+{
+  "candidate": "f20_delivery",
+  "games": 160,
+  "wins": 145,
+  "losses": 15,
+  "ties": 0,
+  "max_call_ms": 758.5843999986537,
+  "error_games": 0,
+  "status": "Candidate slice complete; paired control comparisons still running. NOT a selection decision."
+}

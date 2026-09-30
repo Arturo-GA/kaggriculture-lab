@@ -1,0 +1,20 @@
+{
+  "checked_files": [
+    "analyze_f20.py",
+    "build_f20.py",
+    "build_f20_delivery.py",
+    "extract_f20.py",
+    "frontier20_delivery.py",
+    "frontier20_equilibrium.py",
+    "frontier20_race.py",
+    "release_f20.py",
+    "research_f20.py",
+    "research_f20_grigor.py",
+    "snapshot_f20_sources.py",
+    "summarize_f20_diagnostics.py",
+    "test_frontier20.py",
+    "validate_f20.py"
+  ],
+  "passed": true,
+  "scope": "Syntax only. Does not establish candidate strength or successful submission."
+}

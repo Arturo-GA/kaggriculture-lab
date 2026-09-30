@@ -1,0 +1,31 @@
+{
+  "kernel": "jarturo/kaggriculture-frontier20-policy-validation",
+  "candidates": [
+    "f20_value"
+  ],
+  "control": "f19_market2",
+  "cloud_seeds": [
+    20301,
+    20302,
+    20303,
+    20304
+  ],
+  "source_sha256": {
+    "f20_value": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+    "f19_market2": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516"
+  },
+  "evidence_sha256": {
+    "results/frontier20/plan.json": "7f168c001b0e3bb3d70917badaae51f5bf6de63d091c9c21539b665ab6663e9a",
+    "results/frontier20/holdout_summary.json": "fb571d6bb17e58452b1cd999c7e7e78ee0f835b2d2c680f78076ef4a8be62fba",
+    "results/frontier20/selection_decision.json": "d3e400eb5c4e8c1424f03e334cfb82fd9f3ad2ed997862ed509b93cc6298e5b4",
+    "results/frontier20/release_selection.json": "4fc3b18690ca147e5ecf756779c1a0a67ef4afd261a5e67e597f59852d10409f",
+    "results/frontier20/contracts.json": "6daa91930cae1822a08cbcb51cfac064e4831ce4c3754f2cbc4c69ea8d11875f",
+    "results/frontier20/value_gate/plan.json": "2da7d011aef7538e0770a050783b8b22329f883ebd55e10144690ea913fb920f",
+    "results/frontier20/experimental_admission.json": "a812e5133e9c6f1b17069c026a76ac0cc60d8333320527cf40c3f563c9d851d9",
+    "results/frontier20/value_gate/experimental_f20_value_games.json": "97292b546e551537d9db0df95de5fc9cbae98e5c0d656731fc491a849d83cd00",
+    "results/frontier20/value_gate/contracts.json": "594a99f071e8fe4d8321d3fc29c2776d3381346e200138fd4eba36429fb6c57c"
+  },
+  "validation_status": "experimental_controls_pending_user_requested",
+  "cloud_rule": "16 complete official-engine games; zero errors and under 1000ms per call. Functional, runtime and archive check only. This first experimental release was explicitly requested by the user with full comparative controls still pending; it does not claim the competitive gate passed. Cloud scores are reported without an additional promotion threshold.",
+  "created_utc": "2026-09-30T21:56:32.598229+00:00"
+}

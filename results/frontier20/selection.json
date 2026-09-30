@@ -1,0 +1,1046 @@
+{
+  "snapshot_utc": "2026-09-30T20:11:51.224650+00:00",
+  "selection_rule": "Every completed public defeat exposed by the API at snapshot time for exactly the latest two F19 submissions. Outcome-selected diagnostics, not a strength estimate.",
+  "own": [
+    {
+      "id": 115942658,
+      "created": "2026-09-30 20:07:22.564000",
+      "seat": 0,
+      "my": 93674,
+      "op": 93797,
+      "margin": -123,
+      "op_rank": 1110,
+      "op_score": 1820.1,
+      "op_name": "tyvallo",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 93674
+        },
+        {
+          "submission": 56675440,
+          "seat": 1,
+          "team_id": 16924338,
+          "team_name": "tyvallo",
+          "reward": 93797
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115941386,
+      "created": "2026-09-30 20:03:23.261000",
+      "seat": 0,
+      "my": 116112,
+      "op": 119019,
+      "margin": -2907,
+      "op_rank": 1128,
+      "op_score": 1814.7,
+      "op_name": "Gleb Tumanov",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 116112
+        },
+        {
+          "submission": 56712760,
+          "seat": 1,
+          "team_id": 16667242,
+          "team_name": "Gleb Tumanov",
+          "reward": 119019
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115941142,
+      "created": "2026-09-30 20:03:22.762000",
+      "seat": 0,
+      "my": 124698,
+      "op": 126995,
+      "margin": -2297,
+      "op_rank": 1214,
+      "op_score": 1786.1,
+      "op_name": "TY0912",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 124698
+        },
+        {
+          "submission": 56705228,
+          "seat": 1,
+          "team_id": 16755203,
+          "team_name": "TY0912",
+          "reward": 126995
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115939598,
+      "created": "2026-09-30 19:59:24.685000",
+      "seat": 0,
+      "my": 87932,
+      "op": 88007,
+      "margin": -75,
+      "op_rank": 1011,
+      "op_score": 1857.8,
+      "op_name": "kaggri_Team",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 87932
+        },
+        {
+          "submission": 56711971,
+          "seat": 1,
+          "team_id": 16624571,
+          "team_name": "kaggri_Team",
+          "reward": 88007
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115939202,
+      "created": "2026-09-30 19:59:24.068000",
+      "seat": 0,
+      "my": 83812,
+      "op": 86492,
+      "margin": -2680,
+      "op_rank": 486,
+      "op_score": 2102.8,
+      "op_name": "curiosity",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 83812
+        },
+        {
+          "submission": 56716254,
+          "seat": 1,
+          "team_id": 16633790,
+          "team_name": "curiosity",
+          "reward": 86492
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115938075,
+      "created": "2026-09-30 19:55:22.236000",
+      "seat": 1,
+      "my": 107719,
+      "op": 107814,
+      "margin": -95,
+      "op_rank": 756,
+      "op_score": 1958.7,
+      "op_name": "Kaz",
+      "agents": [
+        {
+          "submission": 56704840,
+          "seat": 0,
+          "team_id": 16755278,
+          "team_name": "Kaz",
+          "reward": 107814
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 107719
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115936559,
+      "created": "2026-09-30 19:51:22.487000",
+      "seat": 1,
+      "my": 156322,
+      "op": 156590,
+      "margin": -268,
+      "op_rank": 951,
+      "op_score": 1879.7,
+      "op_name": "yiyu0716",
+      "agents": [
+        {
+          "submission": 56693967,
+          "seat": 0,
+          "team_id": 16666365,
+          "team_name": "yiyu0716",
+          "reward": 156590
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 156322
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115933479,
+      "created": "2026-09-30 19:43:23.297000",
+      "seat": 0,
+      "my": 79490,
+      "op": 79757,
+      "margin": -267,
+      "op_rank": 1093,
+      "op_score": 1828.1,
+      "op_name": "Kevin E R MILLE",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 79490
+        },
+        {
+          "submission": 56696250,
+          "seat": 1,
+          "team_id": 16623488,
+          "team_name": "Kevin E R MILLE",
+          "reward": 79757
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115927302,
+      "created": "2026-09-30 19:24:03.740000",
+      "seat": 1,
+      "my": 88046,
+      "op": 88288,
+      "margin": -242,
+      "op_rank": 1286,
+      "op_score": 1765.7,
+      "op_name": "Have a nice trip in USST",
+      "agents": [
+        {
+          "submission": 56699106,
+          "seat": 0,
+          "team_id": 16730334,
+          "team_name": "Have a nice trip in USST",
+          "reward": 88288
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 88046
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115924257,
+      "created": "2026-09-30 19:16:01.532000",
+      "seat": 1,
+      "my": 85197,
+      "op": 85333,
+      "margin": -136,
+      "op_rank": 1363,
+      "op_score": 1739.4,
+      "op_name": "Adam Plow",
+      "agents": [
+        {
+          "submission": 56704237,
+          "seat": 0,
+          "team_id": 16657229,
+          "team_name": "Adam Plow",
+          "reward": 85333
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 85197
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115915148,
+      "created": "2026-09-30 18:52:00.647000",
+      "seat": 0,
+      "my": 95595,
+      "op": 103304,
+      "margin": -7709,
+      "op_rank": 1000,
+      "op_score": 1862.3,
+      "op_name": "mountainbob",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 95595
+        },
+        {
+          "submission": 56714246,
+          "seat": 1,
+          "team_id": 16657646,
+          "team_name": "mountainbob",
+          "reward": 103304
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115910656,
+      "created": "2026-09-30 18:40:02.315000",
+      "seat": 1,
+      "my": 88938,
+      "op": 89149,
+      "margin": -211,
+      "op_rank": 1714,
+      "op_score": 1656.9,
+      "op_name": "Li Li",
+      "agents": [
+        {
+          "submission": 56709340,
+          "seat": 0,
+          "team_id": 16934864,
+          "team_name": "Li Li",
+          "reward": 89149
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 88938
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115900067,
+      "created": "2026-09-30 18:12:02.015000",
+      "seat": 0,
+      "my": 108718,
+      "op": 108981,
+      "margin": -263,
+      "op_rank": 2139,
+      "op_score": 1542.9,
+      "op_name": "M.Y.C.E.L.I.S",
+      "agents": [
+        {
+          "submission": 56714342,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 108718
+        },
+        {
+          "submission": 56713519,
+          "seat": 1,
+          "team_id": 16919088,
+          "team_name": "M.Y.C.E.L.I.S",
+          "reward": 108981
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115899730,
+      "created": "2026-09-30 18:12:01.415000",
+      "seat": 1,
+      "my": 118530,
+      "op": 118583,
+      "margin": -53,
+      "op_rank": 2804,
+      "op_score": 1350.6,
+      "op_name": "brave-心勇-heart",
+      "agents": [
+        {
+          "submission": 56677282,
+          "seat": 0,
+          "team_id": 16926297,
+          "team_name": "brave-心勇-heart",
+          "reward": 118583
+        },
+        {
+          "submission": 56714342,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 118530
+        }
+      ],
+      "submission": 56714342
+    },
+    {
+      "id": 115937772,
+      "created": "2026-09-30 19:55:21.795000",
+      "seat": 0,
+      "my": 112232,
+      "op": 113057,
+      "margin": -825,
+      "op_rank": 1378,
+      "op_score": 1735.5,
+      "op_name": "Toshiki Narushima",
+      "agents": [
+        {
+          "submission": 56714336,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 112232
+        },
+        {
+          "submission": 56716363,
+          "seat": 1,
+          "team_id": 16862044,
+          "team_name": "Toshiki Narushima",
+          "reward": 113057
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115933722,
+      "created": "2026-09-30 19:43:23.682000",
+      "seat": 1,
+      "my": 67616,
+      "op": 73614,
+      "margin": -5998,
+      "op_rank": 2153,
+      "op_score": 1541.4,
+      "op_name": "Leo",
+      "agents": [
+        {
+          "submission": 56695260,
+          "seat": 0,
+          "team_id": 16736632,
+          "team_name": "Leo",
+          "reward": 73614
+        },
+        {
+          "submission": 56714336,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 67616
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115930651,
+      "created": "2026-09-30 19:32:02.363000",
+      "seat": 1,
+      "my": 109096,
+      "op": 109328,
+      "margin": -232,
+      "op_rank": 2634,
+      "op_score": 1406.6,
+      "op_name": "Caocao",
+      "agents": [
+        {
+          "submission": 56708366,
+          "seat": 0,
+          "team_id": 16931121,
+          "team_name": "Caocao",
+          "reward": 109328
+        },
+        {
+          "submission": 56714336,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 109096
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115926016,
+      "created": "2026-09-30 19:20:01.443000",
+      "seat": 0,
+      "my": 105485,
+      "op": 105680,
+      "margin": -195,
+      "op_rank": 2626,
+      "op_score": 1408.6,
+      "op_name": "kaggle Osaka",
+      "agents": [
+        {
+          "submission": 56714336,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 105485
+        },
+        {
+          "submission": 56682628,
+          "seat": 1,
+          "team_id": 16655520,
+          "team_name": "kaggle Osaka",
+          "reward": 105680
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115923003,
+      "created": "2026-09-30 19:12:01.684000",
+      "seat": 1,
+      "my": 87796,
+      "op": 88250,
+      "margin": -454,
+      "op_rank": 2685,
+      "op_score": 1391.4,
+      "op_name": "MAGMA",
+      "agents": [
+        {
+          "submission": 56700591,
+          "seat": 0,
+          "team_id": 16656340,
+          "team_name": "MAGMA",
+          "reward": 88250
+        },
+        {
+          "submission": 56714336,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 87796
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115920903,
+      "created": "2026-09-30 19:08:01.409000",
+      "seat": 1,
+      "my": 76241,
+      "op": 76866,
+      "margin": -625,
+      "op_rank": 488,
+      "op_score": 2101.0,
+      "op_name": "Omar Althobaiti",
+      "agents": [
+        {
+          "submission": 56715725,
+          "seat": 0,
+          "team_id": 16892288,
+          "team_name": "Omar Althobaiti",
+          "reward": 76866
+        },
+        {
+          "submission": 56714336,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 76241
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115909216,
+      "created": "2026-09-30 18:36:04.835000",
+      "seat": 0,
+      "my": 61208,
+      "op": 61629,
+      "margin": -421,
+      "op_rank": 999,
+      "op_score": 1862.4,
+      "op_name": "Xiangjiang Zhou",
+      "agents": [
+        {
+          "submission": 56714336,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 61208
+        },
+        {
+          "submission": 56714218,
+          "seat": 1,
+          "team_id": 16783265,
+          "team_name": "Xiangjiang Zhou",
+          "reward": 61629
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115908873,
+      "created": "2026-09-30 18:36:04.313000",
+      "seat": 1,
+      "my": 90319,
+      "op": 90486,
+      "margin": -167,
+      "op_rank": 730,
+      "op_score": 1968.6,
+      "op_name": "KaitoKusumoto",
+      "agents": [
+        {
+          "submission": 56715322,
+          "seat": 0,
+          "team_id": 16767052,
+          "team_name": "KaitoKusumoto",
+          "reward": 90486
+        },
+        {
+          "submission": 56714336,
+          "seat": 1,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 90319
+        }
+      ],
+      "submission": 56714336
+    },
+    {
+      "id": 115887745,
+      "created": "2026-09-30 17:38:03.178000",
+      "seat": 0,
+      "my": 96706,
+      "op": 103261,
+      "margin": -6555,
+      "op_rank": 326,
+      "op_score": 2235.6,
+      "op_name": "spencersi123",
+      "agents": [
+        {
+          "submission": 56714336,
+          "seat": 0,
+          "team_id": 16639155,
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "reward": 96706
+        },
+        {
+          "submission": 56714352,
+          "seat": 1,
+          "team_id": 16810299,
+          "team_name": "spencersi123",
+          "reward": 103261
+        }
+      ],
+      "submission": 56714336
+    }
+  ],
+  "episodes": [
+    {
+      "id": 115926016,
+      "path": "vendor/top100_0927/episode-115926016-replay.json.gz",
+      "sha256": "495d743bf2d415301db50dfa2f3d75dce29c613c837b4cdcb2e2956e5ac2cb9e",
+      "compressed_bytes": 483664,
+      "raw_bytes": 34601973,
+      "seed": 1440610414,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "kaggle Osaka"
+      ],
+      "rewards": [
+        105485.0,
+        105680.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115910656,
+      "path": "vendor/top100_0927/episode-115910656-replay.json.gz",
+      "sha256": "0d9f2bc0aababab73d4711db52d7394f733715204a5b537adee2c21be25ae4e1",
+      "compressed_bytes": 464507,
+      "raw_bytes": 34453816,
+      "seed": 1657257777,
+      "teams": [
+        "Li Li",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        89149.0,
+        88938.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115939202,
+      "path": "vendor/top100_0927/episode-115939202-replay.json.gz",
+      "sha256": "5074d7bd33f5a40d7b41c8eb9446d1750150a52d4260b975bef40bcac03255bf",
+      "compressed_bytes": 361763,
+      "raw_bytes": 32563887,
+      "seed": 120354918,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "curiosity"
+      ],
+      "rewards": [
+        83812.0,
+        86492.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115942658,
+      "path": "vendor/top100_0927/episode-115942658-replay.json.gz",
+      "sha256": "0dcda7eee02c3381d71937e26b7bca69282f44d4fd1d0e2ba884b7c192f2624e",
+      "compressed_bytes": 329417,
+      "raw_bytes": 32615166,
+      "seed": 2003111078,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "tyvallo"
+      ],
+      "rewards": [
+        93674.0,
+        93797.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115887745,
+      "path": "vendor/top100_0927/episode-115887745-replay.json.gz",
+      "sha256": "09fc63839ad5fe3ef83857b389bec2d8b9cd4f3a4177271d75279d14221cf442",
+      "compressed_bytes": 423543,
+      "raw_bytes": 33192359,
+      "seed": 227548269,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "spencersi123"
+      ],
+      "rewards": [
+        96706.0,
+        103261.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115927302,
+      "path": "vendor/top100_0927/episode-115927302-replay.json.gz",
+      "sha256": "f6707839ca3fc663e08236416f4ad70893031e6cd195c082a0573ab73c36d52b",
+      "compressed_bytes": 323609,
+      "raw_bytes": 32744679,
+      "seed": 317640112,
+      "teams": [
+        "Have a nice trip in USST",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        88288.0,
+        88046.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115920903,
+      "path": "vendor/top100_0927/episode-115920903-replay.json.gz",
+      "sha256": "c25004111dbe1e98503d2ef8de26e200c40a162b98c31445264b12ca52e17259",
+      "compressed_bytes": 481533,
+      "raw_bytes": 34460407,
+      "seed": 1521107883,
+      "teams": [
+        "Omar Althobaiti",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        76866.0,
+        76241.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115908873,
+      "path": "vendor/top100_0927/episode-115908873-replay.json.gz",
+      "sha256": "09b5c481bf00ab02088920fa38f997585e80f326e8874730b0faa9cc5f0c8a4c",
+      "compressed_bytes": 336550,
+      "raw_bytes": 32555001,
+      "seed": 2055662075,
+      "teams": [
+        "KaitoKusumoto",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        90486.0,
+        90319.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115941386,
+      "path": "vendor/top100_0927/episode-115941386-replay.json.gz",
+      "sha256": "0aa346d4b2cc68c0370c376ed86f242cd897a6facb19077c48041977acad82af",
+      "compressed_bytes": 390354,
+      "raw_bytes": 32435924,
+      "seed": 537477334,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "Gleb Tumanov"
+      ],
+      "rewards": [
+        116112.0,
+        119019.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115915148,
+      "path": "vendor/top100_0927/episode-115915148-replay.json.gz",
+      "sha256": "950ef98752193d1f00b2a165dff1b5d4a605836922c78b85be40b6f0ff6fad5d",
+      "compressed_bytes": 854908,
+      "raw_bytes": 36375093,
+      "seed": 400765987,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "mountainbob"
+      ],
+      "rewards": [
+        95595.0,
+        103304.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115939598,
+      "path": "vendor/top100_0927/episode-115939598-replay.json.gz",
+      "sha256": "67978c7c1f300978a3b09d710dc91b036d42e967ec42f684684c137d78a6b24c",
+      "compressed_bytes": 326991,
+      "raw_bytes": 32608082,
+      "seed": 1771547588,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "kaggri_Team"
+      ],
+      "rewards": [
+        87932.0,
+        88007.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115899730,
+      "path": "vendor/top100_0927/episode-115899730-replay.json.gz",
+      "sha256": "b76168454d35aafae6cd5e58a234a6cbbecd7e09fafad66e95c9974b0b88d296",
+      "compressed_bytes": 340776,
+      "raw_bytes": 32746335,
+      "seed": 462362774,
+      "teams": [
+        "brave-心勇-heart",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        118583.0,
+        118530.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115941142,
+      "path": "vendor/top100_0927/episode-115941142-replay.json.gz",
+      "sha256": "c44e84aae387bd086ed2c3d18b181c3efedf8d1d15e794478d7960a54bc39e2b",
+      "compressed_bytes": 332231,
+      "raw_bytes": 32619753,
+      "seed": 126004477,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "TY0912"
+      ],
+      "rewards": [
+        124698.0,
+        126995.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115933722,
+      "path": "vendor/top100_0927/episode-115933722-replay.json.gz",
+      "sha256": "63cd25182cee19928ae625f59ef10399a0751b3006aca588ec318fbdffeb6275",
+      "compressed_bytes": 361421,
+      "raw_bytes": 34586462,
+      "seed": 53893367,
+      "teams": [
+        "Leo",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        73614.0,
+        67616.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115930651,
+      "path": "vendor/top100_0927/episode-115930651-replay.json.gz",
+      "sha256": "2616221d58ff93c84bcdc080875abfd6a21d3080ce36789fe8671b3af4dfe081",
+      "compressed_bytes": 337535,
+      "raw_bytes": 32607658,
+      "seed": 626688710,
+      "teams": [
+        "Caocao",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        109328.0,
+        109096.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115938075,
+      "path": "vendor/top100_0927/episode-115938075-replay.json.gz",
+      "sha256": "1b3d71e57a1d754e98210bdbf0a4510608f258854f8baeeb15600bfba5e323b3",
+      "compressed_bytes": 331410,
+      "raw_bytes": 32645695,
+      "seed": 1360795559,
+      "teams": [
+        "Kaz",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        107814.0,
+        107719.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115909216,
+      "path": "vendor/top100_0927/episode-115909216-replay.json.gz",
+      "sha256": "f308c828c735c8f880b19737ed240895cd5906974b8f9d90eadfd406e070239f",
+      "compressed_bytes": 334604,
+      "raw_bytes": 32574537,
+      "seed": 66298884,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "Xiangjiang Zhou"
+      ],
+      "rewards": [
+        61208.0,
+        61629.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115924257,
+      "path": "vendor/top100_0927/episode-115924257-replay.json.gz",
+      "sha256": "d5089bae60ddaf149e7a7c6486d3ed9682579afd00dacb6de664b62d323e229f",
+      "compressed_bytes": 331660,
+      "raw_bytes": 32618463,
+      "seed": 1487267324,
+      "teams": [
+        "Adam Plow",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        85333.0,
+        85197.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115900067,
+      "path": "vendor/top100_0927/episode-115900067-replay.json.gz",
+      "sha256": "e315304adf434c7b803340ff7d4b9c862b065538cb1f687b77914cf65ae57604",
+      "compressed_bytes": 476696,
+      "raw_bytes": 34432207,
+      "seed": 674543440,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "M.Y.C.E.L.I.S"
+      ],
+      "rewards": [
+        108718.0,
+        108981.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115933479,
+      "path": "vendor/top100_0927/episode-115933479-replay.json.gz",
+      "sha256": "d97849b4f790de9c05b9e4d86dd10aff9f74ef3cec0ce4641cf105ee86522610",
+      "compressed_bytes": 324096,
+      "raw_bytes": 32594356,
+      "seed": 337697103,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "Kevin E R MILLE"
+      ],
+      "rewards": [
+        79490.0,
+        79757.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115937772,
+      "path": "vendor/top100_0927/episode-115937772-replay.json.gz",
+      "sha256": "3c14e2ae2560444b70552a2b1d2d66903e07061da4b85cbe5f1be9e3300ba6aa",
+      "compressed_bytes": 336766,
+      "raw_bytes": 32616993,
+      "seed": 1391236222,
+      "teams": [
+        "Arturo Gutiérrez Aguilar",
+        "Toshiki Narushima"
+      ],
+      "rewards": [
+        112232.0,
+        113057.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115936559,
+      "path": "vendor/top100_0927/episode-115936559-replay.json.gz",
+      "sha256": "eab803ca009e59d1b5793c71ff74a38d6051c96df9203dfd161559cffcf97ac7",
+      "compressed_bytes": 324371,
+      "raw_bytes": 32618959,
+      "seed": 1809084003,
+      "teams": [
+        "yiyu0716",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        156590.0,
+        156322.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115923003,
+      "path": "vendor/top100_0927/episode-115923003-replay.json.gz",
+      "sha256": "e423538308d36ba8f1fa85a3b37a94b0eb117cc11af7722013099ed1978ea9f7",
+      "compressed_bytes": 335266,
+      "raw_bytes": 32611693,
+      "seed": 1876740227,
+      "teams": [
+        "MAGMA",
+        "Arturo Gutiérrez Aguilar"
+      ],
+      "rewards": [
+        88250.0,
+        87796.0
+      ],
+      "engine": "1.32.7"
+    }
+  ],
+  "errors": [],
+  "complete": true,
+  "finished_utc": "2026-09-30T20:13:10.892261+00:00"
+}

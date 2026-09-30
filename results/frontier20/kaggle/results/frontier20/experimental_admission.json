@@ -1,0 +1,18 @@
+{
+  "candidate": "f20_value",
+  "source_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+  "candidate_games_sha256": "97292b546e551537d9db0df95de5fc9cbae98e5c0d656731fc491a849d83cd00",
+  "created_utc": "2026-09-30T21:56:31.807543+00:00",
+  "user_authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+  "user_requested_immediate_submission": true,
+  "controls_pending": true,
+  "competitive_gate_passed": null,
+  "original_candidate_gate_passed": false,
+  "wlt": [
+    149,
+    11,
+    0
+  ],
+  "max_call_ms": 727.1757000125945,
+  "second_submission": "Only if completed controls demonstrate improvement over this first release; not merely a tie."
+}

@@ -1,0 +1,7 @@
+{
+  "candidate": "f20_value",
+  "sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+  "parent_sha256": "f6af68946f9e4e1bb80a9365e75f0efc4a536776ec0a56c2d422ed469af25ae0",
+  "rationale": "Earlier urgent wool delivery lost fertilizer value in a market whose wool price stayed flat. Compare the observable wool batch price exposure with optional fertilizer value.",
+  "adaptive_scope": "Original Frontier20 holdout results remain intact. This new policy was designed after inspecting seed20104 and must be evaluated on a separately frozen fresh-seed panel."
+}

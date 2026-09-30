@@ -1,0 +1,390 @@
+{
+  "checked_utc": "2026-09-30T20:44:59.411727+00:00",
+  "team_id": 16945978,
+  "team": {
+    "name": "Grigor Sargsyan",
+    "score": 2471.9,
+    "rank": 129
+  },
+  "submissions": [
+    {
+      "id": 56700896,
+      "date_submitted": "2026-09-30T07:32:14.300000",
+      "public_score": "2340.6",
+      "is_frozen": true
+    },
+    {
+      "id": 56691870,
+      "date_submitted": "2026-09-30T00:24:31.893000",
+      "public_score": "2465.8",
+      "is_frozen": true
+    }
+  ],
+  "selected": [
+    {
+      "id": 115949088,
+      "created": "2026-09-30 20:23:27.169000",
+      "seat": 1,
+      "my": 123976,
+      "op": 132550,
+      "margin": -8574,
+      "op_rank": 171,
+      "op_score": 2418.8,
+      "op_name": "Emile Andrieu",
+      "agents": [
+        {
+          "submission": 56712650,
+          "seat": 0,
+          "team_id": 16633100,
+          "team_name": "Emile Andrieu",
+          "reward": 132550
+        },
+        {
+          "submission": 56700896,
+          "seat": 1,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 123976
+        }
+      ],
+      "grigor_submission": 56700896
+    },
+    {
+      "id": 115943837,
+      "created": "2026-09-30 20:11:22.194000",
+      "seat": 0,
+      "my": 114983,
+      "op": 103401,
+      "margin": 11582,
+      "op_rank": 257,
+      "op_score": 2324.7,
+      "op_name": "Xiangyu Liu",
+      "agents": [
+        {
+          "submission": 56700896,
+          "seat": 0,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 114983
+        },
+        {
+          "submission": 56716067,
+          "seat": 1,
+          "team_id": 16706222,
+          "team_name": "Xiangyu Liu",
+          "reward": 103401
+        }
+      ],
+      "grigor_submission": 56700896
+    },
+    {
+      "id": 115943235,
+      "created": "2026-09-30 20:07:23.606000",
+      "seat": 1,
+      "my": 117690,
+      "op": 94927,
+      "margin": 22763,
+      "op_rank": 207,
+      "op_score": 2386.9,
+      "op_name": "tyz123456",
+      "agents": [
+        {
+          "submission": 56709371,
+          "seat": 0,
+          "team_id": 16665224,
+          "team_name": "tyz123456",
+          "reward": 94927
+        },
+        {
+          "submission": 56700896,
+          "seat": 1,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 117690
+        }
+      ],
+      "grigor_submission": 56700896
+    },
+    {
+      "id": 115932694,
+      "created": "2026-09-30 19:39:38.581000",
+      "seat": 1,
+      "my": 96323,
+      "op": 109800,
+      "margin": -13477,
+      "op_rank": 217,
+      "op_score": 2373.2,
+      "op_name": "Lam Dang",
+      "agents": [
+        {
+          "submission": 56659616,
+          "seat": 0,
+          "team_id": 16659627,
+          "team_name": "Lam Dang",
+          "reward": 109800
+        },
+        {
+          "submission": 56700896,
+          "seat": 1,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 96323
+        }
+      ],
+      "grigor_submission": 56700896
+    },
+    {
+      "id": 115950339,
+      "created": "2026-09-30 20:32:04.518000",
+      "seat": 1,
+      "my": 82910,
+      "op": 100842,
+      "margin": -17932,
+      "op_rank": 121,
+      "op_score": 2486.6,
+      "op_name": "kibuna",
+      "agents": [
+        {
+          "submission": 56713808,
+          "seat": 0,
+          "team_id": 16779451,
+          "team_name": "kibuna",
+          "reward": 100842
+        },
+        {
+          "submission": 56691870,
+          "seat": 1,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 82910
+        }
+      ],
+      "grigor_submission": 56691870
+    },
+    {
+      "id": 115947887,
+      "created": "2026-09-30 20:19:27.208000",
+      "seat": 0,
+      "my": 103472,
+      "op": 94655,
+      "margin": 8817,
+      "op_rank": 193,
+      "op_score": 2402.9,
+      "op_name": "darktetradgod",
+      "agents": [
+        {
+          "submission": 56691870,
+          "seat": 0,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 103472
+        },
+        {
+          "submission": 56632679,
+          "seat": 1,
+          "team_id": 16697395,
+          "team_name": "darktetradgod",
+          "reward": 94655
+        }
+      ],
+      "grigor_submission": 56691870
+    },
+    {
+      "id": 115943243,
+      "created": "2026-09-30 20:07:23.617000",
+      "seat": 0,
+      "my": 137235,
+      "op": 142871,
+      "margin": -5636,
+      "op_rank": 143,
+      "op_score": 2448.2,
+      "op_name": "Cow Boy",
+      "agents": [
+        {
+          "submission": 56691870,
+          "seat": 0,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 137235
+        },
+        {
+          "submission": 56705490,
+          "seat": 1,
+          "team_id": 16633178,
+          "team_name": "Cow Boy",
+          "reward": 142871
+        }
+      ],
+      "grigor_submission": 56691870
+    },
+    {
+      "id": 115932720,
+      "created": "2026-09-30 19:39:38.607000",
+      "seat": 1,
+      "my": 131593,
+      "op": 169742,
+      "margin": -38149,
+      "op_rank": 105,
+      "op_score": 2511.2,
+      "op_name": "Yaroslav",
+      "agents": [
+        {
+          "submission": 56636667,
+          "seat": 0,
+          "team_id": 16621590,
+          "team_name": "Yaroslav",
+          "reward": 169742
+        },
+        {
+          "submission": 56691870,
+          "seat": 1,
+          "team_id": 16945978,
+          "team_name": "Grigor Sargsyan",
+          "reward": 131593
+        }
+      ],
+      "grigor_submission": 56691870
+    }
+  ],
+  "downloaded": [
+    {
+      "id": 115932694,
+      "path": "vendor/top100_0927/episode-115932694-replay.json.gz",
+      "sha256": "7a6e6b447bdf1ffe17e1e2af8b477b603bab637e3707ba9196db192b21417d35",
+      "compressed_bytes": 455974,
+      "raw_bytes": 33921123,
+      "seed": 1420135498,
+      "teams": [
+        "Lam Dang",
+        "Grigor Sargsyan"
+      ],
+      "rewards": [
+        109800.0,
+        96323.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115932720,
+      "path": "vendor/top100_0927/episode-115932720-replay.json.gz",
+      "sha256": "ad8804b4f051d1f2d50a0bc68947c2f179a23686f45eabff322cb34c8e74a108",
+      "compressed_bytes": 447159,
+      "raw_bytes": 34675404,
+      "seed": 1301710033,
+      "teams": [
+        "Yaroslav",
+        "Grigor Sargsyan"
+      ],
+      "rewards": [
+        169742.0,
+        131593.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115943235,
+      "path": "vendor/top100_0927/episode-115943235-replay.json.gz",
+      "sha256": "1b6be8aa1f45359c91a715579fb100765d8eb4a243b08a4e0301bbe26543ab2a",
+      "compressed_bytes": 443525,
+      "raw_bytes": 34300958,
+      "seed": 1104595419,
+      "teams": [
+        "tyz123456",
+        "Grigor Sargsyan"
+      ],
+      "rewards": [
+        94927.0,
+        117690.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115943243,
+      "path": "vendor/top100_0927/episode-115943243-replay.json.gz",
+      "sha256": "65cb54c14ca2630aa18e124af0ccbabc34bdbedbfe17354a55c7ba0c74a864cd",
+      "compressed_bytes": 804328,
+      "raw_bytes": 35968181,
+      "seed": 1584350652,
+      "teams": [
+        "Grigor Sargsyan",
+        "Cow Boy"
+      ],
+      "rewards": [
+        137235.0,
+        142871.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115943837,
+      "path": "vendor/top100_0927/episode-115943837-replay.json.gz",
+      "sha256": "e30b31e7578f61d64d5924111ef15be666032a456afc01a00c5848ac78d70a16",
+      "compressed_bytes": 457568,
+      "raw_bytes": 34293244,
+      "seed": 1901437646,
+      "teams": [
+        "Grigor Sargsyan",
+        "Xiangyu Liu"
+      ],
+      "rewards": [
+        114983.0,
+        103401.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115947887,
+      "path": "vendor/top100_0927/episode-115947887-replay.json.gz",
+      "sha256": "a31dd3ad8672a8d40158fb5c7509275214d35551643fe92d7f06685a48e9f681",
+      "compressed_bytes": 447958,
+      "raw_bytes": 34279266,
+      "seed": 337599346,
+      "teams": [
+        "Grigor Sargsyan",
+        "darktetradgod"
+      ],
+      "rewards": [
+        103472.0,
+        94655.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115949088,
+      "path": "vendor/top100_0927/episode-115949088-replay.json.gz",
+      "sha256": "b5a2de1917cf39726636808994aff4db8c21f27a54de6b863f8f60334c1f44d2",
+      "compressed_bytes": 924200,
+      "raw_bytes": 37414458,
+      "seed": 1307886191,
+      "teams": [
+        "Emile Andrieu",
+        "Grigor Sargsyan"
+      ],
+      "rewards": [
+        132550.0,
+        123976.0
+      ],
+      "engine": "1.32.7"
+    },
+    {
+      "id": 115950339,
+      "path": "vendor/top100_0927/episode-115950339-replay.json.gz",
+      "sha256": "e02d0a85072e533e8d121317f416ec682f91fef43c5efa7561c53c54fb035b58",
+      "compressed_bytes": 458469,
+      "raw_bytes": 34249012,
+      "seed": 230020781,
+      "teams": [
+        "kibuna",
+        "Grigor Sargsyan"
+      ],
+      "rewards": [
+        100842.0,
+        82910.0
+      ],
+      "engine": "1.32.7"
+    }
+  ],
+  "selection_rule": "Four latest completed public games of EACH active submission, independent of outcome.",
+  "interpretation": "Counterfactual replay diagnostics only. Test policy occupies the opposite seat from Grigor. Original recorded margin belongs to the real opponent, not our historical agent. No claim of defeating a reactive private agent.",
+  "complete": true
+}

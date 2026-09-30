@@ -1,0 +1,795 @@
+{
+  "interpretation": "Outcome-selected frozen rival diagnostics. Comparison to F19 Market2 isolates each overlay; recorded margins mix two original agents.",
+  "original_agent_reproduction": [
+    {
+      "episode": 115887745,
+      "agent": "f19_market1",
+      "margin": -6555.0,
+      "recorded_margin": -6555.0,
+      "exact": true
+    },
+    {
+      "episode": 115908873,
+      "agent": "f19_market1",
+      "margin": -167.0,
+      "recorded_margin": -167.0,
+      "exact": true
+    },
+    {
+      "episode": 115909216,
+      "agent": "f19_market1",
+      "margin": -421.0,
+      "recorded_margin": -421.0,
+      "exact": true
+    },
+    {
+      "episode": 115920903,
+      "agent": "f19_market1",
+      "margin": -625.0,
+      "recorded_margin": -625.0,
+      "exact": true
+    },
+    {
+      "episode": 115923003,
+      "agent": "f19_market1",
+      "margin": -454.0,
+      "recorded_margin": -454.0,
+      "exact": true
+    },
+    {
+      "episode": 115926016,
+      "agent": "f19_market1",
+      "margin": -195.0,
+      "recorded_margin": -195.0,
+      "exact": true
+    },
+    {
+      "episode": 115930651,
+      "agent": "f19_market1",
+      "margin": -232.0,
+      "recorded_margin": -232.0,
+      "exact": true
+    },
+    {
+      "episode": 115933722,
+      "agent": "f19_market1",
+      "margin": -5998.0,
+      "recorded_margin": -5998.0,
+      "exact": true
+    },
+    {
+      "episode": 115937772,
+      "agent": "f19_market1",
+      "margin": -825.0,
+      "recorded_margin": -825.0,
+      "exact": true
+    },
+    {
+      "episode": 115899730,
+      "agent": "f19_market2",
+      "margin": -53.0,
+      "recorded_margin": -53.0,
+      "exact": true
+    },
+    {
+      "episode": 115900067,
+      "agent": "f19_market2",
+      "margin": -263.0,
+      "recorded_margin": -263.0,
+      "exact": true
+    },
+    {
+      "episode": 115910656,
+      "agent": "f19_market2",
+      "margin": -211.0,
+      "recorded_margin": -211.0,
+      "exact": true
+    },
+    {
+      "episode": 115915148,
+      "agent": "f19_market2",
+      "margin": -7709.0,
+      "recorded_margin": -7709.0,
+      "exact": true
+    },
+    {
+      "episode": 115924257,
+      "agent": "f19_market2",
+      "margin": -136.0,
+      "recorded_margin": -136.0,
+      "exact": true
+    },
+    {
+      "episode": 115927302,
+      "agent": "f19_market2",
+      "margin": -242.0,
+      "recorded_margin": -242.0,
+      "exact": true
+    },
+    {
+      "episode": 115933479,
+      "agent": "f19_market2",
+      "margin": -267.0,
+      "recorded_margin": -267.0,
+      "exact": true
+    },
+    {
+      "episode": 115936559,
+      "agent": "f19_market2",
+      "margin": -268.0,
+      "recorded_margin": -268.0,
+      "exact": true
+    },
+    {
+      "episode": 115938075,
+      "agent": "f19_market2",
+      "margin": -95.0,
+      "recorded_margin": -95.0,
+      "exact": true
+    },
+    {
+      "episode": 115939202,
+      "agent": "f19_market2",
+      "margin": -2680.0,
+      "recorded_margin": -2680.0,
+      "exact": true
+    },
+    {
+      "episode": 115939598,
+      "agent": "f19_market2",
+      "margin": -75.0,
+      "recorded_margin": -75.0,
+      "exact": true
+    },
+    {
+      "episode": 115941142,
+      "agent": "f19_market2",
+      "margin": -2297.0,
+      "recorded_margin": -2297.0,
+      "exact": true
+    },
+    {
+      "episode": 115941386,
+      "agent": "f19_market2",
+      "margin": -2907.0,
+      "recorded_margin": -2907.0,
+      "exact": true
+    },
+    {
+      "episode": 115942658,
+      "agent": "f19_market2",
+      "margin": -123.0,
+      "recorded_margin": -123.0,
+      "exact": true
+    }
+  ],
+  "parent": {
+    "games": 23,
+    "wins": 0,
+    "ties": 0,
+    "mean_margin": -1430.7391304347825,
+    "errors": 0,
+    "rival_retention_range": [
+      0.9993,
+      1.0004
+    ]
+  },
+  "variants": {
+    "f20_delivery": {
+      "games": 23,
+      "wins": 1,
+      "ties": 0,
+      "mean_margin": -1186.0,
+      "errors": 0,
+      "rival_retention_range": [
+        0.9696,
+        1.004
+      ],
+      "mean_paired_margin_gain": 244.7391304347826,
+      "parent_losses_flipped": 1,
+      "parent_wins_lost": 0,
+      "per_episode": [
+        {
+          "episode": 115887745,
+          "parent_margin": -6555.0,
+          "margin": -6555.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115899730,
+          "parent_margin": -53.0,
+          "margin": -21.0,
+          "gain": 32.0
+        },
+        {
+          "episode": 115900067,
+          "parent_margin": -263.0,
+          "margin": -102.0,
+          "gain": 161.0
+        },
+        {
+          "episode": 115908873,
+          "parent_margin": -187.0,
+          "margin": -48.0,
+          "gain": 139.0
+        },
+        {
+          "episode": 115909216,
+          "parent_margin": -397.0,
+          "margin": -60.0,
+          "gain": 337.0
+        },
+        {
+          "episode": 115910656,
+          "parent_margin": -211.0,
+          "margin": -268.0,
+          "gain": -57.0
+        },
+        {
+          "episode": 115915148,
+          "parent_margin": -7709.0,
+          "margin": -7709.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115923003,
+          "parent_margin": -497.0,
+          "margin": -515.0,
+          "gain": -18.0
+        },
+        {
+          "episode": 115920903,
+          "parent_margin": -681.0,
+          "margin": -599.0,
+          "gain": 82.0
+        },
+        {
+          "episode": 115924257,
+          "parent_margin": -136.0,
+          "margin": -71.0,
+          "gain": 65.0
+        },
+        {
+          "episode": 115927302,
+          "parent_margin": -242.0,
+          "margin": -104.0,
+          "gain": 138.0
+        },
+        {
+          "episode": 115926016,
+          "parent_margin": -263.0,
+          "margin": -206.0,
+          "gain": 57.0
+        },
+        {
+          "episode": 115930651,
+          "parent_margin": -97.0,
+          "margin": -162.0,
+          "gain": -65.0
+        },
+        {
+          "episode": 115933479,
+          "parent_margin": -267.0,
+          "margin": -316.0,
+          "gain": -49.0
+        },
+        {
+          "episode": 115933722,
+          "parent_margin": -5998.0,
+          "margin": -1633.0,
+          "gain": 4365.0
+        },
+        {
+          "episode": 115936559,
+          "parent_margin": -268.0,
+          "margin": -229.0,
+          "gain": 39.0
+        },
+        {
+          "episode": 115937772,
+          "parent_margin": -906.0,
+          "margin": -752.0,
+          "gain": 154.0
+        },
+        {
+          "episode": 115938075,
+          "parent_margin": -95.0,
+          "margin": -66.0,
+          "gain": 29.0
+        },
+        {
+          "episode": 115939202,
+          "parent_margin": -2680.0,
+          "margin": -2871.0,
+          "gain": -191.0
+        },
+        {
+          "episode": 115939598,
+          "parent_margin": -75.0,
+          "margin": -105.0,
+          "gain": -30.0
+        },
+        {
+          "episode": 115941142,
+          "parent_margin": -2297.0,
+          "margin": -1987.0,
+          "gain": 310.0
+        },
+        {
+          "episode": 115941386,
+          "parent_margin": -2907.0,
+          "margin": -2907.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115942658,
+          "parent_margin": -123.0,
+          "margin": 8.0,
+          "gain": 131.0
+        }
+      ]
+    },
+    "f20_fill": {
+      "games": 23,
+      "wins": 1,
+      "ties": 0,
+      "mean_margin": -1379.0869565217392,
+      "errors": 0,
+      "rival_retention_range": [
+        0.9967,
+        1.004
+      ],
+      "mean_paired_margin_gain": 51.65217391304348,
+      "parent_losses_flipped": 1,
+      "parent_wins_lost": 0,
+      "per_episode": [
+        {
+          "episode": 115899730,
+          "parent_margin": -53.0,
+          "margin": -21.0,
+          "gain": 32.0
+        },
+        {
+          "episode": 115887745,
+          "parent_margin": -6555.0,
+          "margin": -6555.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115900067,
+          "parent_margin": -263.0,
+          "margin": -102.0,
+          "gain": 161.0
+        },
+        {
+          "episode": 115908873,
+          "parent_margin": -187.0,
+          "margin": -48.0,
+          "gain": 139.0
+        },
+        {
+          "episode": 115909216,
+          "parent_margin": -397.0,
+          "margin": -60.0,
+          "gain": 337.0
+        },
+        {
+          "episode": 115910656,
+          "parent_margin": -211.0,
+          "margin": -268.0,
+          "gain": -57.0
+        },
+        {
+          "episode": 115915148,
+          "parent_margin": -7709.0,
+          "margin": -7709.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115924257,
+          "parent_margin": -136.0,
+          "margin": -71.0,
+          "gain": 65.0
+        },
+        {
+          "episode": 115923003,
+          "parent_margin": -497.0,
+          "margin": -515.0,
+          "gain": -18.0
+        },
+        {
+          "episode": 115920903,
+          "parent_margin": -681.0,
+          "margin": -599.0,
+          "gain": 82.0
+        },
+        {
+          "episode": 115927302,
+          "parent_margin": -242.0,
+          "margin": -104.0,
+          "gain": 138.0
+        },
+        {
+          "episode": 115926016,
+          "parent_margin": -263.0,
+          "margin": -206.0,
+          "gain": 57.0
+        },
+        {
+          "episode": 115933479,
+          "parent_margin": -267.0,
+          "margin": -316.0,
+          "gain": -49.0
+        },
+        {
+          "episode": 115930651,
+          "parent_margin": -97.0,
+          "margin": -162.0,
+          "gain": -65.0
+        },
+        {
+          "episode": 115933722,
+          "parent_margin": -5998.0,
+          "margin": -6074.0,
+          "gain": -76.0
+        },
+        {
+          "episode": 115936559,
+          "parent_margin": -268.0,
+          "margin": -229.0,
+          "gain": 39.0
+        },
+        {
+          "episode": 115937772,
+          "parent_margin": -906.0,
+          "margin": -752.0,
+          "gain": 154.0
+        },
+        {
+          "episode": 115938075,
+          "parent_margin": -95.0,
+          "margin": -66.0,
+          "gain": 29.0
+        },
+        {
+          "episode": 115939202,
+          "parent_margin": -2680.0,
+          "margin": -2871.0,
+          "gain": -191.0
+        },
+        {
+          "episode": 115939598,
+          "parent_margin": -75.0,
+          "margin": -105.0,
+          "gain": -30.0
+        },
+        {
+          "episode": 115941142,
+          "parent_margin": -2297.0,
+          "margin": -1987.0,
+          "gain": 310.0
+        },
+        {
+          "episode": 115941386,
+          "parent_margin": -2907.0,
+          "margin": -2907.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115942658,
+          "parent_margin": -123.0,
+          "margin": 8.0,
+          "gain": 131.0
+        }
+      ]
+    },
+    "f20_value": {
+      "games": 23,
+      "wins": 1,
+      "ties": 0,
+      "mean_margin": -1197.8695652173913,
+      "errors": 0,
+      "rival_retention_range": [
+        0.9728,
+        1.004
+      ],
+      "mean_paired_margin_gain": 232.8695652173913,
+      "parent_losses_flipped": 1,
+      "parent_wins_lost": 0,
+      "per_episode": [
+        {
+          "episode": 115899730,
+          "parent_margin": -53.0,
+          "margin": -21.0,
+          "gain": 32.0
+        },
+        {
+          "episode": 115887745,
+          "parent_margin": -6555.0,
+          "margin": -6555.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115900067,
+          "parent_margin": -263.0,
+          "margin": -102.0,
+          "gain": 161.0
+        },
+        {
+          "episode": 115908873,
+          "parent_margin": -187.0,
+          "margin": -48.0,
+          "gain": 139.0
+        },
+        {
+          "episode": 115909216,
+          "parent_margin": -397.0,
+          "margin": -60.0,
+          "gain": 337.0
+        },
+        {
+          "episode": 115910656,
+          "parent_margin": -211.0,
+          "margin": -268.0,
+          "gain": -57.0
+        },
+        {
+          "episode": 115915148,
+          "parent_margin": -7709.0,
+          "margin": -7709.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115920903,
+          "parent_margin": -681.0,
+          "margin": -599.0,
+          "gain": 82.0
+        },
+        {
+          "episode": 115923003,
+          "parent_margin": -497.0,
+          "margin": -515.0,
+          "gain": -18.0
+        },
+        {
+          "episode": 115924257,
+          "parent_margin": -136.0,
+          "margin": -71.0,
+          "gain": 65.0
+        },
+        {
+          "episode": 115926016,
+          "parent_margin": -263.0,
+          "margin": -206.0,
+          "gain": 57.0
+        },
+        {
+          "episode": 115927302,
+          "parent_margin": -242.0,
+          "margin": -104.0,
+          "gain": 138.0
+        },
+        {
+          "episode": 115930651,
+          "parent_margin": -97.0,
+          "margin": -162.0,
+          "gain": -65.0
+        },
+        {
+          "episode": 115933479,
+          "parent_margin": -267.0,
+          "margin": -316.0,
+          "gain": -49.0
+        },
+        {
+          "episode": 115933722,
+          "parent_margin": -5998.0,
+          "margin": -1906.0,
+          "gain": 4092.0
+        },
+        {
+          "episode": 115936559,
+          "parent_margin": -268.0,
+          "margin": -229.0,
+          "gain": 39.0
+        },
+        {
+          "episode": 115937772,
+          "parent_margin": -906.0,
+          "margin": -752.0,
+          "gain": 154.0
+        },
+        {
+          "episode": 115939202,
+          "parent_margin": -2680.0,
+          "margin": -2871.0,
+          "gain": -191.0
+        },
+        {
+          "episode": 115938075,
+          "parent_margin": -95.0,
+          "margin": -66.0,
+          "gain": 29.0
+        },
+        {
+          "episode": 115941142,
+          "parent_margin": -2297.0,
+          "margin": -1987.0,
+          "gain": 310.0
+        },
+        {
+          "episode": 115939598,
+          "parent_margin": -75.0,
+          "margin": -105.0,
+          "gain": -30.0
+        },
+        {
+          "episode": 115941386,
+          "parent_margin": -2907.0,
+          "margin": -2907.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115942658,
+          "parent_margin": -123.0,
+          "margin": 8.0,
+          "gain": 131.0
+        }
+      ]
+    },
+    "f20_woolfast": {
+      "games": 23,
+      "wins": 0,
+      "ties": 0,
+      "mean_margin": -1238.391304347826,
+      "errors": 0,
+      "rival_retention_range": [
+        0.969,
+        1.0004
+      ],
+      "mean_paired_margin_gain": 192.34782608695653,
+      "parent_losses_flipped": 0,
+      "parent_wins_lost": 0,
+      "per_episode": [
+        {
+          "episode": 115899730,
+          "parent_margin": -53.0,
+          "margin": -53.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115887745,
+          "parent_margin": -6555.0,
+          "margin": -6555.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115908873,
+          "parent_margin": -187.0,
+          "margin": -187.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115909216,
+          "parent_margin": -397.0,
+          "margin": -397.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115900067,
+          "parent_margin": -263.0,
+          "margin": -263.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115910656,
+          "parent_margin": -211.0,
+          "margin": -211.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115924257,
+          "parent_margin": -136.0,
+          "margin": -136.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115923003,
+          "parent_margin": -497.0,
+          "margin": -497.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115920903,
+          "parent_margin": -681.0,
+          "margin": -681.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115915148,
+          "parent_margin": -7709.0,
+          "margin": -7709.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115927302,
+          "parent_margin": -242.0,
+          "margin": -242.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115926016,
+          "parent_margin": -263.0,
+          "margin": -263.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115930651,
+          "parent_margin": -97.0,
+          "margin": -97.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115933479,
+          "parent_margin": -267.0,
+          "margin": -267.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115933722,
+          "parent_margin": -5998.0,
+          "margin": -1574.0,
+          "gain": 4424.0
+        },
+        {
+          "episode": 115936559,
+          "parent_margin": -268.0,
+          "margin": -268.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115937772,
+          "parent_margin": -906.0,
+          "margin": -906.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115938075,
+          "parent_margin": -95.0,
+          "margin": -95.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115939202,
+          "parent_margin": -2680.0,
+          "margin": -2680.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115939598,
+          "parent_margin": -75.0,
+          "margin": -75.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115941142,
+          "parent_margin": -2297.0,
+          "margin": -2297.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115941386,
+          "parent_margin": -2907.0,
+          "margin": -2907.0,
+          "gain": 0.0
+        },
+        {
+          "episode": 115942658,
+          "parent_margin": -123.0,
+          "margin": -123.0,
+          "gain": 0.0
+        }
+      ]
+    }
+  }
+}

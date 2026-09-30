@@ -1,0 +1,32 @@
+{
+  "updated_utc": "2026-09-30T22:03:40.611910+00:00",
+  "task": "One immediate private experimental f20_value submission requested; complete frozen controls and send a second only if improved over the first release.",
+  "repo": "C:\\Users\\Arturo\\Documents\\RSNA - ChatGPT\\kaggriculture-lab",
+  "running_exec_session": 97119,
+  "pipeline": "Waiting/evaluation process has already rejected the original480-game candidate and is now running the frozen640-game value_gate panel. It automatically calls validate_f20_value.py assess after completion.",
+  "selected_sources": {
+    "f20_value": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+    "f20_fill": "9924b8f2dec2930a046e0edee28463f6cda2e64453252e04bfeba2d50d5a2a8a"
+  },
+  "original_rejection": "145points vs Market2 144, below +4 required; nonmirror -2 vs Market2 and -1 vs Market1. Preserve results/frontier20/selection_decision.json.",
+  "grigor": "User withdrew optional investigation if source unavailable. Team16945978 and8 public replays found; no exact source and no victory verified. No further Grigor work required.",
+  "next_steps": [
+    "Finish/reconcile submission session8522; save exact receipt and confirm active pair. Never duplicate the first intent.",
+    "Run report_f20.py and commit/push the private repository.",
+    "Wait for panel session97119; preserve frozen thresholds and root experimental release.",
+    "Compare f20_fill against deployed f20_value after controls: already identical wins/losses in all160 games, so a tie does not authorize the second plaza.",
+    "Record final control result and second-submission decision, update docs and push."
+  ],
+  "deadline_utc": "2026-09-30T23:59:00Z",
+  "authorized_submissions_remaining": "1 conditional only if completed controls demonstrate improvement over f20_value",
+  "submissions_in_this_round": 1,
+  "notebook_pushed": true,
+  "github_pushed": false,
+  "github": "Arturo-GA/kaggriculture-lab private verified; main and origin/main at67a5668 before this round.",
+  "evidence": "Initial23 losses reconstructed exactly; all original policies replay their23 losses exactly. F20 value diagnostic completed23 with1flip and+232.87 mean paired margin; fill1flip,+51.65. Frozen replays are diagnosis only.",
+  "caution": "No guaranteed rank/rating/medal. New notebook source may be rewritten by Kaggle metadata; compare cell sources rather than raw notebook byte hash.",
+  "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
+  "notebook_private_verified": true,
+  "submission_exec_session": 8522,
+  "first_submission": 56719762
+}

@@ -1,0 +1,12 @@
+{
+  "selected": [],
+  "source_plans": {
+    "f20_delivery": "results/frontier20/plan.json"
+  },
+  "decided_utc": "2026-09-30T21:29:33.375452+00:00",
+  "authorization": "Arturo: solo una submission privada; revisar todas las derrotas de las últimas dos submissions y enviar en cuanto haya una mejora validada.",
+  "caveat": "Eight seeds are the independent clusters. Public opponents share ancestry; paired local gains and replay diagnostics do not assure a top300-400 rank or a silver medal.",
+  "validation_status": {
+    "f20_delivery": "failed_frozen_criteria"
+  }
+}

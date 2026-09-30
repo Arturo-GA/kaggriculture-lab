@@ -1,0 +1,25 @@
+{
+  "candidates": {
+    "f20_value": {
+      "checked_utc": "2026-09-30T21:19:09.216004+00:00",
+      "source_sha256": "ff3912c470accddb0b8dd1e1329e5195ea59f57486134d6f2d811ae6f5713d07",
+      "delivery_and_value_contracts": {
+        "tests": 6,
+        "passed": 6,
+        "log": "python -m unittest test_frontier20_value.ValueContracts -v passed all six tests during this session; includes real-loss, food/care and flat-price regressions."
+      },
+      "inherited_feed_contracts": {
+        "tests": 4,
+        "passed": 4,
+        "log": "test_no_rescue_on_final_day_or_without_cash (__main__.ValueFeedContracts.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.ValueFeedContracts.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.ValueFeedContracts.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.ValueFeedContracts.test_rescue_preserves_capacity_guard) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.025s\n\nOK\n"
+      }
+    },
+    "f20_fill": {
+      "checked_utc": "2026-09-30T21:23:05.762476+00:00",
+      "source_sha256": "9924b8f2dec2930a046e0edee28463f6cda2e64453252e04bfeba2d50d5a2a8a",
+      "tests": 8,
+      "passed": 8,
+      "log": "test_real_egg_residual_is_covered_and_commands_are_preserved (__main__.FillSales.test_real_egg_residual_is_covered_and_commands_are_preserved) ... ok\ntest_final_day_and_unrelated_farms_keep_parent_policy (__main__.FillSales.test_final_day_and_unrelated_farms_keep_parent_policy) ... ok\ntest_feed_and_care_still_precede_departure (__main__.FillSales.test_feed_and_care_still_precede_departure) ... ok\ntest_optional_fertilizer_returns_after_wool_delivery (__main__.FillSales.test_optional_fertilizer_returns_after_wool_delivery) ... ok\ntest_no_rescue_on_final_day_or_without_cash (__main__.FillFeed.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.FillFeed.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.FillFeed.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.FillFeed.test_rescue_preserves_capacity_guard) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.961s\n\nOK\n"
+    }
+  }
+}

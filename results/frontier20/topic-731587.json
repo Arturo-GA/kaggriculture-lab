@@ -1,0 +1,53 @@
+{
+  "messages": [
+    {
+      "id": 3524683,
+      "post_date": "2026-09-15T15:52:55.707000",
+      "content": "<p>Thanks for clarifying the final evaluation. Two questions on the Bradley-Terry tournament:</p>\n<ol>\n<li>Will the tournament be fit on only the episodes played oct 1-15 oct, or on the full episode history including pre-deadline games?</li>\n<li>Are ties counted as half a win, and is the first regularised in any way?</li>\n</ol>",
+      "raw_markdown": "Thanks for clarifying the final evaluation. Two questions on the Bradley-Terry tournament:\n1. Will the tournament be fit on only the episodes played oct 1-15 oct, or on the full episode history including pre-deadline games?\n2. Are ties counted as half a win, and is the first regularised in any way?",
+      "author_name": null,
+      "votes": 2,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3506624,
+      "post_date": "2026-07-31T17:03:26.330000",
+      "content": "<p>Hi everyone,</p>\n<p>For those of you familiar with Kaggle simulations, you may notice the final evaluation is different compared to other competitions of the same format. At the submission deadline, we will continue allowing submissions to run episodes for two weeks. At the end of those two weeks, we will be running a single Bradley-Terry Tournament, which will determine the final leaderboard rankings. This is also specified in the <a href=\"https://www.kaggle.com/competitions/kaggriculture/overview/evaluation\" target=\"_blank\">Evaluation</a> section in the Overview tab. While this is different from other simulations, we believe this change reduces any \"hot streaks\" that may otherwise influence the final results.</p>\n<p>Happy farming! 👨‍🌾</p>",
+      "raw_markdown": "Hi everyone,\n\nFor those of you familiar with Kaggle simulations, you may notice the final evaluation is different compared to other competitions of the same format. At the submission deadline, we will continue allowing submissions to run episodes for two weeks. At the end of those two weeks, we will be running a single Bradley-Terry Tournament, which will determine the final leaderboard rankings. This is also specified in the [Evaluation](https://www.kaggle.com/competitions/kaggriculture/overview/evaluation) section in the Overview tab. While this is different from other simulations, we believe this change reduces any \"hot streaks\" that may otherwise influence the final results.\n\nHappy farming! 👨‍🌾",
+      "author_name": null,
+      "votes": 25,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3526018,
+      "post_date": "2026-09-19T22:16:45.890000",
+      "content": null,
+      "raw_markdown": "",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": true,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3525519,
+      "post_date": "2026-09-18T00:14:21.070000",
+      "content": "<p>thank you for your sharing </p>",
+      "raw_markdown": "thank you for your sharing \n",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    }
+  ],
+  "is_frozen": true
+}
