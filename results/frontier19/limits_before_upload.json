@@ -1,0 +1,7 @@
+{
+  "num_today": 0,
+  "num_total": 30,
+  "num_allowed_now": 5,
+  "limited_by_total": false,
+  "is_frozen": true
+}

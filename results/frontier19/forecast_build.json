@@ -1,0 +1,14 @@
+{
+  "f19_recent65": {
+    "sha256": "5f71d39adeb5999752706463da56355a06b9f7487e274c5b2ed5afbbec8ee9f4",
+    "precision": 0.65,
+    "advantage": 0,
+    "data_sha256": "12a95192b3151c50822532919230bee537374ea799db5bc693c9f18152d43d7f"
+  },
+  "f19_recent80": {
+    "sha256": "6eb91d729278ee68f834e0053f9f5bdb5f50c21ee2826a2422aa67beb4a7f025",
+    "precision": 0.8,
+    "advantage": 2,
+    "data_sha256": "12a95192b3151c50822532919230bee537374ea799db5bc693c9f18152d43d7f"
+  }
+}

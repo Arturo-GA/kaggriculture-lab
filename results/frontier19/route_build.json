@@ -1,0 +1,16 @@
+{
+  "f19_routes_plain": {
+    "sha256": "0f6de1c6ef9559beb2853c2ad500dc6eb4e961243318d3c62913b3d52f404488",
+    "routes": 21,
+    "sell_lead": false,
+    "bytes": 282790,
+    "data_sha256": "c3b93576d449921f632d73268e432773f0c4338fe6810ffe01fdbb0dc713eaa6"
+  },
+  "f19_routes_lead": {
+    "sha256": "55fce784d470bd26e589e22ff8c1cab3aa697aeddcfa7ac18c55bb8967080907",
+    "routes": 21,
+    "sell_lead": true,
+    "bytes": 282789,
+    "data_sha256": "c3b93576d449921f632d73268e432773f0c4338fe6810ffe01fdbb0dc713eaa6"
+  }
+}

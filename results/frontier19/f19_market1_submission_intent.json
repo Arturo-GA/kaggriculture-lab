@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-30T17:19:08.322181+00:00",
+  "description": "Frontier19 f19_market1 (ed66b321)",
+  "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas",
+  "archive_sha256": "fc9b6f213b3eb1cae5b31fa8a810db05b99864688286a90b56093e04a16243ff",
+  "candidate_sha256": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+  "members_sha256": {
+    "main.py": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "eefaa3bac6796afa671797baade8d2af74d7edd97ca046ce92e1410396312ff7"
+  }
+}

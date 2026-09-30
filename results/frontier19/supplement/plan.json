@@ -1,0 +1,48 @@
+{
+  "registered_at": "2026-09-30T17:01:52.458583+00:00",
+  "candidates": [
+    "f19_market1",
+    "f19_market8"
+  ],
+  "control": "f18_small",
+  "opponents": [
+    "f18_small",
+    "f17_selected",
+    "n30_lynnsakurai_031656"
+  ],
+  "seeds": [
+    19301,
+    19302,
+    19303,
+    19304,
+    19305,
+    19306,
+    19307,
+    19308
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 144,
+  "hashes": {
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f18_small": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "f19_market1": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+    "f19_market8": "1b02778848639dfee6d17038f6d1990ffd9c9ab70f2f9cf12b61b0b28063dc50",
+    "n30_lynnsakurai_031656": "03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82"
+  },
+  "gate": {
+    "score_delta_min": 2,
+    "nonmirror_delta_min": -1,
+    "per_opponent_floor": -2,
+    "head_to_head_score_min": 9,
+    "positive_seed_deltas_min": 3,
+    "errors": 0,
+    "max_call_ms": 1000
+  },
+  "selection": "One candidate for the second slot, ranked by paired score gain then paired mean margin, after all criteria pass. The first slot remains the original passing Market2. No retuning on 19301..19308.",
+  "reason": "Round one preserves the Robust failure (-3 against Lynn). Compare direct response and deeper iterative response in new worlds. The two weaker production rivals tied in round one and are omitted here to focus on the stronger relevant opponents.",
+  "limitations": "This is an adaptive research campaign with multiple candidates; passing a later panel does not erase earlier failures or establish rating. Eight new seeds; correlated public families.",
+  "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas"
+}

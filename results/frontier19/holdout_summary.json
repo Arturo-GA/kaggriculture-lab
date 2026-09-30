@@ -1,0 +1,173 @@
+{
+  "complete": true,
+  "engine": "1.32.7",
+  "games": 400,
+  "scores": {
+    "f19_market2": 75.0,
+    "f19_robust": 76.0,
+    "f19_balanced": 61.0,
+    "f19_pressure": 48.0,
+    "f18_small": 72.0
+  },
+  "candidates": {
+    "f19_market2": {
+      "pass_gate": true,
+      "checks": {
+        "score_delta": true,
+        "nonmirror": true,
+        "opponent_floor": true,
+        "head_to_head": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 3.0,
+      "nonmirror_delta": 0.0,
+      "head_to_head_score": 11.0,
+      "per_opponent_delta": {
+        "f18_small": 3.0,
+        "f17_selected": 0.0,
+        "n30_lynnsakurai_031656": 0.0,
+        "d25_tschinkel_b87a27": 0.0,
+        "d25_boatlee_c4a696": 0.0
+      },
+      "per_seed_delta": {
+        "19101": 1.0,
+        "19102": -1.0,
+        "19103": 1.0,
+        "19104": -1.0,
+        "19105": 1.0,
+        "19106": 1.0,
+        "19107": 0.0,
+        "19108": 1.0
+      },
+      "max_call_ms": 963.382099987939,
+      "error_games": 0,
+      "wlt": [
+        75,
+        5,
+        0
+      ]
+    },
+    "f19_robust": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": true,
+        "nonmirror": false,
+        "opponent_floor": false,
+        "head_to_head": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 4.0,
+      "nonmirror_delta": -3.0,
+      "head_to_head_score": 15.0,
+      "per_opponent_delta": {
+        "f18_small": 7.0,
+        "f17_selected": 0.0,
+        "n30_lynnsakurai_031656": -3.0,
+        "d25_tschinkel_b87a27": 0.0,
+        "d25_boatlee_c4a696": 0.0
+      },
+      "per_seed_delta": {
+        "19101": 1.0,
+        "19102": 1.0,
+        "19103": -1.0,
+        "19104": 1.0,
+        "19105": 1.0,
+        "19106": 1.0,
+        "19107": -1.0,
+        "19108": 1.0
+      },
+      "max_call_ms": 569.7194000240415,
+      "error_games": 0,
+      "wlt": [
+        76,
+        4,
+        0
+      ]
+    },
+    "f19_balanced": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": false,
+        "nonmirror": false,
+        "opponent_floor": false,
+        "head_to_head": true,
+        "positive_worlds": false,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": -11.0,
+      "nonmirror_delta": -14.0,
+      "head_to_head_score": 11.0,
+      "per_opponent_delta": {
+        "f18_small": 3.0,
+        "f17_selected": -7.0,
+        "n30_lynnsakurai_031656": -7.0,
+        "d25_tschinkel_b87a27": 0.0,
+        "d25_boatlee_c4a696": 0.0
+      },
+      "per_seed_delta": {
+        "19101": 1.0,
+        "19102": -1.0,
+        "19103": -1.0,
+        "19104": -3.0,
+        "19105": 1.0,
+        "19106": -5.0,
+        "19107": -2.0,
+        "19108": -1.0
+      },
+      "max_call_ms": 604.6120999963023,
+      "error_games": 0,
+      "wlt": [
+        61,
+        19,
+        0
+      ]
+    },
+    "f19_pressure": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": false,
+        "nonmirror": false,
+        "opponent_floor": false,
+        "head_to_head": false,
+        "positive_worlds": false,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": -24.0,
+      "nonmirror_delta": -16.0,
+      "head_to_head_score": 0.0,
+      "per_opponent_delta": {
+        "f18_small": -8.0,
+        "f17_selected": -16.0,
+        "n30_lynnsakurai_031656": 0.0,
+        "d25_tschinkel_b87a27": 0.0,
+        "d25_boatlee_c4a696": 0.0
+      },
+      "per_seed_delta": {
+        "19101": -3.0,
+        "19102": -3.0,
+        "19103": -3.0,
+        "19104": -3.0,
+        "19105": -3.0,
+        "19106": -3.0,
+        "19107": -3.0,
+        "19108": -3.0
+      },
+      "max_call_ms": 511.8137000245042,
+      "error_games": 0,
+      "wlt": [
+        48,
+        32,
+        0
+      ]
+    }
+  },
+  "plan_sha256": "cb9ef5049455e8772c0ea2c55991795dc77a6612c6a82b7310049fd4b43dbaa4",
+  "holdout_sha256": "21ad4774bc6973bc1970591a33d73a2ce19b21c5d82b01dd0df370962b832e05",
+  "both_pass": false
+}

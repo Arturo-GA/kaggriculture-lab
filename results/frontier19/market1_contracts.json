@@ -1,0 +1,7 @@
+{
+  "candidate": "f19_market1",
+  "sha256": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+  "tests": 4,
+  "passed": true,
+  "log": "test_no_rescue_on_final_day_or_without_cash (__main__.Market1FeedContracts.test_no_rescue_on_final_day_or_without_cash) ... ok\ntest_positive_pickup_is_not_reinterpreted_as_deadlock (__main__.Market1FeedContracts.test_positive_pickup_is_not_reinterpreted_as_deadlock) ... ok\ntest_real_zero_pickup_buys_missing_feed_without_changing_commands (__main__.Market1FeedContracts.test_real_zero_pickup_buys_missing_feed_without_changing_commands) ... ok\ntest_rescue_preserves_capacity_guard (__main__.Market1FeedContracts.test_rescue_preserves_capacity_guard) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 1.594s\n\nOK\n"
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "f19_oneherd",
+  "sha256": "a6241af7f308901d1ebcbd9c4dbdfa33ccd4f5ba5eb91b41a919dad2f0bf0715",
+  "parent_sha256": "416a46b1648dd3647a26417bbac411a08697f5ce9cf02555830dc5e11b118791",
+  "created_utc": "2026-09-30T16:51:45.504220+00:00",
+  "hypothesis": "At most one future single-unit sheep purchase changes species, only with predicted gain >=400 and >=10%, and a feasible same-day transport/build plan. Cow is considered if a goose coop cannot be built on that route.",
+  "validation": "Separate exploration only. Not part of frozen 19101..19108 selection. Needs fresh independent confirmation before submission."
+}

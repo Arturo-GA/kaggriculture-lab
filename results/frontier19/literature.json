@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-30T16:43:51.849471+00:00",
+  "sources": [
+    {
+      "title": "Code-Space Response Oracles: Generating Interpretable Multi-Agent Policies with Large Language Models",
+      "url": "https://arxiv.org/abs/2603.10098",
+      "date": "2026-03-10",
+      "scope": "Abstract and metadata reviewed; related methodology, not an implementation claim."
+    },
+    {
+      "title": "An Open-Ended Learning Framework for Opponent Modeling",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34488",
+      "date": "2025-04-11",
+      "scope": "Abstract reviewed; supports diverse-opponent validation rationale, not a Kaggriculture performance claim."
+    }
+  ]
+}

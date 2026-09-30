@@ -1,0 +1,89 @@
+{
+  "complete": true,
+  "engine": "1.32.7",
+  "games": 144,
+  "scores": {
+    "f19_market1": 44.0,
+    "f19_market8": 34.0,
+    "f18_small": 38.0
+  },
+  "candidates": {
+    "f19_market1": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": true,
+        "nonmirror": false,
+        "opponent_floor": true,
+        "head_to_head": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": 6.0,
+      "nonmirror_delta": -2.0,
+      "head_to_head_score": 16.0,
+      "per_opponent_delta": {
+        "f18_small": 8.0,
+        "f17_selected": 0.0,
+        "n30_lynnsakurai_031656": -2.0
+      },
+      "per_seed_delta": {
+        "19301": 1.0,
+        "19302": 1.0,
+        "19303": 1.0,
+        "19304": 1.0,
+        "19305": 1.0,
+        "19306": -1.0,
+        "19307": 1.0,
+        "19308": 1.0
+      },
+      "max_call_ms": 254.3306999723427,
+      "error_games": 0,
+      "wlt": [
+        44,
+        4,
+        0
+      ]
+    },
+    "f19_market8": {
+      "pass_gate": false,
+      "checks": {
+        "score_delta": false,
+        "nonmirror": false,
+        "opponent_floor": true,
+        "head_to_head": false,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "score_delta": -4.0,
+      "nonmirror_delta": -4.0,
+      "head_to_head_score": 8.0,
+      "per_opponent_delta": {
+        "f18_small": 0.0,
+        "f17_selected": -2.0,
+        "n30_lynnsakurai_031656": -2.0
+      },
+      "per_seed_delta": {
+        "19301": -3.0,
+        "19302": -1.0,
+        "19303": 1.0,
+        "19304": 1.0,
+        "19305": 1.0,
+        "19306": -3.0,
+        "19307": -1.0,
+        "19308": 1.0
+      },
+      "max_call_ms": 299.40080002415925,
+      "error_games": 0,
+      "wlt": [
+        34,
+        14,
+        0
+      ]
+    }
+  },
+  "plan_sha256": "0b240796d0ec7bb23ce820255d42d6676ed0ab0f6ceacff26793a4bca48a98f1",
+  "holdout_sha256": "a6b930e965c1a0061356507ea7e31f13168ef2c3806e5ca1532cef06d3bf996b",
+  "both_pass": false
+}

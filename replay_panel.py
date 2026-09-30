@@ -1,12 +1,12 @@
 """Frozen-rival replay panel: replay our live games in the official engine with the SAME seed, the rival's recorded
 action stream and a candidate agent playing our seat live.  Measures how many recorded results a candidate would flip.
 
-Caveat (Tschinkel, lesson 2): a frozen rival cannot react.  Each row therefore records how much of its recorded bank the
-frozen rival keeps; judge only games where it keeps >= 95 %.
+Caveat: a frozen rival cannot react. Rival bank retention is descriptive only;
+even 100% retention does not make a counterfactual game a valid competitive test.
 
 Usage: python replay_panel.py <agent.py> [<agent2.py> ...] --workers 6 [--limit N] [--out file.json]
 """
-import argparse, contextlib, gzip, io, json, time
+import argparse, contextlib, gzip, hashlib, io, json, time
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
@@ -47,7 +47,8 @@ def game(job):
                 own=rew[seat], rival=rew[rival], rival_recorded=recorded[rival],
                 rival_kept=round(rew[rival] / recorded[rival], 4) if recorded[rival] else None,
                 status=[s['status'] for s in final], errors=errors, seconds=round(time.time() - t0, 1),
-                telemetry={k: v for k, v in dict(tel or {}).items() if k.startswith(('f9_', 'br_'))})
+                telemetry=dict(tel or {}), steps=len(env.steps),
+                sha256=hashlib.sha256(Path(agent_path).read_bytes()).hexdigest())
 
 
 def main():
@@ -81,11 +82,9 @@ def main():
     for p in a.agents:
         name = Path(p).stem
         rs = [r for r in rows if r['agent'] == name]
-        ok = [r for r in rs if r['rival_kept'] is not None and r['rival_kept'] >= 0.95]
         print(f"== {name}: games {len(rs)} | recorded wins {sum(r['recorded_margin'] > 0 for r in rs)} | replayed wins {sum(r['margin'] > 0 for r in rs)}"
-              f" | valid (rival keeps >=95%) {len(ok)}: recorded wins {sum(r['recorded_margin'] > 0 for r in ok)} -> {sum(r['margin'] > 0 for r in ok)}"
-              f" | L->W {sum(r['recorded_margin'] <= 0 < r['margin'] for r in ok)} W->L {sum(r['margin'] <= 0 < r['recorded_margin'] for r in ok)}"
-              f" | mean margin change {sum(r['margin'] - r['recorded_margin'] for r in ok) / max(1, len(ok)):+.0f}")
+              f" | L->W {sum(r['recorded_margin'] <= 0 < r['margin'] for r in rs)} W->L {sum(r['margin'] <= 0 < r['recorded_margin'] for r in rs)}"
+              f" | mean margin change {sum(r['margin'] - r['recorded_margin'] for r in rs) / max(1, len(rs)):+.0f} | DIAGNOSTIC ONLY: rival cannot react")
 
 
 if __name__ == '__main__':

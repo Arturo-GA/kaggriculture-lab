@@ -1,0 +1,19 @@
+{
+  "selected": [
+    "f19_market2",
+    "f19_market1"
+  ],
+  "source_plans": {
+    "f19_market2": "results/frontier19/plan.json",
+    "f19_market1": "results/frontier19/supplement/plan.json"
+  },
+  "validation_status": {
+    "f19_market2": "passed_all_frozen_criteria",
+    "f19_market1": "exploratory_with_disclosed_nonmirror_regression"
+  },
+  "supplemental_panel": true,
+  "strict_selection_file": "results/frontier19/selection_decision.json",
+  "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas",
+  "rationale": "The current request authorizes two experimental submissions. Preserve Market2 as the fully qualified slot. Use Market1 as an explicitly exploratory second approach: +6 paired points overall and 16/16 vs F18, but -2 against Lynn where the frozen nonmirror floor was -1. No criterion or failed result is changed. Stop searching for a passing sample. The two policies address different rival behaviors; no universal improvement or leaderboard rank is claimed.",
+  "decided_utc": "2026-09-30T17:12:05.878731+00:00"
+}

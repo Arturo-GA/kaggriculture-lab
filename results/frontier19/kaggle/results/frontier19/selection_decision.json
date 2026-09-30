@@ -1,0 +1,57 @@
+{
+  "selected": [
+    "f19_market2"
+  ],
+  "source_plans": {
+    "f19_market2": "results/frontier19/plan.json"
+  },
+  "supplement": {
+    "ranking": [],
+    "plan_sha256": "0b240796d0ec7bb23ce820255d42d6676ed0ab0f6ceacff26793a4bca48a98f1",
+    "holdout_sha256": "a6b930e965c1a0061356507ea7e31f13168ef2c3806e5ca1532cef06d3bf996b"
+  },
+  "ranking": [
+    {
+      "candidate": "f19_market2",
+      "pass_gate": true,
+      "score_delta": 3.0,
+      "mean_paired_margin_gain": 10.025,
+      "sha256": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516"
+    }
+  ],
+  "all_candidates": [
+    {
+      "candidate": "f19_market2",
+      "pass_gate": true,
+      "score_delta": 3.0,
+      "mean_paired_margin_gain": 10.025,
+      "sha256": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516"
+    },
+    {
+      "candidate": "f19_robust",
+      "pass_gate": false,
+      "score_delta": 4.0,
+      "mean_paired_margin_gain": 18.45,
+      "sha256": "416a46b1648dd3647a26417bbac411a08697f5ce9cf02555830dc5e11b118791"
+    },
+    {
+      "candidate": "f19_balanced",
+      "pass_gate": false,
+      "score_delta": -11.0,
+      "mean_paired_margin_gain": -165.725,
+      "sha256": "8bf6b2783673c2ce0648b2c52b04bfec97edc2771ad12e7920daefc96bf162db"
+    },
+    {
+      "candidate": "f19_pressure",
+      "pass_gate": false,
+      "score_delta": -24.0,
+      "mean_paired_margin_gain": -414.675,
+      "sha256": "b67bf1080c9124464dc862404b4be6cae754e43130607a6699e8e6282fcd04aa"
+    }
+  ],
+  "decided_utc": "2026-09-30T17:10:26.885699+00:00",
+  "plan_sha256": "cb9ef5049455e8772c0ea2c55991795dc77a6612c6a82b7310049fd4b43dbaa4",
+  "holdout_sha256": "21ad4774bc6973bc1970591a33d73a2ce19b21c5d82b01dd0df370962b832e05",
+  "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas",
+  "caveat": "Sequential research campaign. First and supplemental panels have different fresh seeds and opponent counts; do not compare their raw win rates. Correlated public rivals and small money differences. No leaderboard rank prediction."
+}

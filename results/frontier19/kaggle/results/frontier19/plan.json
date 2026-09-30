@@ -1,0 +1,55 @@
+{
+  "registered_at": "2026-09-30T16:25:32.693968+00:00",
+  "candidates": [
+    "f19_market2",
+    "f19_robust",
+    "f19_balanced",
+    "f19_pressure"
+  ],
+  "control": "f18_small",
+  "opponents": [
+    "f18_small",
+    "f17_selected",
+    "n30_lynnsakurai_031656",
+    "d25_tschinkel_b87a27",
+    "d25_boatlee_c4a696"
+  ],
+  "seeds": [
+    19101,
+    19102,
+    19103,
+    19104,
+    19105,
+    19106,
+    19107,
+    19108
+  ],
+  "seats": [
+    0,
+    1
+  ],
+  "expected_games": 400,
+  "hashes": {
+    "d25_boatlee_c4a696": "c4a6964cec3c1c99207c32bb1fd91e53c3ec01e6890da5734331cbeab1cc1267",
+    "d25_tschinkel_b87a27": "b87a27ed614a33329be85f1b662e51cf4078a019fee937afcebbbbf2f51f8522",
+    "f17_selected": "62b766886208e572462c19f45706cf9d0eded7d048c39a55a6093212bd72426f",
+    "f18_small": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135",
+    "f19_balanced": "8bf6b2783673c2ce0648b2c52b04bfec97edc2771ad12e7920daefc96bf162db",
+    "f19_market2": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516",
+    "f19_pressure": "b67bf1080c9124464dc862404b4be6cae754e43130607a6699e8e6282fcd04aa",
+    "f19_robust": "416a46b1648dd3647a26417bbac411a08697f5ce9cf02555830dc5e11b118791",
+    "n30_lynnsakurai_031656": "03165654e70bd04479a1db776f58146531c320e622db09b9e59ae0a4353c7b82"
+  },
+  "gate": {
+    "score_delta_min": 2,
+    "nonmirror_delta_min": -1,
+    "per_opponent_floor": -2,
+    "head_to_head_score_min": 9,
+    "positive_seed_deltas_min": 3,
+    "errors": 0,
+    "max_call_ms": 1000
+  },
+  "selection": "At most two locally promising policies by paired score improvement, then mean paired margin, provided they pass every criterion. No retuning on 19101..19108. Failures remain recorded.",
+  "limitations": "Five reactive rivals include correlated public families. Eight independent seeds and correlated seats. Wins plus half ties are not Kaggle rating; no top200 guarantee. Public top200 replays are descriptive and frozen-rival tests are diagnostic only.",
+  "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas"
+}

@@ -1,0 +1,29 @@
+{
+  "messages": [
+    {
+      "id": 3530603,
+      "post_date": "2026-09-30T14:40:28.030000",
+      "content": "<p>Hi Kaggle team,<br>\nI accidentally replaced one of the agents that I intended to keep for the final evaluation, and I have already exhausted today’s 5-submission allowance.<br>\nMy current latest two active submissions are approximately:</p>\n<ul>\n<li>1959.9 — intended final submission</li>\n<li>837.0 — accidentally retained as one of the latest two submissions\nThe immediately preceding submission, rated approximately 1996.8, is the agent that I actually intended to keep for the final evaluation together with the 1959.9 submission.\nUnfortunately, my daily submission allowance will reset only after the competition submission deadline, so I cannot simply resubmit the 1996.8 agent before submissions close.\nIs there any supported way to either:</li>\n<li>reactivate the previous 1996.8 submission, or</li>\n<li>withdraw/deactivate the accidental 837.0 submission so that the previous submission becomes active again?\nI am not requesting an additional submission or an increase in the submission quota. I am only asking whether it is possible to correct which already-submitted agents remain active for the final evaluation.\nThe deadline is only a few hours away, so I would greatly appreciate any guidance if this can be addressed before submissions close.\nThank you very much.</li>\n</ul>",
+      "raw_markdown": "Hi Kaggle team,  \nI accidentally replaced one of the agents that I intended to keep for the final evaluation, and I have already exhausted today’s 5-submission allowance.  \nMy current latest two active submissions are approximately:\n- 1959.9 — intended final submission\n- 837.0 — accidentally retained as one of the latest two submissions\nThe immediately preceding submission, rated approximately 1996.8, is the agent that I actually intended to keep for the final evaluation together with the 1959.9 submission.\nUnfortunately, my daily submission allowance will reset only after the competition submission deadline, so I cannot simply resubmit the 1996.8 agent before submissions close.\nIs there any supported way to either:\n- reactivate the previous 1996.8 submission, or\n- withdraw/deactivate the accidental 837.0 submission so that the previous submission becomes active again?\nI am not requesting an additional submission or an increase in the submission quota. I am only asking whether it is possible to correct which already-submitted agents remain active for the final evaluation.\nThe deadline is only a few hours away, so I would greatly appreciate any guidance if this can be addressed before submissions close.\nThank you very much.",
+      "author_name": null,
+      "votes": 1,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3530622,
+      "post_date": "2026-09-30T15:31:27.037000",
+      "content": "<p>No need to worry as there will be two extra weeks for further estimation. This means you must have enough time for your agents to be converged.</p>",
+      "raw_markdown": "No need to worry as there will be two extra weeks for further estimation. This means you must have enough time for your agents to be converged.\n\n",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    }
+  ],
+  "is_frozen": true
+}

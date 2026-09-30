@@ -1,0 +1,28 @@
+{
+  "f19_balanced": {
+    "sha256": "8bf6b2783673c2ce0648b2c52b04bfec97edc2771ad12e7920daefc96bf162db",
+    "quantities": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "robust_input": true
+  },
+  "f19_pressure": {
+    "sha256": "b67bf1080c9124464dc862404b4be6cae754e43130607a6699e8e6282fcd04aa",
+    "quantities": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      48,
+      64
+    ],
+    "robust_input": false
+  }
+}

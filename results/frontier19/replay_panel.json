@@ -1,0 +1,292 @@
+[
+  {
+    "id": 115841455,
+    "created": "2026-09-30 15:26:03.441000",
+    "seat": 1,
+    "my": 77417,
+    "op": 84460,
+    "margin": -7043,
+    "op_rank": 268,
+    "op_score": 2313.0,
+    "op_name": "断罪の孤高の神・大宇宙草莓覇皇",
+    "agents": [
+      {
+        "submission": 56697080,
+        "seat": 0,
+        "team_id": 16763706,
+        "team_name": "断罪の孤高の神・大宇宙草莓覇皇",
+        "reward": 84460
+      },
+      {
+        "submission": 56617687,
+        "seat": 1,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 77417
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "latest4"
+  },
+  {
+    "id": 115830861,
+    "created": "2026-09-30 14:57:59.676000",
+    "seat": 0,
+    "my": 122468,
+    "op": 122809,
+    "margin": -341,
+    "op_rank": 721,
+    "op_score": 1987.7,
+    "op_name": "ouga",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 122468
+      },
+      {
+        "submission": 56700281,
+        "seat": 1,
+        "team_id": 16770089,
+        "team_name": "ouga",
+        "reward": 122809
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "latest4"
+  },
+  {
+    "id": 115829386,
+    "created": "2026-09-30 14:53:59.856000",
+    "seat": 1,
+    "my": 84056,
+    "op": 84221,
+    "margin": -165,
+    "op_rank": 733,
+    "op_score": 1981.4,
+    "op_name": "daoviet",
+    "agents": [
+      {
+        "submission": 56665482,
+        "seat": 0,
+        "team_id": 16634179,
+        "team_name": "daoviet",
+        "reward": 84221
+      },
+      {
+        "submission": 56617687,
+        "seat": 1,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 84056
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "latest4"
+  },
+  {
+    "id": 115828502,
+    "created": "2026-09-30 14:53:58.136000",
+    "seat": 0,
+    "my": 132627,
+    "op": 133309,
+    "margin": -682,
+    "op_rank": 696,
+    "op_score": 2001.3,
+    "op_name": "molspace",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 132627
+      },
+      {
+        "submission": 56708264,
+        "seat": 1,
+        "team_id": 16638887,
+        "team_name": "molspace",
+        "reward": 133309
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "latest4"
+  },
+  {
+    "id": 115814168,
+    "created": "2026-09-30 14:13:58.667000",
+    "seat": 0,
+    "my": 78051,
+    "op": 80857,
+    "margin": -2806,
+    "op_rank": 305,
+    "op_score": 2267.0,
+    "op_name": "Erfan Eshratifar",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 78051
+      },
+      {
+        "submission": 56694095,
+        "seat": 1,
+        "team_id": 16685548,
+        "team_name": "Erfan Eshratifar",
+        "reward": 80857
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_target_loss"
+  },
+  {
+    "id": 115811217,
+    "created": "2026-09-30 14:05:59.090000",
+    "seat": 0,
+    "my": 91790,
+    "op": 105909,
+    "margin": -14119,
+    "op_rank": 144,
+    "op_score": 2458.5,
+    "op_name": "没落者",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 91790
+      },
+      {
+        "submission": 56708095,
+        "seat": 1,
+        "team_id": 16674102,
+        "team_name": "没落者",
+        "reward": 105909
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_target_loss"
+  },
+  {
+    "id": 115780893,
+    "created": "2026-09-30 12:45:59.362000",
+    "seat": 0,
+    "my": 104394,
+    "op": 115580,
+    "margin": -11186,
+    "op_rank": 130,
+    "op_score": 2475.3,
+    "op_name": "Ultracodes",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 104394
+      },
+      {
+        "submission": 56700134,
+        "seat": 1,
+        "team_id": 16910441,
+        "team_name": "Ultracodes",
+        "reward": 115580
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_target_loss"
+  },
+  {
+    "id": 115819624,
+    "created": "2026-09-30 14:30:12.341000",
+    "seat": 0,
+    "my": 91797,
+    "op": 92170,
+    "margin": -373,
+    "op_rank": 737,
+    "op_score": 1979.9,
+    "op_name": "JOSHNA ACSHA S 21CS",
+    "agents": [
+      {
+        "submission": 56617687,
+        "seat": 0,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 91797
+      },
+      {
+        "submission": 56707174,
+        "seat": 1,
+        "team_id": 16666434,
+        "team_name": "JOSHNA ACSHA S 21CS",
+        "reward": 92170
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_close_loss"
+  },
+  {
+    "id": 115820355,
+    "created": "2026-09-30 14:30:13.538000",
+    "seat": 1,
+    "my": 102256,
+    "op": 102117,
+    "margin": 139,
+    "op_rank": 672,
+    "op_score": 2012.0,
+    "op_name": "tokawa2997",
+    "agents": [
+      {
+        "submission": 56700103,
+        "seat": 0,
+        "team_id": 16939679,
+        "team_name": "tokawa2997",
+        "reward": 102117
+      },
+      {
+        "submission": 56617687,
+        "seat": 1,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 102256
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_win"
+  },
+  {
+    "id": 115804609,
+    "created": "2026-09-30 13:50:03.462000",
+    "seat": 1,
+    "my": 81006,
+    "op": 80918,
+    "margin": 88,
+    "op_rank": 647,
+    "op_score": 2024.4,
+    "op_name": "Sarah Ng",
+    "agents": [
+      {
+        "submission": 56704830,
+        "seat": 0,
+        "team_id": 16662041,
+        "team_name": "Sarah Ng",
+        "reward": 80918
+      },
+      {
+        "submission": 56617687,
+        "seat": 1,
+        "team_id": 16639155,
+        "team_name": "Arturo Gutiérrez Aguilar",
+        "reward": 81006
+      }
+    ],
+    "submission": 56617687,
+    "selection_reason": "recent_win"
+  }
+]

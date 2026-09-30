@@ -1,0 +1,2635 @@
+[
+  {
+    "key": "419a33c286406b967ea1aa775d02d6b1f8dd82acb1aec21e496baf3ef4b4d57f",
+    "count": 26,
+    "teams": 9,
+    "sw": 219.5,
+    "strawberry": 24.5,
+    "ranks": [
+      200,
+      212,
+      215,
+      218,
+      225,
+      228,
+      231,
+      234,
+      275
+    ]
+  },
+  {
+    "key": "4934c0c88378fda7224f26b4df072d725db03de96d1447c2c36c67ccc3b99b9b",
+    "count": 15,
+    "teams": 5,
+    "sw": 266,
+    "strawberry": 33,
+    "ranks": [
+      210,
+      260,
+      281,
+      289,
+      300
+    ]
+  },
+  {
+    "key": "aecfd9e6ec93275d97bf2cdd83d6ad07a0936ec474293d5157ba3fb0a2a3170b",
+    "count": 11,
+    "teams": 7,
+    "sw": 242,
+    "strawberry": 22,
+    "ranks": [
+      265,
+      266,
+      280,
+      284,
+      288,
+      290,
+      292
+    ]
+  },
+  {
+    "key": "ed30217a7379b2a001ebf9cf6577f67b18db9d9dbc85d47930d2caa5cd326ee1",
+    "count": 10,
+    "teams": 3,
+    "sw": 199.0,
+    "strawberry": 27.5,
+    "ranks": [
+      222,
+      254,
+      257
+    ]
+  },
+  {
+    "key": "b1c49a81c7294ef6e67e9d858b97801a3868193d26563bfa4cbcab6bf55fce9c",
+    "count": 8,
+    "teams": 2,
+    "sw": 199.0,
+    "strawberry": 31.5,
+    "ranks": [
+      207,
+      236
+    ]
+  },
+  {
+    "key": "c6995757b25f5694b15143208636e9e6100a7a265d2d87ed6bc0cdacd57afea4",
+    "count": 8,
+    "teams": 2,
+    "sw": 266.0,
+    "strawberry": 33.0,
+    "ranks": [
+      244,
+      255
+    ]
+  },
+  {
+    "key": "48980c29c8e4aa1fd75152675e616b73d9c979296ad0a1c9e36a7d41ea61b1e3",
+    "count": 7,
+    "teams": 2,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      211,
+      246
+    ]
+  },
+  {
+    "key": "e2ad0d9324ad73052a30ac6c989ea1f1022af3dd1eddc61213c3b8d0d4a41d2c",
+    "count": 7,
+    "teams": 6,
+    "sw": 218,
+    "strawberry": 21,
+    "ranks": [
+      212,
+      215,
+      218,
+      225,
+      231,
+      234
+    ]
+  },
+  {
+    "key": "ce6a2ce75f9ff75c7bee936687d9cfff0386dceea6fba9cccbfc281de95d862c",
+    "count": 5,
+    "teams": 2,
+    "sw": 199,
+    "strawberry": 28,
+    "ranks": [
+      208,
+      254
+    ]
+  },
+  {
+    "key": "732f47794bd6bc7ff879f56a1f3f8fa30cd42ece41c8ff176f7e8de661b45814",
+    "count": 5,
+    "teams": 4,
+    "sw": 242,
+    "strawberry": 30,
+    "ranks": [
+      266,
+      280,
+      290,
+      292
+    ]
+  },
+  {
+    "key": "762301e41335d602c1a8c22eed9182c6e9663065bb243eafb13485f8c3902d7b",
+    "count": 4,
+    "teams": 2,
+    "sw": 199.0,
+    "strawberry": 32.0,
+    "ranks": [
+      241,
+      242
+    ]
+  },
+  {
+    "key": "c7f8c7d0f47b1f977aa0644b3ed04e19cc4f354824602155c8ccf0189fc3ecd6",
+    "count": 4,
+    "teams": 1,
+    "sw": 209.0,
+    "strawberry": 28.0,
+    "ranks": [
+      240
+    ]
+  },
+  {
+    "key": "4f590e84026872b85583387a8c22c2245588627e8485de938e0cba6d0c463f42",
+    "count": 4,
+    "teams": 1,
+    "sw": 266.0,
+    "strawberry": 33.0,
+    "ranks": [
+      245
+    ]
+  },
+  {
+    "key": "5c7fc9a8a8fa77079bd32857edfb07935ca7935c225118a3a19fd1dfafe13d1c",
+    "count": 4,
+    "teams": 3,
+    "sw": 242.0,
+    "strawberry": 16.0,
+    "ranks": [
+      265,
+      280,
+      284
+    ]
+  },
+  {
+    "key": "a930130b147966ad7219fdbe5dd457815175494eecd00a5ff57525a2e462b33c",
+    "count": 4,
+    "teams": 2,
+    "sw": 224.0,
+    "strawberry": 28.0,
+    "ranks": [
+      267,
+      276
+    ]
+  },
+  {
+    "key": "1ba8fddd9d6bb24e345289f8bc55ff3706f8360e2a149889d48ca2d1b6bcf42a",
+    "count": 4,
+    "teams": 1,
+    "sw": 266.0,
+    "strawberry": 30.5,
+    "ranks": [
+      278
+    ]
+  },
+  {
+    "key": "7e7ab13a0526e0eff61fb31235e14a53cac89c73c7801531f7868c96969d9b82",
+    "count": 4,
+    "teams": 1,
+    "sw": 218.0,
+    "strawberry": 29.0,
+    "ranks": [
+      294
+    ]
+  },
+  {
+    "key": "fe94f585b0625fcc0ba99971f40e14124922ab8c7b7a54865cb6f46d84db07c2",
+    "count": 4,
+    "teams": 1,
+    "sw": 266.0,
+    "strawberry": 28.5,
+    "ranks": [
+      293
+    ]
+  },
+  {
+    "key": "d46d9f939a196588eb42574e5d2c9cb80d311e0a94944844f969e3ec567aac07",
+    "count": 4,
+    "teams": 1,
+    "sw": 266.0,
+    "strawberry": 33.0,
+    "ranks": [
+      297
+    ]
+  },
+  {
+    "key": "ad90102eb00cd0481acd93b74b09d5d9c383692e69b0d2e036bbe49d200f82c0",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      201
+    ]
+  },
+  {
+    "key": "3824465525951efafb3bdfaccd0f16ffc8f0c67f63d331523d7ca5333ef2f93b",
+    "count": 3,
+    "teams": 1,
+    "sw": 224,
+    "strawberry": 22,
+    "ranks": [
+      213
+    ]
+  },
+  {
+    "key": "59899a8c4c1f1d17d97b0c1a224c8103f149501b0f89d4905839cd03997ff8b7",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      223
+    ]
+  },
+  {
+    "key": "ec27016d07347533d5487707abae7155df5e42fab6f1f4113db551683a21a9e5",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 30,
+    "ranks": [
+      230
+    ]
+  },
+  {
+    "key": "85427ddfbbfd431eea3f2d2fbe1e3f2b27377822a55401d88269a0910cbf8f76",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 27,
+    "ranks": [
+      237
+    ]
+  },
+  {
+    "key": "8a4e59f5c1a10d1b13d0ddab2406fe834eacd94daa441d613f28c7a5e40e2a59",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      248
+    ]
+  },
+  {
+    "key": "c62b00a2c341b3d5a26b4fd3e1ea445f49e3cb4af82e201c1239507bd240dc1c",
+    "count": 3,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 20,
+    "ranks": [
+      263
+    ]
+  },
+  {
+    "key": "e9065c2de67d369687d522236aa44ccb250e34b5c7d7be6c2267764a8bad6ff4",
+    "count": 3,
+    "teams": 2,
+    "sw": 223,
+    "strawberry": 19,
+    "ranks": [
+      267,
+      276
+    ]
+  },
+  {
+    "key": "8ed001e616290f12c94f09fade4168cc52467938323e666e3ca04931a2b903c5",
+    "count": 3,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 20,
+    "ranks": [
+      270
+    ]
+  },
+  {
+    "key": "b308a277f9d6b94943098f156b015a198ab88e697fa9d3de10f449382fbd5fb9",
+    "count": 3,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 27,
+    "ranks": [
+      271
+    ]
+  },
+  {
+    "key": "e1e724ef3dce669aa73e85f819cd614503648340d1c7de6d8a83b5f896759664",
+    "count": 3,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 32,
+    "ranks": [
+      272
+    ]
+  },
+  {
+    "key": "69531d6933cb4200f82d007de5fc31e06c4e069b318af5adf2b00471ef1ff477",
+    "count": 3,
+    "teams": 1,
+    "sw": 252,
+    "strawberry": 14,
+    "ranks": [
+      273
+    ]
+  },
+  {
+    "key": "5a1731e11ac1e2de6c54baaa624d797f05a0fd80d8a2b17866bde0831f61aa96",
+    "count": 3,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 21,
+    "ranks": [
+      279
+    ]
+  },
+  {
+    "key": "5b71cd4d11951ba881f317e3b1e24168c4f7942ee9b93f4ec545a112879cc889",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 31.5,
+    "ranks": [
+      10
+    ]
+  },
+  {
+    "key": "041e0ef6db9ab8258a64b3d99691f5d37d89071c7f9f1c3c4737a6dbedd72925",
+    "count": 2,
+    "teams": 1,
+    "sw": 210.0,
+    "strawberry": 14.0,
+    "ranks": [
+      203
+    ]
+  },
+  {
+    "key": "016ce91c6c8d3c55100e417a12c5b2604dcb7a441aad7654741bae811f197553",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 22.0,
+    "ranks": [
+      204
+    ]
+  },
+  {
+    "key": "0e3b6dd11940ff8817157cffd080b271849cf538ca444ce4ba86626a6b403ac8",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 28.5,
+    "ranks": [
+      206
+    ]
+  },
+  {
+    "key": "2ab17ee26306d5b4d09a35146ccaa739335707f8cb0d336a65099bb561da012c",
+    "count": 2,
+    "teams": 2,
+    "sw": 221.0,
+    "strawberry": 27.0,
+    "ranks": [
+      217,
+      258
+    ]
+  },
+  {
+    "key": "b5b3232da819a3f8320d55de3a32838f0c7c9894712023cab193e0836eb05e6f",
+    "count": 2,
+    "teams": 2,
+    "sw": 200.0,
+    "strawberry": 19.5,
+    "ranks": [
+      220,
+      235
+    ]
+  },
+  {
+    "key": "f9a57fbc54550c77b995dc7bd3957a27819de9b15b9fa1f76ab0a6661928ecf0",
+    "count": 2,
+    "teams": 1,
+    "sw": 149.0,
+    "strawberry": 24.5,
+    "ranks": [
+      224
+    ]
+  },
+  {
+    "key": "9452c52ab1e9a5d07f752b13aa19245f8aa1be290486e322fb3559618968f8e6",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 22.0,
+    "ranks": [
+      229
+    ]
+  },
+  {
+    "key": "1e83241b32c235a8a4f5af36e70fddec51e9876874fe031055d227d397c8f59a",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 27.5,
+    "ranks": [
+      241
+    ]
+  },
+  {
+    "key": "25f7f2b6aced17749eb20e00bbfe0f7b12c784f9c37dc011248df5bc251de30e",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 33.0,
+    "ranks": [
+      253
+    ]
+  },
+  {
+    "key": "b66ae584d692604dc7f8572d42e3ec4897f57d80f4132ca319bf4d615ea61728",
+    "count": 2,
+    "teams": 2,
+    "sw": 230.0,
+    "strawberry": 28.5,
+    "ranks": [
+      265,
+      266
+    ]
+  },
+  {
+    "key": "41fba5d80dc4d35d2c81453072718a57abac17a32a9b53fc8e710042ca5583c2",
+    "count": 2,
+    "teams": 1,
+    "sw": 199.0,
+    "strawberry": 27.0,
+    "ranks": [
+      268
+    ]
+  },
+  {
+    "key": "e86ee36edf0f97010de99bc00341cc71b8f72b31079fa559a482127e40b9d34d",
+    "count": 2,
+    "teams": 1,
+    "sw": 212.0,
+    "strawberry": 28.0,
+    "ranks": [
+      269
+    ]
+  },
+  {
+    "key": "acf5dc2297a3765cd333e56687e437f32f6f4464451a5e1c257b9ab114878c60",
+    "count": 2,
+    "teams": 1,
+    "sw": 221.5,
+    "strawberry": 22.5,
+    "ranks": [
+      277
+    ]
+  },
+  {
+    "key": "45145445ef005b7678a257cd29d13d2b9433c27914e6fde6ba8017ccd816a967",
+    "count": 2,
+    "teams": 1,
+    "sw": 266.0,
+    "strawberry": 32.0,
+    "ranks": [
+      281
+    ]
+  },
+  {
+    "key": "4670c439b349d042ab0aac80eaf36903b52edff3e6d0bb06c926ae8a2ea2aa52",
+    "count": 2,
+    "teams": 2,
+    "sw": 242.0,
+    "strawberry": 30.5,
+    "ranks": [
+      284,
+      290
+    ]
+  },
+  {
+    "key": "7f60ed87fb399896a4ee10ab18f92422d04666548a8f3d09364373a9b1958ebb",
+    "count": 2,
+    "teams": 2,
+    "sw": 242.0,
+    "strawberry": 15.0,
+    "ranks": [
+      285,
+      286
+    ]
+  },
+  {
+    "key": "2aec58b36481a84ccf6ee31544c0b6d374a072333811d5a2e043065b903835df",
+    "count": 2,
+    "teams": 1,
+    "sw": 481.0,
+    "strawberry": 25.0,
+    "ranks": [
+      286
+    ]
+  },
+  {
+    "key": "3ebf972799c8997e961e2c77ac0557199e6f8c9130cb51cb2f6fd08cc8cba084",
+    "count": 2,
+    "teams": 2,
+    "sw": 265.5,
+    "strawberry": 14.0,
+    "ranks": [
+      288,
+      292
+    ]
+  },
+  {
+    "key": "461e2c183b590e531b56a2f158215659b57e0ebe098c6f37cfcb015d060914c4",
+    "count": 2,
+    "teams": 1,
+    "sw": 218.0,
+    "strawberry": 24.0,
+    "ranks": [
+      296
+    ]
+  },
+  {
+    "key": "79136ee7d36698d61e6c769636d48f450aadabd7a893aa76e38cd16a292dea9a",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 19,
+    "ranks": [
+      50
+    ]
+  },
+  {
+    "key": "a9da10c276c315d7ece17cb49272aac215fa611c2524f0035be5acb319ee9abb",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 16,
+    "ranks": [
+      50
+    ]
+  },
+  {
+    "key": "5129c056c3c039c5a3337c987a61cb147ad9c7ce0343f22c377bec421428e4e4",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 27,
+    "ranks": [
+      50
+    ]
+  },
+  {
+    "key": "afb0ae2632ad38e867d20083a4b8d281d1dd3b832c706e93c9f423072cdbfcd0",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 11,
+    "ranks": [
+      50
+    ]
+  },
+  {
+    "key": "0532932dd88de207e278795acedf94c77de0abec41380ad4a275b811d8ed4932",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 22,
+    "ranks": [
+      10
+    ]
+  },
+  {
+    "key": "f768510596b76eaec02a425770af669800bbe19bffc694d8e5f09d7201b44754",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 15,
+    "ranks": [
+      10
+    ]
+  },
+  {
+    "key": "851b58533080da9f73dd044149dc96b2570a27564ff4fe6a93df5c9535d1e714",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 18,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "key": "94903a5d020ad26b214f1e56f79d35c8e4ee854d6d23e7d4b7eeaecd8360961d",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 39,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "key": "a4a47143e44bce6190781f75f7fe9c9c2750f3117936e2f2979f046e1c2127e4",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 27,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "key": "17001e25fd886c2fbb2762e47c5e4afeea9b346e7a5f689dd12ada3787c8d56c",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 42,
+    "ranks": [
+      1
+    ]
+  },
+  {
+    "key": "78a3b5280fbc9ffeb708d59467f47c134e2f8675e18892029173910345cbc288",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 18,
+    "ranks": [
+      100
+    ]
+  },
+  {
+    "key": "9908e367e0b1129b7b078aa30bfd1e5d2d1b248e4073fb651b3d28422fdb4f52",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      100
+    ]
+  },
+  {
+    "key": "672bb51482af224aef96a211aed6b72ef073cb5393c4fd9461f82361a07b40b2",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      100
+    ]
+  },
+  {
+    "key": "adf20fd1822841cb8005767404a891296c6fe76f21685910f81c1577fb268e89",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      100
+    ]
+  },
+  {
+    "key": "7c57e4e8320956c594db753c66d8dbd51e508295f66a775951fef389ae382d6d",
+    "count": 1,
+    "teams": 1,
+    "sw": 221,
+    "strawberry": 22,
+    "ranks": [
+      150
+    ]
+  },
+  {
+    "key": "f3c968f2f2e6084bb491fab62e4ed74bff5f47a0ae81c031ed7dc011347f3bf3",
+    "count": 1,
+    "teams": 1,
+    "sw": 203,
+    "strawberry": 27,
+    "ranks": [
+      150
+    ]
+  },
+  {
+    "key": "ea84eda0e1a362c170e1b01065b4b1275ea4e5a9899674adc46e812b08bd75a0",
+    "count": 1,
+    "teams": 1,
+    "sw": 248,
+    "strawberry": 16,
+    "ranks": [
+      150
+    ]
+  },
+  {
+    "key": "279cb5df37df8d5ae63f49c2495a3f6cd6fcac3e0cc60750a705b26ef694ed7b",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 13,
+    "ranks": [
+      150
+    ]
+  },
+  {
+    "key": "30f9674c96d0f4d813206e4dd3dbfaa74072071f3150f33305e788caa541b170",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 9,
+    "ranks": [
+      201
+    ]
+  },
+  {
+    "key": "3d3f6b9c1d37e0d12ff9bf903e2f2bef0b8d6247837dfa8c3e3088097b0c9002",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 15,
+    "ranks": [
+      202
+    ]
+  },
+  {
+    "key": "9e5c5385bd6f82924d2cf805618bcb4790b8fe8f56ffc76f77952eca3d3ab69e",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 24,
+    "ranks": [
+      202
+    ]
+  },
+  {
+    "key": "ade9ffd13b085a2b5002d7bcdf7ee10f5aa0bd42aade8400156a33d147167d5c",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 25,
+    "ranks": [
+      202
+    ]
+  },
+  {
+    "key": "2748d223b786f50ebed4a47f55f138c42ab3060e07cb2ed70f4ae9c190597817",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 30,
+    "ranks": [
+      202
+    ]
+  },
+  {
+    "key": "b4e9887e7b9c2690a07dc43abb866604be49bbddfac5a4918e2945e9281c3ff0",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 14,
+    "ranks": [
+      203
+    ]
+  },
+  {
+    "key": "8e565c50686bf342812e244bbbb07eaf606433768a30b24845be3bbe5985f58b",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 33,
+    "ranks": [
+      203
+    ]
+  },
+  {
+    "key": "6b4728a74d2246cb673bb403ac562f1c1c41a6cd28f1b5df12f5e97e1e34784b",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      204
+    ]
+  },
+  {
+    "key": "3233949c48383320c9472d926e6a4a9f847f09be41ff969f143f24146dacb07b",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      204
+    ]
+  },
+  {
+    "key": "7c76bc63058069ddb255f6b5de45a2f61df00d280cd8c55ddb3fbb93116f4841",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 17,
+    "ranks": [
+      205
+    ]
+  },
+  {
+    "key": "f9fdf55d7e29d2e32d9bc57fb2596e0d0f484eb1bab337fb1355ea72eb6da551",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 17,
+    "ranks": [
+      205
+    ]
+  },
+  {
+    "key": "7ff7862da021f96af218fbb3864aacb84633465b71d0827e4adbd1ecac5dd179",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 17,
+    "ranks": [
+      205
+    ]
+  },
+  {
+    "key": "1b4556f6ef26c39d74182ea9396e9eb87cb5d569316db83788692793381d1544",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 17,
+    "ranks": [
+      205
+    ]
+  },
+  {
+    "key": "2787fa615e49eb961f6b2408464ea5ea21f6785480129929e0a46d65c2127aff",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      206
+    ]
+  },
+  {
+    "key": "f68e08d979661a14d70bd0a4b1c2a56b17286c202aa87f0163b98d11eefe7dcf",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 32,
+    "ranks": [
+      206
+    ]
+  },
+  {
+    "key": "1394ad43cf59ab5420c2f81f9dc9ae5b0bd3d4572bc3b18ed9eab64d41bc16f1",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 26,
+    "ranks": [
+      209
+    ]
+  },
+  {
+    "key": "c1dca8a8f1d675f605dbb8e42bbcc1574bea33406502e6b2a8a0be2c7c74c959",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      209
+    ]
+  },
+  {
+    "key": "6ba420133c8a519856cafc17a99f24195139db37f685818830044cba1d2cebfb",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 22,
+    "ranks": [
+      209
+    ]
+  },
+  {
+    "key": "e8cc9f3bf386234e9849b0d5a3f9bab34511e6b1904ba8e64748653f2bfd20d9",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 17,
+    "ranks": [
+      209
+    ]
+  },
+  {
+    "key": "a4feb75e4f7bd8ea7227c9b3e3f47666d9a3a6acefdf5cfcf7e93b2770137fbf",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 34,
+    "ranks": [
+      210
+    ]
+  },
+  {
+    "key": "2d03819e26d1292564d730b6878bc91cfa23658d13ffb9f24ab5f9a7071d3444",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 24,
+    "ranks": [
+      211
+    ]
+  },
+  {
+    "key": "d2fa8ef14781311f97b23362d98c2b403403a0aa5242c6b23edbefe3e385f616",
+    "count": 1,
+    "teams": 1,
+    "sw": 224,
+    "strawberry": 28,
+    "ranks": [
+      213
+    ]
+  },
+  {
+    "key": "74f936ab2267588a82ff7e320842c6d2bedf5d0aea6d2f93cc7d024e88b62914",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 12,
+    "ranks": [
+      214
+    ]
+  },
+  {
+    "key": "b80e23e93aac609f9e2fbed29452a1f0aad94d746bfcb7c5c4092134e60baa46",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 23,
+    "ranks": [
+      214
+    ]
+  },
+  {
+    "key": "e0c3934b6f65a946da93002e30dccbfded5c224db26f0e5fcb3b034df3e3d31f",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      214
+    ]
+  },
+  {
+    "key": "8a4be38310f8d12bc37e3c7e3f84364e87561e2b55b74fa5e8411a6c46b0c7ff",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 25,
+    "ranks": [
+      214
+    ]
+  },
+  {
+    "key": "23756a803000740038028fdeca49604a126ca2daccdd19e9de783f7f6bcec3ba",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      216
+    ]
+  },
+  {
+    "key": "61d7567c2019452968c0ed60a7ec84aa8ca19bfaa36b3f2d4b33237edd639d14",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 30,
+    "ranks": [
+      216
+    ]
+  },
+  {
+    "key": "e6efe9fbc54620892a16f60e68163bd3e0540c0309f83b4da4363a605b9c8801",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 15,
+    "ranks": [
+      216
+    ]
+  },
+  {
+    "key": "09b109f5448c4bb9c5e40323ecc7ba629e11c2a89a601b8ba561f60b7323d547",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 16,
+    "ranks": [
+      216
+    ]
+  },
+  {
+    "key": "db99c52190d2ea2ea37b1ab9b1be93674e60bd88c4b47f757cf82995098d5df9",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 29,
+    "ranks": [
+      217
+    ]
+  },
+  {
+    "key": "6eedcc454149f42c3f51b090463fd9d0ee004c68e94380f9e56d5ae2c531d5cd",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 24,
+    "ranks": [
+      217
+    ]
+  },
+  {
+    "key": "ec01b5dd8b9a8a9699c66134ca0a6d55e2edab2b94386e4f4919cda9673f5ba0",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 36,
+    "ranks": [
+      217
+    ]
+  },
+  {
+    "key": "57d2e189d809f44860c001ff5aae61575a35bfded815bdcd94ed7bed95d5f7b2",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 13,
+    "ranks": [
+      219
+    ]
+  },
+  {
+    "key": "457d226d7be33ee5a6e41eef4f7a9c79fed7a821e58be8d8d2df1a7382974da2",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 19,
+    "ranks": [
+      219
+    ]
+  },
+  {
+    "key": "31c6fab1973d4b7bac7ac2dd08c1152a9f3f282a9da0f0ed67014bf7c700e9d7",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 22,
+    "ranks": [
+      219
+    ]
+  },
+  {
+    "key": "2d2fe6be9b2f4c2af3beec038634220c26d4953e7d6408f630f6207871fb26a1",
+    "count": 1,
+    "teams": 1,
+    "sw": 219,
+    "strawberry": 17,
+    "ranks": [
+      219
+    ]
+  },
+  {
+    "key": "d2b92c625a06f51643e8cc962ce0ca7b5311c72f52daa622cc3d24acf4b99d64",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 20,
+    "ranks": [
+      220
+    ]
+  },
+  {
+    "key": "f0ad34e157f0b763d7fcccfddeb00e1d02e94bf8e255e91e8d91398aff36802b",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 16,
+    "ranks": [
+      220
+    ]
+  },
+  {
+    "key": "5e7b0d19514d90a3832aa535e81e2afc8f1d23da71dba8229f1814a99e54c138",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 20,
+    "ranks": [
+      220
+    ]
+  },
+  {
+    "key": "fcafdbc8f6e3d18057abc32b7b361c55bbb9113f1ae73f15e0a7240e086db808",
+    "count": 1,
+    "teams": 1,
+    "sw": 204,
+    "strawberry": 23,
+    "ranks": [
+      221
+    ]
+  },
+  {
+    "key": "ff22f334d2e91ec8ddb1d30d16b0debbc0fe54f80a3837cbc35b5e4366a92854",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 26,
+    "ranks": [
+      221
+    ]
+  },
+  {
+    "key": "f238abebd5d2132c063e9a8901a8e703193355c75a14374e3475bea14996bf57",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 15,
+    "ranks": [
+      221
+    ]
+  },
+  {
+    "key": "1ea592f584d2d1f804c9d217f84db351d1f429880bc7dddb4bf1adef605b12fb",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 26,
+    "ranks": [
+      221
+    ]
+  },
+  {
+    "key": "5465197dadb4bf8ce4f0b9099b062429e6d58c451df9357b35fce091a1667552",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      223
+    ]
+  },
+  {
+    "key": "27ad1be14a158f81a594d605fad19631eee2cd799b03fb3bcd1253b949a9d0cd",
+    "count": 1,
+    "teams": 1,
+    "sw": 149,
+    "strawberry": 36,
+    "ranks": [
+      224
+    ]
+  },
+  {
+    "key": "d63de067b428f9862ddb39ccaf0e820ec1e8a1414195052f637f932cee8d3b0d",
+    "count": 1,
+    "teams": 1,
+    "sw": 149,
+    "strawberry": 28,
+    "ranks": [
+      224
+    ]
+  },
+  {
+    "key": "bd5cd9e3f5eaadd7a2616171eb497963520cc25e31ab31abc4111823bdce5705",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 11,
+    "ranks": [
+      226
+    ]
+  },
+  {
+    "key": "d355ac554ff4d1e983d6c7d56764e40de205f6a2b4e07aec746f1aaf1ddbd41a",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      226
+    ]
+  },
+  {
+    "key": "7bf4cf1171a62d098567de459feb7810b661f5e9d07ea96d955461be8cdc4b88",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 22,
+    "ranks": [
+      226
+    ]
+  },
+  {
+    "key": "530f471a05c80e9fbc3c42ff5fa96a90de64b8892e109f47367423394a8df5fb",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 11,
+    "ranks": [
+      226
+    ]
+  },
+  {
+    "key": "c0045006215a37b5f38ff7e019b578b518ac10c122024eb11401368c007637e7",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 10,
+    "ranks": [
+      227
+    ]
+  },
+  {
+    "key": "419720e77730b7b80ff1d499c72f433bd2d7a69f9622e9ecbb565365150c4bfa",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 24,
+    "ranks": [
+      227
+    ]
+  },
+  {
+    "key": "16872dfbafe2ef0ee6da89ccb98642889330b20eb10234295e5c2ed4077fe1d3",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 18,
+    "ranks": [
+      227
+    ]
+  },
+  {
+    "key": "fe3478d80f6394c71ea2fa0a278e6e6f0f47ff1805530658a811ef6975562287",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 17,
+    "ranks": [
+      227
+    ]
+  },
+  {
+    "key": "677981fb5e6497802f8cd63746c67dc2bc9db48aa43b0ab2f8cc9c39ee9b9ae9",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      229
+    ]
+  },
+  {
+    "key": "f7973059e657ddd49181576cc5017b77c5474f3169a72a83cbe4e8b32cd20524",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      229
+    ]
+  },
+  {
+    "key": "c002c160fff5f0f469f5cf4e13ea3d780593f61be6630b119c43cf8a1dddb3b8",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 11,
+    "ranks": [
+      230
+    ]
+  },
+  {
+    "key": "ee4bf8054a7ad013e548971cc6a262398704f0c2b194fa6ea4ebcbcb51f5bfbb",
+    "count": 1,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 24,
+    "ranks": [
+      232
+    ]
+  },
+  {
+    "key": "11fac5cf779bafa6431051e58bd9109375cc4b6d9c76e7cdf5eb22e54c55c19a",
+    "count": 1,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 37,
+    "ranks": [
+      232
+    ]
+  },
+  {
+    "key": "904ed6a99724028a9bb31551bfd92dd5032075cea2be56821d7733d2be577822",
+    "count": 1,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 20,
+    "ranks": [
+      232
+    ]
+  },
+  {
+    "key": "903b29109a8488afc60f97ea366170ff10a733dd1708dbe77cd559849fb916c3",
+    "count": 1,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 31,
+    "ranks": [
+      232
+    ]
+  },
+  {
+    "key": "2006b5e54924abb38828734ee502649e87490cac9916af72b8f1d62ccfa341f5",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 16,
+    "ranks": [
+      233
+    ]
+  },
+  {
+    "key": "f66a0183d94fddf3ca7d886e06ffe684aff8dadb96e719502a0cb78ff7d3f89f",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 28,
+    "ranks": [
+      233
+    ]
+  },
+  {
+    "key": "18e957892852c1738be8965f997413ac5da08d2865703abdfd512e46cff5715e",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 13,
+    "ranks": [
+      233
+    ]
+  },
+  {
+    "key": "c24f86f7fe6f4ac959fd75d749819291b0fd43a8badbeecad04ba4933f35954b",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 12,
+    "ranks": [
+      233
+    ]
+  },
+  {
+    "key": "d3f8bc4b605727813092be6e731c85eda1f7627d0f1a21f10e21b5f1e28c2ec0",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 29,
+    "ranks": [
+      234
+    ]
+  },
+  {
+    "key": "e8ca9954cdfb8966ecba22aac637ba1e5e7581e68ead251753c32ffb16eb7535",
+    "count": 1,
+    "teams": 1,
+    "sw": 225,
+    "strawberry": 29,
+    "ranks": [
+      234
+    ]
+  },
+  {
+    "key": "e8475a4f264ad6a68c7ae79ae47a54840f13ddea5801922f2f1167657d4fa70a",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 20,
+    "ranks": [
+      235
+    ]
+  },
+  {
+    "key": "6d52c1c0d90c35e5a16456845f50fe09bbda03857670e7806a62bd53bf15376e",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 20,
+    "ranks": [
+      235
+    ]
+  },
+  {
+    "key": "fbab6c8be3534113a13d5cdbf0459c50223086d7a573cb89697ce4bbb266cf1d",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 20,
+    "ranks": [
+      235
+    ]
+  },
+  {
+    "key": "408035a9736c551195027ae77131f83753e3ae2ab1bbaa7b776af5719460f8a6",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 21,
+    "ranks": [
+      239
+    ]
+  },
+  {
+    "key": "ee3ffa597e26901b0aaec74967c925080427ed96970c4dcedddcb1cccfb6d85f",
+    "count": 1,
+    "teams": 1,
+    "sw": 198,
+    "strawberry": 28,
+    "ranks": [
+      239
+    ]
+  },
+  {
+    "key": "80a39b1d3ba90937c28193715b4fdf312b9e40bdace29c2cc6a4103b4ac4cb82",
+    "count": 1,
+    "teams": 1,
+    "sw": 202,
+    "strawberry": 28,
+    "ranks": [
+      239
+    ]
+  },
+  {
+    "key": "d15d1934883c0a08918901aa0666509f4be682c1fbf6e897273bf7a0ae4d15c9",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 46,
+    "ranks": [
+      239
+    ]
+  },
+  {
+    "key": "a0b4dd541263ce672b5b4715b9a2571376f4737ee55bc2fbad02cd2f32bda79e",
+    "count": 1,
+    "teams": 1,
+    "sw": 226,
+    "strawberry": 31,
+    "ranks": [
+      238
+    ]
+  },
+  {
+    "key": "1e7efc401b31435321db678244afcd930a4f8327c471cd53b2c5eabdc6a41152",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 35,
+    "ranks": [
+      238
+    ]
+  },
+  {
+    "key": "8efb8fe4f4361f06f530b36babff19fba402b80728ac01b2ca32f877bfc19359",
+    "count": 1,
+    "teams": 1,
+    "sw": 223,
+    "strawberry": 35,
+    "ranks": [
+      238
+    ]
+  },
+  {
+    "key": "5b90543aa5c86687cc78108639f752c51f18a14c744e5fb29413f4d7699f62f6",
+    "count": 1,
+    "teams": 1,
+    "sw": 223,
+    "strawberry": 35,
+    "ranks": [
+      238
+    ]
+  },
+  {
+    "key": "d9c8063036776c1bb5a60ee73ac9622ef0077c00678c7f71bfffa569541ed949",
+    "count": 1,
+    "teams": 1,
+    "sw": 250,
+    "strawberry": 15,
+    "ranks": [
+      237
+    ]
+  },
+  {
+    "key": "cdba348c305e90431f278843e8ab24e6464b0f32cefc7acfbecf0ec6f565e177",
+    "count": 1,
+    "teams": 1,
+    "sw": 720,
+    "strawberry": 21,
+    "ranks": [
+      242
+    ]
+  },
+  {
+    "key": "2a2e8d2864acbc0047a98f7e353cb5a371cc6b1550d2c7711abf2ae2eae67671",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 28,
+    "ranks": [
+      241
+    ]
+  },
+  {
+    "key": "42dc8b70166c5e8ad2d2c22ec66f1179e5bfb41af85d405341b18313333301fe",
+    "count": 1,
+    "teams": 1,
+    "sw": 195,
+    "strawberry": 12,
+    "ranks": [
+      243
+    ]
+  },
+  {
+    "key": "475a6b55f93675445e8275aaef9568fa3392cee31a39e79fdeb19349b7def45f",
+    "count": 1,
+    "teams": 1,
+    "sw": 204,
+    "strawberry": 22,
+    "ranks": [
+      243
+    ]
+  },
+  {
+    "key": "5cc6202a328ad4d3cade970e5f07bda4eba4d0fafffba52cd2b2ae688f2c2ac0",
+    "count": 1,
+    "teams": 1,
+    "sw": 228,
+    "strawberry": 9,
+    "ranks": [
+      243
+    ]
+  },
+  {
+    "key": "a7f30d4ef631d131836c7367cf95c4b23a97a4f08dd25279d73050ae39edf43a",
+    "count": 1,
+    "teams": 1,
+    "sw": 207,
+    "strawberry": 28,
+    "ranks": [
+      243
+    ]
+  },
+  {
+    "key": "18ab084733be0ca91ad6cd65763c6e808a0619d49e60b3da7daa454472393175",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      248
+    ]
+  },
+  {
+    "key": "11c4cf1ca8fee3d4d111eba040136480c149f3ca9ec073a7af8f829bb8eeae65",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 29,
+    "ranks": [
+      247
+    ]
+  },
+  {
+    "key": "52c8e8f05d7480daca69ec72adea182a427651e09c5b1547b6562b9c3d5a8e31",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      247
+    ]
+  },
+  {
+    "key": "81a4865cccde1f8209af977361b929aa62119cdab3db604f1496b56bbe04624f",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 16,
+    "ranks": [
+      247
+    ]
+  },
+  {
+    "key": "336b73b56a730b734b4152742d6dd5ad6369d7835fe542819fb25cad9443e392",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      247
+    ]
+  },
+  {
+    "key": "7a83eb81d30d2cd319453b711a073f77958afb1bc1c0fa83d1b45ed31744bd25",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 27,
+    "ranks": [
+      250
+    ]
+  },
+  {
+    "key": "b79a28795610b63abe6d95ff0de117dc8d9ee8c84f448199a11eeef6f0b8279d",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 29,
+    "ranks": [
+      250
+    ]
+  },
+  {
+    "key": "41fe2e358ec6429ab0e97b637633f7486fda9414a56f6b3078718459152ffd9c",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 26,
+    "ranks": [
+      250
+    ]
+  },
+  {
+    "key": "ba742f91632dc5e5a153586649ada097ff5a8f34e460cce40476742a12f52f25",
+    "count": 1,
+    "teams": 1,
+    "sw": 225,
+    "strawberry": 23,
+    "ranks": [
+      250
+    ]
+  },
+  {
+    "key": "70cc9e6d4aa515fae0f6fffbd0694b38d9932bbdbe50f0223d24ccaa2b509f2b",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 6,
+    "ranks": [
+      249
+    ]
+  },
+  {
+    "key": "c227ebc184024e107aa55096c3c95e774410fca4224450e7834bbbabeb812f24",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 15,
+    "ranks": [
+      249
+    ]
+  },
+  {
+    "key": "d7efc036b4d8bcb2bca911b259202350ad7cb6c75cfacfd3f8370bcc1d60a171",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 27,
+    "ranks": [
+      249
+    ]
+  },
+  {
+    "key": "be351c66448f6994b423e0d244f2578b949ea3b19b9b33e9e8d455e6d8eb296b",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 17,
+    "ranks": [
+      249
+    ]
+  },
+  {
+    "key": "2262d823db704820f60bf5f34b7c4b4e8af2a6b98bce559053fb45d38baa6010",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 18,
+    "ranks": [
+      251
+    ]
+  },
+  {
+    "key": "df35825078ea493f5ffc9c542ce8be3d21c0f28b43492255d8a53dccaeb579f6",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 26,
+    "ranks": [
+      251
+    ]
+  },
+  {
+    "key": "51b1dfa276609301897de29b6d22f31346e08f966f15c1aa24149ead11b2836b",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 18,
+    "ranks": [
+      251
+    ]
+  },
+  {
+    "key": "4e48fea621a95f2a41a1e42c7736484b34e0332cf5a1dee6258ae91a95e75db1",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 30,
+    "ranks": [
+      251
+    ]
+  },
+  {
+    "key": "300eadcedb1641cd3b93d4c271ed30f39f5057bf9a6506de02743790bfde87e9",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 12,
+    "ranks": [
+      252
+    ]
+  },
+  {
+    "key": "98db6f9b66235fcc234f3a94048ac14ebd728081e4501f4d0f9a10c118a53a17",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 19,
+    "ranks": [
+      252
+    ]
+  },
+  {
+    "key": "8d00ce7924544d07c8e5a43193b4addeba4bd8e993f12ae79fde4485f2f1ffa1",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 36,
+    "ranks": [
+      252
+    ]
+  },
+  {
+    "key": "9140eb5b381d1cfff805d9daed767625153a85d3d3384e052c94d71aee55bc52",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 25,
+    "ranks": [
+      252
+    ]
+  },
+  {
+    "key": "0dd730ece912a8338d1b40eaeb68cc9eaa3e5de6384d2317a3b890031ca2fc72",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 17,
+    "ranks": [
+      253
+    ]
+  },
+  {
+    "key": "174808945e76ee15fa9b493435f470d11ed20e20721a82eca121f1d88f48b49d",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 40,
+    "ranks": [
+      253
+    ]
+  },
+  {
+    "key": "92b07d0b2c7a5c3c80da624f10a99255f005bae73b59efb9e74b381da7336280",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 24,
+    "ranks": [
+      254
+    ]
+  },
+  {
+    "key": "4a1cbda6ee98922471d5979faa429df753bf64a83db6ff1e06d4172fd259cf88",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 27,
+    "ranks": [
+      256
+    ]
+  },
+  {
+    "key": "6dcaa9429231c302e81d2c91a04967a77d2e78aefc722b7a3a75b8647d6a6249",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      256
+    ]
+  },
+  {
+    "key": "49aba270be2fec8456019cc68127df089f0b452c981baf95d4251297807c8408",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 14,
+    "ranks": [
+      256
+    ]
+  },
+  {
+    "key": "28346dcb0e8b41ee3dff11a742c2b27311584bea8f6c9858269d34ebd45e07ed",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 16,
+    "ranks": [
+      256
+    ]
+  },
+  {
+    "key": "a8c709271f0c29d7cf9870e59bbc9b8bc068a3f5974b2496996e0572c975b8f4",
+    "count": 1,
+    "teams": 1,
+    "sw": 224,
+    "strawberry": 35,
+    "ranks": [
+      258
+    ]
+  },
+  {
+    "key": "a69983b8dc089235a9e397a88b54401856521642130af32a3a6ffde05d418ff6",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 28,
+    "ranks": [
+      258
+    ]
+  },
+  {
+    "key": "83af2d7b47b62f6e693ce283c2fae60622fe66771bfa5effd4f00cb05486c9f1",
+    "count": 1,
+    "teams": 1,
+    "sw": 250,
+    "strawberry": 28,
+    "ranks": [
+      258
+    ]
+  },
+  {
+    "key": "eb9419a3a9d0bdbc2cf02b6947bb4e2a458952737613bafb6b65f91474847fe7",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 37,
+    "ranks": [
+      259
+    ]
+  },
+  {
+    "key": "048678522d9903e46d41a885727c9eca7e8982d94e4ecd7d882f3fa6e71d0824",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 20,
+    "ranks": [
+      259
+    ]
+  },
+  {
+    "key": "972f2a1db488018af7b2f5298b434fc47219921e3a875154b408f1bde921a591",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 36,
+    "ranks": [
+      259
+    ]
+  },
+  {
+    "key": "8b4aa41379aab17ef6388c8c9ded65ef59b44e9a5ed93d609995d359f5d9b994",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 43,
+    "ranks": [
+      259
+    ]
+  },
+  {
+    "key": "06e223230470ab22f3a7ae84f5e6cf0a9a072519a6e0e0d3d34034e6537b2488",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      261
+    ]
+  },
+  {
+    "key": "d92ac634d522dcd61b13963187a73b94fefd92f56ffeebdf91414a27d67df45b",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 13,
+    "ranks": [
+      261
+    ]
+  },
+  {
+    "key": "3f54b8f8f56bec1463df908cec421aa5ee5a17a1c4f13d260d2b6c516f881d50",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 25,
+    "ranks": [
+      261
+    ]
+  },
+  {
+    "key": "2fc72f2db856dfdd208c3504fcce9a889cbaaab9d83679549e0b2304a4d5a935",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 35,
+    "ranks": [
+      261
+    ]
+  },
+  {
+    "key": "2751813d8a19ad64e95b7bd51833fc9f4c1691962e3a040914c00edab0f1c7e5",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 33,
+    "ranks": [
+      262
+    ]
+  },
+  {
+    "key": "8c2cedeb09c0b776329eeae4ca953913f0bc7afc233d38b7af6b9d41c66b0d97",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 24,
+    "ranks": [
+      262
+    ]
+  },
+  {
+    "key": "1c5c26e4ef5b8348469f49c49ba0732018139be00dceb8289abe79636640c629",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 22,
+    "ranks": [
+      262
+    ]
+  },
+  {
+    "key": "e057f0d9ab1a5ed424db1161989339d9dbfbe5bd4d282ec888c8ba43edd7bd7d",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 37,
+    "ranks": [
+      262
+    ]
+  },
+  {
+    "key": "8a622fa5e37269fcc4501a9a5504df8a4e989b9e1771a780f92f1422a424cad3",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 19,
+    "ranks": [
+      263
+    ]
+  },
+  {
+    "key": "94d9d4c233254f4025b3404bca7820fa71819552729b416b6980ac174a9b1761",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 27,
+    "ranks": [
+      264
+    ]
+  },
+  {
+    "key": "c5f623918de2b248fbc7fe23a31a50b279c98461a5358e411f84d8443e0beaf9",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 36,
+    "ranks": [
+      264
+    ]
+  },
+  {
+    "key": "22752de44a2ddf4adb248174487d1acc17e6fc582408494570c44d6d784b51bb",
+    "count": 1,
+    "teams": 1,
+    "sw": 221,
+    "strawberry": 31,
+    "ranks": [
+      264
+    ]
+  },
+  {
+    "key": "5cd493732f983daaa177ed07727f24c3a358f0b4218b8ac8634cbf435a1fbb9f",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 26,
+    "ranks": [
+      264
+    ]
+  },
+  {
+    "key": "a957d86c747dddedcdb8e61a8eb64fab7a1631478a5d71d6324ba335cbd0bc4c",
+    "count": 1,
+    "teams": 1,
+    "sw": 224,
+    "strawberry": 14,
+    "ranks": [
+      267
+    ]
+  },
+  {
+    "key": "f7a7bfb895e997f1b8ea6ad936b4d23b28fabfed01abcf2b2a00969cd51c63df",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 15,
+    "ranks": [
+      268
+    ]
+  },
+  {
+    "key": "7b102dbe78f6b3f49ddcb2a7e1fad709a77d8e75f85dea0e9fa1f55bf5bbc2c7",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 29,
+    "ranks": [
+      268
+    ]
+  },
+  {
+    "key": "5e1357ff2940991cc67afea254721dd0cca113a9641ec398731b962d7e634cb9",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 12,
+    "ranks": [
+      269
+    ]
+  },
+  {
+    "key": "f668aa570eafdb48e184ac6deef400eb2c7bfce9175e91355497ba9bde1f6877",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 11,
+    "ranks": [
+      269
+    ]
+  },
+  {
+    "key": "b91f70fcd9ee1089e84a7d5e250cae2a8fdf895de0250991f1a9887047a19c21",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 27,
+    "ranks": [
+      270
+    ]
+  },
+  {
+    "key": "0053b359310133c941a477dc07ad2ce10f4afef7cdc9224a3f9405c5e2e17039",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 23,
+    "ranks": [
+      271
+    ]
+  },
+  {
+    "key": "18aafb090d02c7f0b8e5f949b4c24305c3e38f1816f9233b94fdaec0c8b4e12d",
+    "count": 1,
+    "teams": 1,
+    "sw": 217,
+    "strawberry": 36,
+    "ranks": [
+      272
+    ]
+  },
+  {
+    "key": "244ab685d51dce330c84202c08fb3b1a651ebae01679d9b8bb16c8138ec33a79",
+    "count": 1,
+    "teams": 1,
+    "sw": 252,
+    "strawberry": 21,
+    "ranks": [
+      273
+    ]
+  },
+  {
+    "key": "fb3042931d747a1d392433ef7b4f326619ed9d407d9086169672d7a0bc2fa89c",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 33,
+    "ranks": [
+      274
+    ]
+  },
+  {
+    "key": "a5d4696899cb220c4f81a9ff5d577f85d3b159cf2a5e404c7757210fd335f730",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 27,
+    "ranks": [
+      274
+    ]
+  },
+  {
+    "key": "8f6a5be3f494ed6ae0060614e655c0c141bde09820878d9c09539be9acb7bf66",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 25,
+    "ranks": [
+      274
+    ]
+  },
+  {
+    "key": "4a254fe31595b8125775fc1d38234d5069490c252f49a8f9a989a9076fdfa3f4",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 43,
+    "ranks": [
+      274
+    ]
+  },
+  {
+    "key": "d24fb373c48b0cbe476414cfc90f5e997927e0b0c26caf127ab89200471f1651",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 13,
+    "ranks": [
+      275
+    ]
+  },
+  {
+    "key": "c5d83c4010fc4823f209131590e49a5f6ad7fd0c50a575603e8f8bb83b56a0e2",
+    "count": 1,
+    "teams": 1,
+    "sw": 222,
+    "strawberry": 24,
+    "ranks": [
+      277
+    ]
+  },
+  {
+    "key": "9939da021c50f9db4a3ac4c178299c2b66776af7dc5c586abdaa152bb5b5ad9b",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 36,
+    "ranks": [
+      277
+    ]
+  },
+  {
+    "key": "53b735460c849a4964a1ed331096e06178aea274a6a77b31db4f3555b60ccc39",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 21,
+    "ranks": [
+      279
+    ]
+  },
+  {
+    "key": "29b2e0cb243c5930ac7adf875eaf8e9e3cefc1f9168fc6ed25ceccb7eb031b4d",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 14,
+    "ranks": [
+      280
+    ]
+  },
+  {
+    "key": "401402f8cbd30e7fb079ce25a527ed4891da3ce527fa56e51a2f04f09f18161b",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 36,
+    "ranks": [
+      282
+    ]
+  },
+  {
+    "key": "56c7bfec45fd0b7dde5c6259290d511efb5d5233c7ed510a6211eef0c7b38c7e",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      282
+    ]
+  },
+  {
+    "key": "42bc20ad7446b8649f5b59ab90d111ead969a68a426cbd9213d55664ddcb156f",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 38,
+    "ranks": [
+      282
+    ]
+  },
+  {
+    "key": "7c34ea546a9d11546b39a45788f6b1562ba2e5d24ee8ddcf9f37b12a6148af1e",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 38,
+    "ranks": [
+      282
+    ]
+  },
+  {
+    "key": "251dd6a85968959571732e67ca5b08b6ff9eb7c87124ee133a11d858d1268f32",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 35,
+    "ranks": [
+      283
+    ]
+  },
+  {
+    "key": "10e418e49dfcb9da215ba0ef05f59e4f1ca885ea896c821ec87ba10edf0be2d5",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 33,
+    "ranks": [
+      283
+    ]
+  },
+  {
+    "key": "1d2d83395caf468615a258d95c53a6c05d911173d0c899230654e333e41d17c3",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 21,
+    "ranks": [
+      283
+    ]
+  },
+  {
+    "key": "eee007f385d8829c0cfd100017b2d491586637fe3b41e0b0cfa12074363d65b8",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      283
+    ]
+  },
+  {
+    "key": "1d9a5e2aa34a4735fc811cb0a200d7a66cb9cefa1031e445ff6d9cd08e05d2dc",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 23,
+    "ranks": [
+      285
+    ]
+  },
+  {
+    "key": "60067c7e0b55a7bf194cc7ded7412cb99e51009cc64cf7237d66aaa3311bf526",
+    "count": 1,
+    "teams": 1,
+    "sw": 266,
+    "strawberry": 16,
+    "ranks": [
+      285
+    ]
+  },
+  {
+    "key": "bbc1cd3cb8c153422302c54d3d65a33f5eea68cb5afdc7d326b6e4c44ac3df39",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 28,
+    "ranks": [
+      285
+    ]
+  },
+  {
+    "key": "04586d2a79b81a357fba911ebd7024a1dc561a3c79206145dcc591150e28089d",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 28,
+    "ranks": [
+      286
+    ]
+  },
+  {
+    "key": "082db5f22fcc08467336878e2eb42f71d3b153ba139f389dd167f2a8078f0b3e",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 23,
+    "ranks": [
+      287
+    ]
+  },
+  {
+    "key": "454d593124081ed283a2f666f3e5c6d2a484fc9c7d225f7617c1c6c688571378",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 18,
+    "ranks": [
+      287
+    ]
+  },
+  {
+    "key": "f1251689b97225b331cbc59f79619bffa46c0c89446fec4bffc208ae4b9e2a97",
+    "count": 1,
+    "teams": 1,
+    "sw": 208,
+    "strawberry": 16,
+    "ranks": [
+      287
+    ]
+  },
+  {
+    "key": "34806b911ceb6dbae038aa668f247c89d2f28031e48cf248e6fe83e21ac6e747",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 11,
+    "ranks": [
+      287
+    ]
+  },
+  {
+    "key": "8156118495ac07245d94683446a9dc9c03b423249891c9d0b595ccd7319d71cf",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 16,
+    "ranks": [
+      291
+    ]
+  },
+  {
+    "key": "10103656fc8694c9cac9020058a7d7ac232484500bb7ea9be9293a54e14007a3",
+    "count": 1,
+    "teams": 1,
+    "sw": 201,
+    "strawberry": 6,
+    "ranks": [
+      291
+    ]
+  },
+  {
+    "key": "12d9b3a405b74bed7f867469ccde30ff3e235415548d26c0638b59d1ee42a3ac",
+    "count": 1,
+    "teams": 1,
+    "sw": 207,
+    "strawberry": 14,
+    "ranks": [
+      291
+    ]
+  },
+  {
+    "key": "cfe21b17806a0b04e50aa076b2c928d317718ca955364016280384cf0d997f32",
+    "count": 1,
+    "teams": 1,
+    "sw": 207,
+    "strawberry": 15,
+    "ranks": [
+      291
+    ]
+  },
+  {
+    "key": "c757ac9bab1c33002d207dca9b1b6751264244aea8402f6fbf0f04ae957fed43",
+    "count": 1,
+    "teams": 1,
+    "sw": 242,
+    "strawberry": 32,
+    "ranks": [
+      292
+    ]
+  },
+  {
+    "key": "100d7c8f6e78c2574d644cb15b95e95d2f48236851e918e227dee72887cd006d",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      295
+    ]
+  },
+  {
+    "key": "db1d3d74d99e1fbbeba6952fa2bbd342283f6d91f24ce7d0ce5451331d0ce167",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 17,
+    "ranks": [
+      295
+    ]
+  },
+  {
+    "key": "d7fc9d4e435117806058ee605330df3f03e0190ffd0616b7e33ef008e0e86da9",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 13,
+    "ranks": [
+      295
+    ]
+  },
+  {
+    "key": "92ab39e84435cfab2900fe7b076afb6cbf52eb409f97e9fa2771e03f5add04c0",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 22,
+    "ranks": [
+      295
+    ]
+  },
+  {
+    "key": "c13e4e4efe7d2131b2307509dd1e1f1e69d33e4a7211f81f78b5ca2872f3e0b8",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 35,
+    "ranks": [
+      296
+    ]
+  },
+  {
+    "key": "24d0bf0905929990c6deaec0ef33a799621f6c4824f10dd9e3ac8e1641e76bdd",
+    "count": 1,
+    "teams": 1,
+    "sw": 218,
+    "strawberry": 24,
+    "ranks": [
+      296
+    ]
+  },
+  {
+    "key": "259b8937119d3a3f712d6f232a82499884d9b88002e383c129278bf13a379605",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 22,
+    "ranks": [
+      298
+    ]
+  },
+  {
+    "key": "49350e020cc4f3b2d741c9cf9f852063256fe7b3015bdaa772e2f65f5103c41d",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 31,
+    "ranks": [
+      298
+    ]
+  },
+  {
+    "key": "7bea90ce20613f0fe9fd81b4b7e7b6a66b271a2b73a90aa6724e69b7592cd334",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 37,
+    "ranks": [
+      298
+    ]
+  },
+  {
+    "key": "760f7c3ea48bf6402b943c666811d372eec9be017af5b826576d2c7b9b8ef19e",
+    "count": 1,
+    "teams": 1,
+    "sw": 220,
+    "strawberry": 39,
+    "ranks": [
+      298
+    ]
+  },
+  {
+    "key": "72a8204ea768e5a96771d4035a7f8f5420076db5f3f3f9ebc840a89616c797cb",
+    "count": 1,
+    "teams": 1,
+    "sw": 200,
+    "strawberry": 31,
+    "ranks": [
+      299
+    ]
+  },
+  {
+    "key": "9bc0795a02b8f66285566bb2810d274d7a076cd1e514b9ac33e378e95b5b4fb2",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 24,
+    "ranks": [
+      299
+    ]
+  },
+  {
+    "key": "094f4fb0659cf2e492fe57d9ee8d015e2327b02c80f80877f97d0b1582e77020",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 20,
+    "ranks": [
+      299
+    ]
+  },
+  {
+    "key": "7c4ee1024cda993a39d6616b1e759548bc141beae2323a96b93279bad6f661cf",
+    "count": 1,
+    "teams": 1,
+    "sw": 197,
+    "strawberry": 35,
+    "ranks": [
+      299
+    ]
+  },
+  {
+    "key": "15795f411c5a91b1bdea3d828ac32ab61c5ffca18b2a77df46e94661b6c2152a",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 31,
+    "ranks": [
+      300
+    ]
+  },
+  {
+    "key": "085806875333a196a4aaa7e1d5cd55aadc8d404848a69a93e0b3a45163f433f9",
+    "count": 1,
+    "teams": 1,
+    "sw": 199,
+    "strawberry": 18,
+    "ranks": [
+      300
+    ]
+  }
+]

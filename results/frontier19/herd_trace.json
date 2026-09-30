@@ -1,0 +1,398 @@
+{
+  "events": [
+    {
+      "step": 151,
+      "actor": 7,
+      "expected_xy": [
+        4,
+        4
+      ],
+      "actual_xy": [
+        4,
+        4
+      ],
+      "before": [
+        "PICKUP",
+        "COW"
+      ],
+      "after": [
+        "PICKUP",
+        "GOOSE",
+        1
+      ],
+      "actual": [
+        "PICKUP",
+        "COW"
+      ],
+      "inventory": {
+        "WHEAT": 1,
+        "FERTILIZER": 2
+      },
+      "tile": {
+        "kind": "PASTURE",
+        "animal": "COW",
+        "placed_day": 0,
+        "yield_units": 0,
+        "consecutive_unfed": 0,
+        "fed_today": true,
+        "cared_today": true,
+        "fertilizer_available": false,
+        "pending_care_bonus": 4
+      }
+    },
+    {
+      "step": 152,
+      "actor": 1,
+      "expected_xy": [
+        5,
+        4
+      ],
+      "actual_xy": [
+        5,
+        4
+      ],
+      "before": [
+        "PICKUP",
+        "COW"
+      ],
+      "after": [
+        "PICKUP",
+        "GOOSE",
+        1
+      ],
+      "actual": [
+        "PICKUP",
+        "COW"
+      ],
+      "inventory": {
+        "WHEAT": 1
+      },
+      "tile": null
+    },
+    {
+      "step": 153,
+      "actor": 1,
+      "expected_xy": [
+        5,
+        4
+      ],
+      "actual_xy": [
+        5,
+        4
+      ],
+      "before": [
+        "BUILD_PASTURE"
+      ],
+      "after": [
+        "BUILD_COOP"
+      ],
+      "actual": [
+        "BUILD_PASTURE"
+      ],
+      "inventory": {
+        "WHEAT": 1,
+        "GOOSE": 1
+      },
+      "tile": null
+    },
+    {
+      "step": 155,
+      "actor": 1,
+      "expected_xy": [
+        5,
+        4
+      ],
+      "actual_xy": [
+        5,
+        4
+      ],
+      "before": [
+        "PLACE",
+        "COW"
+      ],
+      "after": [
+        "PLACE",
+        "GOOSE"
+      ],
+      "actual": [
+        "PLACE",
+        "GOOSE"
+      ],
+      "inventory": {
+        "WHEAT": 1,
+        "GOOSE": 1
+      },
+      "tile": {
+        "kind": "COOP"
+      }
+    },
+    {
+      "step": 155,
+      "actor": 7,
+      "expected_xy": [
+        5,
+        3
+      ],
+      "actual_xy": [
+        5,
+        3
+      ],
+      "before": [
+        "BUILD_PASTURE"
+      ],
+      "after": [
+        "BUILD_COOP"
+      ],
+      "actual": [
+        "BUILD_PASTURE"
+      ],
+      "inventory": {
+        "WHEAT": 1,
+        "GOOSE": 1
+      },
+      "tile": null
+    },
+    {
+      "step": 156,
+      "actor": 7,
+      "expected_xy": [
+        5,
+        3
+      ],
+      "actual_xy": [
+        5,
+        3
+      ],
+      "before": [
+        "PLACE",
+        "COW"
+      ],
+      "after": [
+        "PLACE",
+        "GOOSE"
+      ],
+      "actual": [
+        "PLACE",
+        "GOOSE"
+      ],
+      "inventory": {
+        "WHEAT": 1,
+        "GOOSE": 1
+      },
+      "tile": {
+        "kind": "COOP"
+      }
+    }
+  ],
+  "telemetry": {
+    "calls": 719,
+    "passes": 729,
+    "changed": 10,
+    "early_stops": 718,
+    "cycles": 1,
+    "cycle_passes_skipped": 37,
+    "maxed": 0,
+    "beyond_41": 0,
+    "errors": 0,
+    "f16_window_turns": 6,
+    "f16_window_units": 19,
+    "f16_window_errors": 0,
+    "f16_turns": 566,
+    "f16_passes": 566,
+    "f16_reordered": 2,
+    "f16_predicted_gain": 160.0,
+    "f16_cycles": 0,
+    "f16_errors": 0,
+    "f16_preemption_hole_skips": 9,
+    "upstream_V219_REPORT_errors": 0,
+    "upstream_V231_REPORT_errors": 0,
+    "upstream_R36_SALE_REPORT_sale_errors": 0,
+    "upstream_R36_SALE_REPORT_errors": 0,
+    "upstream_R44_REPORT_probe_errors": 0,
+    "upstream_R37_REPORT_sale_errors": 0,
+    "upstream_R37_REPORT_errors": 0,
+    "upstream_R37_REPORT_nocturne_errors": 0,
+    "upstream_R37_REPORT_probe_errors": 0,
+    "upstream_RELEASE_REPORT_sale_errors": 0,
+    "upstream_RELEASE_REPORT_errors": 0,
+    "upstream_RELEASE_REPORT_nocturne_errors": 0,
+    "upstream_RELEASE_REPORT_probe_errors": 0,
+    "upstream_RELEASE_REPORT_release_errors": 0,
+    "upstream_R46_REPORT_sale_errors": 0,
+    "upstream_R46_REPORT_errors": 0,
+    "upstream_R46_REPORT_nocturne_errors": 0,
+    "upstream_R46_REPORT_probe_errors": 0,
+    "upstream_R46_REPORT_release_errors": 0,
+    "upstream_R51_INPUT_REPORT_input_hire_errors": 0,
+    "upstream_R51_INPUT_REPORT_input_application_errors": 0,
+    "upstream_R51_INPUT_REPORT_input_errors": 0,
+    "upstream_R51_INPUT_REPORT_sale_errors": 0,
+    "upstream_R51_INPUT_REPORT_errors": 0,
+    "upstream_R51_INPUT_REPORT_nocturne_errors": 0,
+    "upstream_R51_INPUT_REPORT_probe_errors": 0,
+    "upstream_R51_INPUT_REPORT_release_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_warehouse_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_input_hire_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_input_application_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_input_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_sale_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_nocturne_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_probe_errors": 0,
+    "upstream_R51_WAREHOUSE_REPORT_release_errors": 0,
+    "upstream_R53_LABOR_REPORT_labor_spawn_errors": 0,
+    "upstream_R70_REPORT_parent_input_errors": 0,
+    "upstream_R70_REPORT_warehouse_errors": 0,
+    "upstream_R70_REPORT_input_hire_errors": 0,
+    "upstream_R70_REPORT_input_application_errors": 0,
+    "upstream_R70_REPORT_input_errors": 0,
+    "upstream_R70_REPORT_sale_errors": 0,
+    "upstream_R70_REPORT_errors": 0,
+    "upstream_R70_REPORT_nocturne_errors": 0,
+    "upstream_R70_REPORT_probe_errors": 0,
+    "upstream_R70_REPORT_release_errors": 0,
+    "upstream_R70_REPORT_labor_spawn_errors": 0,
+    "upstream_R85_REPORT_economic_overlay_errors": 0,
+    "upstream_R85_REPORT_parent_input_errors": 0,
+    "upstream_R85_REPORT_warehouse_errors": 0,
+    "upstream_R85_REPORT_input_hire_errors": 0,
+    "upstream_R85_REPORT_input_application_errors": 0,
+    "upstream_R85_REPORT_input_errors": 0,
+    "upstream_R85_REPORT_sale_errors": 0,
+    "upstream_R85_REPORT_errors": 0,
+    "upstream_R85_REPORT_nocturne_errors": 0,
+    "upstream_R85_REPORT_probe_errors": 0,
+    "upstream_R85_REPORT_release_errors": 0,
+    "upstream_R85_REPORT_labor_spawn_errors": 0,
+    "upstream_R95_REPORT_replenishment_errors": 0,
+    "upstream_R95_REPORT_economic_overlay_errors": 0,
+    "upstream_R95_REPORT_parent_input_errors": 0,
+    "upstream_R95_REPORT_warehouse_errors": 0,
+    "upstream_R95_REPORT_input_hire_errors": 0,
+    "upstream_R95_REPORT_input_application_errors": 0,
+    "upstream_R95_REPORT_input_errors": 0,
+    "upstream_R95_REPORT_sale_errors": 0,
+    "upstream_R95_REPORT_errors": 0,
+    "upstream_R95_REPORT_nocturne_errors": 0,
+    "upstream_R95_REPORT_probe_errors": 0,
+    "upstream_R95_REPORT_release_errors": 0,
+    "upstream_R95_REPORT_labor_spawn_errors": 0,
+    "upstream_R97_REPORT_supply_errors": 0,
+    "upstream_R97_REPORT_replenishment_errors": 0,
+    "upstream_R97_REPORT_economic_overlay_errors": 0,
+    "upstream_R97_REPORT_parent_input_errors": 0,
+    "upstream_R97_REPORT_warehouse_errors": 0,
+    "upstream_R97_REPORT_input_hire_errors": 0,
+    "upstream_R97_REPORT_input_application_errors": 0,
+    "upstream_R97_REPORT_input_errors": 0,
+    "upstream_R97_REPORT_sale_errors": 0,
+    "upstream_R97_REPORT_errors": 0,
+    "upstream_R97_REPORT_nocturne_errors": 0,
+    "upstream_R97_REPORT_probe_errors": 0,
+    "upstream_R97_REPORT_release_errors": 0,
+    "upstream_R97_REPORT_labor_spawn_errors": 0,
+    "upstream_V9_COURIER_REPORT_courier_errors": 0,
+    "upstream_V9_CARROT_REPORT_carrot_errors": 0,
+    "upstream_V9_HERD_REPORT_herd_errors": 0,
+    "upstream_V9_FERT_REPORT_fert_errors": 0,
+    "upstream_V92_P_REPORT_pred_errors": 0,
+    "upstream_V92_Q_REPORT_pred_errors": 0,
+    "upstream_V9_RACE_REPORT_race_errors": 0,
+    "upstream_CT_REPORT_ct_errors": 0,
+    "upstream_OV_REPORT_ov_errors": 0,
+    "upstream_CA_REPORT_ca_errors": 0,
+    "upstream_OR2_REPORT_or2_errors": 0,
+    "upstream_CH_REPORT_ch_errors": 0,
+    "upstream_SR_REPORT_sr_errors": 0,
+    "upstream_HD2_REPORT_hd2_errors": 0,
+    "upstream_CS_REPORT_cs_errors": 0,
+    "upstream_RACE_REPORT_race_errors": 0,
+    "upstream_RACE_REPORT_cs_errors": 0,
+    "upstream_R127_REPORT_priority_contract_errors": 0,
+    "upstream_R127_REPORT_race_errors": 0,
+    "upstream_R127_REPORT_cs_errors": 0,
+    "upstream_PG_REPORT_preguard_errors": 0,
+    "upstream_V44Y_REPORT_v44y_errors": 0,
+    "upstream_Y_REPORT_errors": 0,
+    "upstream_E334_REPORT_errors": 0,
+    "upstream_V13V_REPORT_v_errors": 0,
+    "upstream_ALT_REPORT_extension_errors": 0,
+    "upstream_CL_REPORT_cl_errors": 0,
+    "upstream_CXTB_REPORT_cxtb_errors": 0,
+    "upstream_CXD_REPORT_cxd_errors": 0,
+    "upstream_E410_REPORT_errors": 0,
+    "upstream_E402_REPORT_errors": 0,
+    "upstream_HR_REPORT_errors": 0,
+    "upstream_S720_REPORT_errors": 0,
+    "upstream_S722_REPORT_errors": 0,
+    "upstream_S724_REPORT_errors": 0,
+    "upstream_S725_REPORT_errors": 0,
+    "upstream_S728_REPORT_errors": 0,
+    "upstream_S730_REPORT_errors": 0,
+    "upstream_S731_REPORT_errors": 0,
+    "upstream_S733_REPORT_errors": 0,
+    "upstream_S734_REPORT_errors": 0,
+    "upstream_S738_REPORT_errors": 0,
+    "upstream_S739_REPORT_errors": 0,
+    "upstream_S740_REPORT_errors": 0,
+    "upstream_S744_REPORT_errors": 0,
+    "upstream_S747_REPORT_errors": 0,
+    "upstream_S752_REPORT_errors": 0,
+    "upstream_S758_REPORT_errors": 0,
+    "upstream_S759_REPORT_errors": 0,
+    "upstream_S793_REPORT_errors": 0,
+    "upstream_S794_REPORT_errors": 0,
+    "upstream_S804_REPORT_errors": 0,
+    "upstream_S809_REPORT_errors": 0,
+    "upstream_S811_REPORT_errors": 0,
+    "upstream_S814_REPORT_errors": 0,
+    "upstream_S823_REPORT_errors": 0,
+    "upstream_S834_REPORT_errors": 0,
+    "upstream_S836_REPORT_errors": 0,
+    "upstream_S837_REPORT_errors": 0,
+    "upstream_S839_REPORT_errors": 0,
+    "upstream_S840_REPORT_errors": 0,
+    "upstream_S846_REPORT_errors": 0,
+    "upstream_S850_REPORT_errors": 0,
+    "upstream_S853_REPORT_errors": 0,
+    "upstream_S928_REPORT_errors": 0,
+    "upstream_S932_REPORT_errors": 0,
+    "upstream_S936_REPORT_errors": 0,
+    "upstream_S939_REPORT_errors": 0,
+    "upstream_S948_REPORT_errors": 0,
+    "upstream_S950_REPORT_errors": 0,
+    "upstream_S951_REPORT_errors": 0,
+    "upstream_S952_REPORT_errors": 0,
+    "upstream_S953_REPORT_errors": 0,
+    "upstream_S961_REPORT_errors": 0,
+    "upstream_S1010_REPORT_errors": 0,
+    "upstream_F16_WINDOW_REPORT_f16_window_errors": 0,
+    "upstream_F16_REPORT_f16_errors": 0,
+    "upstream_F17_REPORT_f17_errors": 0,
+    "upstream_F17_INPUT_REPORT_f17_input_errors": 0,
+    "upstream_F18_FEED_REPORT_f18_feed_errors": 0,
+    "upstream_F19_HERD_REPORT_f19_herd_errors": 0,
+    "f17_pairs": 53,
+    "f17_pair_units": 3720,
+    "f17_errors": 0,
+    "f17_input_turns": 10,
+    "f17_input_units": 140,
+    "f17_input_gain": 126.0,
+    "f17_input_errors": 0,
+    "f18_feed_zero_requests": 0,
+    "f18_feed_rescues": 0,
+    "f18_feed_errors": 0,
+    "f19_herd_checks": 4,
+    "f19_herd_selected": 1,
+    "f19_herd_units": 2,
+    "f19_herd_rewrites": 4,
+    "f19_herd_sold": 40,
+    "f19_herd_no_plan": 3,
+    "f19_herd_errors": 0,
+    "f19_herd_plan_mismatch": 2
+  },
+  "rewards": [
+    83197.0,
+    88248.0
+  ]
+}

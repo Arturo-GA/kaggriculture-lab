@@ -1,0 +1,15 @@
+{
+  "id": "jarturo/kaggriculture-frontier19-policy-validation",
+  "title": "Kaggriculture Frontier19 policy validation",
+  "code_file": "experiment.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [
+    "kaggriculture"
+  ],
+  "kernel_sources": []
+}

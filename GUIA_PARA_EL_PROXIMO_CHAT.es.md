@@ -1,5 +1,9 @@
 # Guía de traspaso para el próximo chat — Kaggriculture (estado al 25 de septiembre de 2026, ~21:40 UTC)
 
+**30 de septiembre: Frontier19, submissions 56714342 y 56714336.** Cuatro partidas por cada equipo del puesto 200–300, veinte contabilidades propias exactas, 544 juegos de comparación y dos estrategias verificadas funcionalmente en un notebook privado. Market2 pasa su puerta; Market1 es una segunda plaza experimental con un retroceso documentado. [Resultados](FRONTIER19_RESULTS.es.md) y [estado para continuar](RESUME_FRONTIER19.es.md). La mejora local no garantiza top 300.
+
+Los estados anteriores que siguen son históricos.
+
 > **Actualización más reciente: Frontier18, 27/09, submission 56617687.** Leer
 > [RESUME_FRONTIER18.es.md](RESUME_FRONTIER18.es.md). Censo de cuatro partidas por equipo:
 > 400 actuaciones en 336 partidas, cuatro reconstrucciones exactas del líder y un fallo

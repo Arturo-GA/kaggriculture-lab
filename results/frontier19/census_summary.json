@@ -1,0 +1,20 @@
+{
+  "snapshot_utc": "2026-09-30T15:35:37.618212+00:00",
+  "team_count": 101,
+  "appearances": 404,
+  "unique_games": 360,
+  "mean_margin": -2731.7227722772277,
+  "median_hands": 11.0,
+  "median_layout": {
+    "WHEAT": 25.0,
+    "CARROT": 0.0,
+    "STRAWBERRY": 25.0,
+    "TOMATO": 0.0,
+    "GOOSE": 4.0,
+    "COW": 8.0,
+    "SHEEP": 5.0
+  },
+  "sw_step_median": 218.0,
+  "se_games": 50,
+  "input_roundtrip_games": 304
+}

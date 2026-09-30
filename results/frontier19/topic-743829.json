@@ -1,0 +1,29 @@
+{
+  "messages": [
+    {
+      "id": 3530266,
+      "post_date": "2026-09-29T21:05:18.290000",
+      "content": "<p>Interested in a reply here, as well.</p>\n<p>In the interim, in the forum post below a Kaggle Staff member replied that \"Using public replays to train, build, inform your submission is allowed and encouraged.\"</p>\n<p><a href=\"https://www.kaggle.com/competitions/kaggriculture/discussion/738837\" target=\"_blank\">Is replaying action sequences extracted from public episode replays permitted under kaggle competiton Rules 3.14.a?</a></p>\n<p>To me, that sounds as if verbatim copying of another agent via episode extraction is OK..?</p>\n<p>And <strong>if</strong> that's OK, then I have to imagine that using someone's MIT-licensed code is OK, as well.</p>\n<p>Still, I'd like confirmation on both.</p>",
+      "raw_markdown": "Interested in a reply here, as well.\n\nIn the interim, in the forum post below a Kaggle Staff member replied that \"Using public replays to train, build, inform your submission is allowed and encouraged.\"\n\n[Is replaying action sequences extracted from public episode replays permitted under kaggle competiton Rules 3.14.a?](https://www.kaggle.com/competitions/kaggriculture/discussion/738837)\n\nTo me, that sounds as if verbatim copying of another agent via episode extraction is OK..?\n\nAnd **if** that's OK, then I have to imagine that using someone's MIT-licensed code is OK, as well.\n\nStill, I'd like confirmation on both.",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    },
+    {
+      "id": 3529071,
+      "post_date": "2026-09-27T09:28:39.250000",
+      "content": "<p>If an entrant submits substantially the same code as a publicly shared, MIT-licensed Kaggriculture notebook, preserving the author and license notice, is that entry eligible for final judging and prizes under General Rules §§3.6(c) and 3.14(a)? Does the winner license affect the answer? We would appreciate a ruling before September 30.</p>",
+      "raw_markdown": "If an entrant submits substantially the same code as a publicly shared, MIT-licensed Kaggriculture notebook, preserving the author and license notice, is that entry eligible for final judging and prizes under General Rules §§3.6(c) and 3.14(a)? Does the winner license affect the answer? We would appreciate a ruling before September 30.",
+      "author_name": null,
+      "votes": 0,
+      "is_deleted": false,
+      "is_pinned": false,
+      "replies": [],
+      "is_frozen": true
+    }
+  ],
+  "is_frozen": true
+}

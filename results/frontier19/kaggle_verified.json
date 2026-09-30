@@ -1,0 +1,39 @@
+{
+  "scores": {
+    "f19_market2": 8.0,
+    "f19_market1": 8.0,
+    "f18_small": 4.0
+  },
+  "max_call_ms": {
+    "f19_market2": 313.06921899999907,
+    "f19_market1": 342.6179520000687,
+    "f18_small": 322.63469700001224
+  },
+  "games": 24,
+  "error_games": 0,
+  "cloud_gate_passed": true,
+  "cloud_games_sha256": "75d1df21cd2f3c0d32ee4a10a71294fa668ad59520daa07f179816b57147e4cb",
+  "exports": {
+    "f19_market2": {
+      "archive_sha256": "f9fc3c1708025c84aa895e3576b6bae2885ed81ffed0494293ea0afaa76db109",
+      "candidate_sha256": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516",
+      "members_sha256": {
+        "main.py": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516",
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE.txt": "eefaa3bac6796afa671797baade8d2af74d7edd97ca046ce92e1410396312ff7"
+      }
+    },
+    "f19_market1": {
+      "archive_sha256": "fc9b6f213b3eb1cae5b31fa8a810db05b99864688286a90b56093e04a16243ff",
+      "candidate_sha256": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+      "members_sha256": {
+        "main.py": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+        "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "NOTICE.txt": "eefaa3bac6796afa671797baade8d2af74d7edd97ca046ce92e1410396312ff7"
+      }
+    }
+  },
+  "verified": true,
+  "export_checks_passed": true,
+  "checked_utc": "2026-09-30T17:18:37.254060+00:00"
+}

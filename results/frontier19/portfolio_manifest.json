@@ -1,0 +1,358 @@
+{
+  "family": {
+    "key": "419a33c286406b967ea1aa775d02d6b1f8dd82acb1aec21e496baf3ef4b4d57f",
+    "count": 26,
+    "teams": 9,
+    "sw": 219.5,
+    "strawberry": 24.5,
+    "ranks": [
+      200,
+      212,
+      215,
+      218,
+      225,
+      228,
+      231,
+      234,
+      275
+    ]
+  },
+  "excluded_episodes": [
+    115631159,
+    115636601,
+    115743452,
+    115780893,
+    115804609,
+    115811025,
+    115811217,
+    115814168,
+    115818749,
+    115819624,
+    115820355,
+    115827156,
+    115827769,
+    115828502,
+    115829386,
+    115830861,
+    115832215,
+    115841455,
+    115842599,
+    115842945
+  ],
+  "data_sha256": "c3b93576d449921f632d73268e432773f0c4338fe6810ffe01fdbb0dc713eaa6",
+  "sources": [
+    {
+      "episode": 115821857,
+      "seat": 1,
+      "team": 16904592,
+      "rank": 200,
+      "shops": [
+        "PET_CAFE",
+        "BAKERY"
+      ],
+      "sw": 242,
+      "strawberry": 13
+    },
+    {
+      "episode": 115830930,
+      "seat": 1,
+      "team": 16904592,
+      "rank": 200,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sw": 217,
+      "strawberry": 22
+    },
+    {
+      "episode": 115841458,
+      "seat": 0,
+      "team": 16904592,
+      "rank": 200,
+      "shops": [
+        "BAKERY",
+        "ICE_CREAM_SHOP"
+      ],
+      "sw": 217,
+      "strawberry": 23
+    },
+    {
+      "episode": 115842088,
+      "seat": 1,
+      "team": 16904592,
+      "rank": 200,
+      "shops": [
+        "PIZZA_SHOP",
+        "PET_CAFE"
+      ],
+      "sw": 242,
+      "strawberry": 7
+    },
+    {
+      "episode": 115835857,
+      "seat": 1,
+      "team": 16884751,
+      "rank": 212,
+      "shops": [
+        "YARN_STORE",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 266,
+      "strawberry": 21
+    },
+    {
+      "episode": 115843571,
+      "seat": 1,
+      "team": 16884751,
+      "rank": 212,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 217,
+      "strawberry": 25
+    },
+    {
+      "episode": 115819693,
+      "seat": 1,
+      "team": 16857762,
+      "rank": 215,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "sw": 206,
+      "strawberry": 24
+    },
+    {
+      "episode": 115824472,
+      "seat": 1,
+      "team": 16857762,
+      "rank": 215,
+      "shops": [
+        "PIZZA_SHOP",
+        "YARN_STORE"
+      ],
+      "sw": 242,
+      "strawberry": 14
+    },
+    {
+      "episode": 115833893,
+      "seat": 1,
+      "team": 16857762,
+      "rank": 215,
+      "shops": [
+        "BAKERY",
+        "SMOOTHIE_SHOP"
+      ],
+      "sw": 220,
+      "strawberry": 25
+    },
+    {
+      "episode": 115828184,
+      "seat": 0,
+      "team": 16820794,
+      "rank": 218,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "BAKERY"
+      ],
+      "sw": 217,
+      "strawberry": 25
+    },
+    {
+      "episode": 115837774,
+      "seat": 1,
+      "team": 16820794,
+      "rank": 218,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "PIZZA_SHOP"
+      ],
+      "sw": 217,
+      "strawberry": 25
+    },
+    {
+      "episode": 115838466,
+      "seat": 0,
+      "team": 16820794,
+      "rank": 218,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "sw": 217,
+      "strawberry": 28
+    },
+    {
+      "episode": 115816757,
+      "seat": 1,
+      "team": 16857488,
+      "rank": 225,
+      "shops": [
+        "FARMERS_MARKET",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 220,
+      "strawberry": 31
+    },
+    {
+      "episode": 115833466,
+      "seat": 1,
+      "team": 16857488,
+      "rank": 225,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 217,
+      "strawberry": 22
+    },
+    {
+      "episode": 115844446,
+      "seat": 1,
+      "team": 16857488,
+      "rank": 225,
+      "shops": [
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "sw": 265,
+      "strawberry": 14
+    },
+    {
+      "episode": 115823359,
+      "seat": 1,
+      "team": 16920167,
+      "rank": 228,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "YARN_STORE"
+      ],
+      "sw": 265,
+      "strawberry": 23
+    },
+    {
+      "episode": 115828523,
+      "seat": 0,
+      "team": 16920167,
+      "rank": 228,
+      "shops": [
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 220,
+      "strawberry": 25
+    },
+    {
+      "episode": 115835161,
+      "seat": 1,
+      "team": 16920167,
+      "rank": 228,
+      "shops": [
+        "BAKERY",
+        "BRUNCH_SPOT"
+      ],
+      "sw": 220,
+      "strawberry": 25
+    },
+    {
+      "episode": 115837528,
+      "seat": 1,
+      "team": 16920167,
+      "rank": 228,
+      "shops": [
+        "SMOOTHIE_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "sw": 206,
+      "strawberry": 25
+    },
+    {
+      "episode": 115830121,
+      "seat": 0,
+      "team": 16930465,
+      "rank": 231,
+      "shops": [
+        "YARN_STORE",
+        "BAKERY"
+      ],
+      "sw": 218,
+      "strawberry": 22
+    },
+    {
+      "episode": 115836618,
+      "seat": 1,
+      "team": 16930465,
+      "rank": 231,
+      "shops": [
+        "ICE_CREAM_SHOP",
+        "YARN_STORE"
+      ],
+      "sw": 224,
+      "strawberry": 25
+    },
+    {
+      "episode": 115843891,
+      "seat": 1,
+      "team": 16930465,
+      "rank": 231,
+      "shops": [
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "sw": 219,
+      "strawberry": 16
+    },
+    {
+      "episode": 115841204,
+      "seat": 0,
+      "team": 16860907,
+      "rank": 234,
+      "shops": [
+        "PIZZA_SHOP",
+        "ICE_CREAM_SHOP"
+      ],
+      "sw": 218,
+      "strawberry": 29
+    },
+    {
+      "episode": 115841728,
+      "seat": 0,
+      "team": 16857685,
+      "rank": 275,
+      "shops": [
+        "BRUNCH_SPOT",
+        "BAKERY"
+      ],
+      "sw": 242,
+      "strawberry": 26
+    },
+    {
+      "episode": 115844787,
+      "seat": 0,
+      "team": 16857685,
+      "rank": 275,
+      "shops": [
+        "FARMERS_MARKET",
+        "PIZZA_SHOP"
+      ],
+      "sw": 217,
+      "strawberry": 25
+    },
+    {
+      "episode": 115845819,
+      "seat": 1,
+      "team": 16857685,
+      "rank": 275,
+      "shops": [
+        "BAKERY",
+        "YARN_STORE"
+      ],
+      "sw": 265,
+      "strawberry": 12
+    }
+  ],
+  "rule": "Largest coherent first-six-day physical-action and realized-hire family with median SW <=240 and <30 strawberries. No outcomes used in family selection."
+}

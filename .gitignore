@@ -157,3 +157,10 @@ candidates/f18_*.py
 results/frontier18/kaggle/candidates/
 results/frontier18/kaggle/attribution/
 results/frontier18/remote_metadata/*.ipynb
+candidates/n30_*.py
+candidates/f19_*.py
+results/frontier19/kaggle/candidates/
+results/frontier19/kaggle/attribution/
+results/frontier19/remote_metadata/*.ipynb
+!candidates/f19_market1.py
+!candidates/f19_market2.py

@@ -1,5 +1,7 @@
 # Kaggriculture Lab
 
+**30 de septiembre: Frontier19, submissions 56714342 y 56714336.** Cuatro partidas por cada equipo del puesto 200–300, veinte contabilidades propias exactas, 544 juegos de comparación y dos estrategias verificadas funcionalmente en un notebook privado. Market2 pasa su puerta; Market1 es una segunda plaza experimental con un retroceso documentado. [Resultados](FRONTIER19_RESULTS.es.md) y [estado para continuar](RESUME_FRONTIER19.es.md). La mejora local no garantiza top 300.
+
 Investigación y experimentos para Kaggriculture sobre el V37 compartido por Arturo.
 Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
 solo cuando la granja rival mantiene una semejanza alta con la propia.

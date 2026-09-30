@@ -1,0 +1,59 @@
+{
+  "competitions": [
+    {
+      "id": 147734,
+      "ref": "https://www.kaggle.com/competitions/kaggriculture",
+      "title": "Kaggriculture",
+      "url": "https://www.kaggle.com/competitions/kaggriculture",
+      "description": "Create an agent to play in this farming simulation and compete with others to maximize your income",
+      "organization_name": "Kaggle",
+      "organization_ref": null,
+      "category": "Featured",
+      "reward": "50,000 Usd",
+      "tags": [
+        {
+          "ref": "simulations",
+          "name": "simulations",
+          "description": "",
+          "full_path": "subject > culture and humanities > games > video games > simulations",
+          "competition_count": 105,
+          "dataset_count": 937,
+          "script_count": 333,
+          "total_count": 1375,
+          "is_frozen": true
+        },
+        {
+          "ref": "custom metric",
+          "name": "custom metric",
+          "description": "This competition's metric is defined under the 'Evaluation' tab",
+          "full_path": "",
+          "competition_count": 0,
+          "dataset_count": 0,
+          "script_count": 0,
+          "total_count": 0,
+          "is_frozen": true
+        }
+      ],
+      "deadline": "2026-09-30T23:59:00",
+      "kernel_count": 0,
+      "team_count": 10213,
+      "user_has_entered": true,
+      "user_rank": 657,
+      "merger_deadline": "2026-09-23T23:59:00",
+      "new_entrant_deadline": "2026-09-23T23:59:00",
+      "enabled_date": "2026-07-30T16:15:52.123000",
+      "max_daily_submissions": 5,
+      "max_team_size": 5,
+      "evaluation_metric": "kaggriculture",
+      "awards_points": true,
+      "is_kernels_submissions_only": false,
+      "submissions_disabled": false,
+      "thumbnail_image_url": null,
+      "host_name": "Kaggle",
+      "date_created": "2026-06-09T23:19:05.594000",
+      "is_frozen": true
+    }
+  ],
+  "next_page_token": "",
+  "is_frozen": true
+}

@@ -1,0 +1,5569 @@
+{
+  "summary": {
+    "teams": 101,
+    "all_four_sw_before_240": 65,
+    "first_two_sw_before_240": 71,
+    "later_two_contradict_early_sw": 6,
+    "identical_herd_all_four": 2,
+    "absolute_sw_median_shift": 0.0,
+    "note": "Descriptive snapshots conditioned on shops and game state. Four games cannot establish causality or reveal private policy. Input-trade counts add per-item turns, so two items in one turn count twice.",
+    "features_sha256": "372bcc9c1be9773ebb45c92dcf4ef414d327eaaf15c2cc0a8a4535f8dc8ffd4c"
+  },
+  "teams": [
+    {
+      "team_id": 16904592,
+      "rank": 200,
+      "episodes": [
+        115842088,
+        115841458,
+        115830930,
+        115821857
+      ],
+      "sw": [
+        242,
+        217,
+        217,
+        242
+      ],
+      "strawberries": [
+        7,
+        23,
+        22,
+        13
+      ],
+      "herds": [
+        [
+          3,
+          10,
+          3
+        ],
+        [
+          7,
+          8,
+          4
+        ],
+        [
+          6,
+          12,
+          4
+        ],
+        [
+          9,
+          5,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16684954,
+      "rank": 201,
+      "episodes": [
+        115839855,
+        115836073,
+        115833531,
+        115826326
+      ],
+      "sw": [
+        197,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        9,
+        20,
+        20,
+        21
+      ],
+      "herds": [
+        [
+          9,
+          7,
+          3
+        ],
+        [
+          10,
+          7,
+          3
+        ],
+        [
+          10,
+          7,
+          3
+        ],
+        [
+          10,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 1.0,
+      "stable_herd_count": 3,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16659627,
+      "rank": 202,
+      "episodes": [
+        115839692,
+        115832944,
+        115829383,
+        115828452
+      ],
+      "sw": [
+        218,
+        222,
+        222,
+        222
+      ],
+      "strawberries": [
+        15,
+        24,
+        25,
+        30
+      ],
+      "herds": [
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          0,
+          7,
+          10
+        ],
+        [
+          0,
+          6,
+          9
+        ],
+        [
+          2,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "four_vs_two_sw_median_change": 2.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16701074,
+      "rank": 203,
+      "episodes": [
+        115842788,
+        115839714,
+        115836846,
+        115826286
+      ],
+      "sw": [
+        199,
+        221,
+        199,
+        199
+      ],
+      "strawberries": [
+        12,
+        16,
+        14,
+        33
+      ],
+      "herds": [
+        [
+          8,
+          7,
+          10
+        ],
+        [
+          4,
+          3,
+          18
+        ],
+        [
+          12,
+          5,
+          3
+        ],
+        [
+          5,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "four_vs_two_sw_median_change": -11.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16625220,
+      "rank": 204,
+      "episodes": [
+        115842934,
+        115841458,
+        115835415,
+        115825449
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        20,
+        24,
+        23,
+        22
+      ],
+      "herds": [
+        [
+          7,
+          7,
+          9
+        ],
+        [
+          9,
+          7,
+          3
+        ],
+        [
+          6,
+          11,
+          3
+        ],
+        [
+          5,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16623370,
+      "rank": 205,
+      "episodes": [
+        115843748,
+        115842949,
+        115832173,
+        115828597
+      ],
+      "sw": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "strawberries": [
+        17,
+        17,
+        17,
+        17
+      ],
+      "herds": [
+        [
+          4,
+          12,
+          3
+        ],
+        [
+          4,
+          4,
+          11
+        ],
+        [
+          10,
+          6,
+          3
+        ],
+        [
+          10,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        449,
+        441,
+        452,
+        460
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16808905,
+      "rank": 206,
+      "episodes": [
+        115842999,
+        115832436,
+        115823290,
+        115820253
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        20,
+        32,
+        26,
+        31
+      ],
+      "herds": [
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          5,
+          9,
+          3
+        ],
+        [
+          10,
+          5,
+          3
+        ],
+        [
+          7,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16811703,
+      "rank": 207,
+      "episodes": [
+        115843571,
+        115842048,
+        115840468,
+        115839849
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "herds": [
+        [
+          5,
+          10,
+          3
+        ],
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          5,
+          10,
+          3
+        ],
+        [
+          5,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 3,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16741131,
+      "rank": 208,
+      "episodes": [
+        115842964,
+        115832371,
+        115830931,
+        115821856
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "herds": [
+        [
+          3,
+          8,
+          5
+        ],
+        [
+          6,
+          8,
+          4
+        ],
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          6,
+          8,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        4,
+        3,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16905679,
+      "rank": 209,
+      "episodes": [
+        115833811,
+        115823377,
+        115821773,
+        115814048
+      ],
+      "sw": [
+        222,
+        199,
+        220,
+        218
+      ],
+      "strawberries": [
+        26,
+        22,
+        22,
+        17
+      ],
+      "herds": [
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          1,
+          12,
+          3
+        ],
+        [
+          9,
+          8,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        6,
+        3,
+        5,
+        4
+      ],
+      "four_vs_two_sw_median_change": 8.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16929873,
+      "rank": 210,
+      "episodes": [
+        115841145,
+        115839885,
+        115838973,
+        115829286
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        29,
+        33,
+        33,
+        34
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          0,
+          6,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        3,
+        5,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16716566,
+      "rank": 211,
+      "episodes": [
+        115844485,
+        115833877,
+        115826674,
+        115821811
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        24,
+        17,
+        25,
+        26
+      ],
+      "herds": [
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          0,
+          5,
+          17
+        ],
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          4,
+          5,
+          9
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16884751,
+      "rank": 212,
+      "episodes": [
+        115843571,
+        115835857,
+        115835377,
+        115824884
+      ],
+      "sw": [
+        217,
+        266,
+        217,
+        242
+      ],
+      "strawberries": [
+        25,
+        21,
+        28,
+        12
+      ],
+      "herds": [
+        [
+          5,
+          11,
+          3
+        ],
+        [
+          5,
+          4,
+          21
+        ],
+        [
+          1,
+          13,
+          4
+        ],
+        [
+          5,
+          9,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -12.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16882725,
+      "rank": 213,
+      "episodes": [
+        115839738,
+        115835891,
+        115833037,
+        115830412
+      ],
+      "sw": [
+        224,
+        224,
+        248,
+        224
+      ],
+      "strawberries": [
+        21,
+        28,
+        22,
+        25
+      ],
+      "herds": [
+        [
+          1,
+          11,
+          7
+        ],
+        [
+          2,
+          13,
+          3
+        ],
+        [
+          9,
+          5,
+          5
+        ],
+        [
+          4,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    },
+    {
+      "team_id": 16748173,
+      "rank": 214,
+      "episodes": [
+        115844217,
+        115842752,
+        115842673,
+        115841145
+      ],
+      "sw": [
+        199,
+        220,
+        199,
+        199
+      ],
+      "strawberries": [
+        12,
+        23,
+        20,
+        25
+      ],
+      "herds": [
+        [
+          4,
+          13,
+          3
+        ],
+        [
+          2,
+          5,
+          13
+        ],
+        [
+          1,
+          14,
+          3
+        ],
+        [
+          0,
+          14,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "four_vs_two_sw_median_change": -10.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16857762,
+      "rank": 215,
+      "episodes": [
+        115835377,
+        115833893,
+        115824472,
+        115819693
+      ],
+      "sw": [
+        217,
+        220,
+        242,
+        206
+      ],
+      "strawberries": [
+        28,
+        25,
+        14,
+        24
+      ],
+      "herds": [
+        [
+          1,
+          13,
+          4
+        ],
+        [
+          6,
+          11,
+          3
+        ],
+        [
+          0,
+          9,
+          8
+        ],
+        [
+          2,
+          12,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    },
+    {
+      "team_id": 16754022,
+      "rank": 216,
+      "episodes": [
+        115843581,
+        115842056,
+        115841896,
+        115840485
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        20,
+        30,
+        16,
+        15
+      ],
+      "herds": [
+        [
+          6,
+          5,
+          9
+        ],
+        [
+          7,
+          8,
+          3
+        ],
+        [
+          8,
+          3,
+          14
+        ],
+        [
+          6,
+          8,
+          7
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16679098,
+      "rank": 217,
+      "episodes": [
+        115841369,
+        115830367,
+        115824126,
+        115822763
+      ],
+      "sw": [
+        222,
+        222,
+        220,
+        220
+      ],
+      "strawberries": [
+        29,
+        27,
+        24,
+        36
+      ],
+      "herds": [
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          13,
+          3
+        ],
+        [
+          5,
+          8,
+          8
+        ],
+        [
+          4,
+          12,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "four_vs_two_sw_median_change": -1.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16820794,
+      "rank": 218,
+      "episodes": [
+        115843404,
+        115838466,
+        115837774,
+        115828184
+      ],
+      "sw": [
+        242,
+        217,
+        217,
+        217
+      ],
+      "strawberries": [
+        19,
+        28,
+        25,
+        25
+      ],
+      "herds": [
+        [
+          10,
+          5,
+          4
+        ],
+        [
+          2,
+          10,
+          4
+        ],
+        [
+          1,
+          11,
+          12
+        ],
+        [
+          11,
+          7,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -12.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16796682,
+      "rank": 219,
+      "episodes": [
+        115839920,
+        115829383,
+        115820356,
+        115812698
+      ],
+      "sw": [
+        218,
+        222,
+        218,
+        219
+      ],
+      "strawberries": [
+        13,
+        19,
+        22,
+        17
+      ],
+      "herds": [
+        [
+          2,
+          9,
+          7
+        ],
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          5,
+          5,
+          3
+        ],
+        [
+          2,
+          3,
+          12
+        ]
+      ],
+      "input_trade_turns": [
+        6,
+        1,
+        7,
+        6
+      ],
+      "four_vs_two_sw_median_change": -1.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16681007,
+      "rank": 220,
+      "episodes": [
+        115844485,
+        115844184,
+        115842632,
+        115841105
+      ],
+      "sw": [
+        200,
+        200,
+        200,
+        201
+      ],
+      "strawberries": [
+        20,
+        20,
+        20,
+        16
+      ],
+      "herds": [
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          1,
+          9,
+          9
+        ],
+        [
+          3,
+          10,
+          6
+        ],
+        [
+          8,
+          8,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        258,
+        279,
+        259,
+        259
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16622198,
+      "rank": 221,
+      "episodes": [
+        115838078,
+        115836532,
+        115830866,
+        115821736
+      ],
+      "sw": [
+        204,
+        201,
+        199,
+        201
+      ],
+      "strawberries": [
+        23,
+        26,
+        26,
+        15
+      ],
+      "herds": [
+        [
+          0,
+          5,
+          12
+        ],
+        [
+          3,
+          8,
+          5
+        ],
+        [
+          0,
+          6,
+          5
+        ],
+        [
+          0,
+          5,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -1.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16685743,
+      "rank": 222,
+      "episodes": [
+        115842821,
+        115841258,
+        115840997,
+        115840413
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        20,
+        19,
+        22,
+        35
+      ],
+      "herds": [
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          7,
+          9,
+          3
+        ],
+        [
+          6,
+          5,
+          5
+        ],
+        [
+          6,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        5,
+        4,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16669269,
+      "rank": 223,
+      "episodes": [
+        115839913,
+        115829362,
+        115820318,
+        115819643
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        22,
+        23,
+        23,
+        21
+      ],
+      "herds": [
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          5,
+          4,
+          9
+        ],
+        [
+          9,
+          7,
+          3
+        ],
+        [
+          6,
+          4,
+          9
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16748866,
+      "rank": 224,
+      "episodes": [
+        115842795,
+        115841374,
+        115838827,
+        115838241
+      ],
+      "sw": [
+        149,
+        149,
+        149,
+        149
+      ],
+      "strawberries": [
+        36,
+        21,
+        28,
+        28
+      ],
+      "herds": [
+        [
+          3,
+          13,
+          5
+        ],
+        [
+          0,
+          6,
+          22
+        ],
+        [
+          3,
+          8,
+          5
+        ],
+        [
+          0,
+          10,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        110,
+        186,
+        154,
+        154
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16857488,
+      "rank": 225,
+      "episodes": [
+        115844446,
+        115833466,
+        115824835,
+        115816757
+      ],
+      "sw": [
+        265,
+        217,
+        242,
+        220
+      ],
+      "strawberries": [
+        14,
+        22,
+        21,
+        31
+      ],
+      "herds": [
+        [
+          11,
+          4,
+          12
+        ],
+        [
+          3,
+          13,
+          4
+        ],
+        [
+          5,
+          10,
+          4
+        ],
+        [
+          6,
+          5,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -10.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16945992,
+      "rank": 226,
+      "episodes": [
+        115844420,
+        115832785,
+        115827479,
+        115825482
+      ],
+      "sw": [
+        197,
+        199,
+        197,
+        197
+      ],
+      "strawberries": [
+        11,
+        23,
+        22,
+        11
+      ],
+      "herds": [
+        [
+          9,
+          8,
+          6
+        ],
+        [
+          7,
+          9,
+          3
+        ],
+        [
+          4,
+          12,
+          3
+        ],
+        [
+          8,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": -1.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16854059,
+      "rank": 227,
+      "episodes": [
+        115842609,
+        115838767,
+        115832384,
+        115831428
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        10,
+        24,
+        18,
+        17
+      ],
+      "herds": [
+        [
+          5,
+          6,
+          8
+        ],
+        [
+          10,
+          5,
+          3
+        ],
+        [
+          1,
+          5,
+          14
+        ],
+        [
+          9,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16920167,
+      "rank": 228,
+      "episodes": [
+        115837528,
+        115835161,
+        115828523,
+        115823359
+      ],
+      "sw": [
+        206,
+        220,
+        220,
+        265
+      ],
+      "strawberries": [
+        25,
+        25,
+        25,
+        23
+      ],
+      "herds": [
+        [
+          6,
+          10,
+          4
+        ],
+        [
+          9,
+          6,
+          5
+        ],
+        [
+          9,
+          6,
+          5
+        ],
+        [
+          7,
+          7,
+          9
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 7.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    },
+    {
+      "team_id": 16732478,
+      "rank": 229,
+      "episodes": [
+        115842821,
+        115835045,
+        115833461,
+        115830790
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        23,
+        23,
+        23,
+        21
+      ],
+      "herds": [
+        [
+          5,
+          9,
+          3
+        ],
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          6,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        2,
+        2,
+        5
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16761593,
+      "rank": 230,
+      "episodes": [
+        115843555,
+        115842949,
+        115842011,
+        115841062
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        11,
+        30,
+        30,
+        30
+      ],
+      "herds": [
+        [
+          1,
+          7,
+          15
+        ],
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          10,
+          8,
+          3
+        ],
+        [
+          10,
+          8,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16930465,
+      "rank": 231,
+      "episodes": [
+        115843891,
+        115836618,
+        115834293,
+        115830121
+      ],
+      "sw": [
+        219,
+        224,
+        218,
+        218
+      ],
+      "strawberries": [
+        16,
+        25,
+        12,
+        22
+      ],
+      "herds": [
+        [
+          5,
+          5,
+          17
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          6,
+          7,
+          11
+        ],
+        [
+          10,
+          5,
+          10
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -3.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16632021,
+      "rank": 232,
+      "episodes": [
+        115840416,
+        115838817,
+        115837415,
+        115835768
+      ],
+      "sw": [
+        217,
+        217,
+        217,
+        217
+      ],
+      "strawberries": [
+        24,
+        37,
+        20,
+        31
+      ],
+      "herds": [
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          4,
+          8,
+          3
+        ],
+        [
+          2,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16696703,
+      "rank": 233,
+      "episodes": [
+        115842187,
+        115841437,
+        115830903,
+        115821811
+      ],
+      "sw": [
+        242,
+        242,
+        242,
+        242
+      ],
+      "strawberries": [
+        16,
+        28,
+        13,
+        12
+      ],
+      "herds": [
+        [
+          9,
+          4,
+          3
+        ],
+        [
+          3,
+          11,
+          2
+        ],
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          5,
+          3,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16860907,
+      "rank": 234,
+      "episodes": [
+        115841204,
+        115839901,
+        115829336,
+        115820279
+      ],
+      "sw": [
+        218,
+        218,
+        218,
+        225
+      ],
+      "strawberries": [
+        29,
+        29,
+        29,
+        29
+      ],
+      "herds": [
+        [
+          0,
+          9,
+          8
+        ],
+        [
+          0,
+          9,
+          3
+        ],
+        [
+          0,
+          9,
+          3
+        ],
+        [
+          0,
+          4,
+          14
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16766128,
+      "rank": 235,
+      "episodes": [
+        115844423,
+        115832949,
+        115828250,
+        115826285
+      ],
+      "sw": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "strawberries": [
+        20,
+        20,
+        20,
+        19
+      ],
+      "herds": [
+        [
+          3,
+          11,
+          4
+        ],
+        [
+          8,
+          8,
+          3
+        ],
+        [
+          8,
+          8,
+          3
+        ],
+        [
+          2,
+          8,
+          9
+        ]
+      ],
+      "input_trade_turns": [
+        405,
+        261,
+        268,
+        282
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16857723,
+      "rank": 236,
+      "episodes": [
+        115843630,
+        115842110,
+        115841431,
+        115840540
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        25,
+        25,
+        25,
+        31
+      ],
+      "herds": [
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          5,
+          7,
+          6
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 3,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16832971,
+      "rank": 239,
+      "episodes": [
+        115845134,
+        115835737,
+        115832118,
+        115827777
+      ],
+      "sw": [
+        200,
+        198,
+        202,
+        199
+      ],
+      "strawberries": [
+        21,
+        28,
+        28,
+        46
+      ],
+      "herds": [
+        [
+          1,
+          10,
+          9
+        ],
+        [
+          6,
+          4,
+          3
+        ],
+        [
+          3,
+          10,
+          4
+        ],
+        [
+          1,
+          8,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        3,
+        3,
+        9
+      ],
+      "four_vs_two_sw_median_change": 0.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16679245,
+      "rank": 238,
+      "episodes": [
+        115842616,
+        115836839,
+        115826287,
+        115824233
+      ],
+      "sw": [
+        226,
+        222,
+        223,
+        223
+      ],
+      "strawberries": [
+        31,
+        35,
+        35,
+        35
+      ],
+      "herds": [
+        [
+          9,
+          7,
+          7
+        ],
+        [
+          0,
+          9,
+          12
+        ],
+        [
+          3,
+          9,
+          7
+        ],
+        [
+          3,
+          10,
+          6
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "four_vs_two_sw_median_change": -1.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16905643,
+      "rank": 237,
+      "episodes": [
+        115843891,
+        115842374,
+        115840818,
+        115839863
+      ],
+      "sw": [
+        250,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        15,
+        27,
+        27,
+        27
+      ],
+      "herds": [
+        [
+          5,
+          5,
+          11
+        ],
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          8,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        5,
+        5,
+        3
+      ],
+      "four_vs_two_sw_median_change": -25.5,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16732857,
+      "rank": 242,
+      "episodes": [
+        115843615,
+        115841407,
+        115830813,
+        115825939
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        720
+      ],
+      "strawberries": [
+        32,
+        32,
+        32,
+        21
+      ],
+      "herds": [
+        [
+          4,
+          7,
+          6
+        ],
+        [
+          5,
+          8,
+          3
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    },
+    {
+      "team_id": 16723955,
+      "rank": 241,
+      "episodes": [
+        115838813,
+        115833812,
+        115829362,
+        115826129
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        31,
+        28,
+        30,
+        24
+      ],
+      "herds": [
+        [
+          6,
+          8,
+          3
+        ],
+        [
+          5,
+          7,
+          5
+        ],
+        [
+          5,
+          7,
+          5
+        ],
+        [
+          5,
+          7,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 3,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16795844,
+      "rank": 240,
+      "episodes": [
+        115838234,
+        115834286,
+        115829352,
+        115820304
+      ],
+      "sw": [
+        200,
+        218,
+        200,
+        218
+      ],
+      "strawberries": [
+        29,
+        27,
+        29,
+        27
+      ],
+      "herds": [
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          3,
+          5,
+          10
+        ]
+      ],
+      "input_trade_turns": [
+        722,
+        587,
+        723,
+        585
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16931354,
+      "rank": 243,
+      "episodes": [
+        115840478,
+        115838953,
+        115833877,
+        115824266
+      ],
+      "sw": [
+        195,
+        204,
+        228,
+        207
+      ],
+      "strawberries": [
+        12,
+        22,
+        9,
+        28
+      ],
+      "herds": [
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          4,
+          7,
+          3
+        ],
+        [
+          0,
+          3,
+          18
+        ],
+        [
+          2,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        15,
+        12,
+        7,
+        7
+      ],
+      "four_vs_two_sw_median_change": 6.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16727171,
+      "rank": 244,
+      "episodes": [
+        115835441,
+        115825868,
+        115820321,
+        115817707
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        33,
+        26,
+        33
+      ],
+      "herds": [
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          10,
+          4
+        ],
+        [
+          0,
+          6,
+          11
+        ],
+        [
+          3,
+          10,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        6,
+        1,
+        6
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16663626,
+      "rank": 245,
+      "episodes": [
+        115841448,
+        115836853,
+        115826326,
+        115824802
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          3,
+          8,
+          6
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        3,
+        5,
+        6
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16751061,
+      "rank": 248,
+      "episodes": [
+        115845262,
+        115839913,
+        115833167,
+        115830930
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        23,
+        23,
+        22,
+        23
+      ],
+      "herds": [
+        [
+          6,
+          9,
+          5
+        ],
+        [
+          4,
+          12,
+          4
+        ],
+        [
+          7,
+          10,
+          3
+        ],
+        [
+          4,
+          12,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16723991,
+      "rank": 247,
+      "episodes": [
+        115839659,
+        115830903,
+        115824846,
+        115820761
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        197
+      ],
+      "strawberries": [
+        21,
+        29,
+        20,
+        16
+      ],
+      "herds": [
+        [
+          12,
+          5,
+          3
+        ],
+        [
+          7,
+          7,
+          3
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          9,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16622245,
+      "rank": 250,
+      "episodes": [
+        115839292,
+        115838159,
+        115833932,
+        115833442
+      ],
+      "sw": [
+        222,
+        222,
+        222,
+        225
+      ],
+      "strawberries": [
+        27,
+        29,
+        26,
+        23
+      ],
+      "herds": [
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          0,
+          13,
+          3
+        ],
+        [
+          2,
+          8,
+          8
+        ],
+        [
+          2,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16794090,
+      "rank": 246,
+      "episodes": [
+        115842836,
+        115841269,
+        115839754,
+        115838234
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        22,
+        30,
+        17,
+        21
+      ],
+      "herds": [
+        [
+          7,
+          9,
+          3
+        ],
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          1,
+          5,
+          16
+        ],
+        [
+          7,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16652446,
+      "rank": 249,
+      "episodes": [
+        115836809,
+        115831330,
+        115830572,
+        115826936
+      ],
+      "sw": [
+        242,
+        218,
+        218,
+        266
+      ],
+      "strawberries": [
+        6,
+        15,
+        27,
+        17
+      ],
+      "herds": [
+        [
+          0,
+          4,
+          17
+        ],
+        [
+          6,
+          7,
+          7
+        ],
+        [
+          11,
+          6,
+          2
+        ],
+        [
+          4,
+          4,
+          12
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16925604,
+      "rank": 251,
+      "episodes": [
+        115836669,
+        115835375,
+        115832411,
+        115823268
+      ],
+      "sw": [
+        200,
+        197,
+        200,
+        200
+      ],
+      "strawberries": [
+        18,
+        26,
+        18,
+        30
+      ],
+      "herds": [
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          5,
+          7,
+          3
+        ],
+        [
+          7,
+          2,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        11,
+        11,
+        15,
+        10
+      ],
+      "four_vs_two_sw_median_change": 1.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16738626,
+      "rank": 252,
+      "episodes": [
+        115838396,
+        115836561,
+        115832102,
+        115830901
+      ],
+      "sw": [
+        220,
+        220,
+        222,
+        220
+      ],
+      "strawberries": [
+        12,
+        19,
+        36,
+        25
+      ],
+      "herds": [
+        [
+          9,
+          9,
+          3
+        ],
+        [
+          7,
+          11,
+          3
+        ],
+        [
+          0,
+          11,
+          3
+        ],
+        [
+          7,
+          11,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        4,
+        3,
+        2,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16756764,
+      "rank": 253,
+      "episodes": [
+        115843696,
+        115841003,
+        115839901,
+        115835437
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        40,
+        17,
+        33,
+        33
+      ],
+      "herds": [
+        [
+          7,
+          9,
+          3
+        ],
+        [
+          6,
+          4,
+          11
+        ],
+        [
+          8,
+          6,
+          3
+        ],
+        [
+          8,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16732055,
+      "rank": 254,
+      "episodes": [
+        115836459,
+        115832726,
+        115824862,
+        115820323
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        24,
+        28,
+        20,
+        20
+      ],
+      "herds": [
+        [
+          2,
+          3,
+          15
+        ],
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          7,
+          7,
+          3
+        ],
+        [
+          9,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        8,
+        2,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16641710,
+      "rank": 255,
+      "episodes": [
+        115836504,
+        115835340,
+        115824817,
+        115817189
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        33,
+        33,
+        26
+      ],
+      "herds": [
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          10,
+          4
+        ],
+        [
+          0,
+          6,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        6,
+        5,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16673303,
+      "rank": 256,
+      "episodes": [
+        115842690,
+        115841147,
+        115841105,
+        115839613
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        27,
+        20,
+        14,
+        16
+      ],
+      "herds": [
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          7,
+          10,
+          3
+        ],
+        [
+          11,
+          6,
+          3
+        ],
+        [
+          1,
+          6,
+          17
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16872754,
+      "rank": 257,
+      "episodes": [
+        115841147,
+        115839920,
+        115839592,
+        115835338
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        33,
+        35,
+        35,
+        35
+      ],
+      "herds": [
+        [
+          5,
+          9,
+          3
+        ],
+        [
+          2,
+          7,
+          7
+        ],
+        [
+          2,
+          7,
+          7
+        ],
+        [
+          5,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        3,
+        4,
+        4
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16657796,
+      "rank": 258,
+      "episodes": [
+        115841269,
+        115839849,
+        115828904,
+        115823185
+      ],
+      "sw": [
+        224,
+        220,
+        220,
+        250
+      ],
+      "strawberries": [
+        35,
+        27,
+        28,
+        28
+      ],
+      "herds": [
+        [
+          6,
+          10,
+          3
+        ],
+        [
+          6,
+          9,
+          3
+        ],
+        [
+          4,
+          12,
+          3
+        ],
+        [
+          0,
+          11,
+          10
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    },
+    {
+      "team_id": 16665237,
+      "rank": 259,
+      "episodes": [
+        115838326,
+        115833670,
+        115825408,
+        115820916
+      ],
+      "sw": [
+        218,
+        199,
+        200,
+        199
+      ],
+      "strawberries": [
+        37,
+        20,
+        36,
+        43
+      ],
+      "herds": [
+        [
+          5,
+          3,
+          9
+        ],
+        [
+          8,
+          3,
+          3
+        ],
+        [
+          5,
+          4,
+          3
+        ],
+        [
+          4,
+          4,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -9.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16910633,
+      "rank": 260,
+      "episodes": [
+        115843515,
+        115835338,
+        115824817,
+        115820001
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        20,
+        33,
+        29,
+        33
+      ],
+      "herds": [
+        [
+          0,
+          6,
+          17
+        ],
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          3,
+          9,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        10,
+        8,
+        9,
+        8
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 3,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16811251,
+      "rank": 261,
+      "episodes": [
+        115841021,
+        115839829,
+        115828587,
+        115828487
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        21,
+        13,
+        25,
+        35
+      ],
+      "herds": [
+        [
+          12,
+          5,
+          3
+        ],
+        [
+          1,
+          6,
+          20
+        ],
+        [
+          2,
+          8,
+          7
+        ],
+        [
+          5,
+          9,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        8,
+        1,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16727266,
+      "rank": 262,
+      "episodes": [
+        115841414,
+        115836839,
+        115829295,
+        115820161
+      ],
+      "sw": [
+        199,
+        201,
+        200,
+        200
+      ],
+      "strawberries": [
+        33,
+        24,
+        22,
+        37
+      ],
+      "herds": [
+        [
+          2,
+          10,
+          8
+        ],
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          7,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        285,
+        302,
+        232,
+        255
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16659679,
+      "rank": 263,
+      "episodes": [
+        115836747,
+        115835232,
+        115833710,
+        115832194
+      ],
+      "sw": [
+        242,
+        242,
+        242,
+        242
+      ],
+      "strawberries": [
+        19,
+        20,
+        19,
+        32
+      ],
+      "herds": [
+        [
+          0,
+          6,
+          15
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          3,
+          12,
+          5
+        ],
+        [
+          0,
+          14,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16673230,
+      "rank": 264,
+      "episodes": [
+        115844129,
+        115838471,
+        115837543,
+        115835364
+      ],
+      "sw": [
+        220,
+        220,
+        221,
+        222
+      ],
+      "strawberries": [
+        27,
+        36,
+        31,
+        26
+      ],
+      "herds": [
+        [
+          10,
+          6,
+          3
+        ],
+        [
+          7,
+          10,
+          3
+        ],
+        [
+          10,
+          6,
+          3
+        ],
+        [
+          3,
+          10,
+          6
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.5,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16853849,
+      "rank": 265,
+      "episodes": [
+        115839843,
+        115839047,
+        115831368,
+        115829360
+      ],
+      "sw": [
+        242,
+        242,
+        241,
+        242
+      ],
+      "strawberries": [
+        28,
+        23,
+        8,
+        14
+      ],
+      "herds": [
+        [
+          4,
+          6,
+          5
+        ],
+        [
+          1,
+          11,
+          5
+        ],
+        [
+          1,
+          12,
+          6
+        ],
+        [
+          2,
+          5,
+          13
+        ]
+      ],
+      "input_trade_turns": [
+        73,
+        73,
+        69,
+        84
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16654783,
+      "rank": 266,
+      "episodes": [
+        115842137,
+        115839070,
+        115837408,
+        115835375
+      ],
+      "sw": [
+        242,
+        242,
+        218,
+        218
+      ],
+      "strawberries": [
+        25,
+        32,
+        23,
+        29
+      ],
+      "herds": [
+        [
+          6,
+          6,
+          5
+        ],
+        [
+          1,
+          11,
+          6
+        ],
+        [
+          1,
+          12,
+          6
+        ],
+        [
+          3,
+          8,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        71,
+        98,
+        69,
+        47
+      ],
+      "four_vs_two_sw_median_change": -12.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16736874,
+      "rank": 267,
+      "episodes": [
+        115842979,
+        115842680,
+        115832397,
+        115831367
+      ],
+      "sw": [
+        223,
+        224,
+        224,
+        224
+      ],
+      "strawberries": [
+        22,
+        40,
+        27,
+        14
+      ],
+      "herds": [
+        [
+          0,
+          9,
+          9
+        ],
+        [
+          2,
+          10,
+          3
+        ],
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          9,
+          5,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        5,
+        1,
+        4,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16763706,
+      "rank": 268,
+      "episodes": [
+        115836948,
+        115834972,
+        115826298,
+        115822782
+      ],
+      "sw": [
+        199,
+        199,
+        220,
+        199
+      ],
+      "strawberries": [
+        32,
+        29,
+        15,
+        22
+      ],
+      "herds": [
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          3,
+          12,
+          3
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          10,
+          5,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16785884,
+      "rank": 269,
+      "episodes": [
+        115842979,
+        115842749,
+        115841448,
+        115830906
+      ],
+      "sw": [
+        201,
+        201,
+        223,
+        201
+      ],
+      "strawberries": [
+        12,
+        11,
+        32,
+        24
+      ],
+      "herds": [
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          11,
+          3
+        ],
+        [
+          4,
+          5,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16627888,
+      "rank": 270,
+      "episodes": [
+        115842836,
+        115838403,
+        115827907,
+        115820301
+      ],
+      "sw": [
+        220,
+        220,
+        220,
+        220
+      ],
+      "strawberries": [
+        39,
+        27,
+        20,
+        20
+      ],
+      "herds": [
+        [
+          2,
+          15,
+          3
+        ],
+        [
+          5,
+          11,
+          3
+        ],
+        [
+          3,
+          14,
+          3
+        ],
+        [
+          3,
+          16,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16622898,
+      "rank": 271,
+      "episodes": [
+        115834976,
+        115826963,
+        115825395,
+        115822965
+      ],
+      "sw": [
+        218,
+        199,
+        199,
+        200
+      ],
+      "strawberries": [
+        14,
+        27,
+        27,
+        23
+      ],
+      "herds": [
+        [
+          2,
+          4,
+          12
+        ],
+        [
+          4,
+          9,
+          3
+        ],
+        [
+          4,
+          9,
+          3
+        ],
+        [
+          3,
+          10,
+          2
+        ]
+      ],
+      "input_trade_turns": [
+        338,
+        356,
+        356,
+        322
+      ],
+      "four_vs_two_sw_median_change": -9.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16690763,
+      "rank": 272,
+      "episodes": [
+        115838339,
+        115829612,
+        115827031,
+        115822783
+      ],
+      "sw": [
+        217,
+        217,
+        217,
+        217
+      ],
+      "strawberries": [
+        32,
+        36,
+        25,
+        32
+      ],
+      "herds": [
+        [
+          2,
+          9,
+          8
+        ],
+        [
+          2,
+          9,
+          3
+        ],
+        [
+          0,
+          3,
+          15
+        ],
+        [
+          2,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16659286,
+      "rank": 273,
+      "episodes": [
+        115839915,
+        115838027,
+        115835362,
+        115824862
+      ],
+      "sw": [
+        252,
+        252,
+        252,
+        252
+      ],
+      "strawberries": [
+        14,
+        23,
+        21,
+        5
+      ],
+      "herds": [
+        [
+          6,
+          6,
+          3
+        ],
+        [
+          6,
+          4,
+          3
+        ],
+        [
+          4,
+          7,
+          3
+        ],
+        [
+          10,
+          4,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16630729,
+      "rank": 274,
+      "episodes": [
+        115842320,
+        115836551,
+        115832420,
+        115825310
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        27,
+        25,
+        43
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          6
+        ],
+        [
+          0,
+          6,
+          13
+        ],
+        [
+          3,
+          8,
+          7
+        ],
+        [
+          3,
+          8,
+          7
+        ]
+      ],
+      "input_trade_turns": [
+        87,
+        125,
+        93,
+        129
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16857685,
+      "rank": 275,
+      "episodes": [
+        115845819,
+        115844787,
+        115843241,
+        115841728
+      ],
+      "sw": [
+        265,
+        217,
+        242,
+        242
+      ],
+      "strawberries": [
+        12,
+        25,
+        13,
+        26
+      ],
+      "herds": [
+        [
+          11,
+          5,
+          10
+        ],
+        [
+          3,
+          10,
+          4
+        ],
+        [
+          4,
+          11,
+          4
+        ],
+        [
+          8,
+          8,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 1.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16809294,
+      "rank": 276,
+      "episodes": [
+        115845206,
+        115837266,
+        115836927,
+        115826728
+      ],
+      "sw": [
+        223,
+        224,
+        224,
+        223
+      ],
+      "strawberries": [
+        18,
+        29,
+        27,
+        19
+      ],
+      "herds": [
+        [
+          1,
+          13,
+          5
+        ],
+        [
+          3,
+          11,
+          3
+        ],
+        [
+          1,
+          10,
+          3
+        ],
+        [
+          2,
+          11,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16693965,
+      "rank": 277,
+      "episodes": [
+        115842126,
+        115839613,
+        115835642,
+        115830813
+      ],
+      "sw": [
+        221,
+        222,
+        220,
+        222
+      ],
+      "strawberries": [
+        26,
+        24,
+        36,
+        19
+      ],
+      "herds": [
+        [
+          2,
+          11,
+          7
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          11,
+          6,
+          3
+        ],
+        [
+          1,
+          8,
+          14
+        ]
+      ],
+      "input_trade_turns": [
+        6,
+        9,
+        4,
+        6
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16641536,
+      "rank": 278,
+      "episodes": [
+        115838471,
+        115837597,
+        115828243,
+        115821794
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        256
+      ],
+      "strawberries": [
+        33,
+        33,
+        28,
+        20
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          2,
+          8,
+          6
+        ],
+        [
+          0,
+          5,
+          12
+        ],
+        [
+          3,
+          4,
+          14
+        ]
+      ],
+      "input_trade_turns": [
+        11,
+        11,
+        13,
+        45
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16854842,
+      "rank": 279,
+      "episodes": [
+        115846022,
+        115844758,
+        115835348,
+        115829266
+      ],
+      "sw": [
+        220,
+        220,
+        220,
+        220
+      ],
+      "strawberries": [
+        21,
+        21,
+        21,
+        21
+      ],
+      "herds": [
+        [
+          5,
+          10,
+          8
+        ],
+        [
+          5,
+          10,
+          8
+        ],
+        [
+          5,
+          10,
+          8
+        ],
+        [
+          5,
+          10,
+          8
+        ]
+      ],
+      "input_trade_turns": [
+        7,
+        7,
+        7,
+        4
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 4,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16678521,
+      "rank": 280,
+      "episodes": [
+        115838401,
+        115827820,
+        115818831,
+        115817189
+      ],
+      "sw": [
+        243,
+        241,
+        242,
+        242
+      ],
+      "strawberries": [
+        18,
+        6,
+        25,
+        14
+      ],
+      "herds": [
+        [
+          1,
+          4,
+          13
+        ],
+        [
+          1,
+          11,
+          5
+        ],
+        [
+          2,
+          10,
+          6
+        ],
+        [
+          0,
+          8,
+          13
+        ]
+      ],
+      "input_trade_turns": [
+        69,
+        69,
+        67,
+        86
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16674961,
+      "rank": 281,
+      "episodes": [
+        115847511,
+        115836505,
+        115832001,
+        115826343
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        30,
+        25,
+        32,
+        32
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          5,
+          6,
+          6
+        ],
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          3,
+          8,
+          6
+        ]
+      ],
+      "input_trade_turns": [
+        20,
+        17,
+        19,
+        19
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16640510,
+      "rank": 282,
+      "episodes": [
+        115836690,
+        115832438,
+        115825217,
+        115824707
+      ],
+      "sw": [
+        200,
+        199,
+        201,
+        199
+      ],
+      "strawberries": [
+        36,
+        21,
+        38,
+        38
+      ],
+      "herds": [
+        [
+          5,
+          11,
+          3
+        ],
+        [
+          11,
+          5,
+          3
+        ],
+        [
+          5,
+          5,
+          3
+        ],
+        [
+          8,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16688787,
+      "rank": 283,
+      "episodes": [
+        115845706,
+        115844156,
+        115842616,
+        115842607
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        35,
+        33,
+        21,
+        23
+      ],
+      "herds": [
+        [
+          6,
+          8,
+          3
+        ],
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          13,
+          5,
+          3
+        ],
+        [
+          7,
+          10,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16652175,
+      "rank": 284,
+      "episodes": [
+        115844093,
+        115841731,
+        115837575,
+        115834479
+      ],
+      "sw": [
+        242,
+        242,
+        242,
+        242
+      ],
+      "strawberries": [
+        18,
+        22,
+        28,
+        14
+      ],
+      "herds": [
+        [
+          0,
+          4,
+          18
+        ],
+        [
+          2,
+          10,
+          6
+        ],
+        [
+          2,
+          9,
+          6
+        ],
+        [
+          0,
+          8,
+          13
+        ]
+      ],
+      "input_trade_turns": [
+        83,
+        92,
+        116,
+        86
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16674353,
+      "rank": 285,
+      "episodes": [
+        115837382,
+        115836821,
+        115826167,
+        115824613
+      ],
+      "sw": [
+        218,
+        266,
+        242,
+        242
+      ],
+      "strawberries": [
+        23,
+        16,
+        28,
+        15
+      ],
+      "herds": [
+        [
+          1,
+          12,
+          5
+        ],
+        [
+          6,
+          6,
+          5
+        ],
+        [
+          2,
+          9,
+          6
+        ],
+        [
+          2,
+          5,
+          13
+        ]
+      ],
+      "input_trade_turns": [
+        69,
+        124,
+        116,
+        84
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16674881,
+      "rank": 286,
+      "episodes": [
+        115841375,
+        115836819,
+        115835348,
+        115824829
+      ],
+      "sw": [
+        242,
+        720,
+        242,
+        242
+      ],
+      "strawberries": [
+        15,
+        25,
+        28,
+        25
+      ],
+      "herds": [
+        [
+          2,
+          5,
+          13
+        ],
+        [
+          6,
+          7,
+          4
+        ],
+        [
+          4,
+          6,
+          5
+        ],
+        [
+          6,
+          6,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        84,
+        112,
+        73,
+        71
+      ],
+      "four_vs_two_sw_median_change": -239.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16689154,
+      "rank": 287,
+      "episodes": [
+        115842910,
+        115833908,
+        115824684,
+        115815712
+      ],
+      "sw": [
+        199,
+        199,
+        208,
+        197
+      ],
+      "strawberries": [
+        23,
+        18,
+        16,
+        11
+      ],
+      "herds": [
+        [
+          8,
+          7,
+          3
+        ],
+        [
+          1,
+          6,
+          16
+        ],
+        [
+          3,
+          15,
+          3
+        ],
+        [
+          11,
+          5,
+          8
+        ]
+      ],
+      "input_trade_turns": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16754112,
+      "rank": 288,
+      "episodes": [
+        115845037,
+        115843528,
+        115841980,
+        115840403
+      ],
+      "sw": [
+        242,
+        242,
+        242,
+        266
+      ],
+      "strawberries": [
+        23,
+        22,
+        8,
+        14
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          4,
+          8,
+          5
+        ],
+        [
+          1,
+          12,
+          6
+        ],
+        [
+          8,
+          4,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        62,
+        118,
+        58,
+        106
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16784943,
+      "rank": 289,
+      "episodes": [
+        115845979,
+        115834662,
+        115832433,
+        115824280
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          0,
+          6,
+          11
+        ],
+        [
+          0,
+          8,
+          9
+        ],
+        [
+          3,
+          9,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        19,
+        7,
+        28,
+        29
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16942378,
+      "rank": 290,
+      "episodes": [
+        115835457,
+        115826006,
+        115824838,
+        115824207
+      ],
+      "sw": [
+        242,
+        242,
+        242,
+        218
+      ],
+      "strawberries": [
+        13,
+        31,
+        33,
+        17
+      ],
+      "herds": [
+        [
+          9,
+          5,
+          5
+        ],
+        [
+          2,
+          9,
+          5
+        ],
+        [
+          3,
+          8,
+          6
+        ],
+        [
+          0,
+          8,
+          14
+        ]
+      ],
+      "input_trade_turns": [
+        127,
+        20,
+        76,
+        118
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16677337,
+      "rank": 291,
+      "episodes": [
+        115845199,
+        115844419,
+        115840270,
+        115836235
+      ],
+      "sw": [
+        200,
+        201,
+        207,
+        207
+      ],
+      "strawberries": [
+        16,
+        6,
+        14,
+        15
+      ],
+      "herds": [
+        [
+          2,
+          14,
+          8
+        ],
+        [
+          1,
+          9,
+          11
+        ],
+        [
+          7,
+          8,
+          4
+        ],
+        [
+          6,
+          8,
+          4
+        ]
+      ],
+      "input_trade_turns": [
+        10,
+        34,
+        2,
+        7
+      ],
+      "four_vs_two_sw_median_change": 3.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16935560,
+      "rank": 292,
+      "episodes": [
+        115842928,
+        115831945,
+        115830421,
+        115827908
+      ],
+      "sw": [
+        265,
+        242,
+        242,
+        242
+      ],
+      "strawberries": [
+        14,
+        22,
+        30,
+        32
+      ],
+      "herds": [
+        [
+          8,
+          5,
+          5
+        ],
+        [
+          7,
+          6,
+          6
+        ],
+        [
+          2,
+          9,
+          5
+        ],
+        [
+          5,
+          6,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        131,
+        126,
+        20,
+        104
+      ],
+      "four_vs_two_sw_median_change": -11.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16807538,
+      "rank": 295,
+      "episodes": [
+        115843814,
+        115841412,
+        115830831,
+        115821563
+      ],
+      "sw": [
+        199,
+        199,
+        199,
+        199
+      ],
+      "strawberries": [
+        22,
+        17,
+        13,
+        22
+      ],
+      "herds": [
+        [
+          10,
+          5,
+          3
+        ],
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          5,
+          12,
+          3
+        ],
+        [
+          10,
+          5,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16684250,
+      "rank": 294,
+      "episodes": [
+        115844492,
+        115843668,
+        115842961,
+        115832362
+      ],
+      "sw": [
+        218,
+        218,
+        218,
+        218
+      ],
+      "strawberries": [
+        29,
+        29,
+        29,
+        29
+      ],
+      "herds": [
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ]
+      ],
+      "input_trade_turns": [
+        636,
+        636,
+        636,
+        636
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 4,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16867799,
+      "rank": 296,
+      "episodes": [
+        115838055,
+        115835415,
+        115834705,
+        115832438
+      ],
+      "sw": [
+        218,
+        218,
+        218,
+        218
+      ],
+      "strawberries": [
+        35,
+        24,
+        24,
+        24
+      ],
+      "herds": [
+        [
+          0,
+          6,
+          3
+        ],
+        [
+          0,
+          9,
+          3
+        ],
+        [
+          2,
+          6,
+          3
+        ],
+        [
+          0,
+          5,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        141,
+        55,
+        58,
+        68
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16810299,
+      "rank": 293,
+      "episodes": [
+        115845252,
+        115843725,
+        115842200,
+        115840664
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        21,
+        37,
+        24,
+        33
+      ],
+      "herds": [
+        [
+          0,
+          5,
+          15
+        ],
+        [
+          3,
+          10,
+          2
+        ],
+        [
+          3,
+          9,
+          6
+        ],
+        [
+          6,
+          5,
+          7
+        ]
+      ],
+      "input_trade_turns": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16677342,
+      "rank": 297,
+      "episodes": [
+        115844275,
+        115842928,
+        115838357,
+        115827777
+      ],
+      "sw": [
+        266,
+        266,
+        266,
+        266
+      ],
+      "strawberries": [
+        33,
+        33,
+        33,
+        33
+      ],
+      "herds": [
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          0,
+          6,
+          11
+        ],
+        [
+          3,
+          9,
+          5
+        ]
+      ],
+      "input_trade_turns": [
+        20,
+        16,
+        3,
+        18
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": false,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16784829,
+      "rank": 298,
+      "episodes": [
+        115839061,
+        115836838,
+        115826287,
+        115817331
+      ],
+      "sw": [
+        220,
+        220,
+        220,
+        220
+      ],
+      "strawberries": [
+        22,
+        31,
+        37,
+        39
+      ],
+      "herds": [
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          10,
+          6,
+          3
+        ],
+        [
+          5,
+          9,
+          3
+        ],
+        [
+          10,
+          6,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        4,
+        4,
+        5,
+        5
+      ],
+      "four_vs_two_sw_median_change": 0.0,
+      "stable_herd_count": 2,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16705499,
+      "rank": 299,
+      "episodes": [
+        115838403,
+        115833378,
+        115830359,
+        115826167
+      ],
+      "sw": [
+        200,
+        197,
+        197,
+        197
+      ],
+      "strawberries": [
+        31,
+        24,
+        20,
+        35
+      ],
+      "herds": [
+        [
+          4,
+          11,
+          3
+        ],
+        [
+          1,
+          6,
+          13
+        ],
+        [
+          10,
+          5,
+          3
+        ],
+        [
+          5,
+          7,
+          3
+        ]
+      ],
+      "input_trade_turns": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "four_vs_two_sw_median_change": -1.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": true,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": false
+    },
+    {
+      "team_id": 16846958,
+      "rank": 300,
+      "episodes": [
+        115838065,
+        115832927,
+        115829343,
+        115820290
+      ],
+      "sw": [
+        199,
+        199,
+        266,
+        266
+      ],
+      "strawberries": [
+        31,
+        18,
+        33,
+        33
+      ],
+      "herds": [
+        [
+          6,
+          7,
+          3
+        ],
+        [
+          4,
+          12,
+          3
+        ],
+        [
+          3,
+          9,
+          5
+        ],
+        [
+          0,
+          6,
+          11
+        ]
+      ],
+      "input_trade_turns": [
+        2,
+        5,
+        19,
+        6
+      ],
+      "four_vs_two_sw_median_change": 33.5,
+      "stable_herd_count": 1,
+      "all_four_sw_before_240": false,
+      "first_two_sw_before_240": true,
+      "later_two_contradict_early_sw": true
+    }
+  ]
+}
