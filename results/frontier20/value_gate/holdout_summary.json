@@ -1,0 +1,234 @@
+{
+  "complete": true,
+  "games": 640,
+  "scores": {
+    "f20_value": 149.0,
+    "f20_fill": 149.0,
+    "f19_market1": 127.0,
+    "f19_market2": 142.0
+  },
+  "per_opponent_scores": {
+    "f20_value": {
+      "f19_market1": 16.0,
+      "f19_market2": 13.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 13.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 14.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 13.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    },
+    "f20_fill": {
+      "f19_market1": 16.0,
+      "f19_market2": 13.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 13.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 14.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 13.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    },
+    "f19_market1": {
+      "f19_market1": 8.0,
+      "f19_market2": 1.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 11.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 14.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 13.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    },
+    "f19_market2": {
+      "f19_market1": 15.0,
+      "f19_market2": 8.0,
+      "n30b_lynnsakurai_2f6da4": 16.0,
+      "n30b_haodou092_531a42": 11.0,
+      "n30b_haideptry_1eb093": 16.0,
+      "n30b_evgendvorkin_8ddb01": 14.0,
+      "n25_abhinav0370_127ed3": 16.0,
+      "n23_arsgorynich_4f8637": 14.0,
+      "d25_llccqq624_c26402": 16.0,
+      "d25_tschinkel_b87a27": 16.0
+    }
+  },
+  "candidates": {
+    "f20_value": {
+      "pass_gate": true,
+      "checks": {
+        "total_delta": true,
+        "nonmirror": true,
+        "opponent_floor": true,
+        "direct_duels": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "comparisons": {
+        "f19_market1": {
+          "score_delta": 22.0,
+          "nonmirror_delta": 2.0,
+          "per_opponent_delta": {
+            "f19_market1": 8.0,
+            "f19_market2": 12.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": 2.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": 0.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": 0.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20201": 3.0,
+            "20202": 5.0,
+            "20203": 3.0,
+            "20204": 3.0,
+            "20205": 3.0,
+            "20206": -1.0,
+            "20207": 3.0,
+            "20208": 3.0
+          },
+          "positive_seeds": 7,
+          "paired_seed_bootstrap_95": [
+            12.0,
+            30.0
+          ],
+          "mean_paired_margin_gain": 12.64375
+        },
+        "f19_market2": {
+          "score_delta": 7.0,
+          "nonmirror_delta": 1.0,
+          "per_opponent_delta": {
+            "f19_market1": 1.0,
+            "f19_market2": 5.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": 2.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": 0.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": -1.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20201": 0.0,
+            "20202": 3.0,
+            "20203": 1.0,
+            "20204": 1.0,
+            "20205": 1.0,
+            "20206": -1.0,
+            "20207": 1.0,
+            "20208": 1.0
+          },
+          "positive_seeds": 6,
+          "paired_seed_bootstrap_95": [
+            1.0,
+            13.0
+          ],
+          "mean_paired_margin_gain": -1.825
+        }
+      },
+      "max_call_ms": 727.1757000125945,
+      "error_games": 0,
+      "wlt": [
+        149,
+        11,
+        0
+      ]
+    },
+    "f20_fill": {
+      "pass_gate": true,
+      "checks": {
+        "total_delta": true,
+        "nonmirror": true,
+        "opponent_floor": true,
+        "direct_duels": true,
+        "positive_worlds": true,
+        "zero_errors": true,
+        "latency": true
+      },
+      "comparisons": {
+        "f19_market1": {
+          "score_delta": 22.0,
+          "nonmirror_delta": 2.0,
+          "per_opponent_delta": {
+            "f19_market1": 8.0,
+            "f19_market2": 12.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": 2.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": 0.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": 0.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20201": 3.0,
+            "20202": 5.0,
+            "20203": 3.0,
+            "20204": 3.0,
+            "20205": 3.0,
+            "20206": -1.0,
+            "20207": 3.0,
+            "20208": 3.0
+          },
+          "positive_seeds": 7,
+          "paired_seed_bootstrap_95": [
+            12.0,
+            30.0
+          ],
+          "mean_paired_margin_gain": 12.78125
+        },
+        "f19_market2": {
+          "score_delta": 7.0,
+          "nonmirror_delta": 1.0,
+          "per_opponent_delta": {
+            "f19_market1": 1.0,
+            "f19_market2": 5.0,
+            "n30b_lynnsakurai_2f6da4": 0.0,
+            "n30b_haodou092_531a42": 2.0,
+            "n30b_haideptry_1eb093": 0.0,
+            "n30b_evgendvorkin_8ddb01": 0.0,
+            "n25_abhinav0370_127ed3": 0.0,
+            "n23_arsgorynich_4f8637": -1.0,
+            "d25_llccqq624_c26402": 0.0,
+            "d25_tschinkel_b87a27": 0.0
+          },
+          "per_seed_delta": {
+            "20201": 0.0,
+            "20202": 3.0,
+            "20203": 1.0,
+            "20204": 1.0,
+            "20205": 1.0,
+            "20206": -1.0,
+            "20207": 1.0,
+            "20208": 1.0
+          },
+          "positive_seeds": 6,
+          "paired_seed_bootstrap_95": [
+            1.0,
+            13.0
+          ],
+          "mean_paired_margin_gain": -1.6875
+        }
+      },
+      "max_call_ms": 773.1229999917559,
+      "error_games": 0,
+      "wlt": [
+        149,
+        11,
+        0
+      ]
+    }
+  },
+  "plan_sha256": "2da7d011aef7538e0770a050783b8b22329f883ebd55e10144690ea913fb920f",
+  "holdout_sha256": "37891df7743ba714ede2a743ae6586b4e23408bd3a4c5c25a383a99abfa3dcc7"
+}

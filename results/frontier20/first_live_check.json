@@ -1,0 +1,108 @@
+{
+  "checked_utc": "2026-09-30T22:10:18.801991+00:00",
+  "submission": 56719762,
+  "active": [
+    {
+      "id": 56719762,
+      "date_submitted": "2026-09-30T22:00:47.620000",
+      "public_score": "710.8",
+      "is_frozen": true
+    },
+    {
+      "id": 56714342,
+      "date_submitted": "2026-09-30T17:19:27.003000",
+      "public_score": "1812.2",
+      "is_frozen": true
+    }
+  ],
+  "episodes": [
+    {
+      "id": 115986126,
+      "create_time": "2026-09-30T22:07:45.716000",
+      "end_time": "2026-09-30T22:09:59.033000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 140996,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56260448,
+          "index": 1,
+          "reward": 82701,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "bvgr",
+          "team_id": 16822523,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115984224,
+      "create_time": "2026-09-30T22:00:48.003000",
+      "end_time": "2026-09-30T22:04:51.733000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 4,
+        "name_": "EPISODE_TYPE_VALIDATION",
+        "sort_order_": 4
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 72110,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 72749,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    }
+  ]
+}

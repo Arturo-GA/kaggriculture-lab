@@ -21,6 +21,8 @@ def main():
         diagnostic_gain=diag['variants'][name],selection=selection,
         grigor=read(ROOT/'grigor/status.json'),
         experimental_admission=admission,
+        candidate_behavior=read(ROOT/'candidate_behavior_summary.json'),
+        first_live_check=read(ROOT/'first_live_check.json'),
         second_submission_decision=read(ROOT/'second_submission_decision.json') if (ROOT/'second_submission_decision.json').exists() else None,
         limitation='First experimental submission explicitly requested before the full controls completed. Eight independent seeds and correlated public families. No demonstrated top300-400 rank, guaranteed rating, silver medal or victory against Grigor. One immediate submission authorized and sent; a second is authorized only if subsequent controls demonstrate improvement.',
         source_evidence=[selection['source_plans'][name],str(Path(selection['source_plans'][name]).with_name('holdout.json')),'results/frontier20/loss_audit.json','results/frontier20/diagnostic_summary.json','results/frontier20/kaggle_verified.json'])

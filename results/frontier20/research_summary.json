@@ -91,7 +91,18 @@
     ],
     "unchanged_thresholds": true,
     "selection": "Only one fully passing finalist, highest total points, then nonmirror points, then simpler fill-only policy.",
-    "status": "Frozen before any fresh game; final results pending."
+    "status": "Complete:640games, both finalists pass all unchanged gates.",
+    "scores": {
+      "f20_value": 149.0,
+      "f20_fill": 149.0,
+      "f19_market1": 127.0,
+      "f19_market2": 142.0
+    },
+    "original_tiebreak_winner": "f20_fill",
+    "deployed": "f20_value",
+    "submission": 56719762,
+    "deployment_reason": "Later user request for immediate experimental release before the control games completed.",
+    "second_submission": "Not sent: identical160 point outcomes and zero paired score gain versus the deployed first release."
   },
   "later_user_authorization": {
     "candidate": "f20_value",
@@ -110,5 +121,6 @@
     ],
     "max_call_ms": 727.1757000125945,
     "second_submission": "Only if completed controls demonstrate improvement over this first release; not merely a tie."
-  }
+  },
+  "attribution_limit": "The residual-sale feature activated in134/160 games for both finalists. Counters for the special wool branch were zero in this panel, so these games do not establish an incremental benefit from the economic wool guard. Both finalists produced identical win/tie outcomes in160 paired games. One reward margin differed by22; no causal advantage is assigned to that difference."
 }

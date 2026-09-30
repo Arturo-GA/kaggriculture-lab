@@ -1,6 +1,6 @@
 {
   "id": 56719762,
-  "status": "SubmissionStatus.PENDING",
+  "status": "SubmissionStatus.COMPLETE",
   "message": "Successfully submitted to Kaggriculture",
   "description": "Frontier20 f20_value (ff3912c4)",
   "archive_sha256": "4cc56851114326e2792b7b7604ef9d2a2117ec04a43fe43148bb2c0c3a03b21f",
@@ -10,10 +10,10 @@
     "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "NOTICE.txt": "3b62f1ded999196078a382f72f0a35035bd8cfd17440f9d6a7d222076df771f8"
   },
-  "checked_utc": "2026-09-30T22:03:56.704843+00:00",
+  "checked_utc": "2026-09-30T22:24:28.798797+00:00",
   "leaderboard_submitted": true,
   "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
-  "public_score": "",
+  "public_score": "915.9",
   "error": "",
   "date": "2026-09-30 22:00:47.620000"
 }

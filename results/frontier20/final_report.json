@@ -1,7 +1,7 @@
 {
   "submission": {
     "id": 56719762,
-    "status": "SubmissionStatus.PENDING",
+    "status": "SubmissionStatus.COMPLETE",
     "message": "Successfully submitted to Kaggriculture",
     "description": "Frontier20 f20_value (ff3912c4)",
     "archive_sha256": "4cc56851114326e2792b7b7604ef9d2a2117ec04a43fe43148bb2c0c3a03b21f",
@@ -11,31 +11,264 @@
       "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
       "NOTICE.txt": "3b62f1ded999196078a382f72f0a35035bd8cfd17440f9d6a7d222076df771f8"
     },
-    "checked_utc": "2026-09-30T22:03:25.518858+00:00",
+    "checked_utc": "2026-09-30T22:24:28.798797+00:00",
     "leaderboard_submitted": true,
     "authorization": "Veo prometedora a esta semilla envia 1 submission a kaggle ahora y despues de los controles si vemos mejoras mandamos otra plaza",
-    "public_score": "",
+    "public_score": "915.9",
     "error": "",
     "date": "2026-09-30 22:00:47.620000"
   },
   "active": {
     "active": [
       {
-        "id": 56714342,
-        "date_submitted": "2026-09-30T17:19:27.003000",
-        "public_score": "1812.2",
+        "id": 56719762,
+        "date_submitted": "2026-09-30T22:00:47.620000",
+        "public_score": "915.9",
         "is_frozen": true
       },
       {
-        "id": 56714336,
-        "date_submitted": "2026-09-30T17:19:10.553000",
-        "public_score": "1567.8",
+        "id": 56714342,
+        "date_submitted": "2026-09-30T17:19:27.003000",
+        "public_score": "1807.4",
         "is_frozen": true
       }
     ],
-    "checked_utc": "2026-09-30T22:03:25.886816+00:00"
+    "checked_utc": "2026-09-30T22:24:29.497293+00:00"
   },
-  "holdout": null,
+  "holdout": {
+    "complete": true,
+    "games": 640,
+    "scores": {
+      "f20_value": 149.0,
+      "f20_fill": 149.0,
+      "f19_market1": 127.0,
+      "f19_market2": 142.0
+    },
+    "per_opponent_scores": {
+      "f20_value": {
+        "f19_market1": 16.0,
+        "f19_market2": 13.0,
+        "n30b_lynnsakurai_2f6da4": 16.0,
+        "n30b_haodou092_531a42": 13.0,
+        "n30b_haideptry_1eb093": 16.0,
+        "n30b_evgendvorkin_8ddb01": 14.0,
+        "n25_abhinav0370_127ed3": 16.0,
+        "n23_arsgorynich_4f8637": 13.0,
+        "d25_llccqq624_c26402": 16.0,
+        "d25_tschinkel_b87a27": 16.0
+      },
+      "f20_fill": {
+        "f19_market1": 16.0,
+        "f19_market2": 13.0,
+        "n30b_lynnsakurai_2f6da4": 16.0,
+        "n30b_haodou092_531a42": 13.0,
+        "n30b_haideptry_1eb093": 16.0,
+        "n30b_evgendvorkin_8ddb01": 14.0,
+        "n25_abhinav0370_127ed3": 16.0,
+        "n23_arsgorynich_4f8637": 13.0,
+        "d25_llccqq624_c26402": 16.0,
+        "d25_tschinkel_b87a27": 16.0
+      },
+      "f19_market1": {
+        "f19_market1": 8.0,
+        "f19_market2": 1.0,
+        "n30b_lynnsakurai_2f6da4": 16.0,
+        "n30b_haodou092_531a42": 11.0,
+        "n30b_haideptry_1eb093": 16.0,
+        "n30b_evgendvorkin_8ddb01": 14.0,
+        "n25_abhinav0370_127ed3": 16.0,
+        "n23_arsgorynich_4f8637": 13.0,
+        "d25_llccqq624_c26402": 16.0,
+        "d25_tschinkel_b87a27": 16.0
+      },
+      "f19_market2": {
+        "f19_market1": 15.0,
+        "f19_market2": 8.0,
+        "n30b_lynnsakurai_2f6da4": 16.0,
+        "n30b_haodou092_531a42": 11.0,
+        "n30b_haideptry_1eb093": 16.0,
+        "n30b_evgendvorkin_8ddb01": 14.0,
+        "n25_abhinav0370_127ed3": 16.0,
+        "n23_arsgorynich_4f8637": 14.0,
+        "d25_llccqq624_c26402": 16.0,
+        "d25_tschinkel_b87a27": 16.0
+      }
+    },
+    "candidates": {
+      "f20_value": {
+        "pass_gate": true,
+        "checks": {
+          "total_delta": true,
+          "nonmirror": true,
+          "opponent_floor": true,
+          "direct_duels": true,
+          "positive_worlds": true,
+          "zero_errors": true,
+          "latency": true
+        },
+        "comparisons": {
+          "f19_market1": {
+            "score_delta": 22.0,
+            "nonmirror_delta": 2.0,
+            "per_opponent_delta": {
+              "f19_market1": 8.0,
+              "f19_market2": 12.0,
+              "n30b_lynnsakurai_2f6da4": 0.0,
+              "n30b_haodou092_531a42": 2.0,
+              "n30b_haideptry_1eb093": 0.0,
+              "n30b_evgendvorkin_8ddb01": 0.0,
+              "n25_abhinav0370_127ed3": 0.0,
+              "n23_arsgorynich_4f8637": 0.0,
+              "d25_llccqq624_c26402": 0.0,
+              "d25_tschinkel_b87a27": 0.0
+            },
+            "per_seed_delta": {
+              "20201": 3.0,
+              "20202": 5.0,
+              "20203": 3.0,
+              "20204": 3.0,
+              "20205": 3.0,
+              "20206": -1.0,
+              "20207": 3.0,
+              "20208": 3.0
+            },
+            "positive_seeds": 7,
+            "paired_seed_bootstrap_95": [
+              12.0,
+              30.0
+            ],
+            "mean_paired_margin_gain": 12.64375
+          },
+          "f19_market2": {
+            "score_delta": 7.0,
+            "nonmirror_delta": 1.0,
+            "per_opponent_delta": {
+              "f19_market1": 1.0,
+              "f19_market2": 5.0,
+              "n30b_lynnsakurai_2f6da4": 0.0,
+              "n30b_haodou092_531a42": 2.0,
+              "n30b_haideptry_1eb093": 0.0,
+              "n30b_evgendvorkin_8ddb01": 0.0,
+              "n25_abhinav0370_127ed3": 0.0,
+              "n23_arsgorynich_4f8637": -1.0,
+              "d25_llccqq624_c26402": 0.0,
+              "d25_tschinkel_b87a27": 0.0
+            },
+            "per_seed_delta": {
+              "20201": 0.0,
+              "20202": 3.0,
+              "20203": 1.0,
+              "20204": 1.0,
+              "20205": 1.0,
+              "20206": -1.0,
+              "20207": 1.0,
+              "20208": 1.0
+            },
+            "positive_seeds": 6,
+            "paired_seed_bootstrap_95": [
+              1.0,
+              13.0
+            ],
+            "mean_paired_margin_gain": -1.825
+          }
+        },
+        "max_call_ms": 727.1757000125945,
+        "error_games": 0,
+        "wlt": [
+          149,
+          11,
+          0
+        ]
+      },
+      "f20_fill": {
+        "pass_gate": true,
+        "checks": {
+          "total_delta": true,
+          "nonmirror": true,
+          "opponent_floor": true,
+          "direct_duels": true,
+          "positive_worlds": true,
+          "zero_errors": true,
+          "latency": true
+        },
+        "comparisons": {
+          "f19_market1": {
+            "score_delta": 22.0,
+            "nonmirror_delta": 2.0,
+            "per_opponent_delta": {
+              "f19_market1": 8.0,
+              "f19_market2": 12.0,
+              "n30b_lynnsakurai_2f6da4": 0.0,
+              "n30b_haodou092_531a42": 2.0,
+              "n30b_haideptry_1eb093": 0.0,
+              "n30b_evgendvorkin_8ddb01": 0.0,
+              "n25_abhinav0370_127ed3": 0.0,
+              "n23_arsgorynich_4f8637": 0.0,
+              "d25_llccqq624_c26402": 0.0,
+              "d25_tschinkel_b87a27": 0.0
+            },
+            "per_seed_delta": {
+              "20201": 3.0,
+              "20202": 5.0,
+              "20203": 3.0,
+              "20204": 3.0,
+              "20205": 3.0,
+              "20206": -1.0,
+              "20207": 3.0,
+              "20208": 3.0
+            },
+            "positive_seeds": 7,
+            "paired_seed_bootstrap_95": [
+              12.0,
+              30.0
+            ],
+            "mean_paired_margin_gain": 12.78125
+          },
+          "f19_market2": {
+            "score_delta": 7.0,
+            "nonmirror_delta": 1.0,
+            "per_opponent_delta": {
+              "f19_market1": 1.0,
+              "f19_market2": 5.0,
+              "n30b_lynnsakurai_2f6da4": 0.0,
+              "n30b_haodou092_531a42": 2.0,
+              "n30b_haideptry_1eb093": 0.0,
+              "n30b_evgendvorkin_8ddb01": 0.0,
+              "n25_abhinav0370_127ed3": 0.0,
+              "n23_arsgorynich_4f8637": -1.0,
+              "d25_llccqq624_c26402": 0.0,
+              "d25_tschinkel_b87a27": 0.0
+            },
+            "per_seed_delta": {
+              "20201": 0.0,
+              "20202": 3.0,
+              "20203": 1.0,
+              "20204": 1.0,
+              "20205": 1.0,
+              "20206": -1.0,
+              "20207": 1.0,
+              "20208": 1.0
+            },
+            "positive_seeds": 6,
+            "paired_seed_bootstrap_95": [
+              1.0,
+              13.0
+            ],
+            "mean_paired_margin_gain": -1.6875
+          }
+        },
+        "max_call_ms": 773.1229999917559,
+        "error_games": 0,
+        "wlt": [
+          149,
+          11,
+          0
+        ]
+      }
+    },
+    "plan_sha256": "2da7d011aef7538e0770a050783b8b22329f883ebd55e10144690ea913fb920f",
+    "holdout_sha256": "37891df7743ba714ede2a743ae6586b4e23408bd3a4c5c25a383a99abfa3dcc7"
+  },
   "cloud": {
     "scores": {
       "f20_value": 8.0,
@@ -270,7 +503,211 @@
     "max_call_ms": 727.1757000125945,
     "second_submission": "Only if completed controls demonstrate improvement over this first release; not merely a tie."
   },
-  "second_submission_decision": null,
+  "candidate_behavior": {
+    "games_per_policy": 160,
+    "telemetry": {
+      "f20_value": {
+        "f20d_prioritized": {
+          "total": 0,
+          "games_with_activity": 0
+        },
+        "f20d_filled_turns": {
+          "total": 1156,
+          "games_with_activity": 134
+        },
+        "f20d_filled_units": {
+          "total": 4161,
+          "games_with_activity": 134
+        },
+        "f20v_calm_market": {
+          "total": 0,
+          "games_with_activity": 0
+        },
+        "f20v_urgent_market": {
+          "total": 0,
+          "games_with_activity": 0
+        }
+      },
+      "f20_fill": {
+        "f20d_prioritized": {
+          "total": 0,
+          "games_with_activity": 0
+        },
+        "f20d_filled_turns": {
+          "total": 1156,
+          "games_with_activity": 134
+        },
+        "f20d_filled_units": {
+          "total": 4161,
+          "games_with_activity": 134
+        },
+        "f20v_calm_market": {
+          "total": 0,
+          "games_with_activity": 0
+        },
+        "f20v_urgent_market": {
+          "total": 0,
+          "games_with_activity": 0
+        }
+      }
+    },
+    "point_outcomes_identical": true,
+    "interpretation": "The residual-sale feature activated in134/160 games for both finalists. Counters for the special wool branch were zero in this panel, so these games do not establish an incremental benefit from the economic wool guard. Both finalists produced identical win/tie outcomes in160 paired games. One reward margin differed by22; no causal advantage is assigned to that difference."
+  },
+  "first_live_check": {
+    "checked_utc": "2026-09-30T22:10:18.801991+00:00",
+    "submission": 56719762,
+    "active": [
+      {
+        "id": 56719762,
+        "date_submitted": "2026-09-30T22:00:47.620000",
+        "public_score": "710.8",
+        "is_frozen": true
+      },
+      {
+        "id": 56714342,
+        "date_submitted": "2026-09-30T17:19:27.003000",
+        "public_score": "1812.2",
+        "is_frozen": true
+      }
+    ],
+    "episodes": [
+      {
+        "id": 115986126,
+        "create_time": "2026-09-30T22:07:45.716000",
+        "end_time": "2026-09-30T22:09:59.033000",
+        "state": {
+          "value_": 2,
+          "name_": "COMPLETED",
+          "sort_order_": 2
+        },
+        "type": {
+          "value_": 1,
+          "name_": "EPISODE_TYPE_PUBLIC",
+          "sort_order_": 1
+        },
+        "agents": [
+          {
+            "submission_id": 56719762,
+            "index": 0,
+            "reward": 140996,
+            "state": {
+              "value_": 0,
+              "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+              "sort_order_": 0
+            },
+            "team_name": "Arturo Gutiérrez Aguilar",
+            "team_id": 16639155,
+            "is_frozen": true
+          },
+          {
+            "submission_id": 56260448,
+            "index": 1,
+            "reward": 82701,
+            "state": {
+              "value_": 0,
+              "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+              "sort_order_": 0
+            },
+            "team_name": "bvgr",
+            "team_id": 16822523,
+            "is_frozen": true
+          }
+        ],
+        "is_frozen": true
+      },
+      {
+        "id": 115984224,
+        "create_time": "2026-09-30T22:00:48.003000",
+        "end_time": "2026-09-30T22:04:51.733000",
+        "state": {
+          "value_": 2,
+          "name_": "COMPLETED",
+          "sort_order_": 2
+        },
+        "type": {
+          "value_": 4,
+          "name_": "EPISODE_TYPE_VALIDATION",
+          "sort_order_": 4
+        },
+        "agents": [
+          {
+            "submission_id": 56719762,
+            "index": 0,
+            "reward": 72110,
+            "state": {
+              "value_": 0,
+              "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+              "sort_order_": 0
+            },
+            "team_name": "Arturo Gutiérrez Aguilar",
+            "team_id": 16639155,
+            "is_frozen": true
+          },
+          {
+            "submission_id": 56719762,
+            "index": 1,
+            "reward": 72749,
+            "state": {
+              "value_": 0,
+              "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+              "sort_order_": 0
+            },
+            "team_name": "Arturo Gutiérrez Aguilar",
+            "team_id": 16639155,
+            "is_frozen": true
+          }
+        ],
+        "is_frozen": true
+      }
+    ]
+  },
+  "second_submission_decision": {
+    "checked_utc": "2026-09-30T22:24:47.814077+00:00",
+    "first": "f20_value",
+    "alternative": "f20_fill",
+    "first_submission": 56719762,
+    "user_condition": "Only if completed controls demonstrate improvement over this first release; not merely a tie.",
+    "complete_games": 640,
+    "paired_games_per_candidate": 160,
+    "scores": {
+      "f20_value": 149.0,
+      "f20_fill": 149.0
+    },
+    "alternative_minus_first": 0.0,
+    "nonmirror_delta": 0.0,
+    "per_seed_delta": {
+      "20201": 0.0,
+      "20202": 0.0,
+      "20203": 0.0,
+      "20204": 0.0,
+      "20205": 0.0,
+      "20206": 0.0,
+      "20207": 0.0,
+      "20208": 0.0
+    },
+    "per_opponent_delta": {
+      "d25_llccqq624_c26402": 0.0,
+      "d25_tschinkel_b87a27": 0.0,
+      "f19_market1": 0.0,
+      "f19_market2": 0.0,
+      "n23_arsgorynich_4f8637": 0.0,
+      "n25_abhinav0370_127ed3": 0.0,
+      "n30b_evgendvorkin_8ddb01": 0.0,
+      "n30b_haideptry_1eb093": 0.0,
+      "n30b_haodou092_531a42": 0.0,
+      "n30b_lynnsakurai_2f6da4": 0.0
+    },
+    "changed_point_outcomes": 0,
+    "original_frozen_gate": {
+      "f20_value": true,
+      "f20_fill": true
+    },
+    "submit_second": false,
+    "improvement_requires_review": false,
+    "reason": "No demonstrated improvement over the first release. Equal outcomes do not justify another submission; the original simplicity tie-break is not evidence of improvement.",
+    "holdout_sha256": "37891df7743ba714ede2a743ae6586b4e23408bd3a4c5c25a383a99abfa3dcc7"
+  },
   "limitation": "First experimental submission explicitly requested before the full controls completed. Eight independent seeds and correlated public families. No demonstrated top300-400 rank, guaranteed rating, silver medal or victory against Grigor. One immediate submission authorized and sent; a second is authorized only if subsequent controls demonstrate improvement.",
   "source_evidence": [
     "results/frontier20/value_gate/plan.json",

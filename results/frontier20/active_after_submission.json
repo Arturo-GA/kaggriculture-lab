@@ -1,17 +1,17 @@
 {
   "active": [
     {
-      "id": 56714342,
-      "date_submitted": "2026-09-30T17:19:27.003000",
-      "public_score": "1812.2",
+      "id": 56719762,
+      "date_submitted": "2026-09-30T22:00:47.620000",
+      "public_score": "915.9",
       "is_frozen": true
     },
     {
-      "id": 56714336,
-      "date_submitted": "2026-09-30T17:19:10.553000",
-      "public_score": "1567.8",
+      "id": 56714342,
+      "date_submitted": "2026-09-30T17:19:27.003000",
+      "public_score": "1807.4",
       "is_frozen": true
     }
   ],
-  "checked_utc": "2026-09-30T22:03:57.350765+00:00"
+  "checked_utc": "2026-09-30T22:24:29.497293+00:00"
 }

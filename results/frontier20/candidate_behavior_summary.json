@@ -1,0 +1,51 @@
+{
+  "games_per_policy": 160,
+  "telemetry": {
+    "f20_value": {
+      "f20d_prioritized": {
+        "total": 0,
+        "games_with_activity": 0
+      },
+      "f20d_filled_turns": {
+        "total": 1156,
+        "games_with_activity": 134
+      },
+      "f20d_filled_units": {
+        "total": 4161,
+        "games_with_activity": 134
+      },
+      "f20v_calm_market": {
+        "total": 0,
+        "games_with_activity": 0
+      },
+      "f20v_urgent_market": {
+        "total": 0,
+        "games_with_activity": 0
+      }
+    },
+    "f20_fill": {
+      "f20d_prioritized": {
+        "total": 0,
+        "games_with_activity": 0
+      },
+      "f20d_filled_turns": {
+        "total": 1156,
+        "games_with_activity": 134
+      },
+      "f20d_filled_units": {
+        "total": 4161,
+        "games_with_activity": 134
+      },
+      "f20v_calm_market": {
+        "total": 0,
+        "games_with_activity": 0
+      },
+      "f20v_urgent_market": {
+        "total": 0,
+        "games_with_activity": 0
+      }
+    }
+  },
+  "point_outcomes_identical": true,
+  "interpretation": "The residual-sale feature activated in134/160 games for both finalists. Counters for the special wool branch were zero in this panel, so these games do not establish an incremental benefit from the economic wool guard. Both finalists produced identical win/tie outcomes in160 paired games. One reward margin differed by22; no causal advantage is assigned to that difference."
+}

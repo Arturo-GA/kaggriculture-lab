@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-09-30T22:24:47.814077+00:00",
+  "first": "f20_value",
+  "alternative": "f20_fill",
+  "first_submission": 56719762,
+  "user_condition": "Only if completed controls demonstrate improvement over this first release; not merely a tie.",
+  "complete_games": 640,
+  "paired_games_per_candidate": 160,
+  "scores": {
+    "f20_value": 149.0,
+    "f20_fill": 149.0
+  },
+  "alternative_minus_first": 0.0,
+  "nonmirror_delta": 0.0,
+  "per_seed_delta": {
+    "20201": 0.0,
+    "20202": 0.0,
+    "20203": 0.0,
+    "20204": 0.0,
+    "20205": 0.0,
+    "20206": 0.0,
+    "20207": 0.0,
+    "20208": 0.0
+  },
+  "per_opponent_delta": {
+    "d25_llccqq624_c26402": 0.0,
+    "d25_tschinkel_b87a27": 0.0,
+    "f19_market1": 0.0,
+    "f19_market2": 0.0,
+    "n23_arsgorynich_4f8637": 0.0,
+    "n25_abhinav0370_127ed3": 0.0,
+    "n30b_evgendvorkin_8ddb01": 0.0,
+    "n30b_haideptry_1eb093": 0.0,
+    "n30b_haodou092_531a42": 0.0,
+    "n30b_lynnsakurai_2f6da4": 0.0
+  },
+  "changed_point_outcomes": 0,
+  "original_frozen_gate": {
+    "f20_value": true,
+    "f20_fill": true
+  },
+  "submit_second": false,
+  "improvement_requires_review": false,
+  "reason": "No demonstrated improvement over the first release. Equal outcomes do not justify another submission; the original simplicity tie-break is not evidence of improvement.",
+  "holdout_sha256": "37891df7743ba714ede2a743ae6586b4e23408bd3a4c5c25a383a99abfa3dcc7"
+}

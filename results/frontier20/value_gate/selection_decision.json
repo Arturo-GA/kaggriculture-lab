@@ -1,0 +1,19 @@
+{
+  "selected": [
+    "f20_fill"
+  ],
+  "eligible": [
+    "f20_fill",
+    "f20_value"
+  ],
+  "source_plans": {
+    "f20_value": "results/frontier20/value_gate/plan.json",
+    "f20_fill": "results/frontier20/value_gate/plan.json"
+  },
+  "decided_utc": "2026-09-30T22:24:15.772673+00:00",
+  "authorization": "Arturo: solo una submission privada; revisar todas las derrotas de las últimas dos submissions y enviar en cuanto haya una mejora validada.",
+  "caveat": "Eight seeds are the independent clusters. Public opponents share ancestry; paired local gains and replay diagnostics do not assure a top300-400 rank or a silver medal.",
+  "previous_failed_plan": "results/frontier20/plan.json",
+  "adaptive_history": "The first candidate failed its original nonmirror criterion against Market1. Seed20104 exposed unnecessary urgency while wool prices stayed flat. The new economic guard and the preexisting fill-only ablation tied4/8 in development on20002/20104, with different losses. These are NOT holdout seeds. Both are frozen as finalists; thresholds, opponents and eight-seed sample size stay unchanged, with new seeds20201-20208. Exactly one candidate may be submitted.",
+  "selection_rule": "Among candidates passing every unchanged gate: highest total points, then highest nonmirror points, then prefer f20_fill because it preserves the existing physical production policy. No additional candidate selection by margin."
+}
