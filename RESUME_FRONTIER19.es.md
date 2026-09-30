@@ -74,8 +74,8 @@ submissions en una sesión futura.
 
 ## Resultado verificado y envíos
 
-- f19_market2: **56714342**, `SubmissionStatus.COMPLETE`, 2026-09-30T17:22:21.562555+00:00.
+- f19_market2: **56714342**, `SubmissionStatus.COMPLETE`, 2026-09-30T17:25:14.769991+00:00.
 
-- f19_market1: **56714336**, `SubmissionStatus.PENDING`, 2026-09-30T17:22:21.562555+00:00.
+- f19_market1: **56714336**, `SubmissionStatus.COMPLETE`, 2026-09-30T17:25:14.772267+00:00.
 
 Dos envíos efectuados; consultar los recibos antes de cualquier acción. No queda una plaza pendiente de esta autorización.

@@ -21,6 +21,10 @@ def main():
     receipts = {n: read(n + '_submission_receipt.json') for n in release['candidates']}
     assert len({r['id'] for r in receipts.values()}) == 2
     assert all(r['leaderboard_submitted'] for r in receipts.values())
+    active=read('active_after_submission.json')
+    completed=all(r['status'].endswith('.COMPLETE') for r in receipts.values())
+    if completed:
+        assert {r['id'] for r in receipts.values()}=={r['id'] for r in active['active']}
     lines = [MARKER, '| Política | V/D/E | Puntos | Delta frente a F18 | Pasa |',
              '|---|---:|---:|---:|---|']
     for n, r in assessment['candidates'].items():
@@ -70,6 +74,10 @@ def main():
               'están separados para evitar duplicados tras una desconexión.', '',
               'La mejora demostrada corresponde a este panel. El objetivo top 200–300 sigue',
               'pendiente de confirmación por las partidas del leaderboard.']
+    if completed:
+        lines += ['', f"Ambas submissions figuran **COMPLETE y activas**, comprobado en {active['checked_utc']}.",
+                  'Las dos arrancan con rating 600. Ese valor es inicial; no es una estimación de convergencia.',
+                  'Se consumieron exactamente dos plazas de esta petición.']
     p = Path('FRONTIER19_RESULTS.es.md')
     body = p.read_text(encoding='utf-8').split(MARKER)[0]
     body = body.replace('Los resultados definitivos y los dos recibos se incorporan al terminar la\nvalidación. El repositorio y el notebook se mantienen privados.',

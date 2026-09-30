@@ -1,0 +1,18 @@
+{
+  "source_commit": "6d201d9ca5e7b7cfd13f1ac89b507a6802a53a00",
+  "remote_branch": "origin/main",
+  "remote_tracking_commit": "6d201d9ca5e7b7cfd13f1ac89b507a6802a53a00",
+  "checked_files": {
+    "results/frontier19/plan.json": "cb9ef5049455e8772c0ea2c55991795dc77a6612c6a82b7310049fd4b43dbaa4",
+    "results/frontier19/holdout_summary.json": "126de4d6b6a0296f292e27a0aaf139a78ef9bb6dabe7fc98fa1896afdc0f203c",
+    "results/frontier19/selection_decision.json": "8c6690f15aa852e654b8740b807122fb3b45e9038084eafa610e4ca8ffa827a5",
+    "results/frontier19/release_selection.json": "a546175d1e0b258452697e6c65403074601de558272e59a3dbbce122e8e42fe3",
+    "results/frontier19/supplement/plan.json": "0b240796d0ec7bb23ce820255d42d6676ed0ab0f6ceacff26793a4bca48a98f1",
+    "results/frontier19/supplement/holdout_summary.json": "fbfdc5a674168cc5cc069e1beab4769cd8647c28fe6d5f0fb386bff0a585c043",
+    "candidates/f19_market2.py": "b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516",
+    "candidates/f19_market1.py": "ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56",
+    "candidates/f18_small.py": "d9289a3e55624596ab5c2a8368359542e09249ae7fd64391d506bf82daeec135"
+  },
+  "git_blob_bytes_match": true,
+  "checked_utc": "2026-09-30T17:23:42.942109+00:00"
+}

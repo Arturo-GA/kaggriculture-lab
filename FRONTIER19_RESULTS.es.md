@@ -229,12 +229,12 @@ decisión de envío con este riesgo en `release_selection.json`. No se cambia
 el umbral ni se sigue buscando una muestra favorable para ocultar el fallo.
 
 - **f19_market2**, submission **56714342**, estado `SubmissionStatus.COMPLETE`
-  comprobado en 2026-09-30T17:22:21.562555+00:00. Contra F18: 11/16 puntos locales;
+  comprobado en 2026-09-30T17:25:14.769991+00:00. Contra F18: 11/16 puntos locales;
   8/8 puntos en nube. Máximo de llamada en nube: 313.1 ms.
   SHA de fuente: `b264030ccb0bb26da379c25bbfda7b1b6f40c03840045f29dc22476a75a5a516`.
   SHA de paquete: `f9fc3c1708025c84aa895e3576b6bae2885ed81ffed0494293ea0afaa76db109`.
-- **f19_market1**, submission **56714336**, estado `SubmissionStatus.PENDING`
-  comprobado en 2026-09-30T17:22:21.562555+00:00. Contra F18: 16/16 puntos locales;
+- **f19_market1**, submission **56714336**, estado `SubmissionStatus.COMPLETE`
+  comprobado en 2026-09-30T17:25:14.772267+00:00. Contra F18: 16/16 puntos locales;
   8/8 puntos en nube. Máximo de llamada en nube: 342.6 ms.
   SHA de fuente: `ed66b321ec70c1aebbbd135ba644d719bd536282d54a97c1a8270b1f9fedad56`.
   SHA de paquete: `fc9b6f213b3eb1cae5b31fa8a810db05b99864688286a90b56093e04a16243ff`.
@@ -246,3 +246,7 @@ están separados para evitar duplicados tras una desconexión.
 
 La mejora demostrada corresponde a este panel. El objetivo top 200–300 sigue
 pendiente de confirmación por las partidas del leaderboard.
+
+Ambas submissions figuran **COMPLETE y activas**, comprobado en 2026-09-30T17:25:17.920715+00:00.
+Las dos arrancan con rating 600. Ese valor es inicial; no es una estimación de convergencia.
+Se consumieron exactamente dos plazas de esta petición.

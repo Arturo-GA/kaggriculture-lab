@@ -1,6 +1,6 @@
 {
   "id": 56714336,
-  "status": "SubmissionStatus.PENDING",
+  "status": "SubmissionStatus.COMPLETE",
   "message": "Successfully submitted to Kaggriculture",
   "description": "Frontier19 f19_market1 (ed66b321)",
   "archive_sha256": "fc9b6f213b3eb1cae5b31fa8a810db05b99864688286a90b56093e04a16243ff",
@@ -10,10 +10,10 @@
     "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "NOTICE.txt": "eefaa3bac6796afa671797baade8d2af74d7edd97ca046ce92e1410396312ff7"
   },
-  "checked_utc": "2026-09-30T17:22:21.562555+00:00",
+  "checked_utc": "2026-09-30T17:25:14.772267+00:00",
   "leaderboard_submitted": true,
   "authorization": "haz el mismo analisis para tener una estrategia que apunte al top 200-300 de la copetencia manda 2 plazas",
-  "public_score": "",
+  "public_score": "600.0",
   "error": "",
   "date": "2026-09-30 17:19:10.553000"
 }
