@@ -1,0 +1,16 @@
+{
+  "scores": {
+    "f21_cap12": 14.0,
+    "f21_cap16": 13.0,
+    "f20_value": 11.0
+  },
+  "eligible": [
+    "f21_cap12",
+    "f21_cap16"
+  ],
+  "selected": [
+    "f21_cap12"
+  ],
+  "data_sha256": "5d4d626edf1c8d9bdaaba75a1afff123d9479d94250cefb253cb8487ec1d7623",
+  "interpretation": "Adaptive development on known earlier loss worlds, not independent validation."
+}

@@ -1,0 +1,2412 @@
+{
+  "id": 116007343,
+  "seat": 0,
+  "submission": 56719762,
+  "margin": -276,
+  "op_name": "WeAreFarmers",
+  "op_sub": 56565624,
+  "op_rank": null,
+  "raw_path": "vendor/top100_0927/episode-116007343-replay.json.gz",
+  "raw_sha256": "08ee4d884debfbdf0f7240adc3440a89f9881a1d6b20771baada644805b417bc",
+  "seed": 697306308,
+  "recorded_rewards": [
+    105941.0,
+    106217.0
+  ],
+  "reproduced_exactly": true,
+  "money": [
+    {
+      "BUY_PRODUCT_WHEAT": 4954,
+      "SELL_WHEAT": 17164,
+      "BUY_SEED_WHEAT": 1610,
+      "HIRE": 4308.0,
+      "BUY_ANIMAL_COW": 3200,
+      "BUY_ANIMAL_SHEEP": 3000,
+      "BUY_SEED_MELON": 960,
+      "SELL_FERTILIZER": 17689,
+      "BUY_SEED_STRAWBERRY": 3300,
+      "SELL_WOOL": 5488,
+      "BUY_LAND": 3000.0,
+      "BUY_PRODUCT_FERTILIZER": 5108,
+      "SELL_MILK": 12877,
+      "BUY_ANIMAL_GOOSE": 900,
+      "SELL_MELON": 14267,
+      "SELL_EGG": 5132,
+      "SELL_STRAWBERRY": 56796,
+      "BUY_SEED_CARROT": 740,
+      "SELL_CARROT": 4608
+    },
+    {
+      "BUY_PRODUCT_WHEAT": 301269,
+      "SELL_WHEAT": 314328,
+      "BUY_SEED_WHEAT": 1610,
+      "HIRE": 4308.0,
+      "BUY_ANIMAL_COW": 3200,
+      "BUY_ANIMAL_SHEEP": 3000,
+      "BUY_SEED_MELON": 960,
+      "SELL_FERTILIZER": 15403,
+      "BUY_SEED_STRAWBERRY": 3300,
+      "SELL_WOOL": 5469,
+      "BUY_PRODUCT_FERTILIZER": 2880,
+      "BUY_LAND": 3000.0,
+      "SELL_MILK": 11933,
+      "BUY_ANIMAL_GOOSE": 900,
+      "SELL_MELON": 14267,
+      "SELL_EGG": 5253,
+      "SELL_STRAWBERRY": 57114,
+      "BUY_SEED_CARROT": 740,
+      "SELL_CARROT": 4617
+    }
+  ],
+  "units": [
+    {
+      "BUY_PRODUCT_WHEAT": 139,
+      "SELL_WHEAT": 435,
+      "BUY_SEED_WHEAT": 161,
+      "BUY_ANIMAL_COW": 8,
+      "BUY_ANIMAL_SHEEP": 6,
+      "BUY_SEED_MELON": 12,
+      "SELL_FERTILIZER": 412,
+      "BUY_SEED_STRAWBERRY": 33,
+      "SELL_WOOL": 99,
+      "BUY_PRODUCT_FERTILIZER": 160,
+      "SELL_MILK": 204,
+      "BUY_ANIMAL_GOOSE": 3,
+      "SELL_MELON": 72,
+      "SELL_EGG": 90,
+      "SELL_STRAWBERRY": 248,
+      "BUY_SEED_CARROT": 37,
+      "SELL_CARROT": 105
+    },
+    {
+      "BUY_PRODUCT_WHEAT": 7352,
+      "SELL_WHEAT": 7648,
+      "BUY_SEED_WHEAT": 161,
+      "BUY_ANIMAL_COW": 8,
+      "BUY_ANIMAL_SHEEP": 6,
+      "BUY_SEED_MELON": 12,
+      "SELL_FERTILIZER": 336,
+      "BUY_SEED_STRAWBERRY": 33,
+      "SELL_WOOL": 99,
+      "BUY_PRODUCT_FERTILIZER": 90,
+      "SELL_MILK": 204,
+      "BUY_ANIMAL_GOOSE": 3,
+      "SELL_MELON": 72,
+      "SELL_EGG": 92,
+      "SELL_STRAWBERRY": 249,
+      "BUY_SEED_CARROT": 37,
+      "SELL_CARROT": 105
+    }
+  ],
+  "physical": [
+    {
+      "command_PASS": 476,
+      "command_NORTH": 925,
+      "command_SOUTH": 498,
+      "command_PICKUP": 208,
+      "command_WEST": 871,
+      "command_BUILD_PASTURE": 14,
+      "command_PLACE": 97,
+      "command_PLANT": 239,
+      "command_CARE": 389,
+      "command_WATER": 1097,
+      "command_FEED": 302,
+      "command_COLLECT_FERTILIZER": 386,
+      "harvested_FERTILIZER": 373,
+      "command_EAST": 585,
+      "market_failed_BUY_PRODUCT_WHEAT": 1,
+      "harvested_WHEAT": 598,
+      "command_HARVEST": 484,
+      "market_failed_SELL_WHEAT": 4,
+      "noop_CARE": 10,
+      "command_DROP": 56,
+      "empty_COLLECT_FERTILIZER": 13,
+      "market_failed_SELL_FERTILIZER": 9,
+      "noop_WATER": 10,
+      "harvested_WOOL": 99,
+      "market_failed_SELL_WOOL": 5,
+      "harvested_COW": 0,
+      "command_DIG": 38,
+      "noop_DIG": 4,
+      "harvested_MILK": 204,
+      "harvested_MELON": 72,
+      "command_BUILD_COOP": 5,
+      "harvested_GOOSE": 0,
+      "command_FERTILIZE": 118,
+      "harvested_EGG": 91,
+      "harvested_STRAWBERRY": 249,
+      "market_failed_SELL_STRAWBERRY": 6,
+      "market_failed_SELL_MILK": 14,
+      "empty_HARVEST": 6,
+      "noop_FERTILIZE": 1,
+      "market_failed_SELL_EGG": 1,
+      "harvested_CARROT": 105,
+      "market_failed_SELL_CARROT": 1
+    },
+    {
+      "command_PASS": 481,
+      "command_NORTH": 921,
+      "command_SOUTH": 494,
+      "command_PICKUP": 208,
+      "command_WEST": 873,
+      "command_BUILD_PASTURE": 14,
+      "command_PLACE": 99,
+      "command_PLANT": 239,
+      "command_CARE": 404,
+      "command_WATER": 1097,
+      "command_FEED": 302,
+      "command_COLLECT_FERTILIZER": 373,
+      "harvested_FERTILIZER": 365,
+      "command_EAST": 588,
+      "market_failed_BUY_PRODUCT_WHEAT": 1,
+      "harvested_WHEAT": 598,
+      "command_HARVEST": 482,
+      "market_failed_SELL_WHEAT": 4,
+      "noop_CARE": 13,
+      "command_DROP": 52,
+      "empty_COLLECT_FERTILIZER": 8,
+      "market_failed_SELL_FERTILIZER": 9,
+      "noop_WATER": 10,
+      "harvested_WOOL": 99,
+      "market_failed_SELL_WOOL": 5,
+      "harvested_COW": 0,
+      "command_DIG": 38,
+      "noop_DIG": 4,
+      "harvested_MILK": 204,
+      "harvested_MELON": 72,
+      "command_BUILD_COOP": 5,
+      "harvested_GOOSE": 0,
+      "command_FERTILIZE": 118,
+      "harvested_EGG": 93,
+      "harvested_STRAWBERRY": 249,
+      "market_failed_SELL_STRAWBERRY": 8,
+      "market_failed_SELL_MILK": 14,
+      "empty_HARVEST": 3,
+      "noop_FERTILIZE": 1,
+      "market_failed_SELL_EGG": 1,
+      "harvested_CARROT": 105,
+      "market_failed_SELL_CARROT": 1
+    }
+  ],
+  "daily": [
+    [
+      {
+        "BUY_PRODUCT_WHEAT": 222,
+        "SELL_WHEAT": 85,
+        "BUY_SEED_WHEAT": 80,
+        "HIRE": 12.0,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "BUY_SEED_MELON": 960
+      },
+      {
+        "HIRE": 4.0,
+        "SELL_FERTILIZER": 299,
+        "BUY_PRODUCT_WHEAT": 206
+      },
+      {
+        "SELL_FERTILIZER": 490,
+        "HIRE": 7.0,
+        "SELL_WHEAT": 60,
+        "BUY_SEED_WHEAT": 30,
+        "BUY_ANIMAL_COW": 400
+      },
+      {
+        "HIRE": 12.0,
+        "SELL_WHEAT": 120,
+        "BUY_SEED_WHEAT": 40,
+        "SELL_FERTILIZER": 385,
+        "BUY_ANIMAL_COW": 400
+      },
+      {
+        "SELL_FERTILIZER": 565,
+        "HIRE": 7.0,
+        "SELL_WHEAT": 60,
+        "BUY_SEED_WHEAT": 30,
+        "BUY_PRODUCT_WHEAT": 183
+      },
+      {
+        "SELL_FERTILIZER": 460,
+        "HIRE": 7.0,
+        "SELL_WHEAT": 64,
+        "BUY_SEED_STRAWBERRY": 400
+      },
+      {
+        "SELL_FERTILIZER": 807,
+        "HIRE": 33.0,
+        "SELL_WOOL": 2413,
+        "BUY_PRODUCT_WHEAT": 349,
+        "BUY_LAND": 1000.0,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_PRODUCT_FERTILIZER": 180,
+        "SELL_WHEAT": 318,
+        "BUY_SEED_WHEAT": 50,
+        "BUY_SEED_STRAWBERRY": 800
+      },
+      {
+        "SELL_FERTILIZER": 780,
+        "HIRE": 33.0,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_PRODUCT_FERTILIZER": 87,
+        "BUY_SEED_STRAWBERRY": 400,
+        "BUY_SEED_WHEAT": 40
+      },
+      {
+        "SELL_FERTILIZER": 834,
+        "HIRE": 54.0,
+        "SELL_MILK": 2237,
+        "BUY_PRODUCT_WHEAT": 706,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "BUY_PRODUCT_FERTILIZER": 85,
+        "BUY_SEED_STRAWBERRY": 400,
+        "SELL_WHEAT": 138,
+        "BUY_SEED_WHEAT": 10
+      },
+      {
+        "SELL_FERTILIZER": 1105,
+        "HIRE": 54.0,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "BUY_PRODUCT_FERTILIZER": 81,
+        "BUY_PRODUCT_WHEAT": 641,
+        "SELL_WOOL": 1386,
+        "SELL_WHEAT": 145,
+        "BUY_SEED_WHEAT": 40
+      },
+      {
+        "SELL_FERTILIZER": 689,
+        "HIRE": 232.0,
+        "BUY_ANIMAL_GOOSE": 600,
+        "BUY_PRODUCT_FERTILIZER": 611,
+        "BUY_PRODUCT_WHEAT": 1065,
+        "SELL_MELON": 13000,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_MILK": 2095,
+        "SELL_WHEAT": 237
+      },
+      {
+        "SELL_MELON": 1267,
+        "SELL_FERTILIZER": 1023,
+        "HIRE": 143.0,
+        "BUY_LAND": 2000.0,
+        "BUY_ANIMAL_GOOSE": 300,
+        "BUY_PRODUCT_FERTILIZER": 71,
+        "BUY_SEED_STRAWBERRY": 1300,
+        "BUY_PRODUCT_WHEAT": 1464,
+        "SELL_WHEAT": 1369,
+        "SELL_MILK": 847,
+        "BUY_SEED_WHEAT": 110
+      },
+      {
+        "SELL_FERTILIZER": 1078,
+        "HIRE": 88.0,
+        "SELL_WOOL": 1054,
+        "SELL_WHEAT": 709,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_MILK": 796
+      },
+      {
+        "SELL_FERTILIZER": 1034,
+        "HIRE": 88.0,
+        "SELL_MILK": 721,
+        "BUY_PRODUCT_WHEAT": 78,
+        "BUY_SEED_WHEAT": 60
+      },
+      {
+        "HIRE": 88.0,
+        "SELL_FERTILIZER": 1731,
+        "BUY_PRODUCT_FERTILIZER": 1071,
+        "SELL_MILK": 1336,
+        "SELL_WOOL": 534,
+        "BUY_PRODUCT_WHEAT": 40,
+        "BUY_SEED_WHEAT": 70
+      },
+      {
+        "SELL_MILK": 649,
+        "SELL_EGG": 431,
+        "HIRE": 143.0,
+        "SELL_FERTILIZER": 804,
+        "BUY_PRODUCT_FERTILIZER": 204,
+        "SELL_WHEAT": 323,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_STRAWBERRY": 1954
+      },
+      {
+        "SELL_EGG": 324,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 502,
+        "SELL_WOOL": 31,
+        "BUY_PRODUCT_FERTILIZER": 44,
+        "SELL_WHEAT": 246,
+        "SELL_MILK": 28,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_STRAWBERRY": 3913
+      },
+      {
+        "SELL_MILK": 5,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 418,
+        "SELL_EGG": 495,
+        "SELL_WHEAT": 287,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_WOOL": 6,
+        "SELL_STRAWBERRY": 3928
+      },
+      {
+        "SELL_MILK": 72,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 519,
+        "SELL_EGG": 110,
+        "BUY_PRODUCT_FERTILIZER": 35,
+        "SELL_WHEAT": 460,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_WOOL": 2,
+        "SELL_STRAWBERRY": 3908
+      },
+      {
+        "SELL_MILK": 50,
+        "HIRE": 143.0,
+        "SELL_STRAWBERRY": 4347,
+        "SELL_FERTILIZER": 295,
+        "SELL_WOOL": 6,
+        "SELL_EGG": 224,
+        "SELL_WHEAT": 252,
+        "BUY_SEED_WHEAT": 60
+      },
+      {
+        "SELL_MILK": 138,
+        "HIRE": 232.0,
+        "SELL_STRAWBERRY": 6195,
+        "SELL_EGG": 562,
+        "SELL_WOOL": 5,
+        "BUY_PRODUCT_FERTILIZER": 698,
+        "SELL_FERTILIZER": 696,
+        "SELL_WHEAT": 420,
+        "BUY_SEED_WHEAT": 60
+      },
+      {
+        "SELL_FERTILIZER": 369,
+        "SELL_MILK": 71,
+        "HIRE": 232.0,
+        "SELL_STRAWBERRY": 6477,
+        "SELL_EGG": 226,
+        "SELL_WOOL": 4,
+        "SELL_WHEAT": 1009,
+        "BUY_SEED_WHEAT": 110
+      },
+      {
+        "SELL_MILK": 287,
+        "HIRE": 376.0,
+        "SELL_STRAWBERRY": 4876,
+        "SELL_FERTILIZER": 375,
+        "SELL_WOOL": 7,
+        "BUY_PRODUCT_FERTILIZER": 319,
+        "SELL_WHEAT": 929,
+        "BUY_SEED_WHEAT": 80
+      },
+      {
+        "SELL_STRAWBERRY": 4318,
+        "SELL_FERTILIZER": 698,
+        "SELL_EGG": 688,
+        "HIRE": 232.0,
+        "SELL_MILK": 312,
+        "SELL_WOOL": 8,
+        "BUY_PRODUCT_FERTILIZER": 467,
+        "SELL_WHEAT": 1032,
+        "BUY_SEED_WHEAT": 140
+      },
+      {
+        "SELL_STRAWBERRY": 4604,
+        "HIRE": 232.0,
+        "SELL_MILK": 459,
+        "SELL_FERTILIZER": 516,
+        "SELL_WOOL": 7,
+        "SELL_EGG": 232,
+        "BUY_PRODUCT_FERTILIZER": 546,
+        "SELL_WHEAT": 1092,
+        "BUY_SEED_WHEAT": 90,
+        "BUY_SEED_CARROT": 80
+      },
+      {
+        "SELL_FERTILIZER": 587,
+        "SELL_STRAWBERRY": 1929,
+        "SELL_EGG": 463,
+        "HIRE": 232.0,
+        "SELL_MILK": 983,
+        "SELL_WOOL": 5,
+        "BUY_PRODUCT_FERTILIZER": 379,
+        "BUY_SEED_CARROT": 280,
+        "SELL_WHEAT": 1664
+      },
+      {
+        "SELL_FERTILIZER": 223,
+        "SELL_WOOL": 3,
+        "BUY_PRODUCT_FERTILIZER": 142,
+        "HIRE": 232.0,
+        "SELL_MILK": 458,
+        "SELL_STRAWBERRY": 4459,
+        "SELL_EGG": 176,
+        "SELL_WHEAT": 1356,
+        "BUY_SEED_CARROT": 220,
+        "BUY_SEED_WHEAT": 10
+      },
+      {
+        "HIRE": 232.0,
+        "SELL_MILK": 709,
+        "SELL_FERTILIZER": 268,
+        "SELL_WOOL": 4,
+        "SELL_WHEAT": 1412,
+        "SELL_EGG": 118,
+        "BUY_PRODUCT_FERTILIZER": 88,
+        "BUY_SEED_WHEAT": 50,
+        "BUY_SEED_CARROT": 160,
+        "SELL_STRAWBERRY": 1370
+      },
+      {
+        "SELL_STRAWBERRY": 4518,
+        "HIRE": 232.0,
+        "SELL_MILK": 326,
+        "SELL_FERTILIZER": 93,
+        "SELL_WOOL": 11,
+        "SELL_CARROT": 1032,
+        "SELL_WHEAT": 1340,
+        "SELL_EGG": 483
+      },
+      {
+        "SELL_WHEAT": 2037,
+        "HIRE": 232.0,
+        "SELL_CARROT": 3576,
+        "SELL_MILK": 298,
+        "SELL_EGG": 600,
+        "SELL_FERTILIZER": 46,
+        "SELL_WOOL": 2
+      }
+    ],
+    [
+      {
+        "BUY_PRODUCT_WHEAT": 164,
+        "SELL_WHEAT": 29,
+        "BUY_SEED_WHEAT": 80,
+        "HIRE": 12.0,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "BUY_SEED_MELON": 960
+      },
+      {
+        "HIRE": 4.0,
+        "SELL_FERTILIZER": 299,
+        "BUY_PRODUCT_WHEAT": 206
+      },
+      {
+        "SELL_FERTILIZER": 490,
+        "HIRE": 7.0,
+        "SELL_WHEAT": 60,
+        "BUY_SEED_WHEAT": 30,
+        "BUY_ANIMAL_COW": 400
+      },
+      {
+        "HIRE": 12.0,
+        "SELL_WHEAT": 120,
+        "BUY_SEED_WHEAT": 40,
+        "SELL_FERTILIZER": 385,
+        "BUY_ANIMAL_COW": 400
+      },
+      {
+        "SELL_FERTILIZER": 565,
+        "HIRE": 7.0,
+        "SELL_WHEAT": 60,
+        "BUY_SEED_WHEAT": 30,
+        "BUY_PRODUCT_WHEAT": 183
+      },
+      {
+        "SELL_FERTILIZER": 460,
+        "HIRE": 7.0,
+        "BUY_PRODUCT_WHEAT": 315,
+        "SELL_WHEAT": 563,
+        "BUY_SEED_STRAWBERRY": 400
+      },
+      {
+        "SELL_FERTILIZER": 807,
+        "HIRE": 33.0,
+        "BUY_PRODUCT_WHEAT": 886,
+        "SELL_WHEAT": 984,
+        "SELL_WOOL": 2406,
+        "BUY_PRODUCT_FERTILIZER": 180,
+        "BUY_LAND": 1000.0,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_SEED_WHEAT": 50,
+        "BUY_SEED_STRAWBERRY": 800
+      },
+      {
+        "SELL_FERTILIZER": 780,
+        "BUY_PRODUCT_WHEAT": 1067,
+        "HIRE": 33.0,
+        "SELL_WHEAT": 912,
+        "BUY_ANIMAL_COW": 800,
+        "BUY_PRODUCT_FERTILIZER": 87,
+        "BUY_SEED_STRAWBERRY": 400,
+        "BUY_SEED_WHEAT": 40
+      },
+      {
+        "SELL_FERTILIZER": 834,
+        "HIRE": 54.0,
+        "BUY_PRODUCT_WHEAT": 1062,
+        "SELL_WHEAT": 670,
+        "SELL_MILK": 2237,
+        "BUY_PRODUCT_FERTILIZER": 85,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "BUY_SEED_STRAWBERRY": 400,
+        "BUY_SEED_WHEAT": 10
+      },
+      {
+        "SELL_FERTILIZER": 1105,
+        "HIRE": 54.0,
+        "BUY_PRODUCT_WHEAT": 9297,
+        "SELL_WHEAT": 8755,
+        "BUY_PRODUCT_FERTILIZER": 81,
+        "BUY_ANIMAL_SHEEP": 1000,
+        "SELL_WOOL": 1386,
+        "BUY_SEED_WHEAT": 40
+      },
+      {
+        "SELL_FERTILIZER": 689,
+        "HIRE": 232.0,
+        "BUY_PRODUCT_FERTILIZER": 614,
+        "BUY_ANIMAL_GOOSE": 600,
+        "BUY_PRODUCT_WHEAT": 6919,
+        "SELL_WHEAT": 5796,
+        "SELL_MELON": 13000,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_MILK": 2095
+      },
+      {
+        "SELL_MELON": 1267,
+        "SELL_FERTILIZER": 1023,
+        "HIRE": 143.0,
+        "BUY_PRODUCT_WHEAT": 12981,
+        "SELL_WHEAT": 12869,
+        "BUY_PRODUCT_FERTILIZER": 71,
+        "BUY_LAND": 2000.0,
+        "BUY_ANIMAL_GOOSE": 300,
+        "BUY_SEED_STRAWBERRY": 1300,
+        "SELL_MILK": 847,
+        "BUY_SEED_WHEAT": 110
+      },
+      {
+        "SELL_FERTILIZER": 1078,
+        "HIRE": 88.0,
+        "BUY_PRODUCT_WHEAT": 14861,
+        "SELL_WOOL": 1054,
+        "SELL_WHEAT": 15604,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_MILK": 796
+      },
+      {
+        "SELL_FERTILIZER": 1034,
+        "HIRE": 88.0,
+        "BUY_PRODUCT_WHEAT": 21084,
+        "SELL_WHEAT": 21058,
+        "SELL_MILK": 721,
+        "BUY_SEED_WHEAT": 60
+      },
+      {
+        "HIRE": 88.0,
+        "BUY_PRODUCT_WHEAT": 17695,
+        "SELL_FERTILIZER": 824,
+        "SELL_WHEAT": 17698,
+        "BUY_PRODUCT_FERTILIZER": 164,
+        "SELL_MILK": 1336,
+        "SELL_WOOL": 534,
+        "BUY_SEED_WHEAT": 70
+      },
+      {
+        "SELL_MILK": 649,
+        "SELL_EGG": 432,
+        "HIRE": 143.0,
+        "SELL_FERTILIZER": 804,
+        "BUY_PRODUCT_FERTILIZER": 200,
+        "SELL_WHEAT": 16591,
+        "BUY_PRODUCT_WHEAT": 16222,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_STRAWBERRY": 1954
+      },
+      {
+        "SELL_EGG": 324,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 502,
+        "BUY_PRODUCT_FERTILIZER": 44,
+        "SELL_WHEAT": 16176,
+        "BUY_PRODUCT_WHEAT": 15889,
+        "SELL_WOOL": 17,
+        "SELL_MILK": 28,
+        "BUY_SEED_WHEAT": 80,
+        "SELL_STRAWBERRY": 3913
+      },
+      {
+        "SELL_MILK": 5,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 418,
+        "SELL_EGG": 330,
+        "SELL_WHEAT": 14197,
+        "BUY_PRODUCT_WHEAT": 13747,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_STRAWBERRY": 3928
+      },
+      {
+        "SELL_MILK": 72,
+        "HIRE": 232.0,
+        "SELL_FERTILIZER": 519,
+        "BUY_PRODUCT_FERTILIZER": 35,
+        "SELL_WOOL": 8,
+        "SELL_WHEAT": 13470,
+        "BUY_PRODUCT_WHEAT": 12762,
+        "SELL_EGG": 275,
+        "BUY_SEED_WHEAT": 70,
+        "SELL_STRAWBERRY": 3908
+      },
+      {
+        "SELL_MILK": 50,
+        "HIRE": 143.0,
+        "SELL_STRAWBERRY": 4347,
+        "SELL_FERTILIZER": 295,
+        "SELL_EGG": 224,
+        "SELL_WHEAT": 13650,
+        "BUY_PRODUCT_WHEAT": 13101,
+        "BUY_SEED_WHEAT": 60,
+        "SELL_WOOL": 2
+      },
+      {
+        "SELL_MILK": 160,
+        "HIRE": 232.0,
+        "SELL_STRAWBERRY": 6195,
+        "SELL_EGG": 562,
+        "BUY_PRODUCT_FERTILIZER": 157,
+        "SELL_WHEAT": 12405,
+        "BUY_PRODUCT_WHEAT": 12024,
+        "SELL_FERTILIZER": 160,
+        "BUY_SEED_WHEAT": 60,
+        "SELL_WOOL": 1
+      },
+      {
+        "SELL_FERTILIZER": 369,
+        "SELL_MILK": 93,
+        "HIRE": 232.0,
+        "SELL_STRAWBERRY": 6477,
+        "SELL_WOOL": 8,
+        "SELL_WHEAT": 16219,
+        "SELL_EGG": 224,
+        "BUY_PRODUCT_WHEAT": 15443,
+        "BUY_SEED_WHEAT": 110
+      },
+      {
+        "SELL_MILK": 287,
+        "HIRE": 376.0,
+        "SELL_STRAWBERRY": 4876,
+        "SELL_EGG": 228,
+        "BUY_PRODUCT_FERTILIZER": 419,
+        "SELL_FERTILIZER": 445,
+        "SELL_WHEAT": 14890,
+        "BUY_PRODUCT_WHEAT": 13917,
+        "SELL_WOOL": 3,
+        "BUY_SEED_WHEAT": 80
+      },
+      {
+        "SELL_STRAWBERRY": 4318,
+        "SELL_FERTILIZER": 437,
+        "SELL_EGG": 574,
+        "HIRE": 232.0,
+        "BUY_PRODUCT_FERTILIZER": 203,
+        "SELL_MILK": 235,
+        "SELL_WHEAT": 15659,
+        "BUY_PRODUCT_WHEAT": 14621,
+        "BUY_SEED_WHEAT": 140,
+        "SELL_WOOL": 4
+      },
+      {
+        "SELL_STRAWBERRY": 4628,
+        "HIRE": 232.0,
+        "SELL_WOOL": 11,
+        "SELL_FERTILIZER": 203,
+        "SELL_EGG": 232,
+        "BUY_PRODUCT_FERTILIZER": 193,
+        "BUY_PRODUCT_WHEAT": 16015,
+        "SELL_WHEAT": 16954,
+        "BUY_SEED_WHEAT": 90,
+        "SELL_MILK": 405,
+        "BUY_SEED_CARROT": 80
+      },
+      {
+        "SELL_FERTILIZER": 297,
+        "SELL_EGG": 464,
+        "SELL_STRAWBERRY": 2125,
+        "SELL_MILK": 622,
+        "HIRE": 232.0,
+        "BUY_PRODUCT_FERTILIZER": 135,
+        "SELL_WOOL": 1,
+        "BUY_SEED_CARROT": 280,
+        "SELL_WHEAT": 14929,
+        "BUY_PRODUCT_WHEAT": 13247
+      },
+      {
+        "SELL_FERTILIZER": 222,
+        "SELL_WOOL": 3,
+        "BUY_PRODUCT_FERTILIZER": 136,
+        "HIRE": 232.0,
+        "SELL_STRAWBERRY": 4622,
+        "SELL_EGG": 177,
+        "SELL_MILK": 288,
+        "SELL_WHEAT": 17309,
+        "BUY_PRODUCT_WHEAT": 15849,
+        "BUY_SEED_CARROT": 220,
+        "BUY_SEED_WHEAT": 10
+      },
+      {
+        "HIRE": 232.0,
+        "SELL_WOOL": 18,
+        "SELL_EGG": 120,
+        "SELL_FERTILIZER": 211,
+        "SELL_WHEAT": 15527,
+        "BUY_PRODUCT_FERTILIZER": 76,
+        "BUY_SEED_WHEAT": 50,
+        "BUY_SEED_CARROT": 160,
+        "BUY_PRODUCT_WHEAT": 14065,
+        "SELL_MILK": 536,
+        "SELL_STRAWBERRY": 1370
+      },
+      {
+        "SELL_STRAWBERRY": 4453,
+        "HIRE": 232.0,
+        "SELL_MILK": 390,
+        "SELL_FERTILIZER": 106,
+        "SELL_CARROT": 1042,
+        "SELL_WOOL": 11,
+        "SELL_WHEAT": 16463,
+        "SELL_EGG": 484,
+        "BUY_PRODUCT_WHEAT": 15069
+      },
+      {
+        "SELL_WHEAT": 14711,
+        "HIRE": 232.0,
+        "SELL_CARROT": 3575,
+        "SELL_EGG": 603,
+        "SELL_MILK": 81,
+        "SELL_FERTILIZER": 42,
+        "BUY_PRODUCT_WHEAT": 12578,
+        "SELL_WOOL": 2
+      }
+    ]
+  ],
+  "snapshots": {
+    "0": {
+      "0": {
+        "money": 3000.0,
+        "hands": 0,
+        "layout": {},
+        "ripe": {},
+        "quadrants": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {},
+        "shops": []
+      },
+      "1": {
+        "money": 3000.0,
+        "hands": 0,
+        "layout": {},
+        "ripe": {},
+        "quadrants": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {},
+        "shops": []
+      }
+    },
+    "144": {
+      "0": {
+        "money": 788.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12,
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "ripe": {
+          "WHEAT": 3,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 12
+        },
+        "quadrants": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 19,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 611,
+          "SELL_WHEAT": 389,
+          "BUY_SEED_WHEAT": 180,
+          "HIRE": 49.0,
+          "BUY_ANIMAL_COW": 1600,
+          "BUY_ANIMAL_SHEEP": 1000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 2199,
+          "BUY_SEED_STRAWBERRY": 400
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP"
+        ]
+      },
+      "1": {
+        "money": 974.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 3,
+          "STRAWBERRY": 4,
+          "MELON": 12,
+          "COW": 4,
+          "SHEEP": 2
+        },
+        "ripe": {
+          "WHEAT": 3,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "COW": 0,
+          "SHEEP": 12
+        },
+        "quadrants": [
+          "NW"
+        ],
+        "shed": {
+          "WHEAT": 13,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 868,
+          "SELL_WHEAT": 832,
+          "BUY_SEED_WHEAT": 180,
+          "HIRE": 49.0,
+          "BUY_ANIMAL_COW": 1600,
+          "BUY_ANIMAL_SHEEP": 1000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 2199,
+          "BUY_SEED_STRAWBERRY": 400
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP"
+        ]
+      }
+    },
+    "216": {
+      "0": {
+        "money": 1488.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12,
+          "COW": 8,
+          "SHEEP": 4
+        },
+        "ripe": {
+          "WHEAT": 5,
+          "STRAWBERRY": 0,
+          "MELON": 48,
+          "COW": 0,
+          "SHEEP": 8
+        },
+        "quadrants": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 27,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 1666,
+          "SELL_WHEAT": 845,
+          "BUY_SEED_WHEAT": 280,
+          "HIRE": 169.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 2000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 4620,
+          "BUY_SEED_STRAWBERRY": 2000,
+          "SELL_WOOL": 2413,
+          "BUY_LAND": 1000.0,
+          "BUY_PRODUCT_FERTILIZER": 352,
+          "SELL_MILK": 2237
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT"
+        ]
+      },
+      "1": {
+        "money": 1817.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 5,
+          "STRAWBERRY": 20,
+          "MELON": 12,
+          "COW": 8,
+          "SHEEP": 4
+        },
+        "ripe": {
+          "WHEAT": 5,
+          "STRAWBERRY": 0,
+          "MELON": 48,
+          "COW": 0,
+          "SHEEP": 8
+        },
+        "quadrants": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 17,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 2,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 3883,
+          "SELL_WHEAT": 3398,
+          "BUY_SEED_WHEAT": 280,
+          "HIRE": 169.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 2000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 4620,
+          "BUY_SEED_STRAWBERRY": 2000,
+          "SELL_WOOL": 2406,
+          "BUY_PRODUCT_FERTILIZER": 352,
+          "BUY_LAND": 1000.0,
+          "SELL_MILK": 2237
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT"
+        ]
+      }
+    },
+    "264": {
+      "0": {
+        "money": 15751.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20,
+          "GOOSE": 2,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 13,
+          "STRAWBERRY": 0,
+          "GOOSE": 0,
+          "COW": 6,
+          "SHEEP": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 42,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 3372,
+          "SELL_WHEAT": 1227,
+          "BUY_SEED_WHEAT": 390,
+          "HIRE": 455.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 6414,
+          "BUY_SEED_STRAWBERRY": 2000,
+          "SELL_WOOL": 3799,
+          "BUY_LAND": 1000.0,
+          "BUY_PRODUCT_FERTILIZER": 1044,
+          "SELL_MILK": 4332,
+          "BUY_ANIMAL_GOOSE": 600,
+          "SELL_MELON": 13000
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT"
+        ]
+      },
+      "1": {
+        "money": 15736.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 12,
+          "STRAWBERRY": 20,
+          "GOOSE": 2,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 13,
+          "STRAWBERRY": 0,
+          "GOOSE": 0,
+          "COW": 6,
+          "SHEEP": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE"
+        ],
+        "shed": {
+          "WHEAT": 42,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 12,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 13,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 20099,
+          "SELL_WHEAT": 17949,
+          "BUY_SEED_WHEAT": 390,
+          "HIRE": 455.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 6414,
+          "BUY_SEED_STRAWBERRY": 2000,
+          "SELL_WOOL": 3792,
+          "BUY_PRODUCT_FERTILIZER": 1047,
+          "BUY_LAND": 1000.0,
+          "SELL_MILK": 4332,
+          "BUY_ANIMAL_GOOSE": 600,
+          "SELL_MELON": 13000
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT"
+        ]
+      }
+    },
+    "288": {
+      "0": {
+        "money": 14869.0,
+        "hands": 0,
+        "layout": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "STRAWBERRY": 0,
+          "WHEAT": 22,
+          "GOOSE": 0,
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 39,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4836,
+          "SELL_WHEAT": 2596,
+          "BUY_SEED_WHEAT": 500,
+          "HIRE": 598.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 7437,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 3799,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 1115,
+          "SELL_MILK": 5179,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT"
+        ]
+      },
+      "1": {
+        "money": 14837.0,
+        "hands": 0,
+        "layout": {
+          "STRAWBERRY": 33,
+          "WHEAT": 20,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "STRAWBERRY": 0,
+          "WHEAT": 22,
+          "GOOSE": 0,
+          "COW": 9,
+          "SHEEP": 8
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 39,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 33080,
+          "SELL_WHEAT": 30818,
+          "BUY_SEED_WHEAT": 500,
+          "HIRE": 598.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 7437,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 3792,
+          "BUY_PRODUCT_FERTILIZER": 1118,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 5179,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT"
+        ]
+      }
+    },
+    "360": {
+      "0": {
+        "money": 22199.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 40,
+          "STRAWBERRY": 8,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 11
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 24,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 3305,
+          "BUY_SEED_WHEAT": 710,
+          "HIRE": 862.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 11280,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5387,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 2186,
+          "SELL_MILK": 8032,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT"
+        ]
+      },
+      "1": {
+        "money": 22296.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 24,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 40,
+          "STRAWBERRY": 8,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 11
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 24,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 8,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 86720,
+          "SELL_WHEAT": 85178,
+          "BUY_SEED_WHEAT": 710,
+          "HIRE": 862.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 10373,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5380,
+          "BUY_PRODUCT_FERTILIZER": 1282,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 8032,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT"
+        ]
+      }
+    },
+    "432": {
+      "0": {
+        "money": 35458.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 38,
+          "STRAWBERRY": 24,
+          "GOOSE": 8,
+          "COW": 8,
+          "SHEEP": 4
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 48,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 2,
+          "MILK": 3,
+          "WOOL": 0,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 4161,
+          "BUY_SEED_WHEAT": 940,
+          "HIRE": 1469.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 13004,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5424,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 2434,
+          "SELL_MILK": 8714,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 1250,
+          "SELL_STRAWBERRY": 9795
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP"
+        ]
+      },
+      "1": {
+        "money": 35625.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 38,
+          "STRAWBERRY": 24,
+          "GOOSE": 8,
+          "COW": 8,
+          "SHEEP": 4
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 45,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 5,
+          "MILK": 3,
+          "WOOL": 2,
+          "FERTILIZER": 16,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 132578,
+          "SELL_WHEAT": 132142,
+          "BUY_SEED_WHEAT": 940,
+          "HIRE": 1469.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 12097,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5397,
+          "BUY_PRODUCT_FERTILIZER": 1526,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 8714,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 1086,
+          "SELL_STRAWBERRY": 9795
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP"
+        ]
+      }
+    },
+    "504": {
+      "0": {
+        "money": 52189.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 49,
+          "STRAWBERRY": 38,
+          "GOOSE": 8,
+          "COW": 7,
+          "SHEEP": 5
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 59,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 4,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 4,
+          "WOOL": 4,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 5293,
+          "BUY_SEED_WHEAT": 1130,
+          "HIRE": 2076.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 14514,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5437,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 3167,
+          "SELL_MILK": 8974,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 2146,
+          "SELL_STRAWBERRY": 24245
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP"
+        ]
+      },
+      "1": {
+        "money": 53052.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 25,
+          "STRAWBERRY": 33,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 49,
+          "STRAWBERRY": 38,
+          "GOOSE": 8,
+          "COW": 7,
+          "SHEEP": 5
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 47,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 4,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 4,
+          "WOOL": 4,
+          "FERTILIZER": 15,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 170465,
+          "SELL_WHEAT": 171667,
+          "BUY_SEED_WHEAT": 1130,
+          "HIRE": 2076.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 13071,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5408,
+          "BUY_PRODUCT_FERTILIZER": 1718,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 8996,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 2147,
+          "SELL_STRAWBERRY": 24245
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP"
+        ]
+      }
+    },
+    "576": {
+      "0": {
+        "money": 71919.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 74,
+          "STRAWBERRY": 6,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 6
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 39,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 22,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 7,
+          "WOOL": 2,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 8263,
+          "BUY_SEED_WHEAT": 1460,
+          "HIRE": 2916.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 15956,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5456,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 3953,
+          "SELL_MILK": 9644,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 3060,
+          "SELL_STRAWBERRY": 39916
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      },
+      "1": {
+        "money": 72625.0,
+        "hands": 0,
+        "layout": {
+          "WHEAT": 38,
+          "STRAWBERRY": 20,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "WHEAT": 74,
+          "STRAWBERRY": 6,
+          "GOOSE": 8,
+          "COW": 15,
+          "SHEEP": 6
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 34,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 22,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 7,
+          "WOOL": 2,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 214446,
+          "SELL_WHEAT": 218435,
+          "BUY_SEED_WHEAT": 1460,
+          "HIRE": 2916.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 14322,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5423,
+          "BUY_PRODUCT_FERTILIZER": 2340,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 9611,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 3173,
+          "SELL_STRAWBERRY": 39916
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      }
+    },
+    "648": {
+      "0": {
+        "money": 88692.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 29,
+          "WHEAT": 16,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "STRAWBERRY": 13
+        },
+        "ripe": {
+          "CARROT": 35,
+          "WHEAT": 48,
+          "GOOSE": 8,
+          "COW": 14,
+          "SHEEP": 4,
+          "STRAWBERRY": 26
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 58,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 2,
+          "MILK": 9,
+          "WOOL": 4,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 12375,
+          "BUY_SEED_WHEAT": 1560,
+          "HIRE": 3612.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 17282,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5471,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 5020,
+          "SELL_MILK": 11544,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 3931,
+          "SELL_STRAWBERRY": 50908,
+          "BUY_SEED_CARROT": 580
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      },
+      "1": {
+        "money": 89166.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 29,
+          "WHEAT": 16,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "STRAWBERRY": 13
+        },
+        "ripe": {
+          "CARROT": 35,
+          "WHEAT": 48,
+          "GOOSE": 8,
+          "COW": 14,
+          "SHEEP": 4,
+          "STRAWBERRY": 26
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 57,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 2,
+          "MILK": 9,
+          "WOOL": 4,
+          "FERTILIZER": 17,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 259557,
+          "SELL_WHEAT": 267627,
+          "BUY_SEED_WHEAT": 1560,
+          "HIRE": 3612.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 15044,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5438,
+          "BUY_PRODUCT_FERTILIZER": 2804,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 10926,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 4046,
+          "SELL_STRAWBERRY": 51291,
+          "BUY_SEED_CARROT": 580
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      }
+    },
+    "672": {
+      "0": {
+        "money": 92043.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 28,
+          "WHEAT": 14,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "STRAWBERRY": 4
+        },
+        "ripe": {
+          "CARROT": 42,
+          "WHEAT": 39,
+          "GOOSE": 10,
+          "COW": 18,
+          "SHEEP": 3,
+          "STRAWBERRY": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 37,
+          "CARROT": 18,
+          "TOMATO": 0,
+          "STRAWBERRY": 20,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 5,
+          "WOOL": 4,
+          "FERTILIZER": 7,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 13787,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 3844.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 17550,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5475,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 5108,
+          "SELL_MILK": 12253,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 4049,
+          "SELL_STRAWBERRY": 52278,
+          "BUY_SEED_CARROT": 740
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      },
+      "1": {
+        "money": 92365.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 28,
+          "WHEAT": 14,
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6,
+          "STRAWBERRY": 4
+        },
+        "ripe": {
+          "CARROT": 42,
+          "WHEAT": 39,
+          "GOOSE": 10,
+          "COW": 18,
+          "SHEEP": 3,
+          "STRAWBERRY": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 36,
+          "CARROT": 18,
+          "TOMATO": 0,
+          "STRAWBERRY": 20,
+          "MELON": 0,
+          "EGG": 4,
+          "MILK": 5,
+          "WOOL": 4,
+          "FERTILIZER": 7,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 273622,
+          "SELL_WHEAT": 283154,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 3844.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 15255,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5456,
+          "BUY_PRODUCT_FERTILIZER": 2880,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 11462,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 4166,
+          "SELL_STRAWBERRY": 52661,
+          "BUY_SEED_CARROT": 740
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      }
+    },
+    "696": {
+      "0": {
+        "money": 99614.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 16,
+          "GOOSE": 3,
+          "WHEAT": 5,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "CARROT": 31,
+          "GOOSE": 4,
+          "WHEAT": 7,
+          "COW": 12,
+          "SHEEP": 2
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 44,
+          "CARROT": 37,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 6,
+          "WOOL": 0,
+          "FERTILIZER": 7,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 15127,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 4076.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 17643,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5486,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 5108,
+          "SELL_MILK": 12579,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 4532,
+          "SELL_STRAWBERRY": 56796,
+          "BUY_SEED_CARROT": 740,
+          "SELL_CARROT": 1032
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      },
+      "1": {
+        "money": 100013.0,
+        "hands": 0,
+        "layout": {
+          "CARROT": 16,
+          "GOOSE": 3,
+          "WHEAT": 5,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "CARROT": 31,
+          "GOOSE": 4,
+          "WHEAT": 7,
+          "COW": 18,
+          "SHEEP": 2
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 44,
+          "CARROT": 37,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 6,
+          "MILK": 1,
+          "WOOL": 0,
+          "FERTILIZER": 6,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {},
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 288691,
+          "SELL_WHEAT": 299617,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 4076.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 15361,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5467,
+          "BUY_PRODUCT_FERTILIZER": 2880,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 11852,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 4650,
+          "SELL_STRAWBERRY": 57114,
+          "BUY_SEED_CARROT": 740,
+          "SELL_CARROT": 1042
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      }
+    },
+    "718": {
+      "0": {
+        "money": 105757.0,
+        "hands": 11,
+        "layout": {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {
+          "CARROT": 3,
+          "WHEAT": 2,
+          "WOOL": 1,
+          "FERTILIZER": 4
+        },
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 4954,
+          "SELL_WHEAT": 17096,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 4308.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 17685,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5487,
+          "BUY_LAND": 3000.0,
+          "BUY_PRODUCT_FERTILIZER": 5108,
+          "SELL_MILK": 12877,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 5132,
+          "SELL_STRAWBERRY": 56796,
+          "BUY_SEED_CARROT": 740,
+          "SELL_CARROT": 4497
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      },
+      "1": {
+        "money": 106037.0,
+        "hands": 11,
+        "layout": {
+          "GOOSE": 3,
+          "COW": 8,
+          "SHEEP": 6
+        },
+        "ripe": {
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "quadrants": [
+          "NW",
+          "NE",
+          "SW"
+        ],
+        "shed": {
+          "WHEAT": 0,
+          "CARROT": 0,
+          "TOMATO": 0,
+          "STRAWBERRY": 0,
+          "MELON": 0,
+          "EGG": 0,
+          "MILK": 0,
+          "WOOL": 0,
+          "FERTILIZER": 0,
+          "GOOSE": 0,
+          "COW": 0,
+          "SHEEP": 0
+        },
+        "carried": {
+          "CARROT": 3,
+          "WHEAT": 2,
+          "WOOL": 1
+        },
+        "ledger": {
+          "BUY_PRODUCT_WHEAT": 301269,
+          "SELL_WHEAT": 314260,
+          "BUY_SEED_WHEAT": 1610,
+          "HIRE": 4308.0,
+          "BUY_ANIMAL_COW": 3200,
+          "BUY_ANIMAL_SHEEP": 3000,
+          "BUY_SEED_MELON": 960,
+          "SELL_FERTILIZER": 15403,
+          "BUY_SEED_STRAWBERRY": 3300,
+          "SELL_WOOL": 5468,
+          "BUY_PRODUCT_FERTILIZER": 2880,
+          "BUY_LAND": 3000.0,
+          "SELL_MILK": 11933,
+          "BUY_ANIMAL_GOOSE": 900,
+          "SELL_MELON": 14267,
+          "SELL_EGG": 5253,
+          "SELL_STRAWBERRY": 57114,
+          "BUY_SEED_CARROT": 740,
+          "SELL_CARROT": 4506
+        },
+        "shops": [
+          "FARMERS_MARKET",
+          "SMOOTHIE_SHOP",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "BRUNCH_SPOT",
+          "PIZZA_SHOP",
+          "PIZZA_SHOP",
+          "FARMERS_MARKET"
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,652 @@
+{
+  "checked_utc": "2026-09-30T23:07:28.669544+00:00",
+  "active": [
+    {
+      "id": 56719762,
+      "date_submitted": "2026-09-30T22:00:47.620000",
+      "public_score": "1824.6",
+      "is_frozen": true
+    },
+    {
+      "id": 56714342,
+      "date_submitted": "2026-09-30T17:19:27.003000",
+      "public_score": "1802.0",
+      "is_frozen": true
+    }
+  ],
+  "limits": {
+    "num_today": 3,
+    "num_total": 33,
+    "num_allowed_now": 2,
+    "limited_by_total": false,
+    "is_frozen": true
+  },
+  "timeline": [
+    {
+      "name": "Timeline",
+      "content": "* **July 29, 2026** - Start Date.\n\n* **${competition.ProhibitNewEntrantsExplicitDeadline}** - Entry Deadline. You must accept the competition rules before this date in order to compete.\n\n* **${competition.TeamMergerExplicitDeadline}** - Team Merger Deadline. This is the last day participants may join or merge teams.\n\n* **September 30, 2026** - Final Submission Deadline.\n\n* **October 1, 2026 to (approx) October 15, 2026** - We will continue to run games, or until the leaderboard has reached convergence. At the conclusion of this period, the leaderboard is final.\n\nAll deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted. *The competition organizers reserve the right to update the contest timeline if they deem it necessary.*\n",
+      "is_published": null,
+      "post_title": null,
+      "mime_type": null,
+      "is_frozen": true
+    }
+  ],
+  "episodes": [
+    {
+      "id": 116002698,
+      "create_time": "2026-09-30T23:00:52.177000",
+      "end_time": "2026-09-30T23:04:43.918000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56715670,
+          "index": 0,
+          "reward": 105315,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "DeeSaa",
+          "team_id": 16771200,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 105655,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 116001148,
+      "create_time": "2026-09-30T22:57:11.279000",
+      "end_time": "2026-09-30T22:59:48.305000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56711824,
+          "index": 0,
+          "reward": 62095,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "ne Artem Savchenko",
+          "team_id": 16639289,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 62300,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115999604,
+      "create_time": "2026-09-30T22:47:44.762000",
+      "end_time": "2026-09-30T22:50:00.771000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 108601,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56698078,
+          "index": 1,
+          "reward": 107540,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "awarse",
+          "team_id": 16623836,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115998094,
+      "create_time": "2026-09-30T22:43:46.383000",
+      "end_time": "2026-09-30T22:48:24.154000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56253628,
+          "index": 0,
+          "reward": 107200,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "HyperX",
+          "team_id": 16659395,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 126030,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115998106,
+      "create_time": "2026-09-30T22:43:46.400000",
+      "end_time": "2026-09-30T22:45:35.730000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 132446,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719898,
+          "index": 1,
+          "reward": 131708,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Ankith Savio",
+          "team_id": 16742149,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115996591,
+      "create_time": "2026-09-30T22:39:44.282000",
+      "end_time": "2026-09-30T22:44:09.741000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 101699,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56584676,
+          "index": 1,
+          "reward": 94184,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Ahmed Mostafa #2",
+          "team_id": 16852383,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115995071,
+      "create_time": "2026-09-30T22:35:44.998000",
+      "end_time": "2026-09-30T22:41:12.814000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56558899,
+          "index": 0,
+          "reward": 96328,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Isabe11aM00re",
+          "team_id": 16942588,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 99275,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115993575,
+      "create_time": "2026-09-30T22:31:49.470000",
+      "end_time": "2026-09-30T22:35:12.431000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56087428,
+          "index": 0,
+          "reward": 132049,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Kyohei",
+          "team_id": 16730473,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 155938,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115992095,
+      "create_time": "2026-09-30T22:27:46.008000",
+      "end_time": "2026-09-30T22:31:06.741000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56099771,
+          "index": 0,
+          "reward": 44772,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Danila Lebedev",
+          "team_id": 16816445,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 65844,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115990586,
+      "create_time": "2026-09-30T22:24:03.512000",
+      "end_time": "2026-09-30T22:26:14.510000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 97282,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 55394548,
+          "index": 1,
+          "reward": 49818,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Nishant Dahal",
+          "team_id": 16624485,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115989095,
+      "create_time": "2026-09-30T22:15:45.930000",
+      "end_time": "2026-09-30T22:19:34.364000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 55922431,
+          "index": 0,
+          "reward": 63305,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "H Bharath",
+          "team_id": 16657610,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 89317,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115987598,
+      "create_time": "2026-09-30T22:11:48.860000",
+      "end_time": "2026-09-30T22:14:44.977000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 55331983,
+          "index": 0,
+          "reward": 43966,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Bharathms1902",
+          "team_id": 16662904,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 125521,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115986126,
+      "create_time": "2026-09-30T22:07:45.716000",
+      "end_time": "2026-09-30T22:09:59.033000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 140996,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56260448,
+          "index": 1,
+          "reward": 82701,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "bvgr",
+          "team_id": 16822523,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    },
+    {
+      "id": 115984224,
+      "create_time": "2026-09-30T22:00:48.003000",
+      "end_time": "2026-09-30T22:04:51.733000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 4,
+        "name_": "EPISODE_TYPE_VALIDATION",
+        "sort_order_": 4
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 72110,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56719762,
+          "index": 1,
+          "reward": 72749,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    }
+  ]
+}

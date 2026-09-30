@@ -172,3 +172,6 @@ candidates/n30b_*.py
 results/frontier20/kaggle/candidates/
 results/frontier20/kaggle/attribution/
 results/frontier20/remote_metadata/*.ipynb
+results/frontier21/kaggle/candidates/
+results/frontier21/kaggle/attribution/
+results/frontier21/remote_metadata/*.ipynb

@@ -1,0 +1,114 @@
+{
+  "episode": 116007343,
+  "margin": -276,
+  "exact_reconstruction": true,
+  "same_layouts_at_steps": [
+    "288",
+    "432",
+    "648",
+    "718"
+  ],
+  "cashflow_components": [
+    [
+      "SELL_WHEAT",
+      -297164
+    ],
+    [
+      "BUY_PRODUCT_FERTILIZER",
+      -2228
+    ],
+    [
+      "SELL_STRAWBERRY",
+      -318
+    ],
+    [
+      "SELL_EGG",
+      -121
+    ],
+    [
+      "SELL_CARROT",
+      -9
+    ],
+    [
+      "BUY_ANIMAL_COW",
+      0
+    ],
+    [
+      "HIRE",
+      -0.0
+    ],
+    [
+      "SELL_MELON",
+      0
+    ],
+    [
+      "BUY_LAND",
+      -0.0
+    ],
+    [
+      "BUY_ANIMAL_SHEEP",
+      0
+    ],
+    [
+      "BUY_SEED_MELON",
+      0
+    ],
+    [
+      "BUY_SEED_CARROT",
+      0
+    ],
+    [
+      "BUY_ANIMAL_GOOSE",
+      0
+    ],
+    [
+      "BUY_SEED_WHEAT",
+      0
+    ],
+    [
+      "BUY_SEED_STRAWBERRY",
+      0
+    ],
+    [
+      "SELL_WOOL",
+      19
+    ],
+    [
+      "SELL_MILK",
+      944
+    ],
+    [
+      "SELL_FERTILIZER",
+      2286
+    ],
+    [
+      "BUY_PRODUCT_WHEAT",
+      296315
+    ]
+  ],
+  "wheat_net_cashflow": [
+    12210,
+    13059
+  ],
+  "wheat_product_bought_units": [
+    139,
+    7352
+  ],
+  "wheat_product_sold_units": [
+    435,
+    7648
+  ],
+  "harvested_eggs": [
+    91,
+    93
+  ],
+  "diagnostic_margins": {
+    "f20_value": -276.0,
+    "f20_fill": -276.0,
+    "f21_cap12": -236.0
+  },
+  "candidate_diagnostic_gain": 40,
+  "defeat_flipped": false,
+  "lesson": "The same farm layout and identical non-product expenditure produced a narrow loss. Rival cycled7352 bought wheat units and7648 sold units; its net wheat cashflow was13059 versus12210, not314328 profit. Strawberry and egg shortfalls partly offset our milk-price advantage. The12-unit adjustment helps40 in the frozen replay but does not recover the loss.",
+  "limits": "Opponent actions are frozen and cannot react. This is diagnosis, not competitive validation. Production capacity and timing differ from the separate Tm-ACCS loss."
+}

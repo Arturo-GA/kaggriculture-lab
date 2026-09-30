@@ -1,0 +1,17 @@
+{
+  "id": 116004248,
+  "path": "vendor/top100_0927/episode-116004248-replay.json.gz",
+  "sha256": "480abd71265d1bb3e5f5e467aff6612ee9c8fd4c73575725fe34a484e2174afa",
+  "compressed_bytes": 437293,
+  "raw_bytes": 34436013,
+  "seed": 1285236803,
+  "teams": [
+    "Arturo Gutiérrez Aguilar",
+    "Tm-ACCS"
+  ],
+  "rewards": [
+    111224.0,
+    134656.0
+  ],
+  "engine": "1.32.7"
+}

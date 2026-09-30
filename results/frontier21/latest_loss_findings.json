@@ -1,0 +1,111 @@
+{
+  "episode": 116004248,
+  "margin": -23432,
+  "exact_reconstruction": true,
+  "total_cashflow_gap": -23432.0,
+  "cashflow_components": [
+    [
+      "SELL_WOOL",
+      -38251
+    ],
+    [
+      "SELL_STRAWBERRY",
+      -5463
+    ],
+    [
+      "SELL_TOMATO",
+      -4585
+    ],
+    [
+      "BUY_LAND",
+      -4000.0
+    ],
+    [
+      "BUY_PRODUCT_FERTILIZER",
+      -1969
+    ],
+    [
+      "BUY_SEED_WHEAT",
+      -520
+    ],
+    [
+      "BUY_SEED_CARROT",
+      -440
+    ],
+    [
+      "BUY_ANIMAL_GOOSE",
+      -300
+    ],
+    [
+      "BUY_SEED_STRAWBERRY",
+      -200
+    ],
+    [
+      "BUY_SEED_MELON",
+      80
+    ],
+    [
+      "HIRE",
+      160.0
+    ],
+    [
+      "BUY_SEED_TOMATO",
+      300
+    ],
+    [
+      "BUY_ANIMAL_COW",
+      1200
+    ],
+    [
+      "SELL_MELON",
+      1533
+    ],
+    [
+      "SELL_FERTILIZER",
+      1722
+    ],
+    [
+      "SELL_EGG",
+      2487
+    ],
+    [
+      "SELL_CARROT",
+      3161
+    ],
+    [
+      "BUY_PRODUCT_WHEAT",
+      4296
+    ],
+    [
+      "SELL_MILK",
+      4947
+    ],
+    [
+      "SELL_WHEAT",
+      5410
+    ],
+    [
+      "BUY_ANIMAL_SHEEP",
+      7000
+    ]
+  ],
+  "main_evidence": {
+    "sheep_at_step432": [
+      5,
+      19
+    ],
+    "wool_units": [
+      139,
+      310
+    ],
+    "wool_net_cashflow_gap": -38251
+  },
+  "diagnostic_margins": {
+    "f20_value": -23432.0,
+    "f20_fill": -23432.0,
+    "f21_cap12": -23432.0
+  },
+  "implemented_cap_adjustment_fixes_this_loss": false,
+  "lesson": "The dominant observable gap was wool production capacity, not inventory overflow or feeding deadlock. Rival expanded sheep after wool-shop demand appeared; ours kept five sheep and bought the fourth land quadrant. This suggests testing shop-conditioned herd expansion and worker allocation in a separately validated policy; a small residual-sale adjustment does not solve it.",
+  "limits": "One public loss and frozen-rival counterfactuals do not prove the rival policy would be stronger on other seeds. No further production-policy change is included in the frozen final candidate."
+}

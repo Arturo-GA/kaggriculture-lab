@@ -1,0 +1,17 @@
+{
+  "id": 116007343,
+  "path": "vendor/top100_0927/episode-116007343-replay.json.gz",
+  "sha256": "08ee4d884debfbdf0f7240adc3440a89f9881a1d6b20771baada644805b417bc",
+  "compressed_bytes": 341858,
+  "raw_bytes": 32634508,
+  "seed": 697306308,
+  "teams": [
+    "Arturo Gutiérrez Aguilar",
+    "WeAreFarmers"
+  ],
+  "rewards": [
+    105941.0,
+    106217.0
+  ],
+  "engine": "1.32.7"
+}

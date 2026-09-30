@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-09-30T23:15:01.686937+00:00",
+  "submission": 56719762,
+  "public_games": 14,
+  "losses": [
+    {
+      "id": 116004248,
+      "create_time": "2026-09-30T23:05:29.219000",
+      "end_time": "2026-09-30T23:11:49.661000",
+      "state": {
+        "value_": 2,
+        "name_": "COMPLETED",
+        "sort_order_": 2
+      },
+      "type": {
+        "value_": 1,
+        "name_": "EPISODE_TYPE_PUBLIC",
+        "sort_order_": 1
+      },
+      "agents": [
+        {
+          "submission_id": 56719762,
+          "index": 0,
+          "reward": 111224,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Arturo Gutiérrez Aguilar",
+          "team_id": 16639155,
+          "is_frozen": true
+        },
+        {
+          "submission_id": 56709937,
+          "index": 1,
+          "reward": 134656,
+          "state": {
+            "value_": 0,
+            "name_": "EPISODE_AGENT_STATE_UNSPECIFIED",
+            "sort_order_": 0
+          },
+          "team_name": "Tm-ACCS",
+          "team_id": 16857636,
+          "is_frozen": true
+        }
+      ],
+      "is_frozen": true
+    }
+  ]
+}
