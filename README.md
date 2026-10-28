@@ -1,518 +1,93 @@
 # Kaggriculture Lab
 
-<!-- frontier21-current -->
-**Último envío, 30 de septiembre: 56721777 — f21_cap12 — COMPLETE.** La variante f21_cap12 pasó los criterios registrados en 192 partidas nuevas: 80/96 puntos frente a 74/96 de f20_value. Parte de f20_fill y amplía el máximo de venta residual cubierta de 8 a 12 unidades. La muestra comprende ocho semillas; el intervalo bootstrap por semilla incluye cero, por lo que la ventaja observada sigue siendo incierta. Notebook privado verificado; 16 partidas técnicas sin errores. Par activo comprobado: 56721777 + 56719762. Se revisaron exactamente las derrotas frente a Tm-ACCS (−23432) y WeAreFarmers (−276): la primera muestra una brecha de capacidad lanera; la segunda, pequeñas diferencias de mercado y cosecha. El ajuste de 12 unidades no cambia la primera y reduce la segunda a −236 contra acciones grabadas; no la convierte en victoria. [Resultados y recibos](results/frontier21/final_report.json), [notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier21-final-validation). No hay ningún nuevo envío programado. La evidencia local no garantiza puesto ni medalla.
-<!-- /frontier21-current -->
+🥉 **Bronze medal — 951st of 10,148 teams** in [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture) (Kaggle Featured Simulation Competition, September 2026).
 
-<!-- frontier20-current -->
-**30 de septiembre, Frontier20: una submission privada, 56719762, COMPLETE.** Se reconstruyeron las 23 derrotas públicas disponibles de las dos submissions anteriores. La nueva capa completa pequeñas ventas cubiertas y prioriza lana solo si el riesgo de precio supera el fertilizante. Se envió por petición explícita como experimento con controles pendientes, después de 149V/11D/0E en 160 juegos de la candidata. Controles completos: +22 puntos frente a Market1 y +7 frente a Market2 en 640 juegos; paso del criterio registrado: True. La primera candidata falló y se conserva su resultado. Kaggle completó 16 juegos de verificación y confirmó el paquete idéntico. Par activo confirmado a 2026-09-30T22:24:29.497293+00:00: 56719762 + 56714342. No se envió una segunda plaza: la alternativa no demostró mejora sobre la ya enviada. [Resultados y recibos](results/frontier20/final_report.json), [investigación](results/frontier20/research_summary.json), [código](candidates/f20_value.py), [notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier20-policy-validation). La mejora local no garantiza puesto ni medalla; no se verificó una victoria contra Grigor.
-<!-- /frontier20-current -->
+A research lab for building, evaluating and shipping agents for a two-player farming simulation. Over 19 days and 21 agent generations ("Frontiers"), the project went from a public baseline rated ~1,900 to a final agent that competed in the top 10 % of the leaderboard.
 
-**30 de septiembre: Frontier19, submissions 56714342 y 56714336.** Cuatro partidas por cada equipo del puesto 200–300, veinte contabilidades propias exactas, 544 juegos de comparación y dos estrategias verificadas funcionalmente en un notebook privado. Market2 pasa su puerta; Market1 es una segunda plaza experimental con un retroceso documentado. [Resultados](FRONTIER19_RESULTS.es.md) y [estado para continuar](RESUME_FRONTIER19.es.md). La mejora local no garantiza top 300.
+## The problem
 
-Investigación y experimentos para Kaggriculture sobre el V37 compartido por Arturo.
-Repositorio privado. Primer candidato: **matched6**, que anticipa ventas seis turnos
-solo cuando la granja rival mantiene una semejanza alta con la propia.
+Two agents run rival farms on a 10×10 grid for 720 turns (30 days × 24 hours) and share one market. Each turn an agent hires workers, plants, waters, harvests, raises animals, routes deliveries and places buy/sell orders; the market settles both players' orders unit by unit at a price that depends on current inventory. Only the final cash balance matters: win or lose, no margin. Ratings come from a Bradley-Terry fit over thousands of live games, so the opponent pool changes daily as other teams publish new agents.
 
-**Si eres un chat nuevo, empieza por [GUIA_PARA_EL_PROXIMO_CHAT.es.md](GUIA_PARA_EL_PROXIMO_CHAT.es.md)**: reglas de la
-competición, estado actual, herramientas, lecciones y consejos para lo que queda hasta el 30 de septiembre.
+## What is in this repo
 
-**27 de septiembre, ampliación a cuatro partidas por equipo.**
-[Análisis de repetición y derrota de F17](TOP100_CUATRO_PARTIDAS.es.md).
-Frontier18 prueba microoperaciones, un escenario rival alternativo y un arreglo de alimentación.
-`f18_small` supera su validación: 94V/2D en 96 partidas, 16/16 frente a F17, +12 puntos emparejados
-y +4 fuera de ese duelo. La variante de escenario alternativo no pasa. Kaggle confirmó 8/8
-contra F17 y bytes idénticos. Se envió solo F18 pequeño, **submission 56617687**, con notebook
-privado; consultar [resultados y recibos](FRONTIER18_RESULTS.es.md) y [continuación](RESUME_FRONTIER18.es.md).
+The agents build on public Apache-2.0 baselines shared during the competition (see [NOTICE.md](NOTICE.md) and `attribution/`). The original contribution is the **layers added on top of those baselines and the evaluation machinery used to decide what to ship**:
 
-**27 de septiembre, censo anterior de dos partidas.** [Estrategias aplicables](TOP100_ESTRATEGIAS.es.md):
-184 partidas distintas, dos actuaciones por equipo; 11 partidas reconstruidas exactamente y comparación con
-las cuatro primeras partidas públicas de F17. La mediana del top 100 es 11 trabajadores, 19 animales y 23 fresas
-al paso 288; F17 tiene 11, 17 y 33. Solo 52/200 actuaciones abren el cuarto cuadrante. Prioridades propuestas:
-previsión por ciclo y resiembra, rotación de cultivos, puesta en producción más temprana del tercer cuadrante y
-escenarios de rival. Esta investigación no modifica el agente congelado ni envía otra submission.
-F17 `56615489` ya está **COMPLETE**; agentes activos comprobados: F17 + F16.
+| Component | What it does | Where |
+|---|---|---|
+| **Lockstep sale ordering** | Re-plays the engine's per-unit settlement to choose the permutation of our own sell orders with the best modelled margin when the rival runs a clone of our tape | `scripts/frontier5_lockstep.py` |
+| **Sale-timing gates** | Demand/belief/lead gates that decide *when* to sell saturated goods (milk, wool, strawberries) using public demand accounting | `candidates/demand_gate*.py`, `belief_*.py` |
+| **Branch router** | Reads the rival's lineage from its public cash at step 1 and switches to the base that wins that match-up | `candidates/f12_router.py` |
+| **Market/input layers** | In-turn search for input purchases under cash and capacity limits; covered residual sales; delivery-on-route | `scripts/frontier17_input_market.py`, `frontier20_*.py`, `build_f21.py` |
+| **Learned option critic** | Small model trained on logged games to pick the sale-reservation horizon (78/80 held-out wins vs 61/80 for the hand-tuned rule) | `scripts/train_ml.py`, `build_ml_policy.py`, `results/ml/` |
+| **Evaluation harness** | Registered acceptance gates (fresh seeds, both seats, mirror match, opponent floor, zero errors, latency < 1 s) that a candidate must pass locally *and* in a private Kaggle kernel before submission | `scripts/evaluate.py`, `frontier5_validation.py`, `assess_f*.py`, `verify_*_cloud.py` |
+| **C++ accelerator** | Integration of a community C++ port of the engine, verified against the official engine: 8.7× faster holdouts | `scripts/accelerator.py`, `build_cppsim.py`, `verify_accelerator.py` |
+| **Opponent research** | Reconstruction of top-100 replays (exact per-turn accounting), census of their strategies, loss audits game by game | `scripts/research_top100.py`, `analyze_*.py`, `docs/history/TOP100_*.md` |
 
-**27 de septiembre: Frontier17 enviado, submission 56615489, notebook privado.** Se analizaron las 22 derrotas de F16
-disponibles durante la sesión. Se eliminaron parejas especulativas de compra/reventa entre turnos y se añadió
-una búsqueda de operaciones de insumos dentro del turno, con límites de caja y capacidad. El candidato congelado
-ganó **128/128** en ocho semillas nuevas frente a ocho rivales, incluidas **16/16 contra F16**; puntuación emparejada
-128 frente a 118, de la que +2 viene de rivales distintos de F16. Cero errores y máximo 458 ms. Una prueba adicional
-contra una variante de compras dio 4/8 frente a 0/8 del control. Los replays con rivales grabados convierten 4/17
-derrotas usadas para diagnóstico y 2/5 nuevas posteriores a congelar el código; no estiman la fuerza competitiva.
-Arturo autorizó una plaza. Kaggle completó 16 partidas de verificación: F17 ganó 8/8 contra F16,
-cero errores y máximo 248 ms. El paquete coincide byte por byte con el local. Se realizó un solo envío;
-el recibo y su estado están en `results/frontier17/submission_receipt.json`.
-[Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier17-input-market).
-[Investigación](FRONTIER17_RESEARCH.es.md), [resultados](FRONTIER17_RESULTS.es.md),
-[continuación](RESUME_FRONTIER17.es.md). No hay promesa de top 100; el corte observado fue 2621,9.
+Every submission has a receipt (`results/frontier*/submission_receipt.json`) with the SHA-256 of the exported agent, the holdout summary that justified it and the Kaggle verification run.
 
-**27 de septiembre: Frontier16, submission 56609913, notebook privado.** Se revisó GitHub y la nueva
-ola pública del 27; la base elegida es *Farmer John and the Idle Seller*, con una capa propia de asignación de
-posiciones de venta mediante programación dinámica y la integración E081. `f16_repaired` ganó **156/160** y obtuvo
-**+32 puntos emparejados frente a F15**. Son ocho semillas, diez rivales y ambos asientos, no 160 mundos independientes.
-También se mide por separado el aporte frente a la base pública sin modificar. Investigación:
-[FRONTIER16_RESEARCH.es.md](FRONTIER16_RESEARCH.es.md); resultados:
-[FRONTIER16_RESULTS.es.md](FRONTIER16_RESULTS.es.md); continuación:
-[RESUME_FRONTIER16.es.md](RESUME_FRONTIER16.es.md). Arturo autorizó la subida privada y la submission; la ejecución
-en Kaggle completó 32 partidas (F16 14/16, delta +9 frente a F15, cero errores, máximo 365 ms). El paquete coincide
-byte por byte con el local. [Notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier16-queue).
-La submission está COMPLETE; antes del envío de F17 el par activo era F16 + F15 y F14B estaba retirada.
-Consulta del 27/09 a las 17:33 UTC: F16 2449,8, puesto 273, 45 victorias y 22 derrotas.
-No se promete rating 2660–2700.
+## How a Frontier was shipped
 
-**27 de septiembre: análisis de los 2700-3000** ([ANALISIS_2700.es.md](ANALISIS_2700.es.md)): replays del top-10 diario
-(dataset público), reglas de producción del motor y foro. Sus generalizaciones sobre cuatro cuadrantes y 12–13 manos
-fueron corregidas por el censo completo: no son requisitos universales del top 100. Tampoco se puede identificar
-PPO o clonación a partir de partidas públicas. Se conservan los experimentos descartados y sus resultados en el informe;
-las prioridades actuales deben leerse en los censos posteriores y en la validación de Frontier18.
+1. **Diagnose** – pull the live games of the active submissions, identify the opponents behind each loss, and reproduce the losses locally with the rival's recorded actions.
+2. **Build** – `scripts/build_fN.py` composes a candidate from a hash-pinned base plus the new layer and writes it to `candidates/`.
+3. **Gate** – `scripts/assess_fN.py` runs the registered holdout (`results/frontierN/plan.json`): new seeds, both seats, the previous Frontier as control. A candidate that fails the gate is kept in the log but never submitted.
+4. **Verify in the cloud** – `scripts/make_frontierN_notebook.py` bundles the exact files into a private Kaggle kernel that replays the gate on the official engine and checks the archive byte for byte.
+5. **Submit** – `scripts/submit_frontierN.py` (later `release_fN.py` / `finish_fN_submission.py`) sends one slot and stores the receipt.
 
-**27 de septiembre: Frontier15, venta al inicio de cada ventana de demanda sobre Frontier14B (submission 56592376).**
-Revisión de las 96 partidas en vivo del par activo contra rivales de 2400+ (`vendor/live_f14`): los de 2450-2600 son
-clones de nuestra línea (misma granja) y se deciden por tiempos de venta en los días 16-28; las palizas son agentes
-privados de otra producción. Del motor: el precio depende solo del inventario, el pueblo retira su demanda tras cada
-paso múltiplo de 4 y ambas listas se liquidan unidad a unidad al mismo precio; leche, lana y melón están saturados
-desde el día 12-15, así que el primero en vender tras cada retirada cobra la holgura. `build_f15.py` añade UNA capa
-propia al final de Frontier14B: `candidates/f15_e81.py` vende todo el almacén proyectado de leche, lana y fresa en el
-primer paso de cada ventana (idea E081 de mooman0222, MIT; código propio con funciones del propio cha22). Bucle
-cerrado en dos bloques de semillas nuevas: 34/36 y 34/36 (+875 y +861 por partida; 8/8 contra nuestro agente activo
-`f14_adv4_h16`, 6/8 contra mooman E081, 8/8 contra Wangyh v44, cha22 y prvsiyan); panel congelado de las 96 partidas
-reales 29 → 52 victorias (2400-2500: 21 → 42 de 62; 2500-2600: 5 → 7 de 22; 2600+ sin cambio). Variante
-`f15_e81_tom2` (además permite la inversión en tomates de cha22 con 2 pizzerías-mercados): +730 en el único mundo en
-que actúa. Puerta registrada en `results/frontier15/plan.json` (control = Frontier14B, 22 rivales, semillas
-9411-9418, 1056 partidas): **PUERTA SUPERADA con total +33** (espejo contra Frontier14B 14/16, cha22 16/16, ningún rival
-por debajo de −2, 289 ms); la variante de tomate quedó en −1 y se rechazó. Kaggle 48/48 limpio a 258 ms (cha22, Frontier13
-y prvsiyan 8/0 cada uno). **Enviada a petición el 27 a las 00:06 UTC: submission 56592376** (retira 56568493).
-**Par activo: 56570873 + 56592376**; seguimiento `python live_report.py 56570873 56592376`. Detalle en
-[FRONTIER15_RESULTS.es.md](FRONTIER15_RESULTS.es.md) y [RESUME_FRONTIER15.es.md](RESUME_FRONTIER15.es.md).
+The full log, Frontier by Frontier, with every number and every discarded idea, is in [`docs/history/`](docs/history/README.md) (Spanish).
 
-```powershell
-python build_f15.py; python -m unittest -v test_frontier15.py
-python assess_f15.py                                               # puerta registrada sobre results/frontier15/holdout.json
-python make_frontier15_notebook.py; python -m kaggle kernels push -p kaggle_frontier15
-python verify_frontier15_cloud.py                                  # tras `kaggle kernels output jarturo/kaggriculture-frontier15-windowhead -p results/frontier15/kaggle`
-python replay_panel.py candidates/f15_e81.py --raw vendor/live_f14 --episodes outputs/session/gold/episodes_f14live.json
-python submit_frontier15.py                                        # solo lectura: refresca el recibo de 56592376
+## Results timeline
+
+| Date | Frontier | Live rating / rank | Note |
+|---|---|---|---|
+| 12 Sep | matched6 (V37 + 6-turn sale reservation) | 1,886 → 2,656 | first submission |
+| 13–14 Sep | Frontier / Frontier2 (own last-day planner, deliveries on route) | 2,613 | |
+| 16–17 Sep | Frontier4 / Frontier5 (sales-race probe, **lockstep layer**) | 2,674 → 2,751 (#238) | silver zone at the time |
+| 19–21 Sep | Frontier8 / Frontier9 (stacked public layers + lockstep, bounded sale advance) | 2,825 peak | |
+| 24–27 Sep | Frontier11–18 (branch router, input market, feed fix) | 2,450 (#273) | public wave of new baselines reset the pool |
+| 30 Sep | Frontier20 / Frontier21 (covered residual sales) | final pair | |
+| **Final** | **Bradley-Terry ranking after two weeks of play** | **951 / 10,148 — bronze** | |
+
+Live ratings are noisy and shifted every time a stronger public baseline appeared; the table is there to show the iteration, not a monotone climb.
+
+## Repository layout
+
+```
+candidates/        exported agents, one file each (the submitted ones are tracked; public rivals are git-ignored)
+baseline/          the pinned public V37 baseline with its upstream notices
+scripts/           build_*, assess_*, evaluate, research, notebook builders, submit/verify tooling
+tests/             unit tests per Frontier (python -m unittest discover -s tests)
+notebooks/         generated Kaggle kernels (one folder per Frontier)
+results/           holdouts, plans, receipts and Kaggle verification runs, per Frontier
+attribution/       licenses and notices of the public code each Frontier builds on
+docs/history/      day-by-day research log and results reports (Spanish)
 ```
 
-**26 de septiembre: Frontier14, adelanto de ventas y ventanas más largas sobre Frontier13 (submission 56568493).**
-Las dos Frontier13 estaban en 2408 y 2103 (corte de plata 2417). Auditoría de las 39 derrotas en vivo con el rival
-identificado jugada a jugada: 12/13 contra copias exactas de cha22; 36 de 39 derrotas contra variantes privadas de
-cha22/prvsiyan/Herd-Safe que venden leche, fresa y lana unos turnos antes en los días 20-27. `build_f14.py` reasigna
-al final de Frontier13 constantes del propio cha22 (`_ADV_LOOK` 3→4 y las ventanas de venta anticipada 8→12); sin
-código de terceros nuevo. `candidates/f14_adv4_h12.py`: panel congelado 18→31 de 57 partidas en vivo, bucle cerrado
-48/56 (8-0 contra Frontier13 y contra cha22), holdout registrado +10 sobre 19 rivales (espejo 16/16, cha22 16/16;
-−2 en un mundo contra la familia Herd-Safe), Kaggle 48/48 sin errores y 224 ms (incumplimiento aceptado: total en la
-nube 0,0, no > 0). **Frontier14B** (`f14_adv4_h16`, ventanas 16): holdout registrado **+30** (espejo 15/16, cha22 15/16, Wangyh v44 +6,
-un solo −2), Kaggle 48/48 limpio a 300 ms sin incumplimientos; **enviada a petición a la segunda plaza: submission 56570873**
-(retira 56560450); con ventanas 24 aparece el límite de Frontier9. **Par activo: 56568493 + 56570873**;
-seguimiento `python live_report.py 56568493 56570873`. Detalle en [FRONTIER14_RESULTS.es.md](FRONTIER14_RESULTS.es.md) y
-[RESUME_FRONTIER14.es.md](RESUME_FRONTIER14.es.md). **Enviada a petición: submission 56568493** (retira 56560449).
+## Reproduce
 
-```powershell
-python build_f14.py; python -m unittest -v test_frontier14.py
-python assess_f14.py                                               # puerta registrada sobre results/frontier14/holdout.json
-python make_frontier14_notebook.py; python -m kaggle kernels push -p kaggle_frontier14
-python verify_frontier14_cloud.py                                  # tras `kaggle kernels output jarturo/kaggriculture-frontier14-advance -p results/frontier14/kaggle`
-python replay_panel.py candidates/f14_adv4_h12.py --raw vendor/live_f13 --episodes outputs/session/gold/episodes_f13.json   # panel congelado de las partidas en vivo
-python submit_frontier14.py                                        # solo lectura; --submit --authorization "..." solo con petición
+Python 3.12; the agents use only the standard library. Run everything from the repository root.
+
+```bash
+python -m venv .venv && source .venv/bin/activate       # Windows: .venv\Scripts\activate
+pip install -r requirements.txt                          # kaggle-environments 1.32.7
+
+# unit tests (some require public rival agents that are not redistributed; see .gitignore)
+python -m unittest discover -s tests
+
+# evaluate a candidate against a rival on fresh seeds, both seats, official engine
+python scripts/evaluate.py --candidates f21_cap12 --opponents f20_value --seeds 93001 93002 --workers 2 --output results/new_check.json
+
+# rebuild the final candidate from its pinned base and layer
+python scripts/build_f21.py && python -m unittest tests/test_frontier21.py
 ```
 
-**25 de septiembre: Frontier13, cha22 + lockstep en las dos plazas.** Revisión de todo lo público tras el cierre
-(notebooks actualizados después del 23, datasets, GitHub, foro) y de 172 derrotas en vivo: el agente "cha22"
-(route-replay, publicado por actualización de notebooks existentes) domina la franja de plata y gana a todo lo que
-teníamos (56/56; nuestro enrutador 0/4 contra él). `candidates/f13_c22_lock.py` = cha22 + `frontier5_lockstep.py`
-(`build_f13.py`): holdout oficial 251/256 (15/16 en el espejo), 60/64 en una prueba complementaria contra agentes
-vivos de GitHub y variantes, repetición de partidas en vivo 29 → 99 victorias de 166, verificado en Kaggle. **Enviado
-a petición a las dos plazas: submissions 56560449 y 56560450.** Detalle en [FRONTIER13_RESULTS.es.md](FRONTIER13_RESULTS.es.md)
-y [RESUME_FRONTIER13.es.md](RESUME_FRONTIER13.es.md).
+Optional C++ accelerator: `pip install -r requirements-accelerator.txt`, then `python scripts/build_cppsim.py && python scripts/verify_accelerator.py` (see `results/cppsim_build.json` for the pinned upstream revision).
 
-```powershell
-python pull_public_notebooks.py vendor/pub0925; python scan_public_agents.py vendor/pub0925 n25 outputs/session/gold/research_0925/notebooks_scan.json
-python build_f13.py
-python -m unittest -v test_frontier13.py
-python make_frontier13_notebook.py; python -m kaggle kernels push -p kaggle_frontier13
-python verify_frontier13_cloud.py
-python live_report.py 56560449 56560450
-python submit_frontier13.py; python submit_frontier13.py --slot 2      # solo lectura; --submit --authorization "..." solo con petición
-```
+## Honest limitations
 
-**24 de septiembre (tarde): Frontier12, el enrutador por rama y mundo.** Las dos Frontier11 se quedaron en 2122 y
-2237: 25 de sus 33 derrotas en vivo son contra clones de la familia pública en partidas que decide el mundo (711 de
-759 pares locales tienen el mismo margen en los dos asientos) y cada rama gana unos mundos y pierde otros. Revisión de
-supuestos y estrategias en [FRONTIER12_RESULTS.es.md](FRONTIER12_RESULTS.es.md): la sombra de un rival público
-reproduce 719/719 acciones, pero responder al turno con su lista exacta empeora (el rival reacciona); una constante de
-tiempo de venta cambia mundos perdidos; y la rama del rival decide más que el mundo (prvsiyan+lockstep gana 96/100 a
-su rama, Herd-Safe+lockstep 93/100 a la suya). `candidates/f12_router.py` (`build_f12.py`) lleva dentro los dos
-candidatos de Frontier11, juega la apertura Herd-Safe (+8 monedas), lee la rama del rival en el paso 1 por su dinero
-público y en el 144 se queda con la base de esa rama. Holdout registrado con los dos candidatos como controles: 200
-puntos frente a 190 y 164; Kaggle sin errores, con un incumplimiento aceptado (−2 contra haideptry, donde Herd-Safe
-sería mejor). **Enviado a petición a las dos plazas: submissions 56523438 y 56524328** (retiran 56509994 y
-56511120); seguimiento con `python live_report.py 56523438 56524328`. La versión 2 (tabla por rama y mundo con
-perfiles de constantes, búsqueda en bucle cerrado sobre 200 semillas) sustituirá a la más antigua cuando pase su
-puerta. Notas:
-[RESUME_FRONTIER12.es.md](RESUME_FRONTIER12.es.md).
+- Local panels are small (8–16 seeds × a handful of rivals) and dominated by public tape lineages; several Frontiers passed their gate and still lost rating when a new public wave arrived.
+- The strongest agents (top 30) used private economies or RL; this project stayed within heuristic layers on public bases, which is what the final rank reflects.
+- `results/` keeps raw receipts as they were written during the competition, including informal notes.
 
-```powershell
-python build_f12_table.py outputs/session/gold/worlds_0924.json    # tabla por mundo (la v1b usa solo la rama)
-python build_f12.py                                                # candidates/f12_router.py desde los dos candidatos fijados por hash
-python -m unittest -v test_frontier12.py
-python make_frontier12_notebook.py; python -m kaggle kernels push -p kaggle_frontier12
-python verify_frontier12_cloud.py [--accept-shortfall]             # tras `kaggle kernels output ... -p results/frontier12/kaggle`
-python submit_frontier12.py                                        # estado; --submit --authorization "..." solo con petición explícita
-python resume_eval.py <parcial.json> <candidatos> <rivales> <semillas> <workers>   # reanuda un holdout cortado por un fallo de escritura
-```
+## License
 
-**24 de septiembre: Frontier11 (lockstep sobre la ola pública definitiva, tras el cierre de notebooks del 23).**
-Las dos Frontier10 cayeron a 2230 y 2402: entre el 21 y el 23 de septiembre el público copió la idea del lockstep
-(shiiin9, "Your Market List Is an Order Book": V55 + una capa que ordena las ventas del turno contra una copia de
-la propia pila), Gluzdov publicó "Herd-Safe Sale Window" sobre ella, arsgorynich su fork "forecast4" y prvsiyan
-un compuesto con compactación de la cola del mercado; Ahmed pasó sus V54-V57 a esa misma familia. De 31 agentes
-nuevos únicos, el de prvsiyan (22 sep) gana el round robin de los diez mejores (52/54). `candidates/f11_pv_lock.py`
-= ese agente + el entry point enlazado + `frontier5_lockstep.py` sin cambios: holdout oficial 206/256 frente a
-186/256 del agente sin tocar (espejo 16/16, ningún rival peor, +56 monedas por partida), verificado en Kaggle.
-La capa nueva de tres modelos (`frontier11_order.py`) se midió y no se exporta. **Enviado el 24 de septiembre
-(03:03 UTC) a petición de Arturo: submission 56509994.** Segunda plaza, también a petición:
-`candidates/f11b_hs3_lock.py` = Herd-Safe v3 forecast4 de arsgorynich + el mismo lockstep (holdout 176/224 frente a
-162/224 de la base, gana 14/16 a casi toda la rama Herd-Safe, verificado en Kaggle) = **submission 56511120**
-(04:00 UTC). Activas: 56509994 y 56511120; seguimiento con `python live_report.py 56509994 56511120`. Resultados y límites en
-[FRONTIER11_RESULTS.es.md](FRONTIER11_RESULTS.es.md); notas en [RESUME_FRONTIER11.es.md](RESUME_FRONTIER11.es.md).
-
-```powershell
-python build_f11.py                    # f11_pv_lock y las variantes medidas, con las bases públicas fijadas por hash
-python rr_run.py --agents A B C --seeds 7611 7612 7613 --output rr.json   # round robin sin partidas espejo duplicadas
-python -m unittest -v test_frontier11.py test_frontier11b.py
-python make_frontier11_notebook.py; python -m kaggle kernels push -p kaggle_frontier11
-python make_frontier11b_notebook.py; python -m kaggle kernels push -p kaggle_frontier11b
-python verify_frontier11_cloud.py; python verify_frontier11b_cloud.py
-python submit_frontier11.py; python submit_frontier11b.py   # estado; --submit --authorization "..." solo con petición explícita
-```
-
-**21 de septiembre: Frontier10 (lockstep sobre la ola pública del 20 de septiembre, una plaza por familia).**
-Frontier9 se quedó en 2695 y Frontier8 cayó a 2671: el 20 de septiembre salió otra ola pública una generación
-por encima de nuestra base (Tschinkel "Metav4 v13", 40-0 contra su 2945; Pipe-16 = "V54" repartido por cuatro
-notebooks; Gluzdov "One More Wheat"; Ahmed V51-V53) y Frontier9 empata 4/4 contra cada uno. Diagnóstico y
-mediciones en [FRONTIER10_RESULTS.es.md](FRONTIER10_RESULTS.es.md). El adelanto de Frontier9 aplicado a la
-base nueva falló la puerta registrada (10/6 donde la base sin tocar hace 14/2) y se descartó; la capa lockstep
-sola gana poco pero casi siempre. Dos candidatos, uno por familia pública: `candidates/f10_omw_lock.py` (One
-More Wheat + lockstep: 16/0 contra One More Wheat, Pipe-16 y Metav4 en el holdout oficial, 170/192) y
-`candidates/f10_v53_lock.py` (V53 + lockstep: 16/0 contra V53 y V52, 148/192 frente a 110 del control), ambos
-verificados en Kaggle (`results/frontier10*/kaggle_verified.json`). Al repetir la búsqueda de notebooks el 21 a
-las 00:30 UTC apareció un clon público de One More Wheat con una guarda de precio del trigo (prvsiyan, +30
-monedas exactas por partida); `candidates/f10_omwg_lock.py` lleva esa guarda bajo la misma capa lockstep, pasó su
-puerta registrada contra `f10_omw_lock` (173/208, 14/2 cara a cara, ninguna victoria perdida) y la verificación en
-Kaggle, y **sustituye a `f10_omw_lock` como plaza de la familia Metav4**. **Enviados el 21 de septiembre (01:53 UTC) a
-petición de Arturo: `f10_omwg_lock` = submission 56410971 y `f10_v53_lock` = submission 56410981**; seguimiento con
-`python live_report.py 56410971 56410981`.
-Notas: [RESUME_FRONTIER10.es.md](RESUME_FRONTIER10.es.md).
-
-```powershell
-python build_f10.py                    # f10_omw_lock, f10_v53_lock y las variantes medidas, con las bases fijadas por hash
-python -m unittest -v test_frontier10.py test_frontier10b.py test_frontier10c.py
-python make_frontier10_notebook.py;  python -m kaggle kernels push -p kaggle_frontier10
-python make_frontier10b_notebook.py; python -m kaggle kernels push -p kaggle_frontier10b
-python make_frontier10c_notebook.py; python -m kaggle kernels push -p kaggle_frontier10c
-python verify_frontier10_cloud.py; python verify_frontier10b_cloud.py; python verify_frontier10c_cloud.py
-python submit_frontier10c.py; python submit_frontier10b.py   # estado; --submit --authorization "..." solo con petición explícita
-```
-
-**20-21 de septiembre: Frontier9 (adelanto acotado de ventas) tras investigar al top 10, papers y juegos análogos.**
-Frontier8 bajó de 2825 a 2792/2758. La auditoría de 85 partidas en vivo muestra que el 60 % de los rivales de
-2750+ son derivados de nuestra misma base y que los que venden el mismo lote un turno antes nos ganan 22-7;
-en circuito cerrado Frontier8 pierde 0/12 contra quien se adelanta un solo turno. El top 10 (85 replays con
-ingreso exacto) gana +9822 a v9/4 con venta paciente, tomates y zanahorias en casillas liberadas fertilizando
-trigo y tamaños según tiendas: son planificadores, no capas. Análisis, literatura (juegos de anticipación,
-trading depredador, pago relativo) y todos los experimentos en
-[FRONTIER9_RESULTS.es.md](FRONTIER9_RESULTS.es.md). Herramienta nueva: panel de repetición con rival congelado
-(misma semilla del replay), que reproduce nuestras partidas en vivo al céntimo. Candidato
-`candidates/f9_pre4f.py` = Frontier8 + adelanto de lotes saturados de fresa, leche y lana dentro de la reserva
-RACEGATE pública, como mucho `min(4, lote / drenaje del pueblo)` turnos y con todo el stock del producto
-(`build_f9.py`): panel de rivales reales 38 → 54 de 85, holdout oficial 142/160 frente a 108/160 de Frontier8
-(espejo 16/0, linaje V50 12/4 frente a 6/10), Kaggle 8/0 contra Frontier8, Tschinkel y tetsutani (archivo
-verificado). Debilidad medida y replicada: un mundo de cada dieciséis peor que Frontier8 contra los agentes de
-Alperen (linaje V48). Un primer candidato (adelantar solo la cantidad de la ruta) pasó el holdout y falló en
-Kaggle; está documentado. Arturo pidió una plaza: **submission 56404796** (recibo en
-`results/frontier9/submission_receipt.json`); la otra plaza sigue con Frontier8. Notas: [RESUME_FRONTIER9.es.md](RESUME_FRONTIER9.es.md).
-
-```powershell
-python build_f9.py                     # f9_pre4f (exportable) y las variantes medidas, desde Frontier8 fijado por hash
-python -m unittest -v test_frontier9.py
-python make_frontier9_notebook.py; python -m kaggle kernels push -p kaggle_frontier9
-python verify_frontier9_cloud.py       # tras `kaggle kernels output ... -p results/frontier9/kaggle`
-python submit_frontier9.py             # estado; --submit --authorization "..." solo con petición explícita
-```
-
-**19-20 de septiembre: Frontier8 (capas públicas apiladas + lockstep) tras leer el foro.** Frontier7 cayó
-a 2600 (puesto 628; corte de plata 2665) porque el 19 de septiembre Thomas Tschinkel abrió su agente de
-2945 puntos ("The 2945 Farm" v9/4, repartido byte a byte por cuatro notebooks) y V49/V50 integraron sus
-capas: todos ganan 0/8 por −3000 a Frontier7. Del foro: los notebooks públicos se cierran el **23 de
-septiembre 23:59 UTC**, el ranking final es un único torneo Bradley-Terry sobre las dos semanas
-posteriores al 30 con las dos últimas submissions, y clonar lo público más reciente basta para el 10 %
-superior; quienes suben por fuera usan PPO con ~300k partidas. Estrategia para plata en
-[FRONTIER8_RESULTS.es.md](FRONTIER8_RESULTS.es.md): base pública más fuerte + mejoras públicas
-compatibles + nuestra capa lockstep, y repetir tras el cierre del 23. Candidato
-`candidates/f8_stack_lock.py` = v9/4 + apertura de Gluzdov + cierre de cola de Arlene +
-`frontier5_lockstep.py` (hashes fijados en `build_f8.py`): holdout 301/336 contra 14 rivales (23/1 contra
-cada agente del linaje v9/4, 17/7 contra el linaje V50; el mejor público sin modificar gana 256), motor
-oficial 12/0 contra Tschinkel, Arlene y Gluzdov y 10/2 contra tetsutani, Kaggle 4/0 contra Arlene y
-Tschinkel (archivo verificado, `results/frontier8/kaggle_verified.json`). Arturo pidió las dos plazas:
-**submissions 56372977 y 56372978** (recibos en `results/frontier8/submission_receipt*.json`). Notas:
-[RESUME_FRONTIER8.es.md](RESUME_FRONTIER8.es.md).
-
-```powershell
-python extract_public_agents.py tschinkel gluzdov_shock lynn_v2 tetsu_dp   # tras `kaggle kernels pull ... -p vendor/pub/<ref> -m`
-python build_f8.py                     # f8_stack_lock (exportable) y variantes medidas
-python -m unittest -v test_frontier8.py
-python make_frontier8_notebook.py; python -m kaggle kernels push -p kaggle_frontier8
-python verify_frontier8_cloud.py       # tras `kaggle kernels output ... -p results/frontier8/kaggle`
-python submit_frontier8.py             # estado; --submit --authorization "..." solo con petición explícita
-```
-
-**18 de septiembre: Frontier7 (lockstep sobre V48) y el análisis del top 2.** Frontier5 subió a
-2751 (puesto 238) y empezó a caer: 8/24 en sus partidas contra rivales de 2800 o más, casi todas
-contra clones de V47/V48 (17 de septiembre), que integran el pre-guardia nocturno, un orden lockstep
-propio y el rebaño según tiendas de Seyit Kaan Güneş; V48 gana 10/2 a f5_lock y 12/0 a V46 en nuestro
-simulador. El análisis de Unknown Mother-Goose (#1, 106 replays) está en
-[FRONTIER7_RESULTS.es.md](FRONTIER7_RESULTS.es.md): contra 79 clones gana 75 con +13255 de media con
-la misma mano de obra y las mismas cosechas, pero vende fresa, leche y lana un 30-40 % más caras
-(producción más temprana y lotes constantes) y añade tomates, zanahorias y huevos. Con el modelo exacto
-del mercado del motor se midió la palanca de "retener y dosificar" leche y lana
-(`frontier7_hold.py`): el almacén de la cinta no deja sitio (80 de 100 al amanecer, 66 unidades en manos
-por la noche) y la capa pierde 1/11 contra V48; descartada. Superar al top 2 exige una economía propia
-(planificador), no un envoltorio. Candidato inmediato `candidates/f7_lock.py` = V48 público (hash
-fijado en `build_f7.py`, punto de entrada `_e335_agent`) + `frontier5_lockstep.py`: 11/1 contra V48
-(+1124) en pantalla, holdout C++ 16/0 contra los 12 rivales (V48 +922, f5_lock +1283), motor oficial
-8/0 contra V48 (+861) y Kaggle 4/0 contra V48, Beyond-48 y f5_lock (archivo verificado,
-`results/frontier7/kaggle_verified.json`). Arturo pidió una plaza: **submission 56318681** (recibo en
-`results/frontier7/submission_receipt.json`); la otra plaza sigue con Frontier5. Notas:
-[RESUME_FRONTIER7.es.md](RESUME_FRONTIER7.es.md).
-
-```powershell
-python extract_public_agents.py        # V48 y rivales públicos desde vendor/pub/ (kaggle kernels pull)
-python build_f7.py                     # f7_lock (exportable), f7_hold y f7_holdonly (descartados) desde el V48 fijado
-python -m unittest -v test_frontier7.py
-python make_frontier7_notebook.py; python -m kaggle kernels push -p kaggle_frontier7
-python verify_frontier7_cloud.py       # tras `kaggle kernels output ... -p results/frontier7/kaggle`
-python submit_frontier7.py             # estado; --submit --authorization "..." solo con petición explícita
-```
-
-**17 de septiembre: Frontier5 (orden lockstep sobre V46).** Las Frontier4 llegaron a plata (2674,
-puesto 437) y empezaron a caer: la ola pública del 16 de septiembre (pipe-7/8, Beyond-48, V46) gana
-el turno 0-1 por microestructura de órdenes y nos cuesta ~1300 monedas antes del día 12; V46 gana 11/1
-a todos los demás públicos y f4_probe pierde 1/11 contra ella. El análisis del top (dataset comunitario
-de partidas y 56 replays propios) está en [FRONTIER5_RESULTS.es.md](FRONTIER5_RESULTS.es.md): las plazas
-12-40 son clones de nuestra cinta con esos ajustes; el top 2-10 usa cintas propias (reinversión temprana,
-9-10 vacas, zanahorias y tomates tardíos); en los espejos leche, lana y fresa se saturan y solo el huevo
-aguanta. El candidato `candidates/f5_lock.py` = V46 público (hash fijado) + orden lockstep de ventas
-propio (`frontier5_lockstep.py`): contra una copia reproduce la liquidación unidad a unidad del motor y
-elige la permutación de ventas con mejor margen. Holdout C++ (semillas nuevas, 12 rivales): 16/0 contra
-todos, V46 +1083, Beyond-48 +1202, pipe-7 +940, pipe-8 +1448; motor oficial 8/0 contra seis rivales
-incluida V46 (+965). Descartados con medición: gansos por vacas/ovejas (`frontier5_geese.py`) y las
-capas terminales sobre V46 (pierden el último día en el motor oficial). Arturo pidió el envío: **submission
-56292870** y una segunda copia en la otra plaza (recibos en `results/frontier5/submission_receipt*.json`).
-Notas: [RESUME_FRONTIER5.es.md](RESUME_FRONTIER5.es.md).
-
-```powershell
-python extract_public_agents.py        # V46 y rivales públicos desde vendor/pub/ (kaggle kernels pull)
-python build_f5.py                     # variantes Frontier5 desde el V46 fijado
-python -m unittest -v test_frontier5.py
-python make_frontier5_notebook.py; python -m kaggle kernels push -p kaggle_frontier5
-python verify_frontier5_cloud.py       # tras `kaggle kernels output ... -p results/frontier5/kaggle`
-```
-
-**16 de septiembre: Frontier4 (sonda de carrera de ventas).** Las dos Frontier3 activas
-(`56222986`, `56223026`) cayeron a 50 % de victorias y ~2540 de rating (puesto 710) porque el
-pool de 2500-2900 son clones del linaje público V41-V45 y nuestra base V37 pierde la carrera de
-ventas del mismo turno: 0/12 contra V43, V44 y V45 en simulación. El nuevo candidato
-`candidates/f4_probe.py` se construye sobre el V45 público (extraído como datos, hash fijado) y
-añade una sonda al horizonte de carrera que gana el espejo contra V44/V45 sin perder contra
-clones de 4 turnos: 149/160 puntos frente a 138 de V45 en selección, holdout 416 partidas sin
-regresión (11/5 contra V45, 16/0 contra otros 11 rivales) y motor oficial 8/0 contra cinco
-rivales y 6/2 contra V45, latencia máxima 157 ms. Diagnóstico, variantes descartadas (manos
-corredoras, horizonte fijo, capas terminales) y límites: [FRONTIER4_RESULTS.es.md](FRONTIER4_RESULTS.es.md);
-notas de continuidad: [RESUME_FRONTIER4.es.md](RESUME_FRONTIER4.es.md). Verificación en la nube:
-kernel privado `jarturo/kaggriculture-frontier4-sales-race`. Arturo pidió el envío: **submissions 56266564 y 56266648**
-(mismo archivo, recibos en `results/frontier4/submission_receipt*.json`); ninguna submission se envía automáticamente.
-
-```powershell
-python extract_public_agents.py        # tras `kaggle kernels pull` de los notebooks públicos a vendor/pub/
-python build_f4.py                     # candidatos Frontier4 desde el V45 fijado
-python -m unittest -v test_frontier4.py
-python make_frontier4_notebook.py; python -m kaggle kernels push -p kaggle_frontier4
-python verify_frontier4_cloud.py       # tras `kaggle kernels output ... -p results/frontier4/kaggle`
-python live_report.py 56222986 56223026
-```
-
-**14 de septiembre: Frontier3 experimental.** Actualiza la apertura comercial,
-reserva dinero y semillas, y distribuye la capacidad compartida del almacén.
-Ganó 8/8 contra nuestra primera submission y 8/8 contra Frontier2 en el bloque
-oficial local; contra V41 obtuvo 3/8 y **no alcanzó el criterio original de 50 %**.
-La publicación experimental conserva ese fallo y no garantiza una mejora de rating.
-Estado de Kaggle, archivo y resultados completos: [FRONTIER3_RESULTS.es.md](FRONTIER3_RESULTS.es.md).
-La versión 3 del notebook está COMPLETE y su archivo fue verificado por bytes.
-En la nube ganó 4/4 contra matched6, 4/4 contra Frontier2 y 2/4 contra V41.
-Arturo pidió el envío: submission **56222986**; el último estado consultado está en
-`results/frontier3/submission_receipt.json`. Archivo:
-[`results/frontier3/kaggle/submission.tar.gz`](results/frontier3/kaggle/submission.tar.gz).
-
-- [Investigación: competencias similares y papers 2025–2026](RESEARCH.es.md)
-- [Resultados y limitaciones](RESULTS.es.md)
-- [Diagnóstico del rating y 192 partidas adicionales](LIVE_DIAGNOSIS.es.md)
-- [Papers recientes, cinco prototipos y simulación 8,72× más rápida](RESEARCH_2026_09_12.es.md)
-- [Modelo entrenado, validación reservada y nuevo candidato](ML_RESULTS.es.md)
-- [Análisis de ocho equipos del top 27 y planificador propio](GOLD_RESEARCH.es.md)
-- [Frontier: resultados, ablaciones y límites](FRONTIER_RESULTS.es.md)
-- [Mejora de Frontier: entregas durante la ruta y validación nueva](FRONTIER2_RESULTS.es.md)
-- [Revisión del V41: apertura vulnerable, fallos reales y comparación oficial](V41_REVIEW.es.md)
-- [Kernel privado en Kaggle](https://www.kaggle.com/code/jarturo/kaggriculture-lab-cpu-search)
-- [Atribuciones y cambios](NOTICE.md)
-
-En la confirmación local, matched6 ganó 18/18 partidas contra tres rivales.
-El panel es pequeño y parte de la mejora se concentra frente a V37; no demuestra
-un rating superior a 3000. Frente a prvsiyan conserva victorias pero reduce margen.
-
-Kaggle **v2 COMPLETE**: otras 8/8 victorias frente a V37 en semillas nuevas,
-con margen medio +1249,50 monedas. Se verificó la identidad del agente exportado.
-Esa primera ronda documentó 162 partidas, incluyendo controles y exploración repetida.
-
-**Actualización del 12 de septiembre, 18:40 UTC:** la submission `56190498`
-marca **1885,9**; las cinco primeras partidas públicas auditadas fueron victorias.
-El 687 comunicado al inicio era una lectura temprana. La segunda ronda añade
-192 partidas y descarta reemplazar todas las rutas por la biblioteca de 14 planes:
-introduce derrotas frente a otro rival. Se conserva matched6; no se promete un
-rating final ni se ha enviado automáticamente otro agente.
-
-La ronda posterior al rating 2100 comunicado por Arturo añade **248 partidas
-válidas**, cinco prototipos de decisión de venta y un evaluador C++ opcional.
-En tres comparaciones completas, el evaluador fue **8,72× más rápido** y reprodujo
-recompensas, tiendas y telemetría. Los prototipos no añadieron victorias; se mantiene
-matched6. Hay 602 partidas de estrategia documentadas entre las rondas, con
-controles y repeticiones; las pruebas de equivalencia se cuentan aparte.
-
-**13 de septiembre:** la submission original marca **2656,3** en la API de Kaggle.
-El nuevo modelo `ml_critic` obtiene 78/80 victorias en la prueba reservada frente
-a 61/80 de matched6 (con 14 empates). La opción fija h8 también obtiene 78/80;
-todavía no se demuestra una ventaja de victorias del aprendizaje sobre ella.
-El [informe de esta ronda](ML_RESULTS.es.md) conserva los detalles y el diagnóstico
-de latencia. El nuevo experimento utiliza `kaggle_ml/` y un kernel privado separado.
-Confirmación oficial: 40/40 victorias frente a 33/40 del control. El
-[nuevo kernel privado](https://www.kaggle.com/code/jarturo/kaggriculture-learned-option-critic)
-está **COMPLETE** y ganó otros 8/8 duelos. Archivo nuevo verificado:
-[`results/ml/kaggle/submission.tar.gz`](results/ml/kaggle/submission.tar.gz).
-La raíz conserva los archivos del primer agente; no se envió otra submission
-automáticamente al leaderboard.
-
-## Reproducir
-
-**Frontier, versión 2: entregas durante la ruta.** `frontier2_early` entrega y vende
-productos valiosos al pasar por el almacén, conservando fertilizante para después.
-El panel reservado obtiene 109 victorias, 8 empates y 3 derrotas frente a 87, 24 y 9
-de Frontier. La confirmación oficial obtiene 36 victorias y 4 empates frente a
-30 victorias y 10 empates. Las 24 pruebas pasan. Ver `FRONTIER2_RESULTS.es.md`.
-El notebook actualizado se genera en `kaggle_frontier2/`; la carpeta anterior
-`kaggle_frontier/` conserva el experimento de la versión 1. La versión 2 se subió al
-mismo kernel privado y exige una nueva comparación en la nube antes de exportar.
-No se envía una submission al leaderboard automáticamente.
-
-**Versión 2 COMPLETE y verificada en Kaggle:** 5 victorias, 2 empates y 1 derrota
-frente a Frontier; 7 victorias y 1 derrota frente a ml_critic. Mejora de resultado
-emparejado +2 para cada rival, con máximo de 267,7 ms por llamada. Archivo nuevo:
-[`results/frontier2/kaggle/submission.tar.gz`](results/frontier2/kaggle/submission.tar.gz).
-Arturo la envió al leaderboard como `56216380`. La consulta del 14 de septiembre
-a las 05:01 UTC registra 2613,3; ver `V41_REVIEW.es.md` para el diagnóstico posterior.
-Los archivos de la versión 1 se conservan.
-
-**Nueva ronda del 13 de septiembre: Frontier.** Planificador propio del último día:
-contratación, fertilizante, cosecha, rutas y ventas, con selector entrenado. Conserva
-la producción anterior de V37 / ml_critic. Panel reservado: 76 victorias y 4 derrotas
-frente a 64 victorias, 12 empates y 4 derrotas del control. Confirmación oficial:
-38 victorias y 2 derrotas frente a 32 victorias y 8 empates. La mejora de resultados
-se concentra contra nuestra versión anterior; la ablación constante obtiene las
-mismas victorias reservadas que el selector. No se ha demostrado nivel gold.
-
-El [nuevo notebook privado](https://www.kaggle.com/code/jarturo/kaggriculture-frontier-joint-planner)
-usa `kaggle_frontier/` y comprueba 32 partidas adicionales antes de exportar. Los
-replays del top se usan sólo como estrés; no equivalen a sus agentes privados.
-Dos replays nuevos exponen pequeñas discrepancias del simulador C++; se exige motor
-oficial. El informe conserva también el pico de latencia y su diagnóstico en serie.
-
-**Kaggle COMPLETE, versión 1:** archivo
-[`submission.tar.gz` verificado](results/gold/kaggle/submission.tar.gz).
-En la nube ganó 8/8 contra matched6 y 4/8 contra ml_critic, con un máximo de 299,6 ms
-por llamada. El resultado agregado de esas partidas es igual al del control; no
-replica la ganancia local ni demuestra una ventaja general. Se conserva como
-candidato experimental, sin envío automático al leaderboard. Las 19 pruebas pasan.
-
-Para regenerar el candidato congelado, ejecutar `build_frontier.py --model
-results/gold/frontier_model.json`. Las variantes exploratorias conservan sus fuentes
-y recibos originales; los builders actuales regeneran la última familia del experimento.
-Las pruebas de Frontier se ejecutan con `python -m unittest test_frontier.py`.
-
-Python 3.12. El agente usa solo la biblioteca estándar; no necesita GPU.
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe build.py
-.\.venv\Scripts\python.exe -m unittest -v test_experiment.py
-.\.venv\Scripts\python.exe evaluate.py --candidates matched6 --opponents v37 --seeds 93001 93002 --workers 2 --output results/new_check.json
-```
-
-El entorno de desarrollo inicial instaló el paquete del motor sin dependencias
-adicionales sobre bibliotecas ya disponibles. En una instalación limpia, usar
-`requirements.txt` para resolver sus dependencias completas.
-
-Para repetir el panel externo, descargar los notebooks con `kaggle kernels pull`
-según `results/opponents.json`, en `vendor/nagata`, `vendor/tetsutani` y
-`vendor/prvsiyan`, y ejecutar `python extract_opponents.py`. Los exports públicos
-pueden cambiar; verificar los hashes antes de comparar con estos resultados.
-
-## Ejecutar en Kaggle
-
-```powershell
-python make_notebook.py
-python -m kaggle kernels push -p kaggle
-python -m kaggle kernels status jarturo/kaggriculture-lab-cpu-search
-```
-
-El notebook realiza búsqueda exploratoria y validación separada, registra ambas,
-y empaqueta matched6 si pasa el control; en caso contrario exporta V37.
-Produce `main.py`, `submission.tar.gz` y resultados JSON. No envía automáticamente
-a la competencia. Los pesos de una red y el entrenamiento RL quedan como hipótesis
-de investigación, no como capacidades implementadas.
-
-`baseline/v37.py` conserva el hash y las atribuciones del notebook original.
-`build.py` define exactamente las intervenciones; `evaluate.py` ejecuta rivales
-que reaccionan, con instancias de política independientes y ambos asientos.
-No se accede al almacén privado del rival ni a semillas ocultas desde el agente.
-
-## Experimentos de mercado y evaluador opcional
-
-El agente enviado sigue usando solo Python estándar. Para reconstruir los
-prototipos y ejecutar sus pruebas:
-
-```powershell
-python build_market_gate.py
-python build_market_gate.py --funded
-python build_market_gate.py --lead
-.\.venv\Scripts\python.exe -m unittest -v test_market_gate.py
-```
-
-El acelerador se compiló con MinGW g++ 14.2.0 en esta estación Windows. Requiere
-los rivales del panel anterior para ejecutar la verificación.
-
-```powershell
-git clone https://github.com/destbreso/kaggriculture-cppsim.git vendor/cppsim
-git -C vendor/cppsim checkout da15925dcf2357d750cbae4bf35712011b4733c8
-.\.venv\Scripts\python.exe -m pip install -r requirements-accelerator.txt
-.\.venv\Scripts\python.exe build_cppsim.py
-.\.venv\Scripts\python.exe verify_accelerator.py
-.\.venv\Scripts\python.exe benchmark_accelerator.py
-.\.venv\Scripts\python.exe evaluate_fast.py --candidates belief_lead12 matched6 --opponents matched6 router prvsiyan kaito --seeds 64001 64002 64003 64004 64005 64006 64007 64008 --workers 4 --output results/market_lead_holdout.json
-python summarize_market.py
-```
-
-La revisión del simulador está fijada. Cambiarla exige reconstruir y volver a
-verificar; una compilación distinta puede producir un hash de binario distinto.
-Para confirmar resultados competitivos se conserva `evaluate.py`, con el motor
-oficial. El kernel anterior no incorpora automáticamente estos prototipos.
+Project additions: Apache-2.0 (see [LICENSE](LICENSE)). Inherited public code keeps its original notices; see [NOTICE.md](NOTICE.md) and `attribution/`.

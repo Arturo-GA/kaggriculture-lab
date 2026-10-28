@@ -20,7 +20,7 @@ Modified September 12, 2026 by Arturo-GA / Kaggriculture Lab:
   Source: https://www.kaggle.com/code/yhay81/shop-router-0911-simple .
   Reproducible extraction and hashes: `extract_panel_v2.py`,
   `build_routes_experiment.py`, `results/panel_v2_sources.json`.
-- `build.py`, `evaluate.py`, tests, research, notebook and packaging: new project tooling.
+- `build.py`, `evaluate.py`, tests, research, notebook and packaging: new project tooling (since October 2026 these live in `scripts/` and `tests/`).
 - `candidates/demand_gate.py`, `belief_gate.py`, `demand_gate2.py`, `belief_gate2.py`,
   `belief_lead12.py`: new project sale-timing experiments built on matched6;
   public demand accounting, observed supply scenarios, spending reserves and
